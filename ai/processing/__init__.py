@@ -2,7 +2,7 @@
 Processing Subpackage for BIS AI Assistant.
 Handles Phase 2D semantic normalization, knowledge entity extraction,
 machine-readable requirements, graph relationships, table normalization,
-and structured cross-reference resolution.
+structured cross-reference resolution, and dual value/unit normalization.
 """
 
 from ai.processing.clause_classifier import ClauseClassifier, classify_clauses
@@ -12,6 +12,7 @@ from ai.processing.normalizer import DocumentNormalizer, normalize_all_documents
 from ai.processing.relationship_extractor import RelationshipExtractor
 from ai.processing.requirement_extractor import RequirementExtractor
 from ai.processing.table_normalizer import TableNormalizer
+from ai.processing.value_normalizer import ValueNormalizer, normalize_value
 
 __all__ = [
     "ClauseClassifier",
@@ -22,6 +23,8 @@ __all__ = [
     "RequirementExtractor",
     "RelationshipExtractor",
     "TableNormalizer",
+    "ValueNormalizer",
+    "normalize_value",
     "DocumentNormalizer",
     "normalize_document",
     "normalize_all_documents",

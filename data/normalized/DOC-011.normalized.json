@@ -57,8 +57,19 @@
       "entity_id": "ENT-DOC011-0001",
       "entity_type": "standard",
       "name": "CRO Amendment 2026",
+      "status": "mandatory",
+      "original_value": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
       "value": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
-      "document_id": "DOC-011",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -68,8 +79,19 @@
       "entity_id": "ENT-DOC011-0002",
       "entity_type": "authority",
       "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
       "value": "National Standards Body of India",
-      "document_id": "DOC-011",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -79,8 +101,19 @@
       "entity_id": "ENT-DOC011-0003",
       "entity_type": "authority",
       "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
       "value": "Statutory Order Authority",
-      "document_id": "DOC-011",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -90,8 +123,19 @@
       "entity_id": "ENT-DOC011-0004",
       "entity_type": "referenced_standard",
       "name": "IS 16102 (Part 1):2012",
+      "status": "mandatory",
+      "original_value": "IS 16102 (Part 1):2012",
       "value": "IS 16102 (Part 1):2012",
-      "document_id": "DOC-011",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "2",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "2",
       "source_pages": [
         1
@@ -101,8 +145,19 @@
       "entity_id": "ENT-DOC011-0005",
       "entity_type": "referenced_standard",
       "name": "IS 16102 (Part 1):2026",
+      "status": "mandatory",
+      "original_value": "IS 16102 (Part 1):2026",
       "value": "IS 16102 (Part 1):2026",
-      "document_id": "DOC-011",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "2",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "2",
       "source_pages": [
         1
@@ -202,7 +257,7 @@
   "tables": [],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:21:58.221559+00:00",
+    "normalized_at": "2026-08-30T15:25:15.681364+00:00",
     "total_entities": 5,
     "total_requirements": 0,
     "total_relationships": 5,

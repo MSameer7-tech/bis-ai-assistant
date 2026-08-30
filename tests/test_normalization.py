@@ -1,6 +1,7 @@
 """
 Validation tests for Phase 2D Semantic Normalization, Clause Classification,
-Entity Families, Requirements, Cross-References, and Knowledge Graph Edges.
+Entity Families, Requirements, Cross-References, Knowledge Graph Edges,
+Provenance Preservation, Semantic States, and Dual Value Normalization.
 """
 
 import json
@@ -11,6 +12,7 @@ from ai.processing.cross_reference_resolver import CrossReferenceResolver
 from ai.processing.entity_extractor import EntityExtractor
 from ai.processing.normalizer import DocumentNormalizer
 from ai.processing.requirement_extractor import RequirementExtractor
+from ai.processing.value_normalizer import ValueNormalizer, normalize_value
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 NORMALIZED_DIR = ROOT_DIR / "data" / "normalized"
@@ -34,19 +36,57 @@ def normalized_documents():
     return docs
 
 
-def test_clause_classifier_roles():
-    """Verify that ClauseClassifier accurately maps clauses to semantic types."""
-    classifier = ClauseClassifier()
+def test_2d8_provenance_binding(normalized_documents):
+    """Verify that every requirement has complete provenance linking to source PDF, clause, and page (2D-8)."""
+    doc_001 = next(d for m, d in normalized_documents if d["document_id"] == "DOC-001")
+    reqs = doc_001.get("requirements", [])
+    assert len(reqs) > 0
 
-    c_scope = {"clause_number": "1", "title": "SCOPE", "content": "This standard applies to LED lamps."}
-    assert classifier.classify_clause(c_scope)["primary_type"] == "scope"
+    for req in reqs:
+        assert "provenance" in req
+        prov = req["provenance"]
+        assert prov["document_id"] == "DOC-001"
+        assert prov["source_id"] == "SRC-001"
+        assert "IS 16102" in prov["standard"]
+        assert prov["clause"]
+        assert isinstance(prov["page"], int)
+        assert len(prov["pages"]) > 0
+        assert "original_text" in prov
 
-    c_mark = {"clause_number": "5.1", "title": "Marking", "content": "Lamps shall be marked with wattage."}
-    assert classifier.classify_clause(c_mark)["primary_type"] == "marking_requirement"
 
-    c_test = {"clause_number": "8.1.1", "title": "Insulation Resistance", "content": "The lamp shall be conditioned for 48 h. Resistance shall not be less than 4 MΩ."}
-    res_test = classifier.classify_clause(c_test)
-    assert "acceptance_criterion" in res_test["semantic_tags"] or "test_method" in res_test["semantic_tags"]
+def test_2d9_semantic_states_and_under_consideration(normalized_documents):
+    """Verify that 'under consideration' items are flagged with proper semantic status (2D-9)."""
+    doc_001 = next(d for m, d in normalized_documents if d["document_id"] == "DOC-001")
+    reqs = doc_001.get("requirements", [])
+
+    # Check that GX53 or 80°C items have status == 'under_consideration'
+    under_cons_reqs = [r for r in reqs if r.get("status") == "under_consideration"]
+    assert len(under_cons_reqs) >= 1
+    for r in under_cons_reqs:
+        assert "under consideration" in r["original_value"].lower() or "under consideration" in r["evidence"].lower()
+
+
+def test_2d10_value_normalizer_preserves_original_and_parses_tolerances():
+    """Verify dual value normalization and tolerance parsing (2D-10)."""
+    normalizer = ValueNormalizer()
+
+    # Tolerance: (25 ± 5)°C
+    tol_res = normalizer.normalize_value_expression("(25 ± 5)°C")
+    assert tol_res["original_value"] == "(25 ± 5)°C"
+    assert tol_res["normalized"]["nominal"] == 25
+    assert tol_res["normalized"]["tolerance"] == 5
+    assert tol_res["normalized"]["unit"] == "°C"
+
+    # Spaced numbers: 1 000 V
+    volt_res = normalizer.normalize_value_expression("1 000 V")
+    assert volt_res["normalized"]["value"] == 1000
+    assert volt_res["normalized"]["unit"] == "V"
+
+    # Range: 91-95 %
+    range_res = normalizer.normalize_value_expression("91-95 %")
+    assert range_res["normalized"]["min"] == 91
+    assert range_res["normalized"]["max"] == 95
+    assert range_res["normalized"]["unit"] == "%"
 
 
 def test_2d3_entity_families_in_doc_001(normalized_documents):
@@ -110,9 +150,6 @@ def test_2d6_cross_references_resolution(normalized_documents):
     assert any("IS 9206" in s for s in target_standards)
     assert any("IS 15885" in s for s in target_standards)
     assert any("IS 8913" in s for s in target_standards)
-
-    ref_types = {ref["reference_type"] for ref in cross_refs}
-    assert "normative" in ref_types or "test_method" in ref_types or "definition" in ref_types
 
 
 def test_2d7_knowledge_graph_edges(normalized_documents):

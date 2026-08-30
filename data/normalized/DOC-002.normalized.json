@@ -780,10 +780,16 @@
               "entity_type": "requirement",
               "requirement_type": "sampling_quantity",
               "requirement_id": "REQ-DOC002-3.25-ITQ",
+              "status": "mandatory",
               "clause": "3.25",
               "subject": "batch / inspection lot",
               "parameter": "inspection_test_quantity",
               "operator": "==",
+              "original_value": "25 lamps",
+              "normalized": {
+                "value": 25,
+                "unit": "lamps"
+              },
               "value": 25,
               "unit": "lamps",
               "conditions": {
@@ -801,7 +807,19 @@
               "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
               "source_pages": [
                 5
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.25",
+                "page": 5,
+                "pages": [
+                  5
+                ],
+                "section": "Acceptance Test",
+                "original_text": "3.25 Acceptance Test\nTests carried out on samples taken from a lot for the\nacceptance of the lot."
+              }
             }
           ]
         },
@@ -1003,10 +1021,21 @@
           "entity_type": "requirement",
           "requirement_type": "mandatory_marking",
           "requirement_id": "REQ-DOC002-4-MARK",
+          "status": "mandatory",
           "clause": "4",
           "subject": "self-ballasted LED lamp",
           "parameter": "mandatory_marking_elements",
           "operator": "mandatory",
+          "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+          "normalized": {
+            "items": [
+              "Mark of origin (trademark)",
+              "Rated voltage or voltage range (V)",
+              "Rated wattage (W)",
+              "Rated frequency (Hz)",
+              "Standard Mark (CRS Registration Number)"
+            ]
+          },
           "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
           "unit": null,
           "conditions": {
@@ -1030,7 +1059,20 @@
           "source_pages": [
             5,
             6
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-002",
+            "source_id": "SRC-002",
+            "standard": "IS 16102 (Part 2) : 2017",
+            "clause": "4",
+            "page": 5,
+            "pages": [
+              5,
+              6
+            ],
+            "section": "GENERAL REQUIREMENTS ON TESTS",
+            "original_text": "4 GENERAL REQUIREMENTS ON TESTS\nThe LED lamps for which compliance with this standard\nis claimed shall comply with the safety requirements\nspecified in IS 16102 (Part 1). Method of measurement\nof lamp characteristics is given in Annex A.\nSelf-ballasted LED lamps shall be able to start and\noperate sa"
+          }
         }
       ]
     },
@@ -1205,10 +1247,16 @@
               "entity_type": "requirement",
               "requirement_type": "sampling_quantity",
               "requirement_id": "REQ-DOC002-7.1-ITQ",
+              "status": "mandatory",
               "clause": "7.1",
               "subject": "batch / inspection lot",
               "parameter": "inspection_test_quantity",
               "operator": "==",
+              "original_value": "25 lamps",
+              "normalized": {
+                "value": 25,
+                "unit": "lamps"
+              },
               "value": 25,
               "unit": "lamps",
               "conditions": {
@@ -1226,7 +1274,19 @@
               "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
               "source_pages": [
                 6
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "7.1",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "General Test Conditions",
+                "original_text": "7.1 General Test Conditions\nTesting duration is 25 percent of rated life time up to a\nmaximum of 6 000 h.\nAdditional LED lamps within the same family (see 3.13)\nmay be subjected to decreased testing duration. For\nidentification of a family, see Table 2, for details on\nsample sizes for family testing"
+              }
             }
           ]
         },
@@ -2561,10 +2621,16 @@
               "entity_type": "requirement",
               "requirement_type": "sampling_quantity",
               "requirement_id": "REQ-DOC002-11.1-ITQ",
+              "status": "mandatory",
               "clause": "11.1",
               "subject": "batch / inspection lot",
               "parameter": "inspection_test_quantity",
               "operator": "==",
+              "original_value": "25 lamps",
+              "normalized": {
+                "value": 25,
+                "unit": "lamps"
+              },
               "value": 25,
               "unit": "lamps",
               "conditions": {
@@ -2582,7 +2648,19 @@
               "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
               "source_pages": [
                 11
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "11.1",
+                "page": 11,
+                "pages": [
+                  11
+                ],
+                "section": "General",
+                "original_text": "11.1 General\nLife of an LED lamp as defined in 3.6 is the combined\neffect of gradual light output degradation, mostly caused\nby material degradation (see 11.2) and abrupt light output\ndegradation, mostly caused by electrical component\nfailure (see 11.3). Endurance test is therefore carried out\nto as"
+              }
             }
           ]
         },
@@ -3015,8 +3093,19 @@
       "entity_id": "ENT-DOC002-0001",
       "entity_type": "standard",
       "name": "IS 16102 (Part 2) : 2017",
+      "status": "mandatory",
+      "original_value": "Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements",
       "value": "Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -3026,8 +3115,19 @@
       "entity_id": "ENT-DOC002-0002",
       "entity_type": "authority",
       "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
       "value": "National Standards Body of India",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -3037,8 +3137,19 @@
       "entity_id": "ENT-DOC002-0003",
       "entity_type": "authority",
       "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
       "value": "Statutory Order Authority",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -3048,8 +3159,19 @@
       "entity_id": "ENT-DOC002-0004",
       "entity_type": "product",
       "name": "Self-Ballasted LED Lamp",
+      "status": "mandatory",
+      "original_value": "Self-Ballasted LED Lamps for General Lighting Services",
       "value": "Self-Ballasted LED Lamps for General Lighting Services",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "1",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         1
@@ -3059,8 +3181,19 @@
       "entity_id": "ENT-DOC002-0005",
       "entity_type": "component",
       "name": "Lamp Cap",
+      "status": "mandatory",
+      "original_value": "Standard Lamp Fitment Cap",
       "value": "Standard Lamp Fitment Cap",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "6",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "6",
       "source_pages": [
         9
@@ -3070,20 +3203,48 @@
       "entity_id": "ENT-DOC002-0006",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "45\nv",
       "value": "45\nv",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "2.2",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "2.2",
       "source_pages": [
         8
       ],
+      "normalized": {
+        "value": 45,
+        "unit": "v"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC002-0007",
       "entity_type": "referenced_standard",
       "name": "IS 1885",
+      "status": "mandatory",
+      "original_value": "IS 1885",
       "value": "IS 1885",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3",
+        "page": 4,
+        "pages": [
+          4,
+          5,
+          8
+        ]
+      },
       "source_clause": "3",
       "source_pages": [
         4,
@@ -3095,8 +3256,21 @@
       "entity_id": "ENT-DOC002-0008",
       "entity_type": "referenced_standard",
       "name": "IS 16101",
+      "status": "mandatory",
+      "original_value": "IS 16101",
       "value": "IS 16101",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3",
+        "page": 4,
+        "pages": [
+          4,
+          5,
+          8
+        ]
+      },
       "source_clause": "3",
       "source_pages": [
         4,
@@ -3108,8 +3282,20 @@
       "entity_id": "ENT-DOC002-0009",
       "entity_type": "referenced_standard",
       "name": "IS 16101",
+      "status": "mandatory",
+      "original_value": "IS 16101",
       "value": "IS 16101",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.9",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
       "source_clause": "3.9",
       "source_pages": [
         4,
@@ -3120,8 +3306,20 @@
       "entity_id": "ENT-DOC002-0010",
       "entity_type": "referenced_standard",
       "name": "IS 16102",
+      "status": "mandatory",
+      "original_value": "IS 16102",
       "value": "IS 16102",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "4",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
       "source_clause": "4",
       "source_pages": [
         5,
@@ -3132,8 +3330,20 @@
       "entity_id": "ENT-DOC002-0011",
       "entity_type": "referenced_standard",
       "name": "IS 10322",
+      "status": "mandatory",
+      "original_value": "IS 10322",
       "value": "IS 10322",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "4",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
       "source_clause": "4",
       "source_pages": [
         5,
@@ -3144,21 +3354,48 @@
       "entity_id": "ENT-DOC002-0012",
       "entity_type": "value_and_unit",
       "name": "temperature",
+      "status": "mandatory",
+      "original_value": "10°C",
       "value": "10°C",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "4",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
       "source_clause": "4",
       "source_pages": [
         5,
         6
       ],
+      "normalized": {
+        "value": 10,
+        "unit": "°C"
+      },
       "unit": "°C"
     },
     {
       "entity_id": "ENT-DOC002-0013",
       "entity_type": "referenced_standard",
       "name": "IS 16102",
+      "status": "mandatory",
+      "original_value": "IS 16102",
       "value": "IS 16102",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "5.1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
       "source_clause": "5.1",
       "source_pages": [
         6
@@ -3168,81 +3405,183 @@
       "entity_id": "ENT-DOC002-0014",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "2\nv",
       "value": "2\nv",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "8.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "8.1",
       "source_pages": [
         15
       ],
+      "normalized": {
+        "value": 2,
+        "unit": "v"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC002-0015",
       "entity_type": "value_and_unit",
       "name": "wattage",
+      "status": "mandatory",
+      "original_value": "5 W",
       "value": "5 W",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "8.3.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "8.3.1",
       "source_pages": [
         8
       ],
+      "normalized": {
+        "value": 5,
+        "unit": "W"
+      },
       "unit": "W"
     },
     {
       "entity_id": "ENT-DOC002-0016",
       "entity_type": "value_and_unit",
       "name": "wattage",
+      "status": "mandatory",
+      "original_value": "5 W",
       "value": "5 W",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "8.3.2",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "8.3.2",
       "source_pages": [
         8
       ],
+      "normalized": {
+        "value": 5,
+        "unit": "W"
+      },
       "unit": "W"
     },
     {
       "entity_id": "ENT-DOC002-0017",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "0\nv",
       "value": "0\nv",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "8.4",
+        "page": 8,
+        "pages": [
+          8,
+          14
+        ]
+      },
       "source_clause": "8.4",
       "source_pages": [
         8,
         14
       ],
+      "normalized": {
+        "value": 0,
+        "unit": "v"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC002-0018",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "46\nv",
       "value": "46\nv",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "0.5",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "0.5",
       "source_pages": [
         8
       ],
+      "normalized": {
+        "value": 46,
+        "unit": "v"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC002-0019",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "0.40\nv",
       "value": "0.40\nv",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "0.40",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "0.40",
       "source_pages": [
         8
       ],
+      "normalized": {
+        "value": 0.4,
+        "unit": "v"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC002-0020",
       "entity_type": "referenced_standard",
       "name": "IS 16102",
+      "status": "mandatory",
+      "original_value": "IS 16102",
       "value": "IS 16102",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "13.2",
+        "page": 13,
+        "pages": [
+          13
+        ]
+      },
       "source_clause": "13.2",
       "source_pages": [
         13
@@ -3252,8 +3591,21 @@
       "entity_id": "ENT-DOC002-0021",
       "entity_type": "annex",
       "name": "ANNEX A",
+      "status": "mandatory",
+      "original_value": "ANNEX A",
       "value": "ANNEX A",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "ANNEX A",
+        "page": 15,
+        "pages": [
+          15,
+          16,
+          17
+        ]
+      },
       "source_clause": "ANNEX A",
       "source_pages": [
         15,
@@ -3265,8 +3617,20 @@
       "entity_id": "ENT-DOC002-0022",
       "entity_type": "annex",
       "name": "ANNEX B",
+      "status": "mandatory",
+      "original_value": "ANNEX B",
       "value": "ANNEX B",
-      "document_id": "DOC-002",
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "ANNEX B",
+        "page": 17,
+        "pages": [
+          17,
+          19
+        ]
+      },
       "source_clause": "ANNEX B",
       "source_pages": [
         17,
@@ -4869,10 +5233,16 @@
       "entity_type": "requirement",
       "requirement_type": "sampling_quantity",
       "requirement_id": "REQ-DOC002-3.25-ITQ",
+      "status": "mandatory",
       "clause": "3.25",
       "subject": "batch / inspection lot",
       "parameter": "inspection_test_quantity",
       "operator": "==",
+      "original_value": "25 lamps",
+      "normalized": {
+        "value": 25,
+        "unit": "lamps"
+      },
       "value": 25,
       "unit": "lamps",
       "conditions": {
@@ -4890,16 +5260,39 @@
       "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
       "source_pages": [
         5
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.25",
+        "page": 5,
+        "pages": [
+          5
+        ],
+        "section": "Acceptance Test",
+        "original_text": "3.25 Acceptance Test\nTests carried out on samples taken from a lot for the\nacceptance of the lot."
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "mandatory_marking",
       "requirement_id": "REQ-DOC002-4-MARK",
+      "status": "mandatory",
       "clause": "4",
       "subject": "self-ballasted LED lamp",
       "parameter": "mandatory_marking_elements",
       "operator": "mandatory",
+      "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+      "normalized": {
+        "items": [
+          "Mark of origin (trademark)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration Number)"
+        ]
+      },
       "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
       "unit": null,
       "conditions": {
@@ -4923,16 +5316,35 @@
       "source_pages": [
         5,
         6
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "4",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ],
+        "section": "GENERAL REQUIREMENTS ON TESTS",
+        "original_text": "4 GENERAL REQUIREMENTS ON TESTS\nThe LED lamps for which compliance with this standard\nis claimed shall comply with the safety requirements\nspecified in IS 16102 (Part 1). Method of measurement\nof lamp characteristics is given in Annex A.\nSelf-ballasted LED lamps shall be able to start and\noperate sa"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "sampling_quantity",
       "requirement_id": "REQ-DOC002-7.1-ITQ",
+      "status": "mandatory",
       "clause": "7.1",
       "subject": "batch / inspection lot",
       "parameter": "inspection_test_quantity",
       "operator": "==",
+      "original_value": "25 lamps",
+      "normalized": {
+        "value": 25,
+        "unit": "lamps"
+      },
       "value": 25,
       "unit": "lamps",
       "conditions": {
@@ -4950,16 +5362,34 @@
       "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
       "source_pages": [
         6
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "7.1",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "General Test Conditions",
+        "original_text": "7.1 General Test Conditions\nTesting duration is 25 percent of rated life time up to a\nmaximum of 6 000 h.\nAdditional LED lamps within the same family (see 3.13)\nmay be subjected to decreased testing duration. For\nidentification of a family, see Table 2, for details on\nsample sizes for family testing"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "sampling_quantity",
       "requirement_id": "REQ-DOC002-11.1-ITQ",
+      "status": "mandatory",
       "clause": "11.1",
       "subject": "batch / inspection lot",
       "parameter": "inspection_test_quantity",
       "operator": "==",
+      "original_value": "25 lamps",
+      "normalized": {
+        "value": 25,
+        "unit": "lamps"
+      },
       "value": 25,
       "unit": "lamps",
       "conditions": {
@@ -4977,7 +5407,19 @@
       "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
       "source_pages": [
         11
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "11.1",
+        "page": 11,
+        "pages": [
+          11
+        ],
+        "section": "General",
+        "original_text": "11.1 General\nLife of an LED lamp as defined in 3.6 is the combined\neffect of gradual light output degradation, mostly caused\nby material degradation (see 11.2) and abrupt light output\ndegradation, mostly caused by electrical component\nfailure (see 11.3). Endurance test is therefore carried out\nto as"
+      }
     }
   ],
   "cross_references": [
@@ -5154,7 +5596,7 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:21:58.211636+00:00",
+    "normalized_at": "2026-08-30T15:25:15.675596+00:00",
     "total_entities": 22,
     "total_requirements": 4,
     "total_relationships": 140,

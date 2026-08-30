@@ -264,10 +264,16 @@
           "entity_type": "requirement",
           "requirement_type": "maximum_limit",
           "requirement_id": "REQ-DOC001-1-WATT",
+          "status": "mandatory",
           "clause": "1",
           "subject": "self-ballasted LED lamp",
           "parameter": "rated_wattage",
           "operator": "<=",
+          "original_value": "60 W",
+          "normalized": {
+            "value": 60.0,
+            "unit": "W"
+          },
           "value": 60.0,
           "unit": "W",
           "conditions": {
@@ -288,7 +294,21 @@
             6,
             11,
             12
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-001",
+            "source_id": "SRC-001",
+            "standard": "IS 16102 (Part 1) : 2012",
+            "clause": "1",
+            "page": 6,
+            "pages": [
+              6,
+              11,
+              12
+            ],
+            "section": "SCOPE",
+            "original_text": "1 SCOPE\nThis standard (Part 1) specifies the safety and\ninterchangeability requirements, together with the test\nmethods and conditions, required to show compliance\nof LED lamps with integrated means for stable\noperation (self-ballasted LED lamps), intended for\ndomestic and similar general lighting p"
+          }
         }
       ]
     },
@@ -313,14 +333,27 @@
           "entity_type": "requirement",
           "requirement_type": "maximum_limit",
           "requirement_id": "REQ-DOC001-2-TEMP",
+          "status": "mandatory",
           "clause": "2",
           "subject": "complete lamp",
           "parameter": "cap_temperature_rise",
           "operator": "<=",
+          "original_value": "120 K",
+          "normalized": {
+            "value": 120,
+            "unit": "K"
+          },
           "value": 120.0,
           "unit": "K",
           "conditions": {
-            "ambient_temperature": "25 ± 5 °C",
+            "ambient_temperature": {
+              "original_value": "(25 ± 5)°C",
+              "normalized": {
+                "nominal": 25,
+                "tolerance": 5,
+                "unit": "°C"
+              }
+            },
             "operating_voltage": "rated voltage",
             "test_method": "IS 8913"
           },
@@ -337,16 +370,40 @@
           "evidence": "The cap temperature rise of the complete lamp shall not exceed 120 K.",
           "source_pages": [
             6
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-001",
+            "source_id": "SRC-001",
+            "standard": "IS 16102 (Part 1) : 2012",
+            "clause": "2",
+            "page": 6,
+            "pages": [
+              6
+            ],
+            "section": "REFERENCES",
+            "original_text": "2 REFERENCES\nThe standards listed below contain provisions which,\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encourag"
+          }
         },
         {
           "entity_type": "requirement",
           "requirement_type": "minimum_limit",
           "requirement_id": "REQ-DOC001-2-GLOW",
+          "status": "mandatory",
           "clause": "2",
           "subject": "insulating material",
           "parameter": "glow_wire_temperature",
           "operator": ">=",
+          "original_value": "650°C / 750°C",
+          "normalized": {
+            "live_parts_holding": {
+              "value": 750,
+              "unit": "°C"
+            },
+            "non_live_parts": {
+              "value": 650,
+              "unit": "°C"
+            }
+          },
           "value": 650.0,
           "unit": "°C",
           "conditions": {
@@ -367,7 +424,19 @@
           "evidence": "Glow-wire test at 650°C / 750°C according to IS 11000 (Part 2/Sec 1).",
           "source_pages": [
             6
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-001",
+            "source_id": "SRC-001",
+            "standard": "IS 16102 (Part 1) : 2012",
+            "clause": "2",
+            "page": 6,
+            "pages": [
+              6
+            ],
+            "section": "REFERENCES",
+            "original_text": "2 REFERENCES\nThe standards listed below contain provisions which,\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encourag"
+          }
         }
       ]
     },
@@ -594,19 +663,25 @@
               "entity_type": "requirement",
               "requirement_type": "dielectric_test",
               "requirement_id": "REQ-DOC001-3.11-ES",
+              "status": "mandatory",
               "clause": "3.11",
               "subject": "self-ballasted LED lamp",
               "parameter": "dielectric_electric_strength",
               "operator": "==",
+              "original_value": "4 000 V a.c.",
+              "normalized": {
+                "value": 4000,
+                "unit": "V a.c."
+              },
               "value": 4000,
               "unit": "V a.c.",
               "conditions": {
                 "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
-                "test_voltage": "4000 V a.c. (r.m.s.)",
+                "test_voltage": "4 000 V a.c. (r.m.s.)",
                 "frequency": "50 Hz",
-                "duration": "1 minute"
+                "duration": "1 minute (60 s)"
               },
               "acceptance_criterion": {
                 "minimum": 4000,
@@ -617,7 +692,19 @@
               "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 7
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.11",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "Inspection Test Quantity (ITQ) — The number",
+                "original_text": "3.11 Inspection Test Quantity (ITQ) — The number\nof lamps selected for the purpose of determining the\nacceptability of a batch as to marking,\ninterchangeability, protection against electric shock,\ninsulation resistance, electric strength, mechanical\nstrength, cap temperature rise, resistance to heat"
+              }
             }
           ]
         },
@@ -812,10 +899,21 @@
               "entity_type": "requirement",
               "requirement_type": "mandatory_marking",
               "requirement_id": "REQ-DOC001-5.1-MARK",
+              "status": "mandatory",
               "clause": "5.1",
               "subject": "self-ballasted LED lamp",
               "parameter": "mandatory_marking_elements",
               "operator": "mandatory",
+              "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+              "normalized": {
+                "items": [
+                  "Mark of origin (trademark)",
+                  "Rated voltage or voltage range (V)",
+                  "Rated wattage (W)",
+                  "Rated frequency (Hz)",
+                  "Standard Mark (CRS Registration Number)"
+                ]
+              },
               "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
               "unit": null,
               "conditions": {
@@ -838,7 +936,19 @@
               "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
               "source_pages": [
                 7
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "5.1",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "Lamps shall be clearly and durably marked with",
+                "original_text": "5.1 Lamps shall be clearly and durably marked with\nthe following mandatory markings:\na)\nMark of origin (this may take the form of a\ntrade-mark, the manufacturer’s name or the\nname of the responsible vendor);\nb)\nRated voltage or voltage range (marked ‘V’\nor ‘Volt’);\nc)\nRated wattage (marked ‘W’ or ‘W"
+              }
             }
           ]
         },
@@ -1080,19 +1190,25 @@
           "entity_type": "requirement",
           "requirement_type": "dielectric_test",
           "requirement_id": "REQ-DOC001-7-ES",
+          "status": "mandatory",
           "clause": "7",
           "subject": "self-ballasted LED lamp",
           "parameter": "dielectric_electric_strength",
           "operator": "==",
+          "original_value": "4 000 V a.c.",
+          "normalized": {
+            "value": 4000,
+            "unit": "V a.c."
+          },
           "value": 4000,
           "unit": "V a.c.",
           "conditions": {
             "humidity_treatment": "immediately following 48 h humidity treatment"
           },
           "test": {
-            "test_voltage": "4000 V a.c. (r.m.s.)",
+            "test_voltage": "4 000 V a.c. (r.m.s.)",
             "frequency": "50 Hz",
-            "duration": "1 minute"
+            "duration": "1 minute (60 s)"
           },
           "acceptance_criterion": {
             "minimum": 4000,
@@ -1104,7 +1220,20 @@
           "source_pages": [
             9,
             11
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-001",
+            "source_id": "SRC-001",
+            "standard": "IS 16102 (Part 1) : 2012",
+            "clause": "7",
+            "page": 9,
+            "pages": [
+              9,
+              11
+            ],
+            "section": "PROTECTION AGAINST ACCIDENTAL",
+            "original_text": "7 PROTECTION AGAINST ACCIDENTAL\nCONTACT WITH LIVE PARTS\nThe lamps shall be so constructed that, without any\nadditional enclosure in the form of a luminaire, no\ninternal metal parts, basic insulated external metal parts\nor live metal parts of the lamp cap or of the lamp itself\nare accessible when the"
+          }
         }
       ]
     },
@@ -1154,20 +1283,54 @@
                   "entity_type": "requirement",
                   "requirement_type": "minimum_limit",
                   "requirement_id": "REQ-DOC001-8.1.1-IR",
+                  "status": "mandatory",
                   "clause": "8.1.1",
                   "subject": "self-ballasted LED lamp",
                   "parameter": "insulation_resistance",
                   "operator": ">=",
+                  "original_value": "4 MΩ",
+                  "normalized": {
+                    "value": 4.0,
+                    "unit": "MΩ"
+                  },
                   "value": 4.0,
                   "unit": "MΩ",
                   "conditions": {
-                    "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
-                    "temperature": "25-35 °C",
-                    "duration": "48 h"
+                    "humidity_treatment": {
+                      "original_value": "48 h at (91-95)% RH",
+                      "normalized": {
+                        "duration": {
+                          "value": 48,
+                          "unit": "h"
+                        },
+                        "humidity": {
+                          "min": 91,
+                          "max": 95,
+                          "unit": "%"
+                        },
+                        "temperature": {
+                          "min": 25,
+                          "max": 35,
+                          "unit": "°C"
+                        }
+                      }
+                    }
                   },
                   "test": {
-                    "applied_voltage": "approximately 500 V d.c.",
-                    "measurement_time": "1 min after voltage application",
+                    "applied_voltage": {
+                      "original_value": "approximately 500 V d.c.",
+                      "normalized": {
+                        "value": 500,
+                        "unit": "V d.c."
+                      }
+                    },
+                    "measurement_time": {
+                      "original_value": "1 min after application",
+                      "normalized": {
+                        "value": 60,
+                        "unit": "s"
+                      }
+                    },
                     "test_points": "between live parts and accessible conductive parts"
                   },
                   "acceptance_criterion": {
@@ -1179,7 +1342,19 @@
                   "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
                   "source_pages": [
                     9
-                  ]
+                  ],
+                  "provenance": {
+                    "document_id": "DOC-001",
+                    "source_id": "SRC-001",
+                    "standard": "IS 16102 (Part 1) : 2012",
+                    "clause": "8.1.1",
+                    "page": 9,
+                    "pages": [
+                      9
+                    ],
+                    "section": "Insulation Resistance",
+                    "original_text": "8.1.1 Insulation Resistance\nThe lamp shall be conditioned for 48 h in a cabinet\ncontaining air with a relative humidity between 91\npercent and 95 percent. The temperature of the air is\nmaintained within 1°C of any convenient value\nbetween 25°C and 35°C.\nInsulation resistance shall be measured in the"
+                  }
                 }
               ]
             }
@@ -1193,19 +1368,25 @@
               "entity_type": "requirement",
               "requirement_type": "dielectric_test",
               "requirement_id": "REQ-DOC001-8.1-ES",
+              "status": "mandatory",
               "clause": "8.1",
               "subject": "self-ballasted LED lamp",
               "parameter": "dielectric_electric_strength",
               "operator": "==",
+              "original_value": "4 000 V a.c.",
+              "normalized": {
+                "value": 4000,
+                "unit": "V a.c."
+              },
               "value": 4000,
               "unit": "V a.c.",
               "conditions": {
                 "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
-                "test_voltage": "4000 V a.c. (r.m.s.)",
+                "test_voltage": "4 000 V a.c. (r.m.s.)",
                 "frequency": "50 Hz",
-                "duration": "1 minute"
+                "duration": "1 minute (60 s)"
               },
               "acceptance_criterion": {
                 "minimum": 4000,
@@ -1216,7 +1397,19 @@
               "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 9
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "8.1",
+                "page": 9,
+                "pages": [
+                  9
+                ],
+                "section": "Insulation resistance and electric strength shall be",
+                "original_text": "8.1 Insulation resistance and electric strength shall be\nadequate between live parts of the lamp and accessible\nparts of the lamp."
+              }
             }
           ]
         },
@@ -1242,19 +1435,25 @@
               "entity_type": "requirement",
               "requirement_type": "dielectric_test",
               "requirement_id": "REQ-DOC001-8.2-ES",
+              "status": "mandatory",
               "clause": "8.2",
               "subject": "self-ballasted LED lamp",
               "parameter": "dielectric_electric_strength",
               "operator": "==",
+              "original_value": "4 000 V a.c.",
+              "normalized": {
+                "value": 4000,
+                "unit": "V a.c."
+              },
               "value": 4000,
               "unit": "V a.c.",
               "conditions": {
                 "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
-                "test_voltage": "4000 V a.c. (r.m.s.)",
+                "test_voltage": "4 000 V a.c. (r.m.s.)",
                 "frequency": "50 Hz",
-                "duration": "1 minute"
+                "duration": "1 minute (60 s)"
               },
               "acceptance_criterion": {
                 "minimum": 4000,
@@ -1265,7 +1464,19 @@
               "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 9
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "8.2",
+                "page": 9,
+                "pages": [
+                  9
+                ],
+                "section": "Electric Strength",
+                "original_text": "8.2 Electric Strength\nImmediately after the insulation resistance test, the\nsame parts as specified above shall withstand a voltage\ntest for 1 min with an a.c. voltage as follows.\nDuring the test, the supply contacts of the cap are short-\ncircuited. Accessible parts of insulating material of the\ncap"
+              }
             }
           ]
         },
@@ -1777,14 +1988,27 @@
           "entity_type": "requirement",
           "requirement_type": "maximum_limit",
           "requirement_id": "REQ-DOC001-10-TEMP",
+          "status": "mandatory",
           "clause": "10",
           "subject": "complete lamp",
           "parameter": "cap_temperature_rise",
           "operator": "<=",
+          "original_value": "120 K",
+          "normalized": {
+            "value": 120,
+            "unit": "K"
+          },
           "value": 120.0,
           "unit": "K",
           "conditions": {
-            "ambient_temperature": "25 ± 5 °C",
+            "ambient_temperature": {
+              "original_value": "(25 ± 5)°C",
+              "normalized": {
+                "nominal": 25,
+                "tolerance": 5,
+                "unit": "°C"
+              }
+            },
             "operating_voltage": "rated voltage",
             "test_method": "IS 8913"
           },
@@ -1802,7 +2026,20 @@
           "source_pages": [
             11,
             12
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-001",
+            "source_id": "SRC-001",
+            "standard": "IS 16102 (Part 1) : 2012",
+            "clause": "10",
+            "page": 11,
+            "pages": [
+              11,
+              12
+            ],
+            "section": "CAP TEMPERATURE RISE",
+            "original_text": "10 CAP TEMPERATURE RISE\nThe surface temperature rise (above ambient) of a\nlampholder fitted to the lamp shall not be higher than\nthat of the lamp type which is being replaced by the\nlamp.\nThe cap temperature rise A ts of the complete lamp\nshall not exceed 120 K. The value of A ts corresponds\nto an i"
+          }
         }
       ]
     },
@@ -1880,7 +2117,54 @@
         "acceptance_criterion",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [
+        {
+          "entity_type": "requirement",
+          "requirement_type": "pending_limit",
+          "requirement_id": "REQ-DOC001-11-80C-PENDING",
+          "status": "under_consideration",
+          "clause": "11",
+          "subject": "insulating material parts not retaining live parts",
+          "parameter": "ball_pressure_temperature",
+          "operator": ">=",
+          "original_value": "80°C (value 80°C under consideration)",
+          "normalized": {
+            "value": 80,
+            "unit": "°C"
+          },
+          "value": 80.0,
+          "unit": "°C",
+          "conditions": {
+            "ambient_treatment": "parts not retaining live parts in position"
+          },
+          "acceptance_criterion": {
+            "provisional_minimum": 80.0,
+            "unit": "°C",
+            "criterion_text": "Provisional 80°C under active technical consideration"
+          },
+          "exceptions": "Value 80°C is actively under consideration and not finalized as mandatory",
+          "evidence": "80°C (value 80°C under consideration) for other parts.",
+          "source_pages": [
+            11,
+            12,
+            13
+          ],
+          "provenance": {
+            "document_id": "DOC-001",
+            "source_id": "SRC-001",
+            "standard": "IS 16102 (Part 1) : 2012",
+            "clause": "11",
+            "page": 11,
+            "pages": [
+              11,
+              12,
+              13
+            ],
+            "section": "RESISTANCE TO HEAT",
+            "original_text": "11 RESISTANCE TO HEAT\nThe lamp shall be sufficiently resistant to heat. External\nparts of insulating material providing protection against\nelectric shock, and parts of insulating material retaining\nlive parts in position shall be sufficiently resistant to\nheat.\nCompliance is checked by subjecting th"
+          }
+        }
+      ]
     },
     {
       "clause_number": "12",
@@ -2009,10 +2293,22 @@
               "entity_type": "requirement",
               "requirement_type": "minimum_limit",
               "requirement_id": "REQ-DOC001-12.1-GLOW",
+              "status": "mandatory",
               "clause": "12.1",
               "subject": "insulating material",
               "parameter": "glow_wire_temperature",
               "operator": ">=",
+              "original_value": "650°C / 750°C",
+              "normalized": {
+                "live_parts_holding": {
+                  "value": 750,
+                  "unit": "°C"
+                },
+                "non_live_parts": {
+                  "value": 650,
+                  "unit": "°C"
+                }
+              },
               "value": 650.0,
               "unit": "°C",
               "conditions": {
@@ -2034,7 +2330,20 @@
               "source_pages": [
                 13,
                 14
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "12.1",
+                "page": 13,
+                "pages": [
+                  13,
+                  14
+                ],
+                "section": "Parts of insulating material retaining live parts in",
+                "original_text": "12.1 Parts of insulating material retaining live parts in\nposition and external parts of insulating material\nproviding protection against electric shock are\nsubjected to the glow-wire test in accordance with\nIS 11000 (Part 2/Sec 1), subject to the following details:\na)\nThe test specimen is a complet"
+              }
             }
           ]
         }
@@ -2340,10 +2649,16 @@
               "entity_type": "requirement",
               "requirement_type": "sampling_quantity",
               "requirement_id": "REQ-DOC001-15.1-ITQ",
+              "status": "mandatory",
               "clause": "15.1",
               "subject": "batch / inspection lot",
               "parameter": "inspection_test_quantity",
               "operator": "==",
+              "original_value": "25 lamps",
+              "normalized": {
+                "value": 25,
+                "unit": "lamps"
+              },
               "value": 25,
               "unit": "lamps",
               "conditions": {
@@ -2361,7 +2676,19 @@
               "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
               "source_pages": [
                 14
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "15.1",
+                "page": 14,
+                "pages": [
+                  14
+                ],
+                "section": "Method of Selection",
+                "original_text": "15.1 Method of Selection\nThe inspection test quantities (ITQ) shall be selected\nin a mutually agreed manner such as to ensure proper\nrepresentation of the batch. The selection of lamps for\nindividual batches should be made as follows:\na)\nUp to and Including 20 Containers per Batch\n— Out of every con"
+              }
             }
           ]
         },
@@ -2389,10 +2716,16 @@
               "entity_type": "requirement",
               "requirement_type": "sampling_quantity",
               "requirement_id": "REQ-DOC001-15.2-ITQ",
+              "status": "mandatory",
               "clause": "15.2",
               "subject": "batch / inspection lot",
               "parameter": "inspection_test_quantity",
               "operator": "==",
+              "original_value": "25 lamps",
+              "normalized": {
+                "value": 25,
+                "unit": "lamps"
+              },
               "value": 25,
               "unit": "lamps",
               "conditions": {
@@ -2411,7 +2744,20 @@
               "source_pages": [
                 14,
                 15
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "15.2",
+                "page": 14,
+                "pages": [
+                  14,
+                  15
+                ],
+                "section": "Inspection Test Quantity (ITQ)",
+                "original_text": "15.2 Inspection Test Quantity (ITQ)\nInspection test quantity shall consist of 25 lamps.\nIS 16102 (Part 1) : 2012"
+              }
             }
           ]
         },
@@ -2545,20 +2891,54 @@
                   "entity_type": "requirement",
                   "requirement_type": "minimum_limit",
                   "requirement_id": "REQ-DOC001-16.2.1-IR",
+                  "status": "mandatory",
                   "clause": "16.2.1",
                   "subject": "self-ballasted LED lamp",
                   "parameter": "insulation_resistance",
                   "operator": ">=",
+                  "original_value": "4 MΩ",
+                  "normalized": {
+                    "value": 4.0,
+                    "unit": "MΩ"
+                  },
                   "value": 4.0,
                   "unit": "MΩ",
                   "conditions": {
-                    "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
-                    "temperature": "25-35 °C",
-                    "duration": "48 h"
+                    "humidity_treatment": {
+                      "original_value": "48 h at (91-95)% RH",
+                      "normalized": {
+                        "duration": {
+                          "value": 48,
+                          "unit": "h"
+                        },
+                        "humidity": {
+                          "min": 91,
+                          "max": 95,
+                          "unit": "%"
+                        },
+                        "temperature": {
+                          "min": 25,
+                          "max": 35,
+                          "unit": "°C"
+                        }
+                      }
+                    }
                   },
                   "test": {
-                    "applied_voltage": "approximately 500 V d.c.",
-                    "measurement_time": "1 min after voltage application",
+                    "applied_voltage": {
+                      "original_value": "approximately 500 V d.c.",
+                      "normalized": {
+                        "value": 500,
+                        "unit": "V d.c."
+                      }
+                    },
+                    "measurement_time": {
+                      "original_value": "1 min after application",
+                      "normalized": {
+                        "value": 60,
+                        "unit": "s"
+                      }
+                    },
                     "test_points": "between live parts and accessible conductive parts"
                   },
                   "acceptance_criterion": {
@@ -2570,25 +2950,43 @@
                   "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
                   "source_pages": [
                     15
-                  ]
+                  ],
+                  "provenance": {
+                    "document_id": "DOC-001",
+                    "source_id": "SRC-001",
+                    "standard": "IS 16102 (Part 1) : 2012",
+                    "clause": "16.2.1",
+                    "page": 15,
+                    "pages": [
+                      15
+                    ],
+                    "section": "Following shall constitute inspection tests:",
+                    "original_text": "16.2.1 Following shall constitute inspection tests:\na)\nMarking;\nb)\nInterchangeability;\nc)\nProtection against electric shock;\nd)\nInsulation resistance and electric strength after\nhumidity treatment; and\ne)\nMechanical strength.\nA batch shall be considered to comply, if the number\nof lamps failing does"
+                  }
                 },
                 {
                   "entity_type": "requirement",
                   "requirement_type": "dielectric_test",
                   "requirement_id": "REQ-DOC001-16.2.1-ES",
+                  "status": "mandatory",
                   "clause": "16.2.1",
                   "subject": "self-ballasted LED lamp",
                   "parameter": "dielectric_electric_strength",
                   "operator": "==",
+                  "original_value": "4 000 V a.c.",
+                  "normalized": {
+                    "value": 4000,
+                    "unit": "V a.c."
+                  },
                   "value": 4000,
                   "unit": "V a.c.",
                   "conditions": {
                     "humidity_treatment": "immediately following 48 h humidity treatment"
                   },
                   "test": {
-                    "test_voltage": "4000 V a.c. (r.m.s.)",
+                    "test_voltage": "4 000 V a.c. (r.m.s.)",
                     "frequency": "50 Hz",
-                    "duration": "1 minute"
+                    "duration": "1 minute (60 s)"
                   },
                   "acceptance_criterion": {
                     "minimum": 4000,
@@ -2599,7 +2997,19 @@
                   "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
                   "source_pages": [
                     15
-                  ]
+                  ],
+                  "provenance": {
+                    "document_id": "DOC-001",
+                    "source_id": "SRC-001",
+                    "standard": "IS 16102 (Part 1) : 2012",
+                    "clause": "16.2.1",
+                    "page": 15,
+                    "pages": [
+                      15
+                    ],
+                    "section": "Following shall constitute inspection tests:",
+                    "original_text": "16.2.1 Following shall constitute inspection tests:\na)\nMarking;\nb)\nInterchangeability;\nc)\nProtection against electric shock;\nd)\nInsulation resistance and electric strength after\nhumidity treatment; and\ne)\nMechanical strength.\nA batch shall be considered to comply, if the number\nof lamps failing does"
+                  }
                 }
               ]
             }
@@ -2663,20 +3073,54 @@
                   "entity_type": "requirement",
                   "requirement_type": "minimum_limit",
                   "requirement_id": "REQ-DOC001-17.1.1-IR",
+                  "status": "mandatory",
                   "clause": "17.1.1",
                   "subject": "self-ballasted LED lamp",
                   "parameter": "insulation_resistance",
                   "operator": ">=",
+                  "original_value": "4 MΩ",
+                  "normalized": {
+                    "value": 4.0,
+                    "unit": "MΩ"
+                  },
                   "value": 4.0,
                   "unit": "MΩ",
                   "conditions": {
-                    "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
-                    "temperature": "25-35 °C",
-                    "duration": "48 h"
+                    "humidity_treatment": {
+                      "original_value": "48 h at (91-95)% RH",
+                      "normalized": {
+                        "duration": {
+                          "value": 48,
+                          "unit": "h"
+                        },
+                        "humidity": {
+                          "min": 91,
+                          "max": 95,
+                          "unit": "%"
+                        },
+                        "temperature": {
+                          "min": 25,
+                          "max": 35,
+                          "unit": "°C"
+                        }
+                      }
+                    }
                   },
                   "test": {
-                    "applied_voltage": "approximately 500 V d.c.",
-                    "measurement_time": "1 min after voltage application",
+                    "applied_voltage": {
+                      "original_value": "approximately 500 V d.c.",
+                      "normalized": {
+                        "value": 500,
+                        "unit": "V d.c."
+                      }
+                    },
+                    "measurement_time": {
+                      "original_value": "1 min after application",
+                      "normalized": {
+                        "value": 60,
+                        "unit": "s"
+                      }
+                    },
                     "test_points": "between live parts and accessible conductive parts"
                   },
                   "acceptance_criterion": {
@@ -2688,25 +3132,43 @@
                   "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
                   "source_pages": [
                     15
-                  ]
+                  ],
+                  "provenance": {
+                    "document_id": "DOC-001",
+                    "source_id": "SRC-001",
+                    "standard": "IS 16102 (Part 1) : 2012",
+                    "clause": "17.1.1",
+                    "page": 15,
+                    "pages": [
+                      15
+                    ],
+                    "section": "Type Tests",
+                    "original_text": "17.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of self-ballasted lamps,\nsample being drawn preferably from regular production\nlot. The tests are carried out in order of the clauses:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection"
+                  }
                 },
                 {
                   "entity_type": "requirement",
                   "requirement_type": "dielectric_test",
                   "requirement_id": "REQ-DOC001-17.1.1-ES",
+                  "status": "mandatory",
                   "clause": "17.1.1",
                   "subject": "self-ballasted LED lamp",
                   "parameter": "dielectric_electric_strength",
                   "operator": "==",
+                  "original_value": "4 000 V a.c.",
+                  "normalized": {
+                    "value": 4000,
+                    "unit": "V a.c."
+                  },
                   "value": 4000,
                   "unit": "V a.c.",
                   "conditions": {
                     "humidity_treatment": "immediately following 48 h humidity treatment"
                   },
                   "test": {
-                    "test_voltage": "4000 V a.c. (r.m.s.)",
+                    "test_voltage": "4 000 V a.c. (r.m.s.)",
                     "frequency": "50 Hz",
-                    "duration": "1 minute"
+                    "duration": "1 minute (60 s)"
                   },
                   "acceptance_criterion": {
                     "minimum": 4000,
@@ -2717,7 +3179,19 @@
                   "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
                   "source_pages": [
                     15
-                  ]
+                  ],
+                  "provenance": {
+                    "document_id": "DOC-001",
+                    "source_id": "SRC-001",
+                    "standard": "IS 16102 (Part 1) : 2012",
+                    "clause": "17.1.1",
+                    "page": 15,
+                    "pages": [
+                      15
+                    ],
+                    "section": "Type Tests",
+                    "original_text": "17.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of self-ballasted lamps,\nsample being drawn preferably from regular production\nlot. The tests are carried out in order of the clauses:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection"
+                  }
                 }
               ]
             },
@@ -2831,19 +3305,25 @@
               "entity_type": "requirement",
               "requirement_type": "dielectric_test",
               "requirement_id": "REQ-DOC001-17.2-ES",
+              "status": "mandatory",
               "clause": "17.2",
               "subject": "self-ballasted LED lamp",
               "parameter": "dielectric_electric_strength",
               "operator": "==",
+              "original_value": "4 000 V a.c.",
+              "normalized": {
+                "value": 4000,
+                "unit": "V a.c."
+              },
               "value": 4000,
               "unit": "V a.c.",
               "conditions": {
                 "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
-                "test_voltage": "4000 V a.c. (r.m.s.)",
+                "test_voltage": "4 000 V a.c. (r.m.s.)",
                 "frequency": "50 Hz",
-                "duration": "1 minute"
+                "duration": "1 minute (60 s)"
               },
               "acceptance_criterion": {
                 "minimum": 4000,
@@ -2855,7 +3335,20 @@
               "source_pages": [
                 15,
                 16
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "17.2",
+                "page": 15,
+                "pages": [
+                  15,
+                  16
+                ],
+                "section": "Acceptance Test",
+                "original_text": "17.2 Acceptance Test\nThe following shall constitute as acceptance tests:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection against electric shock (see 7);\nd)\nInsulation resistance and electric strength after\nhumidity treatment (see 8);\ne)\nMechanical strength (see 9); and\nf)\nCap temper"
+              }
             }
           ]
         }
@@ -2872,8 +3365,19 @@
       "entity_id": "ENT-DOC001-0001",
       "entity_type": "standard",
       "name": "IS 16102 (Part 1) : 2012",
+      "status": "mandatory",
+      "original_value": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
       "value": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -2883,8 +3387,19 @@
       "entity_id": "ENT-DOC001-0002",
       "entity_type": "authority",
       "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
       "value": "National Standards Body of India",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -2894,8 +3409,19 @@
       "entity_id": "ENT-DOC001-0003",
       "entity_type": "authority",
       "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
       "value": "Statutory Order Authority",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -2905,8 +3431,19 @@
       "entity_id": "ENT-DOC001-0004",
       "entity_type": "product",
       "name": "Self-Ballasted LED Lamp",
+      "status": "mandatory",
+      "original_value": "Self-Ballasted LED Lamps for General Lighting Services",
       "value": "Self-Ballasted LED Lamps for General Lighting Services",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "1",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         1
@@ -2916,8 +3453,19 @@
       "entity_id": "ENT-DOC001-0005",
       "entity_type": "component",
       "name": "Lamp Cap",
+      "status": "mandatory",
+      "original_value": "Standard Lamp Fitment Cap",
       "value": "Standard Lamp Fitment Cap",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "6",
       "source_pages": [
         9
@@ -2927,8 +3475,21 @@
       "entity_id": "ENT-DOC001-0006",
       "entity_type": "referenced_standard",
       "name": "IS 16103 (Part 1) : 2012",
+      "status": "mandatory",
+      "original_value": "IS 16103 (Part 1) : 2012",
       "value": "IS 16103 (Part 1) : 2012",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6,
+          11,
+          12
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         6,
@@ -2940,36 +3501,81 @@
       "entity_id": "ENT-DOC001-0007",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "250 V",
       "value": "250 V",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6,
+          11,
+          12
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         6,
         11,
         12
       ],
+      "normalized": {
+        "value": 250,
+        "unit": "V"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC001-0008",
       "entity_type": "value_and_unit",
       "name": "wattage",
+      "status": "mandatory",
+      "original_value": "60 W",
       "value": "60 W",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6,
+          11,
+          12
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         6,
         11,
         12
       ],
+      "normalized": {
+        "value": 60,
+        "unit": "W"
+      },
       "unit": "W"
     },
     {
       "entity_id": "ENT-DOC001-0009",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "1.5",
+        "page": 12,
+        "pages": [
+          12
+        ]
+      },
       "source_clause": "1.5",
       "source_pages": [
         12
@@ -2979,8 +3585,19 @@
       "entity_id": "ENT-DOC001-0010",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "2",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
       "source_clause": "2",
       "source_pages": [
         6
@@ -2990,8 +3607,21 @@
       "entity_id": "ENT-DOC001-0011",
       "entity_type": "referenced_standard",
       "name": "IS 16103",
+      "status": "mandatory",
+      "original_value": "IS 16103",
       "value": "IS 16103",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3",
+        "page": 6,
+        "pages": [
+          6,
+          7,
+          12
+        ]
+      },
       "source_clause": "3",
       "source_pages": [
         6,
@@ -3003,8 +3633,21 @@
       "entity_id": "ENT-DOC001-0012",
       "entity_type": "referenced_standard",
       "name": "IS 16101",
+      "status": "mandatory",
+      "original_value": "IS 16101",
       "value": "IS 16101",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3",
+        "page": 6,
+        "pages": [
+          6,
+          7,
+          12
+        ]
+      },
       "source_clause": "3",
       "source_pages": [
         6,
@@ -3016,8 +3659,19 @@
       "entity_id": "ENT-DOC001-0013",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
+      "status": "mandatory",
+      "original_value": "IS 9206",
       "value": "IS 9206",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
       "source_clause": "3.1",
       "source_pages": [
         6
@@ -3027,8 +3681,20 @@
       "entity_id": "ENT-DOC001-0014",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
+      "status": "mandatory",
+      "original_value": "IS 8913",
       "value": "IS 8913",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.6",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
       "source_clause": "3.6",
       "source_pages": [
         6,
@@ -3039,8 +3705,20 @@
       "entity_id": "ENT-DOC001-0015",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.6",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
       "source_clause": "3.6",
       "source_pages": [
         6,
@@ -3051,8 +3729,19 @@
       "entity_id": "ENT-DOC001-0016",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "3.11",
       "source_pages": [
         7
@@ -3062,8 +3751,19 @@
       "entity_id": "ENT-DOC001-0017",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "3.11",
       "source_pages": [
         7
@@ -3073,8 +3773,19 @@
       "entity_id": "ENT-DOC001-0018",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "3.11",
       "source_pages": [
         7
@@ -3084,8 +3795,19 @@
       "entity_id": "ENT-DOC001-0019",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "3.11",
       "source_pages": [
         7
@@ -3095,8 +3817,19 @@
       "entity_id": "ENT-DOC001-0020",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "4.2",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "4.2",
       "source_pages": [
         7
@@ -3106,8 +3839,19 @@
       "entity_id": "ENT-DOC001-0021",
       "entity_type": "referenced_standard",
       "name": "IS 16108",
+      "status": "mandatory",
+      "original_value": "IS 16108",
       "value": "IS 16108",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "5.2",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "5.2",
       "source_pages": [
         7
@@ -3117,8 +3861,19 @@
       "entity_id": "ENT-DOC001-0022",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
+      "status": "mandatory",
+      "original_value": "IS 9206",
       "value": "IS 9206",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "6.1",
       "source_pages": [
         8
@@ -3128,8 +3883,20 @@
       "entity_id": "ENT-DOC001-0023",
       "entity_type": "referenced_standard",
       "name": "IS 15687",
+      "status": "mandatory",
+      "original_value": "IS 15687",
       "value": "IS 15687",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3140,8 +3907,20 @@
       "entity_id": "ENT-DOC001-0024",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
+      "status": "mandatory",
+      "original_value": "IS 9206",
       "value": "IS 9206",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3152,8 +3931,20 @@
       "entity_id": "ENT-DOC001-0025",
       "entity_type": "lamp_cap",
       "name": "B15D",
+      "status": "mandatory",
+      "original_value": "B15D",
       "value": "B15D",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3164,8 +3955,20 @@
       "entity_id": "ENT-DOC001-0026",
       "entity_type": "lamp_cap",
       "name": "B22D",
+      "status": "mandatory",
+      "original_value": "B22D",
       "value": "B22D",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3176,8 +3979,20 @@
       "entity_id": "ENT-DOC001-0027",
       "entity_type": "lamp_cap",
       "name": "E11",
+      "status": "mandatory",
+      "original_value": "E11",
       "value": "E11",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3188,8 +4003,20 @@
       "entity_id": "ENT-DOC001-0028",
       "entity_type": "lamp_cap",
       "name": "E12",
+      "status": "mandatory",
+      "original_value": "E12",
       "value": "E12",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3200,8 +4027,20 @@
       "entity_id": "ENT-DOC001-0029",
       "entity_type": "lamp_cap",
       "name": "E14",
+      "status": "mandatory",
+      "original_value": "E14",
       "value": "E14",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3212,8 +4051,20 @@
       "entity_id": "ENT-DOC001-0030",
       "entity_type": "lamp_cap",
       "name": "E17",
+      "status": "mandatory",
+      "original_value": "E17",
       "value": "E17",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3224,8 +4075,20 @@
       "entity_id": "ENT-DOC001-0031",
       "entity_type": "lamp_cap",
       "name": "E26",
+      "status": "mandatory",
+      "original_value": "E26",
       "value": "E26",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3236,8 +4099,20 @@
       "entity_id": "ENT-DOC001-0032",
       "entity_type": "lamp_cap",
       "name": "E27",
+      "status": "mandatory",
+      "original_value": "E27",
       "value": "E27",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3248,8 +4123,20 @@
       "entity_id": "ENT-DOC001-0033",
       "entity_type": "lamp_cap",
       "name": "GU10",
+      "status": "mandatory",
+      "original_value": "GU10",
       "value": "GU10",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3260,8 +4147,20 @@
       "entity_id": "ENT-DOC001-0034",
       "entity_type": "lamp_cap",
       "name": "GZ10",
+      "status": "mandatory",
+      "original_value": "GZ10",
       "value": "GZ10",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
@@ -3272,34 +4171,77 @@
       "entity_id": "ENT-DOC001-0035",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "32\nv",
       "value": "32\nv",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
         9
       ],
+      "normalized": {
+        "value": 32,
+        "unit": "v"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC001-0036",
       "entity_type": "value_and_unit",
       "name": "temperature_rise",
+      "status": "mandatory",
+      "original_value": "27K",
       "value": "27K",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "6.2",
       "source_pages": [
         8,
         9
       ],
+      "normalized": {
+        "value": 27,
+        "unit": "K"
+      },
       "unit": "K"
     },
     {
       "entity_id": "ENT-DOC001-0037",
       "entity_type": "lamp_cap",
       "name": "E12",
+      "status": "mandatory",
+      "original_value": "E12",
       "value": "E12",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.5",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "0.5",
       "source_pages": [
         9
@@ -3309,8 +4251,19 @@
       "entity_id": "ENT-DOC001-0038",
       "entity_type": "lamp_cap",
       "name": "E14",
+      "status": "mandatory",
+      "original_value": "E14",
       "value": "E14",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.5",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "0.5",
       "source_pages": [
         9
@@ -3320,8 +4273,19 @@
       "entity_id": "ENT-DOC001-0039",
       "entity_type": "lamp_cap",
       "name": "E17",
+      "status": "mandatory",
+      "original_value": "E17",
       "value": "E17",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.5",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "0.5",
       "source_pages": [
         9
@@ -3331,8 +4295,19 @@
       "entity_id": "ENT-DOC001-0040",
       "entity_type": "lamp_cap",
       "name": "E26",
+      "status": "mandatory",
+      "original_value": "E26",
       "value": "E26",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.5",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "0.5",
       "source_pages": [
         9
@@ -3342,8 +4317,19 @@
       "entity_id": "ENT-DOC001-0041",
       "entity_type": "lamp_cap",
       "name": "E27",
+      "status": "mandatory",
+      "original_value": "E27",
       "value": "E27",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.5",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "0.5",
       "source_pages": [
         9
@@ -3353,8 +4339,19 @@
       "entity_id": "ENT-DOC001-0042",
       "entity_type": "lamp_cap",
       "name": "GU10",
+      "status": "mandatory",
+      "original_value": "GU10",
       "value": "GU10",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.5",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "0.5",
       "source_pages": [
         9
@@ -3364,8 +4361,19 @@
       "entity_id": "ENT-DOC001-0043",
       "entity_type": "lamp_cap",
       "name": "GZ10",
+      "status": "mandatory",
+      "original_value": "GZ10",
       "value": "GZ10",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "0.1",
       "source_pages": [
         9
@@ -3375,8 +4383,20 @@
       "entity_id": "ENT-DOC001-0044",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
+      "status": "mandatory",
+      "original_value": "IS 9206",
       "value": "IS 9206",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "7",
       "source_pages": [
         9,
@@ -3387,8 +4407,20 @@
       "entity_id": "ENT-DOC001-0045",
       "entity_type": "lamp_cap",
       "name": "B22",
+      "status": "mandatory",
+      "original_value": "B22",
       "value": "B22",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "7",
       "source_pages": [
         9,
@@ -3399,8 +4431,20 @@
       "entity_id": "ENT-DOC001-0046",
       "entity_type": "lamp_cap",
       "name": "B15",
+      "status": "mandatory",
+      "original_value": "B15",
       "value": "B15",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "7",
       "source_pages": [
         9,
@@ -3411,8 +4455,20 @@
       "entity_id": "ENT-DOC001-0047",
       "entity_type": "lamp_cap",
       "name": "GU10",
+      "status": "mandatory",
+      "original_value": "GU10",
       "value": "GU10",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "7",
       "source_pages": [
         9,
@@ -3423,8 +4479,20 @@
       "entity_id": "ENT-DOC001-0048",
       "entity_type": "lamp_cap",
       "name": "GZ10",
+      "status": "mandatory",
+      "original_value": "GZ10",
       "value": "GZ10",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "7",
       "source_pages": [
         9,
@@ -3435,8 +4503,20 @@
       "entity_id": "ENT-DOC001-0049",
       "entity_type": "lamp_cap",
       "name": "GX53",
+      "status": "mandatory",
+      "original_value": "GX53",
       "value": "GX53",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "7",
       "source_pages": [
         9,
@@ -3447,8 +4527,20 @@
       "entity_id": "ENT-DOC001-0050",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "7",
       "source_pages": [
         9,
@@ -3459,8 +4551,20 @@
       "entity_id": "ENT-DOC001-0051",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ]
+      },
       "source_clause": "8",
       "source_pages": [
         9,
@@ -3471,8 +4575,19 @@
       "entity_id": "ENT-DOC001-0052",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.1",
       "source_pages": [
         9
@@ -3482,8 +4597,19 @@
       "entity_id": "ENT-DOC001-0053",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.1",
       "source_pages": [
         9
@@ -3493,8 +4619,19 @@
       "entity_id": "ENT-DOC001-0054",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.1.1",
       "source_pages": [
         9
@@ -3504,8 +4641,19 @@
       "entity_id": "ENT-DOC001-0055",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.1.1",
       "source_pages": [
         9
@@ -3515,44 +4663,100 @@
       "entity_id": "ENT-DOC001-0056",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "500 V",
       "value": "500 V",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.1.1",
       "source_pages": [
         9
       ],
+      "normalized": {
+        "value": 500,
+        "unit": "V"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC001-0057",
       "entity_type": "value_and_unit",
       "name": "insulation_resistance",
+      "status": "mandatory",
+      "original_value": "4 MΩ",
       "value": "4 MΩ",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.1.1",
       "source_pages": [
         9
       ],
+      "normalized": {
+        "value": 4,
+        "unit": "MΩ"
+      },
       "unit": "MΩ"
     },
     {
       "entity_id": "ENT-DOC001-0058",
       "entity_type": "value_and_unit",
       "name": "temperature",
+      "status": "mandatory",
+      "original_value": "1°C",
       "value": "1°C",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1.1",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.1.1",
       "source_pages": [
         9
       ],
+      "normalized": {
+        "value": 1,
+        "unit": "°C"
+      },
       "unit": "°C"
     },
     {
       "entity_id": "ENT-DOC001-0059",
       "entity_type": "referenced_standard",
       "name": "IS 10322",
+      "status": "mandatory",
+      "original_value": "IS 10322",
       "value": "IS 10322",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.2",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.2",
       "source_pages": [
         9
@@ -3562,8 +4766,19 @@
       "entity_id": "ENT-DOC001-0060",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.2",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.2",
       "source_pages": [
         9
@@ -3573,8 +4788,19 @@
       "entity_id": "ENT-DOC001-0061",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.2",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "8.2",
       "source_pages": [
         9
@@ -3584,8 +4810,22 @@
       "entity_id": "ENT-DOC001-0062",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "9",
+        "page": 9,
+        "pages": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
       "source_clause": "9",
       "source_pages": [
         9,
@@ -3598,8 +4838,21 @@
       "entity_id": "ENT-DOC001-0063",
       "entity_type": "lamp_cap",
       "name": "B15D",
+      "status": "mandatory",
+      "original_value": "B15D",
       "value": "B15D",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "9.1",
+        "page": 9,
+        "pages": [
+          9,
+          10,
+          11
+        ]
+      },
       "source_clause": "9.1",
       "source_pages": [
         9,
@@ -3611,8 +4864,21 @@
       "entity_id": "ENT-DOC001-0064",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "9.1",
+        "page": 9,
+        "pages": [
+          9,
+          10,
+          11
+        ]
+      },
       "source_clause": "9.1",
       "source_pages": [
         9,
@@ -3624,8 +4890,19 @@
       "entity_id": "ENT-DOC001-0065",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "9.3",
+        "page": 12,
+        "pages": [
+          12
+        ]
+      },
       "source_clause": "9.3",
       "source_pages": [
         12
@@ -3635,20 +4912,47 @@
       "entity_id": "ENT-DOC001-0066",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "0.8\nv",
       "value": "0.8\nv",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.8",
+        "page": 11,
+        "pages": [
+          11
+        ]
+      },
       "source_clause": "0.8",
       "source_pages": [
         11
       ],
+      "normalized": {
+        "value": 0.8,
+        "unit": "v"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC001-0067",
       "entity_type": "lamp_cap",
       "name": "B15",
+      "status": "mandatory",
+      "original_value": "B15",
       "value": "B15",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.0",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ]
+      },
       "source_clause": "0.0",
       "source_pages": [
         11,
@@ -3659,8 +4963,20 @@
       "entity_id": "ENT-DOC001-0068",
       "entity_type": "lamp_cap",
       "name": "B22",
+      "status": "mandatory",
+      "original_value": "B22",
       "value": "B22",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.0",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ]
+      },
       "source_clause": "0.0",
       "source_pages": [
         11,
@@ -3671,8 +4987,20 @@
       "entity_id": "ENT-DOC001-0069",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "0.0",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ]
+      },
       "source_clause": "0.0",
       "source_pages": [
         11,
@@ -3683,8 +5011,20 @@
       "entity_id": "ENT-DOC001-0070",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
+      "status": "mandatory",
+      "original_value": "IS 8913",
       "value": "IS 8913",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "10",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ]
+      },
       "source_clause": "10",
       "source_pages": [
         11,
@@ -3695,8 +5035,20 @@
       "entity_id": "ENT-DOC001-0071",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "10",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ]
+      },
       "source_clause": "10",
       "source_pages": [
         11,
@@ -3707,48 +5059,109 @@
       "entity_id": "ENT-DOC001-0072",
       "entity_type": "value_and_unit",
       "name": "wattage",
+      "status": "mandatory",
+      "original_value": "60 W",
       "value": "60 W",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "10",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ]
+      },
       "source_clause": "10",
       "source_pages": [
         11,
         12
       ],
+      "normalized": {
+        "value": 60,
+        "unit": "W"
+      },
       "unit": "W"
     },
     {
       "entity_id": "ENT-DOC001-0073",
       "entity_type": "value_and_unit",
       "name": "temperature_rise",
+      "status": "mandatory",
+      "original_value": "120 K",
       "value": "120 K",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "10",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ]
+      },
       "source_clause": "10",
       "source_pages": [
         11,
         12
       ],
+      "normalized": {
+        "value": 120,
+        "unit": "K"
+      },
       "unit": "K"
     },
     {
       "entity_id": "ENT-DOC001-0074",
       "entity_type": "value_and_unit",
       "name": "temperature",
+      "status": "mandatory",
+      "original_value": "125°C",
       "value": "125°C",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "11",
+        "page": 11,
+        "pages": [
+          11,
+          12,
+          13
+        ]
+      },
       "source_clause": "11",
       "source_pages": [
         11,
         12,
         13
       ],
+      "normalized": {
+        "value": 125,
+        "unit": "°C"
+      },
       "unit": "°C"
     },
     {
       "entity_id": "ENT-DOC001-0075",
       "entity_type": "referenced_standard",
       "name": "IS 11000",
+      "status": "mandatory",
+      "original_value": "IS 11000",
       "value": "IS 11000",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "12.1",
+        "page": 13,
+        "pages": [
+          13,
+          14
+        ]
+      },
       "source_clause": "12.1",
       "source_pages": [
         13,
@@ -3759,8 +5172,20 @@
       "entity_id": "ENT-DOC001-0076",
       "entity_type": "referenced_standard",
       "name": "is 650",
+      "status": "mandatory",
+      "original_value": "is 650",
       "value": "is 650",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "12.1",
+        "page": 13,
+        "pages": [
+          13,
+          14
+        ]
+      },
       "source_clause": "12.1",
       "source_pages": [
         13,
@@ -3771,8 +5196,20 @@
       "entity_id": "ENT-DOC001-0077",
       "entity_type": "referenced_standard",
       "name": "IS 4261",
+      "status": "mandatory",
+      "original_value": "IS 4261",
       "value": "IS 4261",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "12.1",
+        "page": 13,
+        "pages": [
+          13,
+          14
+        ]
+      },
       "source_clause": "12.1",
       "source_pages": [
         13,
@@ -3783,8 +5220,20 @@
       "entity_id": "ENT-DOC001-0078",
       "entity_type": "test",
       "name": "Ball Pressure Test",
+      "status": "mandatory",
+      "original_value": "Ball Pressure Test",
       "value": "Ball Pressure Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "12.1",
+        "page": 13,
+        "pages": [
+          13,
+          14
+        ]
+      },
       "source_clause": "12.1",
       "source_pages": [
         13,
@@ -3795,8 +5244,20 @@
       "entity_id": "ENT-DOC001-0079",
       "entity_type": "test",
       "name": "Glow Wire Test",
+      "status": "mandatory",
+      "original_value": "Glow Wire Test",
       "value": "Glow Wire Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "12.1",
+        "page": 13,
+        "pages": [
+          13,
+          14
+        ]
+      },
       "source_clause": "12.1",
       "source_pages": [
         13,
@@ -3807,21 +5268,49 @@
       "entity_id": "ENT-DOC001-0080",
       "entity_type": "value_and_unit",
       "name": "temperature",
+      "status": "mandatory",
+      "original_value": "650 °C",
       "value": "650 °C",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "12.1",
+        "page": 13,
+        "pages": [
+          13,
+          14
+        ]
+      },
       "source_clause": "12.1",
       "source_pages": [
         13,
         14
       ],
+      "normalized": {
+        "value": 650,
+        "unit": "°C"
+      },
       "unit": "°C"
     },
     {
       "entity_id": "ENT-DOC001-0081",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13",
+        "page": 11,
+        "pages": [
+          11,
+          14
+        ]
+      },
       "source_clause": "13",
       "source_pages": [
         11,
@@ -3832,8 +5321,19 @@
       "entity_id": "ENT-DOC001-0082",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.5",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.5",
       "source_pages": [
         14
@@ -3843,8 +5343,19 @@
       "entity_id": "ENT-DOC001-0083",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.1",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.1",
       "source_pages": [
         14
@@ -3854,8 +5365,19 @@
       "entity_id": "ENT-DOC001-0084",
       "entity_type": "referenced_standard",
       "name": "IS 16001",
+      "status": "mandatory",
+      "original_value": "IS 16001",
       "value": "IS 16001",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.2",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.2",
       "source_pages": [
         14
@@ -3865,8 +5387,19 @@
       "entity_id": "ENT-DOC001-0085",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.2",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.2",
       "source_pages": [
         14
@@ -3876,8 +5409,19 @@
       "entity_id": "ENT-DOC001-0086",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
+      "status": "mandatory",
+      "original_value": "IS 8913",
       "value": "IS 8913",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.2",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.2",
       "source_pages": [
         14
@@ -3887,20 +5431,46 @@
       "entity_id": "ENT-DOC001-0087",
       "entity_type": "value_and_unit",
       "name": "temperature_rise",
+      "status": "mandatory",
+      "original_value": "1 K",
       "value": "1 K",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.2",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.2",
       "source_pages": [
         14
       ],
+      "normalized": {
+        "value": 1,
+        "unit": "K"
+      },
       "unit": "K"
     },
     {
       "entity_id": "ENT-DOC001-0088",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.6",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.6",
       "source_pages": [
         14
@@ -3910,20 +5480,47 @@
       "entity_id": "ENT-DOC001-0089",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "000 V",
       "value": "000 V",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "13.6",
+        "page": 14,
+        "pages": [
+          14
+        ]
+      },
       "source_clause": "13.6",
       "source_pages": [
         14
       ],
+      "normalized": {
+        "value": 0,
+        "unit": "V"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC001-0090",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "14",
+        "page": 11,
+        "pages": [
+          11,
+          14
+        ]
+      },
       "source_clause": "14",
       "source_pages": [
         11,
@@ -3934,8 +5531,19 @@
       "entity_id": "ENT-DOC001-0091",
       "entity_type": "referenced_standard",
       "name": "IS 16002",
+      "status": "mandatory",
+      "original_value": "IS 16002",
       "value": "IS 16002",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "15.3.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "15.3.1",
       "source_pages": [
         15
@@ -3945,8 +5553,19 @@
       "entity_id": "ENT-DOC001-0092",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "16.2.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "16.2.1",
       "source_pages": [
         15
@@ -3956,8 +5575,19 @@
       "entity_id": "ENT-DOC001-0093",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "16.2.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "16.2.1",
       "source_pages": [
         15
@@ -3967,8 +5597,19 @@
       "entity_id": "ENT-DOC001-0094",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "16.2.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "16.2.1",
       "source_pages": [
         15
@@ -3978,8 +5619,19 @@
       "entity_id": "ENT-DOC001-0095",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "17.1.1",
       "source_pages": [
         15
@@ -3989,8 +5641,19 @@
       "entity_id": "ENT-DOC001-0096",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "17.1.1",
       "source_pages": [
         15
@@ -4000,8 +5663,19 @@
       "entity_id": "ENT-DOC001-0097",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "17.1.1",
       "source_pages": [
         15
@@ -4011,8 +5685,19 @@
       "entity_id": "ENT-DOC001-0098",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "17.1.1",
       "source_pages": [
         15
@@ -4022,8 +5707,19 @@
       "entity_id": "ENT-DOC001-0099",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "17.1.1",
       "source_pages": [
         15
@@ -4033,8 +5729,19 @@
       "entity_id": "ENT-DOC001-0100",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.4",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
       "source_clause": "17.1.4",
       "source_pages": [
         15
@@ -4044,8 +5751,20 @@
       "entity_id": "ENT-DOC001-0101",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.2",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ]
+      },
       "source_clause": "17.2",
       "source_pages": [
         15,
@@ -4056,8 +5775,20 @@
       "entity_id": "ENT-DOC001-0102",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.2",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ]
+      },
       "source_clause": "17.2",
       "source_pages": [
         15,
@@ -4068,8 +5799,20 @@
       "entity_id": "ENT-DOC001-0103",
       "entity_type": "test",
       "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.2",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ]
+      },
       "source_clause": "17.2",
       "source_pages": [
         15,
@@ -4080,8 +5823,20 @@
       "entity_id": "ENT-DOC001-0104",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.2",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ]
+      },
       "source_clause": "17.2",
       "source_pages": [
         15,
@@ -4092,8 +5847,20 @@
       "entity_id": "ENT-DOC001-0105",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.2.1",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ]
+      },
       "source_clause": "17.2.1",
       "source_pages": [
         15,
@@ -4104,8 +5871,19 @@
       "entity_id": "ENT-DOC001-0106",
       "entity_type": "annex",
       "name": "ANNEX A",
+      "status": "mandatory",
+      "original_value": "ANNEX A",
       "value": "ANNEX A",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "ANNEX A",
+        "page": 16,
+        "pages": [
+          16
+        ]
+      },
       "source_clause": "ANNEX A",
       "source_pages": [
         16
@@ -4115,8 +5893,20 @@
       "entity_id": "ENT-DOC001-0107",
       "entity_type": "annex",
       "name": "ANNEX B",
+      "status": "mandatory",
+      "original_value": "ANNEX B",
       "value": "ANNEX B",
-      "document_id": "DOC-001",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "ANNEX B",
+        "page": 16,
+        "pages": [
+          16,
+          17
+        ]
+      },
       "source_clause": "ANNEX B",
       "source_pages": [
         16,
@@ -5657,7 +7447,7 @@
       "relationship_id": "REL-DOC001-0135",
       "subject": "cap_temperature_rise",
       "predicate": "has_condition",
-      "object": "ambient_temperature: 25 ± 5 °C",
+      "object": "ambient_temperature: {'original_value': '(25 ± 5)°C', 'normalized': {'nominal': 25, 'tolerance': 5, 'unit': '°C'}}",
       "document_id": "DOC-001",
       "source_clause": "2",
       "source_pages": [
@@ -5767,7 +7557,7 @@
       "relationship_id": "REL-DOC001-0145",
       "subject": "dielectric_electric_strength",
       "predicate": "tested_by",
-      "object": "4000 V a.c. (r.m.s.)",
+      "object": "4 000 V a.c. (r.m.s.)",
       "document_id": "DOC-001",
       "source_clause": "3.11",
       "source_pages": [
@@ -5878,7 +7668,7 @@
       "relationship_id": "REL-DOC001-0155",
       "subject": "insulation_resistance",
       "predicate": "tested_by",
-      "object": "approximately 500 V d.c.",
+      "object": "{'original_value': 'approximately 500 V d.c.', 'normalized': {'value': 500, 'unit': 'V d.c.'}}",
       "document_id": "DOC-001",
       "source_clause": "8.1.1",
       "source_pages": [
@@ -5889,7 +7679,7 @@
       "relationship_id": "REL-DOC001-0156",
       "subject": "insulation_resistance",
       "predicate": "has_condition",
-      "object": "humidity_treatment: 48 h in humidity cabinet at 91-95% RH",
+      "object": "humidity_treatment: {'original_value': '48 h at (91-95)% RH', 'normalized': {'duration': {'value': 48, 'unit': 'h'}, 'humidity': {'min': 91, 'max': 95, 'unit': '%'}, 'temperature': {'min': 25, 'max': 35, 'unit': '°C'}}}",
       "document_id": "DOC-001",
       "source_clause": "8.1.1",
       "source_pages": [
@@ -5898,28 +7688,6 @@
     },
     {
       "relationship_id": "REL-DOC001-0157",
-      "subject": "insulation_resistance",
-      "predicate": "has_condition",
-      "object": "temperature: 25-35 °C",
-      "document_id": "DOC-001",
-      "source_clause": "8.1.1",
-      "source_pages": [
-        9
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC001-0158",
-      "subject": "insulation_resistance",
-      "predicate": "has_condition",
-      "object": "duration: 48 h",
-      "document_id": "DOC-001",
-      "source_clause": "8.1.1",
-      "source_pages": [
-        9
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC001-0159",
       "subject": "Clause 8.2",
       "predicate": "requires",
       "object": "dielectric_electric_strength",
@@ -5930,7 +7698,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0160",
+      "relationship_id": "REL-DOC001-0158",
       "subject": "Clause 10",
       "predicate": "requires",
       "object": "cap_temperature_rise",
@@ -5942,7 +7710,46 @@
       ]
     },
     {
+      "relationship_id": "REL-DOC001-0159",
+      "subject": "Clause 11",
+      "predicate": "requires",
+      "object": "ball_pressure_temperature",
+      "document_id": "DOC-001",
+      "source_clause": "11",
+      "source_pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0160",
+      "subject": "ball_pressure_temperature",
+      "predicate": "has_limit",
+      "object": ">= 80.0 °C",
+      "document_id": "DOC-001",
+      "source_clause": "11",
+      "source_pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
       "relationship_id": "REL-DOC001-0161",
+      "subject": "ball_pressure_temperature",
+      "predicate": "has_condition",
+      "object": "ambient_treatment: parts not retaining live parts in position",
+      "document_id": "DOC-001",
+      "source_clause": "11",
+      "source_pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0162",
       "subject": "Clause 12.1",
       "predicate": "requires",
       "object": "glow_wire_temperature",
@@ -5954,7 +7761,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0162",
+      "relationship_id": "REL-DOC001-0163",
       "subject": "Clause 15.1",
       "predicate": "requires",
       "object": "inspection_test_quantity",
@@ -5965,7 +7772,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0163",
+      "relationship_id": "REL-DOC001-0164",
       "subject": "inspection_test_quantity",
       "predicate": "has_limit",
       "object": "== 25 lamps",
@@ -5976,7 +7783,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0164",
+      "relationship_id": "REL-DOC001-0165",
       "subject": "inspection_test_quantity",
       "predicate": "tested_by",
       "object": "lamps divided into test groups as specified in standard",
@@ -5987,7 +7794,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0165",
+      "relationship_id": "REL-DOC001-0166",
       "subject": "inspection_test_quantity",
       "predicate": "has_condition",
       "object": "selection_stage: sampling for type approval and compliance verification",
@@ -5998,7 +7805,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0166",
+      "relationship_id": "REL-DOC001-0167",
       "subject": "Clause 15.2",
       "predicate": "requires",
       "object": "inspection_test_quantity",
@@ -6010,21 +7817,10 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0167",
-      "subject": "Clause 16.2.1",
-      "predicate": "requires",
-      "object": "insulation_resistance",
-      "document_id": "DOC-001",
-      "source_clause": "16.2.1",
-      "source_pages": [
-        15
-      ]
-    },
-    {
       "relationship_id": "REL-DOC001-0168",
       "subject": "Clause 16.2.1",
       "predicate": "requires",
-      "object": "dielectric_electric_strength",
+      "object": "insulation_resistance",
       "document_id": "DOC-001",
       "source_clause": "16.2.1",
       "source_pages": [
@@ -6033,6 +7829,17 @@
     },
     {
       "relationship_id": "REL-DOC001-0169",
+      "subject": "Clause 16.2.1",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0170",
       "subject": "Clause 17.1.1",
       "predicate": "requires",
       "object": "insulation_resistance",
@@ -6043,7 +7850,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0170",
+      "relationship_id": "REL-DOC001-0171",
       "subject": "Clause 17.1.1",
       "predicate": "requires",
       "object": "dielectric_electric_strength",
@@ -6054,7 +7861,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0171",
+      "relationship_id": "REL-DOC001-0172",
       "subject": "Clause 17.2",
       "predicate": "requires",
       "object": "dielectric_electric_strength",
@@ -6066,7 +7873,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC001-0172",
+      "relationship_id": "REL-DOC001-0173",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16103 (Part 1) : 2012",
@@ -6080,7 +7887,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0173",
+      "relationship_id": "REL-DOC001-0174",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16103 (Part 1)",
@@ -6094,7 +7901,7 @@
       "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC001-0174",
+      "relationship_id": "REL-DOC001-0175",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16101",
@@ -6108,7 +7915,7 @@
       "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC001-0175",
+      "relationship_id": "REL-DOC001-0176",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 9206",
@@ -6120,7 +7927,7 @@
       "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC001-0176",
+      "relationship_id": "REL-DOC001-0177",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 8913",
@@ -6133,7 +7940,7 @@
       "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC001-0177",
+      "relationship_id": "REL-DOC001-0178",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16108",
@@ -6145,7 +7952,7 @@
       "reference_type": "normative"
     },
     {
-      "relationship_id": "REL-DOC001-0178",
+      "relationship_id": "REL-DOC001-0179",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 9206 (Table 1)",
@@ -6157,7 +7964,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0179",
+      "relationship_id": "REL-DOC001-0180",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 15687 (Part 1)",
@@ -6170,7 +7977,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0180",
+      "relationship_id": "REL-DOC001-0181",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 15885 (Part 1)",
@@ -6182,7 +7989,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0181",
+      "relationship_id": "REL-DOC001-0182",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 10322 (Part 1)",
@@ -6194,7 +8001,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0182",
+      "relationship_id": "REL-DOC001-0183",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 11000 (Part 2)",
@@ -6207,7 +8014,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0183",
+      "relationship_id": "REL-DOC001-0184",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "is 650",
@@ -6220,7 +8027,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0184",
+      "relationship_id": "REL-DOC001-0185",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 4261",
@@ -6233,7 +8040,7 @@
       "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC001-0185",
+      "relationship_id": "REL-DOC001-0186",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16001",
@@ -6245,7 +8052,7 @@
       "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC001-0186",
+      "relationship_id": "REL-DOC001-0187",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16002 (Part 2)",
@@ -6262,10 +8069,16 @@
       "entity_type": "requirement",
       "requirement_type": "maximum_limit",
       "requirement_id": "REQ-DOC001-1-WATT",
+      "status": "mandatory",
       "clause": "1",
       "subject": "self-ballasted LED lamp",
       "parameter": "rated_wattage",
       "operator": "<=",
+      "original_value": "60 W",
+      "normalized": {
+        "value": 60.0,
+        "unit": "W"
+      },
       "value": 60.0,
       "unit": "W",
       "conditions": {
@@ -6286,20 +8099,47 @@
         6,
         11,
         12
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6,
+          11,
+          12
+        ],
+        "section": "SCOPE",
+        "original_text": "1 SCOPE\nThis standard (Part 1) specifies the safety and\ninterchangeability requirements, together with the test\nmethods and conditions, required to show compliance\nof LED lamps with integrated means for stable\noperation (self-ballasted LED lamps), intended for\ndomestic and similar general lighting p"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "maximum_limit",
       "requirement_id": "REQ-DOC001-2-TEMP",
+      "status": "mandatory",
       "clause": "2",
       "subject": "complete lamp",
       "parameter": "cap_temperature_rise",
       "operator": "<=",
+      "original_value": "120 K",
+      "normalized": {
+        "value": 120,
+        "unit": "K"
+      },
       "value": 120.0,
       "unit": "K",
       "conditions": {
-        "ambient_temperature": "25 ± 5 °C",
+        "ambient_temperature": {
+          "original_value": "(25 ± 5)°C",
+          "normalized": {
+            "nominal": 25,
+            "tolerance": 5,
+            "unit": "°C"
+          }
+        },
         "operating_voltage": "rated voltage",
         "test_method": "IS 8913"
       },
@@ -6316,16 +8156,40 @@
       "evidence": "The cap temperature rise of the complete lamp shall not exceed 120 K.",
       "source_pages": [
         6
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "2",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "REFERENCES",
+        "original_text": "2 REFERENCES\nThe standards listed below contain provisions which,\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encourag"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "minimum_limit",
       "requirement_id": "REQ-DOC001-2-GLOW",
+      "status": "mandatory",
       "clause": "2",
       "subject": "insulating material",
       "parameter": "glow_wire_temperature",
       "operator": ">=",
+      "original_value": "650°C / 750°C",
+      "normalized": {
+        "live_parts_holding": {
+          "value": 750,
+          "unit": "°C"
+        },
+        "non_live_parts": {
+          "value": 650,
+          "unit": "°C"
+        }
+      },
       "value": 650.0,
       "unit": "°C",
       "conditions": {
@@ -6346,25 +8210,43 @@
       "evidence": "Glow-wire test at 650°C / 750°C according to IS 11000 (Part 2/Sec 1).",
       "source_pages": [
         6
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "2",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "REFERENCES",
+        "original_text": "2 REFERENCES\nThe standards listed below contain provisions which,\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encourag"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC001-3.11-ES",
+      "status": "mandatory",
       "clause": "3.11",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -6375,16 +8257,39 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         7
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "Inspection Test Quantity (ITQ) — The number",
+        "original_text": "3.11 Inspection Test Quantity (ITQ) — The number\nof lamps selected for the purpose of determining the\nacceptability of a batch as to marking,\ninterchangeability, protection against electric shock,\ninsulation resistance, electric strength, mechanical\nstrength, cap temperature rise, resistance to heat"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "mandatory_marking",
       "requirement_id": "REQ-DOC001-5.1-MARK",
+      "status": "mandatory",
       "clause": "5.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "mandatory_marking_elements",
       "operator": "mandatory",
+      "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+      "normalized": {
+        "items": [
+          "Mark of origin (trademark)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration Number)"
+        ]
+      },
       "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
       "unit": null,
       "conditions": {
@@ -6407,25 +8312,43 @@
       "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
       "source_pages": [
         7
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "5.1",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "Lamps shall be clearly and durably marked with",
+        "original_text": "5.1 Lamps shall be clearly and durably marked with\nthe following mandatory markings:\na)\nMark of origin (this may take the form of a\ntrade-mark, the manufacturer’s name or the\nname of the responsible vendor);\nb)\nRated voltage or voltage range (marked ‘V’\nor ‘Volt’);\nc)\nRated wattage (marked ‘W’ or ‘W"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC001-7-ES",
+      "status": "mandatory",
       "clause": "7",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -6437,25 +8360,44 @@
       "source_pages": [
         9,
         11
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "7",
+        "page": 9,
+        "pages": [
+          9,
+          11
+        ],
+        "section": "PROTECTION AGAINST ACCIDENTAL",
+        "original_text": "7 PROTECTION AGAINST ACCIDENTAL\nCONTACT WITH LIVE PARTS\nThe lamps shall be so constructed that, without any\nadditional enclosure in the form of a luminaire, no\ninternal metal parts, basic insulated external metal parts\nor live metal parts of the lamp cap or of the lamp itself\nare accessible when the"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC001-8.1-ES",
+      "status": "mandatory",
       "clause": "8.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -6466,26 +8408,72 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         9
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1",
+        "page": 9,
+        "pages": [
+          9
+        ],
+        "section": "Insulation resistance and electric strength shall be",
+        "original_text": "8.1 Insulation resistance and electric strength shall be\nadequate between live parts of the lamp and accessible\nparts of the lamp."
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "minimum_limit",
       "requirement_id": "REQ-DOC001-8.1.1-IR",
+      "status": "mandatory",
       "clause": "8.1.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "insulation_resistance",
       "operator": ">=",
+      "original_value": "4 MΩ",
+      "normalized": {
+        "value": 4.0,
+        "unit": "MΩ"
+      },
       "value": 4.0,
       "unit": "MΩ",
       "conditions": {
-        "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
-        "temperature": "25-35 °C",
-        "duration": "48 h"
+        "humidity_treatment": {
+          "original_value": "48 h at (91-95)% RH",
+          "normalized": {
+            "duration": {
+              "value": 48,
+              "unit": "h"
+            },
+            "humidity": {
+              "min": 91,
+              "max": 95,
+              "unit": "%"
+            },
+            "temperature": {
+              "min": 25,
+              "max": 35,
+              "unit": "°C"
+            }
+          }
+        }
       },
       "test": {
-        "applied_voltage": "approximately 500 V d.c.",
-        "measurement_time": "1 min after voltage application",
+        "applied_voltage": {
+          "original_value": "approximately 500 V d.c.",
+          "normalized": {
+            "value": 500,
+            "unit": "V d.c."
+          }
+        },
+        "measurement_time": {
+          "original_value": "1 min after application",
+          "normalized": {
+            "value": 60,
+            "unit": "s"
+          }
+        },
         "test_points": "between live parts and accessible conductive parts"
       },
       "acceptance_criterion": {
@@ -6497,25 +8485,43 @@
       "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
       "source_pages": [
         9
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.1.1",
+        "page": 9,
+        "pages": [
+          9
+        ],
+        "section": "Insulation Resistance",
+        "original_text": "8.1.1 Insulation Resistance\nThe lamp shall be conditioned for 48 h in a cabinet\ncontaining air with a relative humidity between 91\npercent and 95 percent. The temperature of the air is\nmaintained within 1°C of any convenient value\nbetween 25°C and 35°C.\nInsulation resistance shall be measured in the"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC001-8.2-ES",
+      "status": "mandatory",
       "clause": "8.2",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -6526,20 +8532,45 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         9
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "8.2",
+        "page": 9,
+        "pages": [
+          9
+        ],
+        "section": "Electric Strength",
+        "original_text": "8.2 Electric Strength\nImmediately after the insulation resistance test, the\nsame parts as specified above shall withstand a voltage\ntest for 1 min with an a.c. voltage as follows.\nDuring the test, the supply contacts of the cap are short-\ncircuited. Accessible parts of insulating material of the\ncap"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "maximum_limit",
       "requirement_id": "REQ-DOC001-10-TEMP",
+      "status": "mandatory",
       "clause": "10",
       "subject": "complete lamp",
       "parameter": "cap_temperature_rise",
       "operator": "<=",
+      "original_value": "120 K",
+      "normalized": {
+        "value": 120,
+        "unit": "K"
+      },
       "value": 120.0,
       "unit": "K",
       "conditions": {
-        "ambient_temperature": "25 ± 5 °C",
+        "ambient_temperature": {
+          "original_value": "(25 ± 5)°C",
+          "normalized": {
+            "nominal": 25,
+            "tolerance": 5,
+            "unit": "°C"
+          }
+        },
         "operating_voltage": "rated voltage",
         "test_method": "IS 8913"
       },
@@ -6557,16 +8588,87 @@
       "source_pages": [
         11,
         12
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "10",
+        "page": 11,
+        "pages": [
+          11,
+          12
+        ],
+        "section": "CAP TEMPERATURE RISE",
+        "original_text": "10 CAP TEMPERATURE RISE\nThe surface temperature rise (above ambient) of a\nlampholder fitted to the lamp shall not be higher than\nthat of the lamp type which is being replaced by the\nlamp.\nThe cap temperature rise A ts of the complete lamp\nshall not exceed 120 K. The value of A ts corresponds\nto an i"
+      }
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "pending_limit",
+      "requirement_id": "REQ-DOC001-11-80C-PENDING",
+      "status": "under_consideration",
+      "clause": "11",
+      "subject": "insulating material parts not retaining live parts",
+      "parameter": "ball_pressure_temperature",
+      "operator": ">=",
+      "original_value": "80°C (value 80°C under consideration)",
+      "normalized": {
+        "value": 80,
+        "unit": "°C"
+      },
+      "value": 80.0,
+      "unit": "°C",
+      "conditions": {
+        "ambient_treatment": "parts not retaining live parts in position"
+      },
+      "acceptance_criterion": {
+        "provisional_minimum": 80.0,
+        "unit": "°C",
+        "criterion_text": "Provisional 80°C under active technical consideration"
+      },
+      "exceptions": "Value 80°C is actively under consideration and not finalized as mandatory",
+      "evidence": "80°C (value 80°C under consideration) for other parts.",
+      "source_pages": [
+        11,
+        12,
+        13
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "11",
+        "page": 11,
+        "pages": [
+          11,
+          12,
+          13
+        ],
+        "section": "RESISTANCE TO HEAT",
+        "original_text": "11 RESISTANCE TO HEAT\nThe lamp shall be sufficiently resistant to heat. External\nparts of insulating material providing protection against\nelectric shock, and parts of insulating material retaining\nlive parts in position shall be sufficiently resistant to\nheat.\nCompliance is checked by subjecting th"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "minimum_limit",
       "requirement_id": "REQ-DOC001-12.1-GLOW",
+      "status": "mandatory",
       "clause": "12.1",
       "subject": "insulating material",
       "parameter": "glow_wire_temperature",
       "operator": ">=",
+      "original_value": "650°C / 750°C",
+      "normalized": {
+        "live_parts_holding": {
+          "value": 750,
+          "unit": "°C"
+        },
+        "non_live_parts": {
+          "value": 650,
+          "unit": "°C"
+        }
+      },
       "value": 650.0,
       "unit": "°C",
       "conditions": {
@@ -6588,16 +8690,35 @@
       "source_pages": [
         13,
         14
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "12.1",
+        "page": 13,
+        "pages": [
+          13,
+          14
+        ],
+        "section": "Parts of insulating material retaining live parts in",
+        "original_text": "12.1 Parts of insulating material retaining live parts in\nposition and external parts of insulating material\nproviding protection against electric shock are\nsubjected to the glow-wire test in accordance with\nIS 11000 (Part 2/Sec 1), subject to the following details:\na)\nThe test specimen is a complet"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "sampling_quantity",
       "requirement_id": "REQ-DOC001-15.1-ITQ",
+      "status": "mandatory",
       "clause": "15.1",
       "subject": "batch / inspection lot",
       "parameter": "inspection_test_quantity",
       "operator": "==",
+      "original_value": "25 lamps",
+      "normalized": {
+        "value": 25,
+        "unit": "lamps"
+      },
       "value": 25,
       "unit": "lamps",
       "conditions": {
@@ -6615,16 +8736,34 @@
       "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
       "source_pages": [
         14
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "15.1",
+        "page": 14,
+        "pages": [
+          14
+        ],
+        "section": "Method of Selection",
+        "original_text": "15.1 Method of Selection\nThe inspection test quantities (ITQ) shall be selected\nin a mutually agreed manner such as to ensure proper\nrepresentation of the batch. The selection of lamps for\nindividual batches should be made as follows:\na)\nUp to and Including 20 Containers per Batch\n— Out of every con"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "sampling_quantity",
       "requirement_id": "REQ-DOC001-15.2-ITQ",
+      "status": "mandatory",
       "clause": "15.2",
       "subject": "batch / inspection lot",
       "parameter": "inspection_test_quantity",
       "operator": "==",
+      "original_value": "25 lamps",
+      "normalized": {
+        "value": 25,
+        "unit": "lamps"
+      },
       "value": 25,
       "unit": "lamps",
       "conditions": {
@@ -6643,26 +8782,73 @@
       "source_pages": [
         14,
         15
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "15.2",
+        "page": 14,
+        "pages": [
+          14,
+          15
+        ],
+        "section": "Inspection Test Quantity (ITQ)",
+        "original_text": "15.2 Inspection Test Quantity (ITQ)\nInspection test quantity shall consist of 25 lamps.\nIS 16102 (Part 1) : 2012"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "minimum_limit",
       "requirement_id": "REQ-DOC001-16.2.1-IR",
+      "status": "mandatory",
       "clause": "16.2.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "insulation_resistance",
       "operator": ">=",
+      "original_value": "4 MΩ",
+      "normalized": {
+        "value": 4.0,
+        "unit": "MΩ"
+      },
       "value": 4.0,
       "unit": "MΩ",
       "conditions": {
-        "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
-        "temperature": "25-35 °C",
-        "duration": "48 h"
+        "humidity_treatment": {
+          "original_value": "48 h at (91-95)% RH",
+          "normalized": {
+            "duration": {
+              "value": 48,
+              "unit": "h"
+            },
+            "humidity": {
+              "min": 91,
+              "max": 95,
+              "unit": "%"
+            },
+            "temperature": {
+              "min": 25,
+              "max": 35,
+              "unit": "°C"
+            }
+          }
+        }
       },
       "test": {
-        "applied_voltage": "approximately 500 V d.c.",
-        "measurement_time": "1 min after voltage application",
+        "applied_voltage": {
+          "original_value": "approximately 500 V d.c.",
+          "normalized": {
+            "value": 500,
+            "unit": "V d.c."
+          }
+        },
+        "measurement_time": {
+          "original_value": "1 min after application",
+          "normalized": {
+            "value": 60,
+            "unit": "s"
+          }
+        },
         "test_points": "between live parts and accessible conductive parts"
       },
       "acceptance_criterion": {
@@ -6674,25 +8860,43 @@
       "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
       "source_pages": [
         15
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "16.2.1",
+        "page": 15,
+        "pages": [
+          15
+        ],
+        "section": "Following shall constitute inspection tests:",
+        "original_text": "16.2.1 Following shall constitute inspection tests:\na)\nMarking;\nb)\nInterchangeability;\nc)\nProtection against electric shock;\nd)\nInsulation resistance and electric strength after\nhumidity treatment; and\ne)\nMechanical strength.\nA batch shall be considered to comply, if the number\nof lamps failing does"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC001-16.2.1-ES",
+      "status": "mandatory",
       "clause": "16.2.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -6703,26 +8907,72 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         15
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "16.2.1",
+        "page": 15,
+        "pages": [
+          15
+        ],
+        "section": "Following shall constitute inspection tests:",
+        "original_text": "16.2.1 Following shall constitute inspection tests:\na)\nMarking;\nb)\nInterchangeability;\nc)\nProtection against electric shock;\nd)\nInsulation resistance and electric strength after\nhumidity treatment; and\ne)\nMechanical strength.\nA batch shall be considered to comply, if the number\nof lamps failing does"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "minimum_limit",
       "requirement_id": "REQ-DOC001-17.1.1-IR",
+      "status": "mandatory",
       "clause": "17.1.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "insulation_resistance",
       "operator": ">=",
+      "original_value": "4 MΩ",
+      "normalized": {
+        "value": 4.0,
+        "unit": "MΩ"
+      },
       "value": 4.0,
       "unit": "MΩ",
       "conditions": {
-        "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
-        "temperature": "25-35 °C",
-        "duration": "48 h"
+        "humidity_treatment": {
+          "original_value": "48 h at (91-95)% RH",
+          "normalized": {
+            "duration": {
+              "value": 48,
+              "unit": "h"
+            },
+            "humidity": {
+              "min": 91,
+              "max": 95,
+              "unit": "%"
+            },
+            "temperature": {
+              "min": 25,
+              "max": 35,
+              "unit": "°C"
+            }
+          }
+        }
       },
       "test": {
-        "applied_voltage": "approximately 500 V d.c.",
-        "measurement_time": "1 min after voltage application",
+        "applied_voltage": {
+          "original_value": "approximately 500 V d.c.",
+          "normalized": {
+            "value": 500,
+            "unit": "V d.c."
+          }
+        },
+        "measurement_time": {
+          "original_value": "1 min after application",
+          "normalized": {
+            "value": 60,
+            "unit": "s"
+          }
+        },
         "test_points": "between live parts and accessible conductive parts"
       },
       "acceptance_criterion": {
@@ -6734,25 +8984,43 @@
       "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
       "source_pages": [
         15
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ],
+        "section": "Type Tests",
+        "original_text": "17.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of self-ballasted lamps,\nsample being drawn preferably from regular production\nlot. The tests are carried out in order of the clauses:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC001-17.1.1-ES",
+      "status": "mandatory",
       "clause": "17.1.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -6763,25 +9031,43 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         15
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ],
+        "section": "Type Tests",
+        "original_text": "17.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of self-ballasted lamps,\nsample being drawn preferably from regular production\nlot. The tests are carried out in order of the clauses:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC001-17.2-ES",
+      "status": "mandatory",
       "clause": "17.2",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -6793,7 +9079,20 @@
       "source_pages": [
         15,
         16
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.2",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ],
+        "section": "Acceptance Test",
+        "original_text": "17.2 Acceptance Test\nThe following shall constitute as acceptance tests:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection against electric shock (see 7);\nd)\nInsulation resistance and electric strength after\nhumidity treatment (see 8);\ne)\nMechanical strength (see 9); and\nf)\nCap temper"
+      }
     }
   ],
   "cross_references": [
@@ -7308,10 +9607,10 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:21:58.180098+00:00",
+    "normalized_at": "2026-08-30T15:25:15.654751+00:00",
     "total_entities": 107,
-    "total_requirements": 18,
-    "total_relationships": 186,
+    "total_requirements": 19,
+    "total_relationships": 187,
     "total_cross_references": 22,
     "total_tables": 2,
     "total_references": 14,

@@ -1,18 +1,13 @@
 """
 Deterministic Knowledge Entity Extractor for Indian Standards and Regulations.
-Extracts 7 core entity families:
-A. Standards (IS / IEC standards)
-B. Products (Self-ballasted LED lamp, Lamp cap, Controlgear)
-C. Technical Parameters (Insulation resistance, Cap temperature rise, Bending moment, Torque, etc.)
-D. Values & Units (60 W, 250 V, 4 MΩ, 120 K, 48 h, 91-95%, 25 lamps)
-E. Components & Lamp Caps (B15d, B22d, E11, E12, E14, E17, E26, E27, GU10, GX53)
-F. Tests (Insulation resistance test, Electric strength test, Torsion test, Ball-pressure test, Glow-wire test, etc.)
-G. Authorities (Bureau of Indian Standards, MeitY, IEC)
+Extracts 7 core entity families with full provenance, original expressions, and normalized values.
 """
 
 import logging
 import re
 from typing import Any, Dict, List, Set
+
+from ai.processing.value_normalizer import ValueNormalizer
 
 logger = logging.getLogger(__name__)
 
@@ -43,7 +38,7 @@ RESISTANCE_PATTERN = re.compile(
 )
 
 TORQUE_PATTERN = re.compile(
-    r"(\b[0-9]+(?:\.[0-9]+)?\s*Nm\b)",
+    r"(\b[0-9]+(?:\.[0-9]+)?\s*Nm(?:\s*\(under consideration\))?)\b",
     re.IGNORECASE,
 )
 
@@ -52,7 +47,7 @@ TEMP_KELVIN_PATTERN = re.compile(
 )
 
 TEMP_CELSIUS_PATTERN = re.compile(
-    r"(\b[0-9]+(?:\.[0-9]+)?\s*°C\b)",
+    r"(\b[0-9]+(?:\.[0-9]+)?\s*°C(?:\s*\(value [0-9]+°C under consideration\))?)\b",
     re.IGNORECASE,
 )
 
@@ -79,15 +74,21 @@ TEST_NAME_PATTERNS = [
 
 
 class EntityExtractor:
-    """Extracts typed domain entities across 7 families from normalized clauses and metadata."""
+    """Extracts typed domain entities across 7 families with full provenance and dual value representations."""
+
+    def __init__(self):
+        self.val_normalizer = ValueNormalizer()
 
     def extract_entities_from_document(self, processed_doc: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
         Extracts typed entities across all pages and clauses in the document.
-        Maintains source_clause and source_pages provenance on every entity.
+        Maintains complete provenance block on every entity.
         """
         doc_id = processed_doc.get("document_id", "DOC-UNKNOWN")
+        source_id = processed_doc.get("source_id", "SRC-UNKNOWN")
         doc_meta = processed_doc.get("document_metadata", {})
+        std_num = str(doc_meta.get("standard_number") or doc_meta.get("title", doc_id)).strip()
+
         entities: List[Dict[str, Any]] = []
         seen_keys: Set[str] = set()
 
@@ -97,14 +98,26 @@ class EntityExtractor:
                 return
             seen_keys.add(dedup_key)
 
+            p_list = sorted(list(set(pages))) if pages else [1]
+            status = "under_consideration" if "under consideration" in str(value).lower() else "mandatory"
+
             record = {
                 "entity_id": f"ENT-{doc_id.replace('-', '')}-{len(entities) + 1:04d}",
                 "entity_type": entity_type,
                 "name": name,
+                "status": status,
+                "original_value": str(value),
                 "value": value,
-                "document_id": doc_id,
+                "provenance": {
+                    "document_id": doc_id,
+                    "source_id": source_id,
+                    "standard": std_num,
+                    "clause": clause_num,
+                    "page": p_list[0],
+                    "pages": p_list,
+                },
                 "source_clause": clause_num,
-                "source_pages": sorted(list(set(pages))),
+                "source_pages": p_list,
             }
             if extra:
                 record.update(extra)
@@ -150,28 +163,43 @@ class EntityExtractor:
 
                 # Family C & D: Technical Parameters & Values
                 for v_match in VOLTAGE_PATTERN.finditer(c_text):
-                    add_entity("value_and_unit", "voltage", v_match.group(1).strip(), c_num, c_pages, {"unit": "V"})
+                    v_raw = v_match.group(1).strip()
+                    norm_v = self.val_normalizer.normalize_value_expression(v_raw)
+                    add_entity("value_and_unit", "voltage", v_raw, c_num, c_pages, {"normalized": norm_v["normalized"], "unit": "V"})
 
                 for w_match in WATTAGE_PATTERN.finditer(c_text):
-                    add_entity("value_and_unit", "wattage", w_match.group(1).strip(), c_num, c_pages, {"unit": "W"})
+                    w_raw = w_match.group(1).strip()
+                    norm_w = self.val_normalizer.normalize_value_expression(w_raw)
+                    add_entity("value_and_unit", "wattage", w_raw, c_num, c_pages, {"normalized": norm_w["normalized"], "unit": "W"})
 
                 for r_match in RESISTANCE_PATTERN.finditer(c_text):
-                    add_entity("value_and_unit", "insulation_resistance", r_match.group(1).strip(), c_num, c_pages, {"unit": "MΩ"})
+                    r_raw = r_match.group(1).strip()
+                    norm_r = self.val_normalizer.normalize_value_expression(r_raw)
+                    add_entity("value_and_unit", "insulation_resistance", r_raw, c_num, c_pages, {"normalized": norm_r["normalized"], "unit": "MΩ"})
 
                 for t_match in TORQUE_PATTERN.finditer(c_text):
-                    add_entity("value_and_unit", "torque", t_match.group(1).strip(), c_num, c_pages, {"unit": "Nm"})
+                    t_raw = t_match.group(1).strip()
+                    norm_t = self.val_normalizer.normalize_value_expression(t_raw)
+                    add_entity("value_and_unit", "torque", t_raw, c_num, c_pages, {"normalized": norm_t["normalized"], "unit": "Nm"})
 
                 for k_match in TEMP_KELVIN_PATTERN.finditer(c_text):
-                    add_entity("value_and_unit", "temperature_rise", k_match.group(1).strip(), c_num, c_pages, {"unit": "K"})
+                    k_raw = k_match.group(1).strip()
+                    norm_k = self.val_normalizer.normalize_value_expression(k_raw)
+                    add_entity("value_and_unit", "temperature_rise", k_raw, c_num, c_pages, {"normalized": norm_k["normalized"], "unit": "K"})
 
                 for c_temp_match in TEMP_CELSIUS_PATTERN.finditer(c_text):
-                    add_entity("value_and_unit", "temperature", c_temp_match.group(1).strip(), c_num, c_pages, {"unit": "°C"})
+                    c_raw = c_temp_match.group(1).strip()
+                    norm_c = self.val_normalizer.normalize_value_expression(c_raw)
+                    add_entity("value_and_unit", "temperature", c_raw, c_num, c_pages, {"normalized": norm_c["normalized"], "unit": "°C"})
 
                 for h_match in HUMIDITY_PATTERN.finditer(c_text):
-                    add_entity("value_and_unit", "humidity", h_match.group(1).strip(), c_num, c_pages, {"unit": "% RH"})
+                    h_raw = h_match.group(1).strip()
+                    norm_h = self.val_normalizer.normalize_value_expression(h_raw)
+                    add_entity("value_and_unit", "humidity", h_raw, c_num, c_pages, {"normalized": norm_h["normalized"], "unit": "% RH"})
 
                 for samp_match in SAMPLING_PATTERN.finditer(c_text):
-                    add_entity("sampling_rule", samp_match.group(1).upper(), samp_match.group(0).strip(), c_num, c_pages)
+                    s_raw = samp_match.group(0).strip()
+                    add_entity("sampling_rule", samp_match.group(1).upper(), s_raw, c_num, c_pages)
 
                 if c.get("subclauses"):
                     traverse_clauses(c["subclauses"])

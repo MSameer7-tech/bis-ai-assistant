@@ -483,19 +483,25 @@
           "entity_type": "requirement",
           "requirement_type": "dielectric_test",
           "requirement_id": "REQ-DOC007-4-ES",
+          "status": "mandatory",
           "clause": "4",
           "subject": "self-ballasted LED lamp",
           "parameter": "dielectric_electric_strength",
           "operator": "==",
+          "original_value": "4 000 V a.c.",
+          "normalized": {
+            "value": 4000,
+            "unit": "V a.c."
+          },
           "value": 4000,
           "unit": "V a.c.",
           "conditions": {
             "humidity_treatment": "immediately following 48 h humidity treatment"
           },
           "test": {
-            "test_voltage": "4000 V a.c. (r.m.s.)",
+            "test_voltage": "4 000 V a.c. (r.m.s.)",
             "frequency": "50 Hz",
-            "duration": "1 minute"
+            "duration": "1 minute (60 s)"
           },
           "acceptance_criterion": {
             "minimum": 4000,
@@ -506,7 +512,19 @@
           "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
           "source_pages": [
             7
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-007",
+            "source_id": "SRC-007",
+            "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+            "clause": "4",
+            "page": 7,
+            "pages": [
+              7
+            ],
+            "section": "GENERAL REQUIREMENTS",
+            "original_text": "4 GENERAL REQUIREMENTS\nThe requirements of 4 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nControlgears providing SELV shall comply with the\nrequirements of Annex I. This includes insulation\nresistance, electric strength, creepage distances and\nclearance betw"
+          }
         }
       ]
     },
@@ -598,10 +616,21 @@
               "entity_type": "requirement",
               "requirement_type": "mandatory_marking",
               "requirement_id": "REQ-DOC007-7.2-MARK",
+              "status": "mandatory",
               "clause": "7.2",
               "subject": "self-ballasted LED lamp",
               "parameter": "mandatory_marking_elements",
               "operator": "mandatory",
+              "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+              "normalized": {
+                "items": [
+                  "Mark of origin (trademark)",
+                  "Rated voltage or voltage range (V)",
+                  "Rated wattage (W)",
+                  "Rated frequency (Hz)",
+                  "Standard Mark (CRS Registration Number)"
+                ]
+              },
               "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
               "unit": null,
               "conditions": {
@@ -624,7 +653,19 @@
               "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
               "source_pages": [
                 7
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "7.2",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "Information to be Provided, if Applicable",
+                "original_text": "7.2 Information to be Provided, if Applicable\nIn addition to the above mandatory markings, the\nfollowing information, if applicable, shall be given\neither on the control gear, or be made available in the\nmanufacturer’s catalogue :\na)"
+              }
             }
           ]
         },
@@ -784,19 +825,25 @@
           "entity_type": "requirement",
           "requirement_type": "dielectric_test",
           "requirement_id": "REQ-DOC007-12-ES",
+          "status": "mandatory",
           "clause": "12",
           "subject": "self-ballasted LED lamp",
           "parameter": "dielectric_electric_strength",
           "operator": "==",
+          "original_value": "4 000 V a.c.",
+          "normalized": {
+            "value": 4000,
+            "unit": "V a.c."
+          },
           "value": 4000,
           "unit": "V a.c.",
           "conditions": {
             "humidity_treatment": "immediately following 48 h humidity treatment"
           },
           "test": {
-            "test_voltage": "4000 V a.c. (r.m.s.)",
+            "test_voltage": "4 000 V a.c. (r.m.s.)",
             "frequency": "50 Hz",
-            "duration": "1 minute"
+            "duration": "1 minute (60 s)"
           },
           "acceptance_criterion": {
             "minimum": 4000,
@@ -807,7 +854,19 @@
           "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
           "source_pages": [
             8
-          ]
+          ],
+          "provenance": {
+            "document_id": "DOC-007",
+            "source_id": "SRC-007",
+            "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+            "clause": "12",
+            "page": 8,
+            "pages": [
+              8
+            ],
+            "section": "ELECTRIC STRENGTH",
+            "original_text": "12 ELECTRIC STRENGTH\nThe requirements of 12 of IS 15885 (Part 1) shall apply."
+          }
         }
       ]
     },
@@ -1040,19 +1099,25 @@
                   "entity_type": "requirement",
                   "requirement_type": "dielectric_test",
                   "requirement_id": "REQ-DOC007-21.1.1-ES",
+                  "status": "mandatory",
                   "clause": "21.1.1",
                   "subject": "self-ballasted LED lamp",
                   "parameter": "dielectric_electric_strength",
                   "operator": "==",
+                  "original_value": "4 000 V a.c.",
+                  "normalized": {
+                    "value": 4000,
+                    "unit": "V a.c."
+                  },
                   "value": 4000,
                   "unit": "V a.c.",
                   "conditions": {
                     "humidity_treatment": "immediately following 48 h humidity treatment"
                   },
                   "test": {
-                    "test_voltage": "4000 V a.c. (r.m.s.)",
+                    "test_voltage": "4 000 V a.c. (r.m.s.)",
                     "frequency": "50 Hz",
-                    "duration": "1 minute"
+                    "duration": "1 minute (60 s)"
                   },
                   "acceptance_criterion": {
                     "minimum": 4000,
@@ -1063,7 +1128,19 @@
                   "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
                   "source_pages": [
                     8
-                  ]
+                  ],
+                  "provenance": {
+                    "document_id": "DOC-007",
+                    "source_id": "SRC-007",
+                    "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                    "clause": "21.1.1",
+                    "page": 8,
+                    "pages": [
+                      8
+                    ],
+                    "section": "Type Tests",
+                    "original_text": "21.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of controlgear, sample\nbeing drawn preferably from regular production lot:\na)\nMarking (see 7);\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions fo"
+                  }
                 }
               ]
             }
@@ -1098,19 +1175,25 @@
               "entity_type": "requirement",
               "requirement_type": "dielectric_test",
               "requirement_id": "REQ-DOC007-21.2-ES",
+              "status": "mandatory",
               "clause": "21.2",
               "subject": "self-ballasted LED lamp",
               "parameter": "dielectric_electric_strength",
               "operator": "==",
+              "original_value": "4 000 V a.c.",
+              "normalized": {
+                "value": 4000,
+                "unit": "V a.c."
+              },
               "value": 4000,
               "unit": "V a.c.",
               "conditions": {
                 "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
-                "test_voltage": "4000 V a.c. (r.m.s.)",
+                "test_voltage": "4 000 V a.c. (r.m.s.)",
                 "frequency": "50 Hz",
-                "duration": "1 minute"
+                "duration": "1 minute (60 s)"
               },
               "acceptance_criterion": {
                 "minimum": 4000,
@@ -1122,7 +1205,20 @@
               "source_pages": [
                 8,
                 9
-              ]
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "21.2",
+                "page": 8,
+                "pages": [
+                  8,
+                  9
+                ],
+                "section": "Acceptance Test",
+                "original_text": "21.2 Acceptance Test\nThe sampling plan for acceptance tests shall be as\nspecified in IS 2500 (Part 1). The following shall\nconstitute as acceptance tests:\na)\nMarking (see 7);\nIS 15885 (Part 2/Sec 13) : 2012\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nPr"
+              }
             }
           ]
         }
@@ -1139,8 +1235,19 @@
       "entity_id": "ENT-DOC007-0001",
       "entity_type": "standard",
       "name": "IS 15885 (Part 2/Sec 13) : 2012",
+      "status": "mandatory",
+      "original_value": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
       "value": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -1150,8 +1257,19 @@
       "entity_id": "ENT-DOC007-0002",
       "entity_type": "authority",
       "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
       "value": "National Standards Body of India",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -1161,8 +1279,19 @@
       "entity_id": "ENT-DOC007-0003",
       "entity_type": "authority",
       "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
       "value": "Statutory Order Authority",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "0",
       "source_pages": [
         1
@@ -1172,8 +1301,19 @@
       "entity_id": "ENT-DOC007-0004",
       "entity_type": "product",
       "name": "LED Controlgear",
+      "status": "mandatory",
+      "original_value": "d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
       "value": "d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         1
@@ -1183,8 +1323,19 @@
       "entity_id": "ENT-DOC007-0005",
       "entity_type": "referenced_standard",
       "name": "IS 15885\n(Part 1) : 2011",
+      "status": "mandatory",
+      "original_value": "IS 15885\n(Part 1) : 2011",
       "value": "IS 15885\n(Part 1) : 2011",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         6
@@ -1194,8 +1345,19 @@
       "entity_id": "ENT-DOC007-0006",
       "entity_type": "referenced_standard",
       "name": "IS 16104 : 2012",
+      "status": "mandatory",
+      "original_value": "IS 16104 : 2012",
       "value": "IS 16104 : 2012",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         6
@@ -1205,20 +1367,47 @@
       "entity_id": "ENT-DOC007-0007",
       "entity_type": "value_and_unit",
       "name": "voltage",
+      "status": "mandatory",
+      "original_value": "000 V",
       "value": "000 V",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
       "source_clause": "1",
       "source_pages": [
         6
       ],
+      "normalized": {
+        "value": 0,
+        "unit": "V"
+      },
       "unit": "V"
     },
     {
       "entity_id": "ENT-DOC007-0008",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
       "source_clause": "3",
       "source_pages": [
         6,
@@ -1229,8 +1418,19 @@
       "entity_id": "ENT-DOC007-0009",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "4",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "4",
       "source_pages": [
         7
@@ -1240,8 +1440,19 @@
       "entity_id": "ENT-DOC007-0010",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "4",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "4",
       "source_pages": [
         7
@@ -1251,8 +1462,19 @@
       "entity_id": "ENT-DOC007-0011",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "5",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "5",
       "source_pages": [
         7
@@ -1262,8 +1484,19 @@
       "entity_id": "ENT-DOC007-0012",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "6",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "6",
       "source_pages": [
         7
@@ -1273,8 +1506,19 @@
       "entity_id": "ENT-DOC007-0013",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "7.1",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "7.1",
       "source_pages": [
         7
@@ -1284,8 +1528,19 @@
       "entity_id": "ENT-DOC007-0014",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "8",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "8",
       "source_pages": [
         7
@@ -1295,8 +1550,19 @@
       "entity_id": "ENT-DOC007-0015",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "9",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "9",
       "source_pages": [
         7
@@ -1306,8 +1572,19 @@
       "entity_id": "ENT-DOC007-0016",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "10",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
       "source_clause": "10",
       "source_pages": [
         7
@@ -1317,8 +1594,20 @@
       "entity_id": "ENT-DOC007-0017",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "11",
+        "page": 7,
+        "pages": [
+          7,
+          8
+        ]
+      },
       "source_clause": "11",
       "source_pages": [
         7,
@@ -1329,8 +1618,19 @@
       "entity_id": "ENT-DOC007-0018",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "12",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "12",
       "source_pages": [
         8
@@ -1340,8 +1640,19 @@
       "entity_id": "ENT-DOC007-0019",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "12",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "12",
       "source_pages": [
         8
@@ -1351,8 +1662,19 @@
       "entity_id": "ENT-DOC007-0020",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "13",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "13",
       "source_pages": [
         8
@@ -1362,8 +1684,19 @@
       "entity_id": "ENT-DOC007-0021",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "14",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "14",
       "source_pages": [
         8
@@ -1373,8 +1706,19 @@
       "entity_id": "ENT-DOC007-0022",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "14",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "14",
       "source_pages": [
         8
@@ -1384,8 +1728,19 @@
       "entity_id": "ENT-DOC007-0023",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "15",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "15",
       "source_pages": [
         8
@@ -1395,8 +1750,19 @@
       "entity_id": "ENT-DOC007-0024",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "15.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "15.1",
       "source_pages": [
         8
@@ -1406,8 +1772,19 @@
       "entity_id": "ENT-DOC007-0025",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "15.2",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "15.2",
       "source_pages": [
         8
@@ -1417,8 +1794,19 @@
       "entity_id": "ENT-DOC007-0026",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "16",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "16",
       "source_pages": [
         8
@@ -1428,8 +1816,19 @@
       "entity_id": "ENT-DOC007-0027",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "17",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "17",
       "source_pages": [
         8
@@ -1439,8 +1838,19 @@
       "entity_id": "ENT-DOC007-0028",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "18",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "18",
       "source_pages": [
         8
@@ -1450,8 +1860,19 @@
       "entity_id": "ENT-DOC007-0029",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "19",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "19",
       "source_pages": [
         8
@@ -1461,8 +1882,19 @@
       "entity_id": "ENT-DOC007-0030",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "20",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "20",
       "source_pages": [
         8
@@ -1472,8 +1904,19 @@
       "entity_id": "ENT-DOC007-0031",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.1.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "21.1.1",
       "source_pages": [
         8
@@ -1483,8 +1926,19 @@
       "entity_id": "ENT-DOC007-0032",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.1.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
       "source_clause": "21.1.1",
       "source_pages": [
         8
@@ -1494,8 +1948,20 @@
       "entity_id": "ENT-DOC007-0033",
       "entity_type": "referenced_standard",
       "name": "IS 2500",
+      "status": "mandatory",
+      "original_value": "IS 2500",
       "value": "IS 2500",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "21.2",
       "source_pages": [
         8,
@@ -1506,8 +1972,20 @@
       "entity_id": "ENT-DOC007-0034",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
       "value": "IS 15885",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "21.2",
       "source_pages": [
         8,
@@ -1518,8 +1996,20 @@
       "entity_id": "ENT-DOC007-0035",
       "entity_type": "test",
       "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
       "value": "Electric Strength Test",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "21.2",
       "source_pages": [
         8,
@@ -1530,8 +2020,20 @@
       "entity_id": "ENT-DOC007-0036",
       "entity_type": "test",
       "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
       "value": "Fault Condition Test",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
       "source_clause": "21.2",
       "source_pages": [
         8,
@@ -1542,8 +2044,19 @@
       "entity_id": "ENT-DOC007-0037",
       "entity_type": "annex",
       "name": "ANNEX A",
+      "status": "mandatory",
+      "original_value": "ANNEX A",
       "value": "ANNEX A",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX A",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "ANNEX A",
       "source_pages": [
         9
@@ -1553,8 +2066,19 @@
       "entity_id": "ENT-DOC007-0038",
       "entity_type": "annex",
       "name": "ANNEX B",
+      "status": "mandatory",
+      "original_value": "ANNEX B",
       "value": "ANNEX B",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX B",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "ANNEX B",
       "source_pages": [
         9
@@ -1564,8 +2088,19 @@
       "entity_id": "ENT-DOC007-0039",
       "entity_type": "annex",
       "name": "ANNEX C",
+      "status": "mandatory",
+      "original_value": "ANNEX C",
       "value": "ANNEX C",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX C",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "ANNEX C",
       "source_pages": [
         9
@@ -1575,8 +2110,19 @@
       "entity_id": "ENT-DOC007-0040",
       "entity_type": "annex",
       "name": "ANNEX D",
+      "status": "mandatory",
+      "original_value": "ANNEX D",
       "value": "ANNEX D",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX D",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
       "source_clause": "ANNEX D",
       "source_pages": [
         9
@@ -1586,8 +2132,20 @@
       "entity_id": "ENT-DOC007-0041",
       "entity_type": "annex",
       "name": "ANNEX E",
+      "status": "mandatory",
+      "original_value": "ANNEX E",
       "value": "ANNEX E",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX E",
+        "page": 9,
+        "pages": [
+          9,
+          10
+        ]
+      },
       "source_clause": "ANNEX E",
       "source_pages": [
         9,
@@ -1598,8 +2156,19 @@
       "entity_id": "ENT-DOC007-0042",
       "entity_type": "annex",
       "name": "ANNEX F",
+      "status": "mandatory",
+      "original_value": "ANNEX F",
       "value": "ANNEX F",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX F",
+        "page": 10,
+        "pages": [
+          10
+        ]
+      },
       "source_clause": "ANNEX F",
       "source_pages": [
         10
@@ -1609,8 +2178,19 @@
       "entity_id": "ENT-DOC007-0043",
       "entity_type": "annex",
       "name": "ANNEX G",
+      "status": "mandatory",
+      "original_value": "ANNEX G",
       "value": "ANNEX G",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX G",
+        "page": 10,
+        "pages": [
+          10
+        ]
+      },
       "source_clause": "ANNEX G",
       "source_pages": [
         10
@@ -1620,8 +2200,19 @@
       "entity_id": "ENT-DOC007-0044",
       "entity_type": "annex",
       "name": "ANNEX H",
+      "status": "mandatory",
+      "original_value": "ANNEX H",
       "value": "ANNEX H",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX H",
+        "page": 10,
+        "pages": [
+          10
+        ]
+      },
       "source_clause": "ANNEX H",
       "source_pages": [
         10
@@ -1631,8 +2222,20 @@
       "entity_id": "ENT-DOC007-0045",
       "entity_type": "annex",
       "name": "ANNEX I",
+      "status": "mandatory",
+      "original_value": "ANNEX I",
       "value": "ANNEX I",
-      "document_id": "DOC-007",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX I",
+        "page": 10,
+        "pages": [
+          10,
+          11
+        ]
+      },
       "source_clause": "ANNEX I",
       "source_pages": [
         10,
@@ -2268,7 +2871,7 @@
       "relationship_id": "REL-DOC007-0057",
       "subject": "dielectric_electric_strength",
       "predicate": "tested_by",
-      "object": "4000 V a.c. (r.m.s.)",
+      "object": "4 000 V a.c. (r.m.s.)",
       "document_id": "DOC-007",
       "source_clause": "4",
       "source_pages": [
@@ -2420,19 +3023,25 @@
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC007-4-ES",
+      "status": "mandatory",
       "clause": "4",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -2443,16 +3052,39 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         7
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "4",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "GENERAL REQUIREMENTS",
+        "original_text": "4 GENERAL REQUIREMENTS\nThe requirements of 4 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nControlgears providing SELV shall comply with the\nrequirements of Annex I. This includes insulation\nresistance, electric strength, creepage distances and\nclearance betw"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "mandatory_marking",
       "requirement_id": "REQ-DOC007-7.2-MARK",
+      "status": "mandatory",
       "clause": "7.2",
       "subject": "self-ballasted LED lamp",
       "parameter": "mandatory_marking_elements",
       "operator": "mandatory",
+      "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+      "normalized": {
+        "items": [
+          "Mark of origin (trademark)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration Number)"
+        ]
+      },
       "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
       "unit": null,
       "conditions": {
@@ -2475,25 +3107,43 @@
       "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
       "source_pages": [
         7
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "7.2",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "Information to be Provided, if Applicable",
+        "original_text": "7.2 Information to be Provided, if Applicable\nIn addition to the above mandatory markings, the\nfollowing information, if applicable, shall be given\neither on the control gear, or be made available in the\nmanufacturer’s catalogue :\na)"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC007-12-ES",
+      "status": "mandatory",
       "clause": "12",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -2504,25 +3154,43 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         8
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "12",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section": "ELECTRIC STRENGTH",
+        "original_text": "12 ELECTRIC STRENGTH\nThe requirements of 12 of IS 15885 (Part 1) shall apply."
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC007-21.1.1-ES",
+      "status": "mandatory",
       "clause": "21.1.1",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -2533,25 +3201,43 @@
       "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         8
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.1.1",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section": "Type Tests",
+        "original_text": "21.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of controlgear, sample\nbeing drawn preferably from regular production lot:\na)\nMarking (see 7);\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions fo"
+      }
     },
     {
       "entity_type": "requirement",
       "requirement_type": "dielectric_test",
       "requirement_id": "REQ-DOC007-21.2-ES",
+      "status": "mandatory",
       "clause": "21.2",
       "subject": "self-ballasted LED lamp",
       "parameter": "dielectric_electric_strength",
       "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
       "value": 4000,
       "unit": "V a.c.",
       "conditions": {
         "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
-        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
         "frequency": "50 Hz",
-        "duration": "1 minute"
+        "duration": "1 minute (60 s)"
       },
       "acceptance_criterion": {
         "minimum": 4000,
@@ -2563,7 +3249,20 @@
       "source_pages": [
         8,
         9
-      ]
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ],
+        "section": "Acceptance Test",
+        "original_text": "21.2 Acceptance Test\nThe sampling plan for acceptance tests shall be as\nspecified in IS 2500 (Part 1). The following shall\nconstitute as acceptance tests:\na)\nMarking (see 7);\nIS 15885 (Part 2/Sec 13) : 2012\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nPr"
+      }
     }
   ],
   "cross_references": [
@@ -2962,7 +3661,7 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:21:58.194130+00:00",
+    "normalized_at": "2026-08-30T15:25:15.664122+00:00",
     "total_entities": 45,
     "total_requirements": 5,
     "total_relationships": 69,
