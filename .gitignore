@@ -19,12 +19,15 @@ build/
 # OS
 .DS_Store
 
-# Data (Ignore large generated/raw data, keep structure & metadata tracked)
+# Data (Ignore large generated/raw data, keep directory structure & metadata tracked)
 data/raw/*
+!data/raw/**/.gitkeep
 !data/raw/.gitkeep
 data/processed/*
+!data/processed/**/.gitkeep
 !data/processed/.gitkeep
 data/chunks/*
+!data/chunks/**/.gitkeep
 !data/chunks/.gitkeep
 
 # data/metadata/ is tracked for version-controlled metadata and registries
