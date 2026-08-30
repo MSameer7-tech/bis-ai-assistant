@@ -110,6 +110,13 @@ class StructureParser:
                 clause_num = clause_match.group(1).rstrip(".")
                 clause_title = clause_match.group(2).strip() or clause_num
 
+                # If it's a continuation header for the same active clause
+                if current_clause and current_clause["clause_number"] == clause_num:
+                    current_clause["content"] += "\n" + line_text
+                    current_clause["_page_set"].add(p_num)
+                    current_clause["_page_set_max"] = p_num
+                    continue
+
                 if "." in clause_num:
                     parent_clause = clause_num.rsplit(".", 1)[0]
                     depth = clause_num.count(".") + 1
