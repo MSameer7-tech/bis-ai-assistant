@@ -1,7 +1,7 @@
 """
 Deterministic Structure Parser Module for Indian Standards and Gazette Orders.
 Extracts hierarchical sections, clauses, subclauses, annexes, and schedules
-purely using deterministic regex, layout parsing, and page-tracking algorithms.
+with full page range boundaries and page reference arrays.
 No LLM dependencies.
 """
 
@@ -11,8 +11,7 @@ from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
-# Deterministic regex patterns for Indian Standards and Gazette Orders
-# Section Headings (e.g., "1 SCOPE", "2 NORMATIVE REFERENCES", "5 MARKING", "ANNEX A", "SCHEDULE")
+# Deterministic regex patterns
 SECTION_PATTERN = re.compile(
     r"^(?:(?:SECTION\s+)?([0-9]{1,2})\s+([A-Z\s\(\)\-\,\/]{3,80})|"
     r"(ANNEX(?:URE)?\s+[A-Z])\s*([A-Z\s\(\)\-\,\/]*)|"
@@ -21,8 +20,6 @@ SECTION_PATTERN = re.compile(
     re.MULTILINE,
 )
 
-# Clause / Subclause Pattern (e.g., "1", "1.1", "6.2", "8.2.1", "11.1.2.3")
-# or Gazette section format (e.g., "1.", "2.", "3.")
 CLAUSE_NUMBER_PATTERN = re.compile(
     r"^([0-9]{1,2}(?:\.[0-9]{1,2}){0,4})\b(?:\s*[\.\—\-])?\s*([^\n\r]*)",
     re.MULTILINE,
@@ -35,7 +32,7 @@ class StructureParser:
     def parse_document_structure(self, pages: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
         Parses page-level text into structured sections, hierarchical clauses, and annexes.
-        Tracks physical start and end pages for every structural unit.
+        Maintains page_start, page_end, and explicit page_refs arrays for every unit.
         """
         sections: List[Dict[str, Any]] = []
         annexes: List[Dict[str, Any]] = []
@@ -50,6 +47,7 @@ class StructureParser:
                     full_doc_lines.append({"page": p_num, "text": stripped})
 
         current_clause: Optional[Dict[str, Any]] = None
+        current_annex: Optional[Dict[str, Any]] = None
 
         for item in full_doc_lines:
             line_text = item["text"]
@@ -62,21 +60,49 @@ class StructureParser:
                 sec_title = sec_match.group(2) or sec_match.group(4) or line_text
                 sec_title = sec_title.strip() if sec_title else line_text
 
+                # Finalize any active clause before switching to an annex
                 if "ANNEX" in line_text.upper():
-                    annexes.append({
-                        "annex_id": sec_num,
+                    if current_clause:
+                        current_clause["page_end"] = current_clause["_page_set_max"]
+                        current_clause["page_refs"] = sorted(list(current_clause["_page_set"]))
+                        del current_clause["_page_set"]
+                        del current_clause["_page_set_max"]
+                        flat_clauses.append(current_clause)
+                        current_clause = None
+
+                    if current_annex:
+                        current_annex["page_end"] = current_annex["_page_set_max"]
+                        current_annex["page_refs"] = sorted(list(set(current_annex["_page_set"])))
+                        del current_annex["_page_set"]
+                        del current_annex["_page_set_max"]
+                        annexes.append(current_annex)
+
+                    current_annex = {
+                        "annex_id": sec_num if "ANNEX" in sec_num else f"ANNEX {sec_num}",
                         "title": sec_title,
                         "page_start": p_num,
                         "page_end": p_num,
+                        "page_refs": [p_num],
+                        "_page_set": {p_num},
+                        "_page_set_max": p_num,
                         "content": line_text,
-                    })
+                    }
+                    continue
                 else:
                     sections.append({
                         "section_number": sec_num,
                         "title": sec_title,
                         "page_start": p_num,
                         "page_end": p_num,
+                        "page_refs": [p_num],
                     })
+
+            # If inside an annex, continue accumulating annex content
+            if current_annex:
+                current_annex["content"] += "\n" + line_text
+                current_annex["_page_set"].add(p_num)
+                current_annex["_page_set_max"] = p_num
+                continue
 
             # 2. Clause / Subclause Detection
             clause_match = CLAUSE_NUMBER_PATTERN.match(line_text)
@@ -84,7 +110,6 @@ class StructureParser:
                 clause_num = clause_match.group(1).rstrip(".")
                 clause_title = clause_match.group(2).strip() or clause_num
 
-                # Determine parent clause (e.g., parent of 8.2.1 is 8.2; parent of 8.2 is 8; parent of 8 is None)
                 if "." in clause_num:
                     parent_clause = clause_num.rsplit(".", 1)[0]
                     depth = clause_num.count(".") + 1
@@ -94,7 +119,10 @@ class StructureParser:
 
                 # Finalize previous clause
                 if current_clause:
-                    current_clause["page_end"] = p_num
+                    current_clause["page_end"] = current_clause["_page_set_max"]
+                    current_clause["page_refs"] = sorted(list(current_clause["_page_set"]))
+                    del current_clause["_page_set"]
+                    del current_clause["_page_set_max"]
                     flat_clauses.append(current_clause)
 
                 current_clause = {
@@ -104,16 +132,33 @@ class StructureParser:
                     "depth": depth,
                     "page_start": p_num,
                     "page_end": p_num,
+                    "page_refs": [p_num],
+                    "_page_set": {p_num},
+                    "_page_set_max": p_num,
                     "content": line_text,
                     "subclauses": [],
                 }
             else:
                 if current_clause:
                     current_clause["content"] += "\n" + line_text
-                    current_clause["page_end"] = p_num
+                    current_clause["_page_set"].add(p_num)
+                    current_clause["_page_set_max"] = p_num
 
+        # Finalize open clause
         if current_clause:
+            current_clause["page_end"] = current_clause["_page_set_max"]
+            current_clause["page_refs"] = sorted(list(current_clause["_page_set"]))
+            del current_clause["_page_set"]
+            del current_clause["_page_set_max"]
             flat_clauses.append(current_clause)
+
+        # Finalize open annex
+        if current_annex:
+            current_annex["page_end"] = current_annex["_page_set_max"]
+            current_annex["page_refs"] = sorted(list(set(current_annex["_page_set"])))
+            del current_annex["_page_set"]
+            del current_annex["_page_set_max"]
+            annexes.append(current_annex)
 
         # 3. Build hierarchical tree from flat clauses
         hierarchical_clauses = self._build_clause_tree(flat_clauses)
@@ -129,6 +174,7 @@ class StructureParser:
         return {
             "sections": sections,
             "clauses": hierarchical_clauses,
+            "flat_clauses": flat_clauses,
             "flat_clauses_count": len(flat_clauses),
             "annexes": annexes,
         }
@@ -140,7 +186,6 @@ class StructureParser:
 
         for c in flat_clauses:
             clause_num = c["clause_number"]
-            # Create node with empty subclauses list
             node = dict(c)
             node["subclauses"] = []
             clause_map[clause_num] = node
@@ -152,6 +197,12 @@ class StructureParser:
 
             if parent_num and parent_num in clause_map:
                 clause_map[parent_num]["subclauses"].append(node)
+                for p in node.get("page_refs", []):
+                    if p not in clause_map[parent_num]["page_refs"]:
+                        clause_map[parent_num]["page_refs"].append(p)
+                clause_map[parent_num]["page_refs"].sort()
+                clause_map[parent_num]["page_start"] = min(clause_map[parent_num]["page_refs"])
+                clause_map[parent_num]["page_end"] = max(clause_map[parent_num]["page_refs"])
             else:
                 root_clauses.append(node)
 

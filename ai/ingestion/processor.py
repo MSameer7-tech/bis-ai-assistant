@@ -1,6 +1,6 @@
 """
 Document Ingestion Processor Pipeline.
-Orchestrates PDF text extraction, OCR fallback, deterministic structure parsing, and table extraction,
+Orchestrates PDF text extraction, selective OCR fallback, deterministic structure parsing, and table extraction,
 generating structured machine-readable JSON in data/processed/ with full provenance tracking.
 """
 
@@ -61,15 +61,17 @@ class DocumentProcessor:
         # 2. Extract pages with rich metadata and quality metrics
         pages_data = self.extractor.extract_pages(raw_file_path)
 
-        # 3. Apply OCR fallback if scanned or low text
+        # 3. Apply selective OCR fallback if text is below threshold
         pages_data = self.ocr_engine.process_scanned_pages(raw_file_path, pages_data)
-        ocr_used = any(p.get("ocr_applied") for p in pages_data)
+        ocr_used = any(p.get("ocr_used") for p in pages_data)
+        ocr_pages = [p["page_number"] for p in pages_data if p.get("ocr_used")]
 
-        # 4. Parse document structure (sections, hierarchical clauses, annexes)
+        # 4. Parse document structure (sections, hierarchical clauses with page_refs, annexes)
         structure_data = self.structure_parser.parse_document_structure(pages_data)
+        flat_clauses = structure_data.get("flat_clauses", [])
 
-        # 5. Extract tables
-        tables_data = self.table_parser.extract_tables_from_pdf(raw_file_path)
+        # 5. Extract tables with clause association
+        tables_data = self.table_parser.extract_tables_from_pdf(raw_file_path, flat_clauses)
 
         # 6. Quality summary calculation
         ok_pages = [p["page_number"] for p in pages_data if p["quality_flag"] == "OK"]
@@ -100,13 +102,15 @@ class DocumentProcessor:
             "tables": tables_data,
             "annexes": structure_data["annexes"],
             "extraction_metadata": {
-                "extraction_method": "pymupdf",
+                "extraction_method": "pymupdf_with_selective_ocr" if ocr_used else "pymupdf",
                 "ocr_used": ocr_used,
+                "ocr_pages_count": len(ocr_pages),
+                "ocr_pages": ocr_pages,
                 "extracted_at": datetime.now(timezone.utc).isoformat(),
                 "total_pages": len(pages_data),
                 "total_sections": len(structure_data["sections"]),
                 "total_clauses": len(structure_data["clauses"]),
-                "flat_clauses_count": structure_data.get("flat_clauses_count", len(structure_data["clauses"])),
+                "flat_clauses_count": len(flat_clauses),
                 "total_annexes": len(structure_data["annexes"]),
                 "total_tables": len(tables_data),
                 "quality_summary": quality_summary,
@@ -133,8 +137,10 @@ class DocumentProcessor:
             "start_time": start_time,
             "completion_time": datetime.now(timezone.utc).isoformat(),
             "total_pages": len(pages_data),
-            "total_clauses": structure_data.get("flat_clauses_count", len(structure_data["clauses"])),
+            "total_clauses": len(flat_clauses),
             "total_tables": len(tables_data),
+            "total_annexes": len(structure_data["annexes"]),
+            "ocr_used": ocr_used,
             "quality_summary": quality_summary,
             "processed_file_path": str(out_file.relative_to(ROOT_DIR)),
             "status": "extraction_successful",
@@ -159,11 +165,12 @@ class DocumentProcessor:
                 json.dump(registry, f, indent=2, ensure_ascii=False)
 
         logger.info(
-            "✅ Successfully processed %s -> %s (%d pages, %d clauses, quality: %s)",
+            "✅ Successfully processed %s -> %s (%d pages, %d clauses, %d tables, quality: %s)",
             document_id,
             out_file.name,
             len(pages_data),
-            structure_data.get("flat_clauses_count", len(structure_data["clauses"])),
+            len(flat_clauses),
+            len(tables_data),
             quality_summary["overall_quality"],
         )
 

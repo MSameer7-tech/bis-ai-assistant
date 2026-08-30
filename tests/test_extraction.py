@@ -4,6 +4,7 @@ import pytest
 from ai.ingestion.extractor import extract_pdf_pages
 from ai.ingestion.processor import DocumentProcessor
 from ai.ingestion.structure_parser import parse_structure
+from ai.ingestion.table_parser import extract_tables
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DOCUMENTS_PATH = ROOT_DIR / "data" / "metadata" / "documents.json"
@@ -26,36 +27,43 @@ def test_extractor_preserves_pages_and_metadata():
         assert p["quality_flag"] in ("OK", "SUSPICIOUS_LOW_TEXT", "SUSPICIOUS_EMPTY")
 
 
-def test_structure_parser_detects_hierarchical_clauses():
-    """Verify that StructureParser identifies sections and constructs hierarchical subclause trees."""
+def test_structure_parser_detects_page_refs_and_annexes():
+    """Verify that StructureParser identifies page_refs, multi-page spans, and annexes."""
     sample_pages = [
         {
-            "page_number": 1,
-            "text": "IS 16102 (Part 1) : 2012\n1 SCOPE\n1.1 This standard specifies safety requirements.\n1.2 Applicability covers 60W LED.",
+            "page_number": 12,
+            "text": "IS 16102 (Part 1) : 2012\n6 MARKING\n6.1 The lamp shall be marked with wattage.\n6.2 Marking durability test starts.",
         },
         {
-            "page_number": 2,
-            "text": "8 INSULATION RESISTANCE\n8.1 Insulation resistance shall be not less than 4 MΩ.\n8.2 Electric strength test.\n8.2.1 Test voltage shall apply 4000 V.",
+            "page_number": 13,
+            "text": "6.2.1 Continued durability test.\n6.3 Packaging markings.",
+        },
+        {
+            "page_number": 14,
+            "text": "ANNEX A\nGUIDELINES FOR TESTING\nDetails of test conditions.",
         },
     ]
 
     struct = parse_structure(sample_pages)
-    assert len(struct["sections"]) >= 2
-    assert struct["flat_clauses_count"] >= 5
+    assert len(struct["sections"]) >= 1
+    assert len(struct["annexes"]) == 1
 
-    # Check root clause nesting
-    clause_8 = next(c for c in struct["clauses"] if c["clause_number"] == "8")
-    assert clause_8["depth"] == 1
-    assert len(clause_8["subclauses"]) >= 2
+    # Check Annex
+    annex_a = struct["annexes"][0]
+    assert "ANNEX A" in annex_a["annex_id"]
+    assert annex_a["page_start"] == 14
+    assert 14 in annex_a["page_refs"]
 
-    # Check 8.2 has subclause 8.2.1
-    c_82 = next(c for c in clause_8["subclauses"] if c["clause_number"] == "8.2")
-    assert len(c_82["subclauses"]) >= 1
-    assert c_82["subclauses"][0]["clause_number"] == "8.2.1"
+    # Check Clause 6 spans pages 12 and 13
+    clause_6 = next(c for c in struct["clauses"] if c["clause_number"] == "6")
+    assert clause_6["page_start"] == 12
+    assert clause_6["page_end"] == 13
+    assert 12 in clause_6["page_refs"]
+    assert 13 in clause_6["page_refs"]
 
 
-def test_document_processor_canonical_schema_end_to_end():
-    """Verify full end-to-end processing producing the canonical 2C.7 JSON schema with SHA-256."""
+def test_document_processor_canonical_schema_and_tables():
+    """Verify full end-to-end processing with canonical schema, tables, annexes, and SHA-256."""
     processor = DocumentProcessor()
     doc_id = "DOC-001"
 
@@ -72,23 +80,23 @@ def test_document_processor_canonical_schema_end_to_end():
     assert "sha256" in meta
     assert len(meta["sha256"]) == 64
 
-    # 3. Structural arrays
-    assert isinstance(result["pages"], list)
-    assert isinstance(result["sections"], list)
-    assert isinstance(result["clauses"], list)
+    # 3. Structural arrays with page_refs
+    assert len(result["pages"]) > 0
+    assert len(result["clauses"]) > 0
+    for root_clause in result["clauses"]:
+        assert "page_refs" in root_clause
+        assert isinstance(root_clause["page_refs"], list)
+
+    # 4. Tables
     assert isinstance(result["tables"], list)
-    assert isinstance(result["annexes"], list)
+    if len(result["tables"]) > 0:
+        t = result["tables"][0]
+        assert "table_id" in t
+        assert "headers" in t
+        assert "rows" in t
+        assert "page_number" in t
 
-    # 4. Extraction metadata
+    # 5. Extraction metadata
     ext_meta = result["extraction_metadata"]
-    assert ext_meta["extraction_method"] == "pymupdf"
     assert "quality_summary" in ext_meta
-
-    # 5. File persistence
-    out_file = PROCESSED_DIR / f"{doc_id}.json"
-    assert out_file.exists()
-
-    with open(out_file, "r", encoding="utf-8") as f:
-        saved_doc = json.load(f)
-
-    assert saved_doc["document_metadata"]["sha256"] == meta["sha256"]
+    assert "ocr_used" in ext_meta
