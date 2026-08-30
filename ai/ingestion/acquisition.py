@@ -3,13 +3,14 @@ import json
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
-RAW_DATA_DIR = Path("data/raw")
-METADATA_DIR = Path("data/metadata")
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+METADATA_DIR = ROOT_DIR / "data" / "metadata"
 REGISTRY_PATH = METADATA_DIR / "source_registry.json"
+DOCUMENTS_PATH = METADATA_DIR / "documents.json"
 
 
 def compute_sha256(file_path: Path) -> str:
@@ -22,55 +23,92 @@ def compute_sha256(file_path: Path) -> str:
 
 
 def register_acquired_document(
+    document_id: str,
     source_id: str,
     raw_file_path: Path,
+    title: Optional[str] = None,
+    document_number: Optional[str] = None,
+    version_edition: Optional[str] = None,
     source_url: Optional[str] = None,
     notes: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
-    Registers an acquired raw document into the source registry.
-    Calculates SHA-256 hash, file size, timestamp, and advances status to 'document_acquired'.
+    Registers an acquired raw document artifact into documents.json
+    and synchronizes provenance to source_registry.json.
     """
     if not raw_file_path.exists():
-        raise FileNotFoundError(f"Raw file not found: {raw_file_path}")
+        raise FileNotFoundError(f"Raw document file not found: {raw_file_path}")
 
     file_hash = compute_sha256(raw_file_path)
     file_size_bytes = raw_file_path.stat().st_size
     retrieval_timestamp = datetime.now(timezone.utc).isoformat()
+    try:
+        rel_path = str(raw_file_path.relative_to(ROOT_DIR))
+    except ValueError:
+        rel_path = str(raw_file_path)
 
-    with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
-        registry = json.load(f)
+    # 1. Update documents.json
+    documents: List[Dict[str, Any]] = []
+    if DOCUMENTS_PATH.exists():
+        try:
+            with open(DOCUMENTS_PATH, "r", encoding="utf-8") as f:
+                documents = json.load(f)
+        except json.JSONDecodeError:
+            documents = []
 
-    record_found = False
-    updated_record = {}
+    doc_record = {
+        "document_id": document_id,
+        "source_id": source_id,
+        "file_name": raw_file_path.name,
+        "file_path": rel_path,
+        "file_sha256": file_hash,
+        "file_size_bytes": file_size_bytes,
+        "title": title,
+        "standard_or_document_number": document_number,
+        "version_edition": version_edition,
+        "acquired_date": retrieval_timestamp,
+        "status": "document_acquired",
+        "notes": notes,
+    }
 
-    for item in registry:
-        if item["source_id"] == source_id:
-            item["file_path"] = str(raw_file_path)
-            item["file_sha256"] = file_hash
-            item["file_size_bytes"] = file_size_bytes
-            item["retrieval_date"] = retrieval_timestamp
-            item["status"] = "document_acquired"
-            if source_url:
-                item["url"] = source_url
-            if notes:
-                item["notes"] = notes
-            record_found = True
-            updated_record = item
-            break
+    # Upsert in documents list
+    doc_index = next((i for i, d in enumerate(documents) if d["document_id"] == document_id), -1)
+    if doc_index >= 0:
+        documents[doc_index] = doc_record
+    else:
+        documents.append(doc_record)
 
-    if not record_found:
-        raise ValueError(f"Source ID '{source_id}' not found in registry {REGISTRY_PATH}")
+    with open(DOCUMENTS_PATH, "w", encoding="utf-8") as f:
+        json.dump(documents, f, indent=2, ensure_ascii=False)
 
-    with open(REGISTRY_PATH, "w", encoding="utf-8") as f:
-        json.dump(registry, f, indent=2, ensure_ascii=False)
+    # 2. Update source_registry.json
+    if REGISTRY_PATH.exists():
+        with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+            registry = json.load(f)
+
+        for item in registry:
+            if item["source_id"] == source_id:
+                item["document_id"] = document_id
+                item["file_path"] = rel_path
+                item["file_sha256"] = file_hash
+                item["file_size_bytes"] = file_size_bytes
+                item["retrieval_date"] = retrieval_timestamp
+                item["status"] = "document_acquired"
+                if source_url:
+                    item["url"] = source_url
+                if notes:
+                    item["notes"] = notes
+                break
+
+        with open(REGISTRY_PATH, "w", encoding="utf-8") as f:
+            json.dump(registry, f, indent=2, ensure_ascii=False)
 
     logger.info(
-        "Registered document %s -> %s (SHA-256: %s, Size: %d bytes)",
+        "✅ Registered %s (Linked to %s): %s (SHA-256: %s...)",
+        document_id,
         source_id,
-        raw_file_path,
-        file_hash,
-        file_size_bytes,
+        rel_path,
+        file_hash[:16],
     )
 
-    return updated_record
+    return doc_record
