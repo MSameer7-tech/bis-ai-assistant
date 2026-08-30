@@ -1,165 +1,204 @@
-# BIS Domain Model & Entity Relationship Architecture
+# BIS Domain Model & Entity Architecture
 
-This document defines the formal relational structure, entity definitions, and reasoning graphs for the **BIS AI Knowledge Base**. It translates the real-world BIS regulatory ecosystem into deterministic data models and graph relationships.
+This document defines the formal relational structure, domain models, and graph relationships for the **BIS AI Intelligent Assistant**.
 
 ---
 
-## 1. Core Relationship Maps
-
-### 1.1 Product-Centric Regulatory & Operational Flow
+## 1. Relational Graph & Domain Architecture
 
 ```text
-                                  ┌───────────────────────┐
-                                  │        PRODUCT        │
-                                  │ (e.g., 9W LED Lamp)   │
-                                  └───────────┬───────────┘
+                                  ┌────────────────────────┐
+                                  │        PRODUCT         │
+                                  │ (Attributes & Specs)   │
+                                  └───────────┬────────────┘
                                               │
-                    ┌─────────────────────────┼─────────────────────────┐
-                    ▼                         ▼                         ▼
-        ┌───────────────────────┐ ┌───────────────────────┐ ┌───────────────────────┐
-        │   APPLICABLE STANDARD │ │   GOVERNMENT QCO      │ │  CERTIFICATION SCHEME │
-        │   (IS 16102 Part 1)   │ │ (Electronics QCO)     │ │   (Scheme II - CRS)   │
-        └───────────┬───────────┘ └───────────┬───────────┘ └───────────┬───────────┘
-                    │                         │                         │
-                    ▼                         ▼                         ▼
-        ┌───────────────────────┐ ┌───────────────────────┐ ┌───────────────────────┐
-        │   CLAUSES & SECTIONS  │ │ MANDATORY THRESHOLD?  │ │ LICENSING / REGISTR.  │
-        │   (Clause 5, 8, 12)   │ │ (Effective Date & Ex.)│ │ (Documents & Portal)  │
-        └───────────┬───────────┘ └───────────────────────┘ └───────────────────────┘
-                    │
-                    ▼
-        ┌───────────────────────┐
-        │      TESTS & METH.    │
-        │   (Insulation, Surge) │
-        └───────────┬───────────┘
-                    │
-                    ▼
-        ┌───────────────────────┐
-        │ RECOGNIZED LAB NETWORK│
-        │ (Lab Name & Scope IS) │
-        └───────────────────────┘
+                    ┌─────────────────────────┴─────────────────────────┐
+                    ▼                                                   ▼
+       ┌─────────────────────────┐                         ┌─────────────────────────┐
+       │   STANDARD APPLICABILITY│                         │ REGULATORY APPLICABILITY│
+       │ (Indian Standard Specs) │                         │  (Quality Control Orders│
+       └────────────┬────────────┘                         └────────────┬────────────┘
+                    │                                                   │
+                    ▼                                                   ▼
+       ┌─────────────────────────┐                         ┌─────────────────────────┐
+       │     CLAUSES & TESTS     │                         │  CONFORMITY REQUIREMENT │
+       │  (Normative Parameters) │                         │ (Mandatory / Voluntary) │
+       └────────────┬────────────┘                         └────────────┬────────────┘
+                    │                                                   │
+                    ▼                                                   ▼
+       ┌─────────────────────────┐                         ┌─────────────────────────┐
+       │    LABORATORY SCOPE     │                         │  CERTIFICATION SCHEME   │
+       │ (Authorized Test Scope) │                         │  (Scheme I / Scheme II) │
+       └────────────┬────────────┘                         └────────────┬────────────┘
+                    │                                                   │
+                    └─────────────────────────┬─────────────────────────┘
+                                              │
+                                              ▼
+                                 ┌─────────────────────────┐
+                                 │     SOURCE REGISTRY     │
+                                 │ (Authoritative Tier 1/2)│
+                                 └────────────┬────────────┘
+                                              │
+                                              ▼
+                                 ┌─────────────────────────┐
+                                 │     CLAIM & EVIDENCE    │
+                                 │  (Granular Citations)   │
+                                 └─────────────────────────┘
 ```
 
 ---
 
-### 1.2 Standard-Centric Lifecycle & Hierarchy
+## 2. Granular Evidence & Citation Lineage
+
+To guarantee source traceability and zero hallucination, the system validates claims through this data lineage:
 
 ```text
-                            ┌──────────────────────────────────┐
-                            │         INDIAN STANDARD          │
-                            │   (Base Code: IS 16102 Part 1)   │
-                            └────────────────┬─────────────────┘
-                                             │
-                       ┌─────────────────────┴─────────────────────┐
-                       ▼                                           ▼
-          ┌───────────────────────────┐               ┌───────────────────────────┐
-          │     STANDARD VERSION      │               │     RELATED STANDARDS     │
-          │  (Year: 2012, Rev 1, Act) │               │  (Normative: IS 15885)    │
-          └────────────┬──────────────┘               └───────────────────────────┘
-                       │
-         ┌─────────────┴─────────────┐
-         ▼                           ▼
-┌──────────────────┐        ┌──────────────────┐
-│   AMENDMENTS     │        │     CLAUSES      │
-│ (Amd 1, Amd 2)   │        │ (Hierarchy 1..N) │
-└──────────────────┘        └────────┬─────────┘
-                                     │
-                       ┌─────────────┴─────────────┐
-                       ▼                           ▼
-          ┌──────────────────────────┐┌──────────────────────────┐
-          │   TEST SPECIFICATIONS    ││      TABLES / ANNEX    │
-          │  (Limits & Pass Criteria)││ (Dimensions & Constants) │
-          └──────────────────────────┘└──────────────────────────┘
+User Question
+      ↓
+Answer Text
+      ↓
+[Claim] ──────────────────────────┐
+  • claim_id: "CLM-001"           │
+  • claim_text: "..."             │
+  • status: "direct_evidence"     │
+      ↓                           │
+[Evidence Chunk]                  ▼
+  • chunk_id: "CHK-102" ───> [Source Registry]
+  • content: "..."             • source_id: "SRC-001"
+  • document_id: "DOC-001"     • authority_level: "Tier 1B"
+  • clause_number: "6.1"       • url: "https://..."
+  • page_number: 14            • status: "verified_authentic"
 ```
 
 ---
 
-## 2. Entity Definitions & Schema Specifications
+## 3. First-Class Entity Data Models
 
-### 2.1 `Product`
-Represents physical consumer or industrial goods seeking compliance.
-* `product_id`: Unique slug (`led-self-ballasted-lamp`)
-* `category`: Broad category (`Lighting & Luminaires`)
-* `common_names`: Aliases (`LED bulb`, `LED lamp`, `rechargeable bulb`, `B22 LED`)
-* `attributes`: Key technical parameters (`wattage_range`, `voltage`, `cap_type`, `application`)
+### 3.1 `Product`
+```json
+{
+  "product_id": "string",
+  "product_name": "string",
+  "category": "string",
+  "manufacturer_description": "string",
+  "technical_attributes": {
+    "wattage": "number",
+    "voltage_range": "string",
+    "cap_type": "string",
+    "driver_topology": "string"
+  },
+  "intended_use": "string",
+  "variants": ["string"],
+  "classification": "string"
+}
+```
 
-### 2.2 `IndianStandard` & `StandardVersion`
-Represents the technical specification issued by BIS.
-* `standard_number`: Canonical standard identifier (`IS 16102 (Part 1)`)
-* `title`: Full official title
-* `technical_committee`: Issuing sectional committee (`ETD 23 - Electric Lamps and Luminaires`)
-* `version_year`: Year of edition (`2012`)
-* `status`: Lifecycle state (`Active`, `Amended`, `Withdrawn`, `Under Revision`)
-* `reaffirmation_year`: Latest reaffirmation (`2022`)
+### 3.2 `Source`
+```json
+{
+  "source_id": "string",
+  "domain": "string",
+  "source_type": "string",
+  "issuing_authority": "string",
+  "authority_level": "string",
+  "title": "string",
+  "standard_or_document_number": "string",
+  "version_edition": "string",
+  "publication_date": "string",
+  "effective_date": "string",
+  "url": "string",
+  "retrieval_date": "string",
+  "status": "string",
+  "notes": "string"
+}
+```
 
-### 2.3 `Clause`
-The fundamental atomic unit of normative requirements and semantic chunks.
-* `clause_id`: Identifier (`IS16102_P1_2012_CLAUSE_8.2`)
-* `standard_number`: Parent standard
-* `clause_number`: Dot-notated section (`8.2`)
-* `clause_title`: Section title (`Insulation Resistance and Electric Strength`)
-* `page_start`: Physical PDF start page
-* `page_end`: Physical PDF end page
-* `parent_clause`: Hierarchical parent (`8`)
-* `content_text`: Cleaned text of the clause
-* `is_test_specification`: Boolean flag indicating if this clause dictates a physical laboratory test
+### 3.3 `Claim`
+```json
+{
+  "claim_id": "string",
+  "claim_text": "string",
+  "claim_type": "string",
+  "evidence_ids": ["string"],
+  "confidence_status": "string",
+  "citation_mapping": {
+    "source_id": "string",
+    "document_number": "string",
+    "clause_number": "string",
+    "page_number": "number"
+  }
+}
+```
 
-### 2.4 `QualityControlOrder` (QCO)
-Represents statutory government notifications enforcing mandatory certification.
-* `qco_id`: Gazette reference (`MeitY-QCO-CRO-2014-LED`)
-* `ministry`: Issuing ministry (`Ministry of Electronics and Information Technology - MeitY`)
-* `gazette_notification_number`: Official S.O. number
-* `order_title`: Title of the order
-* `notified_standards`: List of referenced Indian Standards made compulsory
-* `effective_date`: Date from which compliance became legally mandatory
-* `enforcement_status`: (`Enforced`, `Extended`, `Draft Notification`)
-* `exemptions`: Explicit exclusions (e.g., `Export goods`, `Prototypes < 50 units`)
+### 3.4 `IndianStandard` & `Clause`
+```json
+{
+  "standard_number": "string",
+  "title": "string",
+  "division_council": "string",
+  "publication_year": "number",
+  "status": "string",
+  "clauses": [
+    {
+      "clause_id": "string",
+      "clause_number": "string",
+      "clause_title": "string",
+      "page_start": "number",
+      "page_end": "number",
+      "content_text": "string",
+      "is_normative_requirement": "boolean"
+    }
+  ]
+}
+```
 
-### 2.5 `CertificationScheme` & `LicensingRequirement`
-Conformity assessment routes and operational application criteria.
-* `scheme_code`: (`Scheme-I-ISI`, `Scheme-II-CRS`, `Scheme-IV-CoC`, `Hallmarking`)
-* `scheme_name`: Full descriptive scheme name
-* `governing_regulation`: BIS Conformity Assessment Regulations 2018 clause
-* `factory_inspection_required`: Boolean (`True` for ISI, `False` for CRS)
-* `lab_testing_required`: Boolean (`True`)
-* `portal_url`: Official application portal (`https://www.crsbis.in` / `https://manakonline.in`)
-* `mandatory_documents`: Checklist (e.g., `Test Report`, `Trademark Reg`, `AIR Undertaking`)
+### 3.5 `QualityControlOrder`
+```json
+{
+  "qco_id": "string",
+  "issuing_ministry": "string",
+  "gazette_notification_number": "string",
+  "notification_date": "string",
+  "effective_date": "string",
+  "enforcement_status": "string",
+  "notified_standards": ["string"],
+  "applicability_criteria": "string",
+  "exemptions": ["string"]
+}
+```
 
-### 2.6 `TestRequirement` & `Laboratory`
-Laboratory testing criteria and recognized testing infrastructure.
-* `test_id`: Identifier (`TEST-IS16102-INSULATION`)
-* `test_name`: Name of test (`Electric Strength Test at 4000V`)
-* `standard_number`: `IS 16102 (Part 1)`
-* `clause_reference`: `Clause 8.3`
-* `acceptance_criteria`: Quantitative or qualitative pass criteria
-* `laboratory_id`: Identifier of recognized lab
-* `lab_name`: Registered name of test lab
-* `location`: City, State, Pin
-* `nabl_accreditation_no`: NABL certificate reference
-* `authorized_standards`: Explicit list of standards within the lab's active BIS LRS scope
+### 3.6 `CertificationScheme`
+```json
+{
+  "scheme_code": "string",
+  "scheme_name": "string",
+  "regulatory_basis": "string",
+  "factory_audit_required": "boolean",
+  "lab_testing_required": "boolean",
+  "portal_url": "string",
+  "process_steps": ["string"]
+}
+```
+
+### 3.7 `TestRequirement` & `Laboratory`
+```json
+{
+  "test_id": "string",
+  "test_name": "string",
+  "standard_number": "string",
+  "clause_ref": "string",
+  "acceptance_criteria": "string",
+  "laboratory": {
+    "lab_id": "string",
+    "lab_name": "string",
+    "city": "string",
+    "state": "string",
+    "authorized_standards": ["string"]
+  }
+}
+```
 
 ---
 
-## 3. Knowledge Graph Ingestion & Retrieval Strategy
-
-```text
-                       HYBRID RETRIEVAL & REASONING FLOW
-                                      │
-     ┌────────────────────────────────┴────────────────────────────────┐
-     ▼                                                                 ▼
-[DETERMINISTIC GRAPH TRAVERSAL]                            [SEMANTIC CHUNK SEARCH]
-(Exact Lookups & Legal Mandates)                           (Natural Language Questions)
-  • Product -> QCO -> Compulsory status                     • "What happens if lamp operates
-  • Standard -> Clause -> Page number                         at 110% rated voltage?"
-  • Standard -> Clause -> Lab Scope Match                   • Matches Clause 12 embeddings
-     │                                                                 │
-     └────────────────────────────────┬────────────────────────────────┘
-                                      │
-                                      ▼
-                      [GROUNDED REASONING & SYNTHESIS]
-                                      │
-                                      ▼
-                        [VERIFIED CITATION RESPONSE]
-```
-
-This multi-relational architecture ensures that whenever an answer is formulated, every factual claim is grounded in structured, queryable entities with exact document, clause, and page provenance.
+> [!NOTE]
+> All concrete standards, clauses, dates, and order numbers serve as structural blueprints and illustrative examples. Actual values are strictly resolved from verified sources in the BIS Source Registry.

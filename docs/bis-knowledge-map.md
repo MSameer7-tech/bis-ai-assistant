@@ -1,225 +1,156 @@
 # BIS Knowledge Map & Information Ecosystem
 
-This document establishes the authoritative knowledge taxonomy, entity relationships, and query mappings for the **BIS AI Intelligent Assistant for Indian Standards**.
+This document establishes the official knowledge taxonomy, core first-class entities, relational mappings, and query intent classifications for the **BIS AI Intelligent Assistant for Indian Standards**.
 
 ---
 
-## 1. BIS Information Ecosystem Overview
+## 1. Core Architectural Separation: Standards vs. Regulation vs. Certification
 
-The Bureau of Indian Standards (BIS), established under the **BIS Act 2016**, operates across multiple technical and regulatory pillars:
+A fundamental design principle of this architecture is the strict separation between:
+
+1. **Standard Applicability**: Does an Indian Standard (IS) exist that specifies the technical characteristics, safety parameters, or performance tests for a given product?
+2. **Regulatory Applicability**: Is there an active statutory instrument (such as a Quality Control Order issued by a line ministry) that legally governs the product?
+3. **Conformity Mandate**: What is the legal status of certification?
+   * **`Mandatory`**: Legally required under a gazetted QCO prior to manufacturing, importing, selling, or distributing.
+   * **`Voluntary`**: Standard exists, but certification is optional unless specified by commercial contracts, public procurement, or tenders.
+   * **`Conditional`**: Required only for specific sub-categories, voltage ratings, end-use applications, or capacity thresholds (e.g., above certain wattages, or with specific exclusions for R&D/export).
 
 ```text
-                               ┌─────────────────────────────────────────┐
-                               │       Bureau of Indian Standards        │
-                               │        (Statutory National Body)        │
-                               └────────────────────┬────────────────────┘
-                                                    │
-        ┌──────────────────────┬────────────────────┴────────────────┬──────────────────────┐
-        ▼                      ▼                                     ▼                      ▼
-┌─────────────────┐   ┌─────────────────┐                   ┌─────────────────┐   ┌─────────────────┐
-│ Standards       │   │ Regulatory &    │                   │ Conformity &    │   │ Public &        │
-│ Formulation     │   │ Line Ministries │                   │ Testing Network │   │ Consumer Affairs│
-├─────────────────┤   ├─────────────────┤                   ├─────────────────┤   ├─────────────────┤
-│ • Standards     │   │ • QCOs (DPIIT/  │                   │ • Schemes (ISI/ │   │ • Hallmarking   │
-│ • Editions      │   │   MeitY/MoP)    │                   │   CRS/CoC)      │   │ • BIS Care App  │
-│ • Amendments    │   │ • Gazette Orders│                   │ • Testing Labs  │   │ • Grievance CAD │
-│ • Technical Sec │   │ • Statutory Mand│                   │ • Lab Scopes    │   │ • Standards Club│
-└─────────────────┘   └─────────────────┘                   └─────────────────┘   └─────────────────┘
+                                  PRODUCT
+                                     │
+                 ┌───────────────────┴───────────────────┐
+                 ▼                                       ▼
+        [STANDARD APPLICABILITY]              [REGULATORY APPLICABILITY]
+     "Does an Indian Standard exist?"       "Is there an active Gazette QCO?"
+                 │                                       │
+                 ▼                                       ▼
+       Technical Specification                 Statutory Compliance Status
+       (Clauses, Tests, Limits)               ┌──────────┼──────────┐
+                                              ▼          ▼          ▼
+                                          Mandatory  Voluntary Conditional
+                                              │
+                                              ▼
+                                    [CONFORMITY ASSESSMENT]
+                                    Applicable Scheme & Route
+                                    (e.g., Scheme I vs Scheme II)
 ```
 
 ---
 
-## 2. Core Knowledge Domains & Entities
+## 2. First-Class Knowledge Entities
 
-### Domain 1: Indian Standards (IS)
-* **Description**: Formal technical specifications defining product safety, performance, dimensions, definitions, and sampling guidelines.
-* **Issuing Body**: BIS Technical Committees (Division Councils e.g., Electrotechnical `ETD`, Electronics & IT `LITD`, Mechanical `MED`, Civil `CED`, Chemical `CHD`).
-* **Authority Tier**: **Tier 1B (Normative)**.
-* **Entities**:
-  * `IndianStandard`: `standard_number`, `title`, `division_council`, `scope_summary`, `publication_year`, `status` (`Active`/`Withdrawn`/`Under Revision`).
-  * `Clause`: `clause_number`, `clause_title`, `parent_clause`, `page_start`, `page_end`, `content_text`, `is_mandatory_normative`.
-  * `Table`: `table_number`, `table_title`, `columns`, `rows`, `associated_clause`.
-  * `Annex`: `annex_letter`, `annex_title`, `is_normative_or_informative`, `content`.
-* **Target User Questions**:
-  * *"What is the Indian Standard for self-ballasted LED lamps for general lighting?"*
-  * *"What does Clause 6 of the safety standard require regarding markings?"*
-  * *"What are the dielectric strength test voltage limits specified in the standard?"*
-* **Verification Note**: `[⚠️ Requires Verification from Official BIS Portal upon document acquisition]`
+The knowledge base is built around normalized first-class entities:
 
----
+### 2.1 `Product` (User & Catalog Domain)
+Represents physical goods described by a user or manufacturer.
+* `product_id`: Canonical unique identifier.
+* `product_name`: Standardized nomenclature (e.g., "Self-Ballasted LED Lamp").
+* `category`: Product category (e.g., "Lighting and Luminaires").
+* `manufacturer_description`: Raw or extracted product description.
+* `technical_attributes`: Key-value pairs representing parameters (e.g., `wattage`, `voltage_range`, `cap_type`, `driver_type`).
+* `intended_use`: Operational context (e.g., "General Domestic Lighting", "Industrial Hazard Area").
+* `variants`: Commercial variations covered under common series guidelines.
+* `classification`: Sub-tier classifications (e.g., "Mains-powered electronic apparatus").
 
-### Domain 2: Standards Versions, Amendments & Reaffirmations
-* **Description**: Lifecycle tracking of standards including amendment slips, year changes, corrigenda, and 5-year reaffirmation cycles.
-* **Issuing Body**: Bureau of Indian Standards (Published via BIS Standards Portal / Gazette).
-* **Authority Tier**: **Tier 1B (Normative)**.
-* **Entities**:
-  * `StandardVersion`: `standard_number`, `version_year`, `edition_number`, `effective_date`, `is_current`.
-  * `Amendment`: `amendment_number`, `issue_date`, `clauses_modified`, `text_changes`, `status`.
-  * `Reaffirmation`: `reaffirmation_year`, `status` (`Reaffirmed`).
-* **Target User Questions**:
-  * *"Has the 2012 version of the LED safety standard been amended or reaffirmed?"*
-  * *"What specific test limit was changed in Amendment 1?"*
-  * *"Is an older edition still acceptable during the transition period?"*
-* **Verification Note**: `[⚠️ Requires Verification from Official BIS Standards Gazette]`
+### 2.2 `Source` (Provenance & Authority Domain)
+Represents every official document, gazette notification, or portal registry asset.
+* `source_id`: Canonical source identifier (e.g., `SRC-001`).
+* `domain`: Knowledge domain (Standards, Regulation, Schemes, Testing, Laboratories, Consumer).
+* `source_type`: Document classification (`standard_document`, `qco_order`, `scheme_regulation`, `product_manual`, `guideline`, `lab_directory`).
+* `issuing_authority`: Official publisher (e.g., `Bureau of Indian Standards`, `MeitY`, `DPIIT`, `MoP`).
+* `authority_level`: Hierarchy level (`Tier 1A - Statutory`, `Tier 1B - Normative`, `Tier 2 - Guidance`, `Tier 3 - Directory`).
+* `title`: Full official title.
+* `standard_or_document_number`: Official standard/order code (e.g., `IS 16102 (Part 1) : 2012`).
+* `version_edition`: Revision or edition identifier.
+* `publication_date`: Date of gazette notification or publication.
+* `effective_date`: Date when regulatory or technical enforcement begins.
+* `url`: Authoritative official URL on government/BIS portal.
+* `retrieval_date`: Timestamp of acquisition.
+* `status`: Verification state (`pending_verification`, `verified_authentic`, `processed`, `active`, `superseded`).
+* `notes`: Provenance notes, supersession details, and migration circulars.
 
----
+### 2.3 `Claim` (Evidence & Trust Domain)
+The atomic unit of factual reasoning and answer generation, enabling granular citation verification.
+* `claim_id`: Unique identifier for an atomic assertion.
+* `claim_text`: The factual proposition generated or verified (e.g., "Self-ballasted LED lamps require mandatory CRS registration under MeitY QCO").
+* `claim_type`: Classification (`standard_recommendation`, `regulatory_mandate`, `testing_requirement`, `fee_schedule`, `laboratory_scope`).
+* `evidence_ids`: References to the specific knowledge chunk(s) supporting the claim.
+* `confidence_status`: (`direct_evidence`, `reasoned_inference`, `unsupported_abstain`).
+* `citation_mapping`: Exact link to `source_id`, `document_number`, `clause_number`, and `page_number`.
 
-### Domain 3: Quality Control Orders (QCOs) & Technical Regulations
-* **Description**: Statutory orders issued by Central Ministries that make specific Indian Standards legally compulsory for manufacture, import, distribution, or sale in India under the BIS Act.
-* **Issuing Body**: Central Ministries (DPIIT, MeitY, Ministry of Power, Ministry of Steel, etc.) published in the Gazette of India.
-* **Authority Tier**: **Tier 1A (Statutory Law)**.
-* **Entities**:
-  * `QualityControlOrder`: `qco_id`, `issuing_ministry`, `gazette_notification_number`, `notification_date`, `effective_date`, `enforcement_status` (`Enforced`/`Extended`/`Draft`), `hs_codes_covered`.
-  * `QCOApplicability`: `product_scope`, `notified_standard_id`, `applicable_scheme` (`Scheme I` vs `Scheme II`), `exemptions` (`Export`/`R&D`/`Micro-enterprises`).
-* **Target User Questions**:
-  * *"Is BIS certification mandatory to sell LED bulbs in India?"*
-  * *"Which government ministry issued the QCO for LED lighting?"*
-  * *"What is the penalty for selling non-certified products covered under a mandatory QCO?"*
-  * *"Are small-scale manufacturers given an extension under the QCO?"*
-* **Verification Note**: `[⚠️ Requires Verification from Official Gazette of India notifications]`
+### 2.4 `IndianStandard` & `Clause` (Technical Specification Domain)
+* `IndianStandard`: `standard_number`, `title`, `division_council`, `scope_summary`, `publication_year`, `status`.
+* `Clause`: `clause_id`, `standard_number`, `clause_number`, `clause_title`, `parent_clause`, `page_start`, `page_end`, `content_text`, `is_normative_requirement`.
+* `Table`: `table_number`, `table_title`, `associated_clause`, `table_data`.
+* `Annex`: `annex_letter`, `annex_title`, `is_normative`, `content_text`.
 
----
+### 2.5 `QualityControlOrder` (Regulatory Mandate Domain)
+* `qco_id`: Unique statutory identifier.
+* `issuing_ministry`: Line ministry.
+* `gazette_notification_number`: Official S.O. reference.
+* `notification_date`: Issue date.
+* `effective_date`: Enforcement deadline.
+* `notified_standards`: List of referenced Indian Standards made compulsory.
+* `applicability_criteria`: Criteria determining which products/ratings fall under scope.
+* `exemptions`: Conditions under which compliance is exempt.
 
-### Domain 4: BIS Certification Schemes
-* **Description**: Conformity assessment frameworks under BIS (Conformity Assessment) Regulations, 2018.
-* **Issuing Body**: BIS Conformity Assessment Department.
-* **Authority Tier**: **Tier 1A (Regulatory Framework)**.
-* **Entities**:
-  * `CertificationScheme`: `scheme_code` (`Scheme-I-ISI`, `Scheme-II-CRS`, `Scheme-IV-CoC`, `Hallmarking`), `scheme_name`, `regulatory_basis`.
-  * `SchemeRequirement`: `factory_audit_required`, `sample_testing_required`, `surveillance_frequency`, `marking_type` (`ISI Logo` vs `CRS Standard Mark`).
-* **Target User Questions**:
-  * *"Does an LED bulb fall under the ISI mark scheme or the Compulsory Registration Scheme (CRS)?"*
-  * *"What is the key difference between Scheme I (ISI) and Scheme II (CRS)?"*
-  * *"Does CRS require a factory inspection before grant of registration?"*
-* **Verification Note**: `[⚠️ Requires Verification from BIS Conformity Assessment Regulations 2018]`
+### 2.6 `CertificationScheme` & `LicensingRequirement` (Conformity Domain)
+* `scheme_code`: Identifier (e.g., `Scheme-I-ISI`, `Scheme-II-CRS`).
+* `scheme_name`: Full legal scheme name.
+* `factory_audit_required`: Boolean.
+* `lab_testing_required`: Boolean.
+* `portal_url`: Official application portal.
+* `process_steps`: Step-by-step workflow.
 
----
-
-### Domain 5: Licensing & Registration Procedures
-* **Description**: Operational application workflows, digital portal processes, documentary requirements, and statutory fee schedules.
-* **Issuing Body**: BIS Central Marks Department / CRS Branch.
-* **Authority Tier**: **Tier 2 (Official Procedural Manuals)**.
-* **Entities**:
-  * `LicensingProcess`: `process_id`, `scheme_code`, `portal_name` (`Manakonline` / `crsbis.in`), `step_order`, `step_description`, `typical_timeline`.
-  * `DocumentRequirement`: `document_name`, `issuing_authority`, `is_mandatory`, `applies_to_foreign_mfg`.
-  * `FeeSchedule`: `fee_type` (`Application`, `Processing`, `Annual License`, `Marking`), `amount_inr`, `msme_concession_applicable`.
-* **Target User Questions**:
-  * *"What documents are needed to apply for CRS registration for an LED bulb?"*
-  * *"What is the role and requirement of an Authorized Indian Representative (AIR) for foreign manufacturers?"*
-  * *"What is the validity period of a CRS registration certificate?"*
-* **Verification Note**: `[⚠️ Requires Verification from official Manakonline and CRS portal guidelines]`
+### 2.7 `TestRequirement` & `Laboratory` (Testing Domain)
+* `test_id`: Test identifier.
+* `test_name`: Name of test (e.g., "Insulation Resistance Test").
+* `standard_number`: Referenced standard.
+* `clause_ref`: Clause defining test method and parameters.
+* `acceptance_criteria`: Quantitative or qualitative threshold.
+* `laboratory_id`: Recognized lab identifier.
+* `lab_name`: Facility name.
+* `city`, `state`: Geographic location.
+* `authorized_standards`: Specific standards and clauses in lab's active LRS scope.
 
 ---
 
-### Domain 6: Testing Requirements & Test Methods
-* **Description**: Explicit physical, electrical, optical, and mechanical tests required to prove conformity to a standard.
-* **Issuing Body**: BIS Standards & Product Manuals.
-* **Authority Tier**: **Tier 1B / Tier 2**.
-* **Entities**:
-  * `TestRequirement`: `test_id`, `test_name`, `standard_number`, `clause_ref`, `test_type` (`Type Test`, `Routine Test`, `Acceptance Test`), `sample_size`.
-  * `TestProcedure`: `apparatus_required`, `environmental_conditions`, `procedure_steps`, `acceptance_criteria`, `failure_condition`.
-* **Target User Questions**:
-  * *"What electrical safety tests must an LED bulb pass before certification?"*
-  * *"What is the insulation resistance threshold after humidity treatment?"*
-  * *"What is the temperature and duration for the glow-wire flame test?"*
-* **Verification Note**: `[⚠️ Requires Verification against normative text of relevant standard]`
+## 3. Evidence-Backed Citation Lineage
 
----
-
-### Domain 7: Laboratories & Laboratory Recognition Scheme (LRS)
-* **Description**: BIS in-house and recognized testing facilities authorized to execute tests under specific standards.
-* **Issuing Body**: BIS Laboratory Recognition Department / LIMS Portal.
-* **Authority Tier**: **Tier 1 / Tier 3 (Directory & Scope)**.
-* **Entities**:
-  * `Laboratory`: `lab_id`, `lab_name`, `lab_type` (`BIS Central/Regional`, `Govt Recognized`, `Private NABL Accredited`), `city`, `state`, `contact_email`, `status`.
-  * `LaboratoryScope`: `lab_id`, `standard_number`, `authorized_clauses` (`Full Scope` or specific clauses), `validity_start`, `validity_end`.
-* **Target User Questions**:
-  * *"Where can I test my LED lamps in Maharashtra or Gujarat for BIS compliance?"*
-  * *"Is Lab X recognized by BIS to conduct photometric testing under IS 16102 Part 2?"*
-  * *"Can an unaccredited lab report be submitted for CRS registration?"*
-* **Verification Note**: `[⚠️ Requires Verification from active BIS LIMS portal registry snapshot]`
-
----
-
-### Domain 8: Hallmarking of Precious Metals
-* **Description**: Purity certification and tracking of gold and silver jewelry under mandatory hallmarking rules.
-* **Issuing Body**: BIS Hallmarking Department.
-* **Authority Tier**: **Tier 1A (Statutory & Regulatory)**.
-* **Entities**:
-  * `HallmarkStandard`: `standard_number` (`IS 1417` for Gold, `IS 2112` for Silver), `purity_grades` (`24K/999`, `22K/916`, `18K/750`, `14K/585`).
-  * `HUIDStructure`: `huid_length` (`6 alphanumeric digits`), `mandatory_marks` (`BIS Logo`, `Purity Grade`, `6-digit HUID`).
-  * `AssayingCentre`: `ahc_id`, `center_name`, `location`, `recognition_status`.
-* **Target User Questions**:
-  * *"What are the three mandatory marks visible on certified gold jewelry?"*
-  * *"How does a consumer verify the 6-digit HUID code?"*
-  * *"Is hallmarking mandatory across all districts in India?"*
-* **Verification Note**: `[⚠️ Requires Verification from BIS Hallmarking Department notifications]`
-
----
-
-### Domain 9: Consumer Affairs & Verification
-* **Description**: Consumer empowerment, mark validation mechanisms, and grievance redressal systems.
-* **Issuing Body**: BIS Consumer Affairs Department (CAD).
-* **Authority Tier**: **Tier 2 (Public Guidance)**.
-* **Entities**:
-  * `VerificationMechanism`: `mechanism_name` (`BIS Care App`, `Verify License CML`, `Verify R-Number`), `input_identifier`, `output_fields`.
-  * `GrievanceProcedure`: `complaint_category` (`Counterfeit ISI`, `Misuse of Hallmark`, `Sub-standard Quality`), `filing_steps`, `investigation_timeline`.
-* **Target User Questions**:
-  * *"How can I verify if an ISI mark or R-number on an electrical product is genuine?"*
-  * *"How do I file a complaint if a product bearing the ISI mark fails prematurely?"*
-* **Verification Note**: `[⚠️ Requires Verification from BIS Care Portal documentation]`
-
----
-
-### Domain 10: Related & Cross-Referenced Standards
-* **Description**: Normative standards invoked inside core product standards (e.g., driver safety, component safety, environmental tests).
-* **Issuing Body**: BIS Sectional Committees / Harmonized IEC/ISO Committees.
-* **Authority Tier**: **Tier 1B (Normatively Binding)**.
-* **Entities**:
-  * `NormativeReference`: `parent_standard`, `referenced_standard`, `referenced_clause`, `context_of_citation` (e.g., `Driver Safety`, `Ingress Protection`, `EMC`).
-* **Target User Questions**:
-  * *"Which LED driver standard is cited by the LED lamp safety standard?"*
-  * *"What ingress protection (IP) standard applies to luminaires?"*
-* **Verification Note**: `[⚠️ Requires Verification from Clause 2 'Normative References' of official standards]`
-
----
-
-## 3. Relational Mapping Between Entities
+To prevent hallucination, every user-facing answer traverses this immutable lineage:
 
 ```text
-Product (e.g., LED Lamp)
-  ├── Maps to ──────────> IndianStandard (IS 16102 Pt 1)
-  │                         ├── Has Version ────> StandardVersion (2012 / Reaffirmed 2022)
-  │                         ├── Has Amendments ─> Amendment (Amd 1, Amd 2)
-  │                         ├── Contains ───────> Clause (Clause 6 Marking, Clause 8 Insulation)
-  │                         │                       └── Specifies ──> TestRequirement
-  │                         │                                           └── Tested at ──> Laboratory (LRS Scope)
-  │                         └── Cites ──────────> NormativeReference (IS 15885 Driver Safety)
-  │
-  ├── Regulated by ─────> QualityControlOrder (MeitY Electronics QCO)
-  │                         ├── Mandates ───────> CertificationScheme (Scheme II - CRS)
-  │                         │                       └── Governs ────> LicensingProcess & FeeSchedule
-  │                         └── Enforces ───────> Mandatory Effective Date & Exemptions
-  │
-  └── Consumer Checks ──> VerificationMechanism (BIS Care App / R-Number Lookup)
+User Question
+      ↓
+Answer Synthesis
+      ↓
+Atomic Claims
+      ↓
+Evidence Chunks (Structured Text + Metadata)
+      ↓
+Authoritative Source (Source ID + URL)
+      ↓
+Official Document (Document ID + Standard/Order No)
+      ↓
+Exact Clause & Page Number (Clause X.Y, Page N)
 ```
 
 ---
 
 ## 4. Query Intent Taxonomy
 
-| Intent Code | Intent Name | Description | Example Query |
+| Intent Code | Intent Category | Purpose | Example Query |
 | :--- | :--- | :--- | :--- |
-| `standard_lookup` | Standard Lookup | Lookup by standard number or title | *"What does IS 16102 Part 1 cover?"* |
-| `standard_recommendation` | Standard Recommendation | Recommend standard from product description | *"I make 9W rechargeable LED bulbs, which standard applies?"* |
-| `qco_applicability` | Regulatory Applicability | Determine if certification is legally mandatory | *"Is BIS mandatory for LED bulbs in India?"* |
-| `scheme_guidance` | Scheme & Process | Explain certification routes & application steps | *"How do I apply for CRS registration?"* |
-| `testing_parameters` | Technical & Testing | Query clauses, tolerances, test methods | *"What is the high-voltage test requirement in Clause 8?"* |
-| `laboratory_search` | Laboratory Search | Find recognized testing labs for a standard | *"Where can I test LED lamps in Gujarat?"* |
-| `hallmarking_inquiry` | Hallmarking | Gold/Silver purity, HUID, and jeweler compliance | *"How to verify 6-digit HUID?"* |
-| `consumer_rights` | Consumer Verification | Mark authentication and filing complaints | *"How to check if an ISI mark is authentic?"* |
+| `standard_lookup` | Standard Lookup | Lookup by standard number or title | *"What does IS 16102 cover?"* |
+| `standard_recommendation` | Recommendation | Map product description to applicable standards | *"I manufacture 9W LED lamps, which standards apply?"* |
+| `qco_applicability` | Regulatory Status | Check whether certification is mandatory, voluntary, or conditional | *"Is BIS certification compulsory for LED bulbs in India?"* |
+| `scheme_guidance` | Scheme & Process | Explain certification routes, procedures, and required documents | *"How do I apply for CRS registration for lighting products?"* |
+| `testing_parameters` | Technical & Testing | Query specific clauses, test methods, tolerances, and limits | *"What is the high-voltage test voltage specified in Clause 8?"* |
+| `laboratory_search` | Laboratory Search | Identify recognized labs with authorized scopes | *"Where can I test my lamps in Gujarat?"* |
+| `hallmarking_inquiry` | Hallmarking | Gold/Silver purity, HUID rules, and AHC verification | *"How do I verify a 6-digit HUID?"* |
+| `consumer_rights` | Consumer Affairs | Mark validation and grievance filing via BIS Care | *"How do I verify an R-number on a product label?"* |
 
 ---
 
-> [!IMPORTANT]
-> **Data Integrity Constraint**: All concrete standard numbers, clause texts, gazette dates, and testing thresholds in this knowledge map serve as architectural schemas. Actual values must only be populated from verified source documents ingested during Phase 2.
+> [!NOTE]
+> All concrete standard numbers, order identifiers, dates, clauses, and laboratory listings mentioned above serve as structural schemas and illustrative examples. Factual values are dynamically retrieved from verified entries in the BIS Source Registry and knowledge base.
