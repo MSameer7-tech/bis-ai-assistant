@@ -11,17 +11,25 @@ from typing import Any, Dict, List, Optional
 
 logger = logging.getLogger(__name__)
 
-# Deterministic regex patterns
-SECTION_PATTERN = re.compile(
-    r"^(?:(?:SECTION\s+)?([0-9]{1,2})\s+([A-Z\s\(\)\-\,\/]{3,80})|"
+# Pattern for Indian Standard main section headings:
+# e.g., "1 SCOPE", "2 REFERENCES", "5 MARKING", "8 INSULATION RESISTANCE", "ANNEX A", "SCHEDULE"
+SECTION_HEADING_PATTERN = re.compile(
+    r"^(?:([0-9]{1,2})\s+([A-Z][A-Z\s\(\)\-\,\/]{2,80})|"
     r"(ANNEX(?:URE)?\s+[A-Z])\s*([A-Z\s\(\)\-\,\/]*)|"
     r"(SCHEDULE)\b|"
     r"(APPENDIX\s+[A-Z0-9]+)\b)",
     re.MULTILINE,
 )
 
-CLAUSE_NUMBER_PATTERN = re.compile(
-    r"^([0-9]{1,2}(?:\.[0-9]{1,2}){0,4})\b(?:\s*[\.\—\-])?\s*([^\n\r]*)",
+# Pattern for subclauses with dots: e.g., "1.1", "5.4.1", "8.2.1", "13.1"
+# or Gazette section format: e.g. "1. Short title", "2. Compulsory compliance"
+SUBCLAUSE_PATTERN = re.compile(
+    r"^([0-9]{1,2}(?:\.[0-9]{1,2}){1,4})\b(?:\s*[\.\—\-])?\s*([^\n\r]*)",
+    re.MULTILINE,
+)
+
+QCO_SECTION_PATTERN = re.compile(
+    r"^([0-9]{1,2})\.\s+([A-Z][^\n\r—\.]+)[—\.\s]+",
     re.MULTILINE,
 )
 
@@ -32,19 +40,29 @@ class StructureParser:
     def parse_document_structure(self, pages: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
         Parses page-level text into structured sections, hierarchical clauses, and annexes.
-        Maintains page_start, page_end, and explicit page_refs arrays for every unit.
+        Filters running headers and maintains page_start, page_end, and page_refs.
         """
         sections: List[Dict[str, Any]] = []
         annexes: List[Dict[str, Any]] = []
         flat_clauses: List[Dict[str, Any]] = []
 
+        # 1. Clean and collect lines while filtering header/footer page numbers
         full_doc_lines: List[Dict[str, Any]] = []
         for page in pages:
             p_num = page["page_number"]
-            for line in page["text"].splitlines():
+            raw_lines = page["text"].splitlines()
+            for idx, line in enumerate(raw_lines):
                 stripped = line.strip()
-                if stripped:
-                    full_doc_lines.append({"page": p_num, "text": stripped})
+                if not stripped:
+                    continue
+
+                # Filter running header page numbers (e.g., lone digit right above "IS 16102" or "IS 15885")
+                if stripped.isdigit() and idx + 1 < len(raw_lines) and "IS " in raw_lines[idx + 1]:
+                    continue
+                if stripped.isdigit() and len(stripped) <= 2 and idx == 0:
+                    continue
+
+                full_doc_lines.append({"page": p_num, "text": stripped})
 
         current_clause: Optional[Dict[str, Any]] = None
         current_annex: Optional[Dict[str, Any]] = None
@@ -53,14 +71,10 @@ class StructureParser:
             line_text = item["text"]
             p_num = item["page"]
 
-            # 1. Section / Annex Detection
-            sec_match = SECTION_PATTERN.match(line_text)
+            # Check for Major Section / Annex (e.g., "1 SCOPE", "8 INSULATION RESISTANCE", "ANNEX A")
+            sec_match = SECTION_HEADING_PATTERN.match(line_text)
             if sec_match:
-                sec_num = sec_match.group(1) or sec_match.group(3) or sec_match.group(5) or "ANNEX"
-                sec_title = sec_match.group(2) or sec_match.group(4) or line_text
-                sec_title = sec_title.strip() if sec_title else line_text
-
-                # Finalize any active clause before switching to an annex
+                # Annex detection
                 if "ANNEX" in line_text.upper():
                     if current_clause:
                         current_clause["page_end"] = current_clause["_page_set_max"]
@@ -77,9 +91,11 @@ class StructureParser:
                         del current_annex["_page_set_max"]
                         annexes.append(current_annex)
 
+                    annex_id = sec_match.group(3) or "ANNEX A"
+                    annex_title = sec_match.group(4) or line_text
                     current_annex = {
-                        "annex_id": sec_num if "ANNEX" in sec_num else f"ANNEX {sec_num}",
-                        "title": sec_title,
+                        "annex_id": annex_id.strip(),
+                        "title": annex_title.strip() if annex_title else line_text,
                         "page_start": p_num,
                         "page_end": p_num,
                         "page_refs": [p_num],
@@ -89,6 +105,10 @@ class StructureParser:
                     }
                     continue
                 else:
+                    sec_num = sec_match.group(1) or "1"
+                    sec_title = sec_match.group(2) or line_text
+                    sec_title = sec_title.strip()
+
                     sections.append({
                         "section_number": sec_num,
                         "title": sec_title,
@@ -97,20 +117,42 @@ class StructureParser:
                         "page_refs": [p_num],
                     })
 
-            # If inside an annex, continue accumulating annex content
+                    # Top-level Section as a Root Clause (e.g., Clause 1, Clause 8)
+                    if current_clause:
+                        current_clause["page_end"] = current_clause["_page_set_max"]
+                        current_clause["page_refs"] = sorted(list(current_clause["_page_set"]))
+                        del current_clause["_page_set"]
+                        del current_clause["_page_set_max"]
+                        flat_clauses.append(current_clause)
+
+                    current_clause = {
+                        "clause_number": sec_num,
+                        "title": sec_title,
+                        "parent_clause": None,
+                        "depth": 1,
+                        "page_start": p_num,
+                        "page_end": p_num,
+                        "page_refs": [p_num],
+                        "_page_set": {p_num},
+                        "_page_set_max": p_num,
+                        "content": line_text,
+                        "subclauses": [],
+                    }
+                    continue
+
+            # If inside an annex, continue accumulating annex text
             if current_annex:
                 current_annex["content"] += "\n" + line_text
                 current_annex["_page_set"].add(p_num)
                 current_annex["_page_set_max"] = p_num
                 continue
 
-            # 2. Clause / Subclause Detection
-            clause_match = CLAUSE_NUMBER_PATTERN.match(line_text)
-            if clause_match:
-                clause_num = clause_match.group(1).rstrip(".")
-                clause_title = clause_match.group(2).strip() or clause_num
+            # Check for Subclause (e.g. "1.1", "5.4.1", "8.2") or QCO section ("1. Short title")
+            subclause_match = SUBCLAUSE_PATTERN.match(line_text) or QCO_SECTION_PATTERN.match(line_text)
+            if subclause_match:
+                clause_num = subclause_match.group(1).rstrip(".")
+                clause_title = subclause_match.group(2).strip() or clause_num
 
-                # If it's a continuation header for the same active clause
                 if current_clause and current_clause["clause_number"] == clause_num:
                     current_clause["content"] += "\n" + line_text
                     current_clause["_page_set"].add(p_num)
@@ -124,7 +166,6 @@ class StructureParser:
                     parent_clause = None
                     depth = 1
 
-                # Finalize previous clause
                 if current_clause:
                     current_clause["page_end"] = current_clause["_page_set_max"]
                     current_clause["page_refs"] = sorted(list(current_clause["_page_set"]))
