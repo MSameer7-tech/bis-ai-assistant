@@ -9,11 +9,11 @@
     "standard_or_document_number": "IS 16102 (Part 1) : 2012",
     "version_edition": "First Edition + Amds 1 & 2",
     "publication_date": "2012-08-01",
-    "effective_date": "2015-05-07",
+    "effective_date": "Provisional",
     "url": "https://standardsbis.bsbedge.com",
     "retrieval_date": "2026-08-30",
-    "status": "verified_authentic",
-    "notes": "Mandatory safety standard under MeitY CRO; revised version IS 16102 (Pt 1):2026 issued with extended transition."
+    "status": "document_identified",
+    "notes": "Mandatory safety standard under MeitY CRO; revised 2026 edition published; pending raw PDF acquisition."
   },
   {
     "source_id": "SRC-002",
@@ -25,11 +25,11 @@
     "standard_or_document_number": "IS 16102 (Part 2) : 2017",
     "version_edition": "First Revision",
     "publication_date": "2017-05-15",
-    "effective_date": "2017-05-15",
+    "effective_date": "Provisional",
     "url": "https://standardsbis.bsbedge.com",
     "retrieval_date": "2026-08-30",
-    "status": "verified_authentic",
-    "notes": "Specifies luminous flux, efficacy, CCT, CRI, and lumen maintenance testing requirements."
+    "status": "document_identified",
+    "notes": "Performance benchmark standard; pending raw PDF acquisition."
   },
   {
     "source_id": "SRC-003",
@@ -41,11 +41,11 @@
     "standard_or_document_number": "S.O. 2905(E) / S.O. 3120(E)",
     "version_edition": "Gazette Order",
     "publication_date": "2014-11-07",
-    "effective_date": "2015-05-07",
+    "effective_date": "Provisional",
     "url": "https://www.meity.gov.in/esdm/standards",
     "retrieval_date": "2026-08-30",
-    "status": "verified_authentic",
-    "notes": "Mandates compulsory registration under Scheme-II (CRS) for Self-Ballasted LED Lamps prior to sale/import."
+    "status": "document_identified",
+    "notes": "Mandates CRS registration for Self-Ballasted LED Lamps; pending gazette notification text acquisition."
   },
   {
     "source_id": "SRC-004",
@@ -60,8 +60,8 @@
     "effective_date": "2018-06-04",
     "url": "https://www.bis.gov.in",
     "retrieval_date": "2026-08-30",
-    "status": "verified_authentic",
-    "notes": "Establishes legal framework for Compulsory Registration Scheme based on recognized lab test reports."
+    "status": "document_identified",
+    "notes": "Establishes statutory framework for Scheme-II (CRS); pending regulation text acquisition."
   },
   {
     "source_id": "SRC-005",
@@ -73,11 +73,11 @@
     "standard_or_document_number": "Circular Series-LED-P2",
     "version_edition": "Version 3.0",
     "publication_date": "2015-04-10",
-    "effective_date": "2015-04-10",
+    "effective_date": "Provisional",
     "url": "https://www.crsbis.in",
     "retrieval_date": "2026-08-30",
-    "status": "verified_authentic",
-    "notes": "Defines series formation rules for grouping wattage ratings and cap variants under a single test application."
+    "status": "document_identified",
+    "notes": "Series formation guidelines for model grouping; pending circular download."
   },
   {
     "source_id": "SRC-006",
@@ -89,11 +89,11 @@
     "standard_or_document_number": "Circular CMD-III/IS16102",
     "version_edition": "Circular Ref 2026",
     "publication_date": "2026-03-15",
-    "effective_date": "2027-02-02",
+    "effective_date": "Provisional",
     "url": "https://www.crsbis.in",
     "retrieval_date": "2026-08-30",
-    "status": "verified_authentic",
-    "notes": "Official circular extending mandatory migration deadline for revised IS 16102 (Pt 1):2026 to February 2, 2027."
+    "status": "document_identified",
+    "notes": "Transition guidelines for revised IS 16102 (Pt 1):2026; pending circular PDF verification."
   },
   {
     "source_id": "SRC-007",
@@ -105,11 +105,11 @@
     "standard_or_document_number": "IS 15885 (Part 2/Sec 13) : 2012",
     "version_edition": "Reaffirmed 2022",
     "publication_date": "2012-09-01",
-    "effective_date": "2012-09-01",
+    "effective_date": "Provisional",
     "url": "https://standardsbis.bsbedge.com",
     "retrieval_date": "2026-08-30",
-    "status": "verified_authentic",
-    "notes": "Normative reference for LED drivers/controlgear used within or alongside LED lamps."
+    "status": "document_identified",
+    "notes": "Normative driver safety standard; pending raw PDF acquisition."
   },
   {
     "source_id": "SRC-008",
@@ -118,14 +118,14 @@
     "issuing_authority": "Bureau of Indian Standards (Laboratory Recognition Dept)",
     "authority_level": "Tier 3 - Directory",
     "title": "BIS Directory of Recognized Laboratories for Lighting & Electronics (LIMS)",
-    "standard_or_document_number": "LIMS-LRS-Snapshot",
-    "version_edition": "Live Directory",
+    "standard_or_document_number": "LIMS-LRS-Directory",
+    "version_edition": "Dynamic Query",
     "publication_date": "2026-08-01",
-    "effective_date": "2026-08-01",
+    "effective_date": "Dynamic",
     "url": "https://www.lims.bis.gov.in",
     "retrieval_date": "2026-08-30",
-    "status": "pending_verification",
-    "notes": "Live directory of accredited testing laboratories with authorized testing scope for IS 16102 (Pt 1 & 2)."
+    "status": "official_domain_verified",
+    "notes": "Live recognized laboratory directory; scope and validity timestamps to be queried during ingestion."
   },
   {
     "source_id": "SRC-009",
@@ -135,12 +135,12 @@
     "authority_level": "Tier 2 - Guidance",
     "title": "BIS Care App User Guide & Standard Mark Verification Portal",
     "standard_or_document_number": "BIS-CAD-VERIFY",
-    "version_edition": "Portal Documentation",
+    "version_edition": "Portal Guide",
     "publication_date": "2024-01-01",
-    "effective_date": "2024-01-01",
+    "effective_date": "Provisional",
     "url": "https://www.bis.gov.in",
     "retrieval_date": "2026-08-30",
-    "status": "pending_verification",
-    "notes": "Consumer verification guidelines for authenticating CRS R-Numbers and ISI CML numbers."
+    "status": "official_domain_verified",
+    "notes": "Verification workflow documentation for R-Numbers and ISI marks."
   }
 ]

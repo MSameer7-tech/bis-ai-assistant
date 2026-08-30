@@ -30,11 +30,15 @@ def test_source_registry_exists_and_valid():
     }
 
     valid_statuses = {
-        "pending_verification",
-        "verified_authentic",
-        "processed",
-        "active",
+        "discovered",
+        "official_domain_verified",
+        "document_identified",
+        "document_acquired",
+        "content_verified",
+        "metadata_verified",
+        "current_status_verified",
         "superseded",
+        "withdrawn",
     }
 
     for item in data:
