@@ -1,5 +1,5 @@
 """
-Semantic Schema and Semantic ID Generators for Phase 2D.
+Semantic Schema and Semantic ID Generators for Phase 2D and Temporal Lineage (Steps 13 & 14).
 Produces stable, canonical semantic identifiers across all normalized knowledge objects:
 - Document: DOC-001
 - Section: SEC-DOC001-08
@@ -99,14 +99,8 @@ class RequirementModel(BaseModel):
     evidence: str
     source_pages: List[int]
     provenance: ProvenanceModel
-
-
-class DefinitionModel(BaseModel):
-    entity_type: str = "definition"
-    definition_id: str
-    term_id: str
-    term: str
-    definition: str
-    source_clause: str
-    source_pages: List[int]
-    provenance: ProvenanceModel
+    valid_from: Optional[str] = None
+    valid_until: Optional[str] = None
+    temporal_status: str = "current"  # "current", "superseded", "pending", "provisional"
+    superseded_by: Optional[str] = None
+    amendment_id: Optional[str] = None
