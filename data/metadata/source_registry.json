@@ -17,7 +17,24 @@
     "document_id": "DOC-001",
     "file_path": "data/raw/standards/IS_16102_Part_1_2012.pdf",
     "file_sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
-    "file_size_bytes": 1240734
+    "file_size_bytes": 1240734,
+    "current_version": {
+      "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+      "file_size": 1240734,
+      "last_modified": "2026-08-30T14:47:43.081517+00:00",
+      "publication_date": "2012-08-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "detected_at": "2026-08-30T14:47:43.081517+00:00",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "local_path": "data/raw/standards/IS_16102_Part_1_2012.pdf",
+    "standard_number": "IS 16102 (Part 1) : 2012",
+    "source_url": "https://archive.org/details/gov.in.is.16102.1.2012"
   },
   {
     "source_id": "SRC-002",
@@ -37,7 +54,24 @@
     "document_id": "DOC-002",
     "file_path": "data/raw/standards/IS_16102_Part_2_2017.pdf",
     "file_sha256": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
-    "file_size_bytes": 763061
+    "file_size_bytes": 763061,
+    "current_version": {
+      "sha256": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
+      "file_size": 763061,
+      "last_modified": "2026-08-30T14:47:43.123356+00:00",
+      "publication_date": "2017-05-15",
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
+        "detected_at": "2026-08-30T14:47:43.123356+00:00",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "local_path": "data/raw/standards/IS_16102_Part_2_2017.pdf",
+    "standard_number": "IS 16102 (Part 2) : 2017",
+    "source_url": "https://archive.org/details/gov.in.is.16102.2.2017"
   },
   {
     "source_id": "SRC-003",
@@ -53,7 +87,23 @@
     "url": "https://www.meity.gov.in/esdm/standards",
     "retrieval_date": "2026-08-30",
     "status": "superseded",
-    "notes": "Historical 2012 CRO that originally introduced compulsory registration for electronics/lighting; superseded by 2021 CRO."
+    "notes": "Historical 2012 CRO that originally introduced compulsory registration for electronics/lighting; superseded by 2021 CRO.",
+    "current_version": {
+      "sha256": null,
+      "file_size": 0,
+      "last_modified": "2026-08-30",
+      "publication_date": "2012-10-03",
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": null,
+        "detected_at": "2026-08-30",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "standard_number": "S.O. 2357(E) / S.O. 2905(E)",
+    "source_url": "https://www.meity.gov.in/esdm/standards"
   },
   {
     "source_id": "SRC-004",
@@ -69,7 +119,23 @@
     "url": "https://www.bis.gov.in",
     "retrieval_date": "2026-08-30",
     "status": "document_identified",
-    "notes": "Statutory framework governing conformity assessment schemes, including Scheme I (ISI) and Scheme II (CRS)."
+    "notes": "Statutory framework governing conformity assessment schemes, including Scheme I (ISI) and Scheme II (CRS).",
+    "current_version": {
+      "sha256": null,
+      "file_size": 0,
+      "last_modified": "2026-08-30",
+      "publication_date": "2018-06-04",
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": null,
+        "detected_at": "2026-08-30",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "standard_number": "BIS Conformity Assessment Regulations 2018",
+    "source_url": "https://www.bis.gov.in"
   },
   {
     "source_id": "SRC-005",
@@ -85,7 +151,23 @@
     "url": "https://www.crsbis.in",
     "retrieval_date": "2026-08-30",
     "status": "needs_verification",
-    "notes": "Series formation guideline reference requires finding and downloading the exact official BIS circular before ingestion."
+    "notes": "Series formation guideline reference requires finding and downloading the exact official BIS circular before ingestion.",
+    "current_version": {
+      "sha256": null,
+      "file_size": 0,
+      "last_modified": "2026-08-30",
+      "publication_date": null,
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": null,
+        "detected_at": "2026-08-30",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "standard_number": "Circular Series-LED-P2",
+    "source_url": "https://www.crsbis.in"
   },
   {
     "source_id": "SRC-006",
@@ -101,7 +183,23 @@
     "url": "https://www.crsbis.in",
     "retrieval_date": "2026-08-30",
     "status": "needs_verification",
-    "notes": "Implementation circular reference and transition deadline claim require official circular PDF verification before trusting."
+    "notes": "Implementation circular reference and transition deadline claim require official circular PDF verification before trusting.",
+    "current_version": {
+      "sha256": null,
+      "file_size": 0,
+      "last_modified": "2026-08-30",
+      "publication_date": null,
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": null,
+        "detected_at": "2026-08-30",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "standard_number": "Circular CMD-III/IS16102",
+    "source_url": "https://www.crsbis.in"
   },
   {
     "source_id": "SRC-007",
@@ -121,7 +219,24 @@
     "document_id": "DOC-007",
     "file_path": "data/raw/standards/IS_15885_Part_2_Sec_13_2012.pdf",
     "file_sha256": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
-    "file_size_bytes": 855821
+    "file_size_bytes": 855821,
+    "current_version": {
+      "sha256": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
+      "file_size": 855821,
+      "last_modified": "2026-08-30T14:47:43.163860+00:00",
+      "publication_date": "2012-09-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
+        "detected_at": "2026-08-30T14:47:43.163860+00:00",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "local_path": "data/raw/standards/IS_15885_Part_2_Sec_13_2012.pdf",
+    "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
+    "source_url": "https://archive.org/details/gov.in.is.15885.2.13.2012"
   },
   {
     "source_id": "SRC-008",
@@ -137,7 +252,23 @@
     "url": "https://www.lims.bis.gov.in",
     "retrieval_date": "2026-08-30",
     "status": "official_domain_verified",
-    "notes": "Live recognized laboratory directory exposing test scopes, clauses, testing charges, and validity dates."
+    "notes": "Live recognized laboratory directory exposing test scopes, clauses, testing charges, and validity dates.",
+    "current_version": {
+      "sha256": null,
+      "file_size": 0,
+      "last_modified": "2026-08-30",
+      "publication_date": null,
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": null,
+        "detected_at": "2026-08-30",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "standard_number": "LIMS-LRS-Directory",
+    "source_url": "https://www.lims.bis.gov.in"
   },
   {
     "source_id": "SRC-009",
@@ -153,7 +284,23 @@
     "url": "https://www.bis.gov.in/bis-apps/?lang=en",
     "retrieval_date": "2026-08-30",
     "status": "official_domain_verified",
-    "notes": "Specific official BIS portal page for BIS Care app verification of CRS R-Numbers, ISI CML numbers, and HUID."
+    "notes": "Specific official BIS portal page for BIS Care app verification of CRS R-Numbers, ISI CML numbers, and HUID.",
+    "current_version": {
+      "sha256": null,
+      "file_size": 0,
+      "last_modified": "2026-08-30",
+      "publication_date": null,
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": null,
+        "detected_at": "2026-08-30",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "standard_number": "BIS-CAD-APPS",
+    "source_url": "https://www.bis.gov.in/bis-apps/?lang=en"
   },
   {
     "source_id": "SRC-010",
@@ -173,7 +320,24 @@
     "document_id": "DOC-010",
     "file_path": "data/raw/regulations/CRO_2021.pdf",
     "file_sha256": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
-    "file_size_bytes": 2348
+    "file_size_bytes": 2348,
+    "current_version": {
+      "sha256": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
+      "file_size": 2348,
+      "last_modified": "2026-08-30T14:47:43.203597+00:00",
+      "publication_date": "2021-03-18",
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
+        "detected_at": "2026-08-30T14:47:43.203597+00:00",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "local_path": "data/raw/regulations/CRO_2021.pdf",
+    "standard_number": "CRO 2021",
+    "source_url": "https://www.meity.gov.in/esdm/standards"
   },
   {
     "source_id": "SRC-011",
@@ -193,7 +357,24 @@
     "document_id": "DOC-011",
     "file_path": "data/raw/regulations/CRO_Amendment_2026.pdf",
     "file_sha256": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
-    "file_size_bytes": 1691
+    "file_size_bytes": 1691,
+    "current_version": {
+      "sha256": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
+      "file_size": 1691,
+      "last_modified": "2026-08-30T14:47:43.248607+00:00",
+      "publication_date": null,
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
+        "detected_at": "2026-08-30T14:47:43.248607+00:00",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "local_path": "data/raw/regulations/CRO_Amendment_2026.pdf",
+    "standard_number": "CRO Amendment 2026",
+    "source_url": "https://www.meity.gov.in/esdm/standards"
   },
   {
     "source_id": "SRC-012",
@@ -213,6 +394,23 @@
     "document_id": "DOC-012",
     "file_path": "data/raw/standards/IS_16102_Part_1_2026.pdf",
     "file_sha256": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
-    "file_size_bytes": 3997
+    "file_size_bytes": 3997,
+    "current_version": {
+      "sha256": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
+      "file_size": 3997,
+      "last_modified": "2026-08-30T14:47:43.289159+00:00",
+      "publication_date": null,
+      "etag": null
+    },
+    "history": [
+      {
+        "sha256": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
+        "detected_at": "2026-08-30T14:47:43.289159+00:00",
+        "change_type": "initial_ingestion"
+      }
+    ],
+    "local_path": "data/raw/standards/IS_16102_Part_1_2026.pdf",
+    "standard_number": "IS 16102 (Part 1) : 2026",
+    "source_url": "https://standardsbis.bsbedge.com"
   }
 ]

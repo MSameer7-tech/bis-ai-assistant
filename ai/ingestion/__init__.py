@@ -1,28 +1,23 @@
 """
 Ingestion Subpackage for BIS AI Assistant.
-Handles acquisition, cryptographic provenance, PDF extraction, OCR fallback,
-structure parsing, table extraction, and structured JSON generation.
+Handles PDF loading, OCR quality assessment, structural parsing, table extraction,
+and change detection / data freshness gates.
 """
 
-from ai.ingestion.acquisition import compute_sha256, register_acquired_document
-from ai.ingestion.extractor import PDFExtractor, extract_pdf_pages
-from ai.ingestion.ocr import OCRFallbackEngine, apply_ocr_fallback_if_needed
-from ai.ingestion.processor import DocumentProcessor, process_all_documents, process_document
-from ai.ingestion.structure_parser import StructureParser, parse_structure
-from ai.ingestion.table_parser import TableParser, extract_tables
+from ai.ingestion.change_detector import ChangeDetector, check_source_freshness, compute_sha256
+from ai.ingestion.extractor import PDFExtractor
+from ai.ingestion.ocr import OCRFallbackEngine
+from ai.ingestion.processor import DocumentProcessor
+from ai.ingestion.structure_parser import StructureParser
+from ai.ingestion.table_parser import TableParser
 
 __all__ = [
-    "compute_sha256",
-    "register_acquired_document",
     "PDFExtractor",
-    "extract_pdf_pages",
-    "StructureParser",
-    "parse_structure",
-    "TableParser",
-    "extract_tables",
     "OCRFallbackEngine",
-    "apply_ocr_fallback_if_needed",
+    "StructureParser",
+    "TableParser",
     "DocumentProcessor",
-    "process_document",
-    "process_all_documents",
+    "ChangeDetector",
+    "check_source_freshness",
+    "compute_sha256",
 ]
