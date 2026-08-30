@@ -143,7 +143,8 @@
             "scope",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.2",
@@ -208,14 +209,16 @@
                 "original_text": "1.2 It applies to self-ballasted LED lamps having:\na) A rated wattage up to 60 W;\nb) A rated voltage up to 250 V a.c. 50 Hz;\nc) Caps according to Table 1 (B22d, E27, E14)."
               }
             }
-          ]
+          ],
+          "definitions": []
         }
       ],
       "semantic_type": "scope",
       "semantic_tags": [
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "2",
@@ -233,7 +236,8 @@
       "semantic_tags": [
         "reference"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "3",
@@ -264,7 +268,53 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC012-0001",
+              "term": "Self",
+              "definition": "Ballasted LED Lamp ? A unit which cannot be dismantled without being permanently damaged,",
+              "source_clause": "3.1",
+              "source_pages": [
+                1
+              ],
+              "provenance": {
+                "document_id": "DOC-012",
+                "source_id": "SRC-012",
+                "standard": "IS 16102 (Part 1) : 2026",
+                "clause": "3.1",
+                "page": 1,
+                "pages": [
+                  1
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.1 Self-Ballasted LED Lamp ? A unit which cannot be dismantled without being permanently damaged,"
+              }
+            },
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC012-0002",
+              "term": "provided with a lamp cap and incorporating a light",
+              "definition": "emitting diode (LED) light source and any additional",
+              "source_clause": "3.1",
+              "source_pages": [
+                1
+              ],
+              "provenance": {
+                "document_id": "DOC-012",
+                "source_id": "SRC-012",
+                "standard": "IS 16102 (Part 1) : 2026",
+                "clause": "3.1",
+                "page": 1,
+                "pages": [
+                  1
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "provided with a lamp cap and incorporating a light-emitting diode (LED) light source and any additional"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.2",
@@ -283,7 +333,8 @@
             "definition",
             "marking_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.3",
@@ -303,14 +354,41 @@
             "definition",
             "marking_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC012-0003",
+              "term": "IS 16102 (Part 1)",
+              "definition": "2026 (Page 2)",
+              "source_clause": "3.3",
+              "source_pages": [
+                1,
+                2
+              ],
+              "provenance": {
+                "document_id": "DOC-012",
+                "source_id": "SRC-012",
+                "standard": "IS 16102 (Part 1) : 2026",
+                "clause": "3.3",
+                "page": 1,
+                "pages": [
+                  1,
+                  2
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "IS 16102 (Part 1) : 2026 (Page 2)"
+              }
+            }
+          ]
         }
       ],
       "semantic_type": "definition",
       "semantic_tags": [
         "definition"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "4",
@@ -340,7 +418,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "test_method",
@@ -348,7 +427,8 @@
         "requirement",
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "5",
@@ -434,7 +514,8 @@
                 "original_text": "5.1 Mandatory Markings on the Lamp:\na) Mark of origin (manufacturer's trademark or brand);\nb) Rated voltage or rated voltage range (in Volts);\nc) Rated wattage (in Watts);\nd) Rated frequency (in Hertz);\ne) Standard Mark (CRS Logo with unique registration number R-XXXXXXXX)."
               }
             }
-          ]
+          ],
+          "definitions": []
         }
       ],
       "semantic_type": "marking_requirement",
@@ -442,7 +523,8 @@
         "marking_requirement",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "6",
@@ -472,7 +554,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "6.2",
@@ -491,14 +574,16 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "7",
@@ -528,14 +613,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "8",
@@ -643,7 +730,8 @@
                 "original_text": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?."
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "8.2",
@@ -711,7 +799,8 @@
                 "original_text": "8.2 Electric strength test: A voltage of 4 000 V a.c. (r.m.s.) shall be applied for 1 minute between\ncurrent-carrying parts and accessible parts. No flashover or breakdown shall occur."
               }
             }
-          ]
+          ],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
@@ -766,7 +855,8 @@
             "original_text": "8 INSULATION RESISTANCE AND ELECTRIC STRENGTH AFTER HUMIDITY TREATMENT"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "9",
@@ -796,14 +886,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "10",
@@ -833,7 +925,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.2",
@@ -908,14 +1001,16 @@
                 "original_text": "10.2 Glow-wire test: When tested in accordance with IS 11000 (Part 2/Sec 1), the test temperature shall be 650\n°C for parts not holding live parts and 750 °C for parts holding live parts in position."
               }
             }
-          ]
+          ],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "11",
@@ -946,14 +1041,86 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC012-0001",
+      "term": "Self",
+      "definition": "Ballasted LED Lamp ? A unit which cannot be dismantled without being permanently damaged,",
+      "source_clause": "3.1",
+      "source_pages": [
+        1
+      ],
+      "provenance": {
+        "document_id": "DOC-012",
+        "source_id": "SRC-012",
+        "standard": "IS 16102 (Part 1) : 2026",
+        "clause": "3.1",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.1 Self-Ballasted LED Lamp ? A unit which cannot be dismantled without being permanently damaged,"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC012-0002",
+      "term": "provided with a lamp cap and incorporating a light",
+      "definition": "emitting diode (LED) light source and any additional",
+      "source_clause": "3.1",
+      "source_pages": [
+        1
+      ],
+      "provenance": {
+        "document_id": "DOC-012",
+        "source_id": "SRC-012",
+        "standard": "IS 16102 (Part 1) : 2026",
+        "clause": "3.1",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "provided with a lamp cap and incorporating a light-emitting diode (LED) light source and any additional"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC012-0003",
+      "term": "IS 16102 (Part 1)",
+      "definition": "2026 (Page 2)",
+      "source_clause": "3.3",
+      "source_pages": [
+        1,
+        2
+      ],
+      "provenance": {
+        "document_id": "DOC-012",
+        "source_id": "SRC-012",
+        "standard": "IS 16102 (Part 1) : 2026",
+        "clause": "3.3",
+        "page": 1,
+        "pages": [
+          1,
+          2
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "IS 16102 (Part 1) : 2026 (Page 2)"
+      }
     }
   ],
   "entities": [
@@ -2646,7 +2813,8 @@
   "tables": [],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:25:15.683447+00:00",
+    "normalized_at": "2026-08-30T15:32:17.008927+00:00",
+    "total_definitions": 3,
     "total_entities": 27,
     "total_requirements": 6,
     "total_relationships": 60,

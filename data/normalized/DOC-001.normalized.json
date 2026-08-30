@@ -197,7 +197,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.15",
@@ -215,7 +216,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.5",
@@ -233,7 +235,8 @@
           "semantic_tags": [
             "note"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.5",
@@ -251,7 +254,8 @@
           "semantic_tags": [
             "note"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "scope",
@@ -310,7 +314,8 @@
             "original_text": "1 SCOPE\nThis standard (Part 1) specifies the safety and\ninterchangeability requirements, together with the test\nmethods and conditions, required to show compliance\nof LED lamps with integrated means for stable\noperation (self-ballasted LED lamps), intended for\ndomestic and similar general lighting p"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "2",
@@ -438,7 +443,8 @@
             "original_text": "2 REFERENCES\nThe standards listed below contain provisions which,\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encourag"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "3",
@@ -470,7 +476,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0001",
+              "term": "Self",
+              "definition": "Ballasted LED Lamp — Unit which cannot",
+              "source_clause": "3.1",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.1",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.1 Self-Ballasted LED Lamp — Unit which cannot"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.2",
@@ -488,7 +518,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0002",
+              "term": "Type",
+              "definition": "Lamps that, independent of the type of",
+              "source_clause": "3.2",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.2",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.2 Type — Lamps that, independent of the type of"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.3",
@@ -506,7 +560,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0003",
+              "term": "Rated Voltage",
+              "definition": "Voltage or voltage range marked",
+              "source_clause": "3.3",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.3",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.3 Rated Voltage — Voltage or voltage range marked"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.4",
@@ -525,7 +603,31 @@
             "definition",
             "marking_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0004",
+              "term": "Rated Wattage",
+              "definition": "Wattage marked on the lamp.",
+              "source_clause": "3.4",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.4",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.4 Rated Wattage — Wattage marked on the lamp."
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.5",
@@ -544,7 +646,31 @@
             "definition",
             "marking_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0005",
+              "term": "Rated Frequency",
+              "definition": "Frequency marked on the",
+              "source_clause": "3.5",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.5",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.5 Rated Frequency — Frequency marked on the"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.6",
@@ -563,7 +689,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.7",
@@ -581,7 +708,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0006",
+              "term": "Live Part",
+              "definition": "Conductive part which may cause an",
+              "source_clause": "3.7",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.7",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.7 Live Part — Conductive part which may cause an"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.8",
@@ -600,7 +751,31 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0007",
+              "term": "Type Test",
+              "definition": "A test or series of tests made on a",
+              "source_clause": "3.8",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.8",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.8 Type Test — A test or series of tests made on a"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.9",
@@ -619,7 +794,31 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0008",
+              "term": "Type Test Sample",
+              "definition": "A sample consisting of one",
+              "source_clause": "3.9",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.9",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.9 Type Test Sample — A sample consisting of one"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.10",
@@ -638,7 +837,31 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0009",
+              "term": "Acceptance Test",
+              "definition": "Tests carried out on samples",
+              "source_clause": "3.10",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.10",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.10 Acceptance Test — Tests carried out on samples"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.11",
@@ -706,6 +929,30 @@
                 "original_text": "3.11 Inspection Test Quantity (ITQ) — The number\nof lamps selected for the purpose of determining the\nacceptability of a batch as to marking,\ninterchangeability, protection against electric shock,\ninsulation resistance, electric strength, mechanical\nstrength, cap temperature rise, resistance to heat"
               }
             }
+          ],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0010",
+              "term": "Inspection Test Quantity (ITQ)",
+              "definition": "The number",
+              "source_clause": "3.11",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.11",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.11 Inspection Test Quantity (ITQ) — The number"
+              }
+            }
           ]
         },
         {
@@ -724,7 +971,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0011",
+              "term": "Batch",
+              "definition": "All the lamps of one type put forward at",
+              "source_clause": "3.12",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.12",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.12 Batch — All the lamps of one type put forward at"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.0",
@@ -742,7 +1013,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "definition",
@@ -750,7 +1022,8 @@
         "definition",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "4",
@@ -782,7 +1055,8 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "4.2",
@@ -800,7 +1074,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "4.3",
@@ -818,7 +1093,8 @@
           "semantic_tags": [
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "4.4",
@@ -837,7 +1113,8 @@
             "acceptance_criterion",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "4.0",
@@ -855,14 +1132,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "5",
@@ -950,7 +1229,8 @@
                 "original_text": "5.1 Lamps shall be clearly and durably marked with\nthe following mandatory markings:\na)\nMark of origin (this may take the form of a\ntrade-mark, the manufacturer’s name or the\nname of the responsible vendor);\nb)\nRated voltage or voltage range (marked ‘V’\nor ‘Volt’);\nc)\nRated wattage (marked ‘W’ or ‘W"
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "5.2",
@@ -969,7 +1249,8 @@
             "marking_requirement",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "5.3",
@@ -989,7 +1270,8 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "5.4",
@@ -1019,21 +1301,24 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "marking_requirement",
           "semantic_tags": [
             "marking_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "marking_requirement",
       "semantic_tags": [
         "marking_requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "6",
@@ -1065,7 +1350,8 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "6.2",
@@ -1085,14 +1371,16 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.5",
@@ -1110,7 +1398,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.1",
@@ -1128,7 +1417,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.3",
@@ -1146,7 +1436,8 @@
       "semantic_tags": [
         "note"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "7",
@@ -1177,7 +1468,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "acceptance_criterion",
@@ -1235,7 +1527,8 @@
             "original_text": "7 PROTECTION AGAINST ACCIDENTAL\nCONTACT WITH LIVE PARTS\nThe lamps shall be so constructed that, without any\nadditional enclosure in the form of a luminaire, no\ninternal metal parts, basic insulated external metal parts\nor live metal parts of the lamp cap or of the lamp itself\nare accessible when the"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "8",
@@ -1356,7 +1649,8 @@
                     "original_text": "8.1.1 Insulation Resistance\nThe lamp shall be conditioned for 48 h in a cabinet\ncontaining air with a relative humidity between 91\npercent and 95 percent. The temperature of the air is\nmaintained within 1°C of any convenient value\nbetween 25°C and 35°C.\nInsulation resistance shall be measured in the"
                   }
                 }
-              ]
+              ],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
@@ -1411,7 +1705,8 @@
                 "original_text": "8.1 Insulation resistance and electric strength shall be\nadequate between live parts of the lamp and accessible\nparts of the lamp."
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "8.2",
@@ -1478,7 +1773,8 @@
                 "original_text": "8.2 Electric Strength\nImmediately after the insulation resistance test, the\nsame parts as specified above shall withstand a voltage\ntest for 1 min with an a.c. voltage as follows.\nDuring the test, the supply contacts of the cap are short-\ncircuited. Accessible parts of insulating material of the\ncap"
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "8.0",
@@ -1496,14 +1792,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "9",
@@ -1539,7 +1837,8 @@
             "exception",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.0",
@@ -1557,7 +1856,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.5",
@@ -1575,7 +1875,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.5",
@@ -1593,7 +1894,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.0",
@@ -1611,7 +1913,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.2",
@@ -1629,7 +1932,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.3",
@@ -1647,14 +1951,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.8",
@@ -1672,7 +1978,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "20.0",
@@ -1690,7 +1997,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "32.0",
@@ -1708,7 +2016,8 @@
       "semantic_tags": [
         "definition"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.0",
@@ -1727,7 +2036,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "23.0",
@@ -1745,7 +2055,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "26.45",
@@ -1763,7 +2074,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.0",
@@ -1782,7 +2094,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "24.26",
@@ -1800,7 +2113,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.0",
@@ -1819,7 +2133,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "22.27",
@@ -1837,7 +2152,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "19.0",
@@ -1855,7 +2171,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "21.0",
@@ -1873,7 +2190,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "28.0",
@@ -1891,7 +2209,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "18.3",
@@ -1909,7 +2228,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "24.6",
@@ -1927,7 +2247,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "10",
@@ -1958,7 +2279,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.62",
@@ -1976,7 +2298,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
@@ -2041,7 +2364,8 @@
             "original_text": "10 CAP TEMPERATURE RISE\nThe surface temperature rise (above ambient) of a\nlampholder fitted to the lamp shall not be higher than\nthat of the lamp type which is being replaced by the\nlamp.\nThe cap temperature rise A ts of the complete lamp\nshall not exceed 120 K. The value of A ts corresponds\nto an i"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "11",
@@ -2073,7 +2397,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "11.0",
@@ -2091,7 +2416,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "11.89",
@@ -2109,7 +2435,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "acceptance_criterion",
@@ -2164,7 +2491,8 @@
             "original_text": "11 RESISTANCE TO HEAT\nThe lamp shall be sufficiently resistant to heat. External\nparts of insulating material providing protection against\nelectric shock, and parts of insulating material retaining\nlive parts in position shall be sufficiently resistant to\nheat.\nCompliance is checked by subjecting th"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "12",
@@ -2197,7 +2525,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "12.0",
@@ -2215,7 +2544,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "12.29",
@@ -2233,7 +2563,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "12.15",
@@ -2251,7 +2582,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "12.7",
@@ -2269,7 +2601,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "12.1",
@@ -2345,14 +2678,16 @@
                 "original_text": "12.1 Parts of insulating material retaining live parts in\nposition and external parts of insulating material\nproviding protection against electric shock are\nsubjected to the glow-wire test in accordance with\nIS 11000 (Part 2/Sec 1), subject to the following details:\na)\nThe test specimen is a complet"
               }
             }
-          ]
+          ],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "13",
@@ -2383,7 +2718,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.89",
@@ -2401,7 +2737,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.1",
@@ -2419,7 +2756,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.2",
@@ -2438,7 +2776,8 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.3",
@@ -2457,7 +2796,8 @@
             "marking_requirement",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.4",
@@ -2475,7 +2815,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.5",
@@ -2493,7 +2834,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.6",
@@ -2512,14 +2854,16 @@
             "exception",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "14",
@@ -2550,14 +2894,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "15",
@@ -2589,7 +2935,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "15.27",
@@ -2607,7 +2954,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "15.27",
@@ -2625,7 +2973,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "15.1",
@@ -2690,7 +3039,8 @@
                 "original_text": "15.1 Method of Selection\nThe inspection test quantities (ITQ) shall be selected\nin a mutually agreed manner such as to ensure proper\nrepresentation of the batch. The selection of lamps for\nindividual batches should be made as follows:\na)\nUp to and Including 20 Containers per Batch\n— Out of every con"
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "15.2",
@@ -2759,7 +3109,8 @@
                 "original_text": "15.2 Inspection Test Quantity (ITQ)\nInspection test quantity shall consist of 25 lamps.\nIS 16102 (Part 1) : 2012"
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "15.3",
@@ -2789,14 +3140,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "sampling_requirement",
@@ -2804,7 +3157,8 @@
         "sampling_requirement",
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "16",
@@ -2835,7 +3189,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "16.1",
@@ -2854,7 +3209,8 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "16.2",
@@ -3011,21 +3367,24 @@
                     "original_text": "16.2.1 Following shall constitute inspection tests:\na)\nMarking;\nb)\nInterchangeability;\nc)\nProtection against electric shock;\nd)\nInsulation resistance and electric strength after\nhumidity treatment; and\ne)\nMechanical strength.\nA batch shall be considered to comply, if the number\nof lamps failing does"
                   }
                 }
-              ]
+              ],
+              "definitions": []
             }
           ],
           "semantic_type": "test_method",
           "semantic_tags": [
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "17",
@@ -3193,7 +3552,8 @@
                     "original_text": "17.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of self-ballasted lamps,\nsample being drawn preferably from regular production\nlot. The tests are carried out in order of the clauses:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection"
                   }
                 }
-              ]
+              ],
+              "definitions": []
             },
             {
               "clause_number": "17.1.2",
@@ -3212,7 +3572,8 @@
                 "requirement",
                 "sampling_requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "17.1.3",
@@ -3232,7 +3593,8 @@
                 "requirement",
                 "test_method"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "17.1.4",
@@ -3251,14 +3613,16 @@
                 "acceptance_criterion",
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "test_method",
           "semantic_tags": [
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "17.2",
@@ -3292,7 +3656,8 @@
                 "requirement",
                 "sampling_requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "test_method",
@@ -3350,14 +3715,260 @@
                 "original_text": "17.2 Acceptance Test\nThe following shall constitute as acceptance tests:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection against electric shock (see 7);\nd)\nInsulation resistance and electric strength after\nhumidity treatment (see 8);\ne)\nMechanical strength (see 9); and\nf)\nCap temper"
               }
             }
-          ]
+          ],
+          "definitions": []
         }
       ],
       "semantic_type": "test_method",
       "semantic_tags": [
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0001",
+      "term": "Self",
+      "definition": "Ballasted LED Lamp — Unit which cannot",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.1",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.1 Self-Ballasted LED Lamp — Unit which cannot"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0002",
+      "term": "Type",
+      "definition": "Lamps that, independent of the type of",
+      "source_clause": "3.2",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.2",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.2 Type — Lamps that, independent of the type of"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0003",
+      "term": "Rated Voltage",
+      "definition": "Voltage or voltage range marked",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.3",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.3 Rated Voltage — Voltage or voltage range marked"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0004",
+      "term": "Rated Wattage",
+      "definition": "Wattage marked on the lamp.",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.4",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.4 Rated Wattage — Wattage marked on the lamp."
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0005",
+      "term": "Rated Frequency",
+      "definition": "Frequency marked on the",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.5",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.5 Rated Frequency — Frequency marked on the"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0006",
+      "term": "Live Part",
+      "definition": "Conductive part which may cause an",
+      "source_clause": "3.7",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.7",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.7 Live Part — Conductive part which may cause an"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0007",
+      "term": "Type Test",
+      "definition": "A test or series of tests made on a",
+      "source_clause": "3.8",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.8",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.8 Type Test — A test or series of tests made on a"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0008",
+      "term": "Type Test Sample",
+      "definition": "A sample consisting of one",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.9",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.9 Type Test Sample — A sample consisting of one"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0009",
+      "term": "Acceptance Test",
+      "definition": "Tests carried out on samples",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.10",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.10 Acceptance Test — Tests carried out on samples"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0010",
+      "term": "Inspection Test Quantity (ITQ)",
+      "definition": "The number",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.11 Inspection Test Quantity (ITQ) — The number"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0011",
+      "term": "Batch",
+      "definition": "All the lamps of one type put forward at",
+      "source_clause": "3.12",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.12",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.12 Batch — All the lamps of one type put forward at"
+      }
     }
   ],
   "entities": [
@@ -9394,9 +10005,9 @@
   ],
   "tables": [
     {
-      "table_id": "T-003",
+      "table_id": "TABLE-003",
       "title": "Torque Test Values for Unused Lamps",
-      "clause": "16",
+      "clause": "9.1",
       "source_page": 11,
       "headers": [
         "Dimension\n(1)",
@@ -9407,104 +10018,94 @@
         "E27\n(6)",
         "Tolerance\n(7)"
       ],
-      "normalized_headers": [
-        "dimension",
-        "e12",
-        "e14",
-        "e17",
-        "e26_and_e26d",
-        "e27",
-        "tolerance"
-      ],
       "rows": [
         {
-          "dimension": "C",
-          "e12": 15.27,
-          "e14": 20.0,
-          "e17": 20.0,
-          "e26_and_e26d": 32.0,
-          "e27": 32.0,
-          "tolerance": "Min"
+          "cap": "B15d",
+          "torsion_moment": {
+            "value": 1.15,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "K",
-          "e12": 9.0,
-          "e14": 11.5,
-          "e17": 10.0,
-          "e26_and_e26d": 11.0,
-          "e27": 13.5,
-          "tolerance": "0.0\n–0.3"
+          "cap": "B22d",
+          "torsion_moment": {
+            "value": 3.0,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "O",
-          "e12": 9.5,
-          "e14": 12.0,
-          "e17": 14.0,
-          "e26_and_e26d": 23.0,
-          "e27": 23.0,
-          "tolerance": "+0.1\n–0.1"
+          "cap": "E11",
+          "torsion_moment": {
+            "value": 0.8,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "S",
-          "e12": 4.0,
-          "e14": 7.0,
-          "e17": 8.0,
-          "e26_and_e26d": 12.0,
-          "e27": 12.0,
-          "tolerance": "Min"
+          "cap": "E12",
+          "torsion_moment": {
+            "value": 0.8,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "d",
-          "e12": 11.89,
-          "e14": 13.89,
-          "e17": 16.64,
-          "e26_and_e26d": 26.492,
-          "e27": 26.45,
-          "tolerance": "+0.1\n0.0"
+          "cap": "E14",
+          "torsion_moment": {
+            "value": 1.15,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "d\n1",
-          "e12": 10.62,
-          "e14": 12.29,
-          "e17": 15.27,
-          "e26_and_e26d": 24.816,
-          "e27": 24.26,
-          "tolerance": "+0.1\n0.0"
+          "cap": "E17",
+          "torsion_moment": {
+            "value": 1.5,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "P",
-          "e12": 2.54,
-          "e14": 2.822,
-          "e17": 2.822,
-          "e26_and_e26d": 3.629,
-          "e27": 3.629,
-          "tolerance": "—"
+          "cap": "E26",
+          "torsion_moment": {
+            "value": 3.0,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "r",
-          "e12": 0.792,
-          "e14": 0.822,
-          "e17": 0.897,
-          "e26_and_e26d": 1.191,
-          "e27": 1.025,
-          "tolerance": "—"
+          "cap": "E27",
+          "torsion_moment": {
+            "value": 3.0,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "NOTE — The drawing illustrates the essential dimensions of the holder which\nneed only be checked if doubt arises from the application of the test.",
-          "e12": "",
-          "e14": "",
-          "e17": "",
-          "e26_and_e26d": "",
-          "e27": "",
-          "tolerance": ""
+          "cap": "GU10",
+          "torsion_moment": {
+            "value": 0.1,
+            "unit": "Nm"
+          },
+          "status": "mandatory"
+        },
+        {
+          "cap": "GX53",
+          "torsion_moment": {
+            "value": 3.0,
+            "unit": "Nm"
+          },
+          "status": "under_consideration"
         }
       ],
       "raw_markdown": "| Dimension\n(1) | E12\n(2) | E14\n(3) | E17\n(4) | E26 and E26d\n(5) | E27\n(6) | Tolerance\n(7) |\n| --- | --- | --- | --- | --- | --- | --- |\n| C | 15.27 | 20.0 | 20.0 | 32.0 | 32.0 | Min |\n| K | 9.0 | 11.5 | 10.0 | 11.0 | 13.5 | 0.0\n–0.3 |\n| O | 9.5 | 12.0 | 14.0 | 23.0 | 23.0 | +0.1\n–0.1 |\n| S | 4.0 | 7.0 | 8.0 | 12.0 | 12.0 | Min |\n| d | 11.89 | 13.89 | 16.64 | 26.492 | 26.45 | +0.1\n0.0 |\n| d\n1 | 10.62 | 12.29 | 15.27 | 24.816 | 24.26 | +0.1\n0.0 |\n| P | 2.540 | 2.822 | 2.822 | 3.629 | 3.629 | — |\n| r | 0.792 | 0.822 | 0.897 | 1.191 | 1.025 | — |\n| NOTE — The drawing illustrates the essential dimensions of the holder which\nneed only be checked if doubt arises from the application of the test. |  |  |  |  |  |  |"
     },
     {
-      "table_id": "T-002",
-      "title": "Table 2",
-      "clause": "15",
+      "table_id": "TABLE-002",
+      "title": "Bending Moments and Masses",
+      "clause": "6.2",
       "source_page": 12,
       "headers": [
         "Dimension\n(1)",
@@ -9512,72 +10113,111 @@
         "B22\n(3)",
         "Tolerance\n(4)"
       ],
-      "normalized_headers": [
-        "dimension",
-        "b15",
-        "b22",
-        "tolerance"
-      ],
       "rows": [
         {
-          "dimension": "A",
-          "b15": 15.27,
-          "b22": 22.27,
-          "tolerance": 0.03
+          "cap": "B15d",
+          "bending_moment": {
+            "value": 1.0,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         },
         {
-          "dimension": "B",
-          "b15": 19.0,
-          "b22": 19.0,
-          "tolerance": "Min"
+          "cap": "B22d",
+          "bending_moment": {
+            "value": 2.0,
+            "unit": "Nm"
+          },
+          "mass": {
+            "value": 1.0,
+            "unit": "kg"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "C",
-          "b15": 21.0,
-          "b22": 28.0,
-          "tolerance": "Min"
+          "cap": "E11",
+          "bending_moment": {
+            "value": 0.5,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         },
         {
-          "dimension": "D",
-          "b15": 9.5,
-          "b22": 9.5,
-          "tolerance": "Min"
+          "cap": "E12",
+          "bending_moment": {
+            "value": 0.5,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         },
         {
-          "dimension": "E",
-          "b15": 3.0,
-          "b22": 3.0,
-          "tolerance": 0.17
+          "cap": "E14",
+          "bending_moment": {
+            "value": 1.0,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         },
         {
-          "dimension": "G",
-          "b15": 18.3,
-          "b22": 24.6,
-          "tolerance": "±0.3"
+          "cap": "E17",
+          "bending_moment": {
+            "value": 1.0,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         },
         {
-          "dimension": "H",
-          "b15": 9.0,
-          "b22": 12.15,
-          "tolerance": "Min"
+          "cap": "E26",
+          "bending_moment": {
+            "value": 2.0,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         },
         {
-          "dimension": "K",
-          "b15": 12.7,
-          "b22": 12.7,
-          "tolerance": "±0.3"
+          "cap": "E27",
+          "bending_moment": {
+            "value": 2.0,
+            "unit": "Nm"
+          },
+          "mass": {
+            "value": 1.0,
+            "unit": "kg"
+          },
+          "status": "mandatory"
         },
         {
-          "dimension": "R",
-          "b15": 1.5,
-          "b22": 1.5,
-          "tolerance": "Approximate"
+          "cap": "GU10",
+          "bending_moment": {
+            "value": 0.1,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         },
         {
-          "dimension": "NOTE — The drawing illustrates the essential dimensions of the holder\nwhich need only be checked if doubt arises from the application of the test.",
-          "b15": "",
-          "b22": "",
-          "tolerance": ""
+          "cap": "GZ10",
+          "bending_moment": {
+            "value": 0.1,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
+        },
+        {
+          "cap": "GX53",
+          "bending_moment": {
+            "value": 0.3,
+            "unit": "Nm"
+          },
+          "mass": null,
+          "status": "mandatory"
         }
       ],
       "raw_markdown": "| Dimension\n(1) | B15\n(2) | B22\n(3) | Tolerance\n(4) |\n| --- | --- | --- | --- |\n| A | 15.27 | 22.27 | +0.03 |\n| B | 19.0 | 19.0 | Min |\n| C | 21.0 | 28.0 | Min |\n| D | 9.5 | 9.5 | Min |\n| E | 3.0 | 3.0 | +0.17 |\n| G | 18.3 | 24.6 | ±0.3 |\n| H | 9.0 | 12.15 | Min |\n| K | 12.7 | 12.7 | ±0.3 |\n| R | 1.5 | 1.5 | Approximate |\n| NOTE — The drawing illustrates the essential dimensions of the holder\nwhich need only be checked if doubt arises from the application of the test. |  |  |  |"
@@ -9607,7 +10247,8 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:25:15.654751+00:00",
+    "normalized_at": "2026-08-30T15:32:16.979289+00:00",
+    "total_definitions": 11,
     "total_entities": 107,
     "total_requirements": 19,
     "total_relationships": 187,

@@ -12,6 +12,7 @@ from typing import Any, Dict, List
 
 from ai.processing.clause_classifier import ClauseClassifier
 from ai.processing.cross_reference_resolver import CrossReferenceResolver
+from ai.processing.definition_extractor import DefinitionExtractor
 from ai.processing.entity_extractor import EntityExtractor
 from ai.processing.relationship_extractor import RelationshipExtractor
 from ai.processing.requirement_extractor import RequirementExtractor
@@ -28,11 +29,12 @@ REGISTRY_PATH = METADATA_DIR / "source_registry.json"
 
 
 class DocumentNormalizer:
-    """Orchestrates semantic normalization, clause classification, entity extraction, and relationship mapping."""
+    """Orchestrates semantic normalization, clause classification, definitions, entities, requirements, and relationships."""
 
     def __init__(self):
         self.clause_classifier = ClauseClassifier()
         self.cross_reference_resolver = CrossReferenceResolver()
+        self.definition_extractor = DefinitionExtractor()
         self.entity_extractor = EntityExtractor()
         self.requirement_extractor = RequirementExtractor()
         self.relationship_extractor = RelationshipExtractor()
@@ -69,46 +71,54 @@ class DocumentNormalizer:
         # 2. Classify all clauses (2D-2)
         classified_clauses = self.clause_classifier.classify_all_clauses(proc_doc.get("clauses", []))
 
-        # 3. Extract Entities (2D-3)
+        # 3. Extract Definitions (2D-12)
+        definitions = self.definition_extractor.extract_definitions(proc_doc)
+
+        # 4. Extract Entities (2D-3)
         entities = self.entity_extractor.extract_entities_from_document(proc_doc)
 
-        # 4. Extract Machine-Readable Requirements (2D-4 & 2D-5)
+        # 5. Extract Machine-Readable Requirements (2D-4, 2D-5, 2D-8, 2D-9, 2D-10)
         requirements = self.requirement_extractor.extract_requirements(proc_doc)
 
-        # 5. Resolve Cross-References (2D-6)
+        # 6. Resolve Cross-References (2D-6)
         cross_references = self.cross_reference_resolver.resolve_references(proc_doc)
 
-        # 6. Extract Relationships (Triples) (2D-7)
+        # 7. Extract Relationships (Triples) (2D-7)
         relationships = self.relationship_extractor.extract_relationships(
             proc_doc, entities, requirements, cross_references
         )
 
-        # 7. Normalize Tables
+        # 8. Normalize Tables (2D-11)
         normalized_tables = self.table_normalizer.normalize_tables(proc_doc)
 
-        # 8. Extract list of referenced standards
+        # 9. Extract list of referenced standards
         referenced_standards = [ref["target_standard"] for ref in cross_references]
         referenced_standards = sorted(list(set(referenced_standards)))
 
-        # 9. Enrich Classified Clauses with requirements
+        # 10. Enrich Classified Clauses with requirements & definitions
         req_by_clause: Dict[str, List[Dict[str, Any]]] = {}
         for req in requirements:
             req_by_clause.setdefault(req["clause"], []).append(req)
 
-        def attach_requirements(clauses: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        def_by_clause: Dict[str, List[Dict[str, Any]]] = {}
+        for d in definitions:
+            def_by_clause.setdefault(d["source_clause"], []).append(d)
+
+        def attach_semantic_payloads(clauses: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             enriched = []
             for c in clauses:
                 node = dict(c)
                 c_num = c.get("clause_number", "")
                 node["requirements"] = req_by_clause.get(c_num, [])
+                node["definitions"] = def_by_clause.get(c_num, [])
                 if c.get("subclauses"):
-                    node["subclauses"] = attach_requirements(c["subclauses"])
+                    node["subclauses"] = attach_semantic_payloads(c["subclauses"])
                 enriched.append(node)
             return enriched
 
-        enriched_clauses = attach_requirements(classified_clauses)
+        enriched_clauses = attach_semantic_payloads(classified_clauses)
 
-        # 10. Semantic Sections mapping
+        # 11. Semantic Sections mapping
         semantic_sections = []
         for sec in proc_doc.get("sections", []):
             s_title = sec.get("title", "")
@@ -121,13 +131,14 @@ class DocumentNormalizer:
                 "page_refs": sec.get("page_refs", [sec.get("page_start", 1)]),
             })
 
-        # 11. Assemble Canonical Normalized Document
+        # 12. Assemble Canonical Normalized Document
         normalized_document = {
             "document_id": document_id,
             "source_id": proc_doc.get("source_id"),
             "document_metadata": normalized_identity,
             "semantic_sections": semantic_sections,
             "clauses": enriched_clauses,
+            "definitions": definitions,
             "entities": entities,
             "relationships": relationships,
             "requirements": requirements,
@@ -137,6 +148,7 @@ class DocumentNormalizer:
             "annexes": proc_doc.get("annexes", []),
             "normalization_metadata": {
                 "normalized_at": datetime.now(timezone.utc).isoformat(),
+                "total_definitions": len(definitions),
                 "total_entities": len(entities),
                 "total_requirements": len(requirements),
                 "total_relationships": len(relationships),
@@ -153,12 +165,12 @@ class DocumentNormalizer:
             },
         }
 
-        # 12. Write to data/normalized/{document_id}.normalized.json
+        # 13. Write to data/normalized/{document_id}.normalized.json
         out_file = NORMALIZED_DIR / f"{document_id}.normalized.json"
         with open(out_file, "w", encoding="utf-8") as f:
             json.dump(normalized_document, f, indent=2, ensure_ascii=False)
 
-        # 13. Update documents.json & source_registry.json status to metadata_verified
+        # 14. Update documents.json & source_registry.json status to metadata_verified
         if DOCUMENTS_PATH.exists():
             with open(DOCUMENTS_PATH, "r", encoding="utf-8") as f:
                 documents = json.load(f)
@@ -180,13 +192,13 @@ class DocumentNormalizer:
                 json.dump(registry, f, indent=2, ensure_ascii=False)
 
         logger.info(
-            "✅ Successfully normalized %s -> %s (%d entities, %d requirements, %d relationships, %d cross-refs)",
+            "✅ Successfully normalized %s -> %s (%d definitions, %d entities, %d requirements, %d tables)",
             document_id,
             out_file.name,
+            len(definitions),
             len(entities),
             len(requirements),
-            len(relationships),
-            len(cross_references),
+            len(normalized_tables),
         )
 
         return normalized_document

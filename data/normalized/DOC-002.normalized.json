@@ -178,7 +178,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.14",
@@ -196,7 +197,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.0",
@@ -214,7 +216,8 @@
           "semantic_tags": [
             "scope"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "scope",
@@ -223,7 +226,8 @@
         "requirement",
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "2",
@@ -255,7 +259,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "2.2",
@@ -273,7 +278,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "2.51",
@@ -291,14 +297,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "reference",
       "semantic_tags": [
         "reference"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "3",
@@ -330,7 +338,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0001",
+              "term": "Rated Value",
+              "definition": "3.1 Rated Value\nQuantity value for a characteristic of an LED lamp for\nspecified operating conditions.\nNOTE — The value and the conditions specified in this\nstandard, or assigned by the manufacturer or responsible vendor.",
+              "source_clause": "3.1",
+              "source_pages": [
+                4
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.1",
+                "page": 4,
+                "pages": [
+                  4
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.1 Rated Value\nQuantity value for a characteristic of an LED lamp for\nspecified operating conditions.\nNOTE — The value and the conditions specified in this\nstandard, or assigned by the manufacturer or responsible vendor."
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.2",
@@ -349,7 +381,8 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.3",
@@ -368,7 +401,8 @@
             "acceptance_criterion",
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.4",
@@ -386,7 +420,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.5",
@@ -405,7 +440,8 @@
             "definition",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.6",
@@ -423,7 +459,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.7",
@@ -444,7 +481,8 @@
             "requirement",
             "sampling_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.8",
@@ -463,7 +501,31 @@
             "acceptance_criterion",
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0002",
+              "term": "2 For self",
+              "definition": "ballasted LED lamps normally a failure fraction of",
+              "source_clause": "3.8",
+              "source_pages": [
+                4
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.8",
+                "page": 4,
+                "pages": [
+                  4
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "2 For self-ballasted LED lamps normally a failure fraction of"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.9",
@@ -482,7 +544,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.10",
@@ -500,7 +563,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.11",
@@ -519,7 +583,8 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.12",
@@ -537,7 +602,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.13",
@@ -555,7 +621,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.14",
@@ -574,7 +641,8 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.15",
@@ -593,7 +661,8 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.16",
@@ -611,7 +680,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.17",
@@ -629,7 +699,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0003",
+              "term": "Block of semi",
+              "definition": "conducting material on which a given",
+              "source_clause": "3.17",
+              "source_pages": [
+                5
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.17",
+                "page": 5,
+                "pages": [
+                  5
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Block of semi-conducting material on which a given"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.18",
@@ -647,7 +741,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.19",
@@ -665,7 +760,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.20",
@@ -683,7 +779,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.21",
@@ -701,7 +798,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.22",
@@ -719,7 +817,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.23",
@@ -737,7 +836,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.24",
@@ -756,7 +856,8 @@
             "acceptance_criterion",
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.25",
@@ -821,7 +922,8 @@
                 "original_text": "3.25 Acceptance Test\nTests carried out on samples taken from a lot for the\nacceptance of the lot."
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "3.26",
@@ -839,7 +941,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.4",
@@ -857,7 +960,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.85",
@@ -875,7 +979,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.0",
@@ -893,7 +998,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.0",
@@ -911,7 +1017,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "definition",
@@ -919,7 +1026,8 @@
         "definition",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "1",
@@ -950,7 +1058,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.14",
@@ -968,7 +1077,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "1.0",
@@ -986,7 +1096,8 @@
           "semantic_tags": [
             "scope"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "scope",
@@ -995,7 +1106,8 @@
         "requirement",
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "4",
@@ -1074,7 +1186,8 @@
             "original_text": "4 GENERAL REQUIREMENTS ON TESTS\nThe LED lamps for which compliance with this standard\nis claimed shall comply with the safety requirements\nspecified in IS 16102 (Part 1). Method of measurement\nof lamp characteristics is given in Annex A.\nSelf-ballasted LED lamps shall be able to start and\noperate sa"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "5",
@@ -1107,7 +1220,8 @@
             "marking_requirement",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "5.2",
@@ -1126,7 +1240,8 @@
             "marking_requirement",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "5.3",
@@ -1156,14 +1271,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "marking_requirement",
           "semantic_tags": [
             "marking_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "5.0",
@@ -1183,14 +1300,16 @@
             "acceptance_criterion",
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "marking_requirement",
       "semantic_tags": [
         "marking_requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "6",
@@ -1209,7 +1328,8 @@
         "acceptance_criterion",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "7",
@@ -1288,7 +1408,8 @@
                 "original_text": "7.1 General Test Conditions\nTesting duration is 25 percent of rated life time up to a\nmaximum of 6 000 h.\nAdditional LED lamps within the same family (see 3.13)\nmay be subjected to decreased testing duration. For\nidentification of a family, see Table 2, for details on\nsample sizes for family testing"
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "7.2",
@@ -1321,7 +1442,8 @@
                 "acceptance_criterion",
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "7.2.2",
@@ -1339,7 +1461,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "7.2.3",
@@ -1359,14 +1482,16 @@
                 "requirement",
                 "test_method"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "test_method",
           "semantic_tags": [
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "7.21",
@@ -1384,7 +1509,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "7.21",
@@ -1402,14 +1528,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "test_method",
       "semantic_tags": [
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "8",
@@ -1442,7 +1570,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.2",
@@ -1460,7 +1589,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.3",
@@ -1491,7 +1621,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "8.3.2",
@@ -1509,14 +1640,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.4",
@@ -1547,7 +1680,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "8.4.2",
@@ -1565,14 +1699,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.3",
@@ -1603,7 +1739,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "8.3.2",
@@ -1621,14 +1758,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.4",
@@ -1659,7 +1798,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "8.4.2",
@@ -1677,14 +1817,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.2",
@@ -1702,7 +1844,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.1",
@@ -1720,7 +1863,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.3",
@@ -1751,7 +1895,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "8.3.2",
@@ -1769,14 +1914,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.4",
@@ -1807,7 +1954,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "8.4.2",
@@ -1825,14 +1973,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.2",
@@ -1850,7 +2000,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.1",
@@ -1868,7 +2019,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.2",
@@ -1886,7 +2038,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "8.1",
@@ -1904,14 +2057,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.77",
@@ -1929,7 +2084,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.5",
@@ -1947,7 +2103,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.40",
@@ -1965,7 +2122,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.35",
@@ -1983,7 +2141,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.33",
@@ -2001,7 +2160,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.15",
@@ -2019,7 +2179,8 @@
       "semantic_tags": [
         "note"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "9",
@@ -2051,7 +2212,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.2",
@@ -2082,7 +2244,8 @@
               "semantic_tags": [
                 "scope"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.2",
@@ -2100,7 +2263,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.3",
@@ -2118,7 +2282,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.4",
@@ -2136,7 +2301,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.5",
@@ -2154,7 +2320,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.31",
@@ -2172,7 +2339,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.4",
@@ -2190,7 +2358,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.5",
@@ -2208,7 +2377,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.31",
@@ -2226,7 +2396,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.4",
@@ -2244,7 +2415,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "9.2.5",
@@ -2262,14 +2434,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "requirement",
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.3",
@@ -2287,7 +2461,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.1",
@@ -2305,7 +2480,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.3",
@@ -2323,7 +2499,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.1",
@@ -2341,7 +2518,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.3",
@@ -2359,7 +2537,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.1",
@@ -2377,7 +2556,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "9.3",
@@ -2395,14 +2575,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "0.5",
@@ -2420,7 +2602,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "10",
@@ -2451,7 +2634,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.2",
@@ -2469,7 +2653,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.1",
@@ -2487,7 +2672,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.2",
@@ -2505,7 +2691,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.1",
@@ -2523,7 +2710,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.2",
@@ -2541,7 +2729,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.1",
@@ -2559,7 +2748,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "10.2",
@@ -2577,14 +2767,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "11",
@@ -2662,7 +2854,8 @@
                 "original_text": "11.1 General\nLife of an LED lamp as defined in 3.6 is the combined\neffect of gradual light output degradation, mostly caused\nby material degradation (see 11.2) and abrupt light output\ndegradation, mostly caused by electrical component\nfailure (see 11.3). Endurance test is therefore carried out\nto as"
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "11.2",
@@ -2680,7 +2873,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "11.3",
@@ -2711,7 +2905,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.2",
@@ -2729,7 +2924,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.3",
@@ -2747,7 +2943,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.4",
@@ -2765,7 +2962,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.2",
@@ -2783,7 +2981,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.3",
@@ -2801,7 +3000,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.4",
@@ -2819,7 +3019,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.2",
@@ -2837,7 +3038,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.3",
@@ -2855,7 +3057,8 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             },
             {
               "clause_number": "11.3.4",
@@ -2873,14 +3076,16 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "test_method",
           "semantic_tags": [
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "11.2",
@@ -2898,7 +3103,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "11.2",
@@ -2916,14 +3122,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "12",
@@ -2941,7 +3149,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "13",
@@ -2976,7 +3185,8 @@
             "sampling_requirement",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.2",
@@ -2995,7 +3205,8 @@
             "sampling_requirement",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "13.3",
@@ -3013,14 +3224,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "14",
@@ -3056,7 +3269,8 @@
             "sampling_requirement",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "14.2",
@@ -3078,14 +3292,84 @@
             "sampling_requirement",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "test_method",
       "semantic_tags": [
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC002-0001",
+      "term": "Rated Value",
+      "definition": "3.1 Rated Value\nQuantity value for a characteristic of an LED lamp for\nspecified operating conditions.\nNOTE — The value and the conditions specified in this\nstandard, or assigned by the manufacturer or responsible vendor.",
+      "source_clause": "3.1",
+      "source_pages": [
+        4
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.1",
+        "page": 4,
+        "pages": [
+          4
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.1 Rated Value\nQuantity value for a characteristic of an LED lamp for\nspecified operating conditions.\nNOTE — The value and the conditions specified in this\nstandard, or assigned by the manufacturer or responsible vendor."
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC002-0002",
+      "term": "2 For self",
+      "definition": "ballasted LED lamps normally a failure fraction of",
+      "source_clause": "3.8",
+      "source_pages": [
+        4
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.8",
+        "page": 4,
+        "pages": [
+          4
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "2 For self-ballasted LED lamps normally a failure fraction of"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC002-0003",
+      "term": "Block of semi",
+      "definition": "conducting material on which a given",
+      "source_clause": "3.17",
+      "source_pages": [
+        5
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.17",
+        "page": 5,
+        "pages": [
+          5
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Block of semi-conducting material on which a given"
+      }
     }
   ],
   "entities": [
@@ -5523,7 +5807,7 @@
   ],
   "tables": [
     {
-      "table_id": "T-001",
+      "table_id": "TABLE-001",
       "title": "Table 1",
       "clause": null,
       "source_page": 17,
@@ -5596,7 +5880,8 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:25:15.675596+00:00",
+    "normalized_at": "2026-08-30T15:32:17.000916+00:00",
+    "total_definitions": 3,
     "total_entities": 22,
     "total_requirements": 4,
     "total_relationships": 140,

@@ -39,7 +39,8 @@
       "semantic_tags": [
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "2",
@@ -58,7 +59,8 @@
         "reference",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "3",
@@ -77,7 +79,31 @@
         "definition",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": [
+        {
+          "entity_type": "definition",
+          "definition_id": "DEF-DOC010-0001",
+          "term": "from the Bureau as per Scheme",
+          "definition": "II of Schedule-II of the Bureau of Indian Standards (Conformity Assessment)",
+          "source_clause": "3",
+          "source_pages": [
+            1
+          ],
+          "provenance": {
+            "document_id": "DOC-010",
+            "source_id": "SRC-010",
+            "standard": "CRO 2021",
+            "clause": "3",
+            "page": 1,
+            "pages": [
+              1
+            ],
+            "section": "3 TERMINOLOGY",
+            "original_text": "from the Bureau as per Scheme-II of Schedule-II of the Bureau of Indian Standards (Conformity Assessment)"
+          }
+        }
+      ]
     },
     {
       "clause_number": "4",
@@ -97,7 +123,8 @@
         "requirement",
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "1",
@@ -115,7 +142,32 @@
       "semantic_tags": [
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC010-0001",
+      "term": "from the Bureau as per Scheme",
+      "definition": "II of Schedule-II of the Bureau of Indian Standards (Conformity Assessment)",
+      "source_clause": "3",
+      "source_pages": [
+        1
+      ],
+      "provenance": {
+        "document_id": "DOC-010",
+        "source_id": "SRC-010",
+        "standard": "CRO 2021",
+        "clause": "3",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "from the Bureau as per Scheme-II of Schedule-II of the Bureau of Indian Standards (Conformity Assessment)"
+      }
     }
   ],
   "entities": [
@@ -580,7 +632,8 @@
   "tables": [],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:25:15.680197+00:00",
+    "normalized_at": "2026-08-30T15:32:17.005465+00:00",
+    "total_definitions": 1,
     "total_entities": 10,
     "total_requirements": 0,
     "total_relationships": 12,

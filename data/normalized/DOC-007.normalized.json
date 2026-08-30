@@ -220,7 +220,8 @@
         "requirement",
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "2",
@@ -239,7 +240,8 @@
         "reference",
         "sampling_requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "3",
@@ -270,7 +272,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0001",
+              "term": "Electronic Controlgear for LED Modules —",
+              "definition": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponents and may include means for dimming,\ncorrecting the power factor and suppressing radio\ninterference.",
+              "source_clause": "3.1",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.1",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponent"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.2",
@@ -288,7 +314,8 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "3.3",
@@ -306,7 +333,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0002",
+              "term": "SELV Controlgear",
+              "definition": "Controlgear providing a",
+              "source_clause": "3.3",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.3",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.3 SELV Controlgear — Controlgear providing a"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.4",
@@ -324,7 +375,53 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0003",
+              "term": "Associated Controlgear",
+              "definition": "Controlgear designed",
+              "source_clause": "3.4",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.4",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.4 Associated Controlgear —  Controlgear designed"
+              }
+            },
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0004",
+              "term": "assigned in a one",
+              "definition": "to-one relation to battery driven ballast.",
+              "source_clause": "3.4",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.4",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "assigned in a one-to-one relation to battery driven ballast."
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.5",
@@ -342,7 +439,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0005",
+              "term": "Plug",
+              "definition": "in Controlgear — Controlgear incorporated",
+              "source_clause": "3.5",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.5",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.5 Plug-in Controlgear — Controlgear incorporated"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.6",
@@ -360,7 +481,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0006",
+              "term": "Controlgear",
+              "definition": "Output voltage, at rated supply",
+              "source_clause": "3.6",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.6",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Controlgear — Output voltage, at rated supply"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.7",
@@ -378,7 +523,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0007",
+              "term": "Controlgear",
+              "definition": "Output current, at rated supply voltage,",
+              "source_clause": "3.7",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.7",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Controlgear — Output current, at rated supply voltage,"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.8",
@@ -397,7 +566,57 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0008",
+              "term": "Light Emitting Diode (LED)",
+              "definition": "Solid state device",
+              "source_clause": "3.8",
+              "source_pages": [
+                6,
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.8",
+                "page": 6,
+                "pages": [
+                  6,
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.8 Light Emitting Diode (LED) — Solid state device"
+              }
+            },
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0009",
+              "term": "embodying a p",
+              "definition": "n junction, emitting optical radiation",
+              "source_clause": "3.8",
+              "source_pages": [
+                6,
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.8",
+                "page": 6,
+                "pages": [
+                  6,
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "embodying a p-n junction, emitting optical radiation"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.9",
@@ -415,7 +634,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0010",
+              "term": "LED Module",
+              "definition": "Unit supplied as a light source.",
+              "source_clause": "3.9",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.9",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.9 LED Module —  Unit supplied as a light source."
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.10",
@@ -433,7 +676,31 @@
           "semantic_tags": [
             "definition"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0011",
+              "term": "Maximum Output Voltage",
+              "definition": "Maximum voltage",
+              "source_clause": "3.10",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.10",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.10 Maximum Output Voltage —  Maximum voltage"
+              }
+            }
+          ]
         },
         {
           "clause_number": "3.11",
@@ -452,7 +719,31 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0012",
+              "term": "Acceptance Test",
+              "definition": "Tests carried out on samples",
+              "source_clause": "3.11",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.11",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.11 Acceptance Test —  Tests carried out on samples"
+              }
+            }
+          ]
         }
       ],
       "semantic_type": "definition",
@@ -460,7 +751,8 @@
         "definition",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "4",
@@ -526,7 +818,8 @@
             "original_text": "4 GENERAL REQUIREMENTS\nThe requirements of 4 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nControlgears providing SELV shall comply with the\nrequirements of Annex I. This includes insulation\nresistance, electric strength, creepage distances and\nclearance betw"
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "5",
@@ -545,7 +838,8 @@
         "requirement",
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "6",
@@ -563,7 +857,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "7",
@@ -593,7 +888,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "7.2",
@@ -667,7 +963,8 @@
                 "original_text": "7.2 Information to be Provided, if Applicable\nIn addition to the above mandatory markings, the\nfollowing information, if applicable, shall be given\neither on the control gear, or be made available in the\nmanufacturer’s catalogue :\na)"
               }
             }
-          ]
+          ],
+          "definitions": []
         },
         {
           "clause_number": "7.1",
@@ -685,7 +982,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "7.3",
@@ -715,21 +1013,24 @@
               "semantic_tags": [
                 "requirement"
               ],
-              "requirements": []
+              "requirements": [],
+              "definitions": []
             }
           ],
           "semantic_type": "marking_requirement",
           "semantic_tags": [
             "marking_requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "marking_requirement",
       "semantic_tags": [
         "marking_requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "8",
@@ -747,7 +1048,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "9",
@@ -765,7 +1067,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "10",
@@ -783,7 +1086,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "11",
@@ -802,7 +1106,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "12",
@@ -868,7 +1173,8 @@
             "original_text": "12 ELECTRIC STRENGTH\nThe requirements of 12 of IS 15885 (Part 1) shall apply."
           }
         }
-      ]
+      ],
+      "definitions": []
     },
     {
       "clause_number": "13",
@@ -886,7 +1192,8 @@
       "semantic_tags": [
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "14",
@@ -904,7 +1211,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "15",
@@ -934,7 +1242,8 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "15.2",
@@ -952,14 +1261,16 @@
           "semantic_tags": [
             "requirement"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         }
       ],
       "semantic_type": "requirement",
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "16",
@@ -977,7 +1288,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "17",
@@ -996,7 +1308,8 @@
         "exception",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "18",
@@ -1014,7 +1327,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "19",
@@ -1032,7 +1346,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "20",
@@ -1050,7 +1365,8 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "21",
@@ -1142,14 +1458,16 @@
                     "original_text": "21.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of controlgear, sample\nbeing drawn preferably from regular production lot:\na)\nMarking (see 7);\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions fo"
                   }
                 }
-              ]
+              ],
+              "definitions": []
             }
           ],
           "semantic_type": "test_method",
           "semantic_tags": [
             "test_method"
           ],
-          "requirements": []
+          "requirements": [],
+          "definitions": []
         },
         {
           "clause_number": "21.2",
@@ -1220,14 +1538,286 @@
                 "original_text": "21.2 Acceptance Test\nThe sampling plan for acceptance tests shall be as\nspecified in IS 2500 (Part 1). The following shall\nconstitute as acceptance tests:\na)\nMarking (see 7);\nIS 15885 (Part 2/Sec 13) : 2012\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nPr"
               }
             }
-          ]
+          ],
+          "definitions": []
         }
       ],
       "semantic_type": "test_method",
       "semantic_tags": [
         "test_method"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0001",
+      "term": "Electronic Controlgear for LED Modules —",
+      "definition": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponents and may include means for dimming,\ncorrecting the power factor and suppressing radio\ninterference.",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.1",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponent"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0002",
+      "term": "SELV Controlgear",
+      "definition": "Controlgear providing a",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.3",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.3 SELV Controlgear — Controlgear providing a"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0003",
+      "term": "Associated Controlgear",
+      "definition": "Controlgear designed",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.4",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.4 Associated Controlgear —  Controlgear designed"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0004",
+      "term": "assigned in a one",
+      "definition": "to-one relation to battery driven ballast.",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.4",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "assigned in a one-to-one relation to battery driven ballast."
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0005",
+      "term": "Plug",
+      "definition": "in Controlgear — Controlgear incorporated",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.5",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.5 Plug-in Controlgear — Controlgear incorporated"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0006",
+      "term": "Controlgear",
+      "definition": "Output voltage, at rated supply",
+      "source_clause": "3.6",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.6",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Controlgear — Output voltage, at rated supply"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0007",
+      "term": "Controlgear",
+      "definition": "Output current, at rated supply voltage,",
+      "source_clause": "3.7",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.7",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Controlgear — Output current, at rated supply voltage,"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0008",
+      "term": "Light Emitting Diode (LED)",
+      "definition": "Solid state device",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.8",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.8 Light Emitting Diode (LED) — Solid state device"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0009",
+      "term": "embodying a p",
+      "definition": "n junction, emitting optical radiation",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.8",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "embodying a p-n junction, emitting optical radiation"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0010",
+      "term": "LED Module",
+      "definition": "Unit supplied as a light source.",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.9",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.9 LED Module —  Unit supplied as a light source."
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0011",
+      "term": "Maximum Output Voltage",
+      "definition": "Maximum voltage",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.10",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.10 Maximum Output Voltage —  Maximum voltage"
+      }
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0012",
+      "term": "Acceptance Test",
+      "definition": "Tests carried out on samples",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.11 Acceptance Test —  Tests carried out on samples"
+      }
     }
   ],
   "entities": [
@@ -3661,7 +4251,8 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:25:15.664122+00:00",
+    "normalized_at": "2026-08-30T15:32:16.988725+00:00",
+    "total_definitions": 12,
     "total_entities": 45,
     "total_requirements": 5,
     "total_relationships": 69,

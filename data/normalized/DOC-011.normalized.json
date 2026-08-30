@@ -30,7 +30,8 @@
         "requirement",
         "scope"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     },
     {
       "clause_number": "2",
@@ -49,9 +50,11 @@
         "reference",
         "requirement"
       ],
-      "requirements": []
+      "requirements": [],
+      "definitions": []
     }
   ],
+  "definitions": [],
   "entities": [
     {
       "entity_id": "ENT-DOC011-0001",
@@ -257,7 +260,8 @@
   "tables": [],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:25:15.681364+00:00",
+    "normalized_at": "2026-08-30T15:32:17.006727+00:00",
+    "total_definitions": 0,
     "total_entities": 5,
     "total_requirements": 0,
     "total_relationships": 5,
