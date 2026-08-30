@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "document_id": "DOC-001",
+    "source_id": "SRC-001",
+    "file_name": "IS_16102_Part_1_2012.pdf",
+    "file_path": "data/raw/standards/IS_16102_Part_1_2012.pdf",
+    "file_sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+    "file_size_bytes": 1240734,
+    "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+    "standard_or_document_number": "IS 16102 (Part 1) : 2012",
+    "version_edition": "First Edition",
+    "acquired_date": "2026-08-30T14:29:57.295043+00:00",
+    "status": "document_acquired",
+    "notes": "Official Indian Standard PDF acquired and verified"
+  }
+]

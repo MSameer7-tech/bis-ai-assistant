@@ -4,7 +4,14 @@ Script to register manually acquired or downloaded pilot documents with stable D
 
 import argparse
 import logging
+import sys
 from pathlib import Path
+
+# Ensure project root is on sys.path for direct CLI execution
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
 from ai.ingestion.acquisition import register_acquired_document
 
 logging.basicConfig(
@@ -12,8 +19,6 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)-8s | %(message)s",
 )
 logger = logging.getLogger(__name__)
-
-ROOT_DIR = Path(__file__).resolve().parent.parent
 
 
 def main():

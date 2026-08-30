@@ -10,10 +10,14 @@
     "version_edition": "First Edition",
     "publication_date": "2012-08-01",
     "effective_date": null,
-    "url": "https://standardsbis.bsbedge.com",
-    "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "Safety standard for LED lamps under active lab scopes; pending raw document acquisition to verify exact amendments."
+    "url": "https://archive.org/details/gov.in.is.16102.1.2012",
+    "retrieval_date": "2026-08-30T14:29:57.295043+00:00",
+    "status": "document_acquired",
+    "notes": "Official Indian Standard PDF acquired and verified",
+    "document_id": "DOC-001",
+    "file_path": "data/raw/standards/IS_16102_Part_1_2012.pdf",
+    "file_sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+    "file_size_bytes": 1240734
   },
   {
     "source_id": "SRC-002",

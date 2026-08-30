@@ -35,9 +35,21 @@ def register_acquired_document(
     """
     Registers an acquired raw document artifact into documents.json
     and synchronizes provenance to source_registry.json.
+    Strictly verifies that source_id exists and raw_file_path exists.
     """
     if not raw_file_path.exists():
         raise FileNotFoundError(f"Raw document file not found: {raw_file_path}")
+
+    if not REGISTRY_PATH.exists():
+        raise FileNotFoundError(f"Source registry not found: {REGISTRY_PATH}")
+
+    with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+        registry = json.load(f)
+
+    # Validate source_id exists in registry
+    source_match = next((item for item in registry if item["source_id"] == source_id), None)
+    if source_match is None:
+        raise ValueError(f"Cannot register document: Source ID '{source_id}' does not exist in registry.")
 
     file_hash = compute_sha256(raw_file_path)
     file_size_bytes = raw_file_path.stat().st_size
@@ -63,12 +75,12 @@ def register_acquired_document(
         "file_path": rel_path,
         "file_sha256": file_hash,
         "file_size_bytes": file_size_bytes,
-        "title": title,
-        "standard_or_document_number": document_number,
-        "version_edition": version_edition,
+        "title": title or source_match.get("title"),
+        "standard_or_document_number": document_number or source_match.get("standard_or_document_number"),
+        "version_edition": version_edition or source_match.get("version_edition"),
         "acquired_date": retrieval_timestamp,
         "status": "document_acquired",
-        "notes": notes,
+        "notes": notes or source_match.get("notes"),
     }
 
     # Upsert in documents list
@@ -82,26 +94,19 @@ def register_acquired_document(
         json.dump(documents, f, indent=2, ensure_ascii=False)
 
     # 2. Update source_registry.json
-    if REGISTRY_PATH.exists():
-        with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
-            registry = json.load(f)
+    source_match["document_id"] = document_id
+    source_match["file_path"] = rel_path
+    source_match["file_sha256"] = file_hash
+    source_match["file_size_bytes"] = file_size_bytes
+    source_match["retrieval_date"] = retrieval_timestamp
+    source_match["status"] = "document_acquired"
+    if source_url:
+        source_match["url"] = source_url
+    if notes:
+        source_match["notes"] = notes
 
-        for item in registry:
-            if item["source_id"] == source_id:
-                item["document_id"] = document_id
-                item["file_path"] = rel_path
-                item["file_sha256"] = file_hash
-                item["file_size_bytes"] = file_size_bytes
-                item["retrieval_date"] = retrieval_timestamp
-                item["status"] = "document_acquired"
-                if source_url:
-                    item["url"] = source_url
-                if notes:
-                    item["notes"] = notes
-                break
-
-        with open(REGISTRY_PATH, "w", encoding="utf-8") as f:
-            json.dump(registry, f, indent=2, ensure_ascii=False)
+    with open(REGISTRY_PATH, "w", encoding="utf-8") as f:
+        json.dump(registry, f, indent=2, ensure_ascii=False)
 
     logger.info(
         "✅ Registered %s (Linked to %s): %s (SHA-256: %s...)",
