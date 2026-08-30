@@ -1,7 +1,7 @@
 """
 Phase 2E Structure-Aware Semantic Chunking Subpackage.
 Produces self-contained, typed knowledge chunks preserving clause hierarchy,
-machine-readable requirements, conditions, references, and exact page provenance.
+machine-readable requirements, conditions, references, stable identities, and exact page provenance.
 """
 
 from ai.chunking.chunker import StructureAwareChunker, chunk_all_documents, chunk_document
@@ -14,6 +14,7 @@ from ai.chunking.schema import (
     KnowledgeChunk,
     NormativeContext,
     NormativeForce,
+    compute_chunk_content_hash,
     make_chunk_id,
 )
 from ai.chunking.table_chunker import TableChunker
@@ -28,6 +29,7 @@ __all__ = [
     "NormativeContext",
     "NormativeForce",
     "make_chunk_id",
+    "compute_chunk_content_hash",
     "extract_normative_context",
     "TableChunker",
     "ChunkValidator",

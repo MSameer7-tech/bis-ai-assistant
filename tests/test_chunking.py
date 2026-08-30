@@ -1,5 +1,5 @@
 """
-Validation tests for Phase 2E Structure-Aware Semantic Chunking.
+Validation tests for Phase 2E Structure-Aware Semantic Chunking (Step 7 Stable IDs & Hashes).
 """
 
 import json
@@ -39,17 +39,19 @@ def test_chunks_exist_for_all_6_documents(chunked_documents):
 
 
 def test_chunk_schema_conformance(chunked_documents):
-    """Verify that every chunk conforms to the KnowledgeChunk Pydantic model."""
+    """Verify that every chunk conforms to the KnowledgeChunk Pydantic model with stable IDs and content hashes."""
     for manifest, chunks in chunked_documents:
         assert len(chunks) > 0, f"Empty chunks in {manifest['document_id']}"
         for c in chunks:
             # Validate via Pydantic
             validated = KnowledgeChunk.model_validate(c)
-            assert validated.chunk_id.startswith(manifest["document_id"])
+            assert manifest["document_id"] in validated.chunk_id
+            assert "::" in validated.chunk_id
             assert validated.document_id == manifest["document_id"]
             assert validated.source_id == manifest["source_id"]
             assert len(validated.page_refs) > 0
             assert validated.provenance.pages == validated.page_refs
+            assert validated.content_hash is not None and len(validated.content_hash) == 64
 
 
 def test_step4_boundary_rules_atomic_units(chunked_documents):

@@ -1,8 +1,7 @@
 """
-Structure-Aware Semantic Chunker for BIS Documents.
-Preserves clause hierarchy lineage, normative modal expressions (shall, shall not, under consideration),
-atomic requirement-condition boundaries, discrete structured tables (Step 7),
-standalone domain definitions (Step 8), and cross-standard references (Step 9).
+Structure-Aware Semantic Chunker for BIS Documents (Step 7).
+Assigns immutable stable chunk identities (e.g. DOC-001-v001::8.1.1::REQ-001),
+computes SHA-256 content hashes for incremental indexing, and preserves full hierarchy lineage.
 """
 
 import json
@@ -19,6 +18,7 @@ from ai.chunking.schema import (
     KnowledgeChunk,
     NormativeContext,
     NormativeForce,
+    compute_chunk_content_hash,
     make_chunk_id,
 )
 from ai.chunking.table_chunker import TableChunker
@@ -55,14 +55,16 @@ def map_cross_references(raw_refs: List[Dict[str, Any]]) -> List[ChunkCrossRefer
 
 
 class StructureAwareChunker:
-    """Chunks normalized BIS documents into semantically coherent knowledge units."""
+    """Chunks normalized BIS documents into semantically coherent knowledge units with stable identities."""
 
     def __init__(self):
         self.table_chunker = TableChunker()
         self.validator = ChunkValidator()
         CHUNKS_DIR.mkdir(parents=True, exist_ok=True)
 
-    def chunk_document(self, document_id: str) -> List[Dict[str, Any]]:
+    def chunk_document(
+        self, document_id: str, version_id: Optional[str] = None
+    ) -> List[Dict[str, Any]]:
         """
         Loads frozen data/normalized/{document_id}.json and produces structured chunks.
         Saves output to data/chunks/{document_id}.json and {document_id}.chunks.json.
@@ -80,6 +82,8 @@ class StructureAwareChunker:
         doc_meta = norm_doc.get("document_metadata", {})
         source_id = norm_doc.get("source_id", "SRC-UNKNOWN")
         std_num = str(doc_meta.get("standard_number") or doc_meta.get("title", document_id)).strip()
+
+        target_ver_id = version_id or norm_doc.get("version_id") or f"{document_id}-v001"
 
         chunks: List[KnowledgeChunk] = []
 
@@ -112,9 +116,12 @@ class StructureAwareChunker:
                 f"{term} is defined as: {definition_text}"
             )
 
+            c_hash = compute_chunk_content_hash(def_qa_text)
+
             chunk = KnowledgeChunk(
-                chunk_id=make_chunk_id(document_id, f"DEF_{c_num}", idx + 1, prefix="DEF"),
+                chunk_id=make_chunk_id(target_ver_id, c_num, idx + 1, prefix="DEF"),
                 document_id=document_id,
+                version_id=target_ver_id,
                 source_id=source_id,
                 chunk_type=ChunkType.DEFINITION,
                 title=def_title,
@@ -135,6 +142,7 @@ class StructureAwareChunker:
                     verbatim_normative_statements=[f"{term} — {definition_text}"],
                 ),
                 text=def_qa_text,
+                content_hash=c_hash,
                 entities=[{
                     "entity_type": "definition",
                     "term": term,
@@ -164,6 +172,7 @@ class StructureAwareChunker:
             std_num=std_num,
             raw_tables=norm_doc.get("tables", []),
             refs_by_clause=refs_by_clause,
+            version_id=target_ver_id,
         )
         chunks.extend(table_chunks)
 
@@ -194,20 +203,26 @@ class StructureAwareChunker:
                         traverse_clauses(c["subclauses"], current_chain, curr_sec_num, curr_sec_title)
                     continue
 
-                # Determine Chunk Type
+                # Determine Chunk Type and Prefix
                 sem_type = c.get("semantic_type", "")
                 if sem_type == "scope" or c_num == "1":
                     ch_type = ChunkType.SCOPE
+                    pfx = "SCOPE"
                 elif sem_type == "reference" or c_num == "2":
                     ch_type = ChunkType.REFERENCE
+                    pfx = "REF"
                 elif sem_type == "sampling_requirement" or "15" in c_num:
                     ch_type = ChunkType.SAMPLING
+                    pfx = "SMPL"
                 elif sem_type == "test_method" or "test" in c_title.lower():
                     ch_type = ChunkType.TEST_METHOD
+                    pfx = "TEST"
                 elif len(c_reqs) > 0 or sem_type == "requirement" or sem_type == "marking_requirement":
                     ch_type = ChunkType.REQUIREMENT
+                    pfx = "REQ"
                 else:
                     ch_type = ChunkType.GENERAL_PROVISION
+                    pfx = "GEN"
 
                 hierarchy_str = " > ".join(current_chain)
                 enriched_text = f"[{hierarchy_str}] Clause {c_num} - {c_title} (Page {c_pages}):\n{c_text.strip()}"
@@ -224,9 +239,12 @@ class StructureAwareChunker:
                 norm_context = extract_normative_context(c_text, c_reqs)
                 parent_clause_id = parent_chain[-1] if parent_chain else None
 
+                c_hash = compute_chunk_content_hash(enriched_text)
+
                 chunk = KnowledgeChunk(
-                    chunk_id=make_chunk_id(document_id, c_num, idx + 1),
+                    chunk_id=make_chunk_id(target_ver_id, c_num, idx + 1, prefix=pfx),
                     document_id=document_id,
+                    version_id=target_ver_id,
                     source_id=source_id,
                     chunk_type=ch_type,
                     title=c_title,
@@ -241,6 +259,7 @@ class StructureAwareChunker:
                     ),
                     normative_context=norm_context,
                     text=enriched_text,
+                    content_hash=c_hash,
                     entities=c_ents,
                     requirements=c_reqs,
                     conditions=[r.get("conditions") for r in c_reqs if r.get("conditions")],
@@ -275,9 +294,13 @@ class StructureAwareChunker:
             a_pages = annex.get("page_refs", [annex.get("page_start", 1)])
             a_text = annex.get("content", "")
 
+            annex_text = f"{a_id} - {a_title} (Pages {a_pages}):\n{a_text.strip()}"
+            c_hash = compute_chunk_content_hash(annex_text)
+
             chunk = KnowledgeChunk(
-                chunk_id=make_chunk_id(document_id, f"ANNEX_{a_id.replace(' ', '_')}", idx + 1, prefix="ANNEX"),
+                chunk_id=make_chunk_id(target_ver_id, a_id, idx + 1, prefix="ANNEX"),
                 document_id=document_id,
+                version_id=target_ver_id,
                 source_id=source_id,
                 chunk_type=ChunkType.ANNEX,
                 title=a_title,
@@ -290,7 +313,8 @@ class StructureAwareChunker:
                     section_title=a_title,
                 ),
                 normative_context=extract_normative_context(a_text, []),
-                text=f"{a_id} - {a_title} (Pages {a_pages}):\n{a_text.strip()}",
+                text=annex_text,
+                content_hash=c_hash,
                 entities=[],
                 requirements=[],
                 conditions=[],
@@ -345,10 +369,10 @@ class StructureAwareChunker:
         return results
 
 
-def chunk_document(document_id: str) -> List[Dict[str, Any]]:
+def chunk_document(document_id: str, version_id: Optional[str] = None) -> List[Dict[str, Any]]:
     """Convenience helper function to chunk a single document."""
     chunker = StructureAwareChunker()
-    return chunker.chunk_document(document_id)
+    return chunker.chunk_document(document_id, version_id=version_id)
 
 
 def chunk_all_documents() -> Dict[str, List[Dict[str, Any]]]:

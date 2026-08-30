@@ -1,10 +1,11 @@
 """
-Phase 2E Chunk Schema and Typed Models.
-Defines self-contained semantic knowledge chunks for standard specifications and regulations
-with explicit clause hierarchy, normative modal keywords, structured tables, definitions,
-and cross-standard relationship references.
+Phase 2E Chunk Schema and Typed Models (Step 7).
+Defines self-contained semantic knowledge chunks with immutable stable identities,
+version lineage (DOC-001-v001::8.1.1::REQ-001), content hashes, clause hierarchies,
+normative modal keywords, structured tables, definitions, and cross-references.
 """
 
+import hashlib
 from enum import Enum
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field
@@ -71,12 +72,14 @@ class ChunkProvenance(BaseModel):
 class KnowledgeChunk(BaseModel):
     chunk_id: str
     document_id: str
+    version_id: Optional[str] = None
     source_id: str
     chunk_type: ChunkType
     title: Optional[str] = None
     clause: ChunkClause
     normative_context: NormativeContext = Field(default_factory=NormativeContext)
     text: str
+    content_hash: Optional[str] = None
     term: Optional[str] = None
     definition: Optional[str] = None
     table_number: Optional[str] = None
@@ -91,8 +94,18 @@ class KnowledgeChunk(BaseModel):
     metadata: Dict[str, Any] = Field(default_factory=dict)
 
 
-def make_chunk_id(doc_id: str, clause_num: str, seq: int = 1, prefix: str = "C") -> str:
-    """Generates standard stable chunk ID: e.g. DOC-001-C_8_1_1-001"""
-    doc_clean = doc_id.upper()
-    c_clean = str(clause_num).replace(".", "_")
-    return f"{doc_clean}-{prefix}_{c_clean}-{seq:03d}"
+def compute_chunk_content_hash(text: str, structured_data: Optional[Dict[str, Any]] = None) -> str:
+    """Computes deterministic SHA-256 hash of chunk content for change detection."""
+    hasher = hashlib.sha256()
+    hasher.update(text.strip().encode("utf-8"))
+    if structured_data:
+        hasher.update(str(sorted(structured_data.items())).encode("utf-8"))
+    return hasher.hexdigest()
+
+
+def make_chunk_id(doc_or_version_id: str, clause_num: str, seq: int = 1, prefix: str = "REQ") -> str:
+    """Generates standard stable chunk ID: e.g. DOC-001-v001::8.1.1::REQ-001"""
+    d_clean = str(doc_or_version_id).strip()
+    c_clean = str(clause_num).strip()
+    p_clean = str(prefix).strip().upper()
+    return f"{d_clean}::{c_clean}::{p_clean}-{seq:03d}"

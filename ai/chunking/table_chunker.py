@@ -1,12 +1,13 @@
 """
-Table Chunker Module for Phase 2E.
-Creates discrete, typed table chunks preserving structured row records and markdown representations.
+Table Chunker Module for Phase 2E (Step 7).
+Creates discrete, typed table chunks preserving structured row records,
+markdown representations, stable IDs, and content hashes.
 """
 
 import json
 import logging
 import re
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from ai.chunking.schema import (
     ChunkClause,
@@ -16,6 +17,7 @@ from ai.chunking.schema import (
     KnowledgeChunk,
     NormativeContext,
     NormativeForce,
+    compute_chunk_content_hash,
     make_chunk_id,
 )
 
@@ -32,8 +34,10 @@ class TableChunker:
         std_num: str,
         raw_tables: List[Dict[str, Any]],
         refs_by_clause: Dict[str, List[ChunkCrossReference]],
+        version_id: Optional[str] = None,
     ) -> List[KnowledgeChunk]:
         table_chunks: List[KnowledgeChunk] = []
+        target_doc_id = version_id or doc_id
 
         for idx, tab in enumerate(raw_tables):
             t_num_raw = str(tab.get("table_id", f"T{idx + 1}"))
@@ -91,9 +95,12 @@ class TableChunker:
             )
             t_force = NormativeForce.UNDER_CONSIDERATION if has_under_cons else NormativeForce.MANDATORY
 
+            c_hash = compute_chunk_content_hash(table_text)
+
             chunk = KnowledgeChunk(
-                chunk_id=make_chunk_id(doc_id, f"TAB_{t_num}", idx + 1, prefix="TAB"),
+                chunk_id=make_chunk_id(target_doc_id, f"Table_{t_num}", idx + 1, prefix="TAB"),
                 document_id=doc_id,
+                version_id=version_id,
                 source_id=source_id,
                 chunk_type=ChunkType.TABLE,
                 title=t_title,
@@ -115,6 +122,7 @@ class TableChunker:
                     verbatim_normative_statements=[f"{t_title} values in Clause {c_num}"],
                 ),
                 text=table_text,
+                content_hash=c_hash,
                 entities=[],
                 requirements=[],
                 conditions=[],
