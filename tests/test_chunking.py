@@ -7,6 +7,7 @@ from pathlib import Path
 import pytest
 from ai.chunking.chunker import StructureAwareChunker
 from ai.chunking.schema import ChunkType, KnowledgeChunk, NormativeForce
+from ai.chunking.validators import ChunkValidator
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 CHUNKS_DIR = ROOT_DIR / "data" / "chunks"
@@ -23,7 +24,9 @@ def chunked_documents():
     docs = []
     for manifest in doc_manifests:
         doc_id = manifest["document_id"]
-        chunk_path = CHUNKS_DIR / f"{doc_id}.chunks.json"
+        chunk_path = CHUNKS_DIR / f"{doc_id}.json"
+        if not chunk_path.exists():
+            chunk_path = CHUNKS_DIR / f"{doc_id}.chunks.json"
         assert chunk_path.exists(), f"Chunks file missing for {doc_id}: {chunk_path}"
         with open(chunk_path, "r", encoding="utf-8") as f:
             docs.append((manifest, json.load(f)))
@@ -142,3 +145,42 @@ def test_step9_cross_references_preservation(chunked_documents):
     ref_15885 = next((r for r in refs if "15885" in r["standard"]), None)
     assert ref_15885 is not None
     assert ref_15885["relationship"] == "test_method_applies" or ref_15885["relationship"] == "requirements_apply"
+
+
+def test_step10_under_consideration_preservation(chunked_documents):
+    """Verify that under_consideration status is preserved across table and clause chunks (Step 10)."""
+    doc_001 = next(chunks for m, chunks in chunked_documents if m["document_id"] == "DOC-001")
+
+    # Table 3 GX53
+    t3 = next(c for c in doc_001 if c.get("table_number") == "3")
+    r_gx53 = next(r for r in t3["rows"] if r["cap"] == "GX53")
+    assert r_gx53["status"] == "under_consideration"
+
+    # Clause 11 pending 80C
+    c11 = next((c for c in doc_001 if c["clause"]["number"] == "11"), None)
+    if c11 and c11.get("requirements"):
+        req_80c = next((r for r in c11["requirements"] if "80" in str(r.get("original_value", ""))), None)
+        if req_80c:
+            assert req_80c["status"] == "under_consideration"
+
+
+def test_step11_provenance_on_every_chunk(chunked_documents):
+    """Verify that every single chunk carries full provenance linking to document, clause, page (Step 11)."""
+    for manifest, chunks in chunked_documents:
+        for c in chunks:
+            assert "provenance" in c
+            prov = c["provenance"]
+            assert prov["document_id"] == manifest["document_id"]
+            assert prov["source_id"] == manifest["source_id"]
+            assert prov["clause"]
+            assert len(prov["pages"]) > 0
+            assert all(isinstance(p, int) for p in prov["pages"])
+
+
+def test_step12_chunk_validator_audits_all_documents(chunked_documents):
+    """Verify that ChunkValidator audits all 6 chunk files with zero errors (Step 12)."""
+    validator = ChunkValidator()
+    for manifest, chunks in chunked_documents:
+        report = validator.validate_chunks(chunks)
+        assert report["is_valid"] is True, f"Validation failed for {manifest['document_id']}: {report['errors']}"
+        assert report["total_chunks"] > 0

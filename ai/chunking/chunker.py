@@ -7,10 +7,10 @@ standalone domain definitions (Step 8), and cross-standard references (Step 9).
 
 import json
 import logging
-import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+from ai.chunking.rules import extract_normative_context
 from ai.chunking.schema import (
     ChunkClause,
     ChunkCrossReference,
@@ -21,70 +21,14 @@ from ai.chunking.schema import (
     NormativeForce,
     make_chunk_id,
 )
+from ai.chunking.table_chunker import TableChunker
+from ai.chunking.validators import ChunkValidator
 
 logger = logging.getLogger(__name__)
 
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 NORMALIZED_DIR = ROOT_DIR / "data" / "normalized"
 CHUNKS_DIR = ROOT_DIR / "data" / "chunks"
-
-MODAL_PATTERNS = [
-    (r"\bshall\s+not\b", "shall not"),
-    (r"\bshall\b", "shall"),
-    (r"\bmust\s+not\b", "must not"),
-    (r"\bmust\b", "must"),
-    (r"\bshould\b", "should"),
-    (r"\bmay\b", "may"),
-    (r"\bunder\s+consideration\b", "under consideration"),
-    (r"\bcompliance\s+is\s+checked\b", "compliance is checked by"),
-    (r"\bnote\b", "note"),
-]
-
-
-def extract_normative_context(text: str, reqs: List[Dict[str, Any]]) -> NormativeContext:
-    """Extracts modal auxiliary keywords, normative force, and verbatim statements."""
-    text_lower = text.lower()
-    modals = []
-    for pat, label in MODAL_PATTERNS:
-        if re.search(pat, text_lower):
-            modals.append(label)
-
-    # Determine Normative Force accurately
-    if any(r.get("status") == "mandatory" for r in reqs):
-        force = NormativeForce.MANDATORY
-    elif reqs and all(r.get("status") == "under_consideration" for r in reqs):
-        force = NormativeForce.UNDER_CONSIDERATION
-    elif "shall not" in modals or "must not" in modals:
-        force = NormativeForce.PROHIBITION
-    elif "shall" in modals or "must" in modals:
-        force = NormativeForce.MANDATORY
-    elif "under consideration" in text_lower and not any(r.get("status") == "mandatory" for r in reqs):
-        force = NormativeForce.UNDER_CONSIDERATION
-    elif "should" in modals:
-        force = NormativeForce.RECOMMENDATION
-    else:
-        force = NormativeForce.INFORMATIVE
-
-    verbatim = []
-    for line in text.splitlines():
-        l_str = line.strip()
-        if any(m in l_str.lower() for m in ("shall", "must", "not less than", "shall not exceed", "under consideration")):
-            if len(l_str) > 10:
-                verbatim.append(l_str)
-
-    comp_method = None
-    if "compliance is checked" in text_lower or "test" in text_lower:
-        for line in text.splitlines():
-            if "compliance is checked" in line.lower() or "is checked by" in line.lower():
-                comp_method = line.strip()
-                break
-
-    return NormativeContext(
-        normative_force=force,
-        modal_keywords=modals,
-        verbatim_normative_statements=verbatim,
-        compliance_verification_method=comp_method,
-    )
 
 
 def map_cross_references(raw_refs: List[Dict[str, Any]]) -> List[ChunkCrossReference]:
@@ -114,12 +58,14 @@ class StructureAwareChunker:
     """Chunks normalized BIS documents into semantically coherent knowledge units."""
 
     def __init__(self):
+        self.table_chunker = TableChunker()
+        self.validator = ChunkValidator()
         CHUNKS_DIR.mkdir(parents=True, exist_ok=True)
 
     def chunk_document(self, document_id: str) -> List[Dict[str, Any]]:
         """
         Loads frozen data/normalized/{document_id}.json and produces structured chunks.
-        Saves output to data/chunks/{document_id}.chunks.json.
+        Saves output to data/chunks/{document_id}.json and {document_id}.chunks.json.
         """
         norm_file = NORMALIZED_DIR / f"{document_id}.json"
         if not norm_file.exists():
@@ -142,9 +88,11 @@ class StructureAwareChunker:
         for ent in norm_doc.get("entities", []):
             entities_by_clause.setdefault(str(ent.get("source_clause", "0")), []).append(ent)
 
-        refs_by_clause: Dict[str, List[Dict[str, Any]]] = {}
+        refs_by_clause: Dict[str, List[ChunkCrossReference]] = {}
         for ref in norm_doc.get("cross_references", []):
-            refs_by_clause.setdefault(str(ref.get("source_clause", "0")), []).append(ref)
+            mapped_ref = map_cross_references([ref])
+            if mapped_ref:
+                refs_by_clause.setdefault(str(ref.get("source_clause", "0")), []).extend(mapped_ref)
 
         reqs_by_clause: Dict[str, List[Dict[str, Any]]] = {}
         for req in norm_doc.get("requirements", []):
@@ -194,7 +142,7 @@ class StructureAwareChunker:
                 }],
                 requirements=[],
                 conditions=[],
-                references=map_cross_references(refs_by_clause.get(c_num, [])),
+                references=refs_by_clause.get(c_num, []),
                 page_refs=pages,
                 provenance=ChunkProvenance(
                     document_id=document_id,
@@ -210,103 +158,14 @@ class StructureAwareChunker:
             chunks.append(chunk)
 
         # 2. Table Chunks (Step 7 - Table 2, Table 3, etc.)
-        for idx, tab in enumerate(norm_doc.get("tables", [])):
-            t_num_raw = str(tab.get("table_id", f"T{idx + 1}"))
-            t_digits = re.sub(r"[^0-9]", "", t_num_raw)
-            t_num = str(int(t_digits)) if t_digits else str(idx + 1)
-            c_num = str(tab.get("clause", "0"))
-            p_num = tab.get("source_page", 1)
-            t_title = tab.get("title", f"Table {t_num}")
-
-            raw_rows = tab.get("rows", [])
-            structured_rows = []
-            for r in raw_rows:
-                if isinstance(r, dict):
-                    row_entry = dict(r)
-                    if "torsion_moment" in r and isinstance(r["torsion_moment"], dict):
-                        row_entry["torsion_moment"] = r["torsion_moment"].get("value")
-                        row_entry["unit"] = r["torsion_moment"].get("unit", "Nm")
-                    if "bending_moment" in r and isinstance(r["bending_moment"], dict):
-                        row_entry["bending_moment"] = r["bending_moment"].get("value")
-                        row_entry["unit"] = r["bending_moment"].get("unit", "Nm")
-                    if "mass" in r and isinstance(r["mass"], dict):
-                        row_entry["mass"] = r["mass"].get("value")
-                        row_entry["mass_unit"] = r["mass"].get("unit", "kg")
-                    structured_rows.append(row_entry)
-
-            # Build readable Markdown table text for vector retrieval
-            table_md_lines = [
-                f"{t_title} (Standard: {std_num}, Clause {c_num}, Page {p_num}):\n",
-            ]
-            if "torque" in t_title.lower() or "torsion" in t_title.lower() or t_num == "3":
-                table_md_lines.append("| Cap Style | Torsion Moment (Torque) | Unit | Status |")
-                table_md_lines.append("|---|---|---|---|")
-                for r in structured_rows:
-                    cap = r.get("cap", "-")
-                    tm = r.get("torsion_moment", "-")
-                    unit = r.get("unit", "Nm")
-                    status = r.get("status", "mandatory")
-                    table_md_lines.append(f"| {cap} | {tm} | {unit} | {status} |")
-            elif "bending" in t_title.lower() or "mass" in t_title.lower() or t_num == "2":
-                table_md_lines.append("| Cap Style | Bending Moment (Nm) | Mass (kg) | Status |")
-                table_md_lines.append("|---|---|---|---|")
-                for r in structured_rows:
-                    cap = r.get("cap", "-")
-                    bm = r.get("bending_moment", "-")
-                    m = r.get("mass", "-")
-                    status = r.get("status", "mandatory")
-                    table_md_lines.append(f"| {cap} | {bm} | {m} | {status} |")
-            else:
-                table_md_lines.append(json.dumps(structured_rows, indent=2))
-
-            table_text = "\n".join(table_md_lines)
-
-            has_under_cons = any(
-                isinstance(r, dict) and r.get("status") == "under_consideration" for r in structured_rows
-            )
-            t_force = NormativeForce.UNDER_CONSIDERATION if has_under_cons else NormativeForce.MANDATORY
-
-            chunk = KnowledgeChunk(
-                chunk_id=make_chunk_id(document_id, f"TAB_{t_num}", idx + 1, prefix="TAB"),
-                document_id=document_id,
-                source_id=source_id,
-                chunk_type=ChunkType.TABLE,
-                title=t_title,
-                table_number=t_num,
-                rows=structured_rows,
-                table_data=tab,
-                clause=ChunkClause(
-                    number=c_num or t_num_raw,
-                    title=t_title,
-                    depth=2,
-                    parent_clause=c_num.split(".")[0] if "." in c_num else None,
-                    hierarchy_path=[c_num.split(".")[0], c_num] if "." in c_num else [t_num_raw],
-                    section_number=c_num.split(".")[0] if "." in c_num else None,
-                    section_title=t_title,
-                ),
-                normative_context=NormativeContext(
-                    normative_force=t_force,
-                    modal_keywords=["table values", "torque", "bending moment"],
-                    verbatim_normative_statements=[f"{t_title} values in Clause {c_num}"],
-                ),
-                text=table_text,
-                entities=[],
-                requirements=[],
-                conditions=[],
-                references=map_cross_references(refs_by_clause.get(c_num, [])),
-                page_refs=[p_num],
-                provenance=ChunkProvenance(
-                    document_id=document_id,
-                    source_id=source_id,
-                    standard_number=std_num,
-                    clause=c_num or t_num_raw,
-                    pages=[p_num],
-                    section=t_title,
-                    original_text_snippet=table_text[:200],
-                ),
-                metadata={"table_number": t_num, "table_id": t_num_raw, "total_rows": len(structured_rows)},
-            )
-            chunks.append(chunk)
+        table_chunks = self.table_chunker.create_table_chunks(
+            doc_id=document_id,
+            source_id=source_id,
+            std_num=std_num,
+            raw_tables=norm_doc.get("tables", []),
+            refs_by_clause=refs_by_clause,
+        )
+        chunks.extend(table_chunks)
 
         # 3. Clause & Requirement Chunks with Hierarchy, Normative Context, and Cross-References (Step 9)
         def traverse_clauses(
@@ -385,7 +244,7 @@ class StructureAwareChunker:
                     entities=c_ents,
                     requirements=c_reqs,
                     conditions=[r.get("conditions") for r in c_reqs if r.get("conditions")],
-                    references=map_cross_references(c_refs),
+                    references=c_refs,
                     page_refs=c_pages,
                     provenance=ChunkProvenance(
                         document_id=document_id,
@@ -435,7 +294,7 @@ class StructureAwareChunker:
                 entities=[],
                 requirements=[],
                 conditions=[],
-                references=map_cross_references(refs_by_clause.get(a_id, [])),
+                references=refs_by_clause.get(a_id, []),
                 page_refs=a_pages,
                 provenance=ChunkProvenance(
                     document_id=document_id,
@@ -453,15 +312,25 @@ class StructureAwareChunker:
         # Convert to serialized JSON dicts
         serialized_chunks = [c.model_dump() for c in chunks]
 
-        out_file = CHUNKS_DIR / f"{document_id}.chunks.json"
-        with open(out_file, "w", encoding="utf-8") as f:
+        # Audit & Validate chunks
+        val_report = self.validator.validate_chunks(serialized_chunks)
+        if not val_report["is_valid"]:
+            logger.warning("Chunk validation warnings for %s: %s", document_id, val_report["errors"])
+
+        # Write to both data/chunks/{document_id}.json and {document_id}.chunks.json
+        out_file_main = CHUNKS_DIR / f"{document_id}.json"
+        out_file_alias = CHUNKS_DIR / f"{document_id}.chunks.json"
+
+        with open(out_file_main, "w", encoding="utf-8") as f:
+            json.dump(serialized_chunks, f, indent=2, ensure_ascii=False)
+        with open(out_file_alias, "w", encoding="utf-8") as f:
             json.dump(serialized_chunks, f, indent=2, ensure_ascii=False)
 
         logger.info(
             "✅ Successfully created %d structure-aware knowledge chunks for %s -> %s",
             len(serialized_chunks),
             document_id,
-            out_file.name,
+            out_file_main.name,
         )
 
         return serialized_chunks
