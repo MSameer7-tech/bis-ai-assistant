@@ -507,7 +507,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC001-0001",
               "term": "Self-Ballasted LED Lamp",
-              "definition": "Unit which cannot",
+              "definition": "Unit which cannot be dismantled without being permanently damaged, provided with a lamp cap and incorporating a LED light source and any additional elements necessary for stable operation of the light source.",
               "source_clause": "3.1",
               "source_pages": [
                 6
@@ -522,7 +522,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.1 Self-Ballasted LED Lamp — Unit which cannot"
+                "original_text": "Unit which cannot be dismantled without being permanently damaged, provided with a lamp cap and incorporating a LED light source and any additional elements necessary for stable operation of the light source."
               },
               "term_id": "TERM-self_ballasted_led_lamp"
             }
@@ -551,7 +551,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC001-0002",
               "term": "Type",
-              "definition": "Lamps that, independent of the type of",
+              "definition": "Lamps that, independent of the type of cap or base, have an identical photometric and electrical rating.",
               "source_clause": "3.2",
               "source_pages": [
                 6
@@ -566,7 +566,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.2 Type — Lamps that, independent of the type of"
+                "original_text": "Lamps that, independent of the type of cap or base, have an identical photometric and electrical rating."
               },
               "term_id": "TERM-type"
             }
@@ -595,7 +595,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC001-0003",
               "term": "Rated Voltage",
-              "definition": "Voltage or voltage range marked",
+              "definition": "Voltage or voltage range marked on the lamp.",
               "source_clause": "3.3",
               "source_pages": [
                 6
@@ -610,7 +610,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.3 Rated Voltage — Voltage or voltage range marked"
+                "original_text": "Voltage or voltage range marked on the lamp."
               },
               "term_id": "TERM-rated_voltage"
             }
@@ -655,7 +655,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.4 Rated Wattage — Wattage marked on the lamp."
+                "original_text": "Wattage marked on the lamp."
               },
               "term_id": "TERM-rated_wattage"
             }
@@ -685,7 +685,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC001-0005",
               "term": "Rated Frequency",
-              "definition": "Frequency marked on the",
+              "definition": "Frequency marked on the lamp.",
               "source_clause": "3.5",
               "source_pages": [
                 6
@@ -700,7 +700,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.5 Rated Frequency — Frequency marked on the"
+                "original_text": "Frequency marked on the lamp."
               },
               "term_id": "TERM-rated_frequency"
             }
@@ -725,7 +725,33 @@
           ],
           "clause_id": "CLAUSE-DOC001-3.6",
           "requirements": [],
-          "definitions": []
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC001-0006",
+              "term": "IS 16102 (Part 1)",
+              "definition": "2012 temperature rise (above ambient) of a standard test lampholder fitted to the lamp, when measured in accordance with the standard method, in case of an Edison screw cap or a bayonet cap.",
+              "source_clause": "3.6",
+              "source_pages": [
+                6,
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-001",
+                "source_id": "SRC-001",
+                "standard": "IS 16102 (Part 1) : 2012",
+                "clause": "3.6",
+                "page": 6,
+                "pages": [
+                  6,
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "2012 temperature rise (above ambient) of a standard test lampholder fitted to the lamp, when measured in accordance with the standard method, in case of an Edison screw cap or a bayonet cap."
+              },
+              "term_id": "TERM-is_16102_part_1"
+            }
+          ]
         },
         {
           "clause_number": "3.7",
@@ -748,9 +774,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC001-0006",
+              "definition_id": "DEF-DOC001-0007",
               "term": "Live Part",
-              "definition": "Conductive part which may cause an",
+              "definition": "Conductive part which may cause an electric shock in normal use.",
               "source_clause": "3.7",
               "source_pages": [
                 7
@@ -765,7 +791,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.7 Live Part — Conductive part which may cause an"
+                "original_text": "Conductive part which may cause an electric shock in normal use."
               },
               "term_id": "TERM-live_part"
             }
@@ -793,9 +819,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC001-0007",
+              "definition_id": "DEF-DOC001-0008",
               "term": "Type Test",
-              "definition": "A test or series of tests made on a",
+              "definition": "A test or series of tests made on a type test sample for the purpose of checking compliance of the design of a given product with the requirements of the relevant standard.",
               "source_clause": "3.8",
               "source_pages": [
                 7
@@ -810,7 +836,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.8 Type Test — A test or series of tests made on a"
+                "original_text": "A test or series of tests made on a type test sample for the purpose of checking compliance of the design of a given product with the requirements of the relevant standard."
               },
               "term_id": "TERM-type_test"
             }
@@ -838,9 +864,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC001-0008",
+              "definition_id": "DEF-DOC001-0009",
               "term": "Type Test Sample",
-              "definition": "A sample consisting of one",
+              "definition": "A sample consisting of one or more similar units submitted by the manufacturer or responsible vendor for the purpose of the type test.",
               "source_clause": "3.9",
               "source_pages": [
                 7
@@ -855,7 +881,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.9 Type Test Sample — A sample consisting of one"
+                "original_text": "A sample consisting of one or more similar units submitted by the manufacturer or responsible vendor for the purpose of the type test."
               },
               "term_id": "TERM-type_test_sample"
             }
@@ -883,9 +909,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC001-0009",
+              "definition_id": "DEF-DOC001-0010",
               "term": "Acceptance Test",
-              "definition": "Tests carried out on samples",
+              "definition": "Tests carried out on samples taken from a lot for the acceptance of the lot.",
               "source_clause": "3.10",
               "source_pages": [
                 7
@@ -900,7 +926,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.10 Acceptance Test — Tests carried out on samples"
+                "original_text": "Tests carried out on samples taken from a lot for the acceptance of the lot."
               },
               "term_id": "TERM-acceptance_test"
             }
@@ -977,9 +1003,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC001-0010",
+              "definition_id": "DEF-DOC001-0011",
               "term": "Inspection Test Quantity (ITQ)",
-              "definition": "The number",
+              "definition": "The number of lamps selected for the purpose of determining the acceptability of a batch as to marking, interchangeability, protection against electric shock, insulation resistance, electric strength, mechanical strength, cap temperature rise, resistance to heat, resistance to flame and ignition, fault conditions and creepage distances and clearances.",
               "source_clause": "3.11",
               "source_pages": [
                 7
@@ -994,7 +1020,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.11 Inspection Test Quantity (ITQ) — The number"
+                "original_text": "The number of lamps selected for the purpose of determining the acceptability of a batch as to marking, interchangeability, protection against electric shock, insulation resistance, electric strength, mechanical strength, cap temperature rise, resist"
               },
               "term_id": "TERM-inspection_test_quantity_itq"
             }
@@ -1021,9 +1047,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC001-0011",
+              "definition_id": "DEF-DOC001-0012",
               "term": "Batch",
-              "definition": "All the lamps of one type put forward at",
+              "definition": "All the lamps of one type put forward at one time for acceptance test.",
               "source_clause": "3.12",
               "source_pages": [
                 7
@@ -1038,7 +1064,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.12 Batch — All the lamps of one type put forward at"
+                "original_text": "All the lamps of one type put forward at one time for acceptance test."
               },
               "term_id": "TERM-batch"
             }
@@ -3875,7 +3901,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC001-0001",
       "term": "Self-Ballasted LED Lamp",
-      "definition": "Unit which cannot",
+      "definition": "Unit which cannot be dismantled without being permanently damaged, provided with a lamp cap and incorporating a LED light source and any additional elements necessary for stable operation of the light source.",
       "source_clause": "3.1",
       "source_pages": [
         6
@@ -3890,7 +3916,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.1 Self-Ballasted LED Lamp — Unit which cannot"
+        "original_text": "Unit which cannot be dismantled without being permanently damaged, provided with a lamp cap and incorporating a LED light source and any additional elements necessary for stable operation of the light source."
       },
       "term_id": "TERM-self_ballasted_led_lamp"
     },
@@ -3898,7 +3924,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC001-0002",
       "term": "Type",
-      "definition": "Lamps that, independent of the type of",
+      "definition": "Lamps that, independent of the type of cap or base, have an identical photometric and electrical rating.",
       "source_clause": "3.2",
       "source_pages": [
         6
@@ -3913,7 +3939,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.2 Type — Lamps that, independent of the type of"
+        "original_text": "Lamps that, independent of the type of cap or base, have an identical photometric and electrical rating."
       },
       "term_id": "TERM-type"
     },
@@ -3921,7 +3947,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC001-0003",
       "term": "Rated Voltage",
-      "definition": "Voltage or voltage range marked",
+      "definition": "Voltage or voltage range marked on the lamp.",
       "source_clause": "3.3",
       "source_pages": [
         6
@@ -3936,7 +3962,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.3 Rated Voltage — Voltage or voltage range marked"
+        "original_text": "Voltage or voltage range marked on the lamp."
       },
       "term_id": "TERM-rated_voltage"
     },
@@ -3959,7 +3985,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.4 Rated Wattage — Wattage marked on the lamp."
+        "original_text": "Wattage marked on the lamp."
       },
       "term_id": "TERM-rated_wattage"
     },
@@ -3967,7 +3993,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC001-0005",
       "term": "Rated Frequency",
-      "definition": "Frequency marked on the",
+      "definition": "Frequency marked on the lamp.",
       "source_clause": "3.5",
       "source_pages": [
         6
@@ -3982,15 +4008,40 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.5 Rated Frequency — Frequency marked on the"
+        "original_text": "Frequency marked on the lamp."
       },
       "term_id": "TERM-rated_frequency"
     },
     {
       "entity_type": "definition",
       "definition_id": "DEF-DOC001-0006",
+      "term": "IS 16102 (Part 1)",
+      "definition": "2012 temperature rise (above ambient) of a standard test lampholder fitted to the lamp, when measured in accordance with the standard method, in case of an Edison screw cap or a bayonet cap.",
+      "source_clause": "3.6",
+      "source_pages": [
+        6,
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "3.6",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "2012 temperature rise (above ambient) of a standard test lampholder fitted to the lamp, when measured in accordance with the standard method, in case of an Edison screw cap or a bayonet cap."
+      },
+      "term_id": "TERM-is_16102_part_1"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC001-0007",
       "term": "Live Part",
-      "definition": "Conductive part which may cause an",
+      "definition": "Conductive part which may cause an electric shock in normal use.",
       "source_clause": "3.7",
       "source_pages": [
         7
@@ -4005,15 +4056,15 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.7 Live Part — Conductive part which may cause an"
+        "original_text": "Conductive part which may cause an electric shock in normal use."
       },
       "term_id": "TERM-live_part"
     },
     {
       "entity_type": "definition",
-      "definition_id": "DEF-DOC001-0007",
+      "definition_id": "DEF-DOC001-0008",
       "term": "Type Test",
-      "definition": "A test or series of tests made on a",
+      "definition": "A test or series of tests made on a type test sample for the purpose of checking compliance of the design of a given product with the requirements of the relevant standard.",
       "source_clause": "3.8",
       "source_pages": [
         7
@@ -4028,15 +4079,15 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.8 Type Test — A test or series of tests made on a"
+        "original_text": "A test or series of tests made on a type test sample for the purpose of checking compliance of the design of a given product with the requirements of the relevant standard."
       },
       "term_id": "TERM-type_test"
     },
     {
       "entity_type": "definition",
-      "definition_id": "DEF-DOC001-0008",
+      "definition_id": "DEF-DOC001-0009",
       "term": "Type Test Sample",
-      "definition": "A sample consisting of one",
+      "definition": "A sample consisting of one or more similar units submitted by the manufacturer or responsible vendor for the purpose of the type test.",
       "source_clause": "3.9",
       "source_pages": [
         7
@@ -4051,15 +4102,15 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.9 Type Test Sample — A sample consisting of one"
+        "original_text": "A sample consisting of one or more similar units submitted by the manufacturer or responsible vendor for the purpose of the type test."
       },
       "term_id": "TERM-type_test_sample"
     },
     {
       "entity_type": "definition",
-      "definition_id": "DEF-DOC001-0009",
+      "definition_id": "DEF-DOC001-0010",
       "term": "Acceptance Test",
-      "definition": "Tests carried out on samples",
+      "definition": "Tests carried out on samples taken from a lot for the acceptance of the lot.",
       "source_clause": "3.10",
       "source_pages": [
         7
@@ -4074,15 +4125,15 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.10 Acceptance Test — Tests carried out on samples"
+        "original_text": "Tests carried out on samples taken from a lot for the acceptance of the lot."
       },
       "term_id": "TERM-acceptance_test"
     },
     {
       "entity_type": "definition",
-      "definition_id": "DEF-DOC001-0010",
+      "definition_id": "DEF-DOC001-0011",
       "term": "Inspection Test Quantity (ITQ)",
-      "definition": "The number",
+      "definition": "The number of lamps selected for the purpose of determining the acceptability of a batch as to marking, interchangeability, protection against electric shock, insulation resistance, electric strength, mechanical strength, cap temperature rise, resistance to heat, resistance to flame and ignition, fault conditions and creepage distances and clearances.",
       "source_clause": "3.11",
       "source_pages": [
         7
@@ -4097,15 +4148,15 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.11 Inspection Test Quantity (ITQ) — The number"
+        "original_text": "The number of lamps selected for the purpose of determining the acceptability of a batch as to marking, interchangeability, protection against electric shock, insulation resistance, electric strength, mechanical strength, cap temperature rise, resist"
       },
       "term_id": "TERM-inspection_test_quantity_itq"
     },
     {
       "entity_type": "definition",
-      "definition_id": "DEF-DOC001-0011",
+      "definition_id": "DEF-DOC001-0012",
       "term": "Batch",
-      "definition": "All the lamps of one type put forward at",
+      "definition": "All the lamps of one type put forward at one time for acceptance test.",
       "source_clause": "3.12",
       "source_pages": [
         7
@@ -4120,7 +4171,7 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.12 Batch — All the lamps of one type put forward at"
+        "original_text": "All the lamps of one type put forward at one time for acceptance test."
       },
       "term_id": "TERM-batch"
     }
@@ -10403,8 +10454,8 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:36:53.817805+00:00",
-    "total_definitions": 11,
+    "normalized_at": "2026-08-30T15:54:03.082510+00:00",
+    "total_definitions": 12,
     "total_entities": 107,
     "total_requirements": 19,
     "total_relationships": 187,

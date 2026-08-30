@@ -1,7 +1,7 @@
 [
   {
     "document_id": "DOC-001",
-    "normalized_at": "2026-08-30T15:36:53.829483+00:00",
+    "normalized_at": "2026-08-30T15:54:03.094256+00:00",
     "status": "normalized",
     "is_valid": true,
     "checks": {
@@ -16,7 +16,7 @@
     },
     "stats": {
       "total_entities": 107,
-      "total_definitions": 11,
+      "total_definitions": 12,
       "total_requirements": 19,
       "total_cross_references": 22,
       "total_tables": 2
@@ -24,7 +24,7 @@
   },
   {
     "document_id": "DOC-007",
-    "normalized_at": "2026-08-30T15:36:53.839929+00:00",
+    "normalized_at": "2026-08-30T15:54:03.102886+00:00",
     "status": "normalized",
     "is_valid": true,
     "checks": {
@@ -39,7 +39,7 @@
     },
     "stats": {
       "total_entities": 45,
-      "total_definitions": 10,
+      "total_definitions": 11,
       "total_requirements": 5,
       "total_cross_references": 24,
       "total_tables": 0
@@ -47,7 +47,7 @@
   },
   {
     "document_id": "DOC-002",
-    "normalized_at": "2026-08-30T15:36:53.856772+00:00",
+    "normalized_at": "2026-08-30T15:54:03.119112+00:00",
     "status": "normalized",
     "is_valid": true,
     "checks": {
@@ -62,7 +62,7 @@
     },
     "stats": {
       "total_entities": 22,
-      "total_definitions": 1,
+      "total_definitions": 4,
       "total_requirements": 4,
       "total_cross_references": 7,
       "total_tables": 1
@@ -70,7 +70,7 @@
   },
   {
     "document_id": "DOC-010",
-    "normalized_at": "2026-08-30T15:36:53.858976+00:00",
+    "normalized_at": "2026-08-30T15:54:03.121550+00:00",
     "status": "normalized",
     "is_valid": true,
     "checks": {
@@ -93,7 +93,7 @@
   },
   {
     "document_id": "DOC-011",
-    "normalized_at": "2026-08-30T15:36:53.860493+00:00",
+    "normalized_at": "2026-08-30T15:54:03.123832+00:00",
     "status": "normalized",
     "is_valid": true,
     "checks": {
@@ -116,7 +116,7 @@
   },
   {
     "document_id": "DOC-012",
-    "normalized_at": "2026-08-30T15:36:53.865445+00:00",
+    "normalized_at": "2026-08-30T15:54:03.128791+00:00",
     "status": "normalized",
     "is_valid": true,
     "checks": {

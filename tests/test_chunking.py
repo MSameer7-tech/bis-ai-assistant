@@ -55,7 +55,6 @@ def test_step4_boundary_rules_atomic_units(chunked_documents):
     ir_chunk = next((c for c in doc_001 if c["clause"]["number"] == "8.1.1"), None)
     assert ir_chunk is not None
 
-    # Condition & Test are bundled together with requirement
     assert len(ir_chunk["conditions"]) > 0
     assert "humidity_treatment" in ir_chunk["conditions"][0]
     assert "48 h" in ir_chunk["text"]
@@ -87,12 +86,59 @@ def test_step6_normative_meaning_and_modals_preservation(chunked_documents):
     assert any("shall be not less than" in s.lower() or "shall be conditioned" in s.lower() for s in norm["verbatim_normative_statements"])
 
 
-def test_table_chunks_contain_structured_data(chunked_documents):
-    """Verify that table chunks contain structured row records and units."""
+def test_step7_table_chunks_structured_and_text(chunked_documents):
+    """Verify that table chunks contain structured rows and textual representation (Step 7)."""
     doc_001 = next(chunks for m, chunks in chunked_documents if m["document_id"] == "DOC-001")
     table_chunks = [c for c in doc_001 if c["chunk_type"] == ChunkType.TABLE.value]
     assert len(table_chunks) >= 2
 
-    t3_chunk = next(c for c in table_chunks if "Torque" in c["clause"]["title"] or "TABLE-003" in str(c["metadata"]))
-    assert t3_chunk["table_data"] is not None
-    assert len(t3_chunk["table_data"]["rows"]) >= 8
+    t3_chunk = next(c for c in table_chunks if c.get("table_number") == "3")
+    assert t3_chunk is not None
+    assert t3_chunk["clause"]["number"] == "9.1"
+    assert "Torque" in t3_chunk["clause"]["title"] or "Torque" in (t3_chunk.get("title") or "")
+    assert len(t3_chunk["rows"]) >= 8
+
+    # Verify B15d and E17 rows
+    b15 = next(r for r in t3_chunk["rows"] if r["cap"] == "B15d")
+    assert b15["torsion_moment"] == 1.15
+    assert b15["unit"] == "Nm"
+
+    e17 = next(r for r in t3_chunk["rows"] if r["cap"] == "E17")
+    assert e17["torsion_moment"] == 1.5
+    assert e17["unit"] == "Nm"
+
+    # Verify GX53 under_consideration
+    gx53 = next(r for r in t3_chunk["rows"] if r["cap"] == "GX53")
+    assert gx53["torsion_moment"] == 3.0
+    assert gx53["status"] == "under_consideration"
+
+    # Verify markdown text presence
+    assert "| B15d |" in t3_chunk["text"]
+    assert "| E17 |" in t3_chunk["text"]
+    assert "| GX53 |" in t3_chunk["text"]
+
+
+def test_step8_definition_chunks_isolated(chunked_documents):
+    """Verify that domain definitions are isolated as discrete searchable chunks (Step 8)."""
+    doc_001 = next(chunks for m, chunks in chunked_documents if m["document_id"] == "DOC-001")
+    def_chunks = [c for c in doc_001 if c["chunk_type"] == ChunkType.DEFINITION.value]
+    assert len(def_chunks) >= 8
+
+    led_def = next((c for c in def_chunks if "SELF-BALLASTED" in c.get("term", "").upper()), None)
+    assert led_def is not None
+    assert led_def["clause"]["number"] == "3.1"
+    assert "dismantled without being permanently damaged" in led_def["definition"].lower()
+    assert "Self-Ballasted LED Lamp" in led_def["text"]
+
+
+def test_step9_cross_references_preservation(chunked_documents):
+    """Verify that cross-standard references and relationships are preserved (Step 9)."""
+    doc_001 = next(chunks for m, chunks in chunked_documents if m["document_id"] == "DOC-001")
+    ir_chunk = next((c for c in doc_001 if c["clause"]["number"] == "8.1.1"), None)
+    assert ir_chunk is not None
+
+    refs = ir_chunk["references"]
+    assert len(refs) > 0
+    ref_15885 = next((r for r in refs if "15885" in r["standard"]), None)
+    assert ref_15885 is not None
+    assert ref_15885["relationship"] == "test_method_applies" or ref_15885["relationship"] == "requirements_apply"

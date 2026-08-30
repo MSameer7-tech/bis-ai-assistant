@@ -1,7 +1,8 @@
 """
 Phase 2E Chunk Schema and Typed Models.
 Defines self-contained semantic knowledge chunks for standard specifications and regulations
-with explicit clause hierarchy, normative modal keywords, and ambient condition binding.
+with explicit clause hierarchy, normative modal keywords, structured tables, definitions,
+and cross-standard relationship references.
 """
 
 from enum import Enum
@@ -49,6 +50,14 @@ class NormativeContext(BaseModel):
     compliance_verification_method: Optional[str] = None
 
 
+class ChunkCrossReference(BaseModel):
+    standard: str
+    target_location: Optional[str] = None
+    relationship: str = "normative_reference"
+    reference_type: str = "normative"
+    context_snippet: Optional[str] = None
+
+
 class ChunkProvenance(BaseModel):
     document_id: str
     source_id: str
@@ -64,14 +73,19 @@ class KnowledgeChunk(BaseModel):
     document_id: str
     source_id: str
     chunk_type: ChunkType
+    title: Optional[str] = None
     clause: ChunkClause
     normative_context: NormativeContext = Field(default_factory=NormativeContext)
     text: str
+    term: Optional[str] = None
+    definition: Optional[str] = None
+    table_number: Optional[str] = None
+    table_data: Optional[Dict[str, Any]] = None
+    rows: Optional[List[Dict[str, Any]]] = None
     entities: List[Dict[str, Any]] = Field(default_factory=list)
     requirements: List[Dict[str, Any]] = Field(default_factory=list)
     conditions: List[Dict[str, Any]] = Field(default_factory=list)
-    references: List[Dict[str, Any]] = Field(default_factory=list)
-    table_data: Optional[Dict[str, Any]] = None
+    references: List[ChunkCrossReference] = Field(default_factory=list)
     page_refs: List[int]
     provenance: ChunkProvenance
     metadata: Dict[str, Any] = Field(default_factory=dict)

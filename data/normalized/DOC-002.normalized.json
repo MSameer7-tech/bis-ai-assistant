@@ -556,7 +556,33 @@
           ],
           "clause_id": "CLAUSE-DOC002-3.9",
           "requirements": [],
-          "definitions": []
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0002",
+              "term": "IS 16102 (Part 2)",
+              "definition": "2017 NOTES 1 The definition of photometric code is given in IS 16101 as light colour designation. 2 An example of the construction of the photometric code is given in Annex B.",
+              "source_clause": "3.9",
+              "source_pages": [
+                4,
+                5
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.9",
+                "page": 4,
+                "pages": [
+                  4,
+                  5
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "2017 NOTES 1 The definition of photometric code is given in IS 16101 as light colour designation. 2 An example of the construction of the photometric code is given in Annex B."
+              },
+              "term_id": "TERM-is_16102_part_2"
+            }
+          ]
         },
         {
           "clause_number": "3.10",
@@ -1007,7 +1033,54 @@
           ],
           "clause_id": "CLAUSE-DOC002-3.0",
           "requirements": [],
-          "definitions": []
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0003",
+              "term": "MHz",
+              "definition": "5.0 MHz 56 46 vii)",
+              "source_clause": "3.0",
+              "source_pages": [
+                8
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.0",
+                "page": 8,
+                "pages": [
+                  8
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "5.0 MHz 56 46 vii)"
+              },
+              "term_id": "TERM-mhz"
+            },
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0004",
+              "term": "MHz",
+              "definition": "5.0 MHz 56 46 vii)",
+              "source_clause": "3.0",
+              "source_pages": [
+                8
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.0",
+                "page": 8,
+                "pages": [
+                  8
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "5.0 MHz 56 46 vii)"
+              },
+              "term_id": "TERM-mhz"
+            }
+          ]
         },
         {
           "clause_number": "3.0",
@@ -1027,7 +1100,54 @@
           ],
           "clause_id": "CLAUSE-DOC002-3.0",
           "requirements": [],
-          "definitions": []
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0003",
+              "term": "MHz",
+              "definition": "5.0 MHz 56 46 vii)",
+              "source_clause": "3.0",
+              "source_pages": [
+                8
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.0",
+                "page": 8,
+                "pages": [
+                  8
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "5.0 MHz 56 46 vii)"
+              },
+              "term_id": "TERM-mhz"
+            },
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC002-0004",
+              "term": "MHz",
+              "definition": "5.0 MHz 56 46 vii)",
+              "source_clause": "3.0",
+              "source_pages": [
+                8
+              ],
+              "provenance": {
+                "document_id": "DOC-002",
+                "source_id": "SRC-002",
+                "standard": "IS 16102 (Part 2) : 2017",
+                "clause": "3.0",
+                "page": 8,
+                "pages": [
+                  8
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "5.0 MHz 56 46 vii)"
+              },
+              "term_id": "TERM-mhz"
+            }
+          ]
         }
       ],
       "semantic_type": "definition",
@@ -3445,6 +3565,77 @@
         "original_text": "3.1 Rated Value\nQuantity value for a characteristic of an LED lamp for\nspecified operating conditions.\nNOTE — The value and the conditions specified in this\nstandard, or assigned by the manufacturer or responsible vendor."
       },
       "term_id": "TERM-rated_value"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC002-0002",
+      "term": "IS 16102 (Part 2)",
+      "definition": "2017 NOTES 1 The definition of photometric code is given in IS 16101 as light colour designation. 2 An example of the construction of the photometric code is given in Annex B.",
+      "source_clause": "3.9",
+      "source_pages": [
+        4,
+        5
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.9",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "2017 NOTES 1 The definition of photometric code is given in IS 16101 as light colour designation. 2 An example of the construction of the photometric code is given in Annex B."
+      },
+      "term_id": "TERM-is_16102_part_2"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC002-0003",
+      "term": "MHz",
+      "definition": "5.0 MHz 56 46 vii)",
+      "source_clause": "3.0",
+      "source_pages": [
+        8
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.0",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "5.0 MHz 56 46 vii)"
+      },
+      "term_id": "TERM-mhz"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC002-0004",
+      "term": "MHz",
+      "definition": "5.0 MHz 56 46 vii)",
+      "source_clause": "3.0",
+      "source_pages": [
+        8
+      ],
+      "provenance": {
+        "document_id": "DOC-002",
+        "source_id": "SRC-002",
+        "standard": "IS 16102 (Part 2) : 2017",
+        "clause": "3.0",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "5.0 MHz 56 46 vii)"
+      },
+      "term_id": "TERM-mhz"
     }
   ],
   "entities": [
@@ -5956,8 +6147,8 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:36:53.850095+00:00",
-    "total_definitions": 1,
+    "normalized_at": "2026-08-30T15:54:03.113014+00:00",
+    "total_definitions": 4,
     "total_entities": 22,
     "total_requirements": 4,
     "total_relationships": 140,

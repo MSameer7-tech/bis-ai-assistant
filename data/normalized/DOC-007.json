@@ -302,8 +302,8 @@
             {
               "entity_type": "definition",
               "definition_id": "DEF-DOC007-0001",
-              "term": "Electronic Controlgear for LED Modules —",
-              "definition": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponents and may include means for dimming,\ncorrecting the power factor and suppressing radio\ninterference.",
+              "term": "Electronic Controlgear for LED Modules",
+              "definition": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcting the power factor and suppressing radio interference.",
               "source_clause": "3.1",
               "source_pages": [
                 6
@@ -318,7 +318,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponent"
+                "original_text": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcti"
               },
               "term_id": "TERM-electronic_controlgear_for_led_modules"
             }
@@ -367,7 +367,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC007-0002",
               "term": "SELV Controlgear",
-              "definition": "Controlgear providing a",
+              "definition": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer.",
               "source_clause": "3.3",
               "source_pages": [
                 6
@@ -382,7 +382,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.3 SELV Controlgear — Controlgear providing a"
+                "original_text": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer."
               },
               "term_id": "TERM-selv_controlgear"
             }
@@ -411,7 +411,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC007-0003",
               "term": "Associated Controlgear",
-              "definition": "Controlgear designed",
+              "definition": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated.",
               "source_clause": "3.4",
               "source_pages": [
                 6
@@ -426,7 +426,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.4 Associated Controlgear —  Controlgear designed"
+                "original_text": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated."
               },
               "term_id": "TERM-associated_controlgear"
             }
@@ -455,7 +455,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC007-0004",
               "term": "Plug-in Controlgear",
-              "definition": "Controlgear incorporated",
+              "definition": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply.",
               "source_clause": "3.5",
               "source_pages": [
                 6
@@ -470,7 +470,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.5 Plug-in Controlgear — Controlgear incorporated"
+                "original_text": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply."
               },
               "term_id": "TERM-plug_in_controlgear"
             }
@@ -499,7 +499,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC007-0005",
               "term": "Controlgear",
-              "definition": "Output voltage, at rated supply",
+              "definition": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
               "source_clause": "3.6",
               "source_pages": [
                 6
@@ -514,7 +514,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "Controlgear — Output voltage, at rated supply"
+                "original_text": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
               },
               "term_id": "TERM-controlgear"
             }
@@ -543,7 +543,7 @@
               "entity_type": "definition",
               "definition_id": "DEF-DOC007-0006",
               "term": "Controlgear",
-              "definition": "Output current, at rated supply voltage,",
+              "definition": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
               "source_clause": "3.7",
               "source_pages": [
                 6
@@ -558,7 +558,7 @@
                   6
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "Controlgear — Output current, at rated supply voltage,"
+                "original_text": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
               },
               "term_id": "TERM-controlgear"
             }
@@ -605,9 +605,34 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.8 Light Emitting Diode (LED) — Solid state device"
+                "original_text": "Solid state device"
               },
               "term_id": "TERM-light_emitting_diode_led"
+            },
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0008",
+              "term": "IS 15885 (Part 2/Sec 13)",
+              "definition": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current.",
+              "source_clause": "3.8",
+              "source_pages": [
+                6,
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.8",
+                "page": 6,
+                "pages": [
+                  6,
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current."
+              },
+              "term_id": "TERM-is_15885_part_2_sec_13"
             }
           ]
         },
@@ -632,9 +657,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC007-0008",
+              "definition_id": "DEF-DOC007-0009",
               "term": "LED Module",
-              "definition": "Unit supplied as a light source.",
+              "definition": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic.",
               "source_clause": "3.9",
               "source_pages": [
                 7
@@ -649,7 +674,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.9 LED Module —  Unit supplied as a light source."
+                "original_text": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic."
               },
               "term_id": "TERM-led_module"
             }
@@ -676,9 +701,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC007-0009",
+              "definition_id": "DEF-DOC007-0010",
               "term": "Maximum Output Voltage",
-              "definition": "Maximum voltage",
+              "definition": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition.",
               "source_clause": "3.10",
               "source_pages": [
                 7
@@ -693,7 +718,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.10 Maximum Output Voltage —  Maximum voltage"
+                "original_text": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition."
               },
               "term_id": "TERM-maximum_output_voltage"
             }
@@ -721,9 +746,9 @@
           "definitions": [
             {
               "entity_type": "definition",
-              "definition_id": "DEF-DOC007-0010",
+              "definition_id": "DEF-DOC007-0011",
               "term": "Acceptance Test",
-              "definition": "Tests carried out on samples",
+              "definition": "Tests carried out on samples taken from a lot for the acceptance of the lot.",
               "source_clause": "3.11",
               "source_pages": [
                 7
@@ -738,7 +763,7 @@
                   7
                 ],
                 "section": "3 TERMINOLOGY",
-                "original_text": "3.11 Acceptance Test —  Tests carried out on samples"
+                "original_text": "Tests carried out on samples taken from a lot for the acceptance of the lot."
               },
               "term_id": "TERM-acceptance_test"
             }
@@ -1582,8 +1607,8 @@
     {
       "entity_type": "definition",
       "definition_id": "DEF-DOC007-0001",
-      "term": "Electronic Controlgear for LED Modules —",
-      "definition": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponents and may include means for dimming,\ncorrecting the power factor and suppressing radio\ninterference.",
+      "term": "Electronic Controlgear for LED Modules",
+      "definition": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcting the power factor and suppressing radio interference.",
       "source_clause": "3.1",
       "source_pages": [
         6
@@ -1598,7 +1623,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponent"
+        "original_text": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcti"
       },
       "term_id": "TERM-electronic_controlgear_for_led_modules"
     },
@@ -1606,7 +1631,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC007-0002",
       "term": "SELV Controlgear",
-      "definition": "Controlgear providing a",
+      "definition": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer.",
       "source_clause": "3.3",
       "source_pages": [
         6
@@ -1621,7 +1646,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.3 SELV Controlgear — Controlgear providing a"
+        "original_text": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer."
       },
       "term_id": "TERM-selv_controlgear"
     },
@@ -1629,7 +1654,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC007-0003",
       "term": "Associated Controlgear",
-      "definition": "Controlgear designed",
+      "definition": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated.",
       "source_clause": "3.4",
       "source_pages": [
         6
@@ -1644,7 +1669,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.4 Associated Controlgear —  Controlgear designed"
+        "original_text": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated."
       },
       "term_id": "TERM-associated_controlgear"
     },
@@ -1652,7 +1677,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC007-0004",
       "term": "Plug-in Controlgear",
-      "definition": "Controlgear incorporated",
+      "definition": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply.",
       "source_clause": "3.5",
       "source_pages": [
         6
@@ -1667,7 +1692,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.5 Plug-in Controlgear — Controlgear incorporated"
+        "original_text": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply."
       },
       "term_id": "TERM-plug_in_controlgear"
     },
@@ -1675,7 +1700,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC007-0005",
       "term": "Controlgear",
-      "definition": "Output voltage, at rated supply",
+      "definition": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
       "source_clause": "3.6",
       "source_pages": [
         6
@@ -1690,7 +1715,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "Controlgear — Output voltage, at rated supply"
+        "original_text": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
       },
       "term_id": "TERM-controlgear"
     },
@@ -1698,7 +1723,7 @@
       "entity_type": "definition",
       "definition_id": "DEF-DOC007-0006",
       "term": "Controlgear",
-      "definition": "Output current, at rated supply voltage,",
+      "definition": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
       "source_clause": "3.7",
       "source_pages": [
         6
@@ -1713,7 +1738,7 @@
           6
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "Controlgear — Output current, at rated supply voltage,"
+        "original_text": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
       },
       "term_id": "TERM-controlgear"
     },
@@ -1738,15 +1763,40 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.8 Light Emitting Diode (LED) — Solid state device"
+        "original_text": "Solid state device"
       },
       "term_id": "TERM-light_emitting_diode_led"
     },
     {
       "entity_type": "definition",
       "definition_id": "DEF-DOC007-0008",
+      "term": "IS 15885 (Part 2/Sec 13)",
+      "definition": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current.",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.8",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current."
+      },
+      "term_id": "TERM-is_15885_part_2_sec_13"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0009",
       "term": "LED Module",
-      "definition": "Unit supplied as a light source.",
+      "definition": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic.",
       "source_clause": "3.9",
       "source_pages": [
         7
@@ -1761,15 +1811,15 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.9 LED Module —  Unit supplied as a light source."
+        "original_text": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic."
       },
       "term_id": "TERM-led_module"
     },
     {
       "entity_type": "definition",
-      "definition_id": "DEF-DOC007-0009",
+      "definition_id": "DEF-DOC007-0010",
       "term": "Maximum Output Voltage",
-      "definition": "Maximum voltage",
+      "definition": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition.",
       "source_clause": "3.10",
       "source_pages": [
         7
@@ -1784,15 +1834,15 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.10 Maximum Output Voltage —  Maximum voltage"
+        "original_text": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition."
       },
       "term_id": "TERM-maximum_output_voltage"
     },
     {
       "entity_type": "definition",
-      "definition_id": "DEF-DOC007-0010",
+      "definition_id": "DEF-DOC007-0011",
       "term": "Acceptance Test",
-      "definition": "Tests carried out on samples",
+      "definition": "Tests carried out on samples taken from a lot for the acceptance of the lot.",
       "source_clause": "3.11",
       "source_pages": [
         7
@@ -1807,7 +1857,7 @@
           7
         ],
         "section": "3 TERMINOLOGY",
-        "original_text": "3.11 Acceptance Test —  Tests carried out on samples"
+        "original_text": "Tests carried out on samples taken from a lot for the acceptance of the lot."
       },
       "term_id": "TERM-acceptance_test"
     }
@@ -4243,8 +4293,8 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:36:53.834412+00:00",
-    "total_definitions": 10,
+    "normalized_at": "2026-08-30T15:54:03.098390+00:00",
+    "total_definitions": 11,
     "total_entities": 45,
     "total_requirements": 5,
     "total_relationships": 69,

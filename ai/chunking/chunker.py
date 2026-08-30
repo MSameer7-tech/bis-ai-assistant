@@ -1,7 +1,8 @@
 """
 Structure-Aware Semantic Chunker for BIS Documents.
 Preserves clause hierarchy lineage, normative modal expressions (shall, shall not, under consideration),
-and atomic requirement-condition-test method boundaries.
+atomic requirement-condition boundaries, discrete structured tables (Step 7),
+standalone domain definitions (Step 8), and cross-standard references (Step 9).
 """
 
 import json
@@ -12,6 +13,7 @@ from typing import Any, Dict, List, Optional
 
 from ai.chunking.schema import (
     ChunkClause,
+    ChunkCrossReference,
     ChunkProvenance,
     ChunkType,
     KnowledgeChunk,
@@ -70,7 +72,6 @@ def extract_normative_context(text: str, reqs: List[Dict[str, Any]]) -> Normativ
             if len(l_str) > 10:
                 verbatim.append(l_str)
 
-    # Detect compliance verification method
     comp_method = None
     if "compliance is checked" in text_lower or "test" in text_lower:
         for line in text.splitlines():
@@ -84,6 +85,29 @@ def extract_normative_context(text: str, reqs: List[Dict[str, Any]]) -> Normativ
         verbatim_normative_statements=verbatim,
         compliance_verification_method=comp_method,
     )
+
+
+def map_cross_references(raw_refs: List[Dict[str, Any]]) -> List[ChunkCrossReference]:
+    """Maps raw cross-reference objects into typed ChunkCrossReference instances (Step 9)."""
+    mapped = []
+    for r in raw_refs:
+        std = r.get("target_standard", "")
+        if not std:
+            continue
+        rel = "requirements_apply" if "shall" in r.get("context_snippet", "").lower() else "normative_reference"
+        if r.get("reference_type") == "test_method":
+            rel = "test_method_applies"
+        elif r.get("reference_type") == "definition":
+            rel = "definition_applies"
+
+        mapped.append(ChunkCrossReference(
+            standard=std,
+            target_location=r.get("target_location"),
+            relationship=rel,
+            reference_type=r.get("reference_type", "normative"),
+            context_snippet=r.get("context_snippet"),
+        ))
+    return mapped
 
 
 class StructureAwareChunker:
@@ -126,21 +150,31 @@ class StructureAwareChunker:
         for req in norm_doc.get("requirements", []):
             reqs_by_clause.setdefault(str(req.get("clause", "0")), []).append(req)
 
-        # 1. Definition Chunks (Clause 3)
+        # 1. Definition Chunks (Clause 3 - Step 8)
         for idx, def_item in enumerate(norm_doc.get("definitions", [])):
             c_num = def_item.get("source_clause", "3")
             pages = def_item.get("source_pages", [6])
             term = def_item.get("term", "")
             definition_text = def_item.get("definition", "")
 
+            def_title = f"Definition: {term}"
+            def_qa_text = (
+                f"Definition: {term}\n"
+                f"Standard: {std_num} (Clause {c_num}, Page {pages[0] if pages else 1})\n\n"
+                f"{term} is defined as: {definition_text}"
+            )
+
             chunk = KnowledgeChunk(
                 chunk_id=make_chunk_id(document_id, f"DEF_{c_num}", idx + 1, prefix="DEF"),
                 document_id=document_id,
                 source_id=source_id,
                 chunk_type=ChunkType.DEFINITION,
+                title=def_title,
+                term=term,
+                definition=definition_text,
                 clause=ChunkClause(
                     number=c_num,
-                    title=f"Definition: {term}",
+                    title=def_title,
                     depth=2,
                     parent_clause="3",
                     hierarchy_path=["3", c_num],
@@ -152,7 +186,7 @@ class StructureAwareChunker:
                     modal_keywords=["definition"],
                     verbatim_normative_statements=[f"{term} — {definition_text}"],
                 ),
-                text=f"Definition of {term} (Clause {c_num}, Page {pages}):\n{definition_text}",
+                text=def_qa_text,
                 entities=[{
                     "entity_type": "definition",
                     "term": term,
@@ -160,7 +194,7 @@ class StructureAwareChunker:
                 }],
                 requirements=[],
                 conditions=[],
-                references=refs_by_clause.get(c_num, []),
+                references=map_cross_references(refs_by_clause.get(c_num, [])),
                 page_refs=pages,
                 provenance=ChunkProvenance(
                     document_id=document_id,
@@ -175,21 +209,60 @@ class StructureAwareChunker:
             )
             chunks.append(chunk)
 
-        # 2. Table Chunks (e.g. Table 2, Table 3)
+        # 2. Table Chunks (Step 7 - Table 2, Table 3, etc.)
         for idx, tab in enumerate(norm_doc.get("tables", [])):
-            t_num = str(tab.get("table_id", f"T{idx + 1}"))
+            t_num_raw = str(tab.get("table_id", f"T{idx + 1}"))
+            t_digits = re.sub(r"[^0-9]", "", t_num_raw)
+            t_num = str(int(t_digits)) if t_digits else str(idx + 1)
             c_num = str(tab.get("clause", "0"))
             p_num = tab.get("source_page", 1)
-            t_title = tab.get("title", f"Table {idx + 1}")
+            t_title = tab.get("title", f"Table {t_num}")
 
-            table_text = f"{t_title} (Clause {c_num}, Page {p_num}):\n"
-            if tab.get("raw_markdown"):
-                table_text += tab["raw_markdown"]
+            raw_rows = tab.get("rows", [])
+            structured_rows = []
+            for r in raw_rows:
+                if isinstance(r, dict):
+                    row_entry = dict(r)
+                    if "torsion_moment" in r and isinstance(r["torsion_moment"], dict):
+                        row_entry["torsion_moment"] = r["torsion_moment"].get("value")
+                        row_entry["unit"] = r["torsion_moment"].get("unit", "Nm")
+                    if "bending_moment" in r and isinstance(r["bending_moment"], dict):
+                        row_entry["bending_moment"] = r["bending_moment"].get("value")
+                        row_entry["unit"] = r["bending_moment"].get("unit", "Nm")
+                    if "mass" in r and isinstance(r["mass"], dict):
+                        row_entry["mass"] = r["mass"].get("value")
+                        row_entry["mass_unit"] = r["mass"].get("unit", "kg")
+                    structured_rows.append(row_entry)
+
+            # Build readable Markdown table text for vector retrieval
+            table_md_lines = [
+                f"{t_title} (Standard: {std_num}, Clause {c_num}, Page {p_num}):\n",
+            ]
+            if "torque" in t_title.lower() or "torsion" in t_title.lower() or t_num == "3":
+                table_md_lines.append("| Cap Style | Torsion Moment (Torque) | Unit | Status |")
+                table_md_lines.append("|---|---|---|---|")
+                for r in structured_rows:
+                    cap = r.get("cap", "-")
+                    tm = r.get("torsion_moment", "-")
+                    unit = r.get("unit", "Nm")
+                    status = r.get("status", "mandatory")
+                    table_md_lines.append(f"| {cap} | {tm} | {unit} | {status} |")
+            elif "bending" in t_title.lower() or "mass" in t_title.lower() or t_num == "2":
+                table_md_lines.append("| Cap Style | Bending Moment (Nm) | Mass (kg) | Status |")
+                table_md_lines.append("|---|---|---|---|")
+                for r in structured_rows:
+                    cap = r.get("cap", "-")
+                    bm = r.get("bending_moment", "-")
+                    m = r.get("mass", "-")
+                    status = r.get("status", "mandatory")
+                    table_md_lines.append(f"| {cap} | {bm} | {m} | {status} |")
             else:
-                table_text += json.dumps(tab.get("rows", []), indent=2)
+                table_md_lines.append(json.dumps(structured_rows, indent=2))
+
+            table_text = "\n".join(table_md_lines)
 
             has_under_cons = any(
-                isinstance(r, dict) and r.get("status") == "under_consideration" for r in tab.get("rows", [])
+                isinstance(r, dict) and r.get("status") == "under_consideration" for r in structured_rows
             )
             t_force = NormativeForce.UNDER_CONSIDERATION if has_under_cons else NormativeForce.MANDATORY
 
@@ -198,41 +271,44 @@ class StructureAwareChunker:
                 document_id=document_id,
                 source_id=source_id,
                 chunk_type=ChunkType.TABLE,
+                title=t_title,
+                table_number=t_num,
+                rows=structured_rows,
+                table_data=tab,
                 clause=ChunkClause(
-                    number=c_num or t_num,
+                    number=c_num or t_num_raw,
                     title=t_title,
                     depth=2,
                     parent_clause=c_num.split(".")[0] if "." in c_num else None,
-                    hierarchy_path=[c_num.split(".")[0], c_num] if "." in c_num else [t_num],
+                    hierarchy_path=[c_num.split(".")[0], c_num] if "." in c_num else [t_num_raw],
                     section_number=c_num.split(".")[0] if "." in c_num else None,
                     section_title=t_title,
                 ),
                 normative_context=NormativeContext(
                     normative_force=t_force,
                     modal_keywords=["table values", "torque", "bending moment"],
-                    verbatim_normative_statements=[f"{t_title} requirements"],
+                    verbatim_normative_statements=[f"{t_title} values in Clause {c_num}"],
                 ),
                 text=table_text,
                 entities=[],
                 requirements=[],
                 conditions=[],
-                references=refs_by_clause.get(c_num, []),
-                table_data=tab,
+                references=map_cross_references(refs_by_clause.get(c_num, [])),
                 page_refs=[p_num],
                 provenance=ChunkProvenance(
                     document_id=document_id,
                     source_id=source_id,
                     standard_number=std_num,
-                    clause=c_num or t_num,
+                    clause=c_num or t_num_raw,
                     pages=[p_num],
                     section=t_title,
                     original_text_snippet=table_text[:200],
                 ),
-                metadata={"table_id": t_num, "total_rows": len(tab.get("rows", []))},
+                metadata={"table_number": t_num, "table_id": t_num_raw, "total_rows": len(structured_rows)},
             )
             chunks.append(chunk)
 
-        # 3. Clause & Requirement Chunks with Hierarchy & Normative Binding
+        # 3. Clause & Requirement Chunks with Hierarchy, Normative Context, and Cross-References (Step 9)
         def traverse_clauses(
             clause_list: List[Dict[str, Any]],
             parent_chain: List[str],
@@ -250,7 +326,6 @@ class StructureAwareChunker:
 
                 current_chain = parent_chain + [c_num]
 
-                # If this is top-level clause e.g. "8", update section context
                 curr_sec_num = sec_num or (c_num if not parent_chain else parent_chain[0])
                 curr_sec_title = sec_title or (c_title if not parent_chain else "")
 
@@ -275,11 +350,9 @@ class StructureAwareChunker:
                 else:
                     ch_type = ChunkType.GENERAL_PROVISION
 
-                # Build contextual text with clause hierarchy header
                 hierarchy_str = " > ".join(current_chain)
                 enriched_text = f"[{hierarchy_str}] Clause {c_num} - {c_title} (Page {c_pages}):\n{c_text.strip()}"
 
-                # Append conditions and acceptance criteria directly into text to keep meaning atomic
                 if c_reqs:
                     for r in c_reqs:
                         if r.get("conditions"):
@@ -290,7 +363,6 @@ class StructureAwareChunker:
                             enriched_text += f"\n[Acceptance Criterion]: {json.dumps(r['acceptance_criterion'])}"
 
                 norm_context = extract_normative_context(c_text, c_reqs)
-
                 parent_clause_id = parent_chain[-1] if parent_chain else None
 
                 chunk = KnowledgeChunk(
@@ -298,6 +370,7 @@ class StructureAwareChunker:
                     document_id=document_id,
                     source_id=source_id,
                     chunk_type=ch_type,
+                    title=c_title,
                     clause=ChunkClause(
                         number=c_num,
                         title=c_title,
@@ -312,7 +385,7 @@ class StructureAwareChunker:
                     entities=c_ents,
                     requirements=c_reqs,
                     conditions=[r.get("conditions") for r in c_reqs if r.get("conditions")],
-                    references=c_refs,
+                    references=map_cross_references(c_refs),
                     page_refs=c_pages,
                     provenance=ChunkProvenance(
                         document_id=document_id,
@@ -348,6 +421,7 @@ class StructureAwareChunker:
                 document_id=document_id,
                 source_id=source_id,
                 chunk_type=ChunkType.ANNEX,
+                title=a_title,
                 clause=ChunkClause(
                     number=a_id,
                     title=a_title,
@@ -361,7 +435,7 @@ class StructureAwareChunker:
                 entities=[],
                 requirements=[],
                 conditions=[],
-                references=refs_by_clause.get(a_id, []),
+                references=map_cross_references(refs_by_clause.get(a_id, [])),
                 page_refs=a_pages,
                 provenance=ChunkProvenance(
                     document_id=document_id,

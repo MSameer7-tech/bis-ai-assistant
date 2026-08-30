@@ -1,7 +1,8 @@
 """
 Definition Normalizer Module for Phase 2D (Clause 3 / Terminology).
 Extracts canonical domain definitions (Self-Ballasted LED Lamp, Type, Rated Voltage,
-Rated Wattage, Rated Frequency, Live Part, Type Test, ITQ, Batch, etc.) with provenance.
+Rated Wattage, Rated Frequency, Live Part, Type Test, ITQ, Batch, etc.) with multiline
+continuation and provenance.
 """
 
 import logging
@@ -11,12 +12,11 @@ from typing import Any, Dict, List
 logger = logging.getLogger(__name__)
 
 # Regex pattern for definition lines:
-# e.g., "3.1 Self-Ballasted LED Lamp — Unit which cannot be dismantled..."
-# e.g., "3.7 Live Part — Conductive part which may cause an electric shock..."
-# e.g., "3.8 Type Test — A test or series of tests made on a type test sample..."
+# e.g., "3.1 Self-Ballasted LED Lamp — Unit which cannot..."
+# e.g., "3.7 Live Part — Conductive part which may cause..."
 DEFINITION_HEADER_REGEX = re.compile(
     r"^(?:(?:Clause\s+)?([0-9]{1,2}\.[0-9]{1,2}(?:\.[0-9]+)?)\s+)?([A-Za-z0-9\s\(\)\/\-\,\'\"]+?)\s*(?:[\—\–]|\s+\-\s+|\:\s+)\s*(.*)$",
-    re.MULTILINE | re.DOTALL,
+    re.DOTALL,
 )
 
 
@@ -49,17 +49,35 @@ class DefinitionExtractor:
             )
 
             if is_def_clause:
-                # Check for "Term — Definition" structure
                 lines = [l.strip() for l in c_text.splitlines() if l.strip()]
-                for line in lines:
+                i = 0
+                while i < len(lines):
+                    line = lines[i]
                     match = DEFINITION_HEADER_REGEX.match(line)
                     if match:
                         clause_ref = match.group(1) or c_num
                         term_name = match.group(2).strip()
-                        def_body = match.group(3).strip()
+                        initial_def = match.group(3).strip()
+
+                        # Collect continuation lines until next definition header
+                        def_lines = [initial_def]
+                        j = i + 1
+                        while j < len(lines):
+                            next_line = lines[j]
+                            # If next line is a new definition header, break
+                            if DEFINITION_HEADER_REGEX.match(next_line):
+                                break
+                            # If next line starts with a new subclause or section, break
+                            if re.match(r"^[0-9]{1,2}\.[0-9]{1,2}", next_line):
+                                break
+                            def_lines.append(next_line)
+                            j += 1
+
+                        full_def = " ".join(def_lines).strip()
+                        i = j
 
                         # Filter non-definition headers
-                        if len(term_name) < 2 or len(def_body) < 10 or term_name.isdigit():
+                        if len(term_name) < 2 or len(full_def) < 10 or term_name.isdigit():
                             continue
                         if any(term_name.lower().startswith(skip) for skip in ("table", "annex", "fig", "note")):
                             continue
@@ -69,7 +87,7 @@ class DefinitionExtractor:
                             "entity_type": "definition",
                             "definition_id": def_id,
                             "term": term_name,
-                            "definition": def_body,
+                            "definition": full_def,
                             "source_clause": clause_ref,
                             "source_pages": c_pages,
                             "provenance": {
@@ -80,9 +98,11 @@ class DefinitionExtractor:
                                 "page": c_pages[0] if c_pages else 1,
                                 "pages": c_pages,
                                 "section": "3 TERMINOLOGY",
-                                "original_text": line[:250],
+                                "original_text": full_def[:250],
                             },
                         })
+                    else:
+                        i += 1
 
                 # Fallback for structured subclauses (e.g. 3.1 Self-Ballasted LED Lamp)
                 if not definitions and c_num.startswith("3."):
