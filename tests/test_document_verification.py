@@ -6,6 +6,7 @@ from ai.ingestion.acquisition import compute_sha256
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DOCUMENTS_PATH = ROOT_DIR / "data" / "metadata" / "documents.json"
 REGISTRY_PATH = ROOT_DIR / "data" / "metadata" / "source_registry.json"
+VERIFICATION_LOG_PATH = ROOT_DIR / "data" / "metadata" / "verification_log.json"
 
 
 def test_all_acquired_documents_exist_and_match_hashes():
@@ -54,7 +55,25 @@ def test_all_acquired_documents_are_valid_openable_pdfs():
             assert pdf_doc.page_count > 0, f"PDF has 0 pages: {file_path}"
             page1 = pdf_doc[0]
             text = page1.get_text()
-            # Verify the page contains actual extractable text
             assert len(text.strip()) > 20, f"Page 1 has insufficient or unreadable text in {file_path}"
         finally:
             pdf_doc.close()
+
+
+def test_verification_log_is_populated_and_valid():
+    """Validates that verification_log.json contains complete audit records for all 6 pilot documents."""
+    assert VERIFICATION_LOG_PATH.exists(), "verification_log.json must exist"
+
+    with open(VERIFICATION_LOG_PATH, "r", encoding="utf-8") as f:
+        logs = json.load(f)
+
+    assert len(logs) == 6, f"Expected 6 verification audit log entries, found {len(logs)}"
+
+    for log_entry in logs:
+        assert "document_id" in log_entry
+        assert "source_id" in log_entry
+        assert log_entry["verification_type"] == "manual_extraction_review"
+        assert log_entry["status"] == "content_verified"
+        assert isinstance(log_entry["checks"], dict)
+        assert len(log_entry["checks"]) > 0
+        assert all(isinstance(v, bool) for v in log_entry["checks"].values())

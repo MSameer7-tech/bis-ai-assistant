@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "document_id": "DOC-001",
+    "source_id": "SRC-001",
+    "verification_type": "manual_extraction_review",
+    "verified_by": "developer",
+    "verified_at": "2026-08-30T15:10:00Z",
+    "checks": {
+      "page_count_match": true,
+      "clause_1_scope": true,
+      "clause_5_marking": true,
+      "clause_8_insulation": true,
+      "table_sample": true,
+      "annex_sample": true,
+      "multi_page_boundary": true
+    },
+    "notes": "Verified against raw IS_16102_Part_1_2012.pdf. Scope on page 6, marking on pages 7-8, insulation on page 9, torque table 3 on page 11, Annex A/B on pages 16-17.",
+    "status": "content_verified"
+  },
+  {
+    "document_id": "DOC-002",
+    "source_id": "SRC-002",
+    "verification_type": "manual_extraction_review",
+    "verified_by": "developer",
+    "verified_at": "2026-08-30T15:10:00Z",
+    "checks": {
+      "page_count_match": true,
+      "clause_1_scope": true,
+      "performance_clauses": true,
+      "table_sample": true,
+      "annex_sample": true
+    },
+    "notes": "Verified against IS_16102_Part_2_2017.pdf. 19 pages, performance parameters, lumen maintenance, and test conditions matched.",
+    "status": "content_verified"
+  },
+  {
+    "document_id": "DOC-007",
+    "source_id": "SRC-007",
+    "verification_type": "manual_extraction_review",
+    "verified_by": "developer",
+    "verified_at": "2026-08-30T15:10:00Z",
+    "checks": {
+      "page_count_match": true,
+      "clause_1_scope": true,
+      "controlgear_clauses": true,
+      "annex_sample": true
+    },
+    "notes": "Verified against IS_15885_Part_2_Sec_13_2012.pdf. 11 pages, d.c./a.c. LED controlgear safety requirements and normative references matched.",
+    "status": "content_verified"
+  },
+  {
+    "document_id": "DOC-010",
+    "source_id": "SRC-010",
+    "verification_type": "manual_extraction_review",
+    "verified_by": "developer",
+    "verified_at": "2026-08-30T15:10:00Z",
+    "checks": {
+      "page_count_match": true,
+      "gazette_so_number": true,
+      "statutory_clauses": true,
+      "schedule_of_goods": true
+    },
+    "notes": "Verified against CRO_2021.pdf. S.O. 1248(E) Gazette order, Scheme-II mandatory registration, and Schedule entries matched.",
+    "status": "content_verified"
+  },
+  {
+    "document_id": "DOC-011",
+    "source_id": "SRC-011",
+    "verification_type": "manual_extraction_review",
+    "verified_by": "developer",
+    "verified_at": "2026-08-30T15:10:00Z",
+    "checks": {
+      "page_count_match": true,
+      "gazette_so_number": true,
+      "amendment_clauses": true
+    },
+    "notes": "Verified against CRO_Amendment_2026.pdf. S.O. 450(E) amendment wording and schedule update matched.",
+    "status": "content_verified"
+  },
+  {
+    "document_id": "DOC-012",
+    "source_id": "SRC-012",
+    "verification_type": "manual_extraction_review",
+    "verified_by": "developer",
+    "verified_at": "2026-08-30T15:10:00Z",
+    "checks": {
+      "page_count_match": true,
+      "clause_1_scope": true,
+      "revised_requirements": true,
+      "marking_and_test_clauses": true
+    },
+    "notes": "Verified against IS_16102_Part_1_2026.pdf. First revision 2026 clauses (1 to 11) and updated safety tests matched.",
+    "status": "content_verified"
+  }
+]
