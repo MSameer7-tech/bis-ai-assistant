@@ -6,7 +6,7 @@ This document serves as the master registry tracking all authoritative documents
 
 ## 1. Granular Verification Status Lifecycle
 
-To avoid premature claims of authenticity before full document inspection, every source transitions through this granular verification lifecycle:
+To prevent premature claims of authenticity before full document inspection, every source transitions through this granular verification lifecycle:
 
 ```text
 [discovered]
@@ -23,22 +23,19 @@ To avoid premature claims of authenticity before full document inspection, every
      ↓
 [current_status_verified]   ──> Legal applicability, transition circulars, and active status confirmed
      ↓
-(Optional: [superseded] / [withdrawn])
+(Optional: [superseded] / [needs_verification] / [withdrawn])
 ```
 
 ---
 
-## 2. Dynamic Laboratory Information Model
+## 2. Dynamic Laboratory & Temporal Regulatory Modeling
 
-Laboratory information is temporal and dynamic. The system tracks:
-* `laboratory_id`: Identifier
-* `lab_name`: Registered name
-* `accreditation_number`: NABL / BIS certificate reference
-* `current_status`: Active recognition status (`recognized`, `suspended`, `expired`)
-* `scope`: Explicit list of standards and clauses the lab is authorized to test
-* `validity_start`: Recognition commencement date
-* `validity_end`: Recognition expiry date
-* `source_retrieval_timestamp`: Exact ISO timestamp when scope was queried/retrieved
+* **Temporal Regulatory Lineage**:
+  $$\text{2012 CRO (Historical)} \longrightarrow \text{2021 CRO (Current Principal)} \longrightarrow \text{2026 CRO Amendment}$$
+* **Standards Revision Lifecycle**:
+  $$\text{IS 16102 (Part 1) : 2012 (Operational)} \longleftrightarrow \text{IS 16102 (Part 1) : 2026 (First Revision)}$$
+* **Dynamic Laboratory Information**:
+  `laboratory_id`, `lab_name`, `accreditation_number`, `current_status`, `authorized_clauses`, `validity_start`, `validity_end`, `source_retrieval_timestamp`.
 
 ---
 
@@ -46,12 +43,15 @@ Laboratory information is temporal and dynamic. The system tracks:
 
 | Source ID | Domain | Source Type | Issuing Authority | Authority Level | Title | Standard / Doc No | Version / Edition | Publication Date | Effective Date | Official URL | Retrieval Date | Granular Status | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **SRC-001** | Standards | Standard Document | Bureau of Indian Standards (ETD 23) | Tier 1B - Normative | *Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements* | `IS 16102 (Part 1) : 2012` | First Edition + Amds 1 & 2 | 2012-08-01 | Provisional | https://standardsbis.bsbedge.com | 2026-08-30 | `document_identified` | Mandatory safety standard under MeitY CRO; revised 2026 edition published; pending raw PDF acquisition. |
-| **SRC-002** | Standards | Standard Document | Bureau of Indian Standards (ETD 23) | Tier 1B - Normative | *Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements* | `IS 16102 (Part 2) : 2017` | First Revision | 2017-05-15 | Provisional | https://standardsbis.bsbedge.com | 2026-08-30 | `document_identified` | Performance benchmark standard; pending raw PDF acquisition. |
-| **SRC-003** | Regulation | Quality Control Order (QCO) | Ministry of Electronics and IT (MeitY) | Tier 1A - Statutory | *Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order* | S.O. 2905(E) / S.O. 3120(E) | Gazette Order | 2014-11-07 | Provisional | https://www.meity.gov.in/esdm/standards | 2026-08-30 | `document_identified` | Mandates CRS registration for Self-Ballasted LED Lamps; pending gazette notification text acquisition. |
-| **SRC-004** | Certification | Conformity Assessment Regulation | Ministry of Consumer Affairs / BIS | Tier 1A - Statutory | *Bureau of Indian Standards (Conformity Assessment) Regulations, 2018* | Scheme II (CRS) | Gazette Notification | 2018-06-04 | 2018-06-04 | https://www.bis.gov.in | 2026-08-30 | `document_identified` | Establishes statutory framework for Scheme-II (CRS); pending regulation text acquisition. |
-| **SRC-005** | Certification | Procedural Guideline | Bureau of Indian Standards (CRS Dept) | Tier 2 - Guidance | *MeitY Series Guidelines for Grouping of Self-Ballasted LED Lamps (Phase 2)* | Circular Series-LED-P2 | Version 3.0 | 2015-04-10 | Provisional | https://www.crsbis.in | 2026-08-30 | `document_identified` | Series formation guidelines for model grouping; pending circular download. |
-| **SRC-006** | Standards (Circular) | Implementation Circular | Bureau of Indian Standards (CMD / CRS) | Tier 2 - Guidance | *Guidelines for Implementation of Revised Standard IS 16102 (Part 1) : 2026* | Circular CMD-III/IS16102 | Circular Ref 2026 | 2026-03-15 | Provisional | https://www.crsbis.in | 2026-08-30 | `document_identified` | Transition guidelines for revised IS 16102 (Pt 1):2026; pending circular PDF verification. |
-| **SRC-007** | Related Standards | Standard Document | Bureau of Indian Standards (ETD 23) | Tier 1B - Normative | *Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules* | `IS 15885 (Part 2/Sec 13) : 2012` | Reaffirmed 2022 | 2012-09-01 | Provisional | https://standardsbis.bsbedge.com | 2026-08-30 | `document_identified` | Normative driver safety standard; pending raw PDF acquisition. |
-| **SRC-008** | Laboratories | Laboratory Directory & Scopes | Bureau of Indian Standards (LIMS / LRS) | Tier 3 - Directory | *BIS Directory of Recognized Laboratories for Lighting & Electronics (LIMS)* | LIMS-LRS-Directory | Dynamic Query | 2026-08-01 | Dynamic | https://www.lims.bis.gov.in | 2026-08-30 | `official_domain_verified` | Live recognized laboratory directory; scope and validity timestamps to be queried during ingestion. |
-| **SRC-009** | Consumer | Portal & Verification Guide | Bureau of Indian Standards (CAD) | Tier 2 - Guidance | *BIS Care App User Guide & Standard Mark Verification Portal* | BIS-CAD-VERIFY | Portal Guide | 2024-01-01 | Provisional | https://www.bis.gov.in | 2026-08-30 | `official_domain_verified` | Verification workflow documentation for R-Numbers and ISI marks. |
+| **SRC-001** | Standards | Standard Document | Bureau of Indian Standards (ETD 23) | Tier 1B - Normative | *Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements* | `IS 16102 (Part 1) : 2012` | First Edition | 2012-08-01 | `null` | https://standardsbis.bsbedge.com | 2026-08-30 | `document_identified` | Safety standard under active lab scopes on BIS LIMS; pending raw PDF acquisition. |
+| **SRC-002** | Standards | Standard Document | Bureau of Indian Standards (ETD 23) | Tier 1B - Normative | *Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements* | `IS 16102 (Part 2) : 2017` | First Revision | 2017-05-15 | `null` | https://standardsbis.bsbedge.com | 2026-08-30 | `document_identified` | Performance benchmark standard; verified in active BIS LIMS lab scopes. |
+| **SRC-003** | Regulation | Quality Control Order (QCO) | Ministry of Electronics and IT (MeitY) | Tier 1A - Statutory | *Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2012* | S.O. 2357(E) / S.O. 2905(E) | 2012 Order | 2012-10-03 | `null` | https://www.meity.gov.in/esdm/standards | 2026-08-30 | `superseded` | Historical 2012 CRO that originally notified LED lamps; superseded by the 2021 CRO framework. |
+| **SRC-004** | Certification | Conformity Assessment Regulation | Ministry of Consumer Affairs / BIS | Tier 1A - Statutory | *The Bureau of Indian Standards (Conformity Assessment) Regulations, 2018* | BIS Conformity Assessment Regulations 2018 | Principal Regs (2024 & 2026 Amds) | 2018-06-04 | `null` | https://www.bis.gov.in | 2026-08-30 | `document_identified` | Statutory framework governing conformity assessment schemes (Scheme I, Scheme II CRS, etc.). |
+| **SRC-005** | Certification | Procedural Guideline | Bureau of Indian Standards (CRS Dept) | Tier 2 - Guidance | *Series Guidelines for Grouping of Self-Ballasted LED Lamps* | Circular Series-LED-P2 | Provisional Reference | `null` | `null` | https://www.crsbis.in | 2026-08-30 | `needs_verification` | 🔴 Unverified exact circular reference; do not ingest until official BIS circular PDF is retrieved. |
+| **SRC-006** | Standards (Circular) | Implementation Circular | Bureau of Indian Standards (CMD / CRS) | Tier 2 - Guidance | *Guidelines for Implementation of Revised Standard IS 16102 (Part 1) : 2026* | Circular CMD-III/IS16102 | Provisional Reference | `null` | `null` | https://www.crsbis.in | 2026-08-30 | `needs_verification` | 🔴 Transition circular & deadline claim require official circular PDF verification before trusting. |
+| **SRC-007** | Related Standards | Standard Document | Bureau of Indian Standards (ETD 23) | Tier 1B - Normative | *Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules* | `IS 15885 (Part 2/Sec 13) : 2012` | Reaffirmed 2022 | 2012-09-01 | `null` | https://standardsbis.bsbedge.com | 2026-08-30 | `document_identified` | Normative driver safety standard verified in active BIS LIMS lab scopes. |
+| **SRC-008** | Laboratories | Laboratory Directory & Scopes | Bureau of Indian Standards (LIMS / LRS) | Tier 3 - Directory | *BIS Directory of Recognized Laboratories for Lighting & Electronics (LIMS)* | LIMS-LRS-Directory | Dynamic Query Snapshot | `null` | `null` | https://www.lims.bis.gov.in | 2026-08-30 | `official_domain_verified` | Dynamic BIS LIMS registry exposing recognized lab names, clauses, testing charges, and validity dates. |
+| **SRC-009** | Consumer | Portal & Verification Guide | Bureau of Indian Standards (CAD) | Tier 2 - Guidance | *BIS Care App & Standard Mark Verification Portal* | BIS-CAD-APPS | Portal Documentation | `null` | `null` | https://www.bis.gov.in/bis-apps/?lang=en | 2026-08-30 | `official_domain_verified` | Specific official BIS Care portal for authenticating CRS R-Numbers, ISI CML numbers, and HUID. |
+| **SRC-010** | Regulation | Quality Control Order (QCO) | Ministry of Electronics and Information Technology (MeitY) | Tier 1A - Statutory | *Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2021* | CRO 2021 | 2021 Principal Order | 2021-03-18 | `null` | https://www.meity.gov.in/esdm/standards | 2026-08-30 | `document_identified` | Current principal regulatory framework governing CRS goods on official BIS Scheme-II portal. |
+| **SRC-011** | Regulation | Quality Control Order (QCO) | Ministry of Electronics and Information Technology (MeitY) | Tier 1A - Statutory | *Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026* | CRO Amendment 2026 | 2026 Amendment | `null` | `null` | https://www.meity.gov.in/esdm/standards | 2026-08-30 | `document_identified` | Latest 2026 amendment order identified on BIS Scheme-II portal. |
+| **SRC-012** | Standards | Standard Document | Bureau of Indian Standards (ETD 23) | Tier 1B - Normative | *Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements (First Revision)* | `IS 16102 (Part 1) : 2026` | First Revision (2026) | `null` | `null` | https://standardsbis.bsbedge.com | 2026-08-30 | `document_identified` | Newly published 2026 revised standard identified in BIS LIMS with active lab scopes. |

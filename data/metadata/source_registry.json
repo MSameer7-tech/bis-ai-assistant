@@ -7,13 +7,13 @@
     "authority_level": "Tier 1B - Normative",
     "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
     "standard_or_document_number": "IS 16102 (Part 1) : 2012",
-    "version_edition": "First Edition + Amds 1 & 2",
+    "version_edition": "First Edition",
     "publication_date": "2012-08-01",
-    "effective_date": "Provisional",
+    "effective_date": null,
     "url": "https://standardsbis.bsbedge.com",
     "retrieval_date": "2026-08-30",
     "status": "document_identified",
-    "notes": "Mandatory safety standard under MeitY CRO; revised 2026 edition published; pending raw PDF acquisition."
+    "notes": "Safety standard for LED lamps under active lab scopes; pending raw document acquisition to verify exact amendments."
   },
   {
     "source_id": "SRC-002",
@@ -25,11 +25,11 @@
     "standard_or_document_number": "IS 16102 (Part 2) : 2017",
     "version_edition": "First Revision",
     "publication_date": "2017-05-15",
-    "effective_date": "Provisional",
+    "effective_date": null,
     "url": "https://standardsbis.bsbedge.com",
     "retrieval_date": "2026-08-30",
     "status": "document_identified",
-    "notes": "Performance benchmark standard; pending raw PDF acquisition."
+    "notes": "Performance requirements standard; verified in active BIS LIMS lab scopes."
   },
   {
     "source_id": "SRC-003",
@@ -37,15 +37,15 @@
     "source_type": "qco_order",
     "issuing_authority": "Ministry of Electronics and Information Technology (MeitY)",
     "authority_level": "Tier 1A - Statutory",
-    "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order",
-    "standard_or_document_number": "S.O. 2905(E) / S.O. 3120(E)",
-    "version_edition": "Gazette Order",
-    "publication_date": "2014-11-07",
-    "effective_date": "Provisional",
+    "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2012",
+    "standard_or_document_number": "S.O. 2357(E) / S.O. 2905(E)",
+    "version_edition": "2012 Order & Historical Notifications",
+    "publication_date": "2012-10-03",
+    "effective_date": null,
     "url": "https://www.meity.gov.in/esdm/standards",
     "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "Mandates CRS registration for Self-Ballasted LED Lamps; pending gazette notification text acquisition."
+    "status": "superseded",
+    "notes": "Historical 2012 CRO that originally introduced compulsory registration for electronics/lighting; superseded by 2021 CRO."
   },
   {
     "source_id": "SRC-004",
@@ -53,15 +53,15 @@
     "source_type": "scheme_regulation",
     "issuing_authority": "Ministry of Consumer Affairs / Bureau of Indian Standards",
     "authority_level": "Tier 1A - Statutory",
-    "title": "Bureau of Indian Standards (Conformity Assessment) Regulations, 2018",
-    "standard_or_document_number": "Scheme II (CRS)",
-    "version_edition": "Gazette Notification",
+    "title": "The Bureau of Indian Standards (Conformity Assessment) Regulations, 2018",
+    "standard_or_document_number": "BIS Conformity Assessment Regulations 2018",
+    "version_edition": "Principal Regulations (with 2024 & 2026 Amendments)",
     "publication_date": "2018-06-04",
-    "effective_date": "2018-06-04",
+    "effective_date": null,
     "url": "https://www.bis.gov.in",
     "retrieval_date": "2026-08-30",
     "status": "document_identified",
-    "notes": "Establishes statutory framework for Scheme-II (CRS); pending regulation text acquisition."
+    "notes": "Statutory framework governing conformity assessment schemes, including Scheme I (ISI) and Scheme II (CRS)."
   },
   {
     "source_id": "SRC-005",
@@ -69,15 +69,15 @@
     "source_type": "guideline",
     "issuing_authority": "Bureau of Indian Standards (CRS Department)",
     "authority_level": "Tier 2 - Guidance",
-    "title": "MeitY Series Guidelines for Grouping of Self-Ballasted LED Lamps (Phase 2)",
+    "title": "Series Guidelines for Grouping of Self-Ballasted LED Lamps",
     "standard_or_document_number": "Circular Series-LED-P2",
-    "version_edition": "Version 3.0",
-    "publication_date": "2015-04-10",
-    "effective_date": "Provisional",
+    "version_edition": "Provisional Reference",
+    "publication_date": null,
+    "effective_date": null,
     "url": "https://www.crsbis.in",
     "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "Series formation guidelines for model grouping; pending circular download."
+    "status": "needs_verification",
+    "notes": "Series formation guideline reference requires finding and downloading the exact official BIS circular before ingestion."
   },
   {
     "source_id": "SRC-006",
@@ -87,13 +87,13 @@
     "authority_level": "Tier 2 - Guidance",
     "title": "Guidelines for Implementation of Revised Standard IS 16102 (Part 1) : 2026",
     "standard_or_document_number": "Circular CMD-III/IS16102",
-    "version_edition": "Circular Ref 2026",
-    "publication_date": "2026-03-15",
-    "effective_date": "Provisional",
+    "version_edition": "Provisional Reference",
+    "publication_date": null,
+    "effective_date": null,
     "url": "https://www.crsbis.in",
     "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "Transition guidelines for revised IS 16102 (Pt 1):2026; pending circular PDF verification."
+    "status": "needs_verification",
+    "notes": "Implementation circular reference and transition deadline claim require official circular PDF verification before trusting."
   },
   {
     "source_id": "SRC-007",
@@ -105,11 +105,11 @@
     "standard_or_document_number": "IS 15885 (Part 2/Sec 13) : 2012",
     "version_edition": "Reaffirmed 2022",
     "publication_date": "2012-09-01",
-    "effective_date": "Provisional",
+    "effective_date": null,
     "url": "https://standardsbis.bsbedge.com",
     "retrieval_date": "2026-08-30",
     "status": "document_identified",
-    "notes": "Normative driver safety standard; pending raw PDF acquisition."
+    "notes": "Normative controlgear standard verified in active BIS LIMS lab scopes."
   },
   {
     "source_id": "SRC-008",
@@ -119,13 +119,13 @@
     "authority_level": "Tier 3 - Directory",
     "title": "BIS Directory of Recognized Laboratories for Lighting & Electronics (LIMS)",
     "standard_or_document_number": "LIMS-LRS-Directory",
-    "version_edition": "Dynamic Query",
-    "publication_date": "2026-08-01",
-    "effective_date": "Dynamic",
+    "version_edition": "Dynamic Query Snapshot",
+    "publication_date": null,
+    "effective_date": null,
     "url": "https://www.lims.bis.gov.in",
     "retrieval_date": "2026-08-30",
     "status": "official_domain_verified",
-    "notes": "Live recognized laboratory directory; scope and validity timestamps to be queried during ingestion."
+    "notes": "Live recognized laboratory directory exposing test scopes, clauses, testing charges, and validity dates."
   },
   {
     "source_id": "SRC-009",
@@ -133,14 +133,62 @@
     "source_type": "guideline",
     "issuing_authority": "Bureau of Indian Standards (Consumer Affairs Dept)",
     "authority_level": "Tier 2 - Guidance",
-    "title": "BIS Care App User Guide & Standard Mark Verification Portal",
-    "standard_or_document_number": "BIS-CAD-VERIFY",
-    "version_edition": "Portal Guide",
-    "publication_date": "2024-01-01",
-    "effective_date": "Provisional",
-    "url": "https://www.bis.gov.in",
+    "title": "BIS Care App & Standard Mark Verification Portal",
+    "standard_or_document_number": "BIS-CAD-APPS",
+    "version_edition": "Portal Documentation",
+    "publication_date": null,
+    "effective_date": null,
+    "url": "https://www.bis.gov.in/bis-apps/?lang=en",
     "retrieval_date": "2026-08-30",
     "status": "official_domain_verified",
-    "notes": "Verification workflow documentation for R-Numbers and ISI marks."
+    "notes": "Specific official BIS portal page for BIS Care app verification of CRS R-Numbers, ISI CML numbers, and HUID."
+  },
+  {
+    "source_id": "SRC-010",
+    "domain": "Regulation",
+    "source_type": "qco_order",
+    "issuing_authority": "Ministry of Electronics and Information Technology (MeitY)",
+    "authority_level": "Tier 1A - Statutory",
+    "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2021",
+    "standard_or_document_number": "CRO 2021",
+    "version_edition": "2021 Principal Order",
+    "publication_date": "2021-03-18",
+    "effective_date": null,
+    "url": "https://www.meity.gov.in/esdm/standards",
+    "retrieval_date": "2026-08-30",
+    "status": "document_identified",
+    "notes": "Current principal regulatory framework governing CRS goods on the official BIS Scheme-II portal, superseding the 2012 CRO."
+  },
+  {
+    "source_id": "SRC-011",
+    "domain": "Regulation",
+    "source_type": "qco_order",
+    "issuing_authority": "Ministry of Electronics and Information Technology (MeitY)",
+    "authority_level": "Tier 1A - Statutory",
+    "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
+    "standard_or_document_number": "CRO Amendment 2026",
+    "version_edition": "2026 Amendment",
+    "publication_date": null,
+    "effective_date": null,
+    "url": "https://www.meity.gov.in/esdm/standards",
+    "retrieval_date": "2026-08-30",
+    "status": "document_identified",
+    "notes": "Latest 2026 amendment order identified on BIS Scheme-II portal."
+  },
+  {
+    "source_id": "SRC-012",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 23)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements (First Revision)",
+    "standard_or_document_number": "IS 16102 (Part 1) : 2026",
+    "version_edition": "First Revision (2026)",
+    "publication_date": null,
+    "effective_date": null,
+    "url": "https://standardsbis.bsbedge.com",
+    "retrieval_date": "2026-08-30",
+    "status": "document_identified",
+    "notes": "Newly published 2026 revised standard identified in BIS LIMS with active lab scopes; separate version from 2012 edition."
   }
 ]

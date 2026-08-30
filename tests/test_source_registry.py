@@ -10,7 +10,7 @@ def test_source_registry_exists_and_valid():
         data = json.load(f)
 
     assert isinstance(data, list)
-    assert len(data) >= 8, "Registry should contain verified pilot sources"
+    assert len(data) >= 12, "Registry should contain all 12 audited pilot sources"
 
     required_fields = {
         "source_id",
@@ -37,6 +37,7 @@ def test_source_registry_exists_and_valid():
         "content_verified",
         "metadata_verified",
         "current_status_verified",
+        "needs_verification",
         "superseded",
         "withdrawn",
     }
