@@ -54,7 +54,7 @@
   ],
   "entities": [
     {
-      "entity_id": "ENT-DOC-011-0001",
+      "entity_id": "ENT-DOC011-0001",
       "entity_type": "standard",
       "name": "CRO Amendment 2026",
       "value": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
@@ -65,7 +65,29 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-011-0002",
+      "entity_id": "ENT-DOC011-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "value": "National Standards Body of India",
+      "document_id": "DOC-011",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC011-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "value": "Statutory Order Authority",
+      "document_id": "DOC-011",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC011-0004",
       "entity_type": "referenced_standard",
       "name": "IS 16102 (Part 1):2012",
       "value": "IS 16102 (Part 1):2012",
@@ -76,7 +98,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-011-0003",
+      "entity_id": "ENT-DOC011-0005",
       "entity_type": "referenced_standard",
       "name": "IS 16102 (Part 1):2026",
       "value": "IS 16102 (Part 1):2026",
@@ -152,8 +174,8 @@
   ],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:16:52.581711+00:00",
-    "total_entities": 3,
+    "normalized_at": "2026-08-30T15:19:53.946338+00:00",
+    "total_entities": 5,
     "total_requirements": 0,
     "total_relationships": 5,
     "total_tables": 0,

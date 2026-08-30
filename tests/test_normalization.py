@@ -1,12 +1,14 @@
 """
-Validation tests for Phase 2D Semantic Normalization, Clause Classification, and Entity Extraction.
+Validation tests for Phase 2D Semantic Normalization, Clause Classification, Entity Families, and Requirements.
 """
 
 import json
 from pathlib import Path
 import pytest
 from ai.processing.clause_classifier import ClauseClassifier
+from ai.processing.entity_extractor import EntityExtractor
 from ai.processing.normalizer import DocumentNormalizer
+from ai.processing.requirement_extractor import RequirementExtractor
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 NORMALIZED_DIR = ROOT_DIR / "data" / "normalized"
@@ -45,22 +47,61 @@ def test_clause_classifier_roles():
     assert "acceptance_criterion" in res_test["semantic_tags"] or "test_method" in res_test["semantic_tags"]
 
 
-def test_requirements_conform_to_2d1_schema(normalized_documents):
-    """Verify that requirement statements adhere strictly to the 2D-1 schema."""
+def test_2d3_entity_families_in_doc_001(normalized_documents):
+    """Verify that DOC-001 extracts all 7 required entity families (2D-3)."""
+    doc_001 = next(d for m, d in normalized_documents if d["document_id"] == "DOC-001")
+    entities = doc_001.get("entities", [])
+    types = {e["entity_type"] for e in entities}
+
+    # Family A: Standards
+    assert "standard" in types or "referenced_standard" in types
+    # Family B: Products & Components
+    assert "product" in types
+    assert "lamp_cap" in types
+    # Family C & D: Parameters, Values & Units
+    assert "value_and_unit" in types
+    # Family F: Tests
+    assert "test" in types
+    # Family G: Authorities
+    assert "authority" in types
+
+    # Check specific entity instances
+    entity_names = [e["name"].upper() for e in entities]
+    assert any("B22D" in n or "E27" in n for n in entity_names)
+    assert any("INSULATION RESISTANCE" in n for n in entity_names)
+    assert any("BUREAU OF INDIAN STANDARDS" in n for n in entity_names)
+
+
+def test_2d4_and_2d5_requirements_with_conditions(normalized_documents):
+    """Verify that requirements contain parameter, operator, value, unit, and test conditions (2D-4 & 2D-5)."""
     doc_001 = next(d for m, d in normalized_documents if d["document_id"] == "DOC-001")
     reqs = doc_001.get("requirements", [])
     assert len(reqs) > 0
 
-    req_insulation = next((r for r in reqs if r["requirement"] == "insulation resistance"), None)
-    assert req_insulation is not None
-    assert req_insulation["entity_type"] == "requirement"
-    assert "conditions" in req_insulation
-    assert "duration" in req_insulation["conditions"]
-    assert "test" in req_insulation
-    assert "voltage" in req_insulation["test"]
-    assert "acceptance_criterion" in req_insulation
-    assert req_insulation["acceptance_criterion"]["minimum"] == 4.0
-    assert req_insulation["acceptance_criterion"]["unit"] == "MΩ"
+    # 1. Insulation Resistance (>= 4 MΩ under 48h, 91-95% RH)
+    req_ir = next((r for r in reqs if r.get("parameter") == "insulation_resistance"), None)
+    assert req_ir is not None
+    assert req_ir["operator"] == ">="
+    assert req_ir["value"] == 4.0
+    assert req_ir["unit"] == "MΩ"
+    assert "conditions" in req_ir
+    assert "humidity_treatment" in req_ir["conditions"]
+    assert "test" in req_ir
+    assert "applied_voltage" in req_ir["test"]
+
+    # 2. Cap Temperature Rise (<= 120 K)
+    req_temp = next((r for r in reqs if r.get("parameter") == "cap_temperature_rise"), None)
+    assert req_temp is not None
+    assert req_temp["operator"] == "<="
+    assert req_temp["value"] == 120.0
+    assert req_temp["unit"] == "K"
+    assert "conditions" in req_temp
+
+    # 3. ITQ Sampling (25 lamps)
+    req_itq = next((r for r in reqs if r.get("parameter") == "inspection_test_quantity"), None)
+    assert req_itq is not None
+    assert req_itq["value"] == 25
+    assert req_itq["unit"] == "lamps"
 
 
 def test_clauses_contain_semantic_classification(normalized_documents):

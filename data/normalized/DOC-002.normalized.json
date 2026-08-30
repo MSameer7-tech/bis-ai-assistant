@@ -775,7 +775,35 @@
             "definition",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "sampling_quantity",
+              "requirement_id": "REQ-DOC002-3.25-ITQ",
+              "clause": "3.25",
+              "subject": "batch / inspection lot",
+              "parameter": "inspection_test_quantity",
+              "operator": "==",
+              "value": 25,
+              "unit": "lamps",
+              "conditions": {
+                "selection_stage": "sampling for type approval and compliance verification"
+              },
+              "test": {
+                "distribution": "lamps divided into test groups as specified in standard"
+              },
+              "acceptance_criterion": {
+                "sample_size": 25,
+                "unit": "lamps",
+                "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+              },
+              "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+              "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+              "source_pages": [
+                5
+              ]
+            }
+          ]
         },
         {
           "clause_number": "3.26",
@@ -973,27 +1001,32 @@
       "requirements": [
         {
           "entity_type": "requirement",
-          "requirement_id": "REQ-DOC002-4-004",
+          "requirement_type": "mandatory_marking",
+          "requirement_id": "REQ-DOC002-4-MARK",
           "clause": "4",
           "subject": "self-ballasted LED lamp",
-          "requirement": "mandatory product markings",
+          "parameter": "mandatory_marking_elements",
+          "operator": "mandatory",
+          "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+          "unit": null,
           "conditions": {
-            "location": "marked distinctly and durably on the lamp and packaging"
+            "durability_test": "Rubbing 15 s with hexane soaked cloth"
           },
           "test": {
-            "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+            "inspection": "Visual examination after durability rubbing"
           },
           "acceptance_criterion": {
             "mandatory_items": [
-              "Mark of origin (trademark or brand)",
+              "Mark of origin (trademark)",
               "Rated voltage or voltage range (V)",
               "Rated wattage (W)",
               "Rated frequency (Hz)",
-              "Standard Mark (CRS Registration R-XXXXXXXX)"
+              "Standard Mark (CRS Registration Number)"
             ],
-            "operator": "mandatory",
-            "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+            "criterion_text": "Marking shall remain legible and easily discernible"
           },
+          "exceptions": null,
+          "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
           "source_pages": [
             5,
             6
@@ -1167,7 +1200,35 @@
             "sampling_requirement",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "sampling_quantity",
+              "requirement_id": "REQ-DOC002-7.1-ITQ",
+              "clause": "7.1",
+              "subject": "batch / inspection lot",
+              "parameter": "inspection_test_quantity",
+              "operator": "==",
+              "value": 25,
+              "unit": "lamps",
+              "conditions": {
+                "selection_stage": "sampling for type approval and compliance verification"
+              },
+              "test": {
+                "distribution": "lamps divided into test groups as specified in standard"
+              },
+              "acceptance_criterion": {
+                "sample_size": 25,
+                "unit": "lamps",
+                "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+              },
+              "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+              "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+              "source_pages": [
+                6
+              ]
+            }
+          ]
         },
         {
           "clause_number": "7.2",
@@ -2495,7 +2556,35 @@
           "semantic_tags": [
             "acceptance_criterion"
           ],
-          "requirements": []
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "sampling_quantity",
+              "requirement_id": "REQ-DOC002-11.1-ITQ",
+              "clause": "11.1",
+              "subject": "batch / inspection lot",
+              "parameter": "inspection_test_quantity",
+              "operator": "==",
+              "value": 25,
+              "unit": "lamps",
+              "conditions": {
+                "selection_stage": "sampling for type approval and compliance verification"
+              },
+              "test": {
+                "distribution": "lamps divided into test groups as specified in standard"
+              },
+              "acceptance_criterion": {
+                "sample_size": 25,
+                "unit": "lamps",
+                "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+              },
+              "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+              "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+              "source_pages": [
+                11
+              ]
+            }
+          ]
         },
         {
           "clause_number": "11.2",
@@ -2923,7 +3012,7 @@
   ],
   "entities": [
     {
-      "entity_id": "ENT-DOC-002-0001",
+      "entity_id": "ENT-DOC002-0001",
       "entity_type": "standard",
       "name": "IS 16102 (Part 2) : 2017",
       "value": "Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements",
@@ -2934,7 +3023,29 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0002",
+      "entity_id": "ENT-DOC002-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "value": "National Standards Body of India",
+      "document_id": "DOC-002",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC002-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "value": "Statutory Order Authority",
+      "document_id": "DOC-002",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC002-0004",
       "entity_type": "product",
       "name": "Self-Ballasted LED Lamp",
       "value": "Self-Ballasted LED Lamps for General Lighting Services",
@@ -2945,8 +3056,19 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0003",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0005",
+      "entity_type": "component",
+      "name": "Lamp Cap",
+      "value": "Standard Lamp Fitment Cap",
+      "document_id": "DOC-002",
+      "source_clause": "6",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC002-0006",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "45\nv",
       "document_id": "DOC-002",
@@ -2957,7 +3079,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-002-0004",
+      "entity_id": "ENT-DOC002-0007",
       "entity_type": "referenced_standard",
       "name": "IS 1885",
       "value": "IS 1885",
@@ -2970,7 +3092,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0005",
+      "entity_id": "ENT-DOC002-0008",
       "entity_type": "referenced_standard",
       "name": "IS 16101",
       "value": "IS 16101",
@@ -2983,7 +3105,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0006",
+      "entity_id": "ENT-DOC002-0009",
       "entity_type": "referenced_standard",
       "name": "IS 16101",
       "value": "IS 16101",
@@ -2995,7 +3117,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0007",
+      "entity_id": "ENT-DOC002-0010",
       "entity_type": "referenced_standard",
       "name": "IS 16102",
       "value": "IS 16102",
@@ -3007,7 +3129,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0008",
+      "entity_id": "ENT-DOC002-0011",
       "entity_type": "referenced_standard",
       "name": "IS 10322",
       "value": "IS 10322",
@@ -3019,8 +3141,8 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0009",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0012",
+      "entity_type": "value_and_unit",
       "name": "temperature",
       "value": "10°C",
       "document_id": "DOC-002",
@@ -3032,7 +3154,7 @@
       "unit": "°C"
     },
     {
-      "entity_id": "ENT-DOC-002-0010",
+      "entity_id": "ENT-DOC002-0013",
       "entity_type": "referenced_standard",
       "name": "IS 16102",
       "value": "IS 16102",
@@ -3043,8 +3165,8 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0011",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0014",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "2\nv",
       "document_id": "DOC-002",
@@ -3055,8 +3177,8 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-002-0012",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0015",
+      "entity_type": "value_and_unit",
       "name": "wattage",
       "value": "5 W",
       "document_id": "DOC-002",
@@ -3067,8 +3189,8 @@
       "unit": "W"
     },
     {
-      "entity_id": "ENT-DOC-002-0013",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0016",
+      "entity_type": "value_and_unit",
       "name": "wattage",
       "value": "5 W",
       "document_id": "DOC-002",
@@ -3079,8 +3201,8 @@
       "unit": "W"
     },
     {
-      "entity_id": "ENT-DOC-002-0014",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0017",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "0\nv",
       "document_id": "DOC-002",
@@ -3092,8 +3214,8 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-002-0015",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0018",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "46\nv",
       "document_id": "DOC-002",
@@ -3104,8 +3226,8 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-002-0016",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC002-0019",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "0.40\nv",
       "document_id": "DOC-002",
@@ -3116,7 +3238,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-002-0017",
+      "entity_id": "ENT-DOC002-0020",
       "entity_type": "referenced_standard",
       "name": "IS 16102",
       "value": "IS 16102",
@@ -3127,7 +3249,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0018",
+      "entity_id": "ENT-DOC002-0021",
       "entity_type": "annex",
       "name": "ANNEX A",
       "value": "ANNEX A",
@@ -3140,7 +3262,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-002-0019",
+      "entity_id": "ENT-DOC002-0022",
       "entity_type": "annex",
       "name": "ANNEX B",
       "value": "ANNEX B",
@@ -3230,30 +3352,116 @@
   "requirements": [
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC002-4-004",
-      "clause": "4",
-      "subject": "self-ballasted LED lamp",
-      "requirement": "mandatory product markings",
+      "requirement_type": "sampling_quantity",
+      "requirement_id": "REQ-DOC002-3.25-ITQ",
+      "clause": "3.25",
+      "subject": "batch / inspection lot",
+      "parameter": "inspection_test_quantity",
+      "operator": "==",
+      "value": 25,
+      "unit": "lamps",
       "conditions": {
-        "location": "marked distinctly and durably on the lamp and packaging"
+        "selection_stage": "sampling for type approval and compliance verification"
       },
       "test": {
-        "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+        "distribution": "lamps divided into test groups as specified in standard"
+      },
+      "acceptance_criterion": {
+        "sample_size": 25,
+        "unit": "lamps",
+        "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+      },
+      "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+      "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+      "source_pages": [
+        5
+      ]
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "mandatory_marking",
+      "requirement_id": "REQ-DOC002-4-MARK",
+      "clause": "4",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "mandatory_marking_elements",
+      "operator": "mandatory",
+      "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+      "unit": null,
+      "conditions": {
+        "durability_test": "Rubbing 15 s with hexane soaked cloth"
+      },
+      "test": {
+        "inspection": "Visual examination after durability rubbing"
       },
       "acceptance_criterion": {
         "mandatory_items": [
-          "Mark of origin (trademark or brand)",
+          "Mark of origin (trademark)",
           "Rated voltage or voltage range (V)",
           "Rated wattage (W)",
           "Rated frequency (Hz)",
-          "Standard Mark (CRS Registration R-XXXXXXXX)"
+          "Standard Mark (CRS Registration Number)"
         ],
-        "operator": "mandatory",
-        "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+        "criterion_text": "Marking shall remain legible and easily discernible"
       },
+      "exceptions": null,
+      "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
       "source_pages": [
         5,
         6
+      ]
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "sampling_quantity",
+      "requirement_id": "REQ-DOC002-7.1-ITQ",
+      "clause": "7.1",
+      "subject": "batch / inspection lot",
+      "parameter": "inspection_test_quantity",
+      "operator": "==",
+      "value": 25,
+      "unit": "lamps",
+      "conditions": {
+        "selection_stage": "sampling for type approval and compliance verification"
+      },
+      "test": {
+        "distribution": "lamps divided into test groups as specified in standard"
+      },
+      "acceptance_criterion": {
+        "sample_size": 25,
+        "unit": "lamps",
+        "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+      },
+      "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+      "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "sampling_quantity",
+      "requirement_id": "REQ-DOC002-11.1-ITQ",
+      "clause": "11.1",
+      "subject": "batch / inspection lot",
+      "parameter": "inspection_test_quantity",
+      "operator": "==",
+      "value": 25,
+      "unit": "lamps",
+      "conditions": {
+        "selection_stage": "sampling for type approval and compliance verification"
+      },
+      "test": {
+        "distribution": "lamps divided into test groups as specified in standard"
+      },
+      "acceptance_criterion": {
+        "sample_size": 25,
+        "unit": "lamps",
+        "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+      },
+      "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+      "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+      "source_pages": [
+        11
       ]
     }
   ],
@@ -3338,9 +3546,9 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:16:52.577784+00:00",
-    "total_entities": 19,
-    "total_requirements": 1,
+    "normalized_at": "2026-08-30T15:19:53.942100+00:00",
+    "total_entities": 22,
+    "total_requirements": 4,
     "total_relationships": 6,
     "total_tables": 1,
     "total_references": 4,

@@ -262,23 +262,28 @@
       "requirements": [
         {
           "entity_type": "requirement",
-          "requirement_id": "REQ-DOC001-1-003",
+          "requirement_type": "maximum_limit",
+          "requirement_id": "REQ-DOC001-1-WATT",
           "clause": "1",
           "subject": "self-ballasted LED lamp",
-          "requirement": "rated wattage limit",
+          "parameter": "rated_wattage",
+          "operator": "<=",
+          "value": 60.0,
+          "unit": "W",
           "conditions": {
+            "supply_voltage": "up to 250 V a.c. 50 Hz",
             "intended_use": "domestic and similar general lighting services"
           },
           "test": {
-            "rated_voltage": "up to 250 V a.c. 50 Hz",
             "lamp_caps": "B15d, B22d, E11, E12, E14, E17, E26, E27, GU10"
           },
           "acceptance_criterion": {
             "maximum": 60.0,
             "unit": "W",
-            "operator": "<=",
             "criterion_text": "Applies to self-ballasted LED lamps having rated wattage up to 60 W"
           },
+          "exceptions": null,
+          "evidence": "This standard specifies safety for LED lamps having a rated wattage up to 60 W.",
           "source_pages": [
             6,
             11,
@@ -306,25 +311,60 @@
       "requirements": [
         {
           "entity_type": "requirement",
-          "requirement_id": "REQ-DOC001-2-005",
+          "requirement_type": "maximum_limit",
+          "requirement_id": "REQ-DOC001-2-TEMP",
+          "clause": "2",
+          "subject": "complete lamp",
+          "parameter": "cap_temperature_rise",
+          "operator": "<=",
+          "value": 120.0,
+          "unit": "K",
+          "conditions": {
+            "ambient_temperature": "25 ± 5 °C",
+            "operating_voltage": "rated voltage",
+            "test_method": "IS 8913"
+          },
+          "test": {
+            "lampholder_type": "standard test lampholder fitted to lamp",
+            "measurement_location": "cap contact surface"
+          },
+          "acceptance_criterion": {
+            "maximum": 120.0,
+            "unit": "K",
+            "criterion_text": "The cap temperature rise of the complete lamp shall not exceed 120 K"
+          },
+          "exceptions": null,
+          "evidence": "The cap temperature rise of the complete lamp shall not exceed 120 K.",
+          "source_pages": [
+            6
+          ]
+        },
+        {
+          "entity_type": "requirement",
+          "requirement_type": "minimum_limit",
+          "requirement_id": "REQ-DOC001-2-GLOW",
           "clause": "2",
           "subject": "insulating material",
-          "requirement": "resistance to heat and fire (glow-wire test)",
+          "parameter": "glow_wire_temperature",
+          "operator": ">=",
+          "value": 650.0,
+          "unit": "°C",
           "conditions": {
-            "test_method": "IS 11000 (Part 2/Sec 1)",
-            "specimen_support": "tissue paper spread 200 mm below specimen"
+            "test_standard": "IS 11000 (Part 2/Sec 1)",
+            "specimen_support": "tissue paper spread 200 ± 5 mm below specimen"
           },
           "test": {
             "temperature_live_holding": "750 °C",
             "temperature_non_live": "650 °C",
-            "duration_contact": "30 s"
+            "contact_duration": "30 s"
           },
           "acceptance_criterion": {
             "minimum": 650.0,
             "unit": "°C",
-            "operator": ">=",
-            "criterion_text": "Flames or glowing shall extinguish within 30 s of withdrawing glow-wire, without igniting tissue paper"
+            "criterion_text": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire"
           },
+          "exceptions": "Not applicable to ceramic materials",
+          "evidence": "Glow-wire test at 650°C / 750°C according to IS 11000 (Part 2/Sec 1).",
           "source_pages": [
             6
           ]
@@ -552,13 +592,16 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC001-3.11-002",
+              "requirement_type": "dielectric_test",
+              "requirement_id": "REQ-DOC001-3.11-ES",
               "clause": "3.11",
               "subject": "self-ballasted LED lamp",
-              "requirement": "dielectric electric strength",
+              "parameter": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
               "conditions": {
-                "humidity_treatment": "48 h at 91-95% RH",
-                "ambient_condition": "immediately following humidity treatment"
+                "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
                 "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -568,9 +611,10 @@
               "acceptance_criterion": {
                 "minimum": 4000,
                 "unit": "V a.c.",
-                "operator": "==",
                 "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
               },
+              "exceptions": null,
+              "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 7
               ]
@@ -766,27 +810,32 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC001-5.1-004",
+              "requirement_type": "mandatory_marking",
+              "requirement_id": "REQ-DOC001-5.1-MARK",
               "clause": "5.1",
               "subject": "self-ballasted LED lamp",
-              "requirement": "mandatory product markings",
+              "parameter": "mandatory_marking_elements",
+              "operator": "mandatory",
+              "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+              "unit": null,
               "conditions": {
-                "location": "marked distinctly and durably on the lamp and packaging"
+                "durability_test": "Rubbing 15 s with hexane soaked cloth"
               },
               "test": {
-                "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+                "inspection": "Visual examination after durability rubbing"
               },
               "acceptance_criterion": {
                 "mandatory_items": [
-                  "Mark of origin (trademark or brand)",
+                  "Mark of origin (trademark)",
                   "Rated voltage or voltage range (V)",
                   "Rated wattage (W)",
                   "Rated frequency (Hz)",
-                  "Standard Mark (CRS Registration R-XXXXXXXX)"
+                  "Standard Mark (CRS Registration Number)"
                 ],
-                "operator": "mandatory",
-                "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+                "criterion_text": "Marking shall remain legible and easily discernible"
               },
+              "exceptions": null,
+              "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
               "source_pages": [
                 7
               ]
@@ -1029,13 +1078,16 @@
       "requirements": [
         {
           "entity_type": "requirement",
-          "requirement_id": "REQ-DOC001-7-002",
+          "requirement_type": "dielectric_test",
+          "requirement_id": "REQ-DOC001-7-ES",
           "clause": "7",
           "subject": "self-ballasted LED lamp",
-          "requirement": "dielectric electric strength",
+          "parameter": "dielectric_electric_strength",
+          "operator": "==",
+          "value": 4000,
+          "unit": "V a.c.",
           "conditions": {
-            "humidity_treatment": "48 h at 91-95% RH",
-            "ambient_condition": "immediately following humidity treatment"
+            "humidity_treatment": "immediately following 48 h humidity treatment"
           },
           "test": {
             "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1045,9 +1097,10 @@
           "acceptance_criterion": {
             "minimum": 4000,
             "unit": "V a.c.",
-            "operator": "==",
             "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
           },
+          "exceptions": null,
+          "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
           "source_pages": [
             9,
             11
@@ -1099,25 +1152,31 @@
               "requirements": [
                 {
                   "entity_type": "requirement",
-                  "requirement_id": "REQ-DOC001-8.1.1-001",
+                  "requirement_type": "minimum_limit",
+                  "requirement_id": "REQ-DOC001-8.1.1-IR",
                   "clause": "8.1.1",
                   "subject": "self-ballasted LED lamp",
-                  "requirement": "insulation resistance",
+                  "parameter": "insulation_resistance",
+                  "operator": ">=",
+                  "value": 4.0,
+                  "unit": "MΩ",
                   "conditions": {
-                    "humidity_treatment": "48 h at 91-95% RH",
+                    "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
                     "temperature": "25-35 °C",
                     "duration": "48 h"
                   },
                   "test": {
-                    "voltage": "approximately 500 V d.c.",
-                    "measurement_time": "1 min after application"
+                    "applied_voltage": "approximately 500 V d.c.",
+                    "measurement_time": "1 min after voltage application",
+                    "test_points": "between live parts and accessible conductive parts"
                   },
                   "acceptance_criterion": {
                     "minimum": 4.0,
                     "unit": "MΩ",
-                    "operator": ">=",
-                    "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+                    "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
                   },
+                  "exceptions": null,
+                  "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
                   "source_pages": [
                     9
                   ]
@@ -1132,13 +1191,16 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC001-8.1-002",
+              "requirement_type": "dielectric_test",
+              "requirement_id": "REQ-DOC001-8.1-ES",
               "clause": "8.1",
               "subject": "self-ballasted LED lamp",
-              "requirement": "dielectric electric strength",
+              "parameter": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
               "conditions": {
-                "humidity_treatment": "48 h at 91-95% RH",
-                "ambient_condition": "immediately following humidity treatment"
+                "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
                 "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1148,9 +1210,10 @@
               "acceptance_criterion": {
                 "minimum": 4000,
                 "unit": "V a.c.",
-                "operator": "==",
                 "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
               },
+              "exceptions": null,
+              "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 9
               ]
@@ -1177,13 +1240,16 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC001-8.2-002",
+              "requirement_type": "dielectric_test",
+              "requirement_id": "REQ-DOC001-8.2-ES",
               "clause": "8.2",
               "subject": "self-ballasted LED lamp",
-              "requirement": "dielectric electric strength",
+              "parameter": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
               "conditions": {
-                "humidity_treatment": "48 h at 91-95% RH",
-                "ambient_condition": "immediately following humidity treatment"
+                "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
                 "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1193,9 +1259,10 @@
               "acceptance_criterion": {
                 "minimum": 4000,
                 "unit": "V a.c.",
-                "operator": "==",
                 "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
               },
+              "exceptions": null,
+              "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 9
               ]
@@ -1705,7 +1772,39 @@
       "semantic_tags": [
         "requirement"
       ],
-      "requirements": []
+      "requirements": [
+        {
+          "entity_type": "requirement",
+          "requirement_type": "maximum_limit",
+          "requirement_id": "REQ-DOC001-10-TEMP",
+          "clause": "10",
+          "subject": "complete lamp",
+          "parameter": "cap_temperature_rise",
+          "operator": "<=",
+          "value": 120.0,
+          "unit": "K",
+          "conditions": {
+            "ambient_temperature": "25 ± 5 °C",
+            "operating_voltage": "rated voltage",
+            "test_method": "IS 8913"
+          },
+          "test": {
+            "lampholder_type": "standard test lampholder fitted to lamp",
+            "measurement_location": "cap contact surface"
+          },
+          "acceptance_criterion": {
+            "maximum": 120.0,
+            "unit": "K",
+            "criterion_text": "The cap temperature rise of the complete lamp shall not exceed 120 K"
+          },
+          "exceptions": null,
+          "evidence": "The cap temperature rise of the complete lamp shall not exceed 120 K.",
+          "source_pages": [
+            11,
+            12
+          ]
+        }
+      ]
     },
     {
       "clause_number": "11",
@@ -1908,25 +2007,30 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC001-12.1-005",
+              "requirement_type": "minimum_limit",
+              "requirement_id": "REQ-DOC001-12.1-GLOW",
               "clause": "12.1",
               "subject": "insulating material",
-              "requirement": "resistance to heat and fire (glow-wire test)",
+              "parameter": "glow_wire_temperature",
+              "operator": ">=",
+              "value": 650.0,
+              "unit": "°C",
               "conditions": {
-                "test_method": "IS 11000 (Part 2/Sec 1)",
-                "specimen_support": "tissue paper spread 200 mm below specimen"
+                "test_standard": "IS 11000 (Part 2/Sec 1)",
+                "specimen_support": "tissue paper spread 200 ± 5 mm below specimen"
               },
               "test": {
                 "temperature_live_holding": "750 °C",
                 "temperature_non_live": "650 °C",
-                "duration_contact": "30 s"
+                "contact_duration": "30 s"
               },
               "acceptance_criterion": {
                 "minimum": 650.0,
                 "unit": "°C",
-                "operator": ">=",
-                "criterion_text": "Flames or glowing shall extinguish within 30 s of withdrawing glow-wire, without igniting tissue paper"
+                "criterion_text": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire"
               },
+              "exceptions": "Not applicable to ceramic materials",
+              "evidence": "Glow-wire test at 650°C / 750°C according to IS 11000 (Part 2/Sec 1).",
               "source_pages": [
                 13,
                 14
@@ -2231,7 +2335,35 @@
             "requirement",
             "sampling_requirement"
           ],
-          "requirements": []
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "sampling_quantity",
+              "requirement_id": "REQ-DOC001-15.1-ITQ",
+              "clause": "15.1",
+              "subject": "batch / inspection lot",
+              "parameter": "inspection_test_quantity",
+              "operator": "==",
+              "value": 25,
+              "unit": "lamps",
+              "conditions": {
+                "selection_stage": "sampling for type approval and compliance verification"
+              },
+              "test": {
+                "distribution": "lamps divided into test groups as specified in standard"
+              },
+              "acceptance_criterion": {
+                "sample_size": 25,
+                "unit": "lamps",
+                "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+              },
+              "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+              "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+              "source_pages": [
+                14
+              ]
+            }
+          ]
         },
         {
           "clause_number": "15.2",
@@ -2252,7 +2384,36 @@
             "sampling_requirement",
             "test_method"
           ],
-          "requirements": []
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "sampling_quantity",
+              "requirement_id": "REQ-DOC001-15.2-ITQ",
+              "clause": "15.2",
+              "subject": "batch / inspection lot",
+              "parameter": "inspection_test_quantity",
+              "operator": "==",
+              "value": 25,
+              "unit": "lamps",
+              "conditions": {
+                "selection_stage": "sampling for type approval and compliance verification"
+              },
+              "test": {
+                "distribution": "lamps divided into test groups as specified in standard"
+              },
+              "acceptance_criterion": {
+                "sample_size": 25,
+                "unit": "lamps",
+                "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+              },
+              "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+              "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+              "source_pages": [
+                14,
+                15
+              ]
+            }
+          ]
         },
         {
           "clause_number": "15.3",
@@ -2382,38 +2543,47 @@
               "requirements": [
                 {
                   "entity_type": "requirement",
-                  "requirement_id": "REQ-DOC001-16.2.1-001",
+                  "requirement_type": "minimum_limit",
+                  "requirement_id": "REQ-DOC001-16.2.1-IR",
                   "clause": "16.2.1",
                   "subject": "self-ballasted LED lamp",
-                  "requirement": "insulation resistance",
+                  "parameter": "insulation_resistance",
+                  "operator": ">=",
+                  "value": 4.0,
+                  "unit": "MΩ",
                   "conditions": {
-                    "humidity_treatment": "48 h at 91-95% RH",
+                    "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
                     "temperature": "25-35 °C",
                     "duration": "48 h"
                   },
                   "test": {
-                    "voltage": "approximately 500 V d.c.",
-                    "measurement_time": "1 min after application"
+                    "applied_voltage": "approximately 500 V d.c.",
+                    "measurement_time": "1 min after voltage application",
+                    "test_points": "between live parts and accessible conductive parts"
                   },
                   "acceptance_criterion": {
                     "minimum": 4.0,
                     "unit": "MΩ",
-                    "operator": ">=",
-                    "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+                    "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
                   },
+                  "exceptions": null,
+                  "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
                   "source_pages": [
                     15
                   ]
                 },
                 {
                   "entity_type": "requirement",
-                  "requirement_id": "REQ-DOC001-16.2.1-002",
+                  "requirement_type": "dielectric_test",
+                  "requirement_id": "REQ-DOC001-16.2.1-ES",
                   "clause": "16.2.1",
                   "subject": "self-ballasted LED lamp",
-                  "requirement": "dielectric electric strength",
+                  "parameter": "dielectric_electric_strength",
+                  "operator": "==",
+                  "value": 4000,
+                  "unit": "V a.c.",
                   "conditions": {
-                    "humidity_treatment": "48 h at 91-95% RH",
-                    "ambient_condition": "immediately following humidity treatment"
+                    "humidity_treatment": "immediately following 48 h humidity treatment"
                   },
                   "test": {
                     "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -2423,9 +2593,10 @@
                   "acceptance_criterion": {
                     "minimum": 4000,
                     "unit": "V a.c.",
-                    "operator": "==",
                     "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
                   },
+                  "exceptions": null,
+                  "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
                   "source_pages": [
                     15
                   ]
@@ -2490,38 +2661,47 @@
               "requirements": [
                 {
                   "entity_type": "requirement",
-                  "requirement_id": "REQ-DOC001-17.1.1-001",
+                  "requirement_type": "minimum_limit",
+                  "requirement_id": "REQ-DOC001-17.1.1-IR",
                   "clause": "17.1.1",
                   "subject": "self-ballasted LED lamp",
-                  "requirement": "insulation resistance",
+                  "parameter": "insulation_resistance",
+                  "operator": ">=",
+                  "value": 4.0,
+                  "unit": "MΩ",
                   "conditions": {
-                    "humidity_treatment": "48 h at 91-95% RH",
+                    "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
                     "temperature": "25-35 °C",
                     "duration": "48 h"
                   },
                   "test": {
-                    "voltage": "approximately 500 V d.c.",
-                    "measurement_time": "1 min after application"
+                    "applied_voltage": "approximately 500 V d.c.",
+                    "measurement_time": "1 min after voltage application",
+                    "test_points": "between live parts and accessible conductive parts"
                   },
                   "acceptance_criterion": {
                     "minimum": 4.0,
                     "unit": "MΩ",
-                    "operator": ">=",
-                    "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+                    "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
                   },
+                  "exceptions": null,
+                  "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
                   "source_pages": [
                     15
                   ]
                 },
                 {
                   "entity_type": "requirement",
-                  "requirement_id": "REQ-DOC001-17.1.1-002",
+                  "requirement_type": "dielectric_test",
+                  "requirement_id": "REQ-DOC001-17.1.1-ES",
                   "clause": "17.1.1",
                   "subject": "self-ballasted LED lamp",
-                  "requirement": "dielectric electric strength",
+                  "parameter": "dielectric_electric_strength",
+                  "operator": "==",
+                  "value": 4000,
+                  "unit": "V a.c.",
                   "conditions": {
-                    "humidity_treatment": "48 h at 91-95% RH",
-                    "ambient_condition": "immediately following humidity treatment"
+                    "humidity_treatment": "immediately following 48 h humidity treatment"
                   },
                   "test": {
                     "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -2531,9 +2711,10 @@
                   "acceptance_criterion": {
                     "minimum": 4000,
                     "unit": "V a.c.",
-                    "operator": "==",
                     "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
                   },
+                  "exceptions": null,
+                  "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
                   "source_pages": [
                     15
                   ]
@@ -2648,13 +2829,16 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC001-17.2-002",
+              "requirement_type": "dielectric_test",
+              "requirement_id": "REQ-DOC001-17.2-ES",
               "clause": "17.2",
               "subject": "self-ballasted LED lamp",
-              "requirement": "dielectric electric strength",
+              "parameter": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
               "conditions": {
-                "humidity_treatment": "48 h at 91-95% RH",
-                "ambient_condition": "immediately following humidity treatment"
+                "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
                 "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -2664,9 +2848,10 @@
               "acceptance_criterion": {
                 "minimum": 4000,
                 "unit": "V a.c.",
-                "operator": "==",
                 "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
               },
+              "exceptions": null,
+              "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 15,
                 16
@@ -2684,7 +2869,7 @@
   ],
   "entities": [
     {
-      "entity_id": "ENT-DOC-001-0001",
+      "entity_id": "ENT-DOC001-0001",
       "entity_type": "standard",
       "name": "IS 16102 (Part 1) : 2012",
       "value": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
@@ -2695,7 +2880,29 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0002",
+      "entity_id": "ENT-DOC001-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "value": "National Standards Body of India",
+      "document_id": "DOC-001",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "value": "Statutory Order Authority",
+      "document_id": "DOC-001",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0004",
       "entity_type": "product",
       "name": "Self-Ballasted LED Lamp",
       "value": "Self-Ballasted LED Lamps for General Lighting Services",
@@ -2706,7 +2913,18 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0003",
+      "entity_id": "ENT-DOC001-0005",
+      "entity_type": "component",
+      "name": "Lamp Cap",
+      "value": "Standard Lamp Fitment Cap",
+      "document_id": "DOC-001",
+      "source_clause": "6",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0006",
       "entity_type": "referenced_standard",
       "name": "IS 16103 (Part 1) : 2012",
       "value": "IS 16103 (Part 1) : 2012",
@@ -2719,8 +2937,8 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0004",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0007",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "250 V",
       "document_id": "DOC-001",
@@ -2733,8 +2951,8 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-001-0005",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0008",
+      "entity_type": "value_and_unit",
       "name": "wattage",
       "value": "60 W",
       "document_id": "DOC-001",
@@ -2747,7 +2965,29 @@
       "unit": "W"
     },
     {
-      "entity_id": "ENT-DOC-001-0006",
+      "entity_id": "ENT-DOC001-0009",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "1.5",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0010",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0011",
       "entity_type": "referenced_standard",
       "name": "IS 16103",
       "value": "IS 16103",
@@ -2760,7 +3000,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0007",
+      "entity_id": "ENT-DOC001-0012",
       "entity_type": "referenced_standard",
       "name": "IS 16101",
       "value": "IS 16101",
@@ -2773,7 +3013,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0008",
+      "entity_id": "ENT-DOC001-0013",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
       "value": "IS 9206",
@@ -2784,7 +3024,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0009",
+      "entity_id": "ENT-DOC001-0014",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
       "value": "IS 8913",
@@ -2796,7 +3036,74 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0010",
+      "entity_id": "ENT-DOC001-0015",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "document_id": "DOC-001",
+      "source_clause": "3.6",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0016",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0017",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0018",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0019",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0020",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-001",
+      "source_clause": "4.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0021",
       "entity_type": "referenced_standard",
       "name": "IS 16108",
       "value": "IS 16108",
@@ -2807,7 +3114,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0011",
+      "entity_id": "ENT-DOC001-0022",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
       "value": "IS 9206",
@@ -2818,7 +3125,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0012",
+      "entity_id": "ENT-DOC001-0023",
       "entity_type": "referenced_standard",
       "name": "IS 15687",
       "value": "IS 15687",
@@ -2830,7 +3137,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0013",
+      "entity_id": "ENT-DOC001-0024",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
       "value": "IS 9206",
@@ -2842,7 +3149,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0014",
+      "entity_id": "ENT-DOC001-0025",
       "entity_type": "lamp_cap",
       "name": "B15D",
       "value": "B15D",
@@ -2854,7 +3161,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0015",
+      "entity_id": "ENT-DOC001-0026",
       "entity_type": "lamp_cap",
       "name": "B22D",
       "value": "B22D",
@@ -2866,7 +3173,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0016",
+      "entity_id": "ENT-DOC001-0027",
       "entity_type": "lamp_cap",
       "name": "E11",
       "value": "E11",
@@ -2878,7 +3185,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0017",
+      "entity_id": "ENT-DOC001-0028",
       "entity_type": "lamp_cap",
       "name": "E12",
       "value": "E12",
@@ -2890,7 +3197,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0018",
+      "entity_id": "ENT-DOC001-0029",
       "entity_type": "lamp_cap",
       "name": "E14",
       "value": "E14",
@@ -2902,7 +3209,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0019",
+      "entity_id": "ENT-DOC001-0030",
       "entity_type": "lamp_cap",
       "name": "E17",
       "value": "E17",
@@ -2914,7 +3221,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0020",
+      "entity_id": "ENT-DOC001-0031",
       "entity_type": "lamp_cap",
       "name": "E26",
       "value": "E26",
@@ -2926,7 +3233,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0021",
+      "entity_id": "ENT-DOC001-0032",
       "entity_type": "lamp_cap",
       "name": "E27",
       "value": "E27",
@@ -2938,7 +3245,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0022",
+      "entity_id": "ENT-DOC001-0033",
       "entity_type": "lamp_cap",
       "name": "GU10",
       "value": "GU10",
@@ -2950,7 +3257,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0023",
+      "entity_id": "ENT-DOC001-0034",
       "entity_type": "lamp_cap",
       "name": "GZ10",
       "value": "GZ10",
@@ -2962,8 +3269,8 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0024",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0035",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "32\nv",
       "document_id": "DOC-001",
@@ -2975,7 +3282,20 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-001-0025",
+      "entity_id": "ENT-DOC001-0036",
+      "entity_type": "value_and_unit",
+      "name": "temperature_rise",
+      "value": "27K",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "unit": "K"
+    },
+    {
+      "entity_id": "ENT-DOC001-0037",
       "entity_type": "lamp_cap",
       "name": "E12",
       "value": "E12",
@@ -2986,7 +3306,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0026",
+      "entity_id": "ENT-DOC001-0038",
       "entity_type": "lamp_cap",
       "name": "E14",
       "value": "E14",
@@ -2997,7 +3317,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0027",
+      "entity_id": "ENT-DOC001-0039",
       "entity_type": "lamp_cap",
       "name": "E17",
       "value": "E17",
@@ -3008,7 +3328,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0028",
+      "entity_id": "ENT-DOC001-0040",
       "entity_type": "lamp_cap",
       "name": "E26",
       "value": "E26",
@@ -3019,7 +3339,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0029",
+      "entity_id": "ENT-DOC001-0041",
       "entity_type": "lamp_cap",
       "name": "E27",
       "value": "E27",
@@ -3030,7 +3350,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0030",
+      "entity_id": "ENT-DOC001-0042",
       "entity_type": "lamp_cap",
       "name": "GU10",
       "value": "GU10",
@@ -3041,7 +3361,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0031",
+      "entity_id": "ENT-DOC001-0043",
       "entity_type": "lamp_cap",
       "name": "GZ10",
       "value": "GZ10",
@@ -3052,7 +3372,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0032",
+      "entity_id": "ENT-DOC001-0044",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
       "value": "IS 9206",
@@ -3064,7 +3384,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0033",
+      "entity_id": "ENT-DOC001-0045",
       "entity_type": "lamp_cap",
       "name": "B22",
       "value": "B22",
@@ -3076,7 +3396,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0034",
+      "entity_id": "ENT-DOC001-0046",
       "entity_type": "lamp_cap",
       "name": "B15",
       "value": "B15",
@@ -3088,7 +3408,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0035",
+      "entity_id": "ENT-DOC001-0047",
       "entity_type": "lamp_cap",
       "name": "GU10",
       "value": "GU10",
@@ -3100,7 +3420,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0036",
+      "entity_id": "ENT-DOC001-0048",
       "entity_type": "lamp_cap",
       "name": "GZ10",
       "value": "GZ10",
@@ -3112,7 +3432,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0037",
+      "entity_id": "ENT-DOC001-0049",
       "entity_type": "lamp_cap",
       "name": "GX53",
       "value": "GX53",
@@ -3124,7 +3444,53 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0038",
+      "entity_id": "ENT-DOC001-0050",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0051",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "8",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0052",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "8.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0053",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "8.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0054",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -3135,8 +3501,19 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0039",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0055",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0056",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "500 V",
       "document_id": "DOC-001",
@@ -3147,19 +3524,20 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-001-0040",
-      "entity_type": "threshold",
+      "entity_id": "ENT-DOC001-0057",
+      "entity_type": "value_and_unit",
       "name": "insulation_resistance",
       "value": "4 MΩ",
       "document_id": "DOC-001",
       "source_clause": "8.1.1",
       "source_pages": [
         9
-      ]
+      ],
+      "unit": "MΩ"
     },
     {
-      "entity_id": "ENT-DOC-001-0041",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0058",
+      "entity_type": "value_and_unit",
       "name": "temperature",
       "value": "1°C",
       "document_id": "DOC-001",
@@ -3170,7 +3548,7 @@
       "unit": "°C"
     },
     {
-      "entity_id": "ENT-DOC-001-0042",
+      "entity_id": "ENT-DOC001-0059",
       "entity_type": "referenced_standard",
       "name": "IS 10322",
       "value": "IS 10322",
@@ -3181,7 +3559,43 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0043",
+      "entity_id": "ENT-DOC001-0060",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "8.2",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0061",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "8.2",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0062",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "9",
+      "source_pages": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0063",
       "entity_type": "lamp_cap",
       "name": "B15D",
       "value": "B15D",
@@ -3194,8 +3608,32 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0044",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0064",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "9.1",
+      "source_pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0065",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "9.3",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0066",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "0.8\nv",
       "document_id": "DOC-001",
@@ -3206,7 +3644,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-001-0045",
+      "entity_id": "ENT-DOC001-0067",
       "entity_type": "lamp_cap",
       "name": "B15",
       "value": "B15",
@@ -3218,7 +3656,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0046",
+      "entity_id": "ENT-DOC001-0068",
       "entity_type": "lamp_cap",
       "name": "B22",
       "value": "B22",
@@ -3230,7 +3668,19 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0047",
+      "entity_id": "ENT-DOC001-0069",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "0.0",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0070",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
       "value": "IS 8913",
@@ -3242,8 +3692,20 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0048",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0071",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0072",
+      "entity_type": "value_and_unit",
       "name": "wattage",
       "value": "60 W",
       "document_id": "DOC-001",
@@ -3255,8 +3717,21 @@
       "unit": "W"
     },
     {
-      "entity_id": "ENT-DOC-001-0049",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0073",
+      "entity_type": "value_and_unit",
+      "name": "temperature_rise",
+      "value": "120 K",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ],
+      "unit": "K"
+    },
+    {
+      "entity_id": "ENT-DOC001-0074",
+      "entity_type": "value_and_unit",
       "name": "temperature",
       "value": "125°C",
       "document_id": "DOC-001",
@@ -3269,7 +3744,7 @@
       "unit": "°C"
     },
     {
-      "entity_id": "ENT-DOC-001-0050",
+      "entity_id": "ENT-DOC001-0075",
       "entity_type": "referenced_standard",
       "name": "IS 11000",
       "value": "IS 11000",
@@ -3281,7 +3756,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0051",
+      "entity_id": "ENT-DOC001-0076",
       "entity_type": "referenced_standard",
       "name": "is 650",
       "value": "is 650",
@@ -3293,7 +3768,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0052",
+      "entity_id": "ENT-DOC001-0077",
       "entity_type": "referenced_standard",
       "name": "IS 4261",
       "value": "IS 4261",
@@ -3305,8 +3780,32 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0053",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0078",
+      "entity_type": "test",
+      "name": "Ball Pressure Test",
+      "value": "Ball Pressure Test",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0079",
+      "entity_type": "test",
+      "name": "Glow Wire Test",
+      "value": "Glow Wire Test",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0080",
+      "entity_type": "value_and_unit",
       "name": "temperature",
       "value": "650 °C",
       "document_id": "DOC-001",
@@ -3318,7 +3817,41 @@
       "unit": "°C"
     },
     {
-      "entity_id": "ENT-DOC-001-0054",
+      "entity_id": "ENT-DOC001-0081",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-001",
+      "source_clause": "13",
+      "source_pages": [
+        11,
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0082",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-001",
+      "source_clause": "13.5",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0083",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-001",
+      "source_clause": "13.1",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0084",
       "entity_type": "referenced_standard",
       "name": "IS 16001",
       "value": "IS 16001",
@@ -3329,7 +3862,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0055",
+      "entity_id": "ENT-DOC001-0085",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -3340,7 +3873,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0056",
+      "entity_id": "ENT-DOC001-0086",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
       "value": "IS 8913",
@@ -3351,8 +3884,31 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0057",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC001-0087",
+      "entity_type": "value_and_unit",
+      "name": "temperature_rise",
+      "value": "1 K",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ],
+      "unit": "K"
+    },
+    {
+      "entity_id": "ENT-DOC001-0088",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "13.6",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0089",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "000 V",
       "document_id": "DOC-001",
@@ -3363,7 +3919,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-001-0058",
+      "entity_id": "ENT-DOC001-0090",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -3375,7 +3931,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0059",
+      "entity_id": "ENT-DOC001-0091",
       "entity_type": "referenced_standard",
       "name": "IS 16002",
       "value": "IS 16002",
@@ -3386,7 +3942,166 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0060",
+      "entity_id": "ENT-DOC001-0092",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0093",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0094",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0095",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0096",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0097",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0098",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0099",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0100",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.4",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0101",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.2",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0102",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.2",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0103",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "value": "Torsion Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.2",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0104",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.2",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0105",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "document_id": "DOC-001",
+      "source_clause": "17.2.1",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0106",
       "entity_type": "annex",
       "name": "ANNEX A",
       "value": "ANNEX A",
@@ -3397,7 +4112,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-001-0061",
+      "entity_id": "ENT-DOC001-0107",
       "entity_type": "annex",
       "name": "ANNEX B",
       "value": "ANNEX B",
@@ -3661,23 +4376,28 @@
   "requirements": [
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-1-003",
+      "requirement_type": "maximum_limit",
+      "requirement_id": "REQ-DOC001-1-WATT",
       "clause": "1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "rated wattage limit",
+      "parameter": "rated_wattage",
+      "operator": "<=",
+      "value": 60.0,
+      "unit": "W",
       "conditions": {
+        "supply_voltage": "up to 250 V a.c. 50 Hz",
         "intended_use": "domestic and similar general lighting services"
       },
       "test": {
-        "rated_voltage": "up to 250 V a.c. 50 Hz",
         "lamp_caps": "B15d, B22d, E11, E12, E14, E17, E26, E27, GU10"
       },
       "acceptance_criterion": {
         "maximum": 60.0,
         "unit": "W",
-        "operator": "<=",
         "criterion_text": "Applies to self-ballasted LED lamps having rated wattage up to 60 W"
       },
+      "exceptions": null,
+      "evidence": "This standard specifies safety for LED lamps having a rated wattage up to 60 W.",
       "source_pages": [
         6,
         11,
@@ -3686,38 +4406,76 @@
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-2-005",
+      "requirement_type": "maximum_limit",
+      "requirement_id": "REQ-DOC001-2-TEMP",
       "clause": "2",
-      "subject": "insulating material",
-      "requirement": "resistance to heat and fire (glow-wire test)",
+      "subject": "complete lamp",
+      "parameter": "cap_temperature_rise",
+      "operator": "<=",
+      "value": 120.0,
+      "unit": "K",
       "conditions": {
-        "test_method": "IS 11000 (Part 2/Sec 1)",
-        "specimen_support": "tissue paper spread 200 mm below specimen"
+        "ambient_temperature": "25 ± 5 °C",
+        "operating_voltage": "rated voltage",
+        "test_method": "IS 8913"
       },
       "test": {
-        "temperature_live_holding": "750 °C",
-        "temperature_non_live": "650 °C",
-        "duration_contact": "30 s"
+        "lampholder_type": "standard test lampholder fitted to lamp",
+        "measurement_location": "cap contact surface"
       },
       "acceptance_criterion": {
-        "minimum": 650.0,
-        "unit": "°C",
-        "operator": ">=",
-        "criterion_text": "Flames or glowing shall extinguish within 30 s of withdrawing glow-wire, without igniting tissue paper"
+        "maximum": 120.0,
+        "unit": "K",
+        "criterion_text": "The cap temperature rise of the complete lamp shall not exceed 120 K"
       },
+      "exceptions": null,
+      "evidence": "The cap temperature rise of the complete lamp shall not exceed 120 K.",
       "source_pages": [
         6
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-3.11-002",
+      "requirement_type": "minimum_limit",
+      "requirement_id": "REQ-DOC001-2-GLOW",
+      "clause": "2",
+      "subject": "insulating material",
+      "parameter": "glow_wire_temperature",
+      "operator": ">=",
+      "value": 650.0,
+      "unit": "°C",
+      "conditions": {
+        "test_standard": "IS 11000 (Part 2/Sec 1)",
+        "specimen_support": "tissue paper spread 200 ± 5 mm below specimen"
+      },
+      "test": {
+        "temperature_live_holding": "750 °C",
+        "temperature_non_live": "650 °C",
+        "contact_duration": "30 s"
+      },
+      "acceptance_criterion": {
+        "minimum": 650.0,
+        "unit": "°C",
+        "criterion_text": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire"
+      },
+      "exceptions": "Not applicable to ceramic materials",
+      "evidence": "Glow-wire test at 650°C / 750°C according to IS 11000 (Part 2/Sec 1).",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC001-3.11-ES",
       "clause": "3.11",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -3727,49 +4485,58 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         7
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-5.1-004",
+      "requirement_type": "mandatory_marking",
+      "requirement_id": "REQ-DOC001-5.1-MARK",
       "clause": "5.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "mandatory product markings",
+      "parameter": "mandatory_marking_elements",
+      "operator": "mandatory",
+      "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+      "unit": null,
       "conditions": {
-        "location": "marked distinctly and durably on the lamp and packaging"
+        "durability_test": "Rubbing 15 s with hexane soaked cloth"
       },
       "test": {
-        "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+        "inspection": "Visual examination after durability rubbing"
       },
       "acceptance_criterion": {
         "mandatory_items": [
-          "Mark of origin (trademark or brand)",
+          "Mark of origin (trademark)",
           "Rated voltage or voltage range (V)",
           "Rated wattage (W)",
           "Rated frequency (Hz)",
-          "Standard Mark (CRS Registration R-XXXXXXXX)"
+          "Standard Mark (CRS Registration Number)"
         ],
-        "operator": "mandatory",
-        "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+        "criterion_text": "Marking shall remain legible and easily discernible"
       },
+      "exceptions": null,
+      "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
       "source_pages": [
         7
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-7-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC001-7-ES",
       "clause": "7",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -3779,9 +4546,10 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         9,
         11
@@ -3789,13 +4557,16 @@
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-8.1-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC001-8.1-ES",
       "clause": "8.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -3805,47 +4576,57 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         9
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-8.1.1-001",
+      "requirement_type": "minimum_limit",
+      "requirement_id": "REQ-DOC001-8.1.1-IR",
       "clause": "8.1.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "insulation resistance",
+      "parameter": "insulation_resistance",
+      "operator": ">=",
+      "value": 4.0,
+      "unit": "MΩ",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
+        "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
         "temperature": "25-35 °C",
         "duration": "48 h"
       },
       "test": {
-        "voltage": "approximately 500 V d.c.",
-        "measurement_time": "1 min after application"
+        "applied_voltage": "approximately 500 V d.c.",
+        "measurement_time": "1 min after voltage application",
+        "test_points": "between live parts and accessible conductive parts"
       },
       "acceptance_criterion": {
         "minimum": 4.0,
         "unit": "MΩ",
-        "operator": ">=",
-        "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+        "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
       },
+      "exceptions": null,
+      "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
       "source_pages": [
         9
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-8.2-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC001-8.2-ES",
       "clause": "8.2",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -3855,34 +4636,71 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         9
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-12.1-005",
+      "requirement_type": "maximum_limit",
+      "requirement_id": "REQ-DOC001-10-TEMP",
+      "clause": "10",
+      "subject": "complete lamp",
+      "parameter": "cap_temperature_rise",
+      "operator": "<=",
+      "value": 120.0,
+      "unit": "K",
+      "conditions": {
+        "ambient_temperature": "25 ± 5 °C",
+        "operating_voltage": "rated voltage",
+        "test_method": "IS 8913"
+      },
+      "test": {
+        "lampholder_type": "standard test lampholder fitted to lamp",
+        "measurement_location": "cap contact surface"
+      },
+      "acceptance_criterion": {
+        "maximum": 120.0,
+        "unit": "K",
+        "criterion_text": "The cap temperature rise of the complete lamp shall not exceed 120 K"
+      },
+      "exceptions": null,
+      "evidence": "The cap temperature rise of the complete lamp shall not exceed 120 K.",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "minimum_limit",
+      "requirement_id": "REQ-DOC001-12.1-GLOW",
       "clause": "12.1",
       "subject": "insulating material",
-      "requirement": "resistance to heat and fire (glow-wire test)",
+      "parameter": "glow_wire_temperature",
+      "operator": ">=",
+      "value": 650.0,
+      "unit": "°C",
       "conditions": {
-        "test_method": "IS 11000 (Part 2/Sec 1)",
-        "specimen_support": "tissue paper spread 200 mm below specimen"
+        "test_standard": "IS 11000 (Part 2/Sec 1)",
+        "specimen_support": "tissue paper spread 200 ± 5 mm below specimen"
       },
       "test": {
         "temperature_live_holding": "750 °C",
         "temperature_non_live": "650 °C",
-        "duration_contact": "30 s"
+        "contact_duration": "30 s"
       },
       "acceptance_criterion": {
         "minimum": 650.0,
         "unit": "°C",
-        "operator": ">=",
-        "criterion_text": "Flames or glowing shall extinguish within 30 s of withdrawing glow-wire, without igniting tissue paper"
+        "criterion_text": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire"
       },
+      "exceptions": "Not applicable to ceramic materials",
+      "evidence": "Glow-wire test at 650°C / 750°C according to IS 11000 (Part 2/Sec 1).",
       "source_pages": [
         13,
         14
@@ -3890,38 +4708,102 @@
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-16.2.1-001",
+      "requirement_type": "sampling_quantity",
+      "requirement_id": "REQ-DOC001-15.1-ITQ",
+      "clause": "15.1",
+      "subject": "batch / inspection lot",
+      "parameter": "inspection_test_quantity",
+      "operator": "==",
+      "value": 25,
+      "unit": "lamps",
+      "conditions": {
+        "selection_stage": "sampling for type approval and compliance verification"
+      },
+      "test": {
+        "distribution": "lamps divided into test groups as specified in standard"
+      },
+      "acceptance_criterion": {
+        "sample_size": 25,
+        "unit": "lamps",
+        "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+      },
+      "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+      "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "sampling_quantity",
+      "requirement_id": "REQ-DOC001-15.2-ITQ",
+      "clause": "15.2",
+      "subject": "batch / inspection lot",
+      "parameter": "inspection_test_quantity",
+      "operator": "==",
+      "value": 25,
+      "unit": "lamps",
+      "conditions": {
+        "selection_stage": "sampling for type approval and compliance verification"
+      },
+      "test": {
+        "distribution": "lamps divided into test groups as specified in standard"
+      },
+      "acceptance_criterion": {
+        "sample_size": 25,
+        "unit": "lamps",
+        "criterion_text": "Inspection test quantity shall consist of 25 lamps"
+      },
+      "exceptions": "Accidentally broken lamps shall be replaced to complete test sequence",
+      "evidence": "Inspection test quantity (ITQ) shall consist of 25 lamps.",
+      "source_pages": [
+        14,
+        15
+      ]
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "minimum_limit",
+      "requirement_id": "REQ-DOC001-16.2.1-IR",
       "clause": "16.2.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "insulation resistance",
+      "parameter": "insulation_resistance",
+      "operator": ">=",
+      "value": 4.0,
+      "unit": "MΩ",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
+        "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
         "temperature": "25-35 °C",
         "duration": "48 h"
       },
       "test": {
-        "voltage": "approximately 500 V d.c.",
-        "measurement_time": "1 min after application"
+        "applied_voltage": "approximately 500 V d.c.",
+        "measurement_time": "1 min after voltage application",
+        "test_points": "between live parts and accessible conductive parts"
       },
       "acceptance_criterion": {
         "minimum": 4.0,
         "unit": "MΩ",
-        "operator": ">=",
-        "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+        "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
       },
+      "exceptions": null,
+      "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
       "source_pages": [
         15
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-16.2.1-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC001-16.2.1-ES",
       "clause": "16.2.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -3931,47 +4813,57 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         15
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-17.1.1-001",
+      "requirement_type": "minimum_limit",
+      "requirement_id": "REQ-DOC001-17.1.1-IR",
       "clause": "17.1.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "insulation resistance",
+      "parameter": "insulation_resistance",
+      "operator": ">=",
+      "value": 4.0,
+      "unit": "MΩ",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
+        "humidity_treatment": "48 h in humidity cabinet at 91-95% RH",
         "temperature": "25-35 °C",
         "duration": "48 h"
       },
       "test": {
-        "voltage": "approximately 500 V d.c.",
-        "measurement_time": "1 min after application"
+        "applied_voltage": "approximately 500 V d.c.",
+        "measurement_time": "1 min after voltage application",
+        "test_points": "between live parts and accessible conductive parts"
       },
       "acceptance_criterion": {
         "minimum": 4.0,
         "unit": "MΩ",
-        "operator": ">=",
-        "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+        "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
       },
+      "exceptions": null,
+      "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
       "source_pages": [
         15
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-17.1.1-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC001-17.1.1-ES",
       "clause": "17.1.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -3981,22 +4873,26 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         15
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC001-17.2-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC001-17.2-ES",
       "clause": "17.2",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -4006,9 +4902,10 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         15,
         16
@@ -4246,9 +5143,9 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:16:52.563678+00:00",
-    "total_entities": 61,
-    "total_requirements": 14,
+    "normalized_at": "2026-08-30T15:19:53.923843+00:00",
+    "total_entities": 107,
+    "total_requirements": 18,
     "total_relationships": 21,
     "total_tables": 2,
     "total_references": 14,

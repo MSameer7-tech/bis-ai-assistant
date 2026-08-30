@@ -120,7 +120,7 @@
   ],
   "entities": [
     {
-      "entity_id": "ENT-DOC-010-0001",
+      "entity_id": "ENT-DOC010-0001",
       "entity_type": "standard",
       "name": "CRO 2021",
       "value": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2021",
@@ -131,7 +131,29 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-010-0002",
+      "entity_id": "ENT-DOC010-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "value": "National Standards Body of India",
+      "document_id": "DOC-010",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC010-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "value": "Statutory Order Authority",
+      "document_id": "DOC-010",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC010-0004",
       "entity_type": "referenced_standard",
       "name": "IS 616 : 2017",
       "value": "IS 616 : 2017",
@@ -142,7 +164,18 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-010-0003",
+      "entity_id": "ENT-DOC010-0005",
+      "entity_type": "referenced_standard",
+      "name": "IEC 60065",
+      "value": "IEC 60065",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC010-0006",
       "entity_type": "referenced_standard",
       "name": "IS 13252 (Part 1) : 2010",
       "value": "IS 13252 (Part 1) : 2010",
@@ -153,7 +186,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-010-0004",
+      "entity_id": "ENT-DOC010-0007",
       "entity_type": "referenced_standard",
       "name": "IS 16102 (Part 1) : 2012",
       "value": "IS 16102 (Part 1) : 2012",
@@ -164,7 +197,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-010-0005",
+      "entity_id": "ENT-DOC010-0008",
       "entity_type": "referenced_standard",
       "name": "IS 16102",
       "value": "IS 16102",
@@ -175,7 +208,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-010-0006",
+      "entity_id": "ENT-DOC010-0009",
       "entity_type": "referenced_standard",
       "name": "IS 15885 (Part 2/Sec 13) : 2012",
       "value": "IS 15885 (Part 2/Sec 13) : 2012",
@@ -186,7 +219,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-010-0007",
+      "entity_id": "ENT-DOC010-0010",
       "entity_type": "referenced_standard",
       "name": "IS 10322 (Part 5/Sec 1) : 2012",
       "value": "IS 10322 (Part 5/Sec 1) : 2012",
@@ -213,7 +246,7 @@
       "relationship_id": "REL-DOC-010-0002",
       "subject": "CRO 2021",
       "predicate": "references",
-      "object": "IS 13252 (Part 1) : 2010",
+      "object": "IEC 60065",
       "document_id": "DOC-010",
       "source_clause": "1",
       "source_pages": [
@@ -224,7 +257,7 @@
       "relationship_id": "REL-DOC-010-0003",
       "subject": "CRO 2021",
       "predicate": "references",
-      "object": "IS 16102 (Part 1) : 2012",
+      "object": "IS 13252 (Part 1) : 2010",
       "document_id": "DOC-010",
       "source_clause": "1",
       "source_pages": [
@@ -235,7 +268,7 @@
       "relationship_id": "REL-DOC-010-0004",
       "subject": "CRO 2021",
       "predicate": "references",
-      "object": "IS 16102",
+      "object": "IS 16102 (Part 1) : 2012",
       "document_id": "DOC-010",
       "source_clause": "1",
       "source_pages": [
@@ -246,7 +279,7 @@
       "relationship_id": "REL-DOC-010-0005",
       "subject": "CRO 2021",
       "predicate": "references",
-      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "object": "IS 16102",
       "document_id": "DOC-010",
       "source_clause": "1",
       "source_pages": [
@@ -257,7 +290,7 @@
       "relationship_id": "REL-DOC-010-0006",
       "subject": "CRO 2021",
       "predicate": "references",
-      "object": "IS 10322 (Part 5/Sec 1) : 2012",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
       "document_id": "DOC-010",
       "source_clause": "1",
       "source_pages": [
@@ -266,6 +299,17 @@
     },
     {
       "relationship_id": "REL-DOC-010-0007",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 10322 (Part 5/Sec 1) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0008",
       "subject": "CRO 2021",
       "predicate": "mandates_scheme",
       "object": "Scheme-II (Compulsory Registration Scheme)",
@@ -276,7 +320,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-010-0008",
+      "relationship_id": "REL-DOC-010-0009",
       "subject": "CRO 2021",
       "predicate": "mandates_standard",
       "object": "IS 16102 (Part 1)",
@@ -287,7 +331,7 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-010-0009",
+      "relationship_id": "REL-DOC-010-0010",
       "subject": "CRO 2021",
       "predicate": "mandates_standard",
       "object": "IS 15885 (Part 2/Sec 13)",
@@ -301,6 +345,7 @@
   "requirements": [],
   "tables": [],
   "references": [
+    "IEC 60065",
     "IS 10322 (Part 5/Sec 1) : 2012",
     "IS 13252 (Part 1) : 2010",
     "IS 15885 (Part 2/Sec 13) : 2012",
@@ -310,12 +355,12 @@
   ],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:16:52.580556+00:00",
-    "total_entities": 7,
+    "normalized_at": "2026-08-30T15:19:53.945350+00:00",
+    "total_entities": 10,
     "total_requirements": 0,
-    "total_relationships": 9,
+    "total_relationships": 10,
     "total_tables": 0,
-    "total_references": 6,
+    "total_references": 7,
     "status": "normalized"
   },
   "provenance": {

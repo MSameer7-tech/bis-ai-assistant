@@ -481,13 +481,16 @@
       "requirements": [
         {
           "entity_type": "requirement",
-          "requirement_id": "REQ-DOC007-4-002",
+          "requirement_type": "dielectric_test",
+          "requirement_id": "REQ-DOC007-4-ES",
           "clause": "4",
           "subject": "self-ballasted LED lamp",
-          "requirement": "dielectric electric strength",
+          "parameter": "dielectric_electric_strength",
+          "operator": "==",
+          "value": 4000,
+          "unit": "V a.c.",
           "conditions": {
-            "humidity_treatment": "48 h at 91-95% RH",
-            "ambient_condition": "immediately following humidity treatment"
+            "humidity_treatment": "immediately following 48 h humidity treatment"
           },
           "test": {
             "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -497,9 +500,10 @@
           "acceptance_criterion": {
             "minimum": 4000,
             "unit": "V a.c.",
-            "operator": "==",
             "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
           },
+          "exceptions": null,
+          "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
           "source_pages": [
             7
           ]
@@ -592,27 +596,32 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC007-7.2-004",
+              "requirement_type": "mandatory_marking",
+              "requirement_id": "REQ-DOC007-7.2-MARK",
               "clause": "7.2",
               "subject": "self-ballasted LED lamp",
-              "requirement": "mandatory product markings",
+              "parameter": "mandatory_marking_elements",
+              "operator": "mandatory",
+              "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+              "unit": null,
               "conditions": {
-                "location": "marked distinctly and durably on the lamp and packaging"
+                "durability_test": "Rubbing 15 s with hexane soaked cloth"
               },
               "test": {
-                "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+                "inspection": "Visual examination after durability rubbing"
               },
               "acceptance_criterion": {
                 "mandatory_items": [
-                  "Mark of origin (trademark or brand)",
+                  "Mark of origin (trademark)",
                   "Rated voltage or voltage range (V)",
                   "Rated wattage (W)",
                   "Rated frequency (Hz)",
-                  "Standard Mark (CRS Registration R-XXXXXXXX)"
+                  "Standard Mark (CRS Registration Number)"
                 ],
-                "operator": "mandatory",
-                "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+                "criterion_text": "Marking shall remain legible and easily discernible"
               },
+              "exceptions": null,
+              "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
               "source_pages": [
                 7
               ]
@@ -773,13 +782,16 @@
       "requirements": [
         {
           "entity_type": "requirement",
-          "requirement_id": "REQ-DOC007-12-002",
+          "requirement_type": "dielectric_test",
+          "requirement_id": "REQ-DOC007-12-ES",
           "clause": "12",
           "subject": "self-ballasted LED lamp",
-          "requirement": "dielectric electric strength",
+          "parameter": "dielectric_electric_strength",
+          "operator": "==",
+          "value": 4000,
+          "unit": "V a.c.",
           "conditions": {
-            "humidity_treatment": "48 h at 91-95% RH",
-            "ambient_condition": "immediately following humidity treatment"
+            "humidity_treatment": "immediately following 48 h humidity treatment"
           },
           "test": {
             "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -789,9 +801,10 @@
           "acceptance_criterion": {
             "minimum": 4000,
             "unit": "V a.c.",
-            "operator": "==",
             "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
           },
+          "exceptions": null,
+          "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
           "source_pages": [
             8
           ]
@@ -1025,13 +1038,16 @@
               "requirements": [
                 {
                   "entity_type": "requirement",
-                  "requirement_id": "REQ-DOC007-21.1.1-002",
+                  "requirement_type": "dielectric_test",
+                  "requirement_id": "REQ-DOC007-21.1.1-ES",
                   "clause": "21.1.1",
                   "subject": "self-ballasted LED lamp",
-                  "requirement": "dielectric electric strength",
+                  "parameter": "dielectric_electric_strength",
+                  "operator": "==",
+                  "value": 4000,
+                  "unit": "V a.c.",
                   "conditions": {
-                    "humidity_treatment": "48 h at 91-95% RH",
-                    "ambient_condition": "immediately following humidity treatment"
+                    "humidity_treatment": "immediately following 48 h humidity treatment"
                   },
                   "test": {
                     "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1041,9 +1057,10 @@
                   "acceptance_criterion": {
                     "minimum": 4000,
                     "unit": "V a.c.",
-                    "operator": "==",
                     "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
                   },
+                  "exceptions": null,
+                  "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
                   "source_pages": [
                     8
                   ]
@@ -1079,13 +1096,16 @@
           "requirements": [
             {
               "entity_type": "requirement",
-              "requirement_id": "REQ-DOC007-21.2-002",
+              "requirement_type": "dielectric_test",
+              "requirement_id": "REQ-DOC007-21.2-ES",
               "clause": "21.2",
               "subject": "self-ballasted LED lamp",
-              "requirement": "dielectric electric strength",
+              "parameter": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
               "conditions": {
-                "humidity_treatment": "48 h at 91-95% RH",
-                "ambient_condition": "immediately following humidity treatment"
+                "humidity_treatment": "immediately following 48 h humidity treatment"
               },
               "test": {
                 "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1095,9 +1115,10 @@
               "acceptance_criterion": {
                 "minimum": 4000,
                 "unit": "V a.c.",
-                "operator": "==",
                 "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
               },
+              "exceptions": null,
+              "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
               "source_pages": [
                 8,
                 9
@@ -1115,7 +1136,7 @@
   ],
   "entities": [
     {
-      "entity_id": "ENT-DOC-007-0001",
+      "entity_id": "ENT-DOC007-0001",
       "entity_type": "standard",
       "name": "IS 15885 (Part 2/Sec 13) : 2012",
       "value": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
@@ -1126,7 +1147,40 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0002",
+      "entity_id": "ENT-DOC007-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "value": "National Standards Body of India",
+      "document_id": "DOC-007",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "value": "Statutory Order Authority",
+      "document_id": "DOC-007",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0004",
+      "entity_type": "product",
+      "name": "LED Controlgear",
+      "value": "d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0005",
       "entity_type": "referenced_standard",
       "name": "IS 15885\n(Part 1) : 2011",
       "value": "IS 15885\n(Part 1) : 2011",
@@ -1137,7 +1191,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0003",
+      "entity_id": "ENT-DOC007-0006",
       "entity_type": "referenced_standard",
       "name": "IS 16104 : 2012",
       "value": "IS 16104 : 2012",
@@ -1148,8 +1202,8 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0004",
-      "entity_type": "parameter",
+      "entity_id": "ENT-DOC007-0007",
+      "entity_type": "value_and_unit",
       "name": "voltage",
       "value": "000 V",
       "document_id": "DOC-007",
@@ -1160,7 +1214,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC-007-0005",
+      "entity_id": "ENT-DOC007-0008",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1172,7 +1226,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0006",
+      "entity_id": "ENT-DOC007-0009",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1183,7 +1237,18 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0007",
+      "entity_id": "ENT-DOC007-0010",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0011",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1194,7 +1259,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0008",
+      "entity_id": "ENT-DOC007-0012",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1205,7 +1270,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0009",
+      "entity_id": "ENT-DOC007-0013",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1216,7 +1281,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0010",
+      "entity_id": "ENT-DOC007-0014",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1227,7 +1292,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0011",
+      "entity_id": "ENT-DOC007-0015",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1238,7 +1303,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0012",
+      "entity_id": "ENT-DOC007-0016",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1249,7 +1314,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0013",
+      "entity_id": "ENT-DOC007-0017",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1261,7 +1326,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0014",
+      "entity_id": "ENT-DOC007-0018",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1272,7 +1337,18 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0015",
+      "entity_id": "ENT-DOC007-0019",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-007",
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0020",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1283,7 +1359,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0016",
+      "entity_id": "ENT-DOC007-0021",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1294,7 +1370,18 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0017",
+      "entity_id": "ENT-DOC007-0022",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-007",
+      "source_clause": "14",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0023",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1305,7 +1392,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0018",
+      "entity_id": "ENT-DOC007-0024",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1316,7 +1403,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0019",
+      "entity_id": "ENT-DOC007-0025",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1327,7 +1414,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0020",
+      "entity_id": "ENT-DOC007-0026",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1338,7 +1425,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0021",
+      "entity_id": "ENT-DOC007-0027",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1349,7 +1436,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0022",
+      "entity_id": "ENT-DOC007-0028",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1360,7 +1447,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0023",
+      "entity_id": "ENT-DOC007-0029",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1371,7 +1458,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0024",
+      "entity_id": "ENT-DOC007-0030",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1382,7 +1469,29 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0025",
+      "entity_id": "ENT-DOC007-0031",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-007",
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0032",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-007",
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0033",
       "entity_type": "referenced_standard",
       "name": "IS 2500",
       "value": "IS 2500",
@@ -1394,7 +1503,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0026",
+      "entity_id": "ENT-DOC007-0034",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "value": "IS 15885",
@@ -1406,7 +1515,31 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0027",
+      "entity_id": "ENT-DOC007-0035",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0036",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0037",
       "entity_type": "annex",
       "name": "ANNEX A",
       "value": "ANNEX A",
@@ -1417,7 +1550,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0028",
+      "entity_id": "ENT-DOC007-0038",
       "entity_type": "annex",
       "name": "ANNEX B",
       "value": "ANNEX B",
@@ -1428,7 +1561,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0029",
+      "entity_id": "ENT-DOC007-0039",
       "entity_type": "annex",
       "name": "ANNEX C",
       "value": "ANNEX C",
@@ -1439,7 +1572,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0030",
+      "entity_id": "ENT-DOC007-0040",
       "entity_type": "annex",
       "name": "ANNEX D",
       "value": "ANNEX D",
@@ -1450,7 +1583,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0031",
+      "entity_id": "ENT-DOC007-0041",
       "entity_type": "annex",
       "name": "ANNEX E",
       "value": "ANNEX E",
@@ -1462,7 +1595,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0032",
+      "entity_id": "ENT-DOC007-0042",
       "entity_type": "annex",
       "name": "ANNEX F",
       "value": "ANNEX F",
@@ -1473,7 +1606,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0033",
+      "entity_id": "ENT-DOC007-0043",
       "entity_type": "annex",
       "name": "ANNEX G",
       "value": "ANNEX G",
@@ -1484,7 +1617,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0034",
+      "entity_id": "ENT-DOC007-0044",
       "entity_type": "annex",
       "name": "ANNEX H",
       "value": "ANNEX H",
@@ -1495,7 +1628,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC-007-0035",
+      "entity_id": "ENT-DOC007-0045",
       "entity_type": "annex",
       "name": "ANNEX I",
       "value": "ANNEX I",
@@ -1602,13 +1735,16 @@
   "requirements": [
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC007-4-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-4-ES",
       "clause": "4",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1618,49 +1754,58 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         7
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC007-7.2-004",
+      "requirement_type": "mandatory_marking",
+      "requirement_id": "REQ-DOC007-7.2-MARK",
       "clause": "7.2",
       "subject": "self-ballasted LED lamp",
-      "requirement": "mandatory product markings",
+      "parameter": "mandatory_marking_elements",
+      "operator": "mandatory",
+      "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+      "unit": null,
       "conditions": {
-        "location": "marked distinctly and durably on the lamp and packaging"
+        "durability_test": "Rubbing 15 s with hexane soaked cloth"
       },
       "test": {
-        "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+        "inspection": "Visual examination after durability rubbing"
       },
       "acceptance_criterion": {
         "mandatory_items": [
-          "Mark of origin (trademark or brand)",
+          "Mark of origin (trademark)",
           "Rated voltage or voltage range (V)",
           "Rated wattage (W)",
           "Rated frequency (Hz)",
-          "Standard Mark (CRS Registration R-XXXXXXXX)"
+          "Standard Mark (CRS Registration Number)"
         ],
-        "operator": "mandatory",
-        "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+        "criterion_text": "Marking shall remain legible and easily discernible"
       },
+      "exceptions": null,
+      "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
       "source_pages": [
         7
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC007-12-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-12-ES",
       "clause": "12",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1670,22 +1815,26 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         8
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC007-21.1.1-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-21.1.1-ES",
       "clause": "21.1.1",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1695,22 +1844,26 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         8
       ]
     },
     {
       "entity_type": "requirement",
-      "requirement_id": "REQ-DOC007-21.2-002",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-21.2-ES",
       "clause": "21.2",
       "subject": "self-ballasted LED lamp",
-      "requirement": "dielectric electric strength",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
       "conditions": {
-        "humidity_treatment": "48 h at 91-95% RH",
-        "ambient_condition": "immediately following humidity treatment"
+        "humidity_treatment": "immediately following 48 h humidity treatment"
       },
       "test": {
         "test_voltage": "4000 V a.c. (r.m.s.)",
@@ -1720,9 +1873,10 @@
       "acceptance_criterion": {
         "minimum": 4000,
         "unit": "V a.c.",
-        "operator": "==",
         "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
       },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
       "source_pages": [
         8,
         9
@@ -1831,8 +1985,8 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:16:52.570155+00:00",
-    "total_entities": 35,
+    "normalized_at": "2026-08-30T15:19:53.932010+00:00",
+    "total_entities": 45,
     "total_requirements": 5,
     "total_relationships": 8,
     "total_tables": 0,
