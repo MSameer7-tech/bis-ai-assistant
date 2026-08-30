@@ -1,6 +1,6 @@
 """
 Document Ingestion Processor Pipeline.
-Orchestrates PDF text extraction, OCR fallback, structure parsing, and table extraction,
+Orchestrates PDF text extraction, OCR fallback, deterministic structure parsing, and table extraction,
 generating structured machine-readable JSON in data/processed/ with full provenance tracking.
 """
 
@@ -8,7 +8,7 @@ import json
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict
 
 from ai.ingestion.extractor import PDFExtractor
 from ai.ingestion.ocr import OCRFallbackEngine
@@ -38,7 +38,7 @@ class DocumentProcessor:
     def process_document(self, document_id: str) -> Dict[str, Any]:
         """
         Executes the extraction pipeline for a specific document_id.
-        Produces data/processed/{document_id}.json and updates extraction log.
+        Produces data/processed/{document_id}.json conforming to the canonical schema.
         """
         # 1. Load document record
         if not DOCUMENTS_PATH.exists():
@@ -63,8 +63,9 @@ class DocumentProcessor:
 
         # 3. Apply OCR fallback if scanned or low text
         pages_data = self.ocr_engine.process_scanned_pages(raw_file_path, pages_data)
+        ocr_used = any(p.get("ocr_applied") for p in pages_data)
 
-        # 4. Parse document structure (sections, clauses, annexes)
+        # 4. Parse document structure (sections, hierarchical clauses, annexes)
         structure_data = self.structure_parser.parse_document_structure(pages_data)
 
         # 5. Extract tables
@@ -82,27 +83,34 @@ class DocumentProcessor:
             "overall_quality": "HIGH" if len(suspicious_pages) == 0 else ("MEDIUM" if len(ok_pages) > len(suspicious_pages) else "LOW"),
         }
 
-        # 7. Assemble normalized document JSON
+        # 7. Canonical Document Schema (Step 2C.7)
         processed_document = {
             "document_id": document_id,
             "source_id": doc_record.get("source_id"),
-            "standard_or_document_number": doc_record.get("standard_or_document_number"),
-            "title": doc_record.get("title"),
-            "version_edition": doc_record.get("version_edition"),
-            "raw_file_path": doc_record.get("file_path"),
-            "file_sha256": doc_record.get("file_sha256"),
-            "processed_date": datetime.now(timezone.utc).isoformat(),
-            "total_pages": len(pages_data),
-            "total_sections": len(structure_data["sections"]),
-            "total_clauses": len(structure_data["clauses"]),
-            "total_annexes": len(structure_data["annexes"]),
-            "total_tables": len(tables_data),
-            "quality_summary": quality_summary,
+            "document_metadata": {
+                "title": doc_record.get("title"),
+                "standard_number": doc_record.get("standard_or_document_number"),
+                "version": doc_record.get("version_edition"),
+                "source_file": doc_record.get("file_path"),
+                "sha256": doc_record.get("file_sha256"),
+            },
             "pages": pages_data,
             "sections": structure_data["sections"],
             "clauses": structure_data["clauses"],
-            "annexes": structure_data["annexes"],
             "tables": tables_data,
+            "annexes": structure_data["annexes"],
+            "extraction_metadata": {
+                "extraction_method": "pymupdf",
+                "ocr_used": ocr_used,
+                "extracted_at": datetime.now(timezone.utc).isoformat(),
+                "total_pages": len(pages_data),
+                "total_sections": len(structure_data["sections"]),
+                "total_clauses": len(structure_data["clauses"]),
+                "flat_clauses_count": structure_data.get("flat_clauses_count", len(structure_data["clauses"])),
+                "total_annexes": len(structure_data["annexes"]),
+                "total_tables": len(tables_data),
+                "quality_summary": quality_summary,
+            },
         }
 
         # 8. Save to data/processed/{document_id}.json
@@ -125,7 +133,7 @@ class DocumentProcessor:
             "start_time": start_time,
             "completion_time": datetime.now(timezone.utc).isoformat(),
             "total_pages": len(pages_data),
-            "total_clauses": len(structure_data["clauses"]),
+            "total_clauses": structure_data.get("flat_clauses_count", len(structure_data["clauses"])),
             "total_tables": len(tables_data),
             "quality_summary": quality_summary,
             "processed_file_path": str(out_file.relative_to(ROOT_DIR)),
@@ -155,7 +163,7 @@ class DocumentProcessor:
             document_id,
             out_file.name,
             len(pages_data),
-            len(structure_data["clauses"]),
+            structure_data.get("flat_clauses_count", len(structure_data["clauses"])),
             quality_summary["overall_quality"],
         )
 

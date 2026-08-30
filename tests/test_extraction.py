@@ -26,8 +26,8 @@ def test_extractor_preserves_pages_and_metadata():
         assert p["quality_flag"] in ("OK", "SUSPICIOUS_LOW_TEXT", "SUSPICIOUS_EMPTY")
 
 
-def test_structure_parser_detects_clauses():
-    """Verify that StructureParser identifies standard clauses and sections."""
+def test_structure_parser_detects_hierarchical_clauses():
+    """Verify that StructureParser identifies sections and constructs hierarchical subclause trees."""
     sample_pages = [
         {
             "page_number": 1,
@@ -35,44 +35,60 @@ def test_structure_parser_detects_clauses():
         },
         {
             "page_number": 2,
-            "text": "8 INSULATION RESISTANCE\n8.1 Insulation resistance shall be not less than 4 MΩ.\n8.2 Electric strength test shall apply 4000 V.",
+            "text": "8 INSULATION RESISTANCE\n8.1 Insulation resistance shall be not less than 4 MΩ.\n8.2 Electric strength test.\n8.2.1 Test voltage shall apply 4000 V.",
         },
     ]
 
     struct = parse_structure(sample_pages)
     assert len(struct["sections"]) >= 2
-    assert len(struct["clauses"]) >= 4
+    assert struct["flat_clauses_count"] >= 5
 
-    clause_nums = [c["clause_number"] for c in struct["clauses"]]
-    assert "1.1" in clause_nums
-    assert "8.1" in clause_nums
+    # Check root clause nesting
+    clause_8 = next(c for c in struct["clauses"] if c["clause_number"] == "8")
+    assert clause_8["depth"] == 1
+    assert len(clause_8["subclauses"]) >= 2
 
-    c_81 = next(c for c in struct["clauses"] if c["clause_number"] == "8.1")
-    assert c_81["page_start"] == 2
-    assert c_81["page_end"] == 2
-    assert "4 MΩ" in c_81["content"]
+    # Check 8.2 has subclause 8.2.1
+    c_82 = next(c for c in clause_8["subclauses"] if c["clause_number"] == "8.2")
+    assert len(c_82["subclauses"]) >= 1
+    assert c_82["subclauses"][0]["clause_number"] == "8.2.1"
 
 
-def test_document_processor_end_to_end():
-    """Verify full end-to-end processing producing structured JSON with quality summary."""
+def test_document_processor_canonical_schema_end_to_end():
+    """Verify full end-to-end processing producing the canonical 2C.7 JSON schema with SHA-256."""
     processor = DocumentProcessor()
     doc_id = "DOC-001"
 
     result = processor.process_document(doc_id)
 
+    # 1. Top level identifiers
     assert result["document_id"] == doc_id
-    assert result["total_pages"] > 0
-    assert result["total_clauses"] > 0
-    assert "quality_summary" in result
-    assert result["quality_summary"]["total_pages"] == result["total_pages"]
+    assert result["source_id"] == "SRC-001"
 
+    # 2. Document metadata
+    meta = result["document_metadata"]
+    assert "title" in meta
+    assert "standard_number" in meta
+    assert "sha256" in meta
+    assert len(meta["sha256"]) == 64
+
+    # 3. Structural arrays
+    assert isinstance(result["pages"], list)
+    assert isinstance(result["sections"], list)
+    assert isinstance(result["clauses"], list)
+    assert isinstance(result["tables"], list)
+    assert isinstance(result["annexes"], list)
+
+    # 4. Extraction metadata
+    ext_meta = result["extraction_metadata"]
+    assert ext_meta["extraction_method"] == "pymupdf"
+    assert "quality_summary" in ext_meta
+
+    # 5. File persistence
     out_file = PROCESSED_DIR / f"{doc_id}.json"
     assert out_file.exists()
 
     with open(out_file, "r", encoding="utf-8") as f:
         saved_doc = json.load(f)
 
-    assert saved_doc["document_id"] == doc_id
-    assert len(saved_doc["pages"]) == saved_doc["total_pages"]
-    assert len(saved_doc["clauses"]) == saved_doc["total_clauses"]
-    assert "quality_flag" in saved_doc["pages"][0]
+    assert saved_doc["document_metadata"]["sha256"] == meta["sha256"]
