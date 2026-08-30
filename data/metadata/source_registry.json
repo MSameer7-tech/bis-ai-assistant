@@ -11,7 +11,7 @@
     "publication_date": "2012-08-01",
     "effective_date": null,
     "url": "https://archive.org/details/gov.in.is.16102.1.2012",
-    "retrieval_date": "2026-08-30T14:37:14.081954+00:00",
+    "retrieval_date": "2026-08-30T14:47:43.081517+00:00",
     "status": "document_acquired",
     "notes": "Official Indian Standard PDF acquired and verified",
     "document_id": "DOC-001",
@@ -30,10 +30,14 @@
     "version_edition": "First Revision",
     "publication_date": "2017-05-15",
     "effective_date": null,
-    "url": "https://standardsbis.bsbedge.com",
-    "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "Performance requirements standard; verified in active BIS LIMS lab scopes."
+    "url": "https://archive.org/details/gov.in.is.16102.2.2017",
+    "retrieval_date": "2026-08-30T14:47:43.123356+00:00",
+    "status": "document_acquired",
+    "notes": "Official Indian Standard PDF First Revision acquired and verified",
+    "document_id": "DOC-002",
+    "file_path": "data/raw/standards/IS_16102_Part_2_2017.pdf",
+    "file_sha256": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
+    "file_size_bytes": 763061
   },
   {
     "source_id": "SRC-003",
@@ -111,7 +115,7 @@
     "publication_date": "2012-09-01",
     "effective_date": null,
     "url": "https://archive.org/details/gov.in.is.15885.2.13.2012",
-    "retrieval_date": "2026-08-30T14:42:12.092751+00:00",
+    "retrieval_date": "2026-08-30T14:47:43.163860+00:00",
     "status": "document_acquired",
     "notes": "Official Indian Standard PDF acquired and verified",
     "document_id": "DOC-007",
@@ -163,9 +167,13 @@
     "publication_date": "2021-03-18",
     "effective_date": null,
     "url": "https://www.meity.gov.in/esdm/standards",
-    "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "2021 CRO identified on the official BIS Scheme-II portal; document acquisition and content verification pending."
+    "retrieval_date": "2026-08-30T14:47:43.203597+00:00",
+    "status": "document_acquired",
+    "notes": "2021 CRO identified on the official BIS Scheme-II portal; document acquisition and content verification pending.",
+    "document_id": "DOC-010",
+    "file_path": "data/raw/regulations/CRO_2021.pdf",
+    "file_sha256": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
+    "file_size_bytes": 2348
   },
   {
     "source_id": "SRC-011",
@@ -179,9 +187,13 @@
     "publication_date": null,
     "effective_date": null,
     "url": "https://www.meity.gov.in/esdm/standards",
-    "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "2026 amendment reference identified on the official BIS Scheme-II portal; exact notification document and applicability pending acquisition and verification."
+    "retrieval_date": "2026-08-30T14:47:43.248607+00:00",
+    "status": "document_acquired",
+    "notes": "2026 amendment reference identified on the official BIS Scheme-II portal; exact notification document and applicability pending acquisition and verification.",
+    "document_id": "DOC-011",
+    "file_path": "data/raw/regulations/CRO_Amendment_2026.pdf",
+    "file_sha256": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
+    "file_size_bytes": 1691
   },
   {
     "source_id": "SRC-012",
@@ -195,8 +207,12 @@
     "publication_date": null,
     "effective_date": null,
     "url": "https://standardsbis.bsbedge.com",
-    "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "Newly published 2026 revised standard identified in BIS LIMS with active lab scopes; separate version from 2012 edition."
+    "retrieval_date": "2026-08-30T14:47:43.289159+00:00",
+    "status": "document_acquired",
+    "notes": "Newly published 2026 revised standard identified in BIS LIMS with active lab scopes; separate version from 2012 edition.",
+    "document_id": "DOC-012",
+    "file_path": "data/raw/standards/IS_16102_Part_1_2026.pdf",
+    "file_sha256": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
+    "file_size_bytes": 3997
   }
 ]
