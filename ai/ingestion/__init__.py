@@ -1,13 +1,15 @@
 """
 Ingestion Subpackage for BIS AI Assistant.
 Handles PDF loading, OCR quality assessment, structural parsing, table extraction,
-and change detection / data freshness gates.
+change detection gates, document statuses, and ingestion manifests.
 """
 
 from ai.ingestion.change_detector import ChangeDetector, check_source_freshness, compute_sha256
 from ai.ingestion.extractor import PDFExtractor
+from ai.ingestion.manifest import IngestionManifestManager, update_ingestion_manifest
 from ai.ingestion.ocr import OCRFallbackEngine
 from ai.ingestion.processor import DocumentProcessor
+from ai.ingestion.status import DocumentStatus
 from ai.ingestion.structure_parser import StructureParser
 from ai.ingestion.table_parser import TableParser
 
@@ -20,4 +22,7 @@ __all__ = [
     "ChangeDetector",
     "check_source_freshness",
     "compute_sha256",
+    "DocumentStatus",
+    "IngestionManifestManager",
+    "update_ingestion_manifest",
 ]

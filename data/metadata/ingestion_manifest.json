@@ -1,0 +1,67 @@
+{
+  "last_run": "2026-08-30T16:25:54.022645+00:00",
+  "pipeline_version": "1.0.0",
+  "total_documents": 6,
+  "documents": {
+    "DOC-001": {
+      "source_id": "SRC-001",
+      "standard_number": "IS 16102 (Part 1) : 2012",
+      "current_hash": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+      "previous_hash": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+      "last_checked": "2026-08-30T16:25:54.022645+00:00",
+      "status": "CHUNKED",
+      "total_chunks": 129,
+      "requires_reindex": false
+    },
+    "DOC-007": {
+      "source_id": "SRC-007",
+      "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
+      "current_hash": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
+      "previous_hash": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
+      "last_checked": "2026-08-30T16:25:54.022645+00:00",
+      "status": "CHUNKED",
+      "total_chunks": 61,
+      "requires_reindex": false
+    },
+    "DOC-002": {
+      "source_id": "SRC-002",
+      "standard_number": "IS 16102 (Part 2) : 2017",
+      "current_hash": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
+      "previous_hash": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
+      "last_checked": "2026-08-30T16:25:54.022645+00:00",
+      "status": "CHUNKED",
+      "total_chunks": 153,
+      "requires_reindex": false
+    },
+    "DOC-010": {
+      "source_id": "SRC-010",
+      "standard_number": "CRO 2021",
+      "current_hash": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
+      "previous_hash": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
+      "last_checked": "2026-08-30T16:25:54.022645+00:00",
+      "status": "CHUNKED",
+      "total_chunks": 5,
+      "requires_reindex": false
+    },
+    "DOC-011": {
+      "source_id": "SRC-011",
+      "standard_number": "CRO Amendment 2026",
+      "current_hash": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
+      "previous_hash": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
+      "last_checked": "2026-08-30T16:25:54.022645+00:00",
+      "status": "CHUNKED",
+      "total_chunks": 2,
+      "requires_reindex": false
+    },
+    "DOC-012": {
+      "source_id": "SRC-012",
+      "standard_number": "IS 16102 (Part 1) : 2026",
+      "current_hash": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
+      "previous_hash": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
+      "last_checked": "2026-08-30T16:25:54.022645+00:00",
+      "status": "CHUNKED",
+      "total_chunks": 28,
+      "requires_reindex": false
+    }
+  }
+}
