@@ -10,8 +10,8 @@ DOCUMENTS_PATH = ROOT_DIR / "data" / "metadata" / "documents.json"
 PROCESSED_DIR = ROOT_DIR / "data" / "processed"
 
 
-def test_extractor_preserves_pages():
-    """Verify that PDFExtractor extracts text with 1-indexed pages preserved."""
+def test_extractor_preserves_pages_and_metadata():
+    """Verify that PDFExtractor extracts text with page numbers and rich audit metadata."""
     sample_pdf = ROOT_DIR / "data" / "raw" / "standards" / "IS_16102_Part_1_2012.pdf"
     assert sample_pdf.exists()
 
@@ -21,6 +21,9 @@ def test_extractor_preserves_pages():
         assert p["page_number"] == idx + 1
         assert "text" in p
         assert isinstance(p["char_count"], int)
+        assert isinstance(p["word_count"], int)
+        assert p["extraction_method"] == "pymupdf"
+        assert p["quality_flag"] in ("OK", "SUSPICIOUS_LOW_TEXT", "SUSPICIOUS_EMPTY")
 
 
 def test_structure_parser_detects_clauses():
@@ -51,7 +54,7 @@ def test_structure_parser_detects_clauses():
 
 
 def test_document_processor_end_to_end():
-    """Verify full end-to-end processing producing structured JSON."""
+    """Verify full end-to-end processing producing structured JSON with quality summary."""
     processor = DocumentProcessor()
     doc_id = "DOC-001"
 
@@ -60,6 +63,8 @@ def test_document_processor_end_to_end():
     assert result["document_id"] == doc_id
     assert result["total_pages"] > 0
     assert result["total_clauses"] > 0
+    assert "quality_summary" in result
+    assert result["quality_summary"]["total_pages"] == result["total_pages"]
 
     out_file = PROCESSED_DIR / f"{doc_id}.json"
     assert out_file.exists()
@@ -70,3 +75,4 @@ def test_document_processor_end_to_end():
     assert saved_doc["document_id"] == doc_id
     assert len(saved_doc["pages"]) == saved_doc["total_pages"]
     assert len(saved_doc["clauses"]) == saved_doc["total_clauses"]
+    assert "quality_flag" in saved_doc["pages"][0]

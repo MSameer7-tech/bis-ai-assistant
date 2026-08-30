@@ -8,7 +8,7 @@ import json
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 from ai.ingestion.extractor import PDFExtractor
 from ai.ingestion.ocr import OCRFallbackEngine
@@ -58,10 +58,10 @@ class DocumentProcessor:
         logger.info("Processing document %s (%s)", document_id, raw_file_path.name)
         start_time = datetime.now(timezone.utc).isoformat()
 
-        # 2. Extract pages
+        # 2. Extract pages with rich metadata and quality metrics
         pages_data = self.extractor.extract_pages(raw_file_path)
 
-        # 3. Apply OCR fallback if scanned
+        # 3. Apply OCR fallback if scanned or low text
         pages_data = self.ocr_engine.process_scanned_pages(raw_file_path, pages_data)
 
         # 4. Parse document structure (sections, clauses, annexes)
@@ -70,7 +70,19 @@ class DocumentProcessor:
         # 5. Extract tables
         tables_data = self.table_parser.extract_tables_from_pdf(raw_file_path)
 
-        # 6. Assemble normalized document JSON
+        # 6. Quality summary calculation
+        ok_pages = [p["page_number"] for p in pages_data if p["quality_flag"] == "OK"]
+        suspicious_pages = [p["page_number"] for p in pages_data if p["quality_flag"] != "OK"]
+
+        quality_summary = {
+            "total_pages": len(pages_data),
+            "ok_pages_count": len(ok_pages),
+            "suspicious_pages_count": len(suspicious_pages),
+            "suspicious_pages": suspicious_pages,
+            "overall_quality": "HIGH" if len(suspicious_pages) == 0 else ("MEDIUM" if len(ok_pages) > len(suspicious_pages) else "LOW"),
+        }
+
+        # 7. Assemble normalized document JSON
         processed_document = {
             "document_id": document_id,
             "source_id": doc_record.get("source_id"),
@@ -85,6 +97,7 @@ class DocumentProcessor:
             "total_clauses": len(structure_data["clauses"]),
             "total_annexes": len(structure_data["annexes"]),
             "total_tables": len(tables_data),
+            "quality_summary": quality_summary,
             "pages": pages_data,
             "sections": structure_data["sections"],
             "clauses": structure_data["clauses"],
@@ -92,12 +105,12 @@ class DocumentProcessor:
             "tables": tables_data,
         }
 
-        # 7. Save to data/processed/{document_id}.json
+        # 8. Save to data/processed/{document_id}.json
         out_file = PROCESSED_DIR / f"{document_id}.json"
         with open(out_file, "w", encoding="utf-8") as f:
             json.dump(processed_document, f, indent=2, ensure_ascii=False)
 
-        # 8. Update extraction_log.json
+        # 9. Update extraction_log.json
         extraction_logs = []
         if EXTRACTION_LOG_PATH.exists():
             try:
@@ -114,6 +127,7 @@ class DocumentProcessor:
             "total_pages": len(pages_data),
             "total_clauses": len(structure_data["clauses"]),
             "total_tables": len(tables_data),
+            "quality_summary": quality_summary,
             "processed_file_path": str(out_file.relative_to(ROOT_DIR)),
             "status": "extraction_successful",
         }
@@ -121,7 +135,7 @@ class DocumentProcessor:
         with open(EXTRACTION_LOG_PATH, "w", encoding="utf-8") as f:
             json.dump(extraction_logs, f, indent=2, ensure_ascii=False)
 
-        # 9. Advance document status to content_verified in documents.json & source_registry.json
+        # 10. Advance document status to content_verified in documents.json & source_registry.json
         doc_record["status"] = "content_verified"
         with open(DOCUMENTS_PATH, "w", encoding="utf-8") as f:
             json.dump(documents, f, indent=2, ensure_ascii=False)
@@ -137,12 +151,12 @@ class DocumentProcessor:
                 json.dump(registry, f, indent=2, ensure_ascii=False)
 
         logger.info(
-            "✅ Successfully processed %s -> %s (%d pages, %d clauses, %d tables)",
+            "✅ Successfully processed %s -> %s (%d pages, %d clauses, quality: %s)",
             document_id,
             out_file.name,
             len(pages_data),
             len(structure_data["clauses"]),
-            len(tables_data),
+            quality_summary["overall_quality"],
         )
 
         return processed_document
