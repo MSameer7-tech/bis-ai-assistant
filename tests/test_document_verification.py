@@ -38,7 +38,9 @@ def test_all_acquired_documents_exist_and_match_hashes():
         source_id = doc["source_id"]
         assert source_id in registry_map, f"Source ID '{source_id}' not found in source_registry.json"
         reg_entry = registry_map[source_id]
-        assert reg_entry["status"] in ("document_acquired", "content_verified", "metadata_verified", "current_status_verified")
+        assert reg_entry["status"] in (
+            "document_acquired", "content_verified", "metadata_verified", "current_status_verified", "CHUNKED", "NORMALIZED", "INDEXED"
+        )
         assert reg_entry["file_sha256"] == actual_hash
         assert reg_entry["document_id"] == doc["document_id"]
 

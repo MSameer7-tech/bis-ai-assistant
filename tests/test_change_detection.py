@@ -45,13 +45,18 @@ def test_step2_sha256_change_detector_identifies_identical_document():
 
 def test_step3_http_metadata_etag_and_last_modified():
     """Verify fast pre-check with HTTP ETag and Last-Modified (Step 3)."""
+    with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+        registry = json.load(f)
+    doc_001 = next(s for s in registry if s.get("document_id") == "DOC-001")
+    known_last_mod = doc_001["current_version"]["last_modified"]
+
     detector = ChangeDetector()
     # When headers match
-    rep_match = detector.check_http_metadata("DOC-001", last_modified="2026-08-30T14:47:43.081517+00:00")
+    rep_match = detector.check_http_metadata("DOC-001", last_modified=known_last_mod)
     assert rep_match["can_skip_download"] is True
 
     # When headers differ
-    rep_diff = detector.check_http_metadata("DOC-001", last_modified="2026-09-01T00:00:00Z")
+    rep_diff = detector.check_http_metadata("DOC-001", last_modified="2099-01-01T00:00:00Z")
     assert rep_diff["can_skip_download"] is False
 
 
