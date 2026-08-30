@@ -1115,7 +1115,7 @@
   ],
   "relationships": [
     {
-      "relationship_id": "REL-DOC-012-0001",
+      "relationship_id": "REL-DOC012-0001",
       "subject": "IS 16102 (Part 1) : 2026",
       "predicate": "applies_to",
       "object": "Self-Ballasted LED Lamp",
@@ -1126,10 +1126,43 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0002",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "references",
-      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "relationship_id": "REL-DOC012-0002",
+      "subject": "Clause 1: SCOPE",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0003",
+      "subject": "Clause 1.1: This standard (Part 1) specifies the safety and interchangeability requirements, together with the test",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "1.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0004",
+      "subject": "Clause 1.2: It applies to self-ballasted LED lamps having:",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "1.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0005",
+      "subject": "Clause 2: NORMATIVE REFERENCES",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
       "source_clause": "2",
       "source_pages": [
@@ -1137,43 +1170,124 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0003",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "references",
-      "object": "IS/IEC 60061",
+      "relationship_id": "REL-DOC012-0006",
+      "subject": "Clause 3: TERMINOLOGY",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
-      "source_clause": "2",
+      "source_clause": "3",
+      "source_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0007",
+      "subject": "Clause 3",
+      "predicate": "defines",
+      "object": "TERMINOLOGY",
+      "document_id": "DOC-012",
+      "source_clause": "3",
+      "source_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0008",
+      "subject": "Clause 3.1: Self-Ballasted LED Lamp ? A unit which cannot be dismantled without being permanently damaged,",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "3.1",
       "source_pages": [
         1
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0004",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "references",
-      "object": "IS/IEC 60529",
+      "relationship_id": "REL-DOC012-0009",
+      "subject": "Clause 3.1",
+      "predicate": "defines",
+      "object": "Self-Ballasted LED Lamp ? A unit which cannot be dismantled without being permanently damaged,",
       "document_id": "DOC-012",
-      "source_clause": "2",
+      "source_clause": "3.1",
       "source_pages": [
         1
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0005",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "references",
-      "object": "IS 11000",
+      "relationship_id": "REL-DOC012-0010",
+      "subject": "Clause 3.2: Rated Voltage ? The voltage or voltage range marked on the lamp.",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
-      "source_clause": "10.2",
+      "source_clause": "3.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0011",
+      "subject": "Clause 3.2",
+      "predicate": "defines",
+      "object": "Rated Voltage ? The voltage or voltage range marked on the lamp.",
+      "document_id": "DOC-012",
+      "source_clause": "3.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0012",
+      "subject": "Clause 3.3: Rated Wattage ? The wattage marked on the lamp.",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "3.3",
+      "source_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0013",
+      "subject": "Clause 3.3",
+      "predicate": "defines",
+      "object": "Rated Wattage ? The wattage marked on the lamp.",
+      "document_id": "DOC-012",
+      "source_clause": "3.3",
+      "source_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0014",
+      "subject": "Clause 4: GENERAL REQUIREMENTS AND TEST REQUIREMENTS",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "4",
       "source_pages": [
         2
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0006",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "specifies_marking",
-      "object": "Mandatory Markings",
+      "relationship_id": "REL-DOC012-0015",
+      "subject": "Clause 4.1: Self-ballasted LED lamps shall be so designed and constructed that in normal use they function reliably and",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "4.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0016",
+      "subject": "Clause 5: MARKING REQUIREMENTS",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
       "source_clause": "5",
       "source_pages": [
@@ -1181,10 +1295,76 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0007",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "specifies_test",
-      "object": "Insulation Resistance Test",
+      "relationship_id": "REL-DOC012-0017",
+      "subject": "Clause 5.1: Mandatory Markings on the Lamp:",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "5.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0018",
+      "subject": "Clause 6: INTERCHANGEABILITY",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "6",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0019",
+      "subject": "Clause 6.1: Interchangeability shall be ensured by the use of caps complying with IS/IEC 60061.",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "6.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0020",
+      "subject": "Clause 6.2: Bending moment of the cap fitment shall withstand standard mechanical torque without loosening or",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "6.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0021",
+      "subject": "Clause 7: PROTECTION AGAINST ELECTRIC SHOCK",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "7",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0022",
+      "subject": "Clause 7.1: The lamp shall be so constructed that, without any additional enclosure in the form of a luminaire, no live",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "7.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0023",
+      "subject": "Clause 8: INSULATION RESISTANCE AND ELECTRIC STRENGTH AFTER HUMIDITY TREATMENT",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
       "source_clause": "8",
       "source_pages": [
@@ -1192,25 +1372,436 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0008",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "specifies_test",
-      "object": "Electric Strength Test",
+      "relationship_id": "REL-DOC012-0024",
+      "subject": "Clause 8.1: Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?.",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
-      "source_clause": "8",
+      "source_clause": "8.1",
       "source_pages": [
         2
       ]
     },
     {
-      "relationship_id": "REL-DOC-012-0009",
-      "subject": "IS 16102 (Part 1) : 2026",
-      "predicate": "specifies_test",
-      "object": "Fault Condition Safety Test",
+      "relationship_id": "REL-DOC012-0025",
+      "subject": "Clause 8.2: Electric strength test: A voltage of 4 000 V a.c. (r.m.s.) shall be applied for 1 minute between",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "8.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0026",
+      "subject": "Clause 9: MECHANICAL STRENGTH",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "9",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0027",
+      "subject": "Clause 9.1: Cap torque resistance: The cap shall remain firmly attached to the lamp when subjected to a torque of 3.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "9.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0028",
+      "subject": "Clause 10: RESISTANCE TO HEAT AND FIRE",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "10",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0029",
+      "subject": "Clause 10.1: External parts of insulating material providing protection against electric shock shall be resistant to heat",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "10.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0030",
+      "subject": "Clause 10.2: Glow-wire test: When tested in accordance with IS 11000 (Part 2/Sec 1), the test temperature shall be 650",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0031",
+      "subject": "Clause 11: FAULT CONDITIONS",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
       "source_clause": "11",
       "source_pages": [
         2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0032",
+      "subject": "Clause 11.1: The lamp shall not impair safety under condition of component failure (driver short circuit, capacitor failure,",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2026",
+      "document_id": "DOC-012",
+      "source_clause": "11.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0033",
+      "subject": "Clause 1.2",
+      "predicate": "requires",
+      "object": "rated_wattage",
+      "document_id": "DOC-012",
+      "source_clause": "1.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0034",
+      "subject": "rated_wattage",
+      "predicate": "has_limit",
+      "object": "<= 60.0 W",
+      "document_id": "DOC-012",
+      "source_clause": "1.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0035",
+      "subject": "rated_wattage",
+      "predicate": "tested_by",
+      "object": "B15d, B22d, E11, E12, E14, E17, E26, E27, GU10",
+      "document_id": "DOC-012",
+      "source_clause": "1.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0036",
+      "subject": "rated_wattage",
+      "predicate": "has_condition",
+      "object": "supply_voltage: up to 250 V a.c. 50 Hz",
+      "document_id": "DOC-012",
+      "source_clause": "1.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0037",
+      "subject": "rated_wattage",
+      "predicate": "has_condition",
+      "object": "intended_use: domestic and similar general lighting services",
+      "document_id": "DOC-012",
+      "source_clause": "1.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0038",
+      "subject": "Clause 5.1",
+      "predicate": "requires",
+      "object": "mandatory_marking_elements",
+      "document_id": "DOC-012",
+      "source_clause": "5.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0039",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_limit",
+      "object": "mandatory Trade mark, rated voltage, rated wattage, rated frequency, standard mark None",
+      "document_id": "DOC-012",
+      "source_clause": "5.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0040",
+      "subject": "mandatory_marking_elements",
+      "predicate": "tested_by",
+      "object": "Visual examination after durability rubbing",
+      "document_id": "DOC-012",
+      "source_clause": "5.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0041",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_condition",
+      "object": "durability_test: Rubbing 15 s with hexane soaked cloth",
+      "document_id": "DOC-012",
+      "source_clause": "5.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0042",
+      "subject": "Clause 8",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-012",
+      "source_clause": "8",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0043",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_limit",
+      "object": "== 4000 V a.c.",
+      "document_id": "DOC-012",
+      "source_clause": "8",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0044",
+      "subject": "dielectric_electric_strength",
+      "predicate": "tested_by",
+      "object": "4000 V a.c. (r.m.s.)",
+      "document_id": "DOC-012",
+      "source_clause": "8",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0045",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: immediately following 48 h humidity treatment",
+      "document_id": "DOC-012",
+      "source_clause": "8",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0046",
+      "subject": "Clause 8.1",
+      "predicate": "requires",
+      "object": "insulation_resistance",
+      "document_id": "DOC-012",
+      "source_clause": "8.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0047",
+      "subject": "insulation_resistance",
+      "predicate": "has_limit",
+      "object": ">= 4.0 MΩ",
+      "document_id": "DOC-012",
+      "source_clause": "8.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0048",
+      "subject": "insulation_resistance",
+      "predicate": "tested_by",
+      "object": "approximately 500 V d.c.",
+      "document_id": "DOC-012",
+      "source_clause": "8.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0049",
+      "subject": "insulation_resistance",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: 48 h in humidity cabinet at 91-95% RH",
+      "document_id": "DOC-012",
+      "source_clause": "8.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0050",
+      "subject": "insulation_resistance",
+      "predicate": "has_condition",
+      "object": "temperature: 25-35 °C",
+      "document_id": "DOC-012",
+      "source_clause": "8.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0051",
+      "subject": "insulation_resistance",
+      "predicate": "has_condition",
+      "object": "duration: 48 h",
+      "document_id": "DOC-012",
+      "source_clause": "8.1",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0052",
+      "subject": "Clause 8.2",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-012",
+      "source_clause": "8.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0053",
+      "subject": "Clause 10.2",
+      "predicate": "requires",
+      "object": "glow_wire_temperature",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0054",
+      "subject": "glow_wire_temperature",
+      "predicate": "has_limit",
+      "object": ">= 650.0 °C",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0055",
+      "subject": "glow_wire_temperature",
+      "predicate": "tested_by",
+      "object": "750 °C",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0056",
+      "subject": "glow_wire_temperature",
+      "predicate": "has_condition",
+      "object": "test_standard: IS 11000 (Part 2/Sec 1)",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0057",
+      "subject": "glow_wire_temperature",
+      "predicate": "has_condition",
+      "object": "specimen_support: tissue paper spread 200 ± 5 mm below specimen",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC012-0058",
+      "subject": "IS 16102 (Part 1) : 2026",
+      "predicate": "references",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012 (Part 2-13)",
+      "document_id": "DOC-012",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "related_standard"
+    },
+    {
+      "relationship_id": "REL-DOC012-0059",
+      "subject": "IS 16102 (Part 1) : 2026",
+      "predicate": "references",
+      "object": "IS/IEC 60061",
+      "document_id": "DOC-012",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "normative"
+    },
+    {
+      "relationship_id": "REL-DOC012-0060",
+      "subject": "IS 16102 (Part 1) : 2026",
+      "predicate": "references",
+      "object": "IS/IEC 60529",
+      "document_id": "DOC-012",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "normative"
+    },
+    {
+      "relationship_id": "REL-DOC012-0061",
+      "subject": "IS 16102 (Part 1) : 2026",
+      "predicate": "references",
+      "object": "IS 11000 (Part 2)",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ],
+      "reference_type": "test_method"
+    },
+    {
+      "relationship_id": "REL-DOC012-0062",
+      "subject": "IS 16102 (Part 1) : 2026",
+      "predicate": "supersedes",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-012",
+      "source_clause": "1",
+      "source_pages": [
+        1
       ]
     }
   ],
@@ -1395,19 +1986,82 @@
       ]
     }
   ],
-  "tables": [],
+  "cross_references": [
+    {
+      "reference_id": "REF-DOC012-0001",
+      "document_id": "DOC-012",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 15885 (Part 2/Sec 13) : 2012",
+      "target_location": "Part 2-13",
+      "reference_type": "related_standard",
+      "context_snippet": "nce in this text, constitute provisions of this standard: - IS 15885 (Part 2/Sec 13) : 2012 Safety of lamp controlgear: Part 2-13 Particular requirements for d.c. or a.c."
+    },
+    {
+      "reference_id": "REF-DOC012-0002",
+      "document_id": "DOC-012",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS/IEC 60061",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": ". or a.c. supplied electronic controlgear for LED modules - IS/IEC 60061 Lamp caps and holders together with gauges for the control of interchangeabilit"
+    },
+    {
+      "reference_id": "REF-DOC012-0003",
+      "document_id": "DOC-012",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS/IEC 60529",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": "h gauges for the control of interchangeability and safety - IS/IEC 60529 Degrees of protection provided by enclosures (IP Code)"
+    },
+    {
+      "reference_id": "REF-DOC012-0004",
+      "document_id": "DOC-012",
+      "source_clause": "6.1",
+      "source_pages": [
+        2
+      ],
+      "target_standard": "IS/IEC 60061",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": "eability shall be ensured by the use of caps complying with IS/IEC 60061."
+    },
+    {
+      "reference_id": "REF-DOC012-0005",
+      "document_id": "DOC-012",
+      "source_clause": "10.2",
+      "source_pages": [
+        2
+      ],
+      "target_standard": "IS 11000",
+      "target_location": "Part 2",
+      "reference_type": "test_method",
+      "context_snippet": "10.2 Glow-wire test: When tested in accordance with IS 11000 (Part 2/Sec 1), the test temperature shall be 650 °C for parts not holding live"
+    }
+  ],
   "references": [
     "IS 11000",
     "IS 15885 (Part 2/Sec 13) : 2012",
     "IS/IEC 60061",
     "IS/IEC 60529"
   ],
+  "tables": [],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:19:53.948180+00:00",
+    "normalized_at": "2026-08-30T15:21:58.223893+00:00",
     "total_entities": 27,
     "total_requirements": 6,
-    "total_relationships": 9,
+    "total_relationships": 62,
+    "total_cross_references": 5,
     "total_tables": 0,
     "total_references": 4,
     "status": "normalized"

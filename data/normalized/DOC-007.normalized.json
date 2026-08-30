@@ -1642,10 +1642,21 @@
   ],
   "relationships": [
     {
-      "relationship_id": "REL-DOC-007-0001",
+      "relationship_id": "REL-DOC007-0001",
       "subject": "IS 15885 (Part 2/Sec 13) : 2012",
       "predicate": "applies_to",
-      "object": "Self-Ballasted LED Lamp",
+      "object": "LED Controlgear",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0002",
+      "subject": "Clause 1: SCOPE",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
       "document_id": "DOC-007",
       "source_clause": "1",
       "source_pages": [
@@ -1653,32 +1664,21 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-007-0002",
-      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
-      "predicate": "references",
-      "object": "IS 15885\n(Part 1) : 2011",
+      "relationship_id": "REL-DOC007-0003",
+      "subject": "Clause 2: REFERENCES",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
       "document_id": "DOC-007",
-      "source_clause": "1",
+      "source_clause": "2",
       "source_pages": [
         6
       ]
     },
     {
-      "relationship_id": "REL-DOC-007-0003",
-      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
-      "predicate": "references",
-      "object": "IS 16104 : 2012",
-      "document_id": "DOC-007",
-      "source_clause": "1",
-      "source_pages": [
-        6
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-007-0004",
-      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
-      "predicate": "references",
-      "object": "IS 15885",
+      "relationship_id": "REL-DOC007-0004",
+      "subject": "Clause 3: TERMINOLOGY",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
       "document_id": "DOC-007",
       "source_clause": "3",
       "source_pages": [
@@ -1687,10 +1687,554 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-007-0005",
-      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
-      "predicate": "references",
-      "object": "IS 2500",
+      "relationship_id": "REL-DOC007-0005",
+      "subject": "Clause 3",
+      "predicate": "defines",
+      "object": "TERMINOLOGY",
+      "document_id": "DOC-007",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0006",
+      "subject": "Clause 3.1: Electronic Controlgear for LED Modules —",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0007",
+      "subject": "Clause 3.1",
+      "predicate": "defines",
+      "object": "Electronic Controlgear for LED Modules —",
+      "document_id": "DOC-007",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0008",
+      "subject": "Clause 3.2: d.c. or a.c. Supplied Controlgear —  Controlgear",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0009",
+      "subject": "Clause 3.2",
+      "predicate": "defines",
+      "object": "d.c. or a.c. Supplied Controlgear —  Controlgear",
+      "document_id": "DOC-007",
+      "source_clause": "3.2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0010",
+      "subject": "Clause 3.3: SELV Controlgear — Controlgear providing a",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0011",
+      "subject": "Clause 3.3",
+      "predicate": "defines",
+      "object": "SELV Controlgear — Controlgear providing a",
+      "document_id": "DOC-007",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0012",
+      "subject": "Clause 3.4: Associated Controlgear —  Controlgear designed",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0013",
+      "subject": "Clause 3.4",
+      "predicate": "defines",
+      "object": "Associated Controlgear —  Controlgear designed",
+      "document_id": "DOC-007",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0014",
+      "subject": "Clause 3.5: Plug-in Controlgear — Controlgear incorporated",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0015",
+      "subject": "Clause 3.5",
+      "predicate": "defines",
+      "object": "Plug-in Controlgear — Controlgear incorporated",
+      "document_id": "DOC-007",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0016",
+      "subject": "Clause 3.6: Rated Output Voltage for Constant Voltage",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.6",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0017",
+      "subject": "Clause 3.6",
+      "predicate": "defines",
+      "object": "Rated Output Voltage for Constant Voltage",
+      "document_id": "DOC-007",
+      "source_clause": "3.6",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0018",
+      "subject": "Clause 3.7: Rated Output Current for Constant Current",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.7",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0019",
+      "subject": "Clause 3.7",
+      "predicate": "defines",
+      "object": "Rated Output Current for Constant Current",
+      "document_id": "DOC-007",
+      "source_clause": "3.7",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0020",
+      "subject": "Clause 3.8: Light Emitting Diode (LED) — Solid state device",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0021",
+      "subject": "Clause 3.8",
+      "predicate": "defines",
+      "object": "Light Emitting Diode (LED) — Solid state device",
+      "document_id": "DOC-007",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0022",
+      "subject": "Clause 3.9: LED Module —  Unit supplied as a light source.",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0023",
+      "subject": "Clause 3.9",
+      "predicate": "defines",
+      "object": "LED Module —  Unit supplied as a light source.",
+      "document_id": "DOC-007",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0024",
+      "subject": "Clause 3.10: Maximum Output Voltage —  Maximum voltage",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0025",
+      "subject": "Clause 3.10",
+      "predicate": "defines",
+      "object": "Maximum Output Voltage —  Maximum voltage",
+      "document_id": "DOC-007",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0026",
+      "subject": "Clause 3.11: Acceptance Test —  Tests carried out on samples",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0027",
+      "subject": "Clause 3.11",
+      "predicate": "defines",
+      "object": "Acceptance Test —  Tests carried out on samples",
+      "document_id": "DOC-007",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0028",
+      "subject": "Clause 4: GENERAL REQUIREMENTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0029",
+      "subject": "Clause 5: GENERAL NOTES ON TESTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "5",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0030",
+      "subject": "Clause 6: CLASSIFICATION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "6",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0031",
+      "subject": "Clause 7: MARKING",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0032",
+      "subject": "Clause 7.1: (h), (j) and (s) of IS 15885 (Part 1); and",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0033",
+      "subject": "Clause 7.2: Information to be Provided, if Applicable",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0034",
+      "subject": "Clause 7.3: BIS Certification Marking",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.3",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0035",
+      "subject": "Clause 7.3.1: The use of the Standard Mark is governed by the",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.3.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0036",
+      "subject": "Clause 8: PROTECTION AGAINST ACCIDENTAL",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "8",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0037",
+      "subject": "Clause 9: TERMINALS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0038",
+      "subject": "Clause 10: PROVISIONS FOR PROTECTIVE EARTHING",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0039",
+      "subject": "Clause 11: MOISTURE RESISTANCE AND INSULATION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "11",
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0040",
+      "subject": "Clause 12: ELECTRIC STRENGTH",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0041",
+      "subject": "Clause 13: THERMAL ENDURANCE TEST FOR",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "13",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0042",
+      "subject": "Clause 14: FAULT CONDITIONS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "14",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0043",
+      "subject": "Clause 15: TRANSFORMER HEATING",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "15",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0044",
+      "subject": "Clause 15.1: Normal Operation",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "15.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0045",
+      "subject": "Clause 15.2: Abnormal Operation",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "15.2",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0046",
+      "subject": "Clause 16: CONSTRUCTION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "16",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0047",
+      "subject": "Clause 17: CREEPAGE DISTANCES AND CLEARANCES",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "17",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0048",
+      "subject": "Clause 18: SCREWS, CURRENT-CARRYING PARTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "18",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0049",
+      "subject": "Clause 19: RESISTANCE TO HEAT, FIRE AND",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "19",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0050",
+      "subject": "Clause 20: RESISTANCE TO CORROSION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "20",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0051",
+      "subject": "Clause 21: TESTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "21",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0052",
+      "subject": "Clause 21.1: Classification of Tests",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "21.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0053",
+      "subject": "Clause 21.1.1: Type Tests",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0054",
+      "subject": "Clause 21.2: Acceptance Test",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
       "document_id": "DOC-007",
       "source_clause": "21.2",
       "source_pages": [
@@ -1699,10 +2243,10 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-007-0006",
-      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
-      "predicate": "specifies_test",
-      "object": "Electric Strength Test",
+      "relationship_id": "REL-DOC007-0055",
+      "subject": "Clause 4",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
       "document_id": "DOC-007",
       "source_clause": "4",
       "source_pages": [
@@ -1710,26 +2254,165 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-007-0007",
-      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
-      "predicate": "specifies_marking",
-      "object": "Mandatory Markings",
+      "relationship_id": "REL-DOC007-0056",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_limit",
+      "object": "== 4000 V a.c.",
       "document_id": "DOC-007",
-      "source_clause": "7",
+      "source_clause": "4",
       "source_pages": [
         7
       ]
     },
     {
-      "relationship_id": "REL-DOC-007-0008",
-      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
-      "predicate": "specifies_test",
-      "object": "Fault Condition Safety Test",
+      "relationship_id": "REL-DOC007-0057",
+      "subject": "dielectric_electric_strength",
+      "predicate": "tested_by",
+      "object": "4000 V a.c. (r.m.s.)",
       "document_id": "DOC-007",
-      "source_clause": "14",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0058",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: immediately following 48 h humidity treatment",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0059",
+      "subject": "Clause 7.2",
+      "predicate": "requires",
+      "object": "mandatory_marking_elements",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0060",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_limit",
+      "object": "mandatory Trade mark, rated voltage, rated wattage, rated frequency, standard mark None",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0061",
+      "subject": "mandatory_marking_elements",
+      "predicate": "tested_by",
+      "object": "Visual examination after durability rubbing",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0062",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_condition",
+      "object": "durability_test: Rubbing 15 s with hexane soaked cloth",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0063",
+      "subject": "Clause 12",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-007",
+      "source_clause": "12",
       "source_pages": [
         8
       ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0064",
+      "subject": "Clause 21.1.1",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-007",
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0065",
+      "subject": "Clause 21.2",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0066",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 15885\n(Part 1) : 2011 (Part 1)",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "reference_type": "normative"
+    },
+    {
+      "relationship_id": "REL-DOC007-0067",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 16104 : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "reference_type": "normative"
+    },
+    {
+      "relationship_id": "REL-DOC007-0068",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 15885 (Part 1)",
+      "document_id": "DOC-007",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ],
+      "reference_type": "definition"
+    },
+    {
+      "relationship_id": "REL-DOC007-0069",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 2500 (Part 1)",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "reference_type": "test_method"
     }
   ],
   "requirements": [
@@ -1883,13 +2566,307 @@
       ]
     }
   ],
-  "tables": [],
+  "cross_references": [
+    {
+      "reference_id": "REF-DOC007-0001",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "target_standard": "IS 15885\n(Part 1) : 2011",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "this standard. The Annexes A, B, C, D, E, F, G, H and L of IS 15885 (Part 1) : 2011 ‘Safety of lamp controlgear: Part 1 General requirements’ which are applicable"
+    },
+    {
+      "reference_id": "REF-DOC007-0002",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "target_standard": "IS 16104 : 2012",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": "e requirements shall be covered by a separate standard (see IS 16104 : 2012 ‘d.c. or a.c. supplied electronic controgear for LED Modules — Performance requ"
+    },
+    {
+      "reference_id": "REF-DOC007-0003",
+      "document_id": "DOC-007",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "definition",
+      "context_snippet": "For the purpose of this standard, the definitions given in IS 15885 (Part 1) and the following shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0004",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "4 GENERAL REQUIREMENTS The requirements of 4 of IS 15885 (Part 1) shall apply, together with the following additional requirements. Cont"
+    },
+    {
+      "reference_id": "REF-DOC007-0005",
+      "document_id": "DOC-007",
+      "source_clause": "5",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "5 GENERAL NOTES ON TESTS The requirements of 5 of IS 15885 (Part 1) shall apply along with the following additional requirements. The foll"
+    },
+    {
+      "reference_id": "REF-DOC007-0006",
+      "document_id": "DOC-007",
+      "source_clause": "6",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "ified according to the method of installation given in 6 of IS 15885 (Part 1) and according to, a) protection against electric shock; b) auto-wound"
+    },
+    {
+      "reference_id": "REF-DOC007-0007",
+      "document_id": "DOC-007",
+      "source_clause": "7.1",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "7.1 (h), (j) and (s) of IS 15885 (Part 1); and b) Mention whether the controlgear has mains- connected windings."
+    },
+    {
+      "reference_id": "REF-DOC007-0008",
+      "document_id": "DOC-007",
+      "source_clause": "8",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "CCIDENTAL CONTACT WITH LIVE PARTS The requirements of 10 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0009",
+      "document_id": "DOC-007",
+      "source_clause": "9",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "9 TERMINALS The requirements of 8 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0010",
+      "document_id": "DOC-007",
+      "source_clause": "10",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "PROVISIONS FOR PROTECTIVE EARTHING The requirements of 9 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0011",
+      "document_id": "DOC-007",
+      "source_clause": "11",
+      "source_pages": [
+        7,
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "OISTURE RESISTANCE AND INSULATION The requirements of 11 of IS 15885 (Part 1) shall apply. IS 15885 (Part 2/Sec 13) : 2012"
+    },
+    {
+      "reference_id": "REF-DOC007-0012",
+      "document_id": "DOC-007",
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "12 ELECTRIC STRENGTH The requirements of 12 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0013",
+      "document_id": "DOC-007",
+      "source_clause": "13",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "NCE TEST FOR WINDINGS OF BALLASTS The requirements of 13 of IS 15885 (Part 1) is not applicable."
+    },
+    {
+      "reference_id": "REF-DOC007-0014",
+      "document_id": "DOC-007",
+      "source_clause": "14",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "14 FAULT CONDITIONS The requirements of 14 of IS 15885 (Part 1) shall apply, together with the following additional requirements. In t"
+    },
+    {
+      "reference_id": "REF-DOC007-0015",
+      "document_id": "DOC-007",
+      "source_clause": "15",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "g control gears shall be tested according to L-6 and L-7 of IS 15885 (Part 1), where the requirements for control gears providing SELV are valid als"
+    },
+    {
+      "reference_id": "REF-DOC007-0016",
+      "document_id": "DOC-007",
+      "source_clause": "15.1",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "15.1 Normal Operation The requirements of L-6 of IS 15885 (Part 1) shall apply, together with the following additional requirement. For b"
+    },
+    {
+      "reference_id": "REF-DOC007-0017",
+      "document_id": "DOC-007",
+      "source_clause": "15.2",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "15.2 Abnormal Operation The requirements of L-7 of IS 15885 (Part 1) shall apply. In addition the following test at any voltage between 90"
+    },
+    {
+      "reference_id": "REF-DOC007-0018",
+      "document_id": "DOC-007",
+      "source_clause": "16",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "16 CONSTRUCTION The requirements of 15 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0019",
+      "document_id": "DOC-007",
+      "source_clause": "17",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "Unless otherwise specified in 14 the requirements of 16 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0020",
+      "document_id": "DOC-007",
+      "source_clause": "18",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "NT-CARRYING PARTS AND CONNECTIONS The requirements of 17 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0021",
+      "document_id": "DOC-007",
+      "source_clause": "19",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "STANCE TO HEAT, FIRE AND TRACKING The requirements of 18 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0022",
+      "document_id": "DOC-007",
+      "source_clause": "20",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "20 RESISTANCE TO CORROSION The requirements of 19 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0023",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "target_standard": "IS 2500",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "sampling plan for acceptance tests shall be as specified in IS 2500 (Part 1). The following shall constitute as acceptance tests: a) Marking (see 7"
+    },
+    {
+      "reference_id": "REF-DOC007-0024",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "protective earthing (see10); The requirements of Annex A of IS 15885 (Part 1) shall apply. e) Moisture resistance (see 11); f) electric strength (se"
+    }
+  ],
   "references": [
     "IS 15885",
     "IS 15885\n(Part 1) : 2011",
     "IS 16104 : 2012",
     "IS 2500"
   ],
+  "tables": [],
   "annexes": [
     {
       "annex_id": "ANNEX A",
@@ -1985,10 +2962,11 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:19:53.932010+00:00",
+    "normalized_at": "2026-08-30T15:21:58.194130+00:00",
     "total_entities": 45,
     "total_requirements": 5,
-    "total_relationships": 8,
+    "total_relationships": 69,
+    "total_cross_references": 24,
     "total_tables": 0,
     "total_references": 4,
     "status": "normalized"

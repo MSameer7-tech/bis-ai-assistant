@@ -4126,7 +4126,7 @@
   ],
   "relationships": [
     {
-      "relationship_id": "REL-DOC-001-0001",
+      "relationship_id": "REL-DOC001-0001",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "applies_to",
       "object": "Self-Ballasted LED Lamp",
@@ -4137,10 +4137,10 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-001-0002",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "references",
-      "object": "IS 16103 (Part 1) : 2012",
+      "relationship_id": "REL-DOC001-0002",
+      "subject": "Clause 1: SCOPE",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
       "document_id": "DOC-001",
       "source_clause": "1",
       "source_pages": [
@@ -4150,10 +4150,43 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-001-0003",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "references",
-      "object": "IS 16103",
+      "relationship_id": "REL-DOC001-0003",
+      "subject": "Clause 1.15: 1.15",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "1.15",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0004",
+      "subject": "Clause 1.5: 1.5",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "1.5",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0005",
+      "subject": "Clause 2: REFERENCES",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0006",
+      "subject": "Clause 3: TERMINOLOGY",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
       "document_id": "DOC-001",
       "source_clause": "3",
       "source_pages": [
@@ -4163,7 +4196,1905 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-001-0004",
+      "relationship_id": "REL-DOC001-0007",
+      "subject": "Clause 3",
+      "predicate": "defines",
+      "object": "TERMINOLOGY",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0008",
+      "subject": "Clause 3.1: Self-Ballasted LED Lamp — Unit which cannot",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0009",
+      "subject": "Clause 3.1",
+      "predicate": "defines",
+      "object": "Self-Ballasted LED Lamp — Unit which cannot",
+      "document_id": "DOC-001",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0010",
+      "subject": "Clause 3.2: Type — Lamps that, independent of the type of",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0011",
+      "subject": "Clause 3.2",
+      "predicate": "defines",
+      "object": "Type — Lamps that, independent of the type of",
+      "document_id": "DOC-001",
+      "source_clause": "3.2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0012",
+      "subject": "Clause 3.3: Rated Voltage — Voltage or voltage range marked",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0013",
+      "subject": "Clause 3.3",
+      "predicate": "defines",
+      "object": "Rated Voltage — Voltage or voltage range marked",
+      "document_id": "DOC-001",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0014",
+      "subject": "Clause 3.4: Rated Wattage — Wattage marked on the lamp.",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0015",
+      "subject": "Clause 3.4",
+      "predicate": "defines",
+      "object": "Rated Wattage — Wattage marked on the lamp.",
+      "document_id": "DOC-001",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0016",
+      "subject": "Clause 3.5: Rated Frequency — Frequency marked on the",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0017",
+      "subject": "Clause 3.5",
+      "predicate": "defines",
+      "object": "Rated Frequency — Frequency marked on the",
+      "document_id": "DOC-001",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0018",
+      "subject": "Clause 3.6: Cap Temperature Rise (∆ ts) — Surface",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.6",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0019",
+      "subject": "Clause 3.6",
+      "predicate": "defines",
+      "object": "Cap Temperature Rise (∆ ts) — Surface",
+      "document_id": "DOC-001",
+      "source_clause": "3.6",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0020",
+      "subject": "Clause 3.7: Live Part — Conductive part which may cause an",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.7",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0021",
+      "subject": "Clause 3.7",
+      "predicate": "defines",
+      "object": "Live Part — Conductive part which may cause an",
+      "document_id": "DOC-001",
+      "source_clause": "3.7",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0022",
+      "subject": "Clause 3.8: Type Test — A test or series of tests made on a",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.8",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0023",
+      "subject": "Clause 3.8",
+      "predicate": "defines",
+      "object": "Type Test — A test or series of tests made on a",
+      "document_id": "DOC-001",
+      "source_clause": "3.8",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0024",
+      "subject": "Clause 3.9: Type Test Sample — A sample consisting of one",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0025",
+      "subject": "Clause 3.9",
+      "predicate": "defines",
+      "object": "Type Test Sample — A sample consisting of one",
+      "document_id": "DOC-001",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0026",
+      "subject": "Clause 3.10: Acceptance Test — Tests carried out on samples",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0027",
+      "subject": "Clause 3.10",
+      "predicate": "defines",
+      "object": "Acceptance Test — Tests carried out on samples",
+      "document_id": "DOC-001",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0028",
+      "subject": "Clause 3.11: Inspection Test Quantity (ITQ) — The number",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0029",
+      "subject": "Clause 3.11",
+      "predicate": "defines",
+      "object": "Inspection Test Quantity (ITQ) — The number",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0030",
+      "subject": "Clause 3.12: Batch — All the lamps of one type put forward at",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.12",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0031",
+      "subject": "Clause 3.12",
+      "predicate": "defines",
+      "object": "Batch — All the lamps of one type put forward at",
+      "document_id": "DOC-001",
+      "source_clause": "3.12",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0032",
+      "subject": "Clause 3.0: 3.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "3.0",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0033",
+      "subject": "Clause 3.0",
+      "predicate": "defines",
+      "object": "3.0",
+      "document_id": "DOC-001",
+      "source_clause": "3.0",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0034",
+      "subject": "Clause 4: GENERAL REQUIREMENT AND GENERAL",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "4",
+      "source_pages": [
+        7,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0035",
+      "subject": "Clause 4.1: The lamps shall be so designed and constructed",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "4.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0036",
+      "subject": "Clause 4.2: Self-Ballasted LED",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "4.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0037",
+      "subject": "Clause 4.3: In general, all tests are carried out on each type of",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "4.3",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0038",
+      "subject": "Clause 4.4: When the lamp fails safely during one of the tests,",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "4.4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0039",
+      "subject": "Clause 4.0: 4.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "4.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0040",
+      "subject": "Clause 5: MARKING",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "5",
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0041",
+      "subject": "Clause 5.1: Lamps shall be clearly and durably marked with",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "5.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0042",
+      "subject": "Clause 5.2: In addition, the following information shall be given",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "5.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0043",
+      "subject": "Clause 5.3: Compliance is checked by the following:",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "5.3",
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0044",
+      "subject": "Clause 5.4: BIS Certification Marking",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "5.4",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0045",
+      "subject": "Clause 5.4.1: The use of the Standard Mark is governed by the",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "5.4.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0046",
+      "subject": "Clause 6: INTERCHANGEABILITY",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "6",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0047",
+      "subject": "Clause 6.1: Cap Interchangeability",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "6.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0048",
+      "subject": "Clause 6.2: Bending Moment, Axial Pull and Mass",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0049",
+      "subject": "Clause 0.5: 0.5",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "0.5",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0050",
+      "subject": "Clause 0.1: 0.1",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "0.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0051",
+      "subject": "Clause 0.3: 0.3",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "0.3",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0052",
+      "subject": "Clause 7: PROTECTION AGAINST ACCIDENTAL",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0053",
+      "subject": "Clause 7",
+      "predicate": "prohibits",
+      "object": "Access to Live Conductive Parts",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0054",
+      "subject": "Clause 7.0: 7.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "7.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0055",
+      "subject": "Clause 8: INSULATION RESISTANCE AND ELECTRIC",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "8",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0056",
+      "subject": "Clause 8.1: Insulation resistance and electric strength shall be",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "8.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0057",
+      "subject": "Clause 8.1.1: Insulation Resistance",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0058",
+      "subject": "Clause 8.2: Electric Strength",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "8.2",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0059",
+      "subject": "Clause 8.0: 8.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "8.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0060",
+      "subject": "Clause 9: MECHANICAL STRENGTH",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "9",
+      "source_pages": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0061",
+      "subject": "Clause 9.1: Torsion Resistance of Unused Lamps",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "9.1",
+      "source_pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0062",
+      "subject": "Clause 9.0: 9.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "9.0",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0063",
+      "subject": "Clause 9.5: 9.5",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "9.5",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0064",
+      "subject": "Clause 9.2: Torsion Resistance of Lamps after a Defined",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "9.2",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0065",
+      "subject": "Clause 9.3: Verification",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "9.3",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0066",
+      "subject": "Clause 0.8: 0.8",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "0.8",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0067",
+      "subject": "Clause 20.0: 20.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "20.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0068",
+      "subject": "Clause 32.0: 32.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "32.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0069",
+      "subject": "Clause 32.0",
+      "predicate": "defines",
+      "object": "32.0",
+      "document_id": "DOC-001",
+      "source_clause": "32.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0070",
+      "subject": "Clause 0.0: 0.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "0.0",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0071",
+      "subject": "Clause 23.0: 23.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "23.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0072",
+      "subject": "Clause 26.45: 26.45",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "26.45",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0073",
+      "subject": "Clause 24.26: 24.26",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "24.26",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0074",
+      "subject": "Clause 22.27: 22.27",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "22.27",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0075",
+      "subject": "Clause 19.0: 19.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "19.0",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0076",
+      "subject": "Clause 21.0: 21.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "21.0",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0077",
+      "subject": "Clause 28.0: 28.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "28.0",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0078",
+      "subject": "Clause 18.3: 18.3",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "18.3",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0079",
+      "subject": "Clause 24.6: 24.6",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "24.6",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0080",
+      "subject": "Clause 10: CAP TEMPERATURE RISE",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0081",
+      "subject": "Clause 10",
+      "predicate": "prohibits",
+      "object": "Cap Temperature Rise > 120 K",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0082",
+      "subject": "Clause 10.0: 10.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "10.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0083",
+      "subject": "Clause 10.62: 10.62",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "10.62",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0084",
+      "subject": "Clause 11: RESISTANCE TO HEAT",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "11",
+      "source_pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0085",
+      "subject": "Clause 11",
+      "predicate": "prohibits",
+      "object": "Access to Live Conductive Parts",
+      "document_id": "DOC-001",
+      "source_clause": "11",
+      "source_pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0086",
+      "subject": "Clause 11",
+      "predicate": "prohibits",
+      "object": "Cap Temperature Rise > 120 K",
+      "document_id": "DOC-001",
+      "source_clause": "11",
+      "source_pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0087",
+      "subject": "Clause 11.5: 11.5",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "11.5",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0088",
+      "subject": "Clause 11.0: 11.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "11.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0089",
+      "subject": "Clause 11.89: 11.89",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "11.89",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0090",
+      "subject": "Clause 12: RESISTANCE TO FLAME AND IGNITION",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "12",
+      "source_pages": [
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0091",
+      "subject": "Clause 12.0: 12.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "12.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0092",
+      "subject": "Clause 12.29: 12.29",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "12.29",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0093",
+      "subject": "Clause 12.15: 12.15",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "12.15",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0094",
+      "subject": "Clause 12.7: 12.7",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "12.7",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0095",
+      "subject": "Clause 12.1: Parts of insulating material retaining live parts in",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0096",
+      "subject": "Clause 12.1",
+      "predicate": "prohibits",
+      "object": "Access to Live Conductive Parts",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0097",
+      "subject": "Clause 13: FAULT CONDITIONS",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13",
+      "source_pages": [
+        11,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0098",
+      "subject": "Clause 13.5: Fault Conditions Across Electronic Components",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13.5",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0099",
+      "subject": "Clause 13.89: 13.89",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13.89",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0100",
+      "subject": "Clause 13.1: General",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13.1",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0101",
+      "subject": "Clause 13.2: Extreme Electrical Conditions (Dimmable",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0102",
+      "subject": "Clause 13.3: Extreme Electrical Conditions (Non-dimmable",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13.3",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0103",
+      "subject": "Clause 13.4: Short-Circuit Across Capacitors",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13.4",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0104",
+      "subject": "Clause 13.6: Compliance",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "13.6",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0105",
+      "subject": "Clause 14: CREEPAGE DISTANCES AND CLEARANCES",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "14",
+      "source_pages": [
+        11,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0106",
+      "subject": "Clause 14.0: 14.0",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "14.0",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0107",
+      "subject": "Clause 15: SELECTION OF LAMPS FOR TESTS",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "15",
+      "source_pages": [
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0108",
+      "subject": "Clause 15.27: 15.27",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "15.27",
+      "source_pages": [
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0109",
+      "subject": "Clause 15.1: Method of Selection",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "15.1",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0110",
+      "subject": "Clause 15.2: Inspection Test Quantity (ITQ)",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "15.2",
+      "source_pages": [
+        14,
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0111",
+      "subject": "Clause 15.3: Accidentally Broken and/or in Corrected",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "15.3",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0112",
+      "subject": "Clause 15.3.1: Lamps, which are accidentally broken, shall,",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "15.3.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0113",
+      "subject": "Clause 16: CONDITIONS OF COMPLIANCE",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "16",
+      "source_pages": [
+        11,
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0114",
+      "subject": "Clause 16.64: 16.64",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "16.64",
+      "source_pages": [
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0115",
+      "subject": "Clause 16.1: General Conditions",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "16.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0116",
+      "subject": "Clause 16.2: Test for Inspection Test Quantity",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "16.2",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0117",
+      "subject": "Clause 16.2.1: Following shall constitute inspection tests:",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0118",
+      "subject": "Clause 17: TESTS",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0119",
+      "subject": "Clause 17.1: Classification of Tests",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0120",
+      "subject": "Clause 17.1.1: Type Tests",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0121",
+      "subject": "Clause 17.1.2: The number of sample shall be as given for ITQ",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.2",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0122",
+      "subject": "Clause 17.1.3: The number of samples for temperature rise",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.3",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0123",
+      "subject": "Clause 17.1.4: The number of samples for resistance to",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.4",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0124",
+      "subject": "Clause 17.2: Acceptance Test",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17.2",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0125",
+      "subject": "Clause 17.2.1: Sampling shall be the same as given against",
+      "predicate": "part_of",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "17.2.1",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0126",
+      "subject": "Clause 17.2.1",
+      "predicate": "prohibits",
+      "object": "Cap Temperature Rise > 120 K",
+      "document_id": "DOC-001",
+      "source_clause": "17.2.1",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0127",
+      "subject": "Clause 1",
+      "predicate": "requires",
+      "object": "rated_wattage",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0128",
+      "subject": "rated_wattage",
+      "predicate": "has_limit",
+      "object": "<= 60.0 W",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0129",
+      "subject": "rated_wattage",
+      "predicate": "tested_by",
+      "object": "B15d, B22d, E11, E12, E14, E17, E26, E27, GU10",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0130",
+      "subject": "rated_wattage",
+      "predicate": "has_condition",
+      "object": "supply_voltage: up to 250 V a.c. 50 Hz",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0131",
+      "subject": "rated_wattage",
+      "predicate": "has_condition",
+      "object": "intended_use: domestic and similar general lighting services",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0132",
+      "subject": "Clause 2",
+      "predicate": "requires",
+      "object": "cap_temperature_rise",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0133",
+      "subject": "cap_temperature_rise",
+      "predicate": "has_limit",
+      "object": "<= 120.0 K",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0134",
+      "subject": "cap_temperature_rise",
+      "predicate": "tested_by",
+      "object": "standard test lampholder fitted to lamp",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0135",
+      "subject": "cap_temperature_rise",
+      "predicate": "has_condition",
+      "object": "ambient_temperature: 25 ± 5 °C",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0136",
+      "subject": "cap_temperature_rise",
+      "predicate": "has_condition",
+      "object": "operating_voltage: rated voltage",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0137",
+      "subject": "cap_temperature_rise",
+      "predicate": "has_condition",
+      "object": "test_method: IS 8913",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0138",
+      "subject": "Clause 2",
+      "predicate": "requires",
+      "object": "glow_wire_temperature",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0139",
+      "subject": "glow_wire_temperature",
+      "predicate": "has_limit",
+      "object": ">= 650.0 °C",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0140",
+      "subject": "glow_wire_temperature",
+      "predicate": "tested_by",
+      "object": "750 °C",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0141",
+      "subject": "glow_wire_temperature",
+      "predicate": "has_condition",
+      "object": "test_standard: IS 11000 (Part 2/Sec 1)",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0142",
+      "subject": "glow_wire_temperature",
+      "predicate": "has_condition",
+      "object": "specimen_support: tissue paper spread 200 ± 5 mm below specimen",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0143",
+      "subject": "Clause 3.11",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0144",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_limit",
+      "object": "== 4000 V a.c.",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0145",
+      "subject": "dielectric_electric_strength",
+      "predicate": "tested_by",
+      "object": "4000 V a.c. (r.m.s.)",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0146",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: immediately following 48 h humidity treatment",
+      "document_id": "DOC-001",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0147",
+      "subject": "Clause 5.1",
+      "predicate": "requires",
+      "object": "mandatory_marking_elements",
+      "document_id": "DOC-001",
+      "source_clause": "5.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0148",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_limit",
+      "object": "mandatory Trade mark, rated voltage, rated wattage, rated frequency, standard mark None",
+      "document_id": "DOC-001",
+      "source_clause": "5.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0149",
+      "subject": "mandatory_marking_elements",
+      "predicate": "tested_by",
+      "object": "Visual examination after durability rubbing",
+      "document_id": "DOC-001",
+      "source_clause": "5.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0150",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_condition",
+      "object": "durability_test: Rubbing 15 s with hexane soaked cloth",
+      "document_id": "DOC-001",
+      "source_clause": "5.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0151",
+      "subject": "Clause 7",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0152",
+      "subject": "Clause 8.1",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "8.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0153",
+      "subject": "Clause 8.1.1",
+      "predicate": "requires",
+      "object": "insulation_resistance",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0154",
+      "subject": "insulation_resistance",
+      "predicate": "has_limit",
+      "object": ">= 4.0 MΩ",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0155",
+      "subject": "insulation_resistance",
+      "predicate": "tested_by",
+      "object": "approximately 500 V d.c.",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0156",
+      "subject": "insulation_resistance",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: 48 h in humidity cabinet at 91-95% RH",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0157",
+      "subject": "insulation_resistance",
+      "predicate": "has_condition",
+      "object": "temperature: 25-35 °C",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0158",
+      "subject": "insulation_resistance",
+      "predicate": "has_condition",
+      "object": "duration: 48 h",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0159",
+      "subject": "Clause 8.2",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "8.2",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0160",
+      "subject": "Clause 10",
+      "predicate": "requires",
+      "object": "cap_temperature_rise",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0161",
+      "subject": "Clause 12.1",
+      "predicate": "requires",
+      "object": "glow_wire_temperature",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0162",
+      "subject": "Clause 15.1",
+      "predicate": "requires",
+      "object": "inspection_test_quantity",
+      "document_id": "DOC-001",
+      "source_clause": "15.1",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0163",
+      "subject": "inspection_test_quantity",
+      "predicate": "has_limit",
+      "object": "== 25 lamps",
+      "document_id": "DOC-001",
+      "source_clause": "15.1",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0164",
+      "subject": "inspection_test_quantity",
+      "predicate": "tested_by",
+      "object": "lamps divided into test groups as specified in standard",
+      "document_id": "DOC-001",
+      "source_clause": "15.1",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0165",
+      "subject": "inspection_test_quantity",
+      "predicate": "has_condition",
+      "object": "selection_stage: sampling for type approval and compliance verification",
+      "document_id": "DOC-001",
+      "source_clause": "15.1",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0166",
+      "subject": "Clause 15.2",
+      "predicate": "requires",
+      "object": "inspection_test_quantity",
+      "document_id": "DOC-001",
+      "source_clause": "15.2",
+      "source_pages": [
+        14,
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0167",
+      "subject": "Clause 16.2.1",
+      "predicate": "requires",
+      "object": "insulation_resistance",
+      "document_id": "DOC-001",
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0168",
+      "subject": "Clause 16.2.1",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0169",
+      "subject": "Clause 17.1.1",
+      "predicate": "requires",
+      "object": "insulation_resistance",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0170",
+      "subject": "Clause 17.1.1",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0171",
+      "subject": "Clause 17.2",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-001",
+      "source_clause": "17.2",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC001-0172",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16103 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ],
+      "reference_type": "test_method"
+    },
+    {
+      "relationship_id": "REL-DOC001-0173",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16103 (Part 1)",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ],
+      "reference_type": "definition"
+    },
+    {
+      "relationship_id": "REL-DOC001-0174",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16101",
@@ -4173,10 +6104,11 @@
         6,
         7,
         12
-      ]
+      ],
+      "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC-001-0005",
+      "relationship_id": "REL-DOC001-0175",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 9206",
@@ -4184,10 +6116,11 @@
       "source_clause": "3.1",
       "source_pages": [
         6
-      ]
+      ],
+      "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC-001-0006",
+      "relationship_id": "REL-DOC001-0176",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 8913",
@@ -4196,10 +6129,11 @@
       "source_pages": [
         6,
         7
-      ]
+      ],
+      "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC-001-0007",
+      "relationship_id": "REL-DOC001-0177",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16108",
@@ -4207,56 +6141,73 @@
       "source_clause": "5.2",
       "source_pages": [
         7
-      ]
+      ],
+      "reference_type": "normative"
     },
     {
-      "relationship_id": "REL-DOC-001-0008",
+      "relationship_id": "REL-DOC001-0178",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
-      "object": "IS 15687",
+      "object": "IS 9206 (Table 1)",
+      "document_id": "DOC-001",
+      "source_clause": "6.1",
+      "source_pages": [
+        8
+      ],
+      "reference_type": "test_method"
+    },
+    {
+      "relationship_id": "REL-DOC001-0179",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 15687 (Part 1)",
       "document_id": "DOC-001",
       "source_clause": "6.2",
       "source_pages": [
         8,
         9
-      ]
+      ],
+      "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC-001-0009",
+      "relationship_id": "REL-DOC001-0180",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
-      "object": "IS 15885",
+      "object": "IS 15885 (Part 1)",
       "document_id": "DOC-001",
       "source_clause": "8.1.1",
       "source_pages": [
         9
-      ]
+      ],
+      "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC-001-0010",
+      "relationship_id": "REL-DOC001-0181",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
-      "object": "IS 10322",
+      "object": "IS 10322 (Part 1)",
       "document_id": "DOC-001",
       "source_clause": "8.2",
       "source_pages": [
         9
-      ]
+      ],
+      "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC-001-0011",
+      "relationship_id": "REL-DOC001-0182",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
-      "object": "IS 11000",
+      "object": "IS 11000 (Part 2)",
       "document_id": "DOC-001",
       "source_clause": "12.1",
       "source_pages": [
         13,
         14
-      ]
+      ],
+      "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC-001-0012",
+      "relationship_id": "REL-DOC001-0183",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "is 650",
@@ -4265,10 +6216,11 @@
       "source_pages": [
         13,
         14
-      ]
+      ],
+      "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC-001-0013",
+      "relationship_id": "REL-DOC001-0184",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 4261",
@@ -4277,10 +6229,11 @@
       "source_pages": [
         13,
         14
-      ]
+      ],
+      "reference_type": "test_method"
     },
     {
-      "relationship_id": "REL-DOC-001-0014",
+      "relationship_id": "REL-DOC001-0185",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
       "object": "IS 16001",
@@ -4288,89 +6241,20 @@
       "source_clause": "13.2",
       "source_pages": [
         14
-      ]
+      ],
+      "reference_type": "definition"
     },
     {
-      "relationship_id": "REL-DOC-001-0015",
+      "relationship_id": "REL-DOC001-0186",
       "subject": "IS 16102 (Part 1) : 2012",
       "predicate": "references",
-      "object": "IS 16002",
+      "object": "IS 16002 (Part 2)",
       "document_id": "DOC-001",
       "source_clause": "15.3.1",
       "source_pages": [
         15
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-001-0016",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "specifies_test",
-      "object": "Glow-Wire Flammability Test",
-      "document_id": "DOC-001",
-      "source_clause": "2",
-      "source_pages": [
-        6
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-001-0017",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "specifies_marking",
-      "object": "Mandatory Markings",
-      "document_id": "DOC-001",
-      "source_clause": "5",
-      "source_pages": [
-        7,
-        8
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-001-0018",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "specifies_test",
-      "object": "Electric Strength Test",
-      "document_id": "DOC-001",
-      "source_clause": "7",
-      "source_pages": [
-        9,
-        11
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-001-0019",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "specifies_test",
-      "object": "Insulation Resistance Test",
-      "document_id": "DOC-001",
-      "source_clause": "8",
-      "source_pages": [
-        9,
-        11
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-001-0020",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "specifies_test",
-      "object": "Mechanical Torque Test",
-      "document_id": "DOC-001",
-      "source_clause": "0.0",
-      "source_pages": [
-        11,
-        12
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-001-0021",
-      "subject": "IS 16102 (Part 1) : 2012",
-      "predicate": "specifies_test",
-      "object": "Fault Condition Safety Test",
-      "document_id": "DOC-001",
-      "source_clause": "13",
-      "source_pages": [
-        11,
-        14
-      ]
+      ],
+      "reference_type": "test_method"
     }
   ],
   "requirements": [
@@ -4912,6 +6796,303 @@
       ]
     }
   ],
+  "cross_references": [
+    {
+      "reference_id": "REF-DOC001-0001",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ],
+      "target_standard": "IS 16103 (Part 1) : 2012",
+      "target_location": null,
+      "reference_type": "test_method",
+      "context_snippet": ". Recommendations for batch testing are given in Annex C of IS 16103 (Part 1) : 2012 ‘LED modules for general lighting: Part 1 Safety requirements’. NOTES 1 Where i"
+    },
+    {
+      "reference_id": "REF-DOC001-0002",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ],
+      "target_standard": "IS 16103",
+      "target_location": "Part 1",
+      "reference_type": "definition",
+      "context_snippet": "Y For the purpose of this standard the definitions given in IS 16103 (Part 1) and IS 16101 along with the following shall apply."
+    },
+    {
+      "reference_id": "REF-DOC001-0003",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ],
+      "target_standard": "IS 16101",
+      "target_location": null,
+      "reference_type": "definition",
+      "context_snippet": "his standard the definitions given in IS 16103 (Part 1) and IS 16101 along with the following shall apply."
+    },
+    {
+      "reference_id": "REF-DOC001-0004",
+      "document_id": "DOC-001",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ],
+      "target_standard": "IS 9206",
+      "target_location": null,
+      "reference_type": "definition",
+      "context_snippet": "peration of the light source. NOTE — Lamp caps are given in IS 9206 ."
+    },
+    {
+      "reference_id": "REF-DOC001-0005",
+      "document_id": "DOC-001",
+      "source_clause": "3.6",
+      "source_pages": [
+        6,
+        7
+      ],
+      "target_standard": "IS 8913",
+      "target_location": null,
+      "reference_type": "definition",
+      "context_snippet": "dard method for Edison screw cap or Bayonet cap is given in IS 8913."
+    },
+    {
+      "reference_id": "REF-DOC001-0006",
+      "document_id": "DOC-001",
+      "source_clause": "5.2",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 16108",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": ". 1 may be used. e) For eye protection, see requirements of IS 16108. FIG. 1 DIMMING NOT ALLOWED"
+    },
+    {
+      "reference_id": "REF-DOC001-0007",
+      "document_id": "DOC-001",
+      "source_clause": "6.1",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 9206",
+      "target_location": "Table 1",
+      "reference_type": "test_method",
+      "context_snippet": "lity shall be ensured by the use of caps in accordance with IS 9206 (see Table 1). Compliance is checked by the use of the relevant gauges specifie"
+    },
+    {
+      "reference_id": "REF-DOC001-0008",
+      "document_id": "DOC-001",
+      "source_clause": "6.1",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 9206",
+      "target_location": null,
+      "reference_type": "test_method",
+      "context_snippet": "e is checked by the use of the relevant gauges specified in IS 9206."
+    },
+    {
+      "reference_id": "REF-DOC001-0009",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "target_standard": "IS 15687",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "nd bending moment. For the measurement method, see A-2.1 of IS 15687 (Part 1). The mass as given in Table 2 shall not be exceeded. Table 1 Interchan"
+    },
+    {
+      "reference_id": "REF-DOC001-0010",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "target_standard": "IS 9206",
+      "target_location": null,
+      "reference_type": "test_method",
+      "context_snippet": "ions (Clauses 1 and 6.1) Sl No. Lamp Cap Cap Sheet No. from IS 9206 Cap Dimensions to be Checked by the Gauge Gauge Sheet No. from IS 9206 (1) (2)"
+    },
+    {
+      "reference_id": "REF-DOC001-0011",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ],
+      "target_standard": "IS 9206",
+      "target_location": null,
+      "reference_type": "test_method",
+      "context_snippet": "er according to the relevant lampholder data sheet given in IS 9206. Compliance is checked by means of the test finger specified in Fig. 2, if nece"
+    },
+    {
+      "reference_id": "REF-DOC001-0012",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "etal foil) shall be not less than 4 MΩ. The requirements of IS 15885 (Part 1), Annex A, shall be complied with. NOTE — The insulation resistance of"
+    },
+    {
+      "reference_id": "REF-DOC001-0013",
+      "document_id": "DOC-001",
+      "source_clause": "8.2",
+      "source_pages": [
+        9
+      ],
+      "target_standard": "IS 10322",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "y no more than half the voltage prescribed in Table 10.2 of IS 10322 (Part 1) for Class II luminaires is applied between the contacts and the metal"
+    },
+    {
+      "reference_id": "REF-DOC001-0014",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ],
+      "target_standard": "IS 8913",
+      "target_location": null,
+      "reference_type": "test_method",
+      "context_snippet": "operating position and ambient temperature are detailed in IS 8913. Measurement shall be carried out at rated voltage. If the lamp is marked with"
+    },
+    {
+      "reference_id": "REF-DOC001-0015",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ],
+      "target_standard": "IS 11000",
+      "target_location": "Part 2",
+      "reference_type": "test_method",
+      "context_snippet": "hock are subjected to the glow-wire test in accordance with IS 11000 (Part 2/Sec 1), subject to the following details: a) The test specimen is a com"
+    },
+    {
+      "reference_id": "REF-DOC001-0016",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ],
+      "target_standard": "is 650",
+      "target_location": null,
+      "reference_type": "test_method",
+      "context_snippet": "f the specimen. The temperature of the tip of the glow-wire is 650 °C. After 30 s the specimen is withdrawn from contact with the glow-wire tip. T"
+    },
+    {
+      "reference_id": "REF-DOC001-0017",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ],
+      "target_standard": "IS 4261",
+      "target_location": null,
+      "reference_type": "test_method",
+      "context_snippet": "± 5 mm below the specimen. The tissue paper is specified in IS 4261. The test is not made on parts of ceramic material."
+    },
+    {
+      "reference_id": "REF-DOC001-0018",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ],
+      "target_standard": "IS 16001",
+      "target_location": null,
+      "reference_type": "definition",
+      "context_snippet": "is switched on at ambient temperature (definition given in IS 16001 and conditions as given in H-1 of IS 15885 (Part 1) and adjusted to the most cr"
+    },
+    {
+      "reference_id": "REF-DOC001-0019",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "definition",
+      "context_snippet": "inition given in IS 16001 and conditions as given in H-1 of IS 15885 (Part 1) and adjusted to the most critical electrical conditions as indicated b"
+    },
+    {
+      "reference_id": "REF-DOC001-0020",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ],
+      "target_standard": "IS 8913",
+      "target_location": null,
+      "reference_type": "definition",
+      "context_snippet": "emperature does not change by more than 1 K as specified in IS 8913. The lamp shall withstand the extreme electrical conditions for at least 15 min"
+    },
+    {
+      "reference_id": "REF-DOC001-0021",
+      "document_id": "DOC-001",
+      "source_clause": "14",
+      "source_pages": [
+        11,
+        14
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "14 CREEPAGE DISTANCES AND CLEARANCES The requirements of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC001-0022",
+      "document_id": "DOC-001",
+      "source_clause": "15.3.1",
+      "source_pages": [
+        15
+      ],
+      "target_standard": "IS 16002",
+      "target_location": "Part 2",
+      "reference_type": "test_method",
+      "context_snippet": "glected in the evaluation of life test results specified in IS 16002 (Part 2). NOTE — In order to avoid unnecessary delay, it is recommended that sp"
+    }
+  ],
+  "references": [
+    "IS 10322",
+    "IS 11000",
+    "IS 15687",
+    "IS 15885",
+    "IS 16001",
+    "IS 16002",
+    "IS 16101",
+    "IS 16103",
+    "IS 16103 (Part 1) : 2012",
+    "IS 16108",
+    "IS 4261",
+    "IS 8913",
+    "IS 9206",
+    "is 650"
+  ],
   "tables": [
     {
       "table_id": "T-003",
@@ -5103,22 +7284,6 @@
       "raw_markdown": "| Dimension\n(1) | B15\n(2) | B22\n(3) | Tolerance\n(4) |\n| --- | --- | --- | --- |\n| A | 15.27 | 22.27 | +0.03 |\n| B | 19.0 | 19.0 | Min |\n| C | 21.0 | 28.0 | Min |\n| D | 9.5 | 9.5 | Min |\n| E | 3.0 | 3.0 | +0.17 |\n| G | 18.3 | 24.6 | ±0.3 |\n| H | 9.0 | 12.15 | Min |\n| K | 12.7 | 12.7 | ±0.3 |\n| R | 1.5 | 1.5 | Approximate |\n| NOTE — The drawing illustrates the essential dimensions of the holder\nwhich need only be checked if doubt arises from the application of the test. |  |  |  |"
     }
   ],
-  "references": [
-    "IS 10322",
-    "IS 11000",
-    "IS 15687",
-    "IS 15885",
-    "IS 16001",
-    "IS 16002",
-    "IS 16101",
-    "IS 16103",
-    "IS 16103 (Part 1) : 2012",
-    "IS 16108",
-    "IS 4261",
-    "IS 8913",
-    "IS 9206",
-    "is 650"
-  ],
   "annexes": [
     {
       "annex_id": "ANNEX A",
@@ -5143,10 +7308,11 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:19:53.923843+00:00",
+    "normalized_at": "2026-08-30T15:21:58.180098+00:00",
     "total_entities": 107,
     "total_requirements": 18,
-    "total_relationships": 21,
+    "total_relationships": 186,
+    "total_cross_references": 22,
     "total_tables": 2,
     "total_references": 14,
     "status": "normalized"

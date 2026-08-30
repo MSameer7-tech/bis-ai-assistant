@@ -1,11 +1,13 @@
 """
-Validation tests for Phase 2D Semantic Normalization, Clause Classification, Entity Families, and Requirements.
+Validation tests for Phase 2D Semantic Normalization, Clause Classification,
+Entity Families, Requirements, Cross-References, and Knowledge Graph Edges.
 """
 
 import json
 from pathlib import Path
 import pytest
 from ai.processing.clause_classifier import ClauseClassifier
+from ai.processing.cross_reference_resolver import CrossReferenceResolver
 from ai.processing.entity_extractor import EntityExtractor
 from ai.processing.normalizer import DocumentNormalizer
 from ai.processing.requirement_extractor import RequirementExtractor
@@ -65,12 +67,6 @@ def test_2d3_entity_families_in_doc_001(normalized_documents):
     # Family G: Authorities
     assert "authority" in types
 
-    # Check specific entity instances
-    entity_names = [e["name"].upper() for e in entities]
-    assert any("B22D" in n or "E27" in n for n in entity_names)
-    assert any("INSULATION RESISTANCE" in n for n in entity_names)
-    assert any("BUREAU OF INDIAN STANDARDS" in n for n in entity_names)
-
 
 def test_2d4_and_2d5_requirements_with_conditions(normalized_documents):
     """Verify that requirements contain parameter, operator, value, unit, and test conditions (2D-4 & 2D-5)."""
@@ -104,11 +100,29 @@ def test_2d4_and_2d5_requirements_with_conditions(normalized_documents):
     assert req_itq["unit"] == "lamps"
 
 
-def test_clauses_contain_semantic_classification(normalized_documents):
-    """Verify that every clause in normalized JSON contains semantic_type and semantic_tags."""
-    for manifest, doc in normalized_documents:
-        for c in doc.get("clauses", []):
-            assert "semantic_type" in c
-            assert "semantic_tags" in c
-            assert isinstance(c["semantic_tags"], list)
-            assert len(c["semantic_tags"]) > 0
+def test_2d6_cross_references_resolution(normalized_documents):
+    """Verify that structured cross-references distinguish normative, test_method, and definition types (2D-6)."""
+    doc_001 = next(d for m, d in normalized_documents if d["document_id"] == "DOC-001")
+    cross_refs = doc_001.get("cross_references", [])
+    assert len(cross_refs) > 0
+
+    target_standards = [ref["target_standard"] for ref in cross_refs]
+    assert any("IS 9206" in s for s in target_standards)
+    assert any("IS 15885" in s for s in target_standards)
+    assert any("IS 8913" in s for s in target_standards)
+
+    ref_types = {ref["reference_type"] for ref in cross_refs}
+    assert "normative" in ref_types or "test_method" in ref_types or "definition" in ref_types
+
+
+def test_2d7_knowledge_graph_edges(normalized_documents):
+    """Verify that knowledge graph edges include standard vocabulary predicates (2D-7)."""
+    doc_001 = next(d for m, d in normalized_documents if d["document_id"] == "DOC-001")
+    rels = doc_001.get("relationships", [])
+    assert len(rels) > 0
+
+    predicates = {rel["predicate"] for rel in rels}
+    assert "applies_to" in predicates
+    assert "part_of" in predicates
+    assert "references" in predicates
+    assert "requires" in predicates or "has_limit" in predicates

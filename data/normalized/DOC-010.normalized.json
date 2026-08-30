@@ -232,10 +232,10 @@
   ],
   "relationships": [
     {
-      "relationship_id": "REL-DOC-010-0001",
-      "subject": "CRO 2021",
-      "predicate": "references",
-      "object": "IS 616 : 2017",
+      "relationship_id": "REL-DOC010-0001",
+      "subject": "Clause 1: SCHEDULE",
+      "predicate": "part_of",
+      "object": "CRO 2021",
       "document_id": "DOC-010",
       "source_clause": "1",
       "source_pages": [
@@ -243,76 +243,10 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-010-0002",
-      "subject": "CRO 2021",
-      "predicate": "references",
-      "object": "IEC 60065",
-      "document_id": "DOC-010",
-      "source_clause": "1",
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-010-0003",
-      "subject": "CRO 2021",
-      "predicate": "references",
-      "object": "IS 13252 (Part 1) : 2010",
-      "document_id": "DOC-010",
-      "source_clause": "1",
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-010-0004",
-      "subject": "CRO 2021",
-      "predicate": "references",
-      "object": "IS 16102 (Part 1) : 2012",
-      "document_id": "DOC-010",
-      "source_clause": "1",
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-010-0005",
-      "subject": "CRO 2021",
-      "predicate": "references",
-      "object": "IS 16102",
-      "document_id": "DOC-010",
-      "source_clause": "1",
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-010-0006",
-      "subject": "CRO 2021",
-      "predicate": "references",
-      "object": "IS 15885 (Part 2/Sec 13) : 2012",
-      "document_id": "DOC-010",
-      "source_clause": "1",
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-010-0007",
-      "subject": "CRO 2021",
-      "predicate": "references",
-      "object": "IS 10322 (Part 5/Sec 1) : 2012",
-      "document_id": "DOC-010",
-      "source_clause": "1",
-      "source_pages": [
-        1
-      ]
-    },
-    {
-      "relationship_id": "REL-DOC-010-0008",
-      "subject": "CRO 2021",
-      "predicate": "mandates_scheme",
-      "object": "Scheme-II (Compulsory Registration Scheme)",
+      "relationship_id": "REL-DOC010-0002",
+      "subject": "Clause 2: Compulsory compliance with Indian Standards",
+      "predicate": "part_of",
+      "object": "CRO 2021",
       "document_id": "DOC-010",
       "source_clause": "2",
       "source_pages": [
@@ -320,30 +254,210 @@
       ]
     },
     {
-      "relationship_id": "REL-DOC-010-0009",
-      "subject": "CRO 2021",
-      "predicate": "mandates_standard",
-      "object": "IS 16102 (Part 1)",
+      "relationship_id": "REL-DOC010-0003",
+      "subject": "Clause 3: Standard Mark",
+      "predicate": "part_of",
+      "object": "CRO 2021",
       "document_id": "DOC-010",
-      "source_clause": "SCHEDULE",
+      "source_clause": "3",
       "source_pages": [
         1
       ]
     },
     {
-      "relationship_id": "REL-DOC-010-0010",
-      "subject": "CRO 2021",
-      "predicate": "mandates_standard",
-      "object": "IS 15885 (Part 2/Sec 13)",
+      "relationship_id": "REL-DOC010-0004",
+      "subject": "Clause 3",
+      "predicate": "defines",
+      "object": "Standard Mark",
       "document_id": "DOC-010",
-      "source_clause": "SCHEDULE",
+      "source_clause": "3",
       "source_pages": [
         1
       ]
+    },
+    {
+      "relationship_id": "REL-DOC010-0005",
+      "subject": "Clause 4: Exemption",
+      "predicate": "part_of",
+      "object": "CRO 2021",
+      "document_id": "DOC-010",
+      "source_clause": "4",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC010-0006",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 616 : 2017",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "informative"
+    },
+    {
+      "relationship_id": "REL-DOC010-0007",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IEC 60065",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "informative"
+    },
+    {
+      "relationship_id": "REL-DOC010-0008",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "informative"
+    },
+    {
+      "relationship_id": "REL-DOC010-0009",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 16102 (Part 1) : 2012 (Part 1)",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "related_standard"
+    },
+    {
+      "relationship_id": "REL-DOC010-0010",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 16102 (Part 1)",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "related_standard"
+    },
+    {
+      "relationship_id": "REL-DOC010-0011",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "related_standard"
+    },
+    {
+      "relationship_id": "REL-DOC010-0012",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 10322 (Part 5/Sec 1) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "normative"
     }
   ],
   "requirements": [],
-  "tables": [],
+  "cross_references": [
+    {
+      "reference_id": "REF-DOC010-0001",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 616 : 2017",
+      "target_location": null,
+      "reference_type": "informative",
+      "context_snippet": "Electronic Games (Video)                                 | IS 616 : 2017 / IEC 60065 2.      | Laptop / Notebook / Tablet"
+    },
+    {
+      "reference_id": "REF-DOC010-0002",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IEC 60065",
+      "target_location": null,
+      "reference_type": "informative",
+      "context_snippet": "s (Video)                                 | IS 616 : 2017 / IEC 60065 2.      | Laptop / Notebook / Tablet                               | IS 13252 ("
+    },
+    {
+      "reference_id": "REF-DOC010-0003",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 13252 (Part 1) : 2010",
+      "target_location": null,
+      "reference_type": "informative",
+      "context_snippet": "Laptop / Notebook / Tablet                               | IS 13252 (Part 1) : 2010 3.      | Self-Ballasted LED Lamps for General Lighting Services   | IS 16102 ("
+    },
+    {
+      "reference_id": "REF-DOC010-0004",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 16102 (Part 1) : 2012",
+      "target_location": "Part 1",
+      "reference_type": "related_standard",
+      "context_snippet": "Self-Ballasted LED Lamps for General Lighting Services   | IS 16102 (Part 1) : 2012 / IS 16102 (Part 1) : 4.      | d.c. or a.c. Supplied Electronic Controlgear fo"
+    },
+    {
+      "reference_id": "REF-DOC010-0005",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 16102",
+      "target_location": "Part 1",
+      "reference_type": "related_standard",
+      "context_snippet": "or General Lighting Services   | IS 16102 (Part 1) : 2012 / IS 16102 (Part 1) : 4.      | d.c. or a.c. Supplied Electronic Controlgear for LED"
+    },
+    {
+      "reference_id": "REF-DOC010-0006",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 15885 (Part 2/Sec 13) : 2012",
+      "target_location": null,
+      "reference_type": "related_standard",
+      "context_snippet": "d.c. or a.c. Supplied Electronic Controlgear for LED      | IS 15885 (Part 2/Sec 13) : 2012 5.      | Fixed General Purpose LED Luminaires                     | IS 10322 ("
+    },
+    {
+      "reference_id": "REF-DOC010-0007",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 10322 (Part 5/Sec 1) : 2012",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": "Fixed General Purpose LED Luminaires                     | IS 10322 (Part 5/Sec 1) : 2012"
+    }
+  ],
   "references": [
     "IEC 60065",
     "IS 10322 (Part 5/Sec 1) : 2012",
@@ -353,12 +467,14 @@
     "IS 16102 (Part 1) : 2012",
     "IS 616 : 2017"
   ],
+  "tables": [],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:19:53.945350+00:00",
+    "normalized_at": "2026-08-30T15:21:58.218639+00:00",
     "total_entities": 10,
     "total_requirements": 0,
-    "total_relationships": 10,
+    "total_relationships": 12,
+    "total_cross_references": 7,
     "total_tables": 0,
     "total_references": 7,
     "status": "normalized"
