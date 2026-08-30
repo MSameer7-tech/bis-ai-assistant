@@ -8,24 +8,115 @@
     "status": "chunking_verified",
     "total_chunks": 129,
     "checks": {
-      "scope_clause_1": "passed",
-      "definition_clause_3_1": "passed",
-      "marking_clause_5": "passed",
-      "interchangeability_clause_6": "passed",
-      "insulation_clause_8_1_1": "passed",
-      "mechanical_test_clause_9_1": "passed",
-      "table_2_bending": "passed",
-      "table_3_torque": "passed",
-      "heat_resistance_clause_11": "passed",
-      "flame_resistance_clause_12": "passed",
-      "fault_conditions_clause_13": "passed",
-      "sampling_clause_15": "passed",
-      "compliance_clause_16": "passed",
-      "tests_clause_17": "passed",
-      "annex_b": "passed",
-      "special_status_under_consideration": "passed",
-      "zero_loss_requirement_coverage": "passed",
-      "provenance_on_every_chunk": "passed"
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-007",
+    "source_id": "SRC-007",
+    "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 61,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-002",
+    "source_id": "SRC-002",
+    "standard_number": "IS 16102 (Part 2) : 2017",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 153,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-010",
+    "source_id": "SRC-010",
+    "standard_number": "CRO 2021",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 5,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-011",
+    "source_id": "SRC-011",
+    "standard_number": "CRO Amendment 2026",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 2,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-012",
+    "source_id": "SRC-012",
+    "standard_number": "IS 16102 (Part 1) : 2026",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 28,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
     }
   }
 ]

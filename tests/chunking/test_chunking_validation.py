@@ -1,6 +1,6 @@
 """
-Comprehensive Automated Validation Test Suite for Phase 2E Chunking (Step 14).
-Validates all 15 critical requirements:
+Comprehensive Automated Validation Test Suite for Phase 2E Chunking (Step 14 & 16).
+Validates all 15 critical requirements and audit log conformance:
 1. Every important clause represented
 2. Every requirement represented
 3. Every definition represented
@@ -16,6 +16,7 @@ Validates all 15 critical requirements:
 13. Normative language preserved
 14. Under-consideration status preserved
 15. Provenance exists on every chunk
+16. Chunking verification log status
 """
 
 import json
@@ -163,15 +164,21 @@ def test_15_provenance_exists_on_every_chunk(doc_001_data):
         assert len(prov["pages"]) > 0
 
 
-def test_chunking_verification_log_status():
-    """Verify that chunking_verification_log.json is populated with chunking_verified status."""
+def test_16_chunking_verification_log_status():
+    """Verify that chunking_verification_log.json is populated with chunking_verified status and Step 16 checks."""
     assert VERIFICATION_LOG_PATH.exists(), f"Log missing: {VERIFICATION_LOG_PATH}"
     with open(VERIFICATION_LOG_PATH, "r", encoding="utf-8") as f:
         logs = json.load(f)
     entry = next((l for l in logs if l["document_id"] == "DOC-001"), None)
     assert entry is not None
     assert entry["status"] == "chunking_verified"
-    assert entry["checks"]["scope_clause_1"] == "passed"
-    assert entry["checks"]["insulation_clause_8_1_1"] == "passed"
-    assert entry["checks"]["table_3_torque"] == "passed"
-    assert entry["checks"]["zero_loss_requirement_coverage"] == "passed"
+    checks = entry["checks"]
+    assert checks["clause_coverage"] == "passed"
+    assert checks["requirement_coverage"] == "passed"
+    assert checks["definition_coverage"] == "passed"
+    assert checks["table_preservation"] == "passed"
+    assert checks["annex_preservation"] == "passed"
+    assert checks["provenance"] == "passed"
+    assert checks["normative_language"] == "passed"
+    assert checks["under_consideration"] == "passed"
+    assert checks["cross_references"] == "passed"
