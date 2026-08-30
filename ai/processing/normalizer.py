@@ -8,8 +8,9 @@ import json
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
+from ai.processing.clause_classifier import ClauseClassifier
 from ai.processing.entity_extractor import EntityExtractor
 from ai.processing.relationship_extractor import RelationshipExtractor
 from ai.processing.requirement_extractor import RequirementExtractor
@@ -26,9 +27,10 @@ REGISTRY_PATH = METADATA_DIR / "source_registry.json"
 
 
 class DocumentNormalizer:
-    """Orchestrates semantic normalization, entity extraction, and relationship mapping."""
+    """Orchestrates semantic normalization, clause classification, entity extraction, and relationship mapping."""
 
     def __init__(self):
+        self.clause_classifier = ClauseClassifier()
         self.entity_extractor = EntityExtractor()
         self.requirement_extractor = RequirementExtractor()
         self.relationship_extractor = RelationshipExtractor()
@@ -62,48 +64,64 @@ class DocumentNormalizer:
             "sha256": doc_meta.get("sha256"),
         }
 
-        # 2. Extract Entities
+        # 2. Classify all clauses (2D-2)
+        classified_clauses = self.clause_classifier.classify_all_clauses(proc_doc.get("clauses", []))
+
+        # 3. Extract Entities (2D-3)
         entities = self.entity_extractor.extract_entities_from_document(proc_doc)
 
-        # 3. Extract Machine-Readable Requirements
+        # 4. Extract Machine-Readable Requirements (2D-4)
         requirements = self.requirement_extractor.extract_requirements(proc_doc)
 
-        # 4. Extract Relationships (Triples)
+        # 5. Extract Relationships (Triples) (2D-6)
         relationships = self.relationship_extractor.extract_relationships(proc_doc, entities)
 
-        # 5. Normalize Tables
+        # 6. Normalize Tables (2D-6)
         normalized_tables = self.table_normalizer.normalize_tables(proc_doc)
 
-        # 6. Normalize Explicit Standard References
+        # 7. Normalize Explicit Standard References (2D-5)
         referenced_standards = [
             e["name"] for e in entities if e["entity_type"] == "referenced_standard"
         ]
         referenced_standards = sorted(list(set(referenced_standards)))
 
-        # 7. Enrich Clauses with semantic components
+        # 8. Enrich Classified Clauses with requirements
         req_by_clause: Dict[str, List[Dict[str, Any]]] = {}
         for req in requirements:
             req_by_clause.setdefault(req["clause"], []).append(req)
 
-        def enrich_clause_nodes(clauses: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        def attach_requirements(clauses: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             enriched = []
             for c in clauses:
                 node = dict(c)
                 c_num = c.get("clause_number", "")
                 node["requirements"] = req_by_clause.get(c_num, [])
                 if c.get("subclauses"):
-                    node["subclauses"] = enrich_clause_nodes(c["subclauses"])
+                    node["subclauses"] = attach_requirements(c["subclauses"])
                 enriched.append(node)
             return enriched
 
-        enriched_clauses = enrich_clause_nodes(proc_doc.get("clauses", []))
+        enriched_clauses = attach_requirements(classified_clauses)
 
-        # 8. Assemble Canonical Normalized Document
+        # 9. Semantic Sections mapping
+        semantic_sections = []
+        for sec in proc_doc.get("sections", []):
+            s_title = sec.get("title", "")
+            s_num = sec.get("section_number", "")
+            semantic_sections.append({
+                "section_number": s_num,
+                "title": s_title,
+                "page_start": sec.get("page_start"),
+                "page_end": sec.get("page_end"),
+                "page_refs": sec.get("page_refs", [sec.get("page_start", 1)]),
+            })
+
+        # 10. Assemble Canonical Normalized Document
         normalized_document = {
             "document_id": document_id,
             "source_id": proc_doc.get("source_id"),
             "document_metadata": normalized_identity,
-            "semantic_sections": proc_doc.get("sections", []),
+            "semantic_sections": semantic_sections,
             "clauses": enriched_clauses,
             "entities": entities,
             "relationships": relationships,
@@ -128,12 +146,12 @@ class DocumentNormalizer:
             },
         }
 
-        # 9. Write to data/normalized/{document_id}.normalized.json
+        # 11. Write to data/normalized/{document_id}.normalized.json
         out_file = NORMALIZED_DIR / f"{document_id}.normalized.json"
         with open(out_file, "w", encoding="utf-8") as f:
             json.dump(normalized_document, f, indent=2, ensure_ascii=False)
 
-        # 10. Update documents.json & source_registry.json status to metadata_verified
+        # 12. Update documents.json & source_registry.json status to metadata_verified
         if DOCUMENTS_PATH.exists():
             with open(DOCUMENTS_PATH, "r", encoding="utf-8") as f:
                 documents = json.load(f)
@@ -188,6 +206,6 @@ def normalize_document(document_id: str) -> Dict[str, Any]:
 
 
 def normalize_all_documents() -> Dict[str, Any]:
-    """Convenience helper function to normalize all documents."""
+    """Convenience helper function to process all documents."""
     normalizer = DocumentNormalizer()
     return normalizer.normalize_all_documents()

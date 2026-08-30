@@ -215,6 +215,11 @@
       ],
       "content": "1 SCOPE\nThis standard (Part 2/Sec 13) specifies particular safety\nrequirements for electronic control gear for use on d.c.\nsupplies up to and including 1 000 V and a.c. supplies\nup to and including 1 000 V at 50 Hz and at an output\nfrequency which can deviate from the supply\nfrequency, associated with LED modules.\nControl gear for LED modules specified in this\nstandard are designed to provide constant voltage or\ncurrent at SELV or higher voltages. Deviations from\nthe pure voltage and current types do not exclude the\ngear from this standard.\nThe Annexes A, B, C, D, E, F, G, H and L of IS 15885\n(Part 1) : 2011 ‘Safety of lamp controlgear: Part 1\nGeneral requirements’ which are applicable according\nto this Part and Section and using the word ‘lamp’ are\nunderstood to also comprise LED modules.\nParticular requirements for SELV control gears are\ngiven in Annex I.\nPerformance requirements shall be covered by a\nseparate standard (see IS 16104 : 2012 ‘d.c. or a.c.\nsupplied electronic controgear for LED Modules —\nPerformance requirements’).\nPlug-in control gear, being part of the luminaire, are\ncovered as for built-in control gear by the additional\nrequirements of the luminaire standard.",
       "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "requirement",
+        "scope"
+      ],
       "requirements": []
     },
     {
@@ -229,6 +234,11 @@
       ],
       "content": "2 REFERENCES\nThe standards listed below contain provisions which\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encouraged to investigate the possibility\nof applying the most recent editions of the standards\nlisted as follows:\nIS No.\nTitle\n2500 (Part 1) :\nSampling procedures for inspection\n2000\nby attributes: Part 1 Sampling schemes\nindexed by acceptance quality limit\n(AQL) for lot-by-lot inspection\nIS No.\nTitle\n15885 (Part 1) :\nSafety of lamp controlgear: Part 1\n2011\nGeneral requirements",
       "subclauses": [],
+      "semantic_type": "sampling_requirement",
+      "semantic_tags": [
+        "reference",
+        "sampling_requirement"
+      ],
       "requirements": []
     },
     {
@@ -256,6 +266,10 @@
           ],
           "content": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponents and may include means for dimming,\ncorrecting the power factor and suppressing radio\ninterference.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -270,6 +284,10 @@
           ],
           "content": "3.2 d.c. or a.c. Supplied Controlgear —  Controlgear\nthat includes stabilizing elements for operating one or\nmore LED module(s).",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -284,6 +302,10 @@
           ],
           "content": "3.3 SELV Controlgear — Controlgear providing a\nSELV output isolated from the supply mains by means\nsuch as a safety isolating transformer.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -298,6 +320,10 @@
           ],
           "content": "3.4 Associated Controlgear —  Controlgear designed\nto supply specific appliance(s) or equipment,\nincorporated or not incorporated.\nNOTE — An example of an associated control gear is an\nelectronic control gear within an emergency unit where it is\nassigned in a one-to-one relation to battery driven ballast.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -312,6 +338,10 @@
           ],
           "content": "3.5 Plug-in Controlgear — Controlgear incorporated\nin an enclosure provided with an integral plug as the\nmeans of connection of the electrical supply.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -326,6 +356,10 @@
           ],
           "content": "3.6 Rated Output Voltage for Constant Voltage\nControlgear — Output voltage, at rated supply\nvoltage, rated frequency and at rated output power,\nassigned to the control gear.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -340,6 +374,10 @@
           ],
           "content": "3.7 Rated Output Current for Constant Current\nControlgear — Output current, at rated supply voltage,\nrated frequency and at rated output power, assigned to\nthe control gear.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -355,6 +393,10 @@
           ],
           "content": "3.8 Light Emitting Diode (LED) — Solid state device\nIS 15885 (Part 2/Sec 13) : 2012\nembodying a p-n junction, emitting optical radiation\nwhen excited by an electric current.\nNOTE — This definition is independent from the existence of\nenclosure(s) and of terminals.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -369,6 +411,10 @@
           ],
           "content": "3.9 LED Module —  Unit supplied as a light source.\nIn addition to one or more LEDs it may contain further\ncomponents, for example optical, electrical,\nmechanical and/or electronic.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -383,6 +429,10 @@
           ],
           "content": "3.10 Maximum Output Voltage —  Maximum voltage\nwhich can occur between the output terminals for\nconstant current controlgear in any load condition.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -397,8 +447,18 @@
           ],
           "content": "3.11 Acceptance Test —  Tests carried out on samples\ntaken from a lot for the acceptance of the lot.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "test_method"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "definition",
+      "semantic_tags": [
+        "definition",
+        "requirement"
       ],
       "requirements": []
     },
@@ -414,20 +474,32 @@
       ],
       "content": "4 GENERAL REQUIREMENTS\nThe requirements of 4 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nControlgears providing SELV shall comply with the\nrequirements of Annex I. This includes insulation\nresistance, electric strength, creepage distances and\nclearance between primary and secondary circuits.\nControlgear which are not of the pure voltage and\ncurrent types are tested according to the requirements\nof either a voltage source or a current source, whichever\ncomes closer to the electrical behaviour of the\ncontrolgear.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": [
         {
-          "requirement_id": "REQ-DOC-007-4-002",
+          "entity_type": "requirement",
+          "requirement_id": "REQ-DOC007-4-002",
           "clause": "4",
           "subject": "self-ballasted LED lamp",
-          "property": "dielectric_electric_strength",
-          "operator": "==",
-          "value": 4000,
-          "unit": "V a.c.",
-          "condition": {
-            "duration": "1 minute",
-            "waveform": "50 Hz r.m.s."
+          "requirement": "dielectric electric strength",
+          "conditions": {
+            "humidity_treatment": "48 h at 91-95% RH",
+            "ambient_condition": "immediately following humidity treatment"
           },
-          "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+          "test": {
+            "test_voltage": "4000 V a.c. (r.m.s.)",
+            "frequency": "50 Hz",
+            "duration": "1 minute"
+          },
+          "acceptance_criterion": {
+            "minimum": 4000,
+            "unit": "V a.c.",
+            "operator": "==",
+            "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+          },
           "source_pages": [
             7
           ]
@@ -446,6 +518,11 @@
       ],
       "content": "5 GENERAL NOTES ON TESTS\nThe requirements of 5 of IS 15885 (Part 1) shall apply\nalong with the following additional requirements.\nThe following number of specimens shall be submitted\nfor testing:\na)\nOne unit for the tests of 6 to 12 and 15 to 21;\nand\nb)\nOne unit for the tests of 14 (additional units\nor components, where necessary, may be\nrequired in consultation with the\nmanufacturer).",
       "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "requirement",
+        "test_method"
+      ],
       "requirements": []
     },
     {
@@ -460,6 +537,10 @@
       ],
       "content": "6 CLASSIFICATION\nControl gears are classified according to the method\nof installation given in 6 of IS 15885 (Part 1) and\naccording to,\na)\nprotection against electric shock;\nb)\nauto-wound control gear;\nc)\nseparating control gears;\nd)\nisolating control gears; and\ne)\nSELV control gears.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -486,6 +567,10 @@
           ],
           "content": "7.1 (h), (j) and (s) of IS 15885 (Part 1); and\nb)\nMention whether the controlgear has mains-\nconnected windings.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -500,19 +585,34 @@
           ],
           "content": "7.2 Information to be Provided, if Applicable\nIn addition to the above mandatory markings, the\nfollowing information, if applicable, shall be given\neither on the control gear, or be made available in the\nmanufacturer’s catalogue :\na)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": [
             {
-              "requirement_id": "REQ-DOC-007-7.2-004",
+              "entity_type": "requirement",
+              "requirement_id": "REQ-DOC007-7.2-004",
               "clause": "7.2",
               "subject": "self-ballasted LED lamp",
-              "property": "mandatory_marking",
-              "operator": "mandatory",
-              "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
-              "unit": null,
-              "condition": {
-                "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+              "requirement": "mandatory product markings",
+              "conditions": {
+                "location": "marked distinctly and durably on the lamp and packaging"
               },
-              "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+              "test": {
+                "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+              },
+              "acceptance_criterion": {
+                "mandatory_items": [
+                  "Mark of origin (trademark or brand)",
+                  "Rated voltage or voltage range (V)",
+                  "Rated wattage (W)",
+                  "Rated frequency (Hz)",
+                  "Standard Mark (CRS Registration R-XXXXXXXX)"
+                ],
+                "operator": "mandatory",
+                "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+              },
               "source_pages": [
                 7
               ]
@@ -531,6 +631,10 @@
           ],
           "content": "7.1 (h), (j) and (s) of IS 15885 (Part 1); and\nb)\nMention whether the controlgear has mains-\nconnected windings.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -557,11 +661,23 @@
               ],
               "content": "7.3.1 The use of the Standard Mark is governed by the\nprovisions of the Bureau of Indian Standards Act, 1986\nand the Rules and Regulations made thereunder. The\ndetails of conditions under which the licence for the\nuse of the Standard Mark may be granted to\nmanufacturers or producers may be obtained from the\nBureau of Indian Standards.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
           ],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "marking_requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "marking_requirement",
+      "semantic_tags": [
+        "marking_requirement"
       ],
       "requirements": []
     },
@@ -577,6 +693,10 @@
       ],
       "content": "8 PROTECTION AGAINST ACCIDENTAL\nCONTACT WITH LIVE PARTS\nThe requirements of 10 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -591,6 +711,10 @@
       ],
       "content": "9 TERMINALS\nThe requirements of 8 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -605,6 +729,10 @@
       ],
       "content": "10 PROVISIONS FOR PROTECTIVE EARTHING\nThe requirements of 9 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -620,6 +748,10 @@
       ],
       "content": "11 MOISTURE RESISTANCE AND INSULATION\nThe requirements of 11 of IS 15885 (Part 1) shall\napply.\nIS 15885 (Part 2/Sec 13) : 2012",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -634,20 +766,32 @@
       ],
       "content": "12 ELECTRIC STRENGTH\nThe requirements of 12 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": [
         {
-          "requirement_id": "REQ-DOC-007-12-002",
+          "entity_type": "requirement",
+          "requirement_id": "REQ-DOC007-12-002",
           "clause": "12",
           "subject": "self-ballasted LED lamp",
-          "property": "dielectric_electric_strength",
-          "operator": "==",
-          "value": 4000,
-          "unit": "V a.c.",
-          "condition": {
-            "duration": "1 minute",
-            "waveform": "50 Hz r.m.s."
+          "requirement": "dielectric electric strength",
+          "conditions": {
+            "humidity_treatment": "48 h at 91-95% RH",
+            "ambient_condition": "immediately following humidity treatment"
           },
-          "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+          "test": {
+            "test_voltage": "4000 V a.c. (r.m.s.)",
+            "frequency": "50 Hz",
+            "duration": "1 minute"
+          },
+          "acceptance_criterion": {
+            "minimum": 4000,
+            "unit": "V a.c.",
+            "operator": "==",
+            "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+          },
           "source_pages": [
             8
           ]
@@ -666,6 +810,10 @@
       ],
       "content": "13 THERMAL ENDURANCE TEST FOR\nWINDINGS OF BALLASTS\nThe requirements of 13 of IS 15885 (Part 1) is not\napplicable.",
       "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
       "requirements": []
     },
     {
@@ -680,6 +828,10 @@
       ],
       "content": "14 FAULT CONDITIONS\nThe requirements of 14 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nIn the case of control gear provided with the marking,\nthe requirements specified in Annex C shall be fulfilled.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -706,6 +858,10 @@
           ],
           "content": "15.1 Normal Operation\nThe requirements of L-6 of IS 15885 (Part 1) shall\napply, together with the following additional\nrequirement.\nFor built-in and integral control gears tests shall be\nmade under conditions such that the convertors is\nbrought to tc, as reached under normal operation at\nrated supply voltage.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -720,8 +876,16 @@
           ],
           "content": "15.2 Abnormal Operation\nThe requirements of L-7 of IS 15885 (Part 1) shall\napply. In addition the following test at any voltage\nbetween 90 percent and 110 percent of the rated supply\nvoltage shall be performed if relevant, with the control\ngear operating according to the manufacturer’s\ninstructions (including heatsinks, if specified) for 1 h.\nConnect double the LED modules or equivalent load\nfor which the control gear is designed,\na)\nin parallel to the output terminals, for constant\nvoltage output types; and\nb)\nin series to the output terminals, for the\nconstant current output types.\nDuring and at the end of the tests specified above, the\ncontrol gear shall show no defect impairing safety, nor\nshall any smoke or flammable gases be produced.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -737,6 +901,10 @@
       ],
       "content": "16 CONSTRUCTION\nThe requirements of 15 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -751,6 +919,11 @@
       ],
       "content": "17 CREEPAGE DISTANCES AND CLEARANCES\nUnless otherwise specified in 14 the requirements of 16\nof IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "exception",
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -765,6 +938,10 @@
       ],
       "content": "18 SCREWS, CURRENT-CARRYING PARTS\nAND CONNECTIONS\nThe requirements of 17 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -779,6 +956,10 @@
       ],
       "content": "19 RESISTANCE TO HEAT, FIRE AND\nTRACKING\nThe requirements of 18 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -793,6 +974,10 @@
       ],
       "content": "20 RESISTANCE TO CORROSION\nThe requirements of 19 of IS 15885 (Part 1) shall apply.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -832,26 +1017,43 @@
               ],
               "content": "21.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of controlgear, sample\nbeing drawn preferably from regular production lot:\na)\nMarking (see 7);\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions for protective earthing (see10);\ne)\nMoisture resistance (see 11);\nf)\nElectric strength (see 12);\ng)\nThermal endurance test for windings of\nballasts (see 13);\nh)\nFault conditions (see 14);\nj)\nTransformer heating (see 15);\nk)\nConstruction (see 16);\nm) Creepage distances and clearances (see 17);\nn)\nScrews, current-carrying parts and\nconnections (see 18);\np)\nResistance to heat, fire and tracking (see 19);\nand\nq)\nResistance to corrosion (see 20).",
               "subclauses": [],
+              "semantic_type": "test_method",
+              "semantic_tags": [
+                "requirement",
+                "test_method"
+              ],
               "requirements": [
                 {
-                  "requirement_id": "REQ-DOC-007-21.1.1-002",
+                  "entity_type": "requirement",
+                  "requirement_id": "REQ-DOC007-21.1.1-002",
                   "clause": "21.1.1",
                   "subject": "self-ballasted LED lamp",
-                  "property": "dielectric_electric_strength",
-                  "operator": "==",
-                  "value": 4000,
-                  "unit": "V a.c.",
-                  "condition": {
-                    "duration": "1 minute",
-                    "waveform": "50 Hz r.m.s."
+                  "requirement": "dielectric electric strength",
+                  "conditions": {
+                    "humidity_treatment": "48 h at 91-95% RH",
+                    "ambient_condition": "immediately following humidity treatment"
                   },
-                  "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+                  "test": {
+                    "test_voltage": "4000 V a.c. (r.m.s.)",
+                    "frequency": "50 Hz",
+                    "duration": "1 minute"
+                  },
+                  "acceptance_criterion": {
+                    "minimum": 4000,
+                    "unit": "V a.c.",
+                    "operator": "==",
+                    "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+                  },
                   "source_pages": [
                     8
                   ]
                 }
               ]
             }
+          ],
+          "semantic_type": "test_method",
+          "semantic_tags": [
+            "test_method"
           ],
           "requirements": []
         },
@@ -868,20 +1070,34 @@
           ],
           "content": "21.2 Acceptance Test\nThe sampling plan for acceptance tests shall be as\nspecified in IS 2500 (Part 1). The following shall\nconstitute as acceptance tests:\na)\nMarking (see 7);\nIS 15885 (Part 2/Sec 13) : 2012\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions for protective earthing (see10);\nThe requirements of Annex A of IS 15885 (Part 1) shall apply.\ne)\nMoisture resistance (see 11);\nf)\nelectric strength (see 12);\ng)\nFault conditions (see 14); and\nh)\nTransformer heating (see 15).",
           "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "requirement",
+            "sampling_requirement",
+            "test_method"
+          ],
           "requirements": [
             {
-              "requirement_id": "REQ-DOC-007-21.2-002",
+              "entity_type": "requirement",
+              "requirement_id": "REQ-DOC007-21.2-002",
               "clause": "21.2",
               "subject": "self-ballasted LED lamp",
-              "property": "dielectric_electric_strength",
-              "operator": "==",
-              "value": 4000,
-              "unit": "V a.c.",
-              "condition": {
-                "duration": "1 minute",
-                "waveform": "50 Hz r.m.s."
+              "requirement": "dielectric electric strength",
+              "conditions": {
+                "humidity_treatment": "48 h at 91-95% RH",
+                "ambient_condition": "immediately following humidity treatment"
               },
-              "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+              "test": {
+                "test_voltage": "4000 V a.c. (r.m.s.)",
+                "frequency": "50 Hz",
+                "duration": "1 minute"
+              },
+              "acceptance_criterion": {
+                "minimum": 4000,
+                "unit": "V a.c.",
+                "operator": "==",
+                "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+              },
               "source_pages": [
                 8,
                 9
@@ -889,6 +1105,10 @@
             }
           ]
         }
+      ],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
       ],
       "requirements": []
     }
@@ -1381,85 +1601,128 @@
   ],
   "requirements": [
     {
-      "requirement_id": "REQ-DOC-007-4-002",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC007-4-002",
       "clause": "4",
       "subject": "self-ballasted LED lamp",
-      "property": "dielectric_electric_strength",
-      "operator": "==",
-      "value": 4000,
-      "unit": "V a.c.",
-      "condition": {
-        "duration": "1 minute",
-        "waveform": "50 Hz r.m.s."
+      "requirement": "dielectric electric strength",
+      "conditions": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "ambient_condition": "immediately following humidity treatment"
       },
-      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "test": {
+        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "operator": "==",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
       "source_pages": [
         7
       ]
     },
     {
-      "requirement_id": "REQ-DOC-007-7.2-004",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC007-7.2-004",
       "clause": "7.2",
       "subject": "self-ballasted LED lamp",
-      "property": "mandatory_marking",
-      "operator": "mandatory",
-      "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
-      "unit": null,
-      "condition": {
-        "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+      "requirement": "mandatory product markings",
+      "conditions": {
+        "location": "marked distinctly and durably on the lamp and packaging"
       },
-      "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+      "test": {
+        "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+      },
+      "acceptance_criterion": {
+        "mandatory_items": [
+          "Mark of origin (trademark or brand)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration R-XXXXXXXX)"
+        ],
+        "operator": "mandatory",
+        "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+      },
       "source_pages": [
         7
       ]
     },
     {
-      "requirement_id": "REQ-DOC-007-12-002",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC007-12-002",
       "clause": "12",
       "subject": "self-ballasted LED lamp",
-      "property": "dielectric_electric_strength",
-      "operator": "==",
-      "value": 4000,
-      "unit": "V a.c.",
-      "condition": {
-        "duration": "1 minute",
-        "waveform": "50 Hz r.m.s."
+      "requirement": "dielectric electric strength",
+      "conditions": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "ambient_condition": "immediately following humidity treatment"
       },
-      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "test": {
+        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "operator": "==",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
       "source_pages": [
         8
       ]
     },
     {
-      "requirement_id": "REQ-DOC-007-21.1.1-002",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC007-21.1.1-002",
       "clause": "21.1.1",
       "subject": "self-ballasted LED lamp",
-      "property": "dielectric_electric_strength",
-      "operator": "==",
-      "value": 4000,
-      "unit": "V a.c.",
-      "condition": {
-        "duration": "1 minute",
-        "waveform": "50 Hz r.m.s."
+      "requirement": "dielectric electric strength",
+      "conditions": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "ambient_condition": "immediately following humidity treatment"
       },
-      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "test": {
+        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "operator": "==",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
       "source_pages": [
         8
       ]
     },
     {
-      "requirement_id": "REQ-DOC-007-21.2-002",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC007-21.2-002",
       "clause": "21.2",
       "subject": "self-ballasted LED lamp",
-      "property": "dielectric_electric_strength",
-      "operator": "==",
-      "value": 4000,
-      "unit": "V a.c.",
-      "condition": {
-        "duration": "1 minute",
-        "waveform": "50 Hz r.m.s."
+      "requirement": "dielectric electric strength",
+      "conditions": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "ambient_condition": "immediately following humidity treatment"
       },
-      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "test": {
+        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "operator": "==",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
       "source_pages": [
         8,
         9
@@ -1568,7 +1831,7 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:13:57.132961+00:00",
+    "normalized_at": "2026-08-30T15:16:52.570155+00:00",
     "total_entities": 35,
     "total_requirements": 5,
     "total_relationships": 8,

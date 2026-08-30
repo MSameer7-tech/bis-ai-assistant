@@ -137,6 +137,12 @@
           ],
           "content": "1.1 This standard (Part 1) specifies the safety and interchangeability requirements, together with the test\nmethods and conditions required to show compliance of tubular and non-tubular self-ballasted LED lamps for\ngeneral lighting services.",
           "subclauses": [],
+          "semantic_type": "scope",
+          "semantic_tags": [
+            "requirement",
+            "scope",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -151,25 +157,40 @@
           ],
           "content": "1.2 It applies to self-ballasted LED lamps having:\na) A rated wattage up to 60 W;\nb) A rated voltage up to 250 V a.c. 50 Hz;\nc) Caps according to Table 1 (B22d, E27, E14).",
           "subclauses": [],
+          "semantic_type": "scope",
+          "semantic_tags": [
+            "scope"
+          ],
           "requirements": [
             {
-              "requirement_id": "REQ-DOC-012-1.2-003",
+              "entity_type": "requirement",
+              "requirement_id": "REQ-DOC012-1.2-003",
               "clause": "1.2",
               "subject": "self-ballasted LED lamp",
-              "property": "rated_wattage_limit",
-              "operator": "<=",
-              "value": 60.0,
-              "unit": "W",
-              "condition": {
-                "voltage_range": "up to 250 V a.c. 50 Hz"
+              "requirement": "rated wattage limit",
+              "conditions": {
+                "intended_use": "domestic and similar general lighting services"
               },
-              "compliance_criteria": "Applies to self-ballasted lamps having rated wattage up to 60 W",
+              "test": {
+                "rated_voltage": "up to 250 V a.c. 50 Hz",
+                "lamp_caps": "B15d, B22d, E11, E12, E14, E17, E26, E27, GU10"
+              },
+              "acceptance_criterion": {
+                "maximum": 60.0,
+                "unit": "W",
+                "operator": "<=",
+                "criterion_text": "Applies to self-ballasted LED lamps having rated wattage up to 60 W"
+              },
               "source_pages": [
                 1
               ]
             }
           ]
         }
+      ],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
       ],
       "requirements": []
     },
@@ -185,6 +206,10 @@
       ],
       "content": "2 NORMATIVE REFERENCES\nThe following standards contain provisions which, through reference in this text, constitute provisions of this\nstandard:\n- IS 15885 (Part 2/Sec 13) : 2012 Safety of lamp controlgear: Part 2-13 Particular requirements for d.c. or a.c.\nsupplied electronic controlgear for LED modules\n- IS/IEC 60061 Lamp caps and holders together with gauges for the control of interchangeability and safety\n- IS/IEC 60529 Degrees of protection provided by enclosures (IP Code)",
       "subclauses": [],
+      "semantic_type": "reference",
+      "semantic_tags": [
+        "reference"
+      ],
       "requirements": []
     },
     {
@@ -212,6 +237,10 @@
           ],
           "content": "3.1 Self-Ballasted LED Lamp ? A unit which cannot be dismantled without being permanently damaged,\nprovided with a lamp cap and incorporating a light-emitting diode (LED) light source and any additional\nelements necessary for stable operation of the light source.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -226,6 +255,11 @@
           ],
           "content": "3.2 Rated Voltage ? The voltage or voltage range marked on the lamp.",
           "subclauses": [],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "definition",
+            "marking_requirement"
+          ],
           "requirements": []
         },
         {
@@ -241,8 +275,17 @@
           ],
           "content": "3.3 Rated Wattage ? The wattage marked on the lamp.\nIS 16102 (Part 1) : 2026 (Page 2)",
           "subclauses": [],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "definition",
+            "marking_requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "definition",
+      "semantic_tags": [
+        "definition"
       ],
       "requirements": []
     },
@@ -270,8 +313,17 @@
           ],
           "content": "4.1 Self-ballasted LED lamps shall be so designed and constructed that in normal use they function reliably and\ncause no danger to persons or surroundings.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "requirement",
+        "test_method"
       ],
       "requirements": []
     },
@@ -299,25 +351,45 @@
           ],
           "content": "5.1 Mandatory Markings on the Lamp:\na) Mark of origin (manufacturer's trademark or brand);\nb) Rated voltage or rated voltage range (in Volts);\nc) Rated wattage (in Watts);\nd) Rated frequency (in Hertz);\ne) Standard Mark (CRS Logo with unique registration number R-XXXXXXXX).",
           "subclauses": [],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "marking_requirement"
+          ],
           "requirements": [
             {
-              "requirement_id": "REQ-DOC-012-5.1-004",
+              "entity_type": "requirement",
+              "requirement_id": "REQ-DOC012-5.1-004",
               "clause": "5.1",
               "subject": "self-ballasted LED lamp",
-              "property": "mandatory_marking",
-              "operator": "mandatory",
-              "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
-              "unit": null,
-              "condition": {
-                "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+              "requirement": "mandatory product markings",
+              "conditions": {
+                "location": "marked distinctly and durably on the lamp and packaging"
               },
-              "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+              "test": {
+                "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+              },
+              "acceptance_criterion": {
+                "mandatory_items": [
+                  "Mark of origin (trademark or brand)",
+                  "Rated voltage or voltage range (V)",
+                  "Rated wattage (W)",
+                  "Rated frequency (Hz)",
+                  "Standard Mark (CRS Registration R-XXXXXXXX)"
+                ],
+                "operator": "mandatory",
+                "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+              },
               "source_pages": [
                 2
               ]
             }
           ]
         }
+      ],
+      "semantic_type": "marking_requirement",
+      "semantic_tags": [
+        "marking_requirement",
+        "requirement"
       ],
       "requirements": []
     },
@@ -345,6 +417,10 @@
           ],
           "content": "6.1 Interchangeability shall be ensured by the use of caps complying with IS/IEC 60061.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -359,8 +435,17 @@
           ],
           "content": "6.2 Bending moment of the cap fitment shall withstand standard mechanical torque without loosening or\nbreakage.",
           "subclauses": [],
+          "semantic_type": "acceptance_criterion",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -388,8 +473,16 @@
           ],
           "content": "7.1 The lamp shall be so constructed that, without any additional enclosure in the form of a luminaire, no live\nparts are accessible when the lamp is installed in a lampholder.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -417,21 +510,32 @@
           ],
           "content": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": [
             {
-              "requirement_id": "REQ-DOC-012-8.1-001",
+              "entity_type": "requirement",
+              "requirement_id": "REQ-DOC012-8.1-001",
               "clause": "8.1",
               "subject": "self-ballasted LED lamp",
-              "property": "insulation_resistance",
-              "operator": ">=",
-              "value": 4.0,
-              "unit": "MΩ",
-              "condition": {
+              "requirement": "insulation resistance",
+              "conditions": {
                 "humidity_treatment": "48 h at 91-95% RH",
-                "measurement_voltage": "500 V d.c.",
-                "measurement_time": "1 min after voltage application"
+                "temperature": "25-35 °C",
+                "duration": "48 h"
               },
-              "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+              "test": {
+                "voltage": "approximately 500 V d.c.",
+                "measurement_time": "1 min after application"
+              },
+              "acceptance_criterion": {
+                "minimum": 4.0,
+                "unit": "MΩ",
+                "operator": ">=",
+                "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+              },
               "source_pages": [
                 2
               ]
@@ -450,20 +554,34 @@
           ],
           "content": "8.2 Electric strength test: A voltage of 4 000 V a.c. (r.m.s.) shall be applied for 1 minute between\ncurrent-carrying parts and accessible parts. No flashover or breakdown shall occur.",
           "subclauses": [],
+          "semantic_type": "acceptance_criterion",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "requirement",
+            "test_method"
+          ],
           "requirements": [
             {
-              "requirement_id": "REQ-DOC-012-8.2-002",
+              "entity_type": "requirement",
+              "requirement_id": "REQ-DOC012-8.2-002",
               "clause": "8.2",
               "subject": "self-ballasted LED lamp",
-              "property": "dielectric_electric_strength",
-              "operator": "==",
-              "value": 4000,
-              "unit": "V a.c.",
-              "condition": {
-                "duration": "1 minute",
-                "waveform": "50 Hz r.m.s."
+              "requirement": "dielectric electric strength",
+              "conditions": {
+                "humidity_treatment": "48 h at 91-95% RH",
+                "ambient_condition": "immediately following humidity treatment"
               },
-              "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+              "test": {
+                "test_voltage": "4000 V a.c. (r.m.s.)",
+                "frequency": "50 Hz",
+                "duration": "1 minute"
+              },
+              "acceptance_criterion": {
+                "minimum": 4000,
+                "unit": "V a.c.",
+                "operator": "==",
+                "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+              },
               "source_pages": [
                 2
               ]
@@ -471,20 +589,32 @@
           ]
         }
       ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": [
         {
-          "requirement_id": "REQ-DOC-012-8-002",
+          "entity_type": "requirement",
+          "requirement_id": "REQ-DOC012-8-002",
           "clause": "8",
           "subject": "self-ballasted LED lamp",
-          "property": "dielectric_electric_strength",
-          "operator": "==",
-          "value": 4000,
-          "unit": "V a.c.",
-          "condition": {
-            "duration": "1 minute",
-            "waveform": "50 Hz r.m.s."
+          "requirement": "dielectric electric strength",
+          "conditions": {
+            "humidity_treatment": "48 h at 91-95% RH",
+            "ambient_condition": "immediately following humidity treatment"
           },
-          "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+          "test": {
+            "test_voltage": "4000 V a.c. (r.m.s.)",
+            "frequency": "50 Hz",
+            "duration": "1 minute"
+          },
+          "acceptance_criterion": {
+            "minimum": 4000,
+            "unit": "V a.c.",
+            "operator": "==",
+            "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+          },
           "source_pages": [
             2
           ]
@@ -515,8 +645,16 @@
           ],
           "content": "9.1 Cap torque resistance: The cap shall remain firmly attached to the lamp when subjected to a torque of 3.0\nNm for B22d caps and 2.0 Nm for E27 caps.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -544,6 +682,10 @@
           ],
           "content": "10.1 External parts of insulating material providing protection against electric shock shall be resistant to heat\nand fire.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -558,27 +700,44 @@
           ],
           "content": "10.2 Glow-wire test: When tested in accordance with IS 11000 (Part 2/Sec 1), the test temperature shall be 650\n°C for parts not holding live parts and 750 °C for parts holding live parts in position.",
           "subclauses": [],
+          "semantic_type": "reference",
+          "semantic_tags": [
+            "reference",
+            "requirement",
+            "test_method"
+          ],
           "requirements": [
             {
-              "requirement_id": "REQ-DOC-012-10.2-005",
+              "entity_type": "requirement",
+              "requirement_id": "REQ-DOC012-10.2-005",
               "clause": "10.2",
               "subject": "insulating material",
-              "property": "glow_wire_temperature",
-              "operator": ">=",
-              "value": 650.0,
-              "unit": "°C",
-              "condition": {
-                "standard_method": "IS 11000 (Part 2/Sec 1)",
-                "live_parts_holding": "750 °C",
-                "non_live_parts": "650 °C"
+              "requirement": "resistance to heat and fire (glow-wire test)",
+              "conditions": {
+                "test_method": "IS 11000 (Part 2/Sec 1)",
+                "specimen_support": "tissue paper spread 200 mm below specimen"
               },
-              "compliance_criteria": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire",
+              "test": {
+                "temperature_live_holding": "750 °C",
+                "temperature_non_live": "650 °C",
+                "duration_contact": "30 s"
+              },
+              "acceptance_criterion": {
+                "minimum": 650.0,
+                "unit": "°C",
+                "operator": ">=",
+                "criterion_text": "Flames or glowing shall extinguish within 30 s of withdrawing glow-wire, without igniting tissue paper"
+              },
               "source_pages": [
                 2
               ]
             }
           ]
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -606,8 +765,17 @@
           ],
           "content": "11.1 The lamp shall not impair safety under condition of component failure (driver short circuit, capacitor failure,\nor LED module breakdown).",
           "subclauses": [],
+          "semantic_type": "acceptance_criterion",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     }
@@ -909,103 +1077,151 @@
   ],
   "requirements": [
     {
-      "requirement_id": "REQ-DOC-012-1.2-003",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC012-1.2-003",
       "clause": "1.2",
       "subject": "self-ballasted LED lamp",
-      "property": "rated_wattage_limit",
-      "operator": "<=",
-      "value": 60.0,
-      "unit": "W",
-      "condition": {
-        "voltage_range": "up to 250 V a.c. 50 Hz"
+      "requirement": "rated wattage limit",
+      "conditions": {
+        "intended_use": "domestic and similar general lighting services"
       },
-      "compliance_criteria": "Applies to self-ballasted lamps having rated wattage up to 60 W",
+      "test": {
+        "rated_voltage": "up to 250 V a.c. 50 Hz",
+        "lamp_caps": "B15d, B22d, E11, E12, E14, E17, E26, E27, GU10"
+      },
+      "acceptance_criterion": {
+        "maximum": 60.0,
+        "unit": "W",
+        "operator": "<=",
+        "criterion_text": "Applies to self-ballasted LED lamps having rated wattage up to 60 W"
+      },
       "source_pages": [
         1
       ]
     },
     {
-      "requirement_id": "REQ-DOC-012-5.1-004",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC012-5.1-004",
       "clause": "5.1",
       "subject": "self-ballasted LED lamp",
-      "property": "mandatory_marking",
-      "operator": "mandatory",
-      "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
-      "unit": null,
-      "condition": {
-        "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+      "requirement": "mandatory product markings",
+      "conditions": {
+        "location": "marked distinctly and durably on the lamp and packaging"
       },
-      "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+      "test": {
+        "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+      },
+      "acceptance_criterion": {
+        "mandatory_items": [
+          "Mark of origin (trademark or brand)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration R-XXXXXXXX)"
+        ],
+        "operator": "mandatory",
+        "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+      },
       "source_pages": [
         2
       ]
     },
     {
-      "requirement_id": "REQ-DOC-012-8-002",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC012-8-002",
       "clause": "8",
       "subject": "self-ballasted LED lamp",
-      "property": "dielectric_electric_strength",
-      "operator": "==",
-      "value": 4000,
-      "unit": "V a.c.",
-      "condition": {
-        "duration": "1 minute",
-        "waveform": "50 Hz r.m.s."
+      "requirement": "dielectric electric strength",
+      "conditions": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "ambient_condition": "immediately following humidity treatment"
       },
-      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "test": {
+        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "operator": "==",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
       "source_pages": [
         2
       ]
     },
     {
-      "requirement_id": "REQ-DOC-012-8.1-001",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC012-8.1-001",
       "clause": "8.1",
       "subject": "self-ballasted LED lamp",
-      "property": "insulation_resistance",
-      "operator": ">=",
-      "value": 4.0,
-      "unit": "MΩ",
-      "condition": {
+      "requirement": "insulation resistance",
+      "conditions": {
         "humidity_treatment": "48 h at 91-95% RH",
-        "measurement_voltage": "500 V d.c.",
-        "measurement_time": "1 min after voltage application"
+        "temperature": "25-35 °C",
+        "duration": "48 h"
       },
-      "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+      "test": {
+        "voltage": "approximately 500 V d.c.",
+        "measurement_time": "1 min after application"
+      },
+      "acceptance_criterion": {
+        "minimum": 4.0,
+        "unit": "MΩ",
+        "operator": ">=",
+        "criterion_text": "Insulation resistance between live parts and accessible parts shall be not less than 4 MΩ"
+      },
       "source_pages": [
         2
       ]
     },
     {
-      "requirement_id": "REQ-DOC-012-8.2-002",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC012-8.2-002",
       "clause": "8.2",
       "subject": "self-ballasted LED lamp",
-      "property": "dielectric_electric_strength",
-      "operator": "==",
-      "value": 4000,
-      "unit": "V a.c.",
-      "condition": {
-        "duration": "1 minute",
-        "waveform": "50 Hz r.m.s."
+      "requirement": "dielectric electric strength",
+      "conditions": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "ambient_condition": "immediately following humidity treatment"
       },
-      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "test": {
+        "test_voltage": "4000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "operator": "==",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
       "source_pages": [
         2
       ]
     },
     {
-      "requirement_id": "REQ-DOC-012-10.2-005",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC012-10.2-005",
       "clause": "10.2",
       "subject": "insulating material",
-      "property": "glow_wire_temperature",
-      "operator": ">=",
-      "value": 650.0,
-      "unit": "°C",
-      "condition": {
-        "standard_method": "IS 11000 (Part 2/Sec 1)",
-        "live_parts_holding": "750 °C",
-        "non_live_parts": "650 °C"
+      "requirement": "resistance to heat and fire (glow-wire test)",
+      "conditions": {
+        "test_method": "IS 11000 (Part 2/Sec 1)",
+        "specimen_support": "tissue paper spread 200 mm below specimen"
       },
-      "compliance_criteria": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire",
+      "test": {
+        "temperature_live_holding": "750 °C",
+        "temperature_non_live": "650 °C",
+        "duration_contact": "30 s"
+      },
+      "acceptance_criterion": {
+        "minimum": 650.0,
+        "unit": "°C",
+        "operator": ">=",
+        "criterion_text": "Flames or glowing shall extinguish within 30 s of withdrawing glow-wire, without igniting tissue paper"
+      },
       "source_pages": [
         2
       ]
@@ -1020,7 +1236,7 @@
   ],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:13:57.143950+00:00",
+    "normalized_at": "2026-08-30T15:16:52.583302+00:00",
     "total_entities": 17,
     "total_requirements": 6,
     "total_relationships": 9,

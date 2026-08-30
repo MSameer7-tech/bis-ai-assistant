@@ -174,6 +174,10 @@
           ],
           "content": "1.9",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -188,6 +192,10 @@
           ],
           "content": "1.14\niii)\n7",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -202,8 +210,18 @@
           ],
           "content": "1.0",
           "subclauses": [],
+          "semantic_type": "scope",
+          "semantic_tags": [
+            "scope"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement",
+        "scope"
       ],
       "requirements": []
     },
@@ -233,6 +251,10 @@
           ],
           "content": "2.3\nii)\n5",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -247,6 +269,10 @@
           ],
           "content": "2.2 MHz – 3.0 MHz\n58\n51\n45\nv)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -261,8 +287,16 @@
           ],
           "content": "2.51 MHz – 3.0 MHz\n73\n63\nvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "reference",
+      "semantic_tags": [
+        "reference"
       ],
       "requirements": []
     },
@@ -292,6 +326,10 @@
           ],
           "content": "3.1 Rated Value\nQuantity value for a characteristic of an LED lamp for\nspecified operating conditions.\nNOTE — The value and the conditions specified in this\nstandard, or assigned by the manufacturer or responsible vendor.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -306,6 +344,11 @@
           ],
           "content": "3.2 Test Voltage\nVoltage at which tests are carried out\nNOTE — The voltage for conducting the relevant tests is given\nin A-2.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -320,6 +363,11 @@
           ],
           "content": "3.3 Lumen Maintenance (LED Lamp)\nRatio of the luminous flux emitted by an LED lamp at\na given time in its life to its initial luminous flux, the\nlamp being operated under specified conditions.\nNOTES\n1 This ratio x is generally expressed in per cent.\n2 The lumen maintenance of an LED lamp is the effect of\ndecrease of the lumen output of the LED(s) or a combination\nof this with failure(s) of LED(s) if the lamp contains more than\none LED.\n3 The lumen maintenance is also termed as luminous flux\nmaintenance.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -334,6 +382,10 @@
           ],
           "content": "3.4",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -348,6 +400,11 @@
           ],
           "content": "3.5 Mantained Value\nPhotometric, colorimetric and electrical characteristics\nat an operational time, including stabilization time.\nNOTE — The operational time shall be as specified in 7.1.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -362,6 +419,10 @@
           ],
           "content": "3.6 Life (individual LED lamp) (Lx )\nLength of time during which an LED lamp provides at\nleast claimed percentage of the initial luminous flux,\nunder standard test conditions.\nNOTES",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -376,6 +437,13 @@
           ],
           "content": "3.7 Rated Lamp Life\nLength of time during which a population of LED lamps\nprovides at least the claim for luminous flux\npercentage x and less or equal the claim for failure\nfraction percentage y, as declared by the manufacturer\nor responsible vendor.\nNOTES\n1 For sample size see, 13.\n2 Notes 1 and 2 of 3.6 shall apply.\n3 Rated lamp life is expressed in hours.",
           "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "definition",
+            "requirement",
+            "sampling_requirement"
+          ],
           "requirements": []
         },
         {
@@ -390,6 +458,11 @@
           ],
           "content": "3.8 Failure Fraction at Rated Life (Fy)\nPercentage y of a number of LED lamps of the same\ntype, that at their rated life designates the percentage\n(fraction) of failures.\nNOTES\n1 This failure fraction expresses the combined effect of all\ncomponents of an LED lamp including mechanical components,\nas far as the light output is concerned. The effect of the LED\ncould either be less light than claimed or no light at all.\n2 For self-ballasted LED lamps normally a failure fraction of\n10 percent or/and 50 percent are being applied, indicated as\nF10 or/and F50.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -405,6 +478,10 @@
           ],
           "content": "3.9 Photometric Code\nColour designation of an LED lamp giving white light\nas defined by the correlated colour temperature and\nthe general colour rendering index.\nIS No.\nTitle\nIS 16102 (Part 2) : 2017\nNOTES\n1 The definition of photometric code is given in IS 16101 as\nlight colour designation.\n2 An example of the construction of the photometric code is\ngiven in Annex B.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -419,6 +496,10 @@
           ],
           "content": "3.10 Stabilization Time\nTime, which the LED lamp requires to obtain stable\nphotometric conditions with constant electrical input\nfor each measurement.\nNOTE — An LED lamp may be regarded as stable under stable\nthermal conditions.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -433,6 +514,11 @@
           ],
           "content": "3.11 Ageing\nPreconditioning period of the LED lamps before\nmeasurement of the initial values in terms of electrical\nand photometric parameters.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -447,6 +533,10 @@
           ],
           "content": "3.12 Type\nLED lamp, representative of the production.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -461,6 +551,10 @@
           ],
           "content": "3.13 Family\nGroup of LED lamps that have same design\ncharacteristics, distinguished by common features of\nmaterials, components, construction and/or method of\nprocessing.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -475,6 +569,11 @@
           ],
           "content": "3.14 Type Test\nA test or series of tests made on one or more sample of\nLED lamp representative of production, for the purpose\nof checking compliance of the design of a given product\nwith the requirements of the relevant standard.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -489,6 +588,11 @@
           ],
           "content": "3.15 Type Test Sample\nOne or more LED lamps submitted by the manufacturer\nor responsible vendor for the purpose of the type test.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -503,6 +607,10 @@
           ],
           "content": "3.16 LED Lamp Efficacy (lm/W)\nQuotient of the luminous flux emitted by the power\nconsumed by the LED lamp.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -517,6 +625,10 @@
           ],
           "content": "3.17 LED Die\nBlock of semi-conducting material on which a given\nfunctional circuit is fabricated.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -531,6 +643,10 @@
           ],
           "content": "3.18 LED Package\nSingle electrical component encapsulating principally\none or more LED dies, possibly with optical elements\nand thermal, mechanical, and electrical interfaces.\nNOTES\n1 The component does not include the control unit of the control\ngear, does not include a cap, and is not connected directly to\nthe supply voltage.\n2 An LED package is a discrete component and part of the\nLED lamp.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -545,6 +661,10 @@
           ],
           "content": "3.19 tLED Point\nDesignated location of the point where to measure the\nperformance temperature tLED at the surface of the LED\npackage.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -559,6 +679,10 @@
           ],
           "content": "3.20 Power Factor\nThe ratio of the measured active input power to the\nproduct of the supply voltage (rms) and the supply\ncurrent (rms).",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -573,6 +697,10 @@
           ],
           "content": "3.21 Directional Lamp\nLamp having at least 80 percent luminous flux within\na solid angle of  sr (corresponding to a cone with angle\nof 120°).",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -587,6 +715,10 @@
           ],
           "content": "3.22 Peak Intensity\nThe highest value of the luminous intensity regardless\nof whether or not it occurs on the optical beam axis.\nNOTE — The peak intensity is expressed in candela.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -601,6 +733,10 @@
           ],
           "content": "3.23 Centre Beam Intensity\nThe value of the luminous intensity measured on the\noptical beam axis.\nNOTE — The centre beam intensity is expressed in candela.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -615,6 +751,11 @@
           ],
           "content": "3.24 Beam Angle\nThe angle between two imaginary lines in a plane\nthrough the optical beam axis, such that these lines pass\nthrough the centre of the front face of the lamp and\nthrough points at which the luminous intensity is 50\npercent of the centre beam intensity.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -629,6 +770,11 @@
           ],
           "content": "3.25 Acceptance Test\nTests carried out on samples taken from a lot for the\nacceptance of the lot.",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -643,6 +789,10 @@
           ],
           "content": "3.26 Batch\nAll the lamps of one type put forward at one time for\nacceptance test",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -657,6 +807,10 @@
           ],
           "content": "3.4",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -671,6 +825,10 @@
           ],
           "content": "3.85/n",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -685,6 +843,10 @@
           ],
           "content": "3.0 MHz – 5.0 MHz\n56\n46\nvii)",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         },
         {
@@ -699,8 +861,17 @@
           ],
           "content": "3.0 MHz – 5.0 MHz\n56\n46\nvii)",
           "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "definition",
+      "semantic_tags": [
+        "definition",
+        "requirement"
       ],
       "requirements": []
     },
@@ -729,6 +900,10 @@
           ],
           "content": "1.9",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -743,6 +918,10 @@
           ],
           "content": "1.14\niii)\n7",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -757,8 +936,18 @@
           ],
           "content": "1.0",
           "subclauses": [],
+          "semantic_type": "scope",
+          "semantic_tags": [
+            "scope"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement",
+        "scope"
       ],
       "requirements": []
     },
@@ -775,19 +964,36 @@
       ],
       "content": "4 GENERAL REQUIREMENTS ON TESTS\nThe LED lamps for which compliance with this standard\nis claimed shall comply with the safety requirements\nspecified in IS 16102 (Part 1). Method of measurement\nof lamp characteristics is given in Annex A.\nSelf-ballasted LED lamps shall be able to start and\noperate satisfactorily at any voltages between 90 percent\nand 110 percent of rated supply voltage and at an ambient\nair temperature between –10°C and 40°C and also in a\nluminaire complying with IS 10322 (Part1).\nIS 16102 (Part 2) : 2017\nTable 1 Required Marking\n(Clauses 5.1 and 5.2)\nSl\nNo.\nParameter\nProduct\nPackaging\nProduct Datasheets,\nLeaflets or Website\n(1)\n(2)\n(3)\n(4)\n(5)\ni)\nRated luminous flux (lm), centre beam intensity and beam\nangle (see Note 1)\nx\nx\nx\nii)\nLamp photometric code (see Annex B)\n–\nx\nx\niii)\nRated life (h) and the related lumen maintenance (x)\n–\nx\nx\niv)\nFailure fraction (Fy), corresponding to the rated life\n–\nx\nx\nv)\nRated correlated colour temperature (for example: F 2700 to\nF 6500, see Table 7)\nx\nx\nX\nvi)\nRated colour rendering index\n–\nx\nx\nvii)\nAgeing time (h), if different to 0 h\n–\n–\nx\nviii)\nRated efficacy (lm/W)\nx\nx\nx\nix)\nDimensions, including dimensional tolerances\n–\n–\nx\nx)\nPower factor\nx\nx\nx\nNOTES\n1 For non-directional lamps, centre beam intensity and beam angle are not mandatory.\n2 For directional lamps, centre beam intensity and beam angle are measured according to IS/IEC TR 61341.\nKey: x = required, – = not required.",
       "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement",
+        "test_method"
+      ],
       "requirements": [
         {
-          "requirement_id": "REQ-DOC-002-4-004",
+          "entity_type": "requirement",
+          "requirement_id": "REQ-DOC002-4-004",
           "clause": "4",
           "subject": "self-ballasted LED lamp",
-          "property": "mandatory_marking",
-          "operator": "mandatory",
-          "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
-          "unit": null,
-          "condition": {
-            "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+          "requirement": "mandatory product markings",
+          "conditions": {
+            "location": "marked distinctly and durably on the lamp and packaging"
           },
-          "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+          "test": {
+            "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+          },
+          "acceptance_criterion": {
+            "mandatory_items": [
+              "Mark of origin (trademark or brand)",
+              "Rated voltage or voltage range (V)",
+              "Rated wattage (W)",
+              "Rated frequency (Hz)",
+              "Standard Mark (CRS Registration R-XXXXXXXX)"
+            ],
+            "operator": "mandatory",
+            "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+          },
           "source_pages": [
             5,
             6
@@ -821,6 +1027,11 @@
           ],
           "content": "5.1 General Requirements for Marking\nIn addition to the marking specified in IS 16102\n(Part 1), marking as specified in Table 1 shall be\nprovided by the manufacturer or responsible vendor.",
           "subclauses": [],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "marking_requirement",
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -835,6 +1046,11 @@
           ],
           "content": "5.2 Places of Marking\nThe required information to be provided on the product,\npackaging or product leaflets, product datasheet and\nwebsite shall be as specified in Table 1.",
           "subclauses": [],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "marking_requirement",
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -861,8 +1077,16 @@
               ],
               "content": "5.3.1 The use of the Standard Mark is governed by the\nprovisions of the Bureau of Indian Standards Act, 1986\nand the Rules and Regulations made thereunder. The\ndetails of conditions under which the licence for the\nuse of the Standard Mark may be granted to\nmanufacturers or producers may be obtained from the\nBureau of Indian Standards.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
+          ],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "marking_requirement"
           ],
           "requirements": []
         },
@@ -879,8 +1103,17 @@
           ],
           "content": "5.0 MHz – 30 MHz\n60\n50\n1) At the transmission frequency the lower limit applies.\n2) The limit values in the frequency range 9 kHz to 150\nkHz are considered to be provisional which may be modified\nafter some years of experience.\n3) The limit decreases linearly with the logarithm of the\nfrequency range of 9 kHz to 50 kHz and 150 kHz to 0.5 MHz.\nIS 16102 (Part 2) : 2017\nThe initial luminous flux of each individual LED lamp\nin the measured sample shall not be less than the rated\nluminous flux by more than 10 percent.\nThe average initial luminous flux of the measured\nsamples shall not be less than the rated luminous flux\nby more than 7.5 percent.\nLamps with different rated lumens and wattages falling\nunder the same lumen group as given in Table 6 will\nnot require separate testing and certification under this\nstandard if they satisfy the family criteria given in 7.2.",
           "subclauses": [],
+          "semantic_type": "acceptance_criterion",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "marking_requirement",
+      "semantic_tags": [
+        "marking_requirement"
       ],
       "requirements": []
     },
@@ -896,6 +1129,11 @@
       ],
       "content": "6 DIMENSIONS\nThe LED lamp dimensions shall comply with the\nrequirements as indicated by the manufacturer or\nresponsible vendor.\nIf the luminaire itself or any covering (if applicable)\ndoes not interfere with the dimensions of LED lamps,\nsuch lamps are also suitable as replacement provided\nthe lamp cap is the same.\nCompliance is checked by inspection.",
       "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -923,6 +1161,12 @@
           ],
           "content": "7.1 General Test Conditions\nTesting duration is 25 percent of rated life time up to a\nmaximum of 6 000 h.\nAdditional LED lamps within the same family (see 3.13)\nmay be subjected to decreased testing duration. For\nidentification of a family, see Table 2, for details on\nsample sizes for family testing, see Table 11.\nTest conditions for testing tLED, electrical and\nphotometric characteristics, lumen maintenance and life\nare given in Annex A.\nAll tests are conducted on n LED lamps of the same\ntype. The number n shall be a minimum of products as\ngiven in Table 10. LED lamps used in the endurance\ntests shall not be used in other tests.\nLED lamps with dimming control shall be adjusted to\nmaximum light output for all tests.\nLED lamps with adjustable colour point shall be\nadjusted/set to one fixed value as indicated by the\nmanufacturer or responsible vendor.",
           "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "requirement",
+            "sampling_requirement",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -951,6 +1195,11 @@
               ],
               "content": "7.2.1 General\nLamp families have been created with the aim of\nguiding LED lamp manufacturers towards platform\ndesigns and thus allowing the possibility to use data of\nthe existing baseline product that has already been\nIS 16102 (Part 2) : 2017\nTable 2 Variations Allowed within a Family\n(Clauses 7.1 and 7.2.2)\nSl\nNo.\nComponents where Variations are\nallowed (see Note 2)\nConditions for Acceptance\n(1)\n(2)\n(3)\ni)\nHousing and\nheat sink\nt\nLED (location and value given by the LED lamp supplier) and temperature of\nother components remain at the same or at a lower value, if the rated life time is\nthe same or higher than the baseline product, as indicated and specified by the\nmanufacturer or responsible vendor (see also Note 1 and Note 3).\nii)\nOptics (see Note 1)\nThe test results showing the effect of optical material change shall be\ndocumented in the manufacturer’s record.\niii)\nLED package\nt\nLED remains at the same or at a lower value, if the rated life time is the same or\nhigher than the baseline product as indicated and specified by the manufacturer\nor responsible vendor (see also Note 3).\niv)\nControl gear\ntLED remains at the same or at a lower value, if the rated life time is the same or\nhigher than the baseline product, as indicated and specified by the manufacturer\nor responsible vendor.\nA statistical failure rate calculation based on an MTBF (mean time between\nfailures) calculation by the manufacturer shall show equal or lower failure rate\nof the electronic control gear.\nNOTES\n1 Optics includes for instance secondary optics (lenses), reflectors, trims and gaskets and their interconnections. The results relate to\nchanges in luminous flux, peak luminous intensity, luminous intensity distribution, beam angle, shift in colour co-ordinates, shift in\nCCT (see 10.1) and shift in colour rendering index (CRI) (see 10.2).\n2 Any change on part tolerances are documented in the manufacturer’s record.\n3 No additional tests are required for claimed lower rated life time, provided tLED is same or lower than baseline product.\ntested for an operational period as stated in 7.1. The\nbaseline product is considered to be the first LED lamp\ncomplying with this standard and designated to be part\nof the family.",
               "subclauses": [],
+              "semantic_type": "acceptance_criterion",
+              "semantic_tags": [
+                "acceptance_criterion",
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -965,6 +1214,10 @@
               ],
               "content": "7.2.2 Variations within a Family\nEach family of LED lamps requires a case-by-case\nconsideration. The range of LED lamps should be\nmanufactured by the same manufacturer, under the same\nquality assurance system. The type variations of the\nrange [for example Correlated Colour Temperature\n(CCT) given in 10.1] should be essentially identical\nwith respect to materials used, components and\nconstruction applied.\nRequirements for the identification of a family of LED\nlamps for type testing are given in 3.13 and in Table 2.\nThe testing time may be reduced within a family down\nto 1 000 h in case variations of part characteristics are\nwithin the conditions given in Table 2.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -979,9 +1232,19 @@
               ],
               "content": "7.2.3 Compliance Testing of Family Members\nThe following performance characteristics of members\nwithin a family at initial and after reduced testing time\nshall be in line with the values provided by the\nmanufacturer or responsible vendor of the lamp:\na)\nChromaticity co-ordinates,\nb)\nColour rendering index,\nc)\nLumen maintenance code, and\nd)\nResults of accelerated operational life test.\nFor all of the tested units in a sample, the measured\nvalues of an LED lamp (the initial and maintained\nvalue) shall not vary beyond the values indicated by\nthe manufacturer or responsible vendor.\nThe measured values shall be of the same category or\ncode as per the declared values or better. The maximum\nnumber of LED lamps in a sample which can fail in\nindividual tests and in the groups is given in Table 11.",
               "subclauses": [],
+              "semantic_type": "acceptance_criterion",
+              "semantic_tags": [
+                "acceptance_criterion",
+                "requirement",
+                "test_method"
+              ],
               "requirements": []
             }
           ],
+          "semantic_type": "test_method",
+          "semantic_tags": [
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -996,6 +1259,10 @@
           ],
           "content": "7.21)\ntLED-point\nii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1010,8 +1277,16 @@
           ],
           "content": "7.21)\ntLED-point\nii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
       ],
       "requirements": []
     },
@@ -1042,6 +1317,10 @@
           ],
           "content": "8.1\nLamp factorx\n2\nv)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1056,93 +1335,9 @@
           ],
           "content": "8.2\nPower factor\n5 units for all tests2)\n1\n0\niv)",
           "subclauses": [],
-          "requirements": []
-        },
-        {
-          "clause_number": "8.3",
-          "title": "8.3",
-          "parent_clause": "8",
-          "depth": 2,
-          "page_start": 8,
-          "page_end": 14,
-          "page_refs": [
-            8,
-            14
-          ],
-          "content": "8.3\nHarmonics\n0\niv)",
-          "subclauses": [
-            {
-              "clause_number": "8.3.1",
-              "title": "Compliance to harmonics of input current is not",
-              "parent_clause": "8.3",
-              "depth": 3,
-              "page_start": 8,
-              "page_end": 8,
-              "page_refs": [
-                8
-              ],
-              "content": "8.3.1 Compliance to harmonics of input current is not\napplicable for lamp rated wattages below and equal to\n5 W.",
-              "subclauses": [],
-              "requirements": []
-            },
-            {
-              "clause_number": "8.3.2",
-              "title": "For lamps having an active rated input power",
-              "parent_clause": "8.3",
-              "depth": 3,
-              "page_start": 8,
-              "page_end": 8,
-              "page_refs": [
-                8
-              ],
-              "content": "8.3.2 For lamps having an active rated input power\nmore than 5 W the harmonic current shall comply with\none of the following two sets of requirements:\na)\nthe harmonic currents shall not exceed the\npower-related limits of Table 3, col 2, or\nb)\nthe third harmonic current, expressed as a\npercentage of the fundamental current, shall\nnot exceed 86 percent and the fifth shall not\nexceed 61 percent. Moreover, the wave form\nof the input current shall be such that it begins\nto flow before or at 60°, has its last peak\n(if there are several peaks per half period)\nbefore or at 65° and does not stop flowing\nbefore 90°, where the zero crossing of the\nfundamental supply voltage is assumed to be\nat 0°.\nTable 3 Limits for Harmonic Current\n(Clause 8.3.2)\nSl\nNo.\nHarmonic Order\nMaximum Permissible\nHarmonic Current\nn\nmA/W\nA\n(1)\n(2)\n(3)\n(4)\ni)\n3",
-              "subclauses": [],
-              "requirements": []
-            }
-          ],
-          "requirements": []
-        },
-        {
-          "clause_number": "8.4",
-          "title": "8.4",
-          "parent_clause": "8",
-          "depth": 2,
-          "page_start": 8,
-          "page_end": 14,
-          "page_refs": [
-            8,
-            14
-          ],
-          "content": "8.4\nEmission of radio frequency disturbance\n1 unit for each test2)\n0\n0\nv)\n5\nMarking\n0\nvi)\n6\nDimensions\n1\nvii)",
-          "subclauses": [
-            {
-              "clause_number": "8.4.1",
-              "title": "LED lamp shall comply with the mains terminal",
-              "parent_clause": "8.4",
-              "depth": 3,
-              "page_start": 8,
-              "page_end": 8,
-              "page_refs": [
-                8
-              ],
-              "content": "8.4.1 LED lamp shall comply with the mains terminal\nvoltage limits given in Table 4.",
-              "subclauses": [],
-              "requirements": []
-            },
-            {
-              "clause_number": "8.4.2",
-              "title": "Where the LED lamp is operated at a frequency",
-              "parent_clause": "8.4",
-              "depth": 3,
-              "page_start": 8,
-              "page_end": 8,
-              "page_refs": [
-                8
-              ],
-              "content": "8.4.2 Where the LED lamp is operated at a frequency\nexceeding 100 Hz, the lamp shall comply with the field\nstrength limits given in Table 5.\nTable 5 Radiated Disturbance Limits\n(Clause 8.4.2)\nLimits for Loop Diameter\n(dB µA)1)\nSl\nNo.\nFrequency Range\n2 m\n3 m\n4 m\n(1)\n(2)\n(3)\n(4)\n(5)\ni)\n9 kHz – 70 kHz\n88\n81\n75\nii)\n70 kHz – 150 kHz\n88–582)\n81–512)\n75–452)\niii)\n150 kHz – 2.2 MHz\n58–262)\n51–222)\n45–162)\niv)",
-              "subclauses": [],
-              "requirements": []
-            }
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
           ],
           "requirements": []
         },
@@ -1171,6 +1366,10 @@
               ],
               "content": "8.3.1 Compliance to harmonics of input current is not\napplicable for lamp rated wattages below and equal to\n5 W.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1185,8 +1384,16 @@
               ],
               "content": "8.3.2 For lamps having an active rated input power\nmore than 5 W the harmonic current shall comply with\none of the following two sets of requirements:\na)\nthe harmonic currents shall not exceed the\npower-related limits of Table 3, col 2, or\nb)\nthe third harmonic current, expressed as a\npercentage of the fundamental current, shall\nnot exceed 86 percent and the fifth shall not\nexceed 61 percent. Moreover, the wave form\nof the input current shall be such that it begins\nto flow before or at 60°, has its last peak\n(if there are several peaks per half period)\nbefore or at 65° and does not stop flowing\nbefore 90°, where the zero crossing of the\nfundamental supply voltage is assumed to be\nat 0°.\nTable 3 Limits for Harmonic Current\n(Clause 8.3.2)\nSl\nNo.\nHarmonic Order\nMaximum Permissible\nHarmonic Current\nn\nmA/W\nA\n(1)\n(2)\n(3)\n(4)\ni)\n3",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
+          ],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
           ],
           "requirements": []
         },
@@ -1215,6 +1422,10 @@
               ],
               "content": "8.4.1 LED lamp shall comply with the mains terminal\nvoltage limits given in Table 4.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1229,37 +1440,17 @@
               ],
               "content": "8.4.2 Where the LED lamp is operated at a frequency\nexceeding 100 Hz, the lamp shall comply with the field\nstrength limits given in Table 5.\nTable 5 Radiated Disturbance Limits\n(Clause 8.4.2)\nLimits for Loop Diameter\n(dB µA)1)\nSl\nNo.\nFrequency Range\n2 m\n3 m\n4 m\n(1)\n(2)\n(3)\n(4)\n(5)\ni)\n9 kHz – 70 kHz\n88\n81\n75\nii)\n70 kHz – 150 kHz\n88–582)\n81–512)\n75–452)\niii)\n150 kHz – 2.2 MHz\n58–262)\n51–222)\n45–162)\niv)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
           ],
-          "requirements": []
-        },
-        {
-          "clause_number": "8.2",
-          "title": "8.2",
-          "parent_clause": "8",
-          "depth": 2,
-          "page_start": 15,
-          "page_end": 15,
-          "page_refs": [
-            15
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
           ],
-          "content": "8.2\nPower factor\n5 units for all tests2)\n1\n0\niv)",
-          "subclauses": [],
-          "requirements": []
-        },
-        {
-          "clause_number": "8.1",
-          "title": "8.1",
-          "parent_clause": "8",
-          "depth": 2,
-          "page_start": 15,
-          "page_end": 15,
-          "page_refs": [
-            15
-          ],
-          "content": "8.1\nLamp factorx\n2\nv)",
-          "subclauses": [],
           "requirements": []
         },
         {
@@ -1287,6 +1478,10 @@
               ],
               "content": "8.3.1 Compliance to harmonics of input current is not\napplicable for lamp rated wattages below and equal to\n5 W.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1301,8 +1496,16 @@
               ],
               "content": "8.3.2 For lamps having an active rated input power\nmore than 5 W the harmonic current shall comply with\none of the following two sets of requirements:\na)\nthe harmonic currents shall not exceed the\npower-related limits of Table 3, col 2, or\nb)\nthe third harmonic current, expressed as a\npercentage of the fundamental current, shall\nnot exceed 86 percent and the fifth shall not\nexceed 61 percent. Moreover, the wave form\nof the input current shall be such that it begins\nto flow before or at 60°, has its last peak\n(if there are several peaks per half period)\nbefore or at 65° and does not stop flowing\nbefore 90°, where the zero crossing of the\nfundamental supply voltage is assumed to be\nat 0°.\nTable 3 Limits for Harmonic Current\n(Clause 8.3.2)\nSl\nNo.\nHarmonic Order\nMaximum Permissible\nHarmonic Current\nn\nmA/W\nA\n(1)\n(2)\n(3)\n(4)\ni)\n3",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
+          ],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
           ],
           "requirements": []
         },
@@ -1331,6 +1534,10 @@
               ],
               "content": "8.4.1 LED lamp shall comply with the mains terminal\nvoltage limits given in Table 4.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1345,9 +1552,17 @@
               ],
               "content": "8.4.2 Where the LED lamp is operated at a frequency\nexceeding 100 Hz, the lamp shall comply with the field\nstrength limits given in Table 5.\nTable 5 Radiated Disturbance Limits\n(Clause 8.4.2)\nLimits for Loop Diameter\n(dB µA)1)\nSl\nNo.\nFrequency Range\n2 m\n3 m\n4 m\n(1)\n(2)\n(3)\n(4)\n(5)\ni)\n9 kHz – 70 kHz\n88\n81\n75\nii)\n70 kHz – 150 kHz\n88–582)\n81–512)\n75–452)\niii)\n150 kHz – 2.2 MHz\n58–262)\n51–222)\n45–162)\niv)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
           ],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1362,6 +1577,10 @@
           ],
           "content": "8.2\nPower factor\n5 units for all tests2)\n1\n0\niv)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1376,6 +1595,122 @@
           ],
           "content": "8.1\nLamp factorx\n2\nv)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "requirements": []
+        },
+        {
+          "clause_number": "8.3",
+          "title": "8.3",
+          "parent_clause": "8",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 14,
+          "page_refs": [
+            8,
+            14
+          ],
+          "content": "8.3\nHarmonics\n0\niv)",
+          "subclauses": [
+            {
+              "clause_number": "8.3.1",
+              "title": "Compliance to harmonics of input current is not",
+              "parent_clause": "8.3",
+              "depth": 3,
+              "page_start": 8,
+              "page_end": 8,
+              "page_refs": [
+                8
+              ],
+              "content": "8.3.1 Compliance to harmonics of input current is not\napplicable for lamp rated wattages below and equal to\n5 W.",
+              "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
+              "requirements": []
+            },
+            {
+              "clause_number": "8.3.2",
+              "title": "For lamps having an active rated input power",
+              "parent_clause": "8.3",
+              "depth": 3,
+              "page_start": 8,
+              "page_end": 8,
+              "page_refs": [
+                8
+              ],
+              "content": "8.3.2 For lamps having an active rated input power\nmore than 5 W the harmonic current shall comply with\none of the following two sets of requirements:\na)\nthe harmonic currents shall not exceed the\npower-related limits of Table 3, col 2, or\nb)\nthe third harmonic current, expressed as a\npercentage of the fundamental current, shall\nnot exceed 86 percent and the fifth shall not\nexceed 61 percent. Moreover, the wave form\nof the input current shall be such that it begins\nto flow before or at 60°, has its last peak\n(if there are several peaks per half period)\nbefore or at 65° and does not stop flowing\nbefore 90°, where the zero crossing of the\nfundamental supply voltage is assumed to be\nat 0°.\nTable 3 Limits for Harmonic Current\n(Clause 8.3.2)\nSl\nNo.\nHarmonic Order\nMaximum Permissible\nHarmonic Current\nn\nmA/W\nA\n(1)\n(2)\n(3)\n(4)\ni)\n3",
+              "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
+              "requirements": []
+            }
+          ],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "requirements": []
+        },
+        {
+          "clause_number": "8.4",
+          "title": "8.4",
+          "parent_clause": "8",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 14,
+          "page_refs": [
+            8,
+            14
+          ],
+          "content": "8.4\nEmission of radio frequency disturbance\n1 unit for each test2)\n0\n0\nv)\n5\nMarking\n0\nvi)\n6\nDimensions\n1\nvii)",
+          "subclauses": [
+            {
+              "clause_number": "8.4.1",
+              "title": "LED lamp shall comply with the mains terminal",
+              "parent_clause": "8.4",
+              "depth": 3,
+              "page_start": 8,
+              "page_end": 8,
+              "page_refs": [
+                8
+              ],
+              "content": "8.4.1 LED lamp shall comply with the mains terminal\nvoltage limits given in Table 4.",
+              "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
+              "requirements": []
+            },
+            {
+              "clause_number": "8.4.2",
+              "title": "Where the LED lamp is operated at a frequency",
+              "parent_clause": "8.4",
+              "depth": 3,
+              "page_start": 8,
+              "page_end": 8,
+              "page_refs": [
+                8
+              ],
+              "content": "8.4.2 Where the LED lamp is operated at a frequency\nexceeding 100 Hz, the lamp shall comply with the field\nstrength limits given in Table 5.\nTable 5 Radiated Disturbance Limits\n(Clause 8.4.2)\nLimits for Loop Diameter\n(dB µA)1)\nSl\nNo.\nFrequency Range\n2 m\n3 m\n4 m\n(1)\n(2)\n(3)\n(4)\n(5)\ni)\n9 kHz – 70 kHz\n88\n81\n75\nii)\n70 kHz – 150 kHz\n88–582)\n81–512)\n75–452)\niii)\n150 kHz – 2.2 MHz\n58–262)\n51–222)\n45–162)\niv)",
+              "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
+              "requirements": []
+            }
+          ],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1390,6 +1725,10 @@
           ],
           "content": "8.2\nPower factor\n5 units for all tests2)\n1\n0\niv)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1404,8 +1743,52 @@
           ],
           "content": "8.1\nLamp factorx\n2\nv)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "requirements": []
+        },
+        {
+          "clause_number": "8.2",
+          "title": "8.2",
+          "parent_clause": "8",
+          "depth": 2,
+          "page_start": 15,
+          "page_end": 15,
+          "page_refs": [
+            15
+          ],
+          "content": "8.2\nPower factor\n5 units for all tests2)\n1\n0\niv)",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "requirements": []
+        },
+        {
+          "clause_number": "8.1",
+          "title": "8.1",
+          "parent_clause": "8",
+          "depth": 2,
+          "page_start": 15,
+          "page_end": 15,
+          "page_refs": [
+            15
+          ],
+          "content": "8.1\nLamp factorx\n2\nv)",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -1421,6 +1804,10 @@
       ],
       "content": "0.77\niv)\n9",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -1435,6 +1822,10 @@
       ],
       "content": "0.5 MHz – 2.51 MHz\n56\n46\nv)",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -1449,6 +1840,10 @@
       ],
       "content": "0.40\nv)\n11",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -1463,6 +1858,10 @@
       ],
       "content": "0.35",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -1477,6 +1876,10 @@
       ],
       "content": "0.33\nvi)\n13 < n < 39\n(odd harmonics only)",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -1491,6 +1894,10 @@
       ],
       "content": "0.15 15/n\nNOTE — Harmonic current less than 0.6 percent of the input\ncurrent measured under test conditions or less than 5 mA\nwhichever is greater are to be disregarded.",
       "subclauses": [],
+      "semantic_type": "note",
+      "semantic_tags": [
+        "note"
+      ],
       "requirements": []
     },
     {
@@ -1519,6 +1926,10 @@
           ],
           "content": "9.1\nLuminous flux\n2\nvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1546,6 +1957,10 @@
               ],
               "content": "9.2.1 General\nThe requirements of peak intensity and beam angle only\napplies to LED lamps having a directional (spot)\ndistribution commonly known as directional lamps and\nis given in 9.2.4 and 9.2.5.\nLuminous intensity distribution of an LED lamp may\nbe specific for an application.",
               "subclauses": [],
+              "semantic_type": "scope",
+              "semantic_tags": [
+                "scope"
+              ],
               "requirements": []
             },
             {
@@ -1560,6 +1975,10 @@
               ],
               "content": "9.2.2 Measurement\nThe intensity of light emitted from the LED lamp in\ndifferent directions is measured using a goniophotometer.\nAll photometric data shall be declared for the LED lamp\noperating at a temperature given in A-1.\nThe allowed photometric variations, detailed\nin 9.2.3, 9.2.4 and 9.2.5 is based on the manufacturing\ntolerances taken into consideration.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1574,6 +1993,10 @@
               ],
               "content": "9.2.3 Luminous Intensity Distribution\nThe initial distribution of luminous intensity shall be\nin accordance with that declared by the manufacturer\nor responsible vendor.\nNOTE — Compliance is under consideration.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1588,6 +2011,10 @@
               ],
               "content": "9.2.4\nPeak intensity value\n1\nviii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1602,6 +2029,10 @@
               ],
               "content": "9.2.5\nBeam angle value\n1\nix)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1616,6 +2047,10 @@
               ],
               "content": "9.2.31)\nLuminous intensity distribution\nNot\napplicable\nNot applicable\niii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1630,6 +2065,10 @@
               ],
               "content": "9.2.4\nPeak intensity value\n1\nviii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1644,6 +2083,10 @@
               ],
               "content": "9.2.5\nBeam angle value\n1\nix)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1658,6 +2101,10 @@
               ],
               "content": "9.2.31)\nLuminous intensity distribution\nNot\napplicable\nNot applicable\niii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1672,6 +2119,10 @@
               ],
               "content": "9.2.4\nPeak intensity value\n1\nviii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -1686,9 +2137,17 @@
               ],
               "content": "9.2.5\nBeam angle value\n1\nix)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
           ],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1703,6 +2162,10 @@
           ],
           "content": "9.3\nEfficacy\n2\nvii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1717,6 +2180,10 @@
           ],
           "content": "9.1\nLuminous flux\n2\nvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1731,6 +2198,10 @@
           ],
           "content": "9.3\nEfficacy\n2\nvii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1745,6 +2216,10 @@
           ],
           "content": "9.1\nLuminous flux\n2\nvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1759,6 +2234,10 @@
           ],
           "content": "9.3\nEfficacy\n2\nvii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1773,6 +2252,10 @@
           ],
           "content": "9.1\nLuminous flux\n2\nvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1787,8 +2270,16 @@
           ],
           "content": "9.3\nEfficacy\n2\nvii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -1804,6 +2295,10 @@
       ],
       "content": "0.5 MHz – 2.51 MHz\n56\n46\nv)",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -1831,6 +2326,10 @@
           ],
           "content": "10.1\nChromaticity tolerance (initial)\n2\nviii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1845,6 +2344,10 @@
           ],
           "content": "10.2\nColour rendering index (initial)\nSame 10 units for all\ntests\n2\n3\n1) Acceptance tests are defined in 14.2.\n2) The sample need not be the same for all the tests.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1859,6 +2362,10 @@
           ],
           "content": "10.1\nChromaticity tolerance (initial)\n2\nviii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1873,6 +2380,10 @@
           ],
           "content": "10.2\nColour rendering index (initial)\nSame 10 units for all\ntests\n2\n3\n1) Acceptance tests are defined in 14.2.\n2) The sample need not be the same for all the tests.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1887,6 +2398,10 @@
           ],
           "content": "10.1\nChromaticity tolerance (initial)\n2\nviii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1901,6 +2416,10 @@
           ],
           "content": "10.2\nColour rendering index (initial)\nSame 10 units for all\ntests\n2\n3\n1) Acceptance tests are defined in 14.2.\n2) The sample need not be the same for all the tests.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1915,6 +2434,10 @@
           ],
           "content": "10.1\nChromaticity tolerance (initial)\n2\nviii)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -1929,8 +2452,16 @@
           ],
           "content": "10.2\nColour rendering index (initial)\nSame 10 units for all\ntests\n2\n3\n1) Acceptance tests are defined in 14.2.\n2) The sample need not be the same for all the tests.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -1960,6 +2491,10 @@
           ],
           "content": "11.1 General\nLife of an LED lamp as defined in 3.6 is the combined\neffect of gradual light output degradation, mostly caused\nby material degradation (see 11.2) and abrupt light output\ndegradation, mostly caused by electrical component\nfailure (see 11.3). Endurance test is therefore carried out\nto assess the reliability and life of the lamp.\nThe fraction of tested lamps of a sample (Fy) that may\nfail to comply with the requirements of the tests\nunder 11.2 are defined in 3.3 and 3.8.\nOn request, reduction of luminous flux due to zero\nlumen output and due to degradation of the LED\nmaterial in the measured sample may be given\nseparately.\nNOTE — Compliance of lumen maintenance after 25 percent\nof life time or 6 000 h implies that the lamps would have a life\nof 25 000 h or as declared by the manufacturer with a failure\nfraction of B50.",
           "subclauses": [],
+          "semantic_type": "acceptance_criterion",
+          "semantic_tags": [
+            "acceptance_criterion"
+          ],
           "requirements": []
         },
         {
@@ -1974,6 +2509,10 @@
           ],
           "content": "11.2\nLumen maintenance\nSame 5 units for all\ntests\n1\n1\nxvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -2001,6 +2540,10 @@
               ],
               "content": "11.3.1 General\nLED lamps shall be subjected to the tests specified\nin 11.3.2 to 11.3.4.\nNOTE — All tests can be carried out in parallel with different\nsets of new LED lamps.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2015,6 +2558,10 @@
               ],
               "content": "11.3.2\nTemperature cycling, energized\n3\n1\nxvii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2029,6 +2576,10 @@
               ],
               "content": "11.3.3\nSupply voltage switching\n3\n1\nxviii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2043,6 +2594,10 @@
               ],
               "content": "11.3.4\nAccelerated operational life test\n3\n1\n1\n1) tLED-point and luminous intensity distribution to be tested and recorded. Measurement of tLED-point is only for reference purpose\nfor family compliance.\n2) The sample need not be the same for all the tests.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2057,6 +2612,10 @@
               ],
               "content": "11.3.2\nTemperature cycling, energized\n3\n1\nxvii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2071,6 +2630,10 @@
               ],
               "content": "11.3.3\nSupply voltage switching\n3\n1\nxviii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2085,6 +2648,10 @@
               ],
               "content": "11.3.4\nAccelerated operational life test\n3\n1\n1\n1) tLED-point and luminous intensity distribution to be tested and recorded. Measurement of tLED-point is only for reference purpose\nfor family compliance.\n2) The sample need not be the same for all the tests.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2099,6 +2666,10 @@
               ],
               "content": "11.3.2\nTemperature cycling, energized\n3\n1\nxvii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2113,6 +2684,10 @@
               ],
               "content": "11.3.3\nSupply voltage switching\n3\n1\nxviii)",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             },
             {
@@ -2127,9 +2702,17 @@
               ],
               "content": "11.3.4\nAccelerated operational life test\n3\n1\n1\n1) tLED-point and luminous intensity distribution to be tested and recorded. Measurement of tLED-point is only for reference purpose\nfor family compliance.\n2) The sample need not be the same for all the tests.",
               "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
               "requirements": []
             }
           ],
+          "semantic_type": "test_method",
+          "semantic_tags": [
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -2144,6 +2727,10 @@
           ],
           "content": "11.2\nLumen maintenance\nSame 5 units for all\ntests\n1\n1\nxvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         },
         {
@@ -2158,8 +2745,16 @@
           ],
           "content": "11.2\nLumen maintenance\nSame 5 units for all\ntests\n1\n1\nxvi)",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -2175,6 +2770,10 @@
       ],
       "content": "12 DIMMING\nThe dimming requirements of LED lamps are under\nconsideration.",
       "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -2203,6 +2802,13 @@
           ],
           "content": "13.1 Type Tests\nThe minimum sampling size for type testing and the\nacceptance criteria shall be as given in Table 10\nand Table 11. The sample shall be representative of a\nmanufacturer’s production. A minimum number of 40\nlamps are required for baseline product and 20 samples\nfor each family product for Type Test.\nIS 16102 (Part 2) : 2017\nTable 10 Sample Sizes for Type Tests\n(Clause 13.1)\nAQL – Maximum Number of Units that\nare Allowed to Fail\nSl\nNo.\nClause or\nSub-clause\nTest\nMinimum Number of\nUnits in a Sample for\nan Operational Time as\nStated in 7.1\nIn Individual Tests\nIn the Group of\nTests\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\ni)",
           "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "requirement",
+            "sampling_requirement",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -2217,6 +2823,11 @@
           ],
           "content": "13.2 Acceptance Tests\nThe method of selection of lamps for tests is given\nin 15 of IS 16102 (Part 1). Sample Size and acceptance\ncriteria for acceptance test is 15 lamps (Table 12).",
           "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "sampling_requirement",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -2231,8 +2842,16 @@
           ],
           "content": "13.3 Accidentally Broken Lamps\nLamps which are accidentally broken before any test\nis started shall be replaced to ensure that the required\nnumber of test lamps completes the test.\nNOTE — In order to avoid delay, it is recommended that spare\nlamps be available through the tests.",
           "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
       ],
       "requirements": []
     },
@@ -2263,6 +2882,13 @@
           ],
           "content": "14.1 Type Tests\nThe following shall constitute the type tests to be carried\nout on selected sample of self-ballasted LED lamps,\nsample being drawn preferably from regular production\nlot:\na)\nMarking (see 5),\nb)\nDimension (see 6),\nc)\nWattage  and power factor (see 8.1 and 8.2),\nd)\nLuminous flux and efficacy (see 9.1 and 9.3),\ne)\nPeak intensity (see 9.2.4),\nf)\nBeam angle (see 9.2.5),\ng)\nColour chromaticity and colour rendering\nindex (CRI) (see 10.1 and 10.2),\nh)\nLife (see 11),\nj)\nHarmonics (see 8.3), and\nk)\nEmission (radiated and conducted) of radio\nfrequency disturbances (see 8.4).\nIS 16102 (Part 2) : 2017\nTable 11 Sample Size for Testing of Family\n(Clause 13.1)\nAQL-Maximum Number of Units\nthat are Allowed to Fail\nSl\nNo.\nClause\nor Sub-\nclause\nTest\nMinimum Number of\nUnits in a Sample for\nTesting a Family at\nReduced Test Duration\nAccording to 7.2\nIn Individual\nTests\nIn the Group of\nTests\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\ni)",
           "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "requirement",
+            "sampling_requirement",
+            "test_method"
+          ],
           "requirements": []
         },
         {
@@ -2278,8 +2904,19 @@
           ],
           "content": "14.2 Acceptance Tests\nThe following shall constitute as acceptance tests:\na)\nMarking (see 5),\nb)\nDimension (see 6),\nc)\nWattage and power factor (see 8.1 and 8.2),\nd)\nLuminous flux (see 9.1), and\ne)\nColour chromaticity and colour rendering\nindex (CRI) (see 10.1 and 10.2).\nIS 16102 (Part 2) : 2017\nTable 12 Sample Size for Acceptance Tests1)\n(Clauses 13.1 and 14.2)\nAQL-Maximum Number of Units\nthat are Allowed to Fail\nSl\nNo.\nClause\nor Sub-\nclause\nTest\nMinimum Number of\nUnits in a Sample\nIn Individual\nTests\nIn the Group of\nTests\n(1)\n(2)\n(3)\n(4)\n(5)\n(6)\ni)\n5\nMarking\n0\nii)\n6\nDimensions\n1\niii)",
           "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "acceptance_criterion",
+            "requirement",
+            "sampling_requirement",
+            "test_method"
+          ],
           "requirements": []
         }
+      ],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
       ],
       "requirements": []
     }
@@ -2592,17 +3229,28 @@
   ],
   "requirements": [
     {
-      "requirement_id": "REQ-DOC-002-4-004",
+      "entity_type": "requirement",
+      "requirement_id": "REQ-DOC002-4-004",
       "clause": "4",
       "subject": "self-ballasted LED lamp",
-      "property": "mandatory_marking",
-      "operator": "mandatory",
-      "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
-      "unit": null,
-      "condition": {
-        "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+      "requirement": "mandatory product markings",
+      "conditions": {
+        "location": "marked distinctly and durably on the lamp and packaging"
       },
-      "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+      "test": {
+        "durability_test": "Rubbing for 15 s with cloth soaked in hexane"
+      },
+      "acceptance_criterion": {
+        "mandatory_items": [
+          "Mark of origin (trademark or brand)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration R-XXXXXXXX)"
+        ],
+        "operator": "mandatory",
+        "criterion_text": "Marking shall remain legible after rubbing test and conform to BIS certification rules"
+      },
       "source_pages": [
         5,
         6
@@ -2690,7 +3338,7 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:13:57.139099+00:00",
+    "normalized_at": "2026-08-30T15:16:52.577784+00:00",
     "total_entities": 19,
     "total_requirements": 1,
     "total_relationships": 6,

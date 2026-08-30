@@ -25,6 +25,11 @@
       ],
       "content": "1. Short title and commencement.?\n(1) This Order may be called the Electronics and Information Technology Goods (Requirement of Compulsory\nRegistration) Amendment Order, 2026.\n(2) It shall come into force on the date of its publication in the Official Gazette.",
       "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "requirement",
+        "scope"
+      ],
       "requirements": []
     },
     {
@@ -39,6 +44,11 @@
       ],
       "content": "2. Amendment in the Schedule.?\nIn the Schedule to the Electronics and Information Technology Goods (Requirement of Compulsory\nRegistration) Order, 2021:\nFor the entry relating to 'Self-Ballasted LED Lamps for General Lighting Services', the corresponding standard\nIS 16102 (Part 1):2012 shall stand amended to include IS 16102 (Part 1):2026 (First Revision).\nThe concurrent implementation and transition guidelines issued by the Bureau of Indian Standards shall apply.",
       "subclauses": [],
+      "semantic_type": "reference",
+      "semantic_tags": [
+        "reference",
+        "requirement"
+      ],
       "requirements": []
     }
   ],
@@ -142,7 +152,7 @@
   ],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:13:57.142580+00:00",
+    "normalized_at": "2026-08-30T15:16:52.581711+00:00",
     "total_entities": 3,
     "total_requirements": 0,
     "total_relationships": 5,

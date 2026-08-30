@@ -35,6 +35,10 @@
       ],
       "content": "SCHEDULE\nSl. No. | Product Name                                             | Indian Standard Number\n1.      | Electronic Games (Video)                                 | IS 616 : 2017 / IEC 60065\n2.      | Laptop / Notebook / Tablet                               | IS 13252 (Part 1) : 2010\n3.      | Self-Ballasted LED Lamps for General Lighting Services   | IS 16102 (Part 1) : 2012 / IS 16102 (Part 1) :\n4.      | d.c. or a.c. Supplied Electronic Controlgear for LED      | IS 15885 (Part 2/Sec 13) : 2012\n5.      | Fixed General Purpose LED Luminaires                     | IS 10322 (Part 5/Sec 1) : 2012",
       "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
       "requirements": []
     },
     {
@@ -49,6 +53,11 @@
       ],
       "content": "2. Compulsory compliance with Indian Standards.?\n(1) No person shall manufacture, store for sale, sell, distribute or import goods specified in column (2) of the\nSchedule, which do not conform to the Indian Standard specified in the corresponding entry in column (3) of the\nsaid Schedule.\n(2) Manufacturers of such goods shall obtain registration from the Bureau of Indian Standards under Scheme-II\nof Schedule-II to the Bureau of Indian Standards (Conformity Assessment) Regulations, 2018.",
       "subclauses": [],
+      "semantic_type": "reference",
+      "semantic_tags": [
+        "reference",
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -63,6 +72,11 @@
       ],
       "content": "3. Standard Mark.?\nThe goods specified in the Schedule shall bear the Standard Mark under a licence or certificate of conformity\nfrom the Bureau as per Scheme-II of Schedule-II of the Bureau of Indian Standards (Conformity Assessment)\nRegulations, 2018.",
       "subclauses": [],
+      "semantic_type": "definition",
+      "semantic_tags": [
+        "definition",
+        "requirement"
+      ],
       "requirements": []
     },
     {
@@ -77,6 +91,12 @@
       ],
       "content": "4. Exemption.?\nNothing in this Order shall apply to goods meant exclusively for export or prototype samples meant for research\nand development testing.",
       "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "exception",
+        "requirement",
+        "scope"
+      ],
       "requirements": []
     },
     {
@@ -91,6 +111,10 @@
       ],
       "content": "SCHEDULE\nSl. No. | Product Name                                             | Indian Standard Number\n1.      | Electronic Games (Video)                                 | IS 616 : 2017 / IEC 60065\n2.      | Laptop / Notebook / Tablet                               | IS 13252 (Part 1) : 2010\n3.      | Self-Ballasted LED Lamps for General Lighting Services   | IS 16102 (Part 1) : 2012 / IS 16102 (Part 1) :\n4.      | d.c. or a.c. Supplied Electronic Controlgear for LED      | IS 15885 (Part 2/Sec 13) : 2012\n5.      | Fixed General Purpose LED Luminaires                     | IS 10322 (Part 5/Sec 1) : 2012",
       "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
       "requirements": []
     }
   ],
@@ -286,7 +310,7 @@
   ],
   "annexes": [],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:13:57.141593+00:00",
+    "normalized_at": "2026-08-30T15:16:52.580556+00:00",
     "total_entities": 7,
     "total_requirements": 0,
     "total_relationships": 9,
