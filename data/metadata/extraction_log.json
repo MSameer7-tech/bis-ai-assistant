@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "document_id": "DOC-007",
+    "source_id": "SRC-007",
+    "start_time": "2026-08-30T14:54:24.725070+00:00",
+    "completion_time": "2026-08-30T14:54:25.045621+00:00",
+    "total_pages": 11,
+    "total_clauses": 45,
+    "total_tables": 0,
+    "processed_file_path": "data/processed/DOC-007.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-002",
+    "source_id": "SRC-002",
+    "start_time": "2026-08-30T14:54:25.046219+00:00",
+    "completion_time": "2026-08-30T14:54:25.880702+00:00",
+    "total_pages": 19,
+    "total_clauses": 160,
+    "total_tables": 1,
+    "processed_file_path": "data/processed/DOC-002.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-010",
+    "source_id": "SRC-010",
+    "start_time": "2026-08-30T14:54:25.881297+00:00",
+    "completion_time": "2026-08-30T14:54:25.908674+00:00",
+    "total_pages": 1,
+    "total_clauses": 9,
+    "total_tables": 0,
+    "processed_file_path": "data/processed/DOC-010.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-011",
+    "source_id": "SRC-011",
+    "start_time": "2026-08-30T14:54:25.909226+00:00",
+    "completion_time": "2026-08-30T14:54:25.924274+00:00",
+    "total_pages": 1,
+    "total_clauses": 2,
+    "total_tables": 0,
+    "processed_file_path": "data/processed/DOC-011.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-012",
+    "source_id": "SRC-012",
+    "start_time": "2026-08-30T14:54:25.924898+00:00",
+    "completion_time": "2026-08-30T14:54:25.966528+00:00",
+    "total_pages": 2,
+    "total_clauses": 27,
+    "total_tables": 0,
+    "processed_file_path": "data/processed/DOC-012.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-001",
+    "source_id": "SRC-001",
+    "start_time": "2026-08-30T14:55:06.668942+00:00",
+    "completion_time": "2026-08-30T14:55:07.235008+00:00",
+    "total_pages": 17,
+    "total_clauses": 80,
+    "total_tables": 2,
+    "processed_file_path": "data/processed/DOC-001.json",
+    "status": "extraction_successful"
+  }
+]
