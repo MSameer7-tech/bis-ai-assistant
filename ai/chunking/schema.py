@@ -1,6 +1,7 @@
 """
 Phase 2E Chunk Schema and Typed Models.
-Defines self-contained semantic knowledge chunks for standard specifications and regulations.
+Defines self-contained semantic knowledge chunks for standard specifications and regulations
+with explicit clause hierarchy, normative modal keywords, and ambient condition binding.
 """
 
 from enum import Enum
@@ -23,11 +24,29 @@ class ChunkType(str, Enum):
     GENERAL_PROVISION = "general_provision"
 
 
+class NormativeForce(str, Enum):
+    MANDATORY = "mandatory"
+    PROHIBITION = "prohibition"
+    UNDER_CONSIDERATION = "under_consideration"
+    RECOMMENDATION = "recommendation"
+    INFORMATIVE = "informative"
+
+
 class ChunkClause(BaseModel):
     number: str
     title: str
     depth: int = 1
     parent_clause: Optional[str] = None
+    hierarchy_path: List[str] = Field(default_factory=list)
+    section_number: Optional[str] = None
+    section_title: Optional[str] = None
+
+
+class NormativeContext(BaseModel):
+    normative_force: NormativeForce = NormativeForce.MANDATORY
+    modal_keywords: List[str] = Field(default_factory=list)
+    verbatim_normative_statements: List[str] = Field(default_factory=list)
+    compliance_verification_method: Optional[str] = None
 
 
 class ChunkProvenance(BaseModel):
@@ -46,6 +65,7 @@ class KnowledgeChunk(BaseModel):
     source_id: str
     chunk_type: ChunkType
     clause: ChunkClause
+    normative_context: NormativeContext = Field(default_factory=NormativeContext)
     text: str
     entities: List[Dict[str, Any]] = Field(default_factory=list)
     requirements: List[Dict[str, Any]] = Field(default_factory=list)
@@ -58,7 +78,7 @@ class KnowledgeChunk(BaseModel):
 
 
 def make_chunk_id(doc_id: str, clause_num: str, seq: int = 1, prefix: str = "C") -> str:
-    """Generates standard stable chunk ID: e.g. DOC-001-C008-001"""
+    """Generates standard stable chunk ID: e.g. DOC-001-C_8_1_1-001"""
     doc_clean = doc_id.upper()
-    c_clean = clause_num.replace(".", "_")
+    c_clean = str(clause_num).replace(".", "_")
     return f"{doc_clean}-{prefix}_{c_clean}-{seq:03d}"

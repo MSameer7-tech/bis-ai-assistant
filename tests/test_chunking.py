@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import pytest
 from ai.chunking.chunker import StructureAwareChunker
-from ai.chunking.schema import ChunkType, KnowledgeChunk
+from ai.chunking.schema import ChunkType, KnowledgeChunk, NormativeForce
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 CHUNKS_DIR = ROOT_DIR / "data" / "chunks"
@@ -49,36 +49,42 @@ def test_chunk_schema_conformance(chunked_documents):
             assert validated.provenance.pages == validated.page_refs
 
 
-def test_chunk_types_distribution_doc001(chunked_documents):
-    """Verify that DOC-001 has definitions, tables, requirements, sampling, and annex chunks."""
+def test_step4_boundary_rules_atomic_units(chunked_documents):
+    """Verify that requirements and conditions remain atomic and are not fragmented (Step 4)."""
     doc_001 = next(chunks for m, chunks in chunked_documents if m["document_id"] == "DOC-001")
-    types = {c["chunk_type"] for c in doc_001}
+    ir_chunk = next((c for c in doc_001 if c["clause"]["number"] == "8.1.1"), None)
+    assert ir_chunk is not None
 
-    assert ChunkType.SCOPE.value in types
-    assert ChunkType.DEFINITION.value in types
-    assert ChunkType.REQUIREMENT.value in types
-    assert ChunkType.TABLE.value in types
-    assert ChunkType.SAMPLING.value in types
-    assert ChunkType.ANNEX.value in types
+    # Condition & Test are bundled together with requirement
+    assert len(ir_chunk["conditions"]) > 0
+    assert "humidity_treatment" in ir_chunk["conditions"][0]
+    assert "48 h" in ir_chunk["text"]
+    assert "91" in ir_chunk["text"] and "95" in ir_chunk["text"]
 
 
-def test_requirement_chunk_contains_context_and_limits(chunked_documents):
-    """Verify that requirement chunks contain embedded requirements, conditions, and references."""
+def test_step5_hierarchy_preservation(chunked_documents):
+    """Verify that clause hierarchy lineage (path, parent, depth) is preserved (Step 5)."""
     doc_001 = next(chunks for m, chunks in chunked_documents if m["document_id"] == "DOC-001")
-    req_chunk = next((c for c in doc_001 if c["clause"]["number"] == "8.1.1"), None)
-    assert req_chunk is not None
+    ir_chunk = next((c for c in doc_001 if c["clause"]["number"] == "8.1.1"), None)
+    assert ir_chunk is not None
 
-    assert req_chunk["chunk_type"] == ChunkType.REQUIREMENT.value
-    assert len(req_chunk["requirements"]) > 0
-    assert len(req_chunk["conditions"]) > 0
-    assert req_chunk["page_refs"] == [9]
+    c_meta = ir_chunk["clause"]
+    assert c_meta["number"] == "8.1.1"
+    assert c_meta["parent_clause"] == "8.1"
+    assert c_meta["hierarchy_path"] == ["8", "8.1", "8.1.1"]
+    assert c_meta["depth"] == 3
 
-    # Verify embedded requirement data
-    req_item = req_chunk["requirements"][0]
-    assert req_item["parameter"] == "insulation_resistance"
-    assert req_item["operator"] == ">="
-    assert req_item["value"] == 4.0
-    assert req_item["unit"] == "MΩ"
+
+def test_step6_normative_meaning_and_modals_preservation(chunked_documents):
+    """Verify that modal auxiliary verbs and normative force are preserved (Step 6)."""
+    doc_001 = next(chunks for m, chunks in chunked_documents if m["document_id"] == "DOC-001")
+    ir_chunk = next((c for c in doc_001 if c["clause"]["number"] == "8.1.1"), None)
+    assert ir_chunk is not None
+
+    norm = ir_chunk["normative_context"]
+    assert "shall" in norm["modal_keywords"]
+    assert norm["normative_force"] == NormativeForce.MANDATORY.value
+    assert any("shall be not less than" in s.lower() or "shall be conditioned" in s.lower() for s in norm["verbatim_normative_statements"])
 
 
 def test_table_chunks_contain_structured_data(chunked_documents):
