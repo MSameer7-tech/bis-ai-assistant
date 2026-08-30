@@ -11,7 +11,7 @@
     "publication_date": "2012-08-01",
     "effective_date": null,
     "url": "https://archive.org/details/gov.in.is.16102.1.2012",
-    "retrieval_date": "2026-08-30T14:29:57.295043+00:00",
+    "retrieval_date": "2026-08-30T14:37:14.081954+00:00",
     "status": "document_acquired",
     "notes": "Official Indian Standard PDF acquired and verified",
     "document_id": "DOC-001",
@@ -110,10 +110,14 @@
     "version_edition": "Reaffirmed 2022",
     "publication_date": "2012-09-01",
     "effective_date": null,
-    "url": "https://standardsbis.bsbedge.com",
-    "retrieval_date": "2026-08-30",
-    "status": "document_identified",
-    "notes": "Normative controlgear standard verified in active BIS LIMS lab scopes."
+    "url": "https://archive.org/details/gov.in.is.15885.2.13.2012",
+    "retrieval_date": "2026-08-30T14:42:12.092751+00:00",
+    "status": "document_acquired",
+    "notes": "Official Indian Standard PDF acquired and verified",
+    "document_id": "DOC-007",
+    "file_path": "data/raw/standards/IS_15885_Part_2_Sec_13_2012.pdf",
+    "file_sha256": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
+    "file_size_bytes": 855821
   },
   {
     "source_id": "SRC-008",

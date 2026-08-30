@@ -9,7 +9,21 @@
     "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
     "standard_or_document_number": "IS 16102 (Part 1) : 2012",
     "version_edition": "First Edition",
-    "acquired_date": "2026-08-30T14:29:57.295043+00:00",
+    "acquired_date": "2026-08-30T14:37:14.081954+00:00",
+    "status": "document_acquired",
+    "notes": "Official Indian Standard PDF acquired and verified"
+  },
+  {
+    "document_id": "DOC-007",
+    "source_id": "SRC-007",
+    "file_name": "IS_15885_Part_2_Sec_13_2012.pdf",
+    "file_path": "data/raw/standards/IS_15885_Part_2_Sec_13_2012.pdf",
+    "file_sha256": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
+    "file_size_bytes": 855821,
+    "title": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+    "standard_or_document_number": "IS 15885 (Part 2/Sec 13) : 2012",
+    "version_edition": "Reaffirmed 2022",
+    "acquired_date": "2026-08-30T14:42:12.092751+00:00",
     "status": "document_acquired",
     "notes": "Official Indian Standard PDF acquired and verified"
   }
