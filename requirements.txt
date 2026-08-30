@@ -1,0 +1,7 @@
+# Core & Environment Configuration
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=8.0.0
