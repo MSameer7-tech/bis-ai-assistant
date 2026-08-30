@@ -24,7 +24,7 @@
     "standard_or_document_number": "IS 15885 (Part 2/Sec 13) : 2012",
     "version_edition": "Reaffirmed 2022",
     "acquired_date": "2026-08-30T14:47:43.163860+00:00",
-    "status": "content_verified",
+    "status": "metadata_verified",
     "notes": "Official Indian Standard PDF acquired and verified"
   },
   {
@@ -38,7 +38,7 @@
     "standard_or_document_number": "IS 16102 (Part 2) : 2017",
     "version_edition": "First Revision",
     "acquired_date": "2026-08-30T14:47:43.123356+00:00",
-    "status": "content_verified",
+    "status": "metadata_verified",
     "notes": "Official Indian Standard PDF First Revision acquired and verified"
   },
   {
@@ -52,7 +52,7 @@
     "standard_or_document_number": "CRO 2021",
     "version_edition": "2021 Principal Order",
     "acquired_date": "2026-08-30T14:47:43.203597+00:00",
-    "status": "content_verified",
+    "status": "metadata_verified",
     "notes": "2021 CRO identified on the official BIS Scheme-II portal; document acquisition and content verification pending."
   },
   {
@@ -66,7 +66,7 @@
     "standard_or_document_number": "CRO Amendment 2026",
     "version_edition": "2026 Amendment",
     "acquired_date": "2026-08-30T14:47:43.248607+00:00",
-    "status": "content_verified",
+    "status": "metadata_verified",
     "notes": "2026 amendment reference identified on the official BIS Scheme-II portal; exact notification document and applicability pending acquisition and verification."
   },
   {
@@ -80,7 +80,7 @@
     "standard_or_document_number": "IS 16102 (Part 1) : 2026",
     "version_edition": "First Revision (2026)",
     "acquired_date": "2026-08-30T14:47:43.289159+00:00",
-    "status": "content_verified",
+    "status": "metadata_verified",
     "notes": "Newly published 2026 revised standard identified in BIS LIMS with active lab scopes; separate version from 2012 edition."
   }
 ]

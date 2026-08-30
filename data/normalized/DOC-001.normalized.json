@@ -1,0 +1,3551 @@
+{
+  "document_id": "DOC-001",
+  "source_id": "SRC-001",
+  "document_metadata": {
+    "document_id": "DOC-001",
+    "source_id": "SRC-001",
+    "standard_number": "IS 16102 (Part 1) : 2012",
+    "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+    "version": "First Edition",
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": "data/raw/standards/IS_16102_Part_1_2012.pdf",
+    "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b"
+  },
+  "semantic_sections": [
+    {
+      "section_number": "1",
+      "title": "SCOPE",
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ]
+    },
+    {
+      "section_number": "2",
+      "title": "REFERENCES",
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ]
+    },
+    {
+      "section_number": "3",
+      "title": "TERMINOLOGY",
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ]
+    },
+    {
+      "section_number": "4",
+      "title": "GENERAL REQUIREMENT AND GENERAL",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_number": "5",
+      "title": "MARKING",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_number": "6",
+      "title": "INTERCHANGEABILITY",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_number": "7",
+      "title": "PROTECTION AGAINST ACCIDENTAL",
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ]
+    },
+    {
+      "section_number": "8",
+      "title": "INSULATION RESISTANCE AND ELECTRIC",
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ]
+    },
+    {
+      "section_number": "9",
+      "title": "MECHANICAL STRENGTH",
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ]
+    },
+    {
+      "section_number": "10",
+      "title": "CAP TEMPERATURE RISE",
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ]
+    },
+    {
+      "section_number": "11",
+      "title": "RESISTANCE TO HEAT",
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ]
+    },
+    {
+      "section_number": "12",
+      "title": "RESISTANCE TO FLAME AND IGNITION",
+      "page_start": 13,
+      "page_end": 13,
+      "page_refs": [
+        13
+      ]
+    },
+    {
+      "section_number": "13",
+      "title": "FAULT CONDITIONS",
+      "page_start": 14,
+      "page_end": 14,
+      "page_refs": [
+        14
+      ]
+    },
+    {
+      "section_number": "14",
+      "title": "CREEPAGE DISTANCES AND CLEARANCES",
+      "page_start": 14,
+      "page_end": 14,
+      "page_refs": [
+        14
+      ]
+    },
+    {
+      "section_number": "15",
+      "title": "SELECTION OF LAMPS FOR TESTS",
+      "page_start": 14,
+      "page_end": 14,
+      "page_refs": [
+        14
+      ]
+    },
+    {
+      "section_number": "16",
+      "title": "CONDITIONS OF COMPLIANCE",
+      "page_start": 15,
+      "page_end": 15,
+      "page_refs": [
+        15
+      ]
+    },
+    {
+      "section_number": "17",
+      "title": "TESTS",
+      "page_start": 15,
+      "page_end": 15,
+      "page_refs": [
+        15
+      ]
+    }
+  ],
+  "clauses": [
+    {
+      "clause_number": "1",
+      "title": "SCOPE",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 6,
+      "page_end": 12,
+      "page_refs": [
+        6,
+        11,
+        12
+      ],
+      "content": "1 SCOPE\nThis standard (Part 1) specifies the safety and\ninterchangeability requirements, together with the test\nmethods and conditions, required to show compliance\nof LED lamps with integrated means for stable\noperation (self-ballasted LED lamps), intended for\ndomestic and similar general lighting purposes, having,\na)\na rated wattage up to 60 W;\nb)\na rated voltage of d.c. supplies up to 250 V or\na.c. supplies up to 1 000 V at 50 Hz; and\nc)\ncaps according to Table 1.\nRecommendations for batch testing are given in Annex\nC of IS 16103 (Part 1) : 2012 ‘LED modules for general\nlighting: Part 1 Safety requirements’.\nNOTES\n1 Where in this standard the term “lamp(s)” is used, it is\nunderstood to stand for “self-ballasted LED lamp(s)”, except\nwhere it is obviously assigned to other types of lamps.\n2 Higher wattage lamp is under consideration.\nAnnex A provides an overview of systems composed\nof LED system and control gear.",
+      "subclauses": [
+        {
+          "clause_number": "1.15",
+          "title": "1.15",
+          "parent_clause": "1",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "1.15\nvi)\nE 17",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "1.15",
+          "title": "1.15",
+          "parent_clause": "1",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "1.15\nvi)\nE 17",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "1.5",
+          "title": "1.5",
+          "parent_clause": "1",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "1.5\n1.5\nApproximate\nNOTE — The drawing illustrates the essential dimensions of the holder\nwhich need only be checked if doubt arises from the application of the test.\nAll dimensions in millimetres.\nFIG. 4 HOLDER FOR TORQUE TEST ON LAMPS WITH BAYONET CAPS",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "1.5",
+          "title": "1.5",
+          "parent_clause": "1",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "1.5\n1.5\nApproximate\nNOTE — The drawing illustrates the essential dimensions of the holder\nwhich need only be checked if doubt arises from the application of the test.\nAll dimensions in millimetres.\nFIG. 4 HOLDER FOR TORQUE TEST ON LAMPS WITH BAYONET CAPS",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-DOC-001-1-003",
+          "clause": "1",
+          "subject": "self-ballasted LED lamp",
+          "property": "rated_wattage_limit",
+          "operator": "<=",
+          "value": 60.0,
+          "unit": "W",
+          "condition": {
+            "voltage_range": "up to 250 V a.c. 50 Hz"
+          },
+          "compliance_criteria": "Applies to self-ballasted lamps having rated wattage up to 60 W",
+          "source_pages": [
+            6,
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "clause_number": "2",
+      "title": "REFERENCES",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ],
+      "content": "2 REFERENCES\nThe standards listed below contain provisions which,\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encouraged to investigate the possibility\nof applying the most recent editions of the standards\nlisted as follows:\nIS No.\nTitle\n4261 : 2001\nGlossary of terms relating to paper\nand pulp based packaging materials\n8913 : 1978\nStandard method of measurement of\nlamp cap temperature rise\n9206 : 1979\nDimensions of caps for tungsten\nfilament general service electric\nlamps\n10322 (Part 1) :\nLuminaires: Part 1 General\n2011\nrequirements and tests\n11000 (Part 2/\nFire hazard testing: Part 2 Test\nSec 1) : 2008\nmethod, Section 1 Glow-wire\nIS No.\nTitle\napparatus and common test\nprocedure\n12063 : 1987\nClassification of degrees of\nprotection provided by enclosures of\nelectrical equipment\n15518 (Part 1) :\nSafety requirements for incandescent\n2004\nlamps: Part 1 Tungsten filament\nlamps for domestic and similar\ngeneral lighting purposes\n15687 (Part 1) :\nSingle-capped fluorescent lamps:\n2006\nPart 1 Safety requirements\n15885 (Part 1) :\nSafety of lamp controlgear: Part 1\n2011\nGeneral requirements\n16101 : 2012\nTerms and definitions of LEDs and\nLED modules in general lighting\n16102 (Part 2) :\nSelf-ballasted LED lamps for general\n2012\nlighting services: Part 2 Performance\nrequirements\n16103 (Part 1) :\nLED modules for general lighting:\n2012\nPart 1 Safety requirements\n16108 : 2012\nPhotobiological safety of LED and\nLED systems",
+      "subclauses": [],
+      "requirements": [
+        {
+          "requirement_id": "REQ-DOC-001-2-005",
+          "clause": "2",
+          "subject": "insulating material",
+          "property": "glow_wire_temperature",
+          "operator": ">=",
+          "value": 650.0,
+          "unit": "°C",
+          "condition": {
+            "standard_method": "IS 11000 (Part 2/Sec 1)",
+            "live_parts_holding": "750 °C",
+            "non_live_parts": "650 °C"
+          },
+          "compliance_criteria": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire",
+          "source_pages": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "clause_number": "3",
+      "title": "TERMINOLOGY",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 6,
+      "page_end": 12,
+      "page_refs": [
+        6,
+        7,
+        12
+      ],
+      "content": "3 TERMINOLOGY\nFor the purpose of this standard the definitions given\nin IS 16103 (Part 1) and IS 16101 along with the\nfollowing shall apply.",
+      "subclauses": [
+        {
+          "clause_number": "3.1",
+          "title": "Self-Ballasted LED Lamp — Unit which cannot",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.1 Self-Ballasted LED Lamp — Unit which cannot\nbe dismantled without being permanently damaged,\nprovided with a lamp cap and incorporating a LED\nlight source and any additional elements necessary for\nstable operation of the light source.\nNOTE — Lamp caps are given in IS 9206 .",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.2",
+          "title": "Type — Lamps that, independent of the type of",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.2 Type — Lamps that, independent of the type of\ncap or base, have an identical photometric and electrical\nrating.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.3",
+          "title": "Rated Voltage — Voltage or voltage range marked",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.3 Rated Voltage — Voltage or voltage range marked\non the lamp.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.4",
+          "title": "Rated Wattage — Wattage marked on the lamp.",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.4 Rated Wattage — Wattage marked on the lamp.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.5",
+          "title": "Rated Frequency — Frequency marked on the",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.5 Rated Frequency — Frequency marked on the\nlamp.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.6",
+          "title": "Cap Temperature Rise (∆ ts) — Surface",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 7,
+          "page_refs": [
+            6,
+            7
+          ],
+          "content": "3.6 Cap Temperature Rise (∆ ts) — Surface\nIS 16102 (Part 1) : 2012\ntemperature rise (above ambient) of a standard test\nlampholder fitted to the lamp, when measured in\naccordance with the standard method, in case of an\nEdison screw cap or a bayonet cap.\nNOTE — The standard method for Edison screw cap or Bayonet\ncap is given in IS 8913.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.7",
+          "title": "Live Part — Conductive part which may cause an",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.7 Live Part — Conductive part which may cause an\nelectric shock in normal use.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.8",
+          "title": "Type Test — A test or series of tests made on a",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.8 Type Test — A test or series of tests made on a\ntype test sample for the purpose of checking\ncompliance of the design of a given product with the\nrequirements of the relevant standard.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.9",
+          "title": "Type Test Sample — A sample consisting of one",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.9 Type Test Sample — A sample consisting of one\nor more similar units submitted by the manufacturer\nor responsible vendor for the purpose of the type test.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.10",
+          "title": "Acceptance Test — Tests carried out on samples",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.10 Acceptance Test — Tests carried out on samples\ntaken from a lot for the acceptance of the lot.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.11",
+          "title": "Inspection Test Quantity (ITQ) — The number",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.11 Inspection Test Quantity (ITQ) — The number\nof lamps selected for the purpose of determining the\nacceptability of a batch as to marking,\ninterchangeability, protection against electric shock,\ninsulation resistance, electric strength, mechanical\nstrength, cap temperature rise, resistance to heat,\nresistance to flame and ignition, fault conditions and\ncreepage distances and clearances.",
+          "subclauses": [],
+          "requirements": [
+            {
+              "requirement_id": "REQ-DOC-001-3.11-002",
+              "clause": "3.11",
+              "subject": "self-ballasted LED lamp",
+              "property": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
+              "condition": {
+                "duration": "1 minute",
+                "waveform": "50 Hz r.m.s."
+              },
+              "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+              "source_pages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "clause_number": "3.12",
+          "title": "Batch — All the lamps of one type put forward at",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.12 Batch — All the lamps of one type put forward at\none time for acceptance test.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "3.0",
+          "title": "3.0",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "3.0\n3.0\n+0.17\nG",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "4",
+      "title": "GENERAL REQUIREMENT AND GENERAL",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 11,
+      "page_refs": [
+        7,
+        11
+      ],
+      "content": "4 GENERAL REQUIREMENT AND GENERAL\nTEST REQUIREMENTS",
+      "subclauses": [
+        {
+          "clause_number": "4.1",
+          "title": "The lamps shall be so designed and constructed",
+          "parent_clause": "4",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "4.1 The lamps shall be so designed and constructed\nthat in normal use they function reliably and cause no\ndanger to the user or surroundings.\nIn general, compliance is checked by carrying out all\nthe tests specified.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "4.2",
+          "title": "Self-Ballasted LED",
+          "parent_clause": "4",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "4.2 Self-Ballasted LED\nLamps are non-repairable, factory-sealed units. They\nshall normally not be opened for any tests. In the case\nof doubt based on the inspection of the lamp and the\nexamination of the circuit diagram, and in agreement\nwith the manufacturer or responsible vendor, either the\noutput terminals shall be short-circuited or, in\nagreement with the manufacturer, lamps specially\nprepared so that a fault condition can be simulated shall\nbe submitted for testing (see 13).",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "4.3",
+          "title": "In general, all tests are carried out on each type of",
+          "parent_clause": "4",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "4.3 In general, all tests are carried out on each type of\nlamp or, where a range of similar lamps is involved, for\neach wattage in the range or on a representative selection\nfrom the range, as agreed with the manufacturer.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "4.4",
+          "title": "When the lamp fails safely during one of the tests,",
+          "parent_clause": "4",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "4.4 When the lamp fails safely during one of the tests,\nit is replaced, provided that no fire, smoke or flammable\ngas is produced. Further requirements on failing safe\nare given in 12.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "4.0",
+          "title": "4.0",
+          "parent_clause": "4",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "4.0",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "5",
+      "title": "MARKING",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 8,
+      "page_refs": [
+        7,
+        8
+      ],
+      "content": "5 MARKING",
+      "subclauses": [
+        {
+          "clause_number": "5.1",
+          "title": "Lamps shall be clearly and durably marked with",
+          "parent_clause": "5",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "5.1 Lamps shall be clearly and durably marked with\nthe following mandatory markings:\na)\nMark of origin (this may take the form of a\ntrade-mark, the manufacturer’s name or the\nname of the responsible vendor);\nb)\nRated voltage or voltage range (marked ‘V’\nor ‘Volt’);\nc)\nRated wattage (marked ‘W’ or ‘Watts’);\nd)\nRated lumen;\ne)\nRated frequency (marked in ‘Hz’);\nf)\nCountry of manufacture; and\ng)\nMark of symbol on high temperature.",
+          "subclauses": [],
+          "requirements": [
+            {
+              "requirement_id": "REQ-DOC-001-5.1-004",
+              "clause": "5.1",
+              "subject": "self-ballasted LED lamp",
+              "property": "mandatory_marking",
+              "operator": "mandatory",
+              "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+              "unit": null,
+              "condition": {
+                "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+              },
+              "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+              "source_pages": [
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "clause_number": "5.2",
+          "title": "In addition, the following information shall be given",
+          "parent_clause": "5",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "5.2 In addition, the following information shall be given\nby the lamp manufacturer on the lamp or immediate lamp\nwrapping or container or in installation instructions:\na)\nBurning position, if restricted, shall be marked\nwith the appropriate symbol. Symbol\nexamples are shown in Annex B.\nb)\nRated current (marked ‘A’ or ‘ampere’).\nc)\nFor lamps with a weight significantly higher\nthan that of the lamps for which they are a\nreplacement, attention should be drawn to the\nfact that the increased weight may reduce the\nmechanical stability of certain luminaires and\nlampholders and may impair contact making\nand lamp retention.\nd)\nSpecial conditions or restrictions which shall\nbe observed for lamp operation, for example\noperation in dimming circuits. Where lamps\nare not suitable for dimming, the following\nsymbol in Fig. 1 may be used.\ne)\nFor eye protection, see requirements of\nIS 16108.\nFIG. 1 DIMMING NOT ALLOWED",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "5.3",
+          "title": "Compliance is checked by the following:",
+          "parent_clause": "5",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 8,
+          "page_refs": [
+            7,
+            8
+          ],
+          "content": "5.3 Compliance is checked by the following:\nPresence and legibility of the marking required in 5.1\nshall be checked by visual inspection.\nThe durability of the marking is checked by trying to\nremove it by rubbing lightly for 15 s with a piece of\ncloth soaked with water and, after drying, for a further\nIS 16102 (Part 1) : 2012\n15 s with a piece of cloth soaked with hexane. The\nmarking shall be legible after the test.\nAvailability of information required in 5.2 is checked\nby visual inspection.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "5.4",
+          "title": "BIS Certification Marking",
+          "parent_clause": "5",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 8,
+          "page_refs": [
+            8
+          ],
+          "content": "5.4 BIS Certification Marking\nThe self-ballasted LED lamps may also be marked with\nthe Standard Mark.",
+          "subclauses": [
+            {
+              "clause_number": "5.4.1",
+              "title": "The use of the Standard Mark is governed by the",
+              "parent_clause": "5.4",
+              "depth": 3,
+              "page_start": 8,
+              "page_end": 8,
+              "page_refs": [
+                8
+              ],
+              "content": "5.4.1 The use of the Standard Mark is governed by the\nprovisions of the Bureau of Indian Standards Act, 1986\nand the Rules and Regulations made thereunder. The\ndetails of conditions under which the licence for the\nuse of the Standard Mark may be granted to\nmanufacturers or producers may be obtained from the\nBureau of Indian Standards.",
+              "subclauses": [],
+              "requirements": []
+            }
+          ],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "6",
+      "title": "INTERCHANGEABILITY",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 9,
+      "page_refs": [
+        8,
+        9
+      ],
+      "content": "6 INTERCHANGEABILITY",
+      "subclauses": [
+        {
+          "clause_number": "6.1",
+          "title": "Cap Interchangeability",
+          "parent_clause": "6",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 8,
+          "page_refs": [
+            8
+          ],
+          "content": "6.1 Cap Interchangeability\nInterchangeability shall be ensured by the use of caps\nin accordance with IS 9206 (see Table 1).\nCompliance is checked by the use of the relevant\ngauges specified in IS 9206.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "6.2",
+          "title": "Bending Moment, Axial Pull and Mass",
+          "parent_clause": "6",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 9,
+          "page_refs": [
+            8,
+            9
+          ],
+          "content": "6.2 Bending Moment, Axial Pull and Mass\nThe value of the bending moment, imparted by the\nlamp at the lampholder shall not exceed the value given\nin Table 2.\nThe bending moment shall be determined by measuring\nthe weight of the lamp, for example by means of a\nbalance at the tip of the bulb of the horizontally held\nlamp and multiplying this force by the distance between\nthe tip of the bulb and the pivot line. The pivot line\nshall lie at the bottom end of the cylindrical part (for\nEdison and bayonet caps) or at the end of the contact\npins (for pin caps). It shall be supported by an upright\nheld thin metal sheet or a similar means.\nThe lamp construction shall withstand externally\napplied axial pull and bending moment.\nFor the measurement method, see A-2.1 of\nIS 15687 (Part 1).\nThe mass as given in Table 2 shall not be exceeded.\nTable 1 Interchangeability Gauges and Lamp Cap Dimensions\n(Clauses 1 and 6.1)\nSl No.\nLamp Cap\nCap Sheet No.\nfrom IS 9206\nCap Dimensions to be Checked\nby the Gauge\nGauge Sheet No.\nfrom IS 9206\n(1)\n(2)\n(3)\n(4)\n(5)\ni)\nB15d\n7004-11\nA, Max and A, Min\nD1, Max\nN, Min\n7006-10\nand\n7006-11\nii)\nB22d\n7004-10\nDiametrical position of the pins\nInsertion in lampholder\nRetention in lampholder\n7006-4A\n7006-4B\niii)\nE11\n7004-6\n“Go”\n7006-6\niv)\nE12\n7004-28\n“Go”\nAdditional “Go”\n“Not Go”\nContact-making\n7006-27H\n7006-27J\n7006-28C\n7006-32\nv)\nE14\n7004-23\nMaximum dimensions of the screw thread\nMinimum major diameter of the screw thread\nDimension S1\nContact making\n7006-27F\n7006-28B\n7006-27G\n7006-54\nvi)\nE17\n7004-26\nMaximum dimensions of the screw thread\nMinimum major diameter of the screw thread\nContact making\n7006-27K\n7006-28F\n7006-26D\nvii)\nE26\n7004-21A\nMaximum dimension of the screw thread\nMinimum major diameter of the screw thread\n7006-27D\n7006-27E\nviii)\nE27\n7004-21\nMaximum dimension of the screw thread\nMinimum major diameter of the screw thread\nDimension S1\nContact making\n7006-27B\n7006-28A\n7006-27C\n7006-50\nix)\nGU10\n7004-121\n“Go” and “Not Go”\n7006-121\nx)\nGZ10\n7004-120\n“Go” and “Not Go”\n7006-120\nxi)\nGX 53\n7004-142\n“Go” and “Not Go”\n“Not Go”\n“Go” and “Not Go” for checking keyways\n“Not Go” for checking keyways\n7006-120\n7006-142\n7006-142D\n7006-142E\n7006-142F\nIS 16102 (Part 1) : 2012\nTable 2 Bending Moment and Masses\n(Clause 6.2)\nSl No.\nCap\nBending Moment\nMass\n(1)\n(2)\nNm\n(3)\nkg\n(4)\ni)\nB15d\n1\n1)\nii)\nB22d\n2\n1\niii)\nE11",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "0.5",
+      "title": "0.5",
+      "parent_clause": "0",
+      "depth": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ],
+      "content": "0.5\n1)\niv)\nE12\n0.5\n1)\nv)\nE14\n1\n1)\nvi)\nE17\n1\n1)\nvii)\nE26\n2\n1)\nviii)\nE27\n2\n1\nix)\nGU10",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "0.1",
+      "title": "0.1",
+      "parent_clause": "0",
+      "depth": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ],
+      "content": "0.1\n1)\nx)\nGZ10\n0.1\n1)\nxi)\nX53",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "0.3",
+      "title": "0.3",
+      "parent_clause": "0",
+      "depth": 2,
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ],
+      "content": "0.3\n1)\nNOTES\n1 For lamps with caps different to those in Table 2, the effect\nof the bending moment should be regarded and limited. A\nmeasurement method for these lamps with these caps is under\nconsideration.\n2 It should be taken care that the luminaire surface where the\nlampholder is fixed to can withstand the bending moment. For\nthe calculation of this bending moment, the length of the\nlampholder needs to be taken into account when measuring\nthe overall length. This should be made sure for the elevated\ntemperature during operation in order to check the possible\nsoftening of the surface material.\n1) Under consideration.",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "7",
+      "title": "PROTECTION AGAINST ACCIDENTAL",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 9,
+      "page_end": 11,
+      "page_refs": [
+        9,
+        11
+      ],
+      "content": "7 PROTECTION AGAINST ACCIDENTAL\nCONTACT WITH LIVE PARTS\nThe lamps shall be so constructed that, without any\nadditional enclosure in the form of a luminaire, no\ninternal metal parts, basic insulated external metal parts\nor live metal parts of the lamp cap or of the lamp itself\nare accessible when the lamp is installed in a\nlampholder according to the relevant lampholder data\nsheet given in IS 9206.\nCompliance is checked by means of the test finger\nspecified in Fig. 2, if necessary, with a force of 10 N.\nBoth joints shall permit movement in the same plane\nand the same direction through an angle of 90° with a\n0° to +10° tolerance.\nLamps with Edison screw caps shall be so designed that\nthey comply with the requirements for inaccessibility\nof live parts for general lighting service (GLS) lamps.\nCompliance is checked with the aid of a gauge in\naccordance with the IS 9206.\nLamps with B22, B15, GU10 or GZ10 caps are subject\nto the same requirements as normal incandescent lamps\nwith this cap.\nRequirements for lamps with GX53 caps are under\nconsideration.\nExternal metal parts other than current-carrying metal\nparts of the cap shall not be or become live. For testing,\nany movable conductive material shall be placed in\nthe most onerous position without using a tool.\nCompliance is checked by means of the insulation\nresistance and electric strength test (see 8).",
+      "subclauses": [
+        {
+          "clause_number": "7.0",
+          "title": "7.0",
+          "parent_clause": "7",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "7.0",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": [
+        {
+          "requirement_id": "REQ-DOC-001-7-002",
+          "clause": "7",
+          "subject": "self-ballasted LED lamp",
+          "property": "dielectric_electric_strength",
+          "operator": "==",
+          "value": 4000,
+          "unit": "V a.c.",
+          "condition": {
+            "duration": "1 minute",
+            "waveform": "50 Hz r.m.s."
+          },
+          "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+          "source_pages": [
+            9,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "clause_number": "8",
+      "title": "INSULATION RESISTANCE AND ELECTRIC",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 9,
+      "page_end": 11,
+      "page_refs": [
+        9,
+        11
+      ],
+      "content": "8 INSULATION RESISTANCE AND ELECTRIC\nSTRENGTH AFTER HUMIDITY TREATMENT",
+      "subclauses": [
+        {
+          "clause_number": "8.1",
+          "title": "Insulation resistance and electric strength shall be",
+          "parent_clause": "8",
+          "depth": 2,
+          "page_start": 9,
+          "page_end": 9,
+          "page_refs": [
+            9
+          ],
+          "content": "8.1 Insulation resistance and electric strength shall be\nadequate between live parts of the lamp and accessible\nparts of the lamp.",
+          "subclauses": [
+            {
+              "clause_number": "8.1.1",
+              "title": "Insulation Resistance",
+              "parent_clause": "8.1",
+              "depth": 3,
+              "page_start": 9,
+              "page_end": 9,
+              "page_refs": [
+                9
+              ],
+              "content": "8.1.1 Insulation Resistance\nThe lamp shall be conditioned for 48 h in a cabinet\ncontaining air with a relative humidity between 91\npercent and 95 percent. The temperature of the air is\nmaintained within 1°C of any convenient value\nbetween 25°C and 35°C.\nInsulation resistance shall be measured in the humidity\ncabinet with a d.c. voltage of approximately 500 V,\n1 min after application of the voltage.\nThe insulation resistance between live parts of the cap\nand accessible parts of the lamp (accessible parts of\ninsulating material are covered with metal foil) shall\nbe not less than 4 MΩ. The requirements of IS 15885\n(Part 1), Annex A, shall be complied with.\nNOTE — The insulation resistance of bayonet caps between\nshell and contacts is under consideration.",
+              "subclauses": [],
+              "requirements": [
+                {
+                  "requirement_id": "REQ-DOC-001-8.1.1-001",
+                  "clause": "8.1.1",
+                  "subject": "self-ballasted LED lamp",
+                  "property": "insulation_resistance",
+                  "operator": ">=",
+                  "value": 4.0,
+                  "unit": "MΩ",
+                  "condition": {
+                    "humidity_treatment": "48 h at 91-95% RH",
+                    "measurement_voltage": "500 V d.c.",
+                    "measurement_time": "1 min after voltage application"
+                  },
+                  "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+                  "source_pages": [
+                    9
+                  ]
+                }
+              ]
+            }
+          ],
+          "requirements": [
+            {
+              "requirement_id": "REQ-DOC-001-8.1-002",
+              "clause": "8.1",
+              "subject": "self-ballasted LED lamp",
+              "property": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
+              "condition": {
+                "duration": "1 minute",
+                "waveform": "50 Hz r.m.s."
+              },
+              "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+              "source_pages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "clause_number": "8.2",
+          "title": "Electric Strength",
+          "parent_clause": "8",
+          "depth": 2,
+          "page_start": 9,
+          "page_end": 9,
+          "page_refs": [
+            9
+          ],
+          "content": "8.2 Electric Strength\nImmediately after the insulation resistance test, the\nsame parts as specified above shall withstand a voltage\ntest for 1 min with an a.c. voltage as follows.\nDuring the test, the supply contacts of the cap are short-\ncircuited. Accessible parts of insulating material of the\ncap are covered with metal foil. Initially no more than\nhalf the voltage prescribed in Table 10.2 of\nIS 10322 (Part 1) for Class II luminaires is applied\nbetween the contacts and the metal foil. It is then\ngradually raised to the full value.\nNo flashover or breakdown shall occur during the test.\nMeasurements shall be carried out in the humidity\ncabinet.\nNOTE — The distance between the foil and the live parts is\nunder consideration.",
+          "subclauses": [],
+          "requirements": [
+            {
+              "requirement_id": "REQ-DOC-001-8.2-002",
+              "clause": "8.2",
+              "subject": "self-ballasted LED lamp",
+              "property": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
+              "condition": {
+                "duration": "1 minute",
+                "waveform": "50 Hz r.m.s."
+              },
+              "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+              "source_pages": [
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "clause_number": "8.0",
+          "title": "8.0",
+          "parent_clause": "8",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "8.0",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "9",
+      "title": "MECHANICAL STRENGTH",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 9,
+      "page_end": 12,
+      "page_refs": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "content": "9 MECHANICAL STRENGTH",
+      "subclauses": [
+        {
+          "clause_number": "9.1",
+          "title": "Torsion Resistance of Unused Lamps",
+          "parent_clause": "9",
+          "depth": 2,
+          "page_start": 9,
+          "page_end": 11,
+          "page_refs": [
+            9,
+            10,
+            11
+          ],
+          "content": "9.1 Torsion Resistance of Unused Lamps\nThe torsion resistance of unused lamps is tested as\nfollows:\nThe cap shall remain firmly attached to the bulb or\nthat part of the lamp, which is used for screwing the\nlamp in or out when subjected to the torque levels listed\nin Table 3.\nIS 16102 (Part 1) : 2012\nMaterial — metal, except where otherwise specified.\nTolerances on dimensions without specific tolerance:\na)\nOn angles:\n0\n–10'\n+\nc) Up to 25 mm:\n0\n–0,05\n+\nb)\nOn linear dimensions:\nd) Over 25 mm: ± 0.2 mm\nLinear dimensions in millimetres.\nFIG. 2 STANDARD TEST FINGER\nIS 16102 (Part 1) : 2012\nTable 3 Torque Test Values for Unused Lamps\n(Clause 9.1)\nSl No.\nCap\nTorsion Moment\nNm\n(1)\n(2)\n(3)\ni)\nB15d",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "9.0",
+          "title": "9.0",
+          "parent_clause": "9",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "9.0",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "9.5",
+          "title": "9.5",
+          "parent_clause": "9",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "9.5\n9.5\nMin\nE",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "9.5",
+          "title": "9.5",
+          "parent_clause": "9",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "9.5\n9.5\nMin\nE",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "9.0",
+          "title": "9.0",
+          "parent_clause": "9",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "9.0",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "9.2",
+          "title": "Torsion Resistance of Lamps after a Defined",
+          "parent_clause": "9",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "9.2 Torsion Resistance of Lamps after a Defined\nTime of Usage\nThe torsion resistance of used lamps is under\nconsideration.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "9.3",
+          "title": "Verification",
+          "parent_clause": "9",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "9.3 Verification\nAfter the mechanical strength test the sample shall\ncomply with the requirements of accessibility (see 7).",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "0.8",
+      "title": "0.8",
+      "parent_clause": "0",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "page_refs": [
+        11
+      ],
+      "content": "0.8\niv)\nE 12\n0.8\nv)\nE 14",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "20.0",
+      "title": "20.0",
+      "parent_clause": "20",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "page_refs": [
+        11
+      ],
+      "content": "20.0\n20.0",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "32.0",
+      "title": "32.0",
+      "parent_clause": "32",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "page_refs": [
+        11
+      ],
+      "content": "32.0\n32.0\nMin\nK",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "0.0",
+      "title": "0.0",
+      "parent_clause": "0",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 12,
+      "page_refs": [
+        11,
+        12
+      ],
+      "content": "0.0\nP\n2.540\n2.822\n2.822\n3.629\n3.629\n—\nr\n0.792\n0.822\n0.897\n1.191\n1.025\n—\nNOTE — The drawing illustrates the essential dimensions of the holder which\nneed only be checked if doubt arises from the application of the test.\nAll dimensions in millimetres.\nFIG. 3 HOLDER FOR TORQUE TEST ON LAMPS WITH SCREW CAPS\nIS 16102 (Part 1) : 2012\nDimension\nB15\nB22\nTolerance\n(1)\n(2)\n(3)\n(4)\nA",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "23.0",
+      "title": "23.0",
+      "parent_clause": "23",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "page_refs": [
+        11
+      ],
+      "content": "23.0\n23.0\n+0.1\n–0.1\nS",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "26.45",
+      "title": "26.45",
+      "parent_clause": "26",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "page_refs": [
+        11
+      ],
+      "content": "26.45\n+0.1",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "0.0",
+      "title": "0.0",
+      "parent_clause": "0",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 12,
+      "page_refs": [
+        11,
+        12
+      ],
+      "content": "0.0\nP\n2.540\n2.822\n2.822\n3.629\n3.629\n—\nr\n0.792\n0.822\n0.897\n1.191\n1.025\n—\nNOTE — The drawing illustrates the essential dimensions of the holder which\nneed only be checked if doubt arises from the application of the test.\nAll dimensions in millimetres.\nFIG. 3 HOLDER FOR TORQUE TEST ON LAMPS WITH SCREW CAPS\nIS 16102 (Part 1) : 2012\nDimension\nB15\nB22\nTolerance\n(1)\n(2)\n(3)\n(4)\nA",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "24.26",
+      "title": "24.26",
+      "parent_clause": "24",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 11,
+      "page_refs": [
+        11
+      ],
+      "content": "24.26\n+0.1",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "0.0",
+      "title": "0.0",
+      "parent_clause": "0",
+      "depth": 2,
+      "page_start": 11,
+      "page_end": 12,
+      "page_refs": [
+        11,
+        12
+      ],
+      "content": "0.0\nP\n2.540\n2.822\n2.822\n3.629\n3.629\n—\nr\n0.792\n0.822\n0.897\n1.191\n1.025\n—\nNOTE — The drawing illustrates the essential dimensions of the holder which\nneed only be checked if doubt arises from the application of the test.\nAll dimensions in millimetres.\nFIG. 3 HOLDER FOR TORQUE TEST ON LAMPS WITH SCREW CAPS\nIS 16102 (Part 1) : 2012\nDimension\nB15\nB22\nTolerance\n(1)\n(2)\n(3)\n(4)\nA",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "22.27",
+      "title": "22.27",
+      "parent_clause": "22",
+      "depth": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ],
+      "content": "22.27\n+0.03\nB",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "19.0",
+      "title": "19.0",
+      "parent_clause": "19",
+      "depth": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ],
+      "content": "19.0\n19.0\nMin\nC",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "21.0",
+      "title": "21.0",
+      "parent_clause": "21",
+      "depth": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ],
+      "content": "21.0",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "28.0",
+      "title": "28.0",
+      "parent_clause": "28",
+      "depth": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ],
+      "content": "28.0\nMin\nD",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "18.3",
+      "title": "18.3",
+      "parent_clause": "18",
+      "depth": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ],
+      "content": "18.3",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "24.6",
+      "title": "24.6",
+      "parent_clause": "24",
+      "depth": 2,
+      "page_start": 12,
+      "page_end": 12,
+      "page_refs": [
+        12
+      ],
+      "content": "24.6\n±0.3\nH",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "10",
+      "title": "CAP TEMPERATURE RISE",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 11,
+      "page_end": 12,
+      "page_refs": [
+        11,
+        12
+      ],
+      "content": "10 CAP TEMPERATURE RISE\nThe surface temperature rise (above ambient) of a\nlampholder fitted to the lamp shall not be higher than\nthat of the lamp type which is being replaced by the\nlamp.\nThe cap temperature rise A ts of the complete lamp\nshall not exceed 120 K. The value of A ts corresponds\nto an incandescent lamp of 60 W maximum. The\noperating position and ambient temperature are\ndetailed in IS 8913.\nMeasurement shall be carried out at rated voltage. If\nthe lamp is marked with a voltage range it shall be\nmeasured at the maximum voltage of that range.",
+      "subclauses": [
+        {
+          "clause_number": "10.0",
+          "title": "10.0",
+          "parent_clause": "10",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "10.0",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "10.62",
+          "title": "10.62",
+          "parent_clause": "10",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "10.62",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "11",
+      "title": "RESISTANCE TO HEAT",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 11,
+      "page_end": 13,
+      "page_refs": [
+        11,
+        12,
+        13
+      ],
+      "content": "11 RESISTANCE TO HEAT\nThe lamp shall be sufficiently resistant to heat. External\nparts of insulating material providing protection against\nelectric shock, and parts of insulating material retaining\nlive parts in position shall be sufficiently resistant to\nheat.\nCompliance is checked by subjecting the parts to a ball-\npressure test by means of the apparatus shown in Fig. 5.\nThe test is made in a heating cabinet at a temperature\nIS 16102 (Part 1) : 2012\nof (25 ± 5)°C in excess of the operating temperature\nof the relevant part according to 10, with a minimum\nof 125°C for parts retaining live parts in position and\n80°C (value 80°C under consideration) for other parts.\nThe surface of the part to be tested is placed in the\nhorizontal position and a steel ball of 5 mm diameter\npressed against this surface with a force of 20 N.\nThe test load and the supporting means are placed\nwithin the heating cabinet for a sufficient time to ensure\nthat they have attained the stabilized testing\ntemperature before the test commences.\nThe part to be tested is placed in the heating cabinet,\nfor a period of 10 min, before the test load is applied.\nThe surface where the ball presses should not bend, if\nnecessary the surface shall be supported. For this\npurpose if the test cannot be made on the complete\nspecimen, a suitable part may be cut from it.\nThe specimen shall be at least 2.5 mm thick, but if\nsuch a thickness is not available on the specimen then\ntwo or more pieces are placed together.\nAfter 1 hour the ball is removed from the specimen,\nwhich is then immersed for 10 s in cold water for\ncooling down to approximately room temperature. The\ndiameter of the impression is measured, and shall not\nexceed 2 mm.\nIn the event of curved surfaces the shorter axis is\nmeasured, if the indent is elliptical.\nIn case of doubt, the depth of the impression is\nmeasured and the diameter calculated using the\nfollowing formula:\n-\nf\n(5\n)\n= 2þ\nþ\nwhere\np\n= depth of impression.\nThe test is not made on parts of ceramic material.",
+      "subclauses": [
+        {
+          "clause_number": "11.5",
+          "title": "11.5",
+          "parent_clause": "11",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "11.5",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "11.0",
+          "title": "11.0",
+          "parent_clause": "11",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "11.0",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "11.89",
+          "title": "11.89",
+          "parent_clause": "11",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "11.89",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "12",
+      "title": "RESISTANCE TO FLAME AND IGNITION",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 11,
+      "page_end": 14,
+      "page_refs": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "content": "12 RESISTANCE TO FLAME AND IGNITION",
+      "subclauses": [
+        {
+          "clause_number": "12.0",
+          "title": "12.0",
+          "parent_clause": "12",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "12.0\n12.0\nMin\nd",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "12.0",
+          "title": "12.0",
+          "parent_clause": "12",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "12.0\n12.0\nMin\nd",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "12.29",
+          "title": "12.29",
+          "parent_clause": "12",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "12.29",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "12.15",
+          "title": "12.15",
+          "parent_clause": "12",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "12.15\nMin\nK",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "12.7",
+          "title": "12.7",
+          "parent_clause": "12",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "12.7\n12.7\n±0.3\nR",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "12.1",
+          "title": "Parts of insulating material retaining live parts in",
+          "parent_clause": "12",
+          "depth": 2,
+          "page_start": 13,
+          "page_end": 14,
+          "page_refs": [
+            13,
+            14
+          ],
+          "content": "12.1 Parts of insulating material retaining live parts in\nposition and external parts of insulating material\nproviding protection against electric shock are\nsubjected to the glow-wire test in accordance with\nIS 11000 (Part 2/Sec 1), subject to the following details:\na)\nThe test specimen is a complete lamp. It may\nbe necessary to take away parts of the lamp\nto perform the test, but care is taken to ensure\nthat the test conditions are not significantly\ndifferent from those occurring in normal use.\nb)\nThe test specimen is mounted on the carriage\nand pressed against the glow-wire tip with a\nforce of 1 N, preferably 15 mm, or more, from\nthe upper edge, into the centre of the surface\nto be tested. The penetration of the glow-wire\ninto the specimen is mechanically limited to\n7 mm.\nIf it is not possible to make the test on a specimen as\ndescribed above because the specimen is too small,\nthe above test is made on a separate specimen of the\nsame material, 30 mm square and with a thickness\nequal to the smallest thickness of the specimen.\nThe temperature of the tip of the glow-wire is 650 °C.\nAfter 30 s the specimen is withdrawn from contact with\nthe glow-wire tip.\nThe glow-wire temperature and heating current are\nconstant for 1 min prior to commencing the test. Care\nis taken to ensure that heat radiation does not influence\nthe specimen during this period. The glow-wire tip\ntemperature is measured by means of a sheathed fine-\nwire thermocouple constructed and calibrated as\ndescribed in IS 11000 (Part 2/Sec 1).\nAny flame or glowing of the specimen shall extinguish\nAll dimensions in millimetres.\nFIG. 5 BALL PRESSURE TEST APPARATUS\nKey\n1\nTest Specimen\n2\nR 2.5 Spherical\n3\nWeight\nIS 16102 (Part 1) : 2012\nwithin 30 s of withdrawing the glow-wire, and any\nflaming drop shall not ignite a piece of the tissue paper,\nspread out horizontally 200 ± 5 mm below the\nspecimen. The tissue paper is specified in IS 4261.\nThe test is not made on parts of ceramic material.",
+          "subclauses": [],
+          "requirements": [
+            {
+              "requirement_id": "REQ-DOC-001-12.1-005",
+              "clause": "12.1",
+              "subject": "insulating material",
+              "property": "glow_wire_temperature",
+              "operator": ">=",
+              "value": 650.0,
+              "unit": "°C",
+              "condition": {
+                "standard_method": "IS 11000 (Part 2/Sec 1)",
+                "live_parts_holding": "750 °C",
+                "non_live_parts": "650 °C"
+              },
+              "compliance_criteria": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire",
+              "source_pages": [
+                13,
+                14
+              ]
+            }
+          ]
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "13",
+      "title": "FAULT CONDITIONS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 11,
+      "page_end": 14,
+      "page_refs": [
+        11,
+        14
+      ],
+      "content": "13 FAULT CONDITIONS",
+      "subclauses": [
+        {
+          "clause_number": "13.5",
+          "title": "Fault Conditions Across Electronic Components",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "13.5 Fault Conditions Across Electronic Components\nOpen or bridge points in the circuit where the diagram\nindicates that such a fault condition may impair safety.\nOnly one component at a time is subjected to a fault\ncondition.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "13.89",
+          "title": "13.89",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "13.89",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "13.1",
+          "title": "General",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "13.1 General\nLamps shall not impair safety when operated under\nfault conditions, which may occur during the intended\nuse. Each of the following fault conditions is applied\nin turn, as well as any other associated fault conditions\nthat may arise from them as logical consequence.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "13.2",
+          "title": "Extreme Electrical Conditions (Dimmable",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "13.2 Extreme Electrical Conditions (Dimmable\nLamps)\nIf lamps are marked with a voltage range, rated voltage\nis taken as the maximum and minimum of the voltage\nrange marked unless the manufacturer declares another\nvoltage as the most critical one. The lamp is switched\non at ambient temperature (definition given in IS 16001\nand conditions as given in H-1 of IS 15885 (Part 1)\nand adjusted to the most critical electrical conditions\nas indicated by the manufacturer or the power is\nincreased until 150 percent of the rated power is\nreached. The test is continued until the lamp is\nthermally stabilized. A stable condition is reached, if\nthe lamp cap temperature does not change by more\nthan 1 K as specified in IS 8913. The lamp shall\nwithstand the extreme electrical conditions for at least\n15 min, after stabilization is reached.\nA lamp which fails safe and has withstood the extreme\nelectrical conditions for 15 min, has passed the test,\nprovided, the compliance (see 4.1 and 13.6) is fulfilled.\nIf the lamp contains an automatic protective device or\ncircuit which limits the power, it is subjected to a\n15 min operation at this limit. If the device or circuit\neffectively limits the power over this period, the lamp\nhas passed the test, provided, the compliance (see 4.1\nand 13.4) is fulfilled.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "13.3",
+          "title": "Extreme Electrical Conditions (Non-dimmable",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "13.3 Extreme Electrical Conditions (Non-dimmable\nLamps)\nLamps, which according to the marking, are not\nsuitable for dimming, shall be tested as far as possible\naccording to 13.2 under the most adverse electrical\nconditions as indicated by the manufacturer. If lamps\nare marked with a voltage range, rated voltage is taken\nas the maximum and minimum of the voltage range\nmarked unless the manufacturer declares another\nvoltage as the most critical one.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "13.4",
+          "title": "Short-Circuit Across Capacitors",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "13.4 Short-Circuit Across Capacitors\nOnly one component at a time is subjected to a fault\ncondition.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "13.5",
+          "title": "Fault Conditions Across Electronic Components",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "13.5 Fault Conditions Across Electronic Components\nOpen or bridge points in the circuit where the diagram\nindicates that such a fault condition may impair safety.\nOnly one component at a time is subjected to a fault\ncondition.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "13.6",
+          "title": "Compliance",
+          "parent_clause": "13",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "13.6 Compliance\nDuring the tests 13.2 to 13.5 the lamp shall not catch\nfire, or produce flammable gases or smoke and live\nparts shall not become accessible.\nTo check if gases liberated from component parts are\nflammable or not, a test with a high-frequency spark\ngenerator is made.\nTo check if accessible parts have become live, a test in\naccordance with 7 is made.\nAfter testing in 13.2 to 13.5, the lamp shall meet the\ninsulation resistance requirements of 8.1 except the\napplied voltage shall be a d.c. voltage of approximately\n1 000 V.",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "14",
+      "title": "CREEPAGE DISTANCES AND CLEARANCES",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 11,
+      "page_end": 14,
+      "page_refs": [
+        11,
+        14
+      ],
+      "content": "14 CREEPAGE DISTANCES AND CLEARANCES\nThe requirements of IS 15885 (Part 1) shall apply.",
+      "subclauses": [
+        {
+          "clause_number": "14.0",
+          "title": "14.0",
+          "parent_clause": "14",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "14.0",
+          "subclauses": [],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "15",
+      "title": "SELECTION OF LAMPS FOR TESTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 12,
+      "page_end": 15,
+      "page_refs": [
+        12,
+        14,
+        15
+      ],
+      "content": "15 SELECTION OF LAMPS FOR TESTS\n(SAMPLING)",
+      "subclauses": [
+        {
+          "clause_number": "15.27",
+          "title": "15.27",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "15.27",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "15.27",
+          "title": "15.27",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "15.27",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "15.27",
+          "title": "15.27",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 12,
+          "page_end": 12,
+          "page_refs": [
+            12
+          ],
+          "content": "15.27",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "15.1",
+          "title": "Method of Selection",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 14,
+          "page_refs": [
+            14
+          ],
+          "content": "15.1 Method of Selection\nThe inspection test quantities (ITQ) shall be selected\nin a mutually agreed manner such as to ensure proper\nrepresentation of the batch. The selection of lamps for\nindividual batches should be made as follows:\na)\nUp to and Including 20 Containers per Batch\n— Out of every container an equal number\nof lamps (or as near to equal as possible) shall\nbe selected at random in order to obtain 25\nlamps required.\nb)\nOver 20 Containers per Batch — Out of 20\ncontainers, every distributed over the whole\nbatch, one lamp shall be selected at random\nfrom each container to obtain the 25 lamps\nrequired.\nNOTE — Method of selection of lamps for type testing\nare under consideration.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "15.2",
+          "title": "Inspection Test Quantity (ITQ)",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 14,
+          "page_end": 15,
+          "page_refs": [
+            14,
+            15
+          ],
+          "content": "15.2 Inspection Test Quantity (ITQ)\nInspection test quantity shall consist of 25 lamps.\nIS 16102 (Part 1) : 2012",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "15.3",
+          "title": "Accidentally Broken and/or in Corrected",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 15,
+          "page_end": 15,
+          "page_refs": [
+            15
+          ],
+          "content": "15.3 Accidentally Broken and/or in Corrected\nOperated Lamps",
+          "subclauses": [
+            {
+              "clause_number": "15.3.1",
+              "title": "Lamps, which are accidentally broken, shall,",
+              "parent_clause": "15.3",
+              "depth": 3,
+              "page_start": 15,
+              "page_end": 15,
+              "page_refs": [
+                15
+              ],
+              "content": "15.3.1 Lamps, which are accidentally broken, shall,\nwhen necessary, be replaced to ensure that the required\nnumber of lamps for performance requirements\ncompleted the test. Any such broken or incorrectly\noperated lamps shall be neglected in the evaluation of\nlife test results specified in IS 16002 (Part 2).\nNOTE — In order to avoid unnecessary delay, it is\nrecommended that spare lamps be available for carrying out\nother tests of this standard including tests specified in Part 2\nof this standard.",
+              "subclauses": [],
+              "requirements": []
+            }
+          ],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "16",
+      "title": "CONDITIONS OF COMPLIANCE",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 11,
+      "page_end": 15,
+      "page_refs": [
+        11,
+        15
+      ],
+      "content": "16 CONDITIONS OF COMPLIANCE",
+      "subclauses": [
+        {
+          "clause_number": "16.64",
+          "title": "16.64",
+          "parent_clause": "16",
+          "depth": 2,
+          "page_start": 11,
+          "page_end": 11,
+          "page_refs": [
+            11
+          ],
+          "content": "16.64\n26.492",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "16.1",
+          "title": "General Conditions",
+          "parent_clause": "16",
+          "depth": 2,
+          "page_start": 15,
+          "page_end": 15,
+          "page_refs": [
+            15
+          ],
+          "content": "16.1 General Conditions\nA batch shall be considered as confirming to this\nstandard, if the requirements contained in this standard\nare fulfilled. If the batch fails to satisfy the requirements\nof any of these requirements, it shall be deemed not to\ncomply with this standard.",
+          "subclauses": [],
+          "requirements": []
+        },
+        {
+          "clause_number": "16.2",
+          "title": "Test for Inspection Test Quantity",
+          "parent_clause": "16",
+          "depth": 2,
+          "page_start": 15,
+          "page_end": 15,
+          "page_refs": [
+            15
+          ],
+          "content": "16.2 Test for Inspection Test Quantity",
+          "subclauses": [
+            {
+              "clause_number": "16.2.1",
+              "title": "Following shall constitute inspection tests:",
+              "parent_clause": "16.2",
+              "depth": 3,
+              "page_start": 15,
+              "page_end": 15,
+              "page_refs": [
+                15
+              ],
+              "content": "16.2.1 Following shall constitute inspection tests:\na)\nMarking;\nb)\nInterchangeability;\nc)\nProtection against electric shock;\nd)\nInsulation resistance and electric strength after\nhumidity treatment; and\ne)\nMechanical strength.\nA batch shall be considered to comply, if the number\nof lamps failing does not exceed qualifying limits given\nbelow:\na)\nFor any single requirement: 2, Max; and\nb)\nFor all requirements taken together: 4, Max.",
+              "subclauses": [],
+              "requirements": [
+                {
+                  "requirement_id": "REQ-DOC-001-16.2.1-001",
+                  "clause": "16.2.1",
+                  "subject": "self-ballasted LED lamp",
+                  "property": "insulation_resistance",
+                  "operator": ">=",
+                  "value": 4.0,
+                  "unit": "MΩ",
+                  "condition": {
+                    "humidity_treatment": "48 h at 91-95% RH",
+                    "measurement_voltage": "500 V d.c.",
+                    "measurement_time": "1 min after voltage application"
+                  },
+                  "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+                  "source_pages": [
+                    15
+                  ]
+                },
+                {
+                  "requirement_id": "REQ-DOC-001-16.2.1-002",
+                  "clause": "16.2.1",
+                  "subject": "self-ballasted LED lamp",
+                  "property": "dielectric_electric_strength",
+                  "operator": "==",
+                  "value": 4000,
+                  "unit": "V a.c.",
+                  "condition": {
+                    "duration": "1 minute",
+                    "waveform": "50 Hz r.m.s."
+                  },
+                  "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+                  "source_pages": [
+                    15
+                  ]
+                }
+              ]
+            }
+          ],
+          "requirements": []
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "clause_number": "17",
+      "title": "TESTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 15,
+      "page_end": 15,
+      "page_refs": [
+        15
+      ],
+      "content": "17 TESTS",
+      "subclauses": [
+        {
+          "clause_number": "17.1",
+          "title": "Classification of Tests",
+          "parent_clause": "17",
+          "depth": 2,
+          "page_start": 15,
+          "page_end": 15,
+          "page_refs": [
+            15
+          ],
+          "content": "17.1 Classification of Tests",
+          "subclauses": [
+            {
+              "clause_number": "17.1.1",
+              "title": "Type Tests",
+              "parent_clause": "17.1",
+              "depth": 3,
+              "page_start": 15,
+              "page_end": 15,
+              "page_refs": [
+                15
+              ],
+              "content": "17.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of self-ballasted lamps,\nsample being drawn preferably from regular production\nlot. The tests are carried out in order of the clauses:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection against electric shock (see 7);\nd)\nInsulation resistance and electric strength after\nhumidity treatment (see 8);\ne)\nMechanical strength (see 9);\nf)\nCap temperature rise (see 10);\ng)\nResistance to heat (see 11);\nh)\nResistance to flame and ignition (see 12);\nj)\nFault conditions (see 13); and\nk)\nCreepage distances and clearances (see 14).",
+              "subclauses": [],
+              "requirements": [
+                {
+                  "requirement_id": "REQ-DOC-001-17.1.1-001",
+                  "clause": "17.1.1",
+                  "subject": "self-ballasted LED lamp",
+                  "property": "insulation_resistance",
+                  "operator": ">=",
+                  "value": 4.0,
+                  "unit": "MΩ",
+                  "condition": {
+                    "humidity_treatment": "48 h at 91-95% RH",
+                    "measurement_voltage": "500 V d.c.",
+                    "measurement_time": "1 min after voltage application"
+                  },
+                  "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+                  "source_pages": [
+                    15
+                  ]
+                },
+                {
+                  "requirement_id": "REQ-DOC-001-17.1.1-002",
+                  "clause": "17.1.1",
+                  "subject": "self-ballasted LED lamp",
+                  "property": "dielectric_electric_strength",
+                  "operator": "==",
+                  "value": 4000,
+                  "unit": "V a.c.",
+                  "condition": {
+                    "duration": "1 minute",
+                    "waveform": "50 Hz r.m.s."
+                  },
+                  "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+                  "source_pages": [
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "clause_number": "17.1.2",
+              "title": "The number of sample shall be as given for ITQ",
+              "parent_clause": "17.1",
+              "depth": 3,
+              "page_start": 15,
+              "page_end": 15,
+              "page_refs": [
+                15
+              ],
+              "content": "17.1.2 The number of sample shall be as given for ITQ\nin respect of tests for 5 to 9 and their criteria for\nacceptance is given in 16.2.",
+              "subclauses": [],
+              "requirements": []
+            },
+            {
+              "clause_number": "17.1.3",
+              "title": "The number of samples for temperature rise",
+              "parent_clause": "17.1",
+              "depth": 3,
+              "page_start": 15,
+              "page_end": 15,
+              "page_refs": [
+                15
+              ],
+              "content": "17.1.3 The number of samples for temperature rise\nwhen tested in accordance with 10 shall be five from\nwhich not more than one shall fail.",
+              "subclauses": [],
+              "requirements": []
+            },
+            {
+              "clause_number": "17.1.4",
+              "title": "The number of samples for resistance to",
+              "parent_clause": "17.1",
+              "depth": 3,
+              "page_start": 15,
+              "page_end": 15,
+              "page_refs": [
+                15
+              ],
+              "content": "17.1.4 The number of samples for resistance to\nheat (see 11), resistance to flame and ignition (see 12)\nand fault condition (see 14) shall be one and no failures\nare allowed in any of these tests.",
+              "subclauses": [],
+              "requirements": []
+            }
+          ],
+          "requirements": []
+        },
+        {
+          "clause_number": "17.2",
+          "title": "Acceptance Test",
+          "parent_clause": "17",
+          "depth": 2,
+          "page_start": 15,
+          "page_end": 16,
+          "page_refs": [
+            15,
+            16
+          ],
+          "content": "17.2 Acceptance Test\nThe following shall constitute as acceptance tests:\na)\nMarking (see 5);\nb)\nInterchangeability (see 6);\nc)\nProtection against electric shock (see 7);\nd)\nInsulation resistance and electric strength after\nhumidity treatment (see 8);\ne)\nMechanical strength (see 9); and\nf)\nCap temperature rise (see 10).",
+          "subclauses": [
+            {
+              "clause_number": "17.2.1",
+              "title": "Sampling shall be the same as given against",
+              "parent_clause": "17.2",
+              "depth": 3,
+              "page_start": 15,
+              "page_end": 16,
+              "page_refs": [
+                15,
+                16
+              ],
+              "content": "17.2.1 Sampling shall be the same as given against\nITQ in respect of test of 5 to 9 and five in respect\nof test of 10. Criteria for acceptance shall be as\ngiven in 16.2 for cap temperature rise the number\nof failure shall not exceed one.\nIS 16102 (Part 1) : 2012",
+              "subclauses": [],
+              "requirements": []
+            }
+          ],
+          "requirements": [
+            {
+              "requirement_id": "REQ-DOC-001-17.2-002",
+              "clause": "17.2",
+              "subject": "self-ballasted LED lamp",
+              "property": "dielectric_electric_strength",
+              "operator": "==",
+              "value": 4000,
+              "unit": "V a.c.",
+              "condition": {
+                "duration": "1 minute",
+                "waveform": "50 Hz r.m.s."
+              },
+              "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+              "source_pages": [
+                15,
+                16
+              ]
+            }
+          ]
+        }
+      ],
+      "requirements": []
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC-001-0001",
+      "entity_type": "standard",
+      "name": "IS 16102 (Part 1) : 2012",
+      "value": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+      "document_id": "DOC-001",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0002",
+      "entity_type": "product",
+      "name": "Self-Ballasted LED Lamp",
+      "value": "Self-Ballasted LED Lamps for General Lighting Services",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0003",
+      "entity_type": "referenced_standard",
+      "name": "IS 16103 (Part 1) : 2012",
+      "value": "IS 16103 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0004",
+      "entity_type": "parameter",
+      "name": "voltage",
+      "value": "250 V",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ],
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0005",
+      "entity_type": "parameter",
+      "name": "wattage",
+      "value": "60 W",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ],
+      "unit": "W"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0006",
+      "entity_type": "referenced_standard",
+      "name": "IS 16103",
+      "value": "IS 16103",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0007",
+      "entity_type": "referenced_standard",
+      "name": "IS 16101",
+      "value": "IS 16101",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0008",
+      "entity_type": "referenced_standard",
+      "name": "IS 9206",
+      "value": "IS 9206",
+      "document_id": "DOC-001",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0009",
+      "entity_type": "referenced_standard",
+      "name": "IS 8913",
+      "value": "IS 8913",
+      "document_id": "DOC-001",
+      "source_clause": "3.6",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0010",
+      "entity_type": "referenced_standard",
+      "name": "IS 16108",
+      "value": "IS 16108",
+      "document_id": "DOC-001",
+      "source_clause": "5.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0011",
+      "entity_type": "referenced_standard",
+      "name": "IS 9206",
+      "value": "IS 9206",
+      "document_id": "DOC-001",
+      "source_clause": "6.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0012",
+      "entity_type": "referenced_standard",
+      "name": "IS 15687",
+      "value": "IS 15687",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0013",
+      "entity_type": "referenced_standard",
+      "name": "IS 9206",
+      "value": "IS 9206",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0014",
+      "entity_type": "lamp_cap",
+      "name": "B15D",
+      "value": "B15D",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0015",
+      "entity_type": "lamp_cap",
+      "name": "B22D",
+      "value": "B22D",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0016",
+      "entity_type": "lamp_cap",
+      "name": "E11",
+      "value": "E11",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0017",
+      "entity_type": "lamp_cap",
+      "name": "E12",
+      "value": "E12",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0018",
+      "entity_type": "lamp_cap",
+      "name": "E14",
+      "value": "E14",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0019",
+      "entity_type": "lamp_cap",
+      "name": "E17",
+      "value": "E17",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0020",
+      "entity_type": "lamp_cap",
+      "name": "E26",
+      "value": "E26",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0021",
+      "entity_type": "lamp_cap",
+      "name": "E27",
+      "value": "E27",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0022",
+      "entity_type": "lamp_cap",
+      "name": "GU10",
+      "value": "GU10",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0023",
+      "entity_type": "lamp_cap",
+      "name": "GZ10",
+      "value": "GZ10",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0024",
+      "entity_type": "parameter",
+      "name": "voltage",
+      "value": "32\nv",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0025",
+      "entity_type": "lamp_cap",
+      "name": "E12",
+      "value": "E12",
+      "document_id": "DOC-001",
+      "source_clause": "0.5",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0026",
+      "entity_type": "lamp_cap",
+      "name": "E14",
+      "value": "E14",
+      "document_id": "DOC-001",
+      "source_clause": "0.5",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0027",
+      "entity_type": "lamp_cap",
+      "name": "E17",
+      "value": "E17",
+      "document_id": "DOC-001",
+      "source_clause": "0.5",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0028",
+      "entity_type": "lamp_cap",
+      "name": "E26",
+      "value": "E26",
+      "document_id": "DOC-001",
+      "source_clause": "0.5",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0029",
+      "entity_type": "lamp_cap",
+      "name": "E27",
+      "value": "E27",
+      "document_id": "DOC-001",
+      "source_clause": "0.5",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0030",
+      "entity_type": "lamp_cap",
+      "name": "GU10",
+      "value": "GU10",
+      "document_id": "DOC-001",
+      "source_clause": "0.5",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0031",
+      "entity_type": "lamp_cap",
+      "name": "GZ10",
+      "value": "GZ10",
+      "document_id": "DOC-001",
+      "source_clause": "0.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0032",
+      "entity_type": "referenced_standard",
+      "name": "IS 9206",
+      "value": "IS 9206",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0033",
+      "entity_type": "lamp_cap",
+      "name": "B22",
+      "value": "B22",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0034",
+      "entity_type": "lamp_cap",
+      "name": "B15",
+      "value": "B15",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0035",
+      "entity_type": "lamp_cap",
+      "name": "GU10",
+      "value": "GU10",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0036",
+      "entity_type": "lamp_cap",
+      "name": "GZ10",
+      "value": "GZ10",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0037",
+      "entity_type": "lamp_cap",
+      "name": "GX53",
+      "value": "GX53",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0038",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "value": "IS 15885",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0039",
+      "entity_type": "parameter",
+      "name": "voltage",
+      "value": "500 V",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ],
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0040",
+      "entity_type": "threshold",
+      "name": "insulation_resistance",
+      "value": "4 MΩ",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0041",
+      "entity_type": "parameter",
+      "name": "temperature",
+      "value": "1°C",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ],
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0042",
+      "entity_type": "referenced_standard",
+      "name": "IS 10322",
+      "value": "IS 10322",
+      "document_id": "DOC-001",
+      "source_clause": "8.2",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0043",
+      "entity_type": "lamp_cap",
+      "name": "B15D",
+      "value": "B15D",
+      "document_id": "DOC-001",
+      "source_clause": "9.1",
+      "source_pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0044",
+      "entity_type": "parameter",
+      "name": "voltage",
+      "value": "0.8\nv",
+      "document_id": "DOC-001",
+      "source_clause": "0.8",
+      "source_pages": [
+        11
+      ],
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0045",
+      "entity_type": "lamp_cap",
+      "name": "B15",
+      "value": "B15",
+      "document_id": "DOC-001",
+      "source_clause": "0.0",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0046",
+      "entity_type": "lamp_cap",
+      "name": "B22",
+      "value": "B22",
+      "document_id": "DOC-001",
+      "source_clause": "0.0",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0047",
+      "entity_type": "referenced_standard",
+      "name": "IS 8913",
+      "value": "IS 8913",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0048",
+      "entity_type": "parameter",
+      "name": "wattage",
+      "value": "60 W",
+      "document_id": "DOC-001",
+      "source_clause": "10",
+      "source_pages": [
+        11,
+        12
+      ],
+      "unit": "W"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0049",
+      "entity_type": "parameter",
+      "name": "temperature",
+      "value": "125°C",
+      "document_id": "DOC-001",
+      "source_clause": "11",
+      "source_pages": [
+        11,
+        12,
+        13
+      ],
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0050",
+      "entity_type": "referenced_standard",
+      "name": "IS 11000",
+      "value": "IS 11000",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0051",
+      "entity_type": "referenced_standard",
+      "name": "is 650",
+      "value": "is 650",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0052",
+      "entity_type": "referenced_standard",
+      "name": "IS 4261",
+      "value": "IS 4261",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0053",
+      "entity_type": "parameter",
+      "name": "temperature",
+      "value": "650 °C",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ],
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0054",
+      "entity_type": "referenced_standard",
+      "name": "IS 16001",
+      "value": "IS 16001",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0055",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "value": "IS 15885",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0056",
+      "entity_type": "referenced_standard",
+      "name": "IS 8913",
+      "value": "IS 8913",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0057",
+      "entity_type": "parameter",
+      "name": "voltage",
+      "value": "000 V",
+      "document_id": "DOC-001",
+      "source_clause": "13.6",
+      "source_pages": [
+        14
+      ],
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC-001-0058",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "value": "IS 15885",
+      "document_id": "DOC-001",
+      "source_clause": "14",
+      "source_pages": [
+        11,
+        14
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0059",
+      "entity_type": "referenced_standard",
+      "name": "IS 16002",
+      "value": "IS 16002",
+      "document_id": "DOC-001",
+      "source_clause": "15.3.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0060",
+      "entity_type": "annex",
+      "name": "ANNEX A",
+      "value": "ANNEX A",
+      "document_id": "DOC-001",
+      "source_clause": "ANNEX A",
+      "source_pages": [
+        16
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-001-0061",
+      "entity_type": "annex",
+      "name": "ANNEX B",
+      "value": "ANNEX B",
+      "document_id": "DOC-001",
+      "source_clause": "ANNEX B",
+      "source_pages": [
+        16,
+        17
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC-001-0001",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "applies_to",
+      "object": "Self-Ballasted LED Lamp",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0002",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16103 (Part 1) : 2012",
+      "document_id": "DOC-001",
+      "source_clause": "1",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0003",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16103",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0004",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16101",
+      "document_id": "DOC-001",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0005",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 9206",
+      "document_id": "DOC-001",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0006",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 8913",
+      "document_id": "DOC-001",
+      "source_clause": "3.6",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0007",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16108",
+      "document_id": "DOC-001",
+      "source_clause": "5.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0008",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 15687",
+      "document_id": "DOC-001",
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0009",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 15885",
+      "document_id": "DOC-001",
+      "source_clause": "8.1.1",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0010",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 10322",
+      "document_id": "DOC-001",
+      "source_clause": "8.2",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0011",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 11000",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0012",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "is 650",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0013",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 4261",
+      "document_id": "DOC-001",
+      "source_clause": "12.1",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0014",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16001",
+      "document_id": "DOC-001",
+      "source_clause": "13.2",
+      "source_pages": [
+        14
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0015",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "references",
+      "object": "IS 16002",
+      "document_id": "DOC-001",
+      "source_clause": "15.3.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0016",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "specifies_test",
+      "object": "Glow-Wire Flammability Test",
+      "document_id": "DOC-001",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0017",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "specifies_marking",
+      "object": "Mandatory Markings",
+      "document_id": "DOC-001",
+      "source_clause": "5",
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0018",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "specifies_test",
+      "object": "Electric Strength Test",
+      "document_id": "DOC-001",
+      "source_clause": "7",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0019",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "specifies_test",
+      "object": "Insulation Resistance Test",
+      "document_id": "DOC-001",
+      "source_clause": "8",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0020",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "specifies_test",
+      "object": "Mechanical Torque Test",
+      "document_id": "DOC-001",
+      "source_clause": "0.0",
+      "source_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-001-0021",
+      "subject": "IS 16102 (Part 1) : 2012",
+      "predicate": "specifies_test",
+      "object": "Fault Condition Safety Test",
+      "document_id": "DOC-001",
+      "source_clause": "13",
+      "source_pages": [
+        11,
+        14
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "REQ-DOC-001-1-003",
+      "clause": "1",
+      "subject": "self-ballasted LED lamp",
+      "property": "rated_wattage_limit",
+      "operator": "<=",
+      "value": 60.0,
+      "unit": "W",
+      "condition": {
+        "voltage_range": "up to 250 V a.c. 50 Hz"
+      },
+      "compliance_criteria": "Applies to self-ballasted lamps having rated wattage up to 60 W",
+      "source_pages": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-2-005",
+      "clause": "2",
+      "subject": "insulating material",
+      "property": "glow_wire_temperature",
+      "operator": ">=",
+      "value": 650.0,
+      "unit": "°C",
+      "condition": {
+        "standard_method": "IS 11000 (Part 2/Sec 1)",
+        "live_parts_holding": "750 °C",
+        "non_live_parts": "650 °C"
+      },
+      "compliance_criteria": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-3.11-002",
+      "clause": "3.11",
+      "subject": "self-ballasted LED lamp",
+      "property": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
+      "condition": {
+        "duration": "1 minute",
+        "waveform": "50 Hz r.m.s."
+      },
+      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-5.1-004",
+      "clause": "5.1",
+      "subject": "self-ballasted LED lamp",
+      "property": "mandatory_marking",
+      "operator": "mandatory",
+      "value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+      "unit": null,
+      "condition": {
+        "legibility_test": "Rubbing with hexane soaked cloth for 15s"
+      },
+      "compliance_criteria": "Marking shall remain legible and easily discernible after durability test",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-7-002",
+      "clause": "7",
+      "subject": "self-ballasted LED lamp",
+      "property": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
+      "condition": {
+        "duration": "1 minute",
+        "waveform": "50 Hz r.m.s."
+      },
+      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "source_pages": [
+        9,
+        11
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-8.1-002",
+      "clause": "8.1",
+      "subject": "self-ballasted LED lamp",
+      "property": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
+      "condition": {
+        "duration": "1 minute",
+        "waveform": "50 Hz r.m.s."
+      },
+      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-8.1.1-001",
+      "clause": "8.1.1",
+      "subject": "self-ballasted LED lamp",
+      "property": "insulation_resistance",
+      "operator": ">=",
+      "value": 4.0,
+      "unit": "MΩ",
+      "condition": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "measurement_voltage": "500 V d.c.",
+        "measurement_time": "1 min after voltage application"
+      },
+      "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-8.2-002",
+      "clause": "8.2",
+      "subject": "self-ballasted LED lamp",
+      "property": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
+      "condition": {
+        "duration": "1 minute",
+        "waveform": "50 Hz r.m.s."
+      },
+      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-12.1-005",
+      "clause": "12.1",
+      "subject": "insulating material",
+      "property": "glow_wire_temperature",
+      "operator": ">=",
+      "value": 650.0,
+      "unit": "°C",
+      "condition": {
+        "standard_method": "IS 11000 (Part 2/Sec 1)",
+        "live_parts_holding": "750 °C",
+        "non_live_parts": "650 °C"
+      },
+      "compliance_criteria": "Any flames or glowing must extinguish within 30 s after withdrawal of glow-wire",
+      "source_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-16.2.1-001",
+      "clause": "16.2.1",
+      "subject": "self-ballasted LED lamp",
+      "property": "insulation_resistance",
+      "operator": ">=",
+      "value": 4.0,
+      "unit": "MΩ",
+      "condition": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "measurement_voltage": "500 V d.c.",
+        "measurement_time": "1 min after voltage application"
+      },
+      "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-16.2.1-002",
+      "clause": "16.2.1",
+      "subject": "self-ballasted LED lamp",
+      "property": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
+      "condition": {
+        "duration": "1 minute",
+        "waveform": "50 Hz r.m.s."
+      },
+      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-17.1.1-001",
+      "clause": "17.1.1",
+      "subject": "self-ballasted LED lamp",
+      "property": "insulation_resistance",
+      "operator": ">=",
+      "value": 4.0,
+      "unit": "MΩ",
+      "condition": {
+        "humidity_treatment": "48 h at 91-95% RH",
+        "measurement_voltage": "500 V d.c.",
+        "measurement_time": "1 min after voltage application"
+      },
+      "compliance_criteria": "Insulation resistance between live parts and accessible parts shall not be less than 4 MΩ",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-17.1.1-002",
+      "clause": "17.1.1",
+      "subject": "self-ballasted LED lamp",
+      "property": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
+      "condition": {
+        "duration": "1 minute",
+        "waveform": "50 Hz r.m.s."
+      },
+      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "requirement_id": "REQ-DOC-001-17.2-002",
+      "clause": "17.2",
+      "subject": "self-ballasted LED lamp",
+      "property": "dielectric_electric_strength",
+      "operator": "==",
+      "value": 4000,
+      "unit": "V a.c.",
+      "condition": {
+        "duration": "1 minute",
+        "waveform": "50 Hz r.m.s."
+      },
+      "compliance_criteria": "No flashover or breakdown shall occur during the 1 minute test",
+      "source_pages": [
+        15,
+        16
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "T-003",
+      "title": "Torque Test Values for Unused Lamps",
+      "clause": "16",
+      "source_page": 11,
+      "headers": [
+        "Dimension\n(1)",
+        "E12\n(2)",
+        "E14\n(3)",
+        "E17\n(4)",
+        "E26 and E26d\n(5)",
+        "E27\n(6)",
+        "Tolerance\n(7)"
+      ],
+      "normalized_headers": [
+        "dimension",
+        "e12",
+        "e14",
+        "e17",
+        "e26_and_e26d",
+        "e27",
+        "tolerance"
+      ],
+      "rows": [
+        {
+          "dimension": "C",
+          "e12": 15.27,
+          "e14": 20.0,
+          "e17": 20.0,
+          "e26_and_e26d": 32.0,
+          "e27": 32.0,
+          "tolerance": "Min"
+        },
+        {
+          "dimension": "K",
+          "e12": 9.0,
+          "e14": 11.5,
+          "e17": 10.0,
+          "e26_and_e26d": 11.0,
+          "e27": 13.5,
+          "tolerance": "0.0\n–0.3"
+        },
+        {
+          "dimension": "O",
+          "e12": 9.5,
+          "e14": 12.0,
+          "e17": 14.0,
+          "e26_and_e26d": 23.0,
+          "e27": 23.0,
+          "tolerance": "+0.1\n–0.1"
+        },
+        {
+          "dimension": "S",
+          "e12": 4.0,
+          "e14": 7.0,
+          "e17": 8.0,
+          "e26_and_e26d": 12.0,
+          "e27": 12.0,
+          "tolerance": "Min"
+        },
+        {
+          "dimension": "d",
+          "e12": 11.89,
+          "e14": 13.89,
+          "e17": 16.64,
+          "e26_and_e26d": 26.492,
+          "e27": 26.45,
+          "tolerance": "+0.1\n0.0"
+        },
+        {
+          "dimension": "d\n1",
+          "e12": 10.62,
+          "e14": 12.29,
+          "e17": 15.27,
+          "e26_and_e26d": 24.816,
+          "e27": 24.26,
+          "tolerance": "+0.1\n0.0"
+        },
+        {
+          "dimension": "P",
+          "e12": 2.54,
+          "e14": 2.822,
+          "e17": 2.822,
+          "e26_and_e26d": 3.629,
+          "e27": 3.629,
+          "tolerance": "—"
+        },
+        {
+          "dimension": "r",
+          "e12": 0.792,
+          "e14": 0.822,
+          "e17": 0.897,
+          "e26_and_e26d": 1.191,
+          "e27": 1.025,
+          "tolerance": "—"
+        },
+        {
+          "dimension": "NOTE — The drawing illustrates the essential dimensions of the holder which\nneed only be checked if doubt arises from the application of the test.",
+          "e12": "",
+          "e14": "",
+          "e17": "",
+          "e26_and_e26d": "",
+          "e27": "",
+          "tolerance": ""
+        }
+      ],
+      "raw_markdown": "| Dimension\n(1) | E12\n(2) | E14\n(3) | E17\n(4) | E26 and E26d\n(5) | E27\n(6) | Tolerance\n(7) |\n| --- | --- | --- | --- | --- | --- | --- |\n| C | 15.27 | 20.0 | 20.0 | 32.0 | 32.0 | Min |\n| K | 9.0 | 11.5 | 10.0 | 11.0 | 13.5 | 0.0\n–0.3 |\n| O | 9.5 | 12.0 | 14.0 | 23.0 | 23.0 | +0.1\n–0.1 |\n| S | 4.0 | 7.0 | 8.0 | 12.0 | 12.0 | Min |\n| d | 11.89 | 13.89 | 16.64 | 26.492 | 26.45 | +0.1\n0.0 |\n| d\n1 | 10.62 | 12.29 | 15.27 | 24.816 | 24.26 | +0.1\n0.0 |\n| P | 2.540 | 2.822 | 2.822 | 3.629 | 3.629 | — |\n| r | 0.792 | 0.822 | 0.897 | 1.191 | 1.025 | — |\n| NOTE — The drawing illustrates the essential dimensions of the holder which\nneed only be checked if doubt arises from the application of the test. |  |  |  |  |  |  |"
+    },
+    {
+      "table_id": "T-002",
+      "title": "Table 2",
+      "clause": "15",
+      "source_page": 12,
+      "headers": [
+        "Dimension\n(1)",
+        "B15\n(2)",
+        "B22\n(3)",
+        "Tolerance\n(4)"
+      ],
+      "normalized_headers": [
+        "dimension",
+        "b15",
+        "b22",
+        "tolerance"
+      ],
+      "rows": [
+        {
+          "dimension": "A",
+          "b15": 15.27,
+          "b22": 22.27,
+          "tolerance": 0.03
+        },
+        {
+          "dimension": "B",
+          "b15": 19.0,
+          "b22": 19.0,
+          "tolerance": "Min"
+        },
+        {
+          "dimension": "C",
+          "b15": 21.0,
+          "b22": 28.0,
+          "tolerance": "Min"
+        },
+        {
+          "dimension": "D",
+          "b15": 9.5,
+          "b22": 9.5,
+          "tolerance": "Min"
+        },
+        {
+          "dimension": "E",
+          "b15": 3.0,
+          "b22": 3.0,
+          "tolerance": 0.17
+        },
+        {
+          "dimension": "G",
+          "b15": 18.3,
+          "b22": 24.6,
+          "tolerance": "±0.3"
+        },
+        {
+          "dimension": "H",
+          "b15": 9.0,
+          "b22": 12.15,
+          "tolerance": "Min"
+        },
+        {
+          "dimension": "K",
+          "b15": 12.7,
+          "b22": 12.7,
+          "tolerance": "±0.3"
+        },
+        {
+          "dimension": "R",
+          "b15": 1.5,
+          "b22": 1.5,
+          "tolerance": "Approximate"
+        },
+        {
+          "dimension": "NOTE — The drawing illustrates the essential dimensions of the holder\nwhich need only be checked if doubt arises from the application of the test.",
+          "b15": "",
+          "b22": "",
+          "tolerance": ""
+        }
+      ],
+      "raw_markdown": "| Dimension\n(1) | B15\n(2) | B22\n(3) | Tolerance\n(4) |\n| --- | --- | --- | --- |\n| A | 15.27 | 22.27 | +0.03 |\n| B | 19.0 | 19.0 | Min |\n| C | 21.0 | 28.0 | Min |\n| D | 9.5 | 9.5 | Min |\n| E | 3.0 | 3.0 | +0.17 |\n| G | 18.3 | 24.6 | ±0.3 |\n| H | 9.0 | 12.15 | Min |\n| K | 12.7 | 12.7 | ±0.3 |\n| R | 1.5 | 1.5 | Approximate |\n| NOTE — The drawing illustrates the essential dimensions of the holder\nwhich need only be checked if doubt arises from the application of the test. |  |  |  |"
+    }
+  ],
+  "references": [
+    "IS 10322",
+    "IS 11000",
+    "IS 15687",
+    "IS 15885",
+    "IS 16001",
+    "IS 16002",
+    "IS 16101",
+    "IS 16103",
+    "IS 16103 (Part 1) : 2012",
+    "IS 16108",
+    "IS 4261",
+    "IS 8913",
+    "IS 9206",
+    "is 650"
+  ],
+  "annexes": [
+    {
+      "annex_id": "ANNEX A",
+      "title": "ANNEX A",
+      "page_start": 16,
+      "page_end": 16,
+      "page_refs": [
+        16
+      ],
+      "content": "ANNEX A\n(Clause 1)\nOVERVIEW OF SYSTEMS COMPOSED OF LED MODULES AND CONTROLGEAR\nA-1 An overview of systems composed of LED system and control gear is given below:\nB-1 These symbols are to indicate that only cap-down\nto horizontal operation is permitted because of possible\noverheating.\nThere shall be text in the vicinity of the symbol in order"
+    },
+    {
+      "annex_id": "ANNEX B",
+      "title": "ANNEX B",
+      "page_start": 16,
+      "page_end": 17,
+      "page_refs": [
+        16,
+        17
+      ],
+      "content": "ANNEX B\n(Clause 5.2)\nLAMPS WITH OPERATING POSITION LIMITATIONS\nFIG. 6 OPERATING AND NON-OPERATING POSITIONS\nto avoid it being read upside down.\nThe symbols for candle and round bulb lamps shown\nin Fig. 6 are given as examples.\nCandle lamps\nRound bulb lamps\nBulb Lamps\nPublished by BIS, New Delhi\nBureau of Indian Standards\nBIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote\nharmonious development of the activities of standardization, marking and quality certification of goods\nand attending to connected matters in the country.\nCopyright\nBIS has the copyright of all its publications. No part of these publications may be reproduced in any form\nwithout the prior permission in writing of BIS. This does not preclude the free use, in the course of\nimplementing the standard, of necessary details, such as symbols and sizes, type or grade designations.\nEnquiries relating to copyright be addressed to the Director (Publications), BIS.\nReview of Indian Standards\nAmendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed\nperiodically; a standard along with amendments is reaffirmed when such review indicates that no changes are\nneeded; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards\nshould ascertain that they are in possession of the latest amendments or edition by referring to the latest issue of\n‘BIS Catalogue’ and ‘Standards : Monthly Additions’.\nThis Indian Standard has been developed from Doc No.:  ETD 23 (6298).\nAmendments Issued Since Publication\nAmend No.\nDate of Issue\nText Affected\nBUREAU OF INDIAN STANDARDS\nHeadquarters:\nManak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002\nTelephones : 2323 0131, 2323 3375, 2323 9402\nWebsite: www.bis.org.in\nRegional Offices:\nTelephones\nCentral\n: Manak Bhavan, 9 Bahadur Shah Zafar Marg\n2323 7617\nNEW DELHI 110002\n2323 3841\nEastern\n: 1/14 C.I.T. Scheme VII M, V. I. P. Road, Kankurgachi\n2337 8499, 2337 8561\nKOLKATA 700054\n2337 8626, 2337 9120\nNorthern\n: SCO 335-336, Sector 34-A, CHANDIGARH 160022\n60 3843\n60 9285\nSouthern\n: C.I.T. Campus, IV Cross Road, CHENNAI 600113\n2254 1216, 2254 1442\n2254 2519, 2254 2315\nWestern\n: Manakalaya, E9 MIDC, Marol, Andheri (East)\n2832 9295, 2832 7858\nMUMBAI 400093\n2832 7891, 2832 7892\nBranches:\nAHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. DEHRADUN.\nFARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW.\nNAGPUR. PARWANOO. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM.\nVISAKHAPATNAM.\n{\n{\n{\n{\n{"
+    }
+  ],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T15:13:57.127989+00:00",
+    "total_entities": 61,
+    "total_requirements": 14,
+    "total_relationships": 21,
+    "total_tables": 2,
+    "total_references": 14,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-001",
+    "document_id": "DOC-001",
+    "raw_file": "data/raw/standards/IS_16102_Part_1_2012.pdf",
+    "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b"
+  }
+}

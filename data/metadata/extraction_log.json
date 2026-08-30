@@ -1,34 +1,11 @@
 [
   {
-    "document_id": "DOC-001",
-    "source_id": "SRC-001",
-    "start_time": "2026-08-30T15:00:13.964915+00:00",
-    "completion_time": "2026-08-30T15:00:14.646160+00:00",
-    "total_pages": 17,
-    "total_clauses": 187,
-    "total_tables": 2,
-    "total_annexes": 2,
-    "ocr_used": false,
-    "quality_summary": {
-      "total_pages": 17,
-      "ok_pages_count": 15,
-      "suspicious_pages_count": 2,
-      "suspicious_pages": [
-        2,
-        3
-      ],
-      "overall_quality": "MEDIUM"
-    },
-    "processed_file_path": "data/processed/DOC-001.json",
-    "status": "extraction_successful"
-  },
-  {
     "document_id": "DOC-007",
     "source_id": "SRC-007",
-    "start_time": "2026-08-30T15:00:14.646810+00:00",
-    "completion_time": "2026-08-30T15:00:15.046050+00:00",
+    "start_time": "2026-08-30T15:09:02.193282+00:00",
+    "completion_time": "2026-08-30T15:09:02.681618+00:00",
     "total_pages": 11,
-    "total_clauses": 47,
+    "total_clauses": 42,
     "total_tables": 0,
     "total_annexes": 9,
     "ocr_used": false,
@@ -48,10 +25,10 @@
   {
     "document_id": "DOC-002",
     "source_id": "SRC-002",
-    "start_time": "2026-08-30T15:00:15.046679+00:00",
-    "completion_time": "2026-08-30T15:00:15.907509+00:00",
+    "start_time": "2026-08-30T15:09:02.682305+00:00",
+    "completion_time": "2026-08-30T15:09:03.657634+00:00",
     "total_pages": 19,
-    "total_clauses": 351,
+    "total_clauses": 136,
     "total_tables": 1,
     "total_annexes": 2,
     "ocr_used": false,
@@ -70,10 +47,10 @@
   {
     "document_id": "DOC-010",
     "source_id": "SRC-010",
-    "start_time": "2026-08-30T15:00:15.908224+00:00",
-    "completion_time": "2026-08-30T15:00:15.933596+00:00",
+    "start_time": "2026-08-30T15:09:03.658308+00:00",
+    "completion_time": "2026-08-30T15:09:03.686380+00:00",
     "total_pages": 1,
-    "total_clauses": 9,
+    "total_clauses": 5,
     "total_tables": 0,
     "total_annexes": 0,
     "ocr_used": false,
@@ -90,8 +67,8 @@
   {
     "document_id": "DOC-011",
     "source_id": "SRC-011",
-    "start_time": "2026-08-30T15:00:15.934182+00:00",
-    "completion_time": "2026-08-30T15:00:15.947488+00:00",
+    "start_time": "2026-08-30T15:09:03.687082+00:00",
+    "completion_time": "2026-08-30T15:09:03.702090+00:00",
     "total_pages": 1,
     "total_clauses": 2,
     "total_tables": 0,
@@ -110,8 +87,8 @@
   {
     "document_id": "DOC-012",
     "source_id": "SRC-012",
-    "start_time": "2026-08-30T15:00:15.948096+00:00",
-    "completion_time": "2026-08-30T15:00:15.987696+00:00",
+    "start_time": "2026-08-30T15:09:03.702718+00:00",
+    "completion_time": "2026-08-30T15:09:03.748358+00:00",
     "total_pages": 2,
     "total_clauses": 27,
     "total_tables": 0,
@@ -125,6 +102,29 @@
       "overall_quality": "HIGH"
     },
     "processed_file_path": "data/processed/DOC-012.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-001",
+    "source_id": "SRC-001",
+    "start_time": "2026-08-30T15:14:20.661994+00:00",
+    "completion_time": "2026-08-30T15:14:21.322552+00:00",
+    "total_pages": 17,
+    "total_clauses": 114,
+    "total_tables": 2,
+    "total_annexes": 2,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 17,
+      "ok_pages_count": 15,
+      "suspicious_pages_count": 2,
+      "suspicious_pages": [
+        2,
+        3
+      ],
+      "overall_quality": "MEDIUM"
+    },
+    "processed_file_path": "data/processed/DOC-001.json",
     "status": "extraction_successful"
   }
 ]

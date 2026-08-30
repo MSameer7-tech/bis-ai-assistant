@@ -1,0 +1,303 @@
+{
+  "document_id": "DOC-010",
+  "source_id": "SRC-010",
+  "document_metadata": {
+    "document_id": "DOC-010",
+    "source_id": "SRC-010",
+    "standard_number": "CRO 2021",
+    "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2021",
+    "version": "2021 Principal Order",
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": "data/raw/regulations/CRO_2021.pdf",
+    "sha256": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65"
+  },
+  "semantic_sections": [
+    {
+      "section_number": "1",
+      "title": "SCHEDULE",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    }
+  ],
+  "clauses": [
+    {
+      "clause_number": "1",
+      "title": "SCHEDULE",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "SCHEDULE\nSl. No. | Product Name                                             | Indian Standard Number\n1.      | Electronic Games (Video)                                 | IS 616 : 2017 / IEC 60065\n2.      | Laptop / Notebook / Tablet                               | IS 13252 (Part 1) : 2010\n3.      | Self-Ballasted LED Lamps for General Lighting Services   | IS 16102 (Part 1) : 2012 / IS 16102 (Part 1) :\n4.      | d.c. or a.c. Supplied Electronic Controlgear for LED      | IS 15885 (Part 2/Sec 13) : 2012\n5.      | Fixed General Purpose LED Luminaires                     | IS 10322 (Part 5/Sec 1) : 2012",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "2",
+      "title": "Compulsory compliance with Indian Standards",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "2. Compulsory compliance with Indian Standards.?\n(1) No person shall manufacture, store for sale, sell, distribute or import goods specified in column (2) of the\nSchedule, which do not conform to the Indian Standard specified in the corresponding entry in column (3) of the\nsaid Schedule.\n(2) Manufacturers of such goods shall obtain registration from the Bureau of Indian Standards under Scheme-II\nof Schedule-II to the Bureau of Indian Standards (Conformity Assessment) Regulations, 2018.",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "3",
+      "title": "Standard Mark",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "3. Standard Mark.?\nThe goods specified in the Schedule shall bear the Standard Mark under a licence or certificate of conformity\nfrom the Bureau as per Scheme-II of Schedule-II of the Bureau of Indian Standards (Conformity Assessment)\nRegulations, 2018.",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "4",
+      "title": "Exemption",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "4. Exemption.?\nNothing in this Order shall apply to goods meant exclusively for export or prototype samples meant for research\nand development testing.",
+      "subclauses": [],
+      "requirements": []
+    },
+    {
+      "clause_number": "1",
+      "title": "SCHEDULE",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "SCHEDULE\nSl. No. | Product Name                                             | Indian Standard Number\n1.      | Electronic Games (Video)                                 | IS 616 : 2017 / IEC 60065\n2.      | Laptop / Notebook / Tablet                               | IS 13252 (Part 1) : 2010\n3.      | Self-Ballasted LED Lamps for General Lighting Services   | IS 16102 (Part 1) : 2012 / IS 16102 (Part 1) :\n4.      | d.c. or a.c. Supplied Electronic Controlgear for LED      | IS 15885 (Part 2/Sec 13) : 2012\n5.      | Fixed General Purpose LED Luminaires                     | IS 10322 (Part 5/Sec 1) : 2012",
+      "subclauses": [],
+      "requirements": []
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC-010-0001",
+      "entity_type": "standard",
+      "name": "CRO 2021",
+      "value": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2021",
+      "document_id": "DOC-010",
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-010-0002",
+      "entity_type": "referenced_standard",
+      "name": "IS 616 : 2017",
+      "value": "IS 616 : 2017",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-010-0003",
+      "entity_type": "referenced_standard",
+      "name": "IS 13252 (Part 1) : 2010",
+      "value": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-010-0004",
+      "entity_type": "referenced_standard",
+      "name": "IS 16102 (Part 1) : 2012",
+      "value": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-010-0005",
+      "entity_type": "referenced_standard",
+      "name": "IS 16102",
+      "value": "IS 16102",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-010-0006",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885 (Part 2/Sec 13) : 2012",
+      "value": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC-010-0007",
+      "entity_type": "referenced_standard",
+      "name": "IS 10322 (Part 5/Sec 1) : 2012",
+      "value": "IS 10322 (Part 5/Sec 1) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC-010-0001",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 616 : 2017",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0002",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0003",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 16102 (Part 1) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0004",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 16102",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0005",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0006",
+      "subject": "CRO 2021",
+      "predicate": "references",
+      "object": "IS 10322 (Part 5/Sec 1) : 2012",
+      "document_id": "DOC-010",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0007",
+      "subject": "CRO 2021",
+      "predicate": "mandates_scheme",
+      "object": "Scheme-II (Compulsory Registration Scheme)",
+      "document_id": "DOC-010",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0008",
+      "subject": "CRO 2021",
+      "predicate": "mandates_standard",
+      "object": "IS 16102 (Part 1)",
+      "document_id": "DOC-010",
+      "source_clause": "SCHEDULE",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC-010-0009",
+      "subject": "CRO 2021",
+      "predicate": "mandates_standard",
+      "object": "IS 15885 (Part 2/Sec 13)",
+      "document_id": "DOC-010",
+      "source_clause": "SCHEDULE",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "requirements": [],
+  "tables": [],
+  "references": [
+    "IS 10322 (Part 5/Sec 1) : 2012",
+    "IS 13252 (Part 1) : 2010",
+    "IS 15885 (Part 2/Sec 13) : 2012",
+    "IS 16102",
+    "IS 16102 (Part 1) : 2012",
+    "IS 616 : 2017"
+  ],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T15:13:57.141593+00:00",
+    "total_entities": 7,
+    "total_requirements": 0,
+    "total_relationships": 9,
+    "total_tables": 0,
+    "total_references": 6,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-010",
+    "document_id": "DOC-010",
+    "raw_file": "data/raw/regulations/CRO_2021.pdf",
+    "sha256": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65"
+  }
+}
