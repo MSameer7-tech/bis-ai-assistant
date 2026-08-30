@@ -1,6 +1,6 @@
 """
 Definition Normalizer Module for Phase 2D (Clause 3 / Terminology).
-Extracts canonical domain definitions (Self-Ballasted Lamp, Type, Rated Voltage,
+Extracts canonical domain definitions (Self-Ballasted LED Lamp, Type, Rated Voltage,
 Rated Wattage, Rated Frequency, Live Part, Type Test, ITQ, Batch, etc.) with provenance.
 """
 
@@ -10,12 +10,12 @@ from typing import Any, Dict, List
 
 logger = logging.getLogger(__name__)
 
-# Regex pattern for definition clause lines:
+# Regex pattern for definition lines:
 # e.g., "3.1 Self-Ballasted LED Lamp — Unit which cannot be dismantled..."
 # e.g., "3.7 Live Part — Conductive part which may cause an electric shock..."
 # e.g., "3.8 Type Test — A test or series of tests made on a type test sample..."
 DEFINITION_HEADER_REGEX = re.compile(
-    r"^(?:(?:Clause\s+)?([0-9]{1,2}\.[0-9]{1,2}(?:\.[0-9]+)?)\s+)?([A-Za-z0-9\s\(\)\/\-\,\'\"]+?)\s*[\—\–\-\:\=]\s*(.*)$",
+    r"^(?:(?:Clause\s+)?([0-9]{1,2}\.[0-9]{1,2}(?:\.[0-9]+)?)\s+)?([A-Za-z0-9\s\(\)\/\-\,\'\"]+?)\s*(?:[\—\–]|\s+\-\s+|\:\s+)\s*(.*)$",
     re.MULTILINE | re.DOTALL,
 )
 

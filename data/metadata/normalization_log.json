@@ -1,0 +1,140 @@
+[
+  {
+    "document_id": "DOC-001",
+    "normalized_at": "2026-08-30T15:36:53.829483+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 107,
+      "total_definitions": 11,
+      "total_requirements": 19,
+      "total_cross_references": 22,
+      "total_tables": 2
+    }
+  },
+  {
+    "document_id": "DOC-007",
+    "normalized_at": "2026-08-30T15:36:53.839929+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 45,
+      "total_definitions": 10,
+      "total_requirements": 5,
+      "total_cross_references": 24,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-002",
+    "normalized_at": "2026-08-30T15:36:53.856772+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 22,
+      "total_definitions": 1,
+      "total_requirements": 4,
+      "total_cross_references": 7,
+      "total_tables": 1
+    }
+  },
+  {
+    "document_id": "DOC-010",
+    "normalized_at": "2026-08-30T15:36:53.858976+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 10,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 7,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-011",
+    "normalized_at": "2026-08-30T15:36:53.860493+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 5,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 2,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-012",
+    "normalized_at": "2026-08-30T15:36:53.865445+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 27,
+      "total_definitions": 2,
+      "total_requirements": 6,
+      "total_cross_references": 5,
+      "total_tables": 0
+    }
+  }
+]

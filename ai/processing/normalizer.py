@@ -1,7 +1,7 @@
 """
 Phase 2D Semantic Normalization Orchestrator.
 Transforms verified Phase 2C structured JSON into rich semantic knowledge representations
-in data/normalized/{document_id}.normalized.json with complete traceability.
+with stable semantic IDs in data/normalized/{document_id}.json.
 """
 
 import json
@@ -16,7 +16,16 @@ from ai.processing.definition_extractor import DefinitionExtractor
 from ai.processing.entity_extractor import EntityExtractor
 from ai.processing.relationship_extractor import RelationshipExtractor
 from ai.processing.requirement_extractor import RequirementExtractor
+from ai.processing.schema import (
+    make_clause_id,
+    make_parameter_id,
+    make_section_id,
+    make_standard_id,
+    make_table_id,
+    make_term_id,
+)
 from ai.processing.table_normalizer import TableNormalizer
+from ai.processing.validator import SemanticValidator
 
 logger = logging.getLogger(__name__)
 
@@ -26,6 +35,7 @@ NORMALIZED_DIR = ROOT_DIR / "data" / "normalized"
 METADATA_DIR = ROOT_DIR / "data" / "metadata"
 DOCUMENTS_PATH = METADATA_DIR / "documents.json"
 REGISTRY_PATH = METADATA_DIR / "source_registry.json"
+NORMALIZATION_LOG_PATH = METADATA_DIR / "normalization_log.json"
 
 
 class DocumentNormalizer:
@@ -39,12 +49,13 @@ class DocumentNormalizer:
         self.requirement_extractor = RequirementExtractor()
         self.relationship_extractor = RelationshipExtractor()
         self.table_normalizer = TableNormalizer()
+        self.validator = SemanticValidator()
         NORMALIZED_DIR.mkdir(parents=True, exist_ok=True)
 
     def normalize_document(self, document_id: str) -> Dict[str, Any]:
         """
         Normalizes a processed document JSON artifact into its Phase 2D semantic representation.
-        Outputs to data/normalized/{document_id}.normalized.json.
+        Outputs to data/normalized/{document_id}.json.
         """
         proc_file = PROCESSED_DIR / f"{document_id}.json"
         if not proc_file.exists():
@@ -55,11 +66,13 @@ class DocumentNormalizer:
 
         logger.info("Normalizing document %s", document_id)
         doc_meta = proc_doc.get("document_metadata", {})
+        std_num = doc_meta.get("standard_number") or doc_meta.get("title", document_id)
 
         # 1. Document Identity Normalization
         normalized_identity = {
             "document_id": document_id,
             "source_id": proc_doc.get("source_id"),
+            "standard_id": make_standard_id(std_num),
             "standard_number": doc_meta.get("standard_number"),
             "title": doc_meta.get("title"),
             "version": doc_meta.get("version"),
@@ -73,6 +86,8 @@ class DocumentNormalizer:
 
         # 3. Extract Definitions (2D-12)
         definitions = self.definition_extractor.extract_definitions(proc_doc)
+        for d in definitions:
+            d["term_id"] = make_term_id(d["term"])
 
         # 4. Extract Entities (2D-3)
         entities = self.entity_extractor.extract_entities_from_document(proc_doc)
@@ -90,12 +105,14 @@ class DocumentNormalizer:
 
         # 8. Normalize Tables (2D-11)
         normalized_tables = self.table_normalizer.normalize_tables(proc_doc)
+        for t in normalized_tables:
+            t["semantic_table_id"] = make_table_id(document_id, t["table_id"])
 
         # 9. Extract list of referenced standards
         referenced_standards = [ref["target_standard"] for ref in cross_references]
         referenced_standards = sorted(list(set(referenced_standards)))
 
-        # 10. Enrich Classified Clauses with requirements & definitions
+        # 10. Enrich Classified Clauses with semantic IDs, requirements & definitions
         req_by_clause: Dict[str, List[Dict[str, Any]]] = {}
         for req in requirements:
             req_by_clause.setdefault(req["clause"], []).append(req)
@@ -109,6 +126,7 @@ class DocumentNormalizer:
             for c in clauses:
                 node = dict(c)
                 c_num = c.get("clause_number", "")
+                node["clause_id"] = make_clause_id(document_id, c_num)
                 node["requirements"] = req_by_clause.get(c_num, [])
                 node["definitions"] = def_by_clause.get(c_num, [])
                 if c.get("subclauses"):
@@ -118,12 +136,13 @@ class DocumentNormalizer:
 
         enriched_clauses = attach_semantic_payloads(classified_clauses)
 
-        # 11. Semantic Sections mapping
+        # 11. Semantic Sections mapping with Semantic IDs
         semantic_sections = []
         for sec in proc_doc.get("sections", []):
             s_title = sec.get("title", "")
             s_num = sec.get("section_number", "")
             semantic_sections.append({
+                "section_id": make_section_id(document_id, s_num),
                 "section_number": s_num,
                 "title": s_title,
                 "page_start": sec.get("page_start"),
@@ -165,12 +184,21 @@ class DocumentNormalizer:
             },
         }
 
-        # 13. Write to data/normalized/{document_id}.normalized.json
-        out_file = NORMALIZED_DIR / f"{document_id}.normalized.json"
-        with open(out_file, "w", encoding="utf-8") as f:
+        # 13. Validate Normalized Knowledge Document
+        val_report = self.validator.validate_normalized_document(normalized_document)
+        if not val_report["is_valid"]:
+            logger.warning("Validation warnings for %s: %s", document_id, val_report["errors"])
+
+        # 14. Write to data/normalized/{document_id}.json & {document_id}.normalized.json
+        out_file_main = NORMALIZED_DIR / f"{document_id}.json"
+        out_file_alias = NORMALIZED_DIR / f"{document_id}.normalized.json"
+
+        with open(out_file_main, "w", encoding="utf-8") as f:
+            json.dump(normalized_document, f, indent=2, ensure_ascii=False)
+        with open(out_file_alias, "w", encoding="utf-8") as f:
             json.dump(normalized_document, f, indent=2, ensure_ascii=False)
 
-        # 14. Update documents.json & source_registry.json status to metadata_verified
+        # 15. Update documents.json & source_registry.json status to metadata_verified
         if DOCUMENTS_PATH.exists():
             with open(DOCUMENTS_PATH, "r", encoding="utf-8") as f:
                 documents = json.load(f)
@@ -191,10 +219,13 @@ class DocumentNormalizer:
             with open(REGISTRY_PATH, "w", encoding="utf-8") as f:
                 json.dump(registry, f, indent=2, ensure_ascii=False)
 
+        # 16. Record into data/metadata/normalization_log.json
+        self._record_normalization_log(document_id, val_report)
+
         logger.info(
-            "✅ Successfully normalized %s -> %s (%d definitions, %d entities, %d requirements, %d tables)",
+            "✅ Successfully normalized %s -> %s (%d defs, %d entities, %d reqs, %d tables)",
             document_id,
-            out_file.name,
+            out_file_main.name,
             len(definitions),
             len(entities),
             len(requirements),
@@ -202,6 +233,29 @@ class DocumentNormalizer:
         )
 
         return normalized_document
+
+    def _record_normalization_log(self, doc_id: str, report: Dict[str, Any]):
+        """Records validation results into normalization_log.json."""
+        logs = []
+        if NORMALIZATION_LOG_PATH.exists():
+            try:
+                with open(NORMALIZATION_LOG_PATH, "r", encoding="utf-8") as f:
+                    logs = json.load(f)
+            except Exception:
+                logs = []
+
+        logs = [l for l in logs if l.get("document_id") != doc_id]
+        logs.append({
+            "document_id": doc_id,
+            "normalized_at": datetime.now(timezone.utc).isoformat(),
+            "status": "normalized",
+            "is_valid": report["is_valid"],
+            "checks": report["checks"],
+            "stats": report["stats"],
+        })
+
+        with open(NORMALIZATION_LOG_PATH, "w", encoding="utf-8") as f:
+            json.dump(logs, f, indent=2, ensure_ascii=False)
 
     def normalize_all_documents(self) -> Dict[str, Any]:
         """Normalizes all documents currently in data/metadata/documents.json."""
