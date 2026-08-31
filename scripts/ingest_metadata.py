@@ -386,3 +386,312 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# ============================================================
+# Standards + Standard Versions
+# ============================================================
+
+import re
+
+
+def parse_standard_number(full_number):
+    """
+    Convert:
+
+        IS 16102 (Part 1) : 2012
+
+    into:
+
+        IS 16102 (Part 1)
+
+    The year is treated as the version/publication year.
+    """
+
+    if not full_number:
+        return None
+
+    value = full_number.strip()
+
+    # Remove the trailing year
+    value = re.sub(
+        r"\s*:\s*\d{4}\s*$",
+        "",
+        value
+    )
+
+    return value.strip()
+
+
+def get_document_uuid(external_document_id):
+
+    result = (
+        supabase
+        .table("documents")
+        .select("id")
+        .eq(
+            "external_document_id",
+            external_document_id
+        )
+        .limit(1)
+        .execute()
+    )
+
+    if not result.data:
+        return None
+
+    return result.data[0]["id"]
+
+
+def ingest_standards_and_versions():
+
+    print("\n=== Ingesting standards + versions ===")
+
+    records = load_json(DOCUMENT_FILE)
+
+    standards_processed = 0
+    versions_processed = 0
+    skipped = 0
+
+    for record in records:
+
+        document_external_id = record.get(
+            "document_id"
+        )
+
+        full_standard_number = record.get(
+            "standard_or_document_number"
+        )
+
+        title = record.get("title")
+
+        # ----------------------------------------------------
+        # Only process Indian Standards
+        # ----------------------------------------------------
+
+        if not full_standard_number:
+            print(
+                f"[SKIP] {document_external_id}: "
+                "missing standard/document number"
+            )
+            skipped += 1
+            continue
+
+        if not full_standard_number.startswith("IS "):
+
+            print(
+                f"[SKIP] {document_external_id}: "
+                f"not an Indian Standard ({full_standard_number})"
+            )
+
+            skipped += 1
+            continue
+
+        # ----------------------------------------------------
+        # Parse base standard number
+        # ----------------------------------------------------
+
+        standard_number = parse_standard_number(
+            full_standard_number
+        )
+
+        if not standard_number:
+            print(
+                f"[SKIP] {document_external_id}: "
+                "could not parse standard number"
+            )
+            skipped += 1
+            continue
+
+        # ----------------------------------------------------
+        # Find or create standard
+        # ----------------------------------------------------
+
+        try:
+
+            standard_result = (
+                supabase
+                .table("standards")
+                .upsert(
+                    {
+                        "standard_number":
+                            standard_number,
+
+                        "title":
+                            title,
+
+                        "description":
+                            None,
+
+                        "status":
+                            "active",
+                    },
+                    on_conflict="standard_number"
+                )
+                .execute()
+            )
+
+            if not standard_result.data:
+                raise RuntimeError(
+                    "Standard upsert returned no data"
+                )
+
+            standard_id = standard_result.data[0]["id"]
+
+            standards_processed += 1
+
+        except Exception as e:
+
+            print(
+                f"[ERROR] {document_external_id} "
+                f"standard: {e}"
+            )
+
+            continue
+
+        # ----------------------------------------------------
+        # Find document UUID
+        # ----------------------------------------------------
+
+        document_id = get_document_uuid(
+            document_external_id
+        )
+
+        if not document_id:
+
+            print(
+                f"[SKIP] {document_external_id}: "
+                "document not found"
+            )
+
+            skipped += 1
+            continue
+
+        # ----------------------------------------------------
+        # Extract year
+        # ----------------------------------------------------
+
+        year_match = re.search(
+            r"(\d{4})\s*$",
+            full_standard_number
+        )
+
+        publication_date = None
+
+        if year_match:
+
+            year = year_match.group(1)
+
+            publication_date = f"{year}-01-01"
+
+        # ----------------------------------------------------
+        # Edition
+        # ----------------------------------------------------
+
+        edition = record.get(
+            "version_edition"
+        )
+
+        if not edition:
+
+            edition = f"Edition {year_match.group(1)}" \
+                if year_match else "Unknown"
+
+        # ----------------------------------------------------
+        # Determine status
+        # ----------------------------------------------------
+
+        record_status = (
+            record.get("status") or ""
+        ).lower()
+
+        if "withdrawn" in record_status:
+
+            version_status = "withdrawn"
+
+        elif "superseded" in record_status:
+
+            version_status = "superseded"
+
+        elif "draft" in record_status:
+
+            version_status = "draft"
+
+        else:
+
+            version_status = "active"
+
+        # ----------------------------------------------------
+        # External version ID
+        # ----------------------------------------------------
+
+        external_version_id = (
+            f"{document_external_id}-v1"
+        )
+
+        # ----------------------------------------------------
+        # Create standard version
+        # ----------------------------------------------------
+
+        version_data = {
+
+            "standard_id":
+                standard_id,
+
+            "document_id":
+                document_id,
+
+            "edition":
+                edition,
+
+            "publication_date":
+                publication_date,
+
+            "effective_date":
+                None,
+
+            "status":
+                version_status,
+
+            "external_version_id":
+                external_version_id,
+        }
+
+        try:
+
+            (
+                supabase
+                .table("standard_versions")
+                .upsert(
+                    version_data,
+                    on_conflict="external_version_id"
+                )
+                .execute()
+            )
+
+            print(
+                f"[OK] {document_external_id} → "
+                f"{standard_number} → {edition}"
+            )
+
+            versions_processed += 1
+
+        except Exception as e:
+
+            print(
+                f"[ERROR] {document_external_id} "
+                f"version: {e}"
+            )
+
+    print(
+        f"\nStandards processed: "
+        f"{standards_processed}"
+    )
+
+    print(
+        f"Versions processed: "
+        f"{versions_processed}"
+    )
+
+    print(
+        f"Skipped: {skipped}"
+    )
