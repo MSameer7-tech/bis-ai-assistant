@@ -176,7 +176,7 @@ class ExactInvertedIndex:
     # Build index
     # ============================================================
 
-    def _build_index(self):
+  def _build_index(self):
     """Build inverted posting lists directly from Chroma SQLite."""
 
     chroma_path = (
@@ -265,10 +265,6 @@ class ExactInvertedIndex:
             len(chunks),
         )
 
-        # --------------------------------------------------------
-        # Build indexes
-        # --------------------------------------------------------
-
         for chunk_id, metadata in chunks.items():
 
             text = metadata.get(
@@ -290,13 +286,12 @@ class ExactInvertedIndex:
                 metadata.get(
                     "clause_number",
                     "",
-                )
-                or ""
+                ) or ""
             )
 
-            # ----------------------------------------------------
+            # --------------------------------------------------
             # 1. Standard numbers
-            # ----------------------------------------------------
+            # --------------------------------------------------
 
             if std_num:
 
@@ -316,15 +311,14 @@ class ExactInvertedIndex:
                 )
 
                 if match:
-
                     self.standard_to_chunks.setdefault(
                         f"is{match.group(1)}",
                         set(),
                     ).add(chunk_id)
 
-            # ----------------------------------------------------
+            # --------------------------------------------------
             # 2. Cap codes / technical identifiers
-            # ----------------------------------------------------
+            # --------------------------------------------------
 
             cap_matches = re.findall(
                 r"\b("
@@ -336,15 +330,14 @@ class ExactInvertedIndex:
             )
 
             for cap in cap_matches:
-
                 self.identifier_to_chunks.setdefault(
                     self._normalize_key(cap),
                     set(),
                 ).add(chunk_id)
 
-            # ----------------------------------------------------
+            # --------------------------------------------------
             # 3. Grades
-            # ----------------------------------------------------
+            # --------------------------------------------------
 
             grades = re.findall(
                 r"\b("
@@ -360,15 +353,14 @@ class ExactInvertedIndex:
             )
 
             for grade in grades:
-
                 self.grade_to_chunks.setdefault(
                     self._normalize_key(grade),
                     set(),
                 ).add(chunk_id)
 
-            # ----------------------------------------------------
+            # --------------------------------------------------
             # 4. Canonical parameters
-            # ----------------------------------------------------
+            # --------------------------------------------------
 
             parameter_patterns = {
                 "insulation_resistance": [
@@ -417,9 +409,9 @@ class ExactInvertedIndex:
                         set(),
                     ).add(chunk_id)
 
-            # ----------------------------------------------------
-            # 5. Structured requirements if present
-            # ----------------------------------------------------
+            # --------------------------------------------------
+            # 5. Structured requirements, if available
+            # --------------------------------------------------
 
             structured = metadata.get(
                 "structured_data",
@@ -445,7 +437,6 @@ class ExactInvertedIndex:
                         )
 
                         if parameter:
-
                             self.parameter_to_chunks.setdefault(
                                 str(parameter).strip().lower(),
                                 set(),
@@ -453,7 +444,10 @@ class ExactInvertedIndex:
 
         logger.info(
             "ExactInvertedIndex built: "
-            "%d identifiers, %d standards, %d grades, %d parameter keys",
+            "%d identifiers, "
+            "%d standards, "
+            "%d grades, "
+            "%d parameter keys",
             len(self.identifier_to_chunks),
             len(self.standard_to_chunks),
             len(self.grade_to_chunks),
@@ -464,7 +458,6 @@ class ExactInvertedIndex:
         logger.exception(
             "Failed to build ExactInvertedIndex from Chroma"
         )
-
             # ----------------------------------------------------
             # Text
             # ----------------------------------------------------
