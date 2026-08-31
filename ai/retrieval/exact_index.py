@@ -15,51 +15,50 @@ import logging
 import re
 import sqlite3
 from pathlib import Path
-from typing import Dict, List, Set, Optional
+from typing import Dict, Set, Optional
 
 logger = logging.getLogger(__name__)
 
 
 class ExactInvertedIndex:
-    """Inverted index mapping exact technical tokens to chunk IDs."""
+    """
+    Exact inverted index built from the local Chroma SQLite database.
 
-    def __init__(self, chroma_path: Optional[Path] = None):
-        self.chroma_path = chroma_path or (
-            Path(__file__).resolve().parents[2]
-            / "data"
-            / "vector_store"
-            / "chroma"
-            / "chroma.sqlite3"
+    Chroma mapping:
+
+        embeddings.id
+              │
+              └── embedding_metadata.id
+                       │
+                       ├── standard_number
+                       ├── document_id
+                       ├── source_id
+                       ├── clause_number
+                       └── chroma:document
+
+    embedding_id is the external chunk ID, e.g.:
+
+        DOC-001-v028::3.1::DEF-001
+    """
+
+    def __init__(
+        self,
+        chroma_path: Optional[str] = None,
+    ):
+        self.chroma_path = Path(
+            chroma_path
+            or "data/vector_store/chroma/chroma.sqlite3"
         )
 
         self.identifier_to_chunks: Dict[str, Set[str]] = {}
-        self.parameter_to_chunks: Dict[str, Set[str]] = {}
-        self.grade_to_chunks: Dict[str, Set[str]] = {}
         self.standard_to_chunks: Dict[str, Set[str]] = {}
+        self.grade_to_chunks: Dict[str, Set[str]] = {}
+        self.parameter_to_chunks: Dict[str, Set[str]] = {}
 
         self._build_index()
 
-    # ---------------------------------------------------------
-    # Normalization
-    # ---------------------------------------------------------
-
     @staticmethod
-    def _normalize_key(token: str) -> str:
-        return (
-            str(token)
-            .strip()
-            .lower()
-            .replace(" ", "")
-            .replace("-", "")
-            .replace("_", "")
-        )
-
-    # ---------------------------------------------------------
-    # Index helper
-    # ---------------------------------------------------------
-
     def _add(
-        self,
         index: Dict[str, Set[str]],
         key: str,
         chunk_id: str,
@@ -67,21 +66,61 @@ class ExactInvertedIndex:
         if not key or not chunk_id:
             return
 
-        index.setdefault(
-            self._normalize_key(key),
-            set(),
-        ).add(chunk_id)
+        key = str(key).strip().lower()
 
-    # ---------------------------------------------------------
-    # Chroma loading
-    # ---------------------------------------------------------
+        if not key:
+            return
+
+        index.setdefault(key, set()).add(chunk_id)
+
+    @staticmethod
+    def _normalize_standard(value: str) -> Set[str]:
+        """
+        Generate several lookup forms for:
+
+            IS 16102 (Part 1) : 2012
+
+        including:
+
+            is 16102 (part 1) : 2012
+            is16102
+            16102
+        """
+
+        value = str(value).strip()
+
+        if not value:
+            return set()
+
+        result = {
+            value.lower(),
+        }
+
+        match = re.search(
+            r"\bIS\s*(\d+)",
+            value,
+            re.IGNORECASE,
+        )
+
+        if match:
+            number = match.group(1)
+
+            result.add(f"is {number}".lower())
+            result.add(f"is{number}".lower())
+            result.add(number.lower())
+
+        return result
 
     def _build_index(self) -> None:
-        """Build exact indexes directly from Chroma SQLite."""
+
+        logger.info(
+            "Building ExactInvertedIndex from Chroma: %s",
+            self.chroma_path,
+        )
 
         if not self.chroma_path.exists():
-            logger.warning(
-                "Chroma database does not exist: %s",
+            logger.error(
+                "Chroma database not found: %s",
                 self.chroma_path,
             )
             return
@@ -91,73 +130,55 @@ class ExactInvertedIndex:
                 f"file:{self.chroma_path}?mode=ro",
                 uri=True,
             )
-        except Exception as exc:
-            logger.exception(
-                "Unable to open Chroma database: %s",
-                exc,
-            )
-            return
 
-        try:
             cur = conn.cursor()
 
-            # -------------------------------------------------
-            # Locate the collection
-            # -------------------------------------------------
+            # --------------------------------------------------
+            # Verify Chroma data
+            # --------------------------------------------------
 
             cur.execute(
-                """
-                SELECT id
-                FROM collections
-                WHERE name = ?
-                LIMIT 1
-                """,
-                ("bis_standards_knowledge",),
+                "SELECT COUNT(*) FROM embeddings"
             )
 
-            collection_row = cur.fetchone()
+            embedding_count = cur.fetchone()[0]
 
-            if not collection_row:
-                logger.warning(
-                    "Chroma collection 'bis_standards_knowledge' not found"
-                )
-                return
+            logger.info(
+                "Chroma embeddings available: %d",
+                embedding_count,
+            )
 
-            collection_id = collection_row[0]
-
-            # -------------------------------------------------
-            # Get embeddings belonging to collection
-            # -------------------------------------------------
+            # --------------------------------------------------
+            # Load embeddings
+            #
+            # embeddings.id:
+            #     internal integer ID
+            #
+            # embeddings.embedding_id:
+            #     external chunk ID
+            # --------------------------------------------------
 
             cur.execute(
                 """
-                SELECT
-                    e.id,
-                    e.embedding_id
-                FROM embeddings e
-                JOIN segments s
-                    ON s.id = e.segment_id
-                WHERE s.collection = ?
-                ORDER BY e.id
-                """,
-                (collection_id,),
+                SELECT id, embedding_id
+                FROM embeddings
+                WHERE embedding_id IS NOT NULL
+                ORDER BY id
+                """
             )
 
             embeddings = cur.fetchall()
 
             logger.info(
-                "Loading %d Chroma embeddings for exact index",
+                "Loading %d Chroma chunk IDs",
                 len(embeddings),
             )
 
             for embedding_pk, chunk_id in embeddings:
 
-                if not chunk_id:
-                    continue
-
-                # ---------------------------------------------
-                # Metadata
-                # ---------------------------------------------
+                # --------------------------------------------------
+                # Load metadata for this embedding
+                # --------------------------------------------------
 
                 cur.execute(
                     """
@@ -187,14 +208,40 @@ class ExactInvertedIndex:
 
                     if string_value is not None:
                         value = string_value
+
                     elif int_value is not None:
                         value = int_value
+
                     elif float_value is not None:
                         value = float_value
+
                     else:
                         value = bool_value
 
                     metadata[key] = value
+
+                # --------------------------------------------------
+                # Standard number
+                # --------------------------------------------------
+
+                standard_number = metadata.get(
+                    "standard_number"
+                )
+
+                if standard_number:
+
+                    for standard_key in self._normalize_standard(
+                        standard_number
+                    ):
+                        self._add(
+                            self.standard_to_chunks,
+                            standard_key,
+                            chunk_id,
+                        )
+
+                # --------------------------------------------------
+                # Full document text
+                # --------------------------------------------------
 
                 text = metadata.get(
                     "chroma:document",
@@ -206,220 +253,141 @@ class ExactInvertedIndex:
 
                 text_lower = text.lower()
 
-                standard_number = metadata.get(
-                    "standard_number",
-                    "",
-                )
+                # --------------------------------------------------
+                # Technical identifiers
+                # --------------------------------------------------
 
-                clause_number = str(
-                    metadata.get(
-                        "clause_number",
-                        "",
-                    )
-                    or ""
-                )
+                identifier_patterns = [
+                    r"\bB22d\b",
+                    r"\bB15d\b",
+                    r"\bGX53\b",
+                    r"\bE14\b",
+                    r"\bE17\b",
+                    r"\bE26\b",
+                    r"\bE27\b",
+                    r"\bE40\b",
+                    r"\bG4\b",
+                    r"\bG9\b",
+                    r"\bGU10\b",
+                    r"\bR7s\b",
+                ]
 
-                # =============================================
-                # 1. Standard number
-                # =============================================
+                for pattern in identifier_patterns:
 
-                if standard_number:
-
-                    self._add(
-                        self.standard_to_chunks,
-                        standard_number,
-                        chunk_id,
-                    )
-
-                    match = re.search(
-                        r"\bIS\s*(\d+)",
-                        str(standard_number),
+                    for match in re.findall(
+                        pattern,
+                        text,
                         re.IGNORECASE,
-                    )
-
-                    if match:
+                    ):
                         self._add(
-                            self.standard_to_chunks,
-                            f"IS {match.group(1)}",
+                            self.identifier_to_chunks,
+                            match,
                             chunk_id,
                         )
 
-                # =============================================
-                # 2. Technical identifiers
-                # =============================================
+                # --------------------------------------------------
+                # Material / product grades
+                # --------------------------------------------------
 
-                cap_matches = re.findall(
-                    r"\b("
-                    r"B22d|B15d|GX53|E17|E27|E14|E26|"
-                    r"E40|G9|G4|GU10|R7s"
-                    r")\b",
-                    text,
-                    re.IGNORECASE,
-                )
+                grade_patterns = [
+                    r"\bFe\s*415D\b",
+                    r"\bFe\s*415\b",
+                    r"\bFe\s*500D\b",
+                    r"\bFe\s*500\b",
+                    r"\bFe\s*550D\b",
+                    r"\bFe\s*550\b",
+                    r"\bFe\s*600\b",
+                    r"\bOPC\s*33\b",
+                    r"\bOPC\s*43\b",
+                    r"\bOPC\s*53\b",
+                ]
 
-                for cap in cap_matches:
-                    self._add(
-                        self.identifier_to_chunks,
-                        cap,
-                        chunk_id,
-                    )
+                for pattern in grade_patterns:
 
-                # =============================================
-                # 3. Grades
-                # =============================================
+                    for match in re.findall(
+                        pattern,
+                        text,
+                        re.IGNORECASE,
+                    ):
+                        self._add(
+                            self.grade_to_chunks,
+                            match,
+                            chunk_id,
+                        )
 
-                grades = re.findall(
-                    r"\b("
-                    r"Fe\s*550D|Fe\s*550|"
-                    r"Fe\s*500D|Fe\s*500|"
-                    r"Fe\s*415D|Fe\s*415|"
-                    r"Fe\s*600|"
-                    r"53\s*Grade|43\s*Grade|33\s*Grade|"
-                    r"OPC\s*53|OPC\s*43|OPC\s*33"
-                    r")\b",
-                    text,
-                    re.IGNORECASE,
-                )
+                # --------------------------------------------------
+                # Canonical parameters
+                # --------------------------------------------------
 
-                for grade in grades:
-                    self._add(
-                        self.grade_to_chunks,
-                        grade,
-                        chunk_id,
-                    )
+                parameter_patterns = {
+                    "insulation_resistance": [
+                        "insulation resistance",
+                    ],
 
-                # =============================================
-                # 4. Structured parameters
-                # =============================================
+                    "yield_stress": [
+                        "yield stress",
+                        "proof stress",
+                        "0.2 percent proof stress",
+                        "0.2% proof stress",
+                    ],
 
-                structured = metadata.get(
-                    "structured_data",
-                    {},
-                )
+                    "percentage_elongation": [
+                        "percentage elongation",
+                        "elongation",
+                    ],
 
-                if isinstance(structured, dict):
+                    "torque_moment": [
+                        "torque",
+                        "torsion moment",
+                    ],
 
-                    requirements = structured.get(
-                        "requirements",
-                        [],
-                    )
+                    "compressive_strength": [
+                        "compressive strength",
+                    ],
 
-                    if isinstance(requirements, list):
+                    "air_delivery": [
+                        "air delivery",
+                    ],
 
-                        for req in requirements:
+                    "proof_pressure": [
+                        "proof pressure",
+                        "hydraulic pressure",
+                    ],
 
-                            if not isinstance(req, dict):
-                                continue
-
-                            parameter = req.get(
-                                "parameter",
-                                "",
-                            )
-
-                            if parameter:
-                                self._add(
-                                    self.parameter_to_chunks,
-                                    parameter,
-                                    chunk_id,
-                                )
-
-                # =============================================
-                # 5. Keyword parameter detection
-                # =============================================
-
-                if (
-                    "insulation resistance"
-                    in text_lower
-                    or clause_number.startswith("8")
-                ):
-                    self._add(
-                        self.parameter_to_chunks,
-                        "insulation_resistance",
-                        chunk_id,
-                    )
-
-                if (
-                    "yield stress" in text_lower
-                    or "0.2 percent proof stress" in text_lower
-                    or "0.2% proof stress" in text_lower
-                ):
-                    self._add(
-                        self.parameter_to_chunks,
-                        "yield_stress",
-                        chunk_id,
-                    )
-
-                if (
-                    "elongation" in text_lower
-                    or "percentage elongation" in text_lower
-                ):
-                    self._add(
-                        self.parameter_to_chunks,
-                        "percentage_elongation",
-                        chunk_id,
-                    )
-
-                if (
-                    "torque" in text_lower
-                    or "torsion moment" in text_lower
-                    or clause_number.startswith("9")
-                ):
-                    self._add(
-                        self.parameter_to_chunks,
-                        "torque_moment",
-                        chunk_id,
-                    )
-
-                if "compressive strength" in text_lower:
-                    self._add(
-                        self.parameter_to_chunks,
-                        "compressive_strength",
-                        chunk_id,
-                    )
-
-                if "air delivery" in text_lower:
-                    self._add(
-                        self.parameter_to_chunks,
-                        "air_delivery",
-                        chunk_id,
-                    )
-
-                if (
-                    "proof pressure" in text_lower
-                    or "hydraulic" in text_lower
-                ):
-                    self._add(
-                        self.parameter_to_chunks,
-                        "proof_pressure",
-                        chunk_id,
-                    )
-
-                if (
-                    "mass" in text_lower
-                    and (
-                        "helmet" in text_lower
-                        or "1500" in text_lower
-                    )
-                ):
-                    self._add(
-                        self.parameter_to_chunks,
+                    "mass": [
                         "mass",
-                        chunk_id,
-                    )
+                    ],
 
-                if "ph" in text_lower:
-                    self._add(
-                        self.parameter_to_chunks,
+                    "ph": [
                         "ph",
-                        chunk_id,
-                    )
+                    ],
+                }
 
-        finally:
+                for parameter, patterns in parameter_patterns.items():
+
+                    if any(
+                        pattern in text_lower
+                        for pattern in patterns
+                    ):
+                        self._add(
+                            self.parameter_to_chunks,
+                            parameter,
+                            chunk_id,
+                        )
+
             conn.close()
+
+        except Exception:
+            logger.exception(
+                "Failed to build ExactInvertedIndex"
+            )
+            return
 
         logger.info(
             "ExactInvertedIndex built: "
-            "%d identifiers, %d standards, %d grades, "
+            "%d identifiers, "
+            "%d standards, "
+            "%d grades, "
             "%d parameter keys",
             len(self.identifier_to_chunks),
             len(self.standard_to_chunks),
@@ -427,16 +395,12 @@ class ExactInvertedIndex:
             len(self.parameter_to_chunks),
         )
 
-    # ---------------------------------------------------------
-    # Query
-    # ---------------------------------------------------------
-
     def get_matching_chunks(
         self,
-        exact_identifiers: Optional[List[str]] = None,
-        parameter: Optional[str] = None,
-        grade: Optional[str] = None,
-        standard_code: Optional[str] = None,
+        exact_identifiers=None,
+        grade=None,
+        standard_code=None,
+        parameter=None,
     ) -> Set[str]:
 
         matches: Set[str] = set()
@@ -445,20 +409,30 @@ class ExactInvertedIndex:
 
             for identifier in exact_identifiers:
 
-                normalized = self._normalize_key(
-                    identifier
-                )
-
                 matches.update(
                     self.identifier_to_chunks.get(
-                        normalized,
+                        str(identifier).lower(),
                         set(),
                     )
                 )
 
+        if grade:
+
+            matches.update(
+                self.grade_to_chunks.get(
+                    str(grade).lower(),
+                    set(),
+                )
+            )
+
+        if standard_code:
+
+            for key in self._normalize_standard(
+                standard_code
+            ):
                 matches.update(
-                    self.grade_to_chunks.get(
-                        normalized,
+                    self.standard_to_chunks.get(
+                        key,
                         set(),
                     )
                 )
@@ -467,33 +441,7 @@ class ExactInvertedIndex:
 
             matches.update(
                 self.parameter_to_chunks.get(
-                    parameter,
-                    set(),
-                )
-            )
-
-        if grade:
-
-            normalized = self._normalize_key(
-                grade
-            )
-
-            matches.update(
-                self.grade_to_chunks.get(
-                    normalized,
-                    set(),
-                )
-            )
-
-        if standard_code:
-
-            normalized = self._normalize_key(
-                standard_code
-            )
-
-            matches.update(
-                self.standard_to_chunks.get(
-                    normalized,
+                    str(parameter).lower(),
                     set(),
                 )
             )
