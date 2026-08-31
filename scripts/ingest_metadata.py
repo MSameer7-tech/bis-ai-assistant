@@ -249,145 +249,7 @@ def ingest_documents():
 
             source_uuid = source_result.data[0]["id"]
 
-        # ----------------------------------------------------
-        # Determine document type
-        # ----------------------------------------------------
-
-        standard_number = record.get(
-            "standard_or_document_number"
-        )
-
-        filename = (
-            record.get("file_name") or ""
-        ).lower()
-
-        if (
-            standard_number
-            and standard_number.startswith("IS ")
-        ):
-            document_type = "standard"
-
-        elif "cro" in filename:
-            document_type = "qco"
-
-        else:
-            document_type = "other"
-
-        # ----------------------------------------------------
-        # Get source URL
-        # ----------------------------------------------------
-
-        source_url = None
-
-        if source_uuid:
-
-            source_result = (
-                supabase
-                .table("sources")
-                .select("url")
-                .eq("id", source_uuid)
-                .limit(1)
-                .execute()
-            )
-
-            if source_result.data:
-                source_url = source_result.data[0]["url"]
-
-        # ----------------------------------------------------
-        # Build document
-        # ----------------------------------------------------
-
-        document_data = {
-
-            "external_document_id":
-                external_document_id,
-
-            "source_id":
-                source_uuid,
-
-            "document_type":
-                document_type,
-
-            "title":
-                title,
-
-            "file_name":
-                record.get("file_name"),
-
-            "storage_path":
-                record.get("file_path"),
-
-            "source_url":
-                source_url,
-
-            "version":
-                record.get("version_edition"),
-
-            "published_date":
-                None,
-
-            "checksum":
-                record.get("file_sha256"),
-        }
-
-        # ----------------------------------------------------
-        # Upsert
-        # ----------------------------------------------------
-
-        try:
-
-            (
-                supabase
-                .table("documents")
-                .upsert(
-                    document_data,
-                    on_conflict="external_document_id"
-                )
-                .execute()
-            )
-
-            print(
-                f"[OK] {external_document_id} → {title}"
-            )
-
-            processed += 1
-
-        except Exception as e:
-
-            print(
-                f"[ERROR] {external_document_id}: {e}"
-            )
-
-    print(
-        f"\nDocuments complete: "
-        f"{processed} processed, "
-        f"{skipped} skipped."
-    )
-
-
-# ============================================================
-# Main
-# ============================================================
-
-def main():
-
-    print("============================================")
-    print(" BIS AI Assistant Metadata Ingestion")
-    print("============================================")
-
-    ingest_sources()
-
-    ingest_documents()
-
-    print("\n============================================")
-    print(" Metadata ingestion completed")
-    print("============================================")
-
-
-if __name__ == "__main__":
-    main()
-
-# ============================================================
+        # ============================================================
 # Standards + Standard Versions
 # ============================================================
 
@@ -695,3 +557,139 @@ def ingest_standards_and_versions():
     print(
         f"Skipped: {skipped}"
     )
+
+        # ----------------------------------------------------
+        # Determine document type
+        # ----------------------------------------------------
+
+        standard_number = record.get(
+            "standard_or_document_number"
+        )
+
+        filename = (
+            record.get("file_name") or ""
+        ).lower()
+
+        if (
+            standard_number
+            and standard_number.startswith("IS ")
+        ):
+            document_type = "standard"
+
+        elif "cro" in filename:
+            document_type = "qco"
+
+        else:
+            document_type = "other"
+
+        # ----------------------------------------------------
+        # Get source URL
+        # ----------------------------------------------------
+
+        source_url = None
+
+        if source_uuid:
+
+            source_result = (
+                supabase
+                .table("sources")
+                .select("url")
+                .eq("id", source_uuid)
+                .limit(1)
+                .execute()
+            )
+
+            if source_result.data:
+                source_url = source_result.data[0]["url"]
+
+        # ----------------------------------------------------
+        # Build document
+        # ----------------------------------------------------
+
+        document_data = {
+
+            "external_document_id":
+                external_document_id,
+
+            "source_id":
+                source_uuid,
+
+            "document_type":
+                document_type,
+
+            "title":
+                title,
+
+            "file_name":
+                record.get("file_name"),
+
+            "storage_path":
+                record.get("file_path"),
+
+            "source_url":
+                source_url,
+
+            "version":
+                record.get("version_edition"),
+
+            "published_date":
+                None,
+
+            "checksum":
+                record.get("file_sha256"),
+        }
+
+        # ----------------------------------------------------
+        # Upsert
+        # ----------------------------------------------------
+
+        try:
+
+            (
+                supabase
+                .table("documents")
+                .upsert(
+                    document_data,
+                    on_conflict="external_document_id"
+                )
+                .execute()
+            )
+
+            print(
+                f"[OK] {external_document_id} → {title}"
+            )
+
+            processed += 1
+
+        except Exception as e:
+
+            print(
+                f"[ERROR] {external_document_id}: {e}"
+            )
+
+    print(
+        f"\nDocuments complete: "
+        f"{processed} processed, "
+        f"{skipped} skipped."
+    )
+
+
+# ============================================================
+# Main
+# ============================================================
+
+def main():
+
+    print("============================================")
+    print(" BIS AI Assistant Metadata Ingestion")
+    print("============================================")
+
+    ingest_sources()
+
+    ingest_documents()
+
+    ingest_standards_and_versions()
+
+    print("\n============================================")
+    print(" Metadata ingestion completed")
+    print("============================================")
