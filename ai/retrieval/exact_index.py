@@ -177,20 +177,293 @@ class ExactInvertedIndex:
     # ============================================================
 
     def _build_index(self):
-        """Build inverted posting lists from Chroma."""
+    """Build inverted posting lists directly from Chroma SQLite."""
 
-        chunks = self._load_chroma_chunks()
+    chroma_path = (
+        Path(__file__).resolve().parents[2]
+        / "data"
+        / "vector_store"
+        / "chroma"
+        / "chroma.sqlite3"
+    )
 
-        if not chunks:
-            logger.warning(
-                "No Chroma chunks available for ExactInvertedIndex"
+    if not chroma_path.exists():
+        logger.warning(
+            "Chroma database does not exist: %s",
+            chroma_path,
+        )
+        return
+
+    logger.info(
+        "Building ExactInvertedIndex from Chroma: %s",
+        chroma_path,
+    )
+
+    try:
+        import sqlite3
+
+        conn = sqlite3.connect(
+            f"file:{chroma_path}?mode=ro",
+            uri=True,
+        )
+
+        cur = conn.cursor()
+
+        cur.execute("""
+            SELECT
+                e.id,
+                e.embedding_id,
+                em.key,
+                em.string_value,
+                em.int_value,
+                em.float_value,
+                em.bool_value
+            FROM embeddings e
+            LEFT JOIN embedding_metadata em
+                ON em.id = e.id
+            ORDER BY e.id
+        """)
+
+        rows = cur.fetchall()
+
+        chunks = {}
+
+        for (
+            embedding_db_id,
+            chunk_id,
+            key,
+            string_value,
+            int_value,
+            float_value,
+            bool_value,
+        ) in rows:
+
+            if not chunk_id:
+                continue
+
+            if chunk_id not in chunks:
+                chunks[chunk_id] = {}
+
+            if key is None:
+                continue
+
+            if string_value is not None:
+                value = string_value
+            elif int_value is not None:
+                value = int_value
+            elif float_value is not None:
+                value = float_value
+            else:
+                value = bool_value
+
+            chunks[chunk_id][key] = value
+
+        conn.close()
+
+        logger.info(
+            "Loaded %d unique chunks from Chroma",
+            len(chunks),
+        )
+
+        # --------------------------------------------------------
+        # Build indexes
+        # --------------------------------------------------------
+
+        for chunk_id, metadata in chunks.items():
+
+            text = metadata.get(
+                "chroma:document",
+                "",
             )
-            return
 
-        for item in chunks:
+            if not isinstance(text, str):
+                text = str(text or "")
 
-            chunk_id = item["chunk_id"]
-            metadata = item["metadata"]
+            text_lower = text.lower()
+
+            std_num = metadata.get(
+                "standard_number",
+                "",
+            )
+
+            clause_num = str(
+                metadata.get(
+                    "clause_number",
+                    "",
+                )
+                or ""
+            )
+
+            # ----------------------------------------------------
+            # 1. Standard numbers
+            # ----------------------------------------------------
+
+            if std_num:
+
+                clean_std = self._normalize_key(
+                    str(std_num)
+                )
+
+                self.standard_to_chunks.setdefault(
+                    clean_std,
+                    set(),
+                ).add(chunk_id)
+
+                match = re.search(
+                    r"\bIS\s*(\d+)",
+                    str(std_num),
+                    re.IGNORECASE,
+                )
+
+                if match:
+
+                    self.standard_to_chunks.setdefault(
+                        f"is{match.group(1)}",
+                        set(),
+                    ).add(chunk_id)
+
+            # ----------------------------------------------------
+            # 2. Cap codes / technical identifiers
+            # ----------------------------------------------------
+
+            cap_matches = re.findall(
+                r"\b("
+                r"B22d|B15d|GX53|E17|E27|E14|E26|E40|"
+                r"G9|G4|GU10|R7s"
+                r")\b",
+                text,
+                re.IGNORECASE,
+            )
+
+            for cap in cap_matches:
+
+                self.identifier_to_chunks.setdefault(
+                    self._normalize_key(cap),
+                    set(),
+                ).add(chunk_id)
+
+            # ----------------------------------------------------
+            # 3. Grades
+            # ----------------------------------------------------
+
+            grades = re.findall(
+                r"\b("
+                r"Fe\s*550D|Fe\s*550|"
+                r"Fe\s*500D|Fe\s*500|"
+                r"Fe\s*415D|Fe\s*415|"
+                r"Fe\s*600|"
+                r"53\s*Grade|43\s*Grade|33\s*Grade|"
+                r"OPC\s*53|OPC\s*43|OPC\s*33"
+                r")\b",
+                text,
+                re.IGNORECASE,
+            )
+
+            for grade in grades:
+
+                self.grade_to_chunks.setdefault(
+                    self._normalize_key(grade),
+                    set(),
+                ).add(chunk_id)
+
+            # ----------------------------------------------------
+            # 4. Canonical parameters
+            # ----------------------------------------------------
+
+            parameter_patterns = {
+                "insulation_resistance": [
+                    "insulation resistance",
+                ],
+                "yield_stress": [
+                    "yield stress",
+                    "proof stress",
+                    "0.2 percent proof stress",
+                    "0.2% proof stress",
+                ],
+                "percentage_elongation": [
+                    "percentage elongation",
+                    "elongation",
+                ],
+                "torque_moment": [
+                    "torque",
+                    "torsion moment",
+                ],
+                "compressive_strength": [
+                    "compressive strength",
+                ],
+                "air_delivery": [
+                    "air delivery",
+                ],
+                "proof_pressure": [
+                    "proof pressure",
+                    "hydraulic",
+                ],
+                "mass": [
+                    "mass",
+                ],
+                "ph": [
+                    "ph",
+                ],
+            }
+
+            for parameter, keywords in parameter_patterns.items():
+
+                if any(
+                    keyword in text_lower
+                    for keyword in keywords
+                ):
+                    self.parameter_to_chunks.setdefault(
+                        parameter,
+                        set(),
+                    ).add(chunk_id)
+
+            # ----------------------------------------------------
+            # 5. Structured requirements if present
+            # ----------------------------------------------------
+
+            structured = metadata.get(
+                "structured_data",
+                {},
+            )
+
+            if isinstance(structured, dict):
+
+                requirements = structured.get(
+                    "requirements",
+                    [],
+                )
+
+                if isinstance(requirements, list):
+
+                    for req in requirements:
+
+                        if not isinstance(req, dict):
+                            continue
+
+                        parameter = req.get(
+                            "parameter"
+                        )
+
+                        if parameter:
+
+                            self.parameter_to_chunks.setdefault(
+                                str(parameter).strip().lower(),
+                                set(),
+                            ).add(chunk_id)
+
+        logger.info(
+            "ExactInvertedIndex built: "
+            "%d identifiers, %d standards, %d grades, %d parameter keys",
+            len(self.identifier_to_chunks),
+            len(self.standard_to_chunks),
+            len(self.grade_to_chunks),
+            len(self.parameter_to_chunks),
+        )
+
+    except Exception:
+        logger.exception(
+            "Failed to build ExactInvertedIndex from Chroma"
+        )
 
             # ----------------------------------------------------
             # Text
