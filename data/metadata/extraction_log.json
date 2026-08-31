@@ -105,10 +105,1630 @@
     "status": "extraction_successful"
   },
   {
+    "document_id": "DOC-036",
+    "source_id": "SRC-036",
+    "start_time": "2026-08-31T06:16:14.661192+00:00",
+    "completion_time": "2026-08-31T06:16:14.682818+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-036.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-037",
+    "source_id": "SRC-037",
+    "start_time": "2026-08-31T06:16:14.700138+00:00",
+    "completion_time": "2026-08-31T06:16:14.719140+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-037.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-038",
+    "source_id": "SRC-038",
+    "start_time": "2026-08-31T06:16:14.736365+00:00",
+    "completion_time": "2026-08-31T06:16:14.757784+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-038.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-039",
+    "source_id": "SRC-039",
+    "start_time": "2026-08-31T06:16:14.776341+00:00",
+    "completion_time": "2026-08-31T06:16:14.794723+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-039.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-040",
+    "source_id": "SRC-040",
+    "start_time": "2026-08-31T06:16:14.811652+00:00",
+    "completion_time": "2026-08-31T06:16:14.830673+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-040.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-041",
+    "source_id": "SRC-041",
+    "start_time": "2026-08-31T06:16:14.848191+00:00",
+    "completion_time": "2026-08-31T06:16:14.867350+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-041.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-042",
+    "source_id": "SRC-042",
+    "start_time": "2026-08-31T06:16:14.884621+00:00",
+    "completion_time": "2026-08-31T06:16:14.903267+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-042.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-043",
+    "source_id": "SRC-043",
+    "start_time": "2026-08-31T06:16:14.920941+00:00",
+    "completion_time": "2026-08-31T06:16:14.939848+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-043.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-044",
+    "source_id": "SRC-044",
+    "start_time": "2026-08-31T06:16:14.958145+00:00",
+    "completion_time": "2026-08-31T06:16:14.976692+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-044.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-045",
+    "source_id": "SRC-045",
+    "start_time": "2026-08-31T06:16:14.995018+00:00",
+    "completion_time": "2026-08-31T06:16:15.014261+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-045.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-046",
+    "source_id": "SRC-046",
+    "start_time": "2026-08-31T06:16:15.033183+00:00",
+    "completion_time": "2026-08-31T06:16:15.055053+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-046.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-047",
+    "source_id": "SRC-047",
+    "start_time": "2026-08-31T06:16:15.073616+00:00",
+    "completion_time": "2026-08-31T06:16:15.092152+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-047.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-048",
+    "source_id": "SRC-048",
+    "start_time": "2026-08-31T06:16:15.111276+00:00",
+    "completion_time": "2026-08-31T06:16:15.129980+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-048.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-049",
+    "source_id": "SRC-049",
+    "start_time": "2026-08-31T06:16:15.149546+00:00",
+    "completion_time": "2026-08-31T06:16:15.168099+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-049.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-050",
+    "source_id": "SRC-050",
+    "start_time": "2026-08-31T06:16:15.187000+00:00",
+    "completion_time": "2026-08-31T06:16:15.205768+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-050.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-051",
+    "source_id": "SRC-051",
+    "start_time": "2026-08-31T06:16:15.225361+00:00",
+    "completion_time": "2026-08-31T06:16:15.244558+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-051.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-052",
+    "source_id": "SRC-052",
+    "start_time": "2026-08-31T06:16:15.264093+00:00",
+    "completion_time": "2026-08-31T06:16:15.282810+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-052.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-053",
+    "source_id": "SRC-053",
+    "start_time": "2026-08-31T06:16:15.303080+00:00",
+    "completion_time": "2026-08-31T06:16:15.323225+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-053.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-054",
+    "source_id": "SRC-054",
+    "start_time": "2026-08-31T06:16:15.343891+00:00",
+    "completion_time": "2026-08-31T06:16:15.365663+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-054.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-055",
+    "source_id": "SRC-055",
+    "start_time": "2026-08-31T06:22:04.767743+00:00",
+    "completion_time": "2026-08-31T06:22:04.792740+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-055.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-056",
+    "source_id": "SRC-056",
+    "start_time": "2026-08-31T06:22:04.839728+00:00",
+    "completion_time": "2026-08-31T06:22:04.860006+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-056.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-057",
+    "source_id": "SRC-057",
+    "start_time": "2026-08-31T06:22:04.898861+00:00",
+    "completion_time": "2026-08-31T06:22:04.918878+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-057.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-058",
+    "source_id": "SRC-058",
+    "start_time": "2026-08-31T06:22:04.954931+00:00",
+    "completion_time": "2026-08-31T06:22:04.975386+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-058.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-059",
+    "source_id": "SRC-059",
+    "start_time": "2026-08-31T06:22:05.004763+00:00",
+    "completion_time": "2026-08-31T06:22:05.025286+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-059.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-060",
+    "source_id": "SRC-060",
+    "start_time": "2026-08-31T06:22:05.064249+00:00",
+    "completion_time": "2026-08-31T06:22:05.085097+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-060.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-061",
+    "source_id": "SRC-061",
+    "start_time": "2026-08-31T06:22:05.124945+00:00",
+    "completion_time": "2026-08-31T06:22:05.148119+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-061.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-062",
+    "source_id": "SRC-062",
+    "start_time": "2026-08-31T06:22:05.186911+00:00",
+    "completion_time": "2026-08-31T06:22:05.207808+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-062.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-063",
+    "source_id": "SRC-063",
+    "start_time": "2026-08-31T06:22:05.246573+00:00",
+    "completion_time": "2026-08-31T06:22:05.268143+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-063.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-064",
+    "source_id": "SRC-064",
+    "start_time": "2026-08-31T06:22:05.310057+00:00",
+    "completion_time": "2026-08-31T06:22:05.331213+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-064.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-065",
+    "source_id": "SRC-065",
+    "start_time": "2026-08-31T06:22:05.365630+00:00",
+    "completion_time": "2026-08-31T06:22:05.388973+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-065.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-066",
+    "source_id": "SRC-066",
+    "start_time": "2026-08-31T06:22:05.435548+00:00",
+    "completion_time": "2026-08-31T06:22:05.458554+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-066.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-067",
+    "source_id": "SRC-067",
+    "start_time": "2026-08-31T06:22:05.498997+00:00",
+    "completion_time": "2026-08-31T06:22:05.520008+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-067.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-068",
+    "source_id": "SRC-068",
+    "start_time": "2026-08-31T06:27:07.848618+00:00",
+    "completion_time": "2026-08-31T06:27:07.874471+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-068.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-069",
+    "source_id": "SRC-069",
+    "start_time": "2026-08-31T06:27:07.927930+00:00",
+    "completion_time": "2026-08-31T06:27:07.967213+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-069.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-070",
+    "source_id": "SRC-070",
+    "start_time": "2026-08-31T06:27:08.070797+00:00",
+    "completion_time": "2026-08-31T06:27:08.098363+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-070.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-071",
+    "source_id": "SRC-071",
+    "start_time": "2026-08-31T06:27:08.156723+00:00",
+    "completion_time": "2026-08-31T06:27:08.176437+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-071.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-072",
+    "source_id": "SRC-072",
+    "start_time": "2026-08-31T06:27:08.217079+00:00",
+    "completion_time": "2026-08-31T06:27:08.236684+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-072.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-073",
+    "source_id": "SRC-073",
+    "start_time": "2026-08-31T06:27:08.279566+00:00",
+    "completion_time": "2026-08-31T06:27:08.299631+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-073.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-074",
+    "source_id": "SRC-074",
+    "start_time": "2026-08-31T06:27:08.341253+00:00",
+    "completion_time": "2026-08-31T06:27:08.362996+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-074.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-075",
+    "source_id": "SRC-075",
+    "start_time": "2026-08-31T06:27:08.405915+00:00",
+    "completion_time": "2026-08-31T06:27:08.427236+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-075.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-076",
+    "source_id": "SRC-076",
+    "start_time": "2026-08-31T06:27:08.480317+00:00",
+    "completion_time": "2026-08-31T06:27:08.502875+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-076.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-077",
+    "source_id": "SRC-077",
+    "start_time": "2026-08-31T06:27:08.549847+00:00",
+    "completion_time": "2026-08-31T06:27:08.570629+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-077.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-078",
+    "source_id": "SRC-078",
+    "start_time": "2026-08-31T06:32:57.514643+00:00",
+    "completion_time": "2026-08-31T06:32:57.540566+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-078.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-079",
+    "source_id": "SRC-079",
+    "start_time": "2026-08-31T06:32:57.602780+00:00",
+    "completion_time": "2026-08-31T06:32:57.625720+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-079.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-080",
+    "source_id": "SRC-080",
+    "start_time": "2026-08-31T06:32:57.671907+00:00",
+    "completion_time": "2026-08-31T06:32:57.692231+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-080.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-081",
+    "source_id": "SRC-081",
+    "start_time": "2026-08-31T06:32:57.738223+00:00",
+    "completion_time": "2026-08-31T06:32:57.758216+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-081.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-082",
+    "source_id": "SRC-082",
+    "start_time": "2026-08-31T06:32:57.802546+00:00",
+    "completion_time": "2026-08-31T06:32:57.823502+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-082.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-083",
+    "source_id": "SRC-083",
+    "start_time": "2026-08-31T06:32:57.868979+00:00",
+    "completion_time": "2026-08-31T06:32:57.889056+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-083.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-084",
+    "source_id": "SRC-084",
+    "start_time": "2026-08-31T06:32:57.934128+00:00",
+    "completion_time": "2026-08-31T06:32:57.955812+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-084.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-085",
+    "source_id": "SRC-085",
+    "start_time": "2026-08-31T06:32:58.001102+00:00",
+    "completion_time": "2026-08-31T06:32:58.021114+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-085.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-086",
+    "source_id": "SRC-086",
+    "start_time": "2026-08-31T06:32:58.068035+00:00",
+    "completion_time": "2026-08-31T06:32:58.089354+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-086.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-087",
+    "source_id": "SRC-087",
+    "start_time": "2026-08-31T06:32:58.141700+00:00",
+    "completion_time": "2026-08-31T06:32:58.162162+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-087.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-088",
+    "source_id": "SRC-088",
+    "start_time": "2026-08-31T06:32:58.205097+00:00",
+    "completion_time": "2026-08-31T06:32:58.226214+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-088.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-089",
+    "source_id": "SRC-089",
+    "start_time": "2026-08-31T06:32:58.271344+00:00",
+    "completion_time": "2026-08-31T06:32:58.293599+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-089.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-090",
+    "source_id": "SRC-090",
+    "start_time": "2026-08-31T06:38:10.240386+00:00",
+    "completion_time": "2026-08-31T06:38:10.267875+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-090.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-091",
+    "source_id": "SRC-091",
+    "start_time": "2026-08-31T06:38:10.334762+00:00",
+    "completion_time": "2026-08-31T06:38:10.356637+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-091.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-092",
+    "source_id": "SRC-092",
+    "start_time": "2026-08-31T06:38:10.407274+00:00",
+    "completion_time": "2026-08-31T06:38:10.430611+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-092.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-093",
+    "source_id": "SRC-093",
+    "start_time": "2026-08-31T06:38:10.482779+00:00",
+    "completion_time": "2026-08-31T06:38:10.504465+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-093.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-094",
+    "source_id": "SRC-094",
+    "start_time": "2026-08-31T06:38:10.555002+00:00",
+    "completion_time": "2026-08-31T06:38:10.576833+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-094.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-095",
+    "source_id": "SRC-095",
+    "start_time": "2026-08-31T06:38:10.630083+00:00",
+    "completion_time": "2026-08-31T06:38:10.651897+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-095.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-096",
+    "source_id": "SRC-096",
+    "start_time": "2026-08-31T06:38:10.714670+00:00",
+    "completion_time": "2026-08-31T06:38:10.737948+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-096.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-097",
+    "source_id": "SRC-097",
+    "start_time": "2026-08-31T06:38:10.788895+00:00",
+    "completion_time": "2026-08-31T06:38:10.810257+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-097.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-098",
+    "source_id": "SRC-098",
+    "start_time": "2026-08-31T06:38:10.857680+00:00",
+    "completion_time": "2026-08-31T06:38:10.883614+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-098.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-099",
+    "source_id": "SRC-099",
+    "start_time": "2026-08-31T06:38:10.937255+00:00",
+    "completion_time": "2026-08-31T06:38:10.957989+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-099.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-100",
+    "source_id": "SRC-100",
+    "start_time": "2026-08-31T06:38:11.078998+00:00",
+    "completion_time": "2026-08-31T06:38:11.125162+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-100.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-101",
+    "source_id": "SRC-101",
+    "start_time": "2026-08-31T06:38:11.215338+00:00",
+    "completion_time": "2026-08-31T06:38:11.235750+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-101.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-102",
+    "source_id": "SRC-102",
+    "start_time": "2026-08-31T06:38:11.288952+00:00",
+    "completion_time": "2026-08-31T06:38:11.309299+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-102.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-103",
+    "source_id": "SRC-103",
+    "start_time": "2026-08-31T06:38:11.364289+00:00",
+    "completion_time": "2026-08-31T06:38:11.385137+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-103.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-104",
+    "source_id": "SRC-104",
+    "start_time": "2026-08-31T06:46:06.146702+00:00",
+    "completion_time": "2026-08-31T06:46:06.174553+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-104.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-105",
+    "source_id": "SRC-105",
+    "start_time": "2026-08-31T06:46:06.253541+00:00",
+    "completion_time": "2026-08-31T06:46:06.278690+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-105.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-106",
+    "source_id": "SRC-106",
+    "start_time": "2026-08-31T06:46:06.340830+00:00",
+    "completion_time": "2026-08-31T06:46:06.364473+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-106.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-107",
+    "source_id": "SRC-107",
+    "start_time": "2026-08-31T06:46:06.430669+00:00",
+    "completion_time": "2026-08-31T06:46:06.454288+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-107.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-108",
+    "source_id": "SRC-108",
+    "start_time": "2026-08-31T06:46:06.518921+00:00",
+    "completion_time": "2026-08-31T06:46:06.542530+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-108.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-109",
+    "source_id": "SRC-109",
+    "start_time": "2026-08-31T06:46:06.599226+00:00",
+    "completion_time": "2026-08-31T06:46:06.619718+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-109.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-110",
+    "source_id": "SRC-110",
+    "start_time": "2026-08-31T06:46:06.675246+00:00",
+    "completion_time": "2026-08-31T06:46:06.697231+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-110.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-111",
+    "source_id": "SRC-111",
+    "start_time": "2026-08-31T06:46:06.754917+00:00",
+    "completion_time": "2026-08-31T06:46:06.776899+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-111.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-112",
+    "source_id": "SRC-112",
+    "start_time": "2026-08-31T06:46:06.835785+00:00",
+    "completion_time": "2026-08-31T06:46:06.862233+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-112.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-113",
+    "source_id": "SRC-113",
+    "start_time": "2026-08-31T06:46:06.920921+00:00",
+    "completion_time": "2026-08-31T06:46:06.941758+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-113.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-114",
+    "source_id": "SRC-114",
+    "start_time": "2026-08-31T06:46:06.999629+00:00",
+    "completion_time": "2026-08-31T06:46:07.020699+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-114.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-115",
+    "source_id": "SRC-115",
+    "start_time": "2026-08-31T06:46:07.166703+00:00",
+    "completion_time": "2026-08-31T06:46:07.208064+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-115.json",
+    "status": "extraction_successful"
+  },
+  {
+    "document_id": "DOC-116",
+    "source_id": "SRC-116",
+    "start_time": "2026-08-31T06:46:07.297101+00:00",
+    "completion_time": "2026-08-31T06:46:07.334950+00:00",
+    "total_pages": 1,
+    "total_clauses": 18,
+    "total_tables": 0,
+    "total_annexes": 0,
+    "ocr_used": false,
+    "quality_summary": {
+      "total_pages": 1,
+      "ok_pages_count": 1,
+      "suspicious_pages_count": 0,
+      "suspicious_pages": [],
+      "overall_quality": "HIGH"
+    },
+    "processed_file_path": "data/processed/DOC-116.json",
+    "status": "extraction_successful"
+  },
+  {
     "document_id": "DOC-001",
     "source_id": "SRC-001",
-    "start_time": "2026-08-31T05:48:04.436264+00:00",
-    "completion_time": "2026-08-31T05:48:05.120860+00:00",
+    "start_time": "2026-08-31T10:46:27.294995+00:00",
+    "completion_time": "2026-08-31T10:46:28.050207+00:00",
     "total_pages": 17,
     "total_clauses": 114,
     "total_tables": 2,

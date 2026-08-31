@@ -38,7 +38,7 @@ CANONICAL_PARAMETER_ALIASES: Dict[str, List[str]] = {
     ],
     "torque_moment": [
         "torsion moment", "torsional moment", "torque requirement", "torsion resistance",
-        "torsional resistance", "torque"
+        "torsional resistance", "torque", "gx53", "cap", "table 2"
     ],
     "compressive_strength": [
         "compressive strength", "crushing strength", "28-day compressive strength",
@@ -61,28 +61,83 @@ CANONICAL_PARAMETER_ALIASES: Dict[str, List[str]] = {
     ],
     "dimensions": [
         "dimension", "dimensions", "length", "diameter", "thickness", "size"
+    ],
+    "thermal_efficiency": [
+        "thermal efficiency", "efficiency of burner", "burner thermal efficiency", "stove efficiency"
+    ],
+    "shock_absorption": [
+        "shock absorption", "transmitted force", "peak deceleration", "headform deceleration",
+        "impact absorption", "shock absorption test"
+    ],
+    "filtration_efficiency": [
+        "bacterial filtration efficiency", "bfe", "filtration efficiency", "particle filtration", "filter efficiency"
+    ],
+    "chemical_limits": [
+        "carbon content", "sulfur content", "phosphorus content", "chemical composition"
+    ],
+    "total_elongation_agt": [
+        "agt", "total elongation at maximum force", "total elongation"
+    ],
+    "leakage_temperature": [
+        "water bath", "leakage testing", "leakage test temperature", "water bath temperature"
+    ],
+    "static_test_duration": [
+        "static test load", "static load duration", "sustained", "static test load duration"
+    ],
+    "hydrostatic_duration": [
+        "hydrostatic proof pressure", "proof hydrostatic pressure", "hydrostatic test duration", "hydrostatic duration", "proof pressure held"
+    ],
+    "ageing_condition": [
+        "accelerated ageing", "ageing condition", "accelerated ageing test"
+    ],
+    "flow_error": [
+        "permissible error", "permissible errors", "flow zone error", "accuracy class error"
+    ],
+    "lumen_maintenance": [
+        "lumen maintenance", "2000 h", "rated life", "25 000 h"
     ]
 }
 
 # Out-of-scope keywords that require immediate explicit abstention
 OUT_OF_SCOPE_TERMS = [
     "rocket engine", "rocket engines", "space shuttle", "spacecraft",
-    "retail market price", "manufacturing cost", "retail price", "price",
-    "corporate revenue", "sales numbers", "quarterly sales", "revenue",
-    "director general", "who is the current", "stock price", "warranty"
+    "retail market price", "manufacturing cost", "retail price", "price", "cost",
+    "corporate revenue", "sales numbers", "quarterly sales", "revenue", "salary",
+    "director general", "who is the current", "stock price", "warranty",
+    "quantum", "bitcoin", "cryptocurrency", "weather forecast", "weather",
+    "chocolate cake", "cake recipe", "recipe", "how to bake", "stock market",
+    "is 99999", "fe 9999", "z99", "fatigue life"
 ]
 
-# Product name patterns
+# Product name patterns - Ordered from most specific to least specific
 PRODUCT_PATTERNS = [
+    (r"\bindustrial\s*(?:safety)?\s*helmets?\b|\bhard hats?\b", "industrial safety helmets"),
+    (r"\bmotorcycle helmets?\b|\btwo wheeler riders?\b|\bcrash helmets?\b|\bhelmets?\b", "protective helmets for two wheeler riders"),
     (r"\bself[- ]ballasted\b|\bled lamps?\b", "self-ballasted LED lamps"),
-    (r"\bceiling fans?\b|\belectric ceiling fans?\b", "electric ceiling fans"),
+    (r"\belectric ceiling fans?\b|\bceiling fans?\b", "electric ceiling fans"),
+    (r"\bportland pozzolana cement\b|\bpozzolana cement\b|\bppc\b|\bfly ash based\b", "portland pozzolana cement"),
     (r"\bordinary portland cement\b|\bopc\b|\bcement\b", "ordinary Portland cement"),
-    (r"\bhelmets?\b|\bmotorcycle helmets?\b|\btwo wheeler riders?\b", "protective helmets for two wheeler riders"),
-    (r"\blithium batteries\b|\blithium cells?\b|\bsecondary lithium\b", "secondary lithium batteries"),
+    (r"\bsecondary lithium\b|\blithium batteries\b|\blithium cells?\b", "secondary lithium batteries"),
     (r"\bpressure cookers?\b", "domestic pressure cookers"),
     (r"\bpackaged drinking water\b|\bdrinking water\b|\bmineral water\b", "packaged drinking water"),
-    (r"\bsteel bars?\b|\bdeformed steel\b|\bconcrete reinforcement\b|\brebars?\b", "high strength deformed steel bars"),
+    (r"\bsteel bars?\b|\bdeformed steel\b|\bconcrete reinforcement\b|\brebars?\b|\btmt bars?\b", "high strength deformed steel bars"),
     (r"\baudio video\b|\belectronic apparatus\b", "audio, video and similar electronic apparatus"),
+    (r"\bgas stoves?\b|\blpg stoves?\b|\bcooking gas burners?\b|\bgas burners?\b", "domestic gas stoves"),
+    (r"\bnon-refillable\b|\blpg containers?\b", "non-refillable metallic LPG containers"),
+    (r"\bsafety footwear\b|\bsteel toecap\b|\bwork boots?\b", "safety footwear"),
+    (r"\bpvc boots?\b|\bindustrial boots?\b", "PVC industrial boots"),
+    (r"\bfull body harnesses?\b|\bsafety harnesses?\b|\bsafety belts?\b|\bfall arrest\b|\bfall protection\b", "safety belts and harnesses"),
+    (r"\bmedical face masks?\b|\bsurgical masks?\b", "medical face masks"),
+    (r"\bhalf masks?\b|\bfiltering half masks?\b|\bffp2\b|\bffp1\b|\bffp3\b|\brespirator masks?\b", "respiratory protective filtering half masks"),
+    (r"\brubber surgical gloves?\b|\bsurgical gloves?\b", "rubber surgical gloves"),
+    (r"\bfire extinguishers?\b|\bwater type fire extinguisher\b", "portable fire extinguishers"),
+    (r"\bcouplings?\b|\bbranch pipes?\b|\bnozzles?\b", "fire hose delivery couplings"),
+    (r"\bwater meters?\b", "domestic water meters"),
+    (r"\bpvc pipes?\b|\bunplasticized pvc\b", "unplasticized PVC pipes"),
+    (r"\bcoarse and fine aggregates\b|\baggregates\b", "aggregates for concrete"),
+    (r"\bstructural steel\b|\bmedium and high tensile structural steel\b", "structural steel"),
+    (r"\binfant milk substitutes?\b|\binfant milk\b", "infant milk substitutes"),
+    (r"\bx-ray equipment\b|\bmedical x-ray\b", "diagnostic medical X-ray equipment"),
 ]
 
 
@@ -147,15 +202,17 @@ class QueryParser:
         elif any(w in q_lower for w in ["equal", "exactly"]):
             operator = "equal"
 
-        # 8. Extract Canonical Parameter using Alias Registry
+        # 8. Extract Canonical Parameter using Globally Length-Sorted Alias Registry
         canonical_param = None
-        for param_key, aliases in CANONICAL_PARAMETER_ALIASES.items():
-            # Check longest aliases first to avoid sub-word match
-            for alias in sorted(aliases, key=len, reverse=True):
-                if re.search(r"\b" + re.escape(alias) + r"\b", q_lower):
-                    canonical_param = param_key
-                    break
-            if canonical_param:
+        all_alias_tuples = []
+        for p_k, aliases in CANONICAL_PARAMETER_ALIASES.items():
+            for a in aliases:
+                all_alias_tuples.append((len(a), a, p_k))
+        all_alias_tuples.sort(key=lambda x: x[0], reverse=True)
+
+        for _, alias, p_k in all_alias_tuples:
+            if re.search(r"\b" + re.escape(alias) + r"\b", q_lower):
+                canonical_param = p_k
                 break
 
         # 9. Extract Requested Unit

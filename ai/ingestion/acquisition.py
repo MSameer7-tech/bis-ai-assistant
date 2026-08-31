@@ -22,6 +22,80 @@ def compute_sha256(file_path: Path) -> str:
     return sha256_hash.hexdigest()
 
 
+def register_source(
+    source_id: str,
+    standard_or_document_number: str,
+    title: str,
+    product_domain: str,
+    category: Optional[str] = None,
+    product_type: Optional[str] = None,
+    issuing_authority: Optional[str] = None,
+    version_edition: Optional[str] = None,
+    publication_date: Optional[str] = None,
+    valid_from: Optional[str] = None,
+    valid_until: Optional[str] = None,
+    url: Optional[str] = None,
+    notes: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Registers a new source entry in source_registry.json."""
+    if not REGISTRY_PATH.exists():
+        registry = []
+    else:
+        with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+            try:
+                registry = json.load(f)
+            except json.JSONDecodeError:
+                registry = []
+
+    source_entry = next((s for s in registry if s["source_id"] == source_id), None)
+    if source_entry is None:
+        now_iso = datetime.now(timezone.utc).isoformat()
+        v_id = f"{source_id}-v001"
+        source_entry = {
+            "source_id": source_id,
+            "domain": "Standards",
+            "product_domain": product_domain,
+            "category": category,
+            "product_type": product_type,
+            "source_type": "standard_document",
+            "issuing_authority": issuing_authority or "Bureau of Indian Standards",
+            "authority_level": "Tier 1B - Normative",
+            "title": title,
+            "standard_or_document_number": standard_or_document_number,
+            "version_edition": version_edition or "First Edition",
+            "publication_date": publication_date,
+            "effective_date": valid_from,
+            "valid_from": valid_from,
+            "valid_until": valid_until,
+            "url": url,
+            "retrieval_date": now_iso,
+            "status": "REGISTERED",
+            "notes": notes or "Discovered BIS Standard source",
+            "current_version": {
+                "version_id": v_id,
+                "sha256": None,
+                "file_size": None,
+                "last_modified": now_iso,
+                "publication_date": publication_date,
+                "etag": None,
+            },
+            "history": [
+                {
+                    "version_id": v_id,
+                    "sha256": None,
+                    "file_size": None,
+                    "detected_at": now_iso,
+                    "change_type": "initial_registration",
+                    "version_label": standard_or_document_number,
+                }
+            ],
+        }
+        registry.append(source_entry)
+        with open(REGISTRY_PATH, "w", encoding="utf-8") as f:
+            json.dump(registry, f, indent=2, ensure_ascii=False)
+    return source_entry
+
+
 def register_acquired_document(
     document_id: str,
     source_id: str,
@@ -31,25 +105,47 @@ def register_acquired_document(
     version_edition: Optional[str] = None,
     source_url: Optional[str] = None,
     notes: Optional[str] = None,
+    product_domain: Optional[str] = None,
+    category: Optional[str] = None,
+    product_type: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Registers an acquired raw document artifact into documents.json
     and synchronizes provenance to source_registry.json.
-    Strictly verifies that source_id exists and raw_file_path exists.
+    Strictly verifies that raw_file_path exists.
     """
     if not raw_file_path.exists():
         raise FileNotFoundError(f"Raw document file not found: {raw_file_path}")
 
     if not REGISTRY_PATH.exists():
-        raise FileNotFoundError(f"Source registry not found: {REGISTRY_PATH}")
+        registry = []
+    else:
+        with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
+            registry = json.load(f)
 
-    with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
-        registry = json.load(f)
-
-    # Validate source_id exists in registry
+    # Validate or create source_id in registry
     source_match = next((item for item in registry if item["source_id"] == source_id), None)
     if source_match is None:
-        raise ValueError(f"Cannot register document: Source ID '{source_id}' does not exist in registry.")
+        source_match = {
+            "source_id": source_id,
+            "domain": "Standards",
+            "product_domain": product_domain or "electrical",
+            "category": category,
+            "product_type": product_type,
+            "source_type": "standard_document",
+            "issuing_authority": "Bureau of Indian Standards",
+            "authority_level": "Tier 1B - Normative",
+            "title": title or document_number,
+            "standard_or_document_number": document_number or title,
+            "version_edition": version_edition or "First Edition",
+            "publication_date": None,
+            "effective_date": None,
+            "url": source_url,
+            "retrieval_date": datetime.now(timezone.utc).isoformat(),
+            "status": "document_acquired",
+            "notes": notes or "Official Indian Standard PDF acquired",
+        }
+        registry.append(source_match)
 
     file_hash = compute_sha256(raw_file_path)
     file_size_bytes = raw_file_path.stat().st_size

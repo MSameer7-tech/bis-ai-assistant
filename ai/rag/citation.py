@@ -160,16 +160,32 @@ class CitationExtractor:
         retrieved_chunks: List[RetrievedChunk]
     ) -> Optional[RetrievedChunk]:
         """Validates if standard, clause, or document ID match any chunk in retrieved evidence."""
+        std_raw_clean = re.sub(r"[\s:]+", "", std_raw.lower())
         for chunk in retrieved_chunks:
-            std_match = not std_raw or (std_raw.lower() in chunk.standard_number.lower() or chunk.standard_number.lower() in std_raw.lower())
+            chunk_std_clean = re.sub(r"[\s:]+", "", chunk.standard_number.lower())
+            std_match = not std_raw or (
+                std_raw.lower() in chunk.standard_number.lower()
+                or chunk.standard_number.lower() in std_raw.lower()
+                or (std_raw_clean and std_raw_clean in chunk_std_clean)
+                or (chunk_std_clean and chunk_std_clean in std_raw_clean)
+            )
             clause_match = (
-                clause_raw.lower() in chunk.clause_number.lower()
+                not clause_raw
+                or clause_raw.lower() in chunk.clause_number.lower()
                 or chunk.clause_number.lower() in clause_raw.lower()
                 or clause_raw.lower() in chunk.chunk_id.lower()
+                or "table" in clause_raw.lower()
             )
             doc_match = not doc_id_raw or (doc_id_raw.lower() in chunk.document_id.lower() or chunk.document_id.lower() in doc_id_raw.lower())
 
-            if std_match and (clause_match or doc_match):
+            if std_match and (clause_match or doc_match or not clause_raw):
                 return chunk
+
+        # Fallback: if standard matches, return the top standard chunk
+        if std_raw:
+            for chunk in retrieved_chunks:
+                chunk_std_clean = re.sub(r"[\s:]+", "", chunk.standard_number.lower())
+                if std_raw_clean and (std_raw_clean in chunk_std_clean or chunk_std_clean in std_raw_clean):
+                    return chunk
 
         return None

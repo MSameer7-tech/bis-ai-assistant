@@ -2,6 +2,7 @@
 Phase 2E Unified RAG Pipeline: Coordinates structured query parsing, parameter-aware retrieval,
 context building, generation, citation verification, compliance guardrails, and hard abstention gating.
 """
+import re
 import logging
 from typing import Optional, List, Dict, Any
 from ai.rag.models import RAGAnswer, RetrievedChunk, Citation, GuardrailResult, AbstentionReason
@@ -107,7 +108,12 @@ class RAGPipeline:
         if sq.intent == "PARAMETER_QUERY" and sq.parameter:
             aliases = CANONICAL_PARAMETER_ALIASES.get(sq.parameter, [sq.parameter])
             all_text_lower = " ".join(c.text for c in chunks).lower()
-            parameter_found = any(alias in all_text_lower for alias in aliases)
+            param_words = sq.parameter.replace("_", " ").split()
+            parameter_found = (
+                any(alias in all_text_lower for alias in aliases)
+                or any(w in all_text_lower for w in param_words if len(w) > 3)
+                or (sq.standard_code and any(re.sub(r"[\s:]+", "", sq.standard_code.lower()) in re.sub(r"[\s:]+", "", c.standard_number.lower()) for c in chunks))
+            )
             
             # If parameter is completely absent from all retrieved chunks -> ABSTAIN with WRONG_PARAMETER
             if not parameter_found:

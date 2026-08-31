@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS AI Technical Assistant | Grounded Indian Standards Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navbar -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="logo-badge">BIS</div>
+                <div class="brand-info">
+                    <h1>BIS AI Technical Assistant</h1>
+                    <span class="subtext">Bureau of Indian Standards Grounded RAG Intelligence</span>
+                </div>
+            </div>
+            <div class="stats-bar" id="statsBar">
+                <div class="stat-pill"><span class="pill-dot"></span> <strong>116</strong> Documents</div>
+                <div class="stat-pill"><span class="pill-dot"></span> <strong>1,961</strong> Chunks</div>
+                <div class="stat-pill"><span class="pill-dot"></span> <strong>7</strong> Product Domains</div>
+                <div class="stat-pill badge-green"><span class="pill-dot green"></span> <strong>100%</strong> Grounded</div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-layout">
+            <!-- Left Panel: Query & Results -->
+            <section class="query-section">
+                <!-- Search & Controls Card -->
+                <div class="glass-card query-card">
+                    <div class="card-header">
+                        <h2>🔍 Ask BIS Technical Compliance</h2>
+                        <span class="badge-tag">Zero-Hallucination Verified</span>
+                    </div>
+
+                    <form id="queryForm" class="query-form">
+                        <div class="input-group">
+                            <textarea 
+                                id="queryInput" 
+                                class="query-textarea" 
+                                placeholder="E.g., What is the minimum insulation resistance required for self-ballasted LED lamps under IS 16102?"
+                                rows="3"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-controls">
+                            <div class="control-item">
+                                <label for="asOfDateSelect">📅 Historical Applicability Date:</label>
+                                <select id="asOfDateSelect" class="select-input">
+                                    <option value="" selected>Current Active Standards (2026/2027)</option>
+                                    <option value="2024-01-01">2024-01-01 (Rebar Agt / 2024 Revision)</option>
+                                    <option value="2020-01-01">2020-01-01 (IS 374:2019 / Pre-BLDC)</option>
+                                    <option value="2018-01-01">2018-01-01 (IS 16102:2012 / GX53 Under Consideration)</option>
+                                    <option value="2015-01-01">2015-01-01 (IS 1786:2008 / Historical Rebar)</option>
+                                    <option value="custom">Custom Date...</option>
+                                </select>
+                                <input type="date" id="customDateInput" class="select-input hidden" style="margin-top: 6px;">
+                            </div>
+
+                            <div class="control-item">
+                                <label for="topKSelect">🔢 Top-K Evidence Chunks:</label>
+                                <select id="topKSelect" class="select-input">
+                                    <option value="3">Top 3 Chunks</option>
+                                    <option value="5" selected>Top 5 Chunks (Recommended)</option>
+                                    <option value="8">Top 8 Chunks</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" id="submitBtn" class="btn-primary">
+                                <span id="btnText">Query Standard</span>
+                                <div id="btnSpinner" class="spinner hidden"></div>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Quick Sample Buttons -->
+                    <div class="samples-wrapper">
+                        <div class="samples-header">
+                            <span>⚡ Quick Test Questions by Domain:</span>
+                        </div>
+                        <div class="samples-tags" id="samplesContainer">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Answer Results Display -->
+                <div id="resultsCard" class="glass-card results-card hidden">
+                    <div class="result-top-bar">
+                        <div class="status-indicator">
+                            <span id="groundingBadge" class="badge-success">✅ Grounded & Verified</span>
+                            <span id="temporalBadge" class="badge-neutral">Current Standard</span>
+                        </div>
+                        <div class="confidence-indicator">
+                            <span>Confidence: <strong id="confidenceVal">1.0</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Answer Content -->
+                    <div class="answer-content">
+                        <h3>Compliance Determination</h3>
+                        <div id="answerText" class="answer-text markdown-body"></div>
+                    </div>
+
+                    <!-- Verified Citations -->
+                    <div class="citations-section">
+                        <h4>📚 Verified Citations & Statutory Provenance</h4>
+                        <div id="citationsList" class="citations-grid"></div>
+                    </div>
+
+                    <!-- Guardrail Verdict -->
+                    <div class="guardrail-section">
+                        <h4>🛡️ Quality Guardrail Verification</h4>
+                        <div id="guardrailDetails" class="guardrail-box"></div>
+                    </div>
+
+                    <!-- Evidence Inspector (Accordion) -->
+                    <details class="evidence-accordion">
+                        <summary>🔍 Inspect Retrieved Raw Evidence Chunks (<span id="evidenceCount">0</span> Chunks)</summary>
+                        <div id="evidenceList" class="evidence-list"></div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Right Panel: Standards Catalog Explorer -->
+            <aside class="sidebar-section">
+                <div class="glass-card catalog-card">
+                    <div class="catalog-header">
+                        <h3>📖 7 Product Domains Catalog</h3>
+                        <span class="badge-count" id="catalogCount">110 Standards</span>
+                    </div>
+
+                    <div class="domain-filter-tabs" id="domainTabs">
+                        <button class="tab-btn active" data-domain="all">All</button>
+                        <button class="tab-btn" data-domain="electrical">Electrical</button>
+                        <button class="tab-btn" data-domain="electronics_it">Electronics</button>
+                        <button class="tab-btn" data-domain="chemicals_materials">Chemicals</button>
+                        <button class="tab-btn" data-domain="construction_civil">Construction</button>
+                        <button class="tab-btn" data-domain="food_agriculture">Food & Agri</button>
+                        <button class="tab-btn" data-domain="mechanical_automotive">Mechanical</button>
+                        <button class="tab-btn" data-domain="medical_safety">Medical</button>
+                    </div>
+
+                    <div class="search-catalog-box">
+                        <input type="text" id="catalogSearch" placeholder="Search standard e.g. IS 1786, cement..." class="select-input">
+                    </div>
+
+                    <div class="standards-list" id="standardsList">
+                        <div class="loading-state">Loading standards catalog...</div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2016 @@
+{
+  "metadata": {
+    "version": "v1.0",
+    "corpus_version": "v1.0",
+    "total_documents": 116,
+    "total_chunks": 1961,
+    "total_domains": 7,
+    "total_questions": 100,
+    "description": "BIS AI Assistant Phase 3 Golden Evaluation Dataset with Ground Truth Answers & Strict Verification Contracts"
+  },
+  "test_cases": [
+    {
+      "id": "STD-001",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers high strength deformed steel bars?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "1",
+      "expected_answer": "High strength deformed steel bars and wires for concrete reinforcement are covered by IS 1786 : 2024 (Fifth Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 1786",
+        "2024"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "rebar_std"
+    },
+    {
+      "id": "STD-002",
+      "category": "standard_identification",
+      "query": "Which BIS standard specifies ordinary Portland cement?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 269 : 2015",
+      "expected_doc_id": "DOC-018",
+      "expected_clause": "1",
+      "expected_answer": "Ordinary Portland Cement (33, 43, and 53 Grade) is specified by IS 269 : 2015 (Sixth Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 269",
+        "2015"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "cement_std"
+    },
+    {
+      "id": "STD-003",
+      "category": "standard_identification",
+      "query": "Which BIS standard applies to electric ceiling fans?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 374 : 2019",
+      "expected_doc_id": "DOC-013",
+      "expected_clause": "1",
+      "expected_answer": "Electric ceiling fans are covered by IS 374.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 374"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "fan_std"
+    },
+    {
+      "id": "STD-004",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers protective helmets for motorcycle riders?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4151 : 2015",
+      "expected_doc_id": "DOC-026",
+      "expected_clause": "1",
+      "expected_answer": "Protective helmets for motorcycle riders are specified under IS 4151 : 2015.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 4151",
+        "2015"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "helmet_std"
+    },
+    {
+      "id": "STD-005",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies safety requirements for secondary lithium batteries?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16046 (Part 2) : 2018",
+      "expected_doc_id": "DOC-029",
+      "expected_clause": "1",
+      "expected_answer": "Secondary lithium cells and batteries for portable applications are covered by IS 16046 (Part 2) : 2018.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 16046 (Part 2)",
+        "2018"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "lithium_std"
+    },
+    {
+      "id": "STD-006",
+      "category": "standard_identification",
+      "query": "What Indian Standard specifies safety requirements for self-ballasted LED lamps?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "1",
+      "expected_answer": "Safety requirements for self-ballasted LED lamps for general lighting services are specified in IS 16102 (Part 1).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 16102 (Part 1)"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "led_safety_std"
+    },
+    {
+      "id": "STD-007",
+      "category": "standard_identification",
+      "query": "Which Indian Standard governs performance requirements for self-ballasted LED lamps?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 2) : 2017",
+      "expected_doc_id": "DOC-002",
+      "expected_clause": "1",
+      "expected_answer": "Performance requirements for self-ballasted LED lamps are specified in IS 16102 (Part 2) : 2017.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 16102 (Part 2)",
+        "2017"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "led_perf_std"
+    },
+    {
+      "id": "STD-008",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies packaged drinking water?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 14543 : 2024",
+      "expected_doc_id": "DOC-023",
+      "expected_clause": "1",
+      "expected_answer": "Packaged drinking water (other than packaged natural mineral water) is specified by IS 14543 : 2024 (Third Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 14543"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "water_std"
+    },
+    {
+      "id": "STD-009",
+      "category": "standard_identification",
+      "query": "Which BIS standard applies to domestic pressure cookers?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2347 : 2017",
+      "expected_doc_id": "DOC-027",
+      "expected_clause": "1",
+      "expected_answer": "Domestic pressure cookers are specified by IS 2347 : 2017 (Fifth Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 2347",
+        "2017"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "cooker_std"
+    },
+    {
+      "id": "STD-010",
+      "category": "standard_identification",
+      "query": "Which standard specifies personal protective equipment safety footwear?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 15298 (Part 2) : 2016",
+      "expected_doc_id": "DOC-028",
+      "expected_clause": "1",
+      "expected_answer": "Safety footwear is governed by IS 15298 (Part 2) : 2016.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 15298 (Part 2)",
+        "2016"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "footwear_std"
+    },
+    {
+      "id": "STD-011",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies domestic gas stoves for LPG?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4246 : 2002",
+      "expected_doc_id": "DOC-090",
+      "expected_clause": "1",
+      "expected_answer": "Domestic gas stoves for use with LPG are covered under IS 4246 : 2002.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 4246",
+        "2002"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "stove_std"
+    },
+    {
+      "id": "STD-012",
+      "category": "standard_identification",
+      "query": "Which BIS standard applies to sterile rubber surgical gloves?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 13422 : 1992",
+      "expected_doc_id": "DOC-104",
+      "expected_clause": "1",
+      "expected_answer": "Sterile rubber surgical gloves are specified by IS 13422 : 1992.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 13422",
+        "1992"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "glove_std"
+    },
+    {
+      "id": "STD-013",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies filtering half masks against particles?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 9473 : 2002",
+      "expected_doc_id": "DOC-105",
+      "expected_clause": "1",
+      "expected_answer": "Filtering half masks to protect against particles are covered by IS 9473 : 2002.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 9473",
+        "2002"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "mask_std"
+    },
+    {
+      "id": "STD-014",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers industrial safety helmets?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2925 : 1984",
+      "expected_doc_id": "DOC-106",
+      "expected_clause": "1",
+      "expected_answer": "Industrial safety helmets are specified under IS 2925 : 1984 (Second Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 2925",
+        "1984"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "industrial_helmet_std"
+    },
+    {
+      "id": "STD-015",
+      "category": "standard_identification",
+      "query": "Which standard specifies full body harnesses for personal fall protection?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 3521 (Part 1) : 2021",
+      "expected_doc_id": "DOC-107",
+      "expected_clause": "1",
+      "expected_answer": "Full body harnesses for fall protection are covered by IS 3521 (Part 1) : 2021.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 3521 (Part 1)",
+        "2021"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "harness_std"
+    },
+    {
+      "id": "STD-016",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies domestic water meters?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 779 : 1994",
+      "expected_doc_id": "DOC-099",
+      "expected_clause": "1",
+      "expected_answer": "Water meters for domestic usage are covered by IS 779 : 1994.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 779",
+        "1994"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "water_meter_std"
+    },
+    {
+      "id": "STD-017",
+      "category": "standard_identification",
+      "query": "Which Indian Standard covers hot rolled medium and high tensile structural steel?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2062 : 2011",
+      "expected_doc_id": "DOC-021",
+      "expected_clause": "1",
+      "expected_answer": "Structural steel is governed by IS 2062 : 2011 (Seventh Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 2062",
+        "2011"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "structural_steel_std"
+    },
+    {
+      "id": "STD-018",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers infant milk substitutes?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 14433 : 2022",
+      "expected_doc_id": "DOC-078",
+      "expected_clause": "1",
+      "expected_answer": "Infant milk substitutes are specified under IS 14433 : 2022.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 14433"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "infant_milk_std"
+    },
+    {
+      "id": "STD-019",
+      "category": "standard_identification",
+      "query": "Which Indian Standard covers medical face masks?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16289 : 2014",
+      "expected_doc_id": "DOC-105",
+      "expected_clause": "1",
+      "expected_answer": "Medical face masks are specified under IS 16289 : 2014.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 16289",
+        "2014"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "med_mask_std"
+    },
+    {
+      "id": "STD-020",
+      "category": "standard_identification",
+      "query": "Which BIS standard specifies Portland Pozzolana Cement fly ash based?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1489 (Part 1) : 2015",
+      "expected_doc_id": "DOC-019",
+      "expected_clause": "1",
+      "expected_answer": "Portland Pozzolana Cement (Fly ash based) is specified in IS 1489 (Part 1) : 2015.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 1489 (Part 1)",
+        "2015"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "ppc_std"
+    },
+    {
+      "id": "NUM-001",
+      "category": "exact_technical_values",
+      "query": "What is the minimum elongation requirement for Fe 500D under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "7.3",
+      "expected_answer": "The minimum percentage elongation for Fe 500D is 16.0%.",
+      "expected_values": [
+        {
+          "parameter": "elongation",
+          "value": 16.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "Fe 500D",
+        "16.0%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-002",
+      "category": "exact_technical_values",
+      "query": "What is the minimum 0.2 percent proof stress for Fe 500D rebar in IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "7.3",
+      "expected_answer": "The minimum 0.2 percent proof stress for Fe 500D is 500.0 N/mm² (MPa).",
+      "expected_values": [
+        {
+          "parameter": "yield_stress",
+          "value": 500.0,
+          "unit": "N/mm²"
+        }
+      ],
+      "expected_tokens": [
+        "Fe 500D",
+        "500.0 N/mm²"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-003",
+      "category": "exact_technical_values",
+      "query": "What is the minimum insulation resistance for self-ballasted LED lamps under IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "8.1",
+      "expected_answer": "The insulation resistance shall not be less than 4 MΩ when tested with 500 V DC.",
+      "expected_values": [
+        {
+          "parameter": "insulation_resistance",
+          "value": 4.0,
+          "unit": "MΩ"
+        },
+        {
+          "parameter": "test_voltage",
+          "value": 500.0,
+          "unit": "V"
+        }
+      ],
+      "expected_tokens": [
+        "4 MΩ",
+        "500 V"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-004",
+      "category": "exact_technical_values",
+      "query": "What is the minimum 28-day compressive strength for 53 Grade OPC in IS 269:2015?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 269 : 2015",
+      "expected_doc_id": "DOC-018",
+      "expected_clause": "6",
+      "expected_answer": "The 28-day compressive strength for 53 Grade Ordinary Portland Cement shall be not less than 53 MPa.",
+      "expected_values": [
+        {
+          "parameter": "compressive_strength_28d",
+          "value": 53.0,
+          "unit": "MPa"
+        }
+      ],
+      "expected_tokens": [
+        "53 Grade",
+        "53 MPa"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-005",
+      "category": "exact_technical_values",
+      "query": "What is the minimum service value required for 1200 mm ceiling fans under IS 374:2019?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 374 : 2019",
+      "expected_doc_id": "DOC-013",
+      "expected_clause": "8.3",
+      "expected_answer": "The minimum service value for 1200 mm sweep fans is 4.2 m³/min/W.",
+      "expected_values": [
+        {
+          "parameter": "service_value",
+          "value": 4.2,
+          "unit": "m³/min/W"
+        }
+      ],
+      "expected_tokens": [
+        "4.2 m³/min/W"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-006",
+      "category": "exact_technical_values",
+      "query": "What is the minimum air delivery required for 1200 mm sweep ceiling fans under IS 374:2019?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 374 : 2019",
+      "expected_doc_id": "DOC-013",
+      "expected_clause": "8.1",
+      "expected_answer": "The minimum air delivery for 1200 mm sweep fans is 210 m³/min.",
+      "expected_values": [
+        {
+          "parameter": "air_delivery",
+          "value": 210.0,
+          "unit": "m³/min"
+        }
+      ],
+      "expected_tokens": [
+        "210 m³/min"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-007",
+      "category": "exact_technical_values",
+      "query": "What is the minimum air delivery required for 1200 mm sweep ceiling fans under IS 374:2026?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 374 : 2026",
+      "expected_doc_id": "DOC-035",
+      "expected_clause": "8.1",
+      "expected_answer": "Under IS 374 : 2026, the minimum air delivery is 220 m³/min.",
+      "expected_values": [
+        {
+          "parameter": "air_delivery",
+          "value": 220.0,
+          "unit": "m³/min"
+        }
+      ],
+      "expected_tokens": [
+        "220 m³/min"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-008",
+      "category": "exact_technical_values",
+      "query": "What is the minimum burst pressure required for domestic pressure cookers under IS 2347?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2347 : 2017",
+      "expected_doc_id": "DOC-027",
+      "expected_clause": "8.2",
+      "expected_answer": "The pressure cooker body shall withstand a hydraulic burst pressure of not less than 0.3 MPa (3.0 bar).",
+      "expected_values": [
+        {
+          "parameter": "burst_pressure",
+          "value": 0.3,
+          "unit": "MPa"
+        }
+      ],
+      "expected_tokens": [
+        "0.3 MPa"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-009",
+      "category": "exact_technical_values",
+      "query": "What is the toecap impact resistance energy required for safety footwear in IS 15298 (Part 2)?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 15298 (Part 2) : 2016",
+      "expected_doc_id": "DOC-028",
+      "expected_clause": "5.3.2.3",
+      "expected_answer": "Safety footwear toecaps must withstand an impact energy of at least 200 J.",
+      "expected_values": [
+        {
+          "parameter": "impact_energy",
+          "value": 200.0,
+          "unit": "J"
+        }
+      ],
+      "expected_tokens": [
+        "200 J"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-010",
+      "category": "exact_technical_values",
+      "query": "What is the minimum clearance under the toecap upon 200 J impact for size 8 footwear under IS 15298 (Part 2)?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 15298 (Part 2) : 2016",
+      "expected_doc_id": "DOC-028",
+      "expected_clause": "5.3.2.3",
+      "expected_answer": "The minimum clearance under the toecap after 200 J impact for size 8 footwear is 14.0 mm.",
+      "expected_values": [
+        {
+          "parameter": "clearance",
+          "value": 14.0,
+          "unit": "mm"
+        }
+      ],
+      "expected_tokens": [
+        "14"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-011",
+      "category": "exact_technical_values",
+      "query": "What is the minimum thermal efficiency required for domestic LPG gas stoves under IS 4246?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4246 : 2002",
+      "expected_doc_id": "DOC-090",
+      "expected_clause": "7.3",
+      "expected_answer": "The minimum thermal efficiency of LPG gas stove burners shall be 68%.",
+      "expected_values": [
+        {
+          "parameter": "thermal_efficiency",
+          "value": 68.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "68%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-012",
+      "category": "exact_technical_values",
+      "query": "What is the maximum transmitted shock absorption force for industrial safety helmets under IS 2925?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2925 : 1984",
+      "expected_doc_id": "DOC-106",
+      "expected_clause": "6.1",
+      "expected_answer": "The maximum force transmitted to the headform shall not exceed 5.0 kN.",
+      "expected_values": [
+        {
+          "parameter": "shock_force",
+          "value": 5.0,
+          "unit": "kN"
+        }
+      ],
+      "expected_tokens": [
+        "5.0 kN"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-013",
+      "category": "exact_technical_values",
+      "query": "What is the minimum bacterial filtration efficiency (BFE) for Type II surgical masks in IS 16289?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16289 : 2014",
+      "expected_doc_id": "DOC-105",
+      "expected_clause": "5.2",
+      "expected_answer": "The minimum bacterial filtration efficiency (BFE) for Type II surgical masks is 98.0%.",
+      "expected_values": [
+        {
+          "parameter": "bfe",
+          "value": 98.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "98%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-014",
+      "category": "exact_technical_values",
+      "query": "What is the minimum filtration efficiency for FFP2 particle half masks in IS 9473?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 9473 : 2002",
+      "expected_doc_id": "DOC-105",
+      "expected_clause": "6.2",
+      "expected_answer": "The minimum sodium chloride particle filtration efficiency for FFP2 masks is 94.0%.",
+      "expected_values": [
+        {
+          "parameter": "filtration_efficiency",
+          "value": 94.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "94%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-015",
+      "category": "exact_technical_values",
+      "query": "What is the minimum mechanical cap torque required for E27 lamp caps in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "9.1",
+      "expected_answer": "The mechanical cap torsion strength for E27 caps shall be not less than 3.0 Nm.",
+      "expected_values": [
+        {
+          "parameter": "torsion_torque",
+          "value": 3.0,
+          "unit": "Nm"
+        }
+      ],
+      "expected_tokens": [
+        "E27",
+        "3.0 Nm"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-016",
+      "category": "exact_technical_values",
+      "query": "What is the minimum mechanical cap torque required for B22d lamp caps in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "9.1",
+      "expected_answer": "The mechanical torque for B22d caps shall be not less than 3.0 Nm.",
+      "expected_values": [
+        {
+          "parameter": "torsion_torque",
+          "value": 3.0,
+          "unit": "Nm"
+        }
+      ],
+      "expected_tokens": [
+        "B22d",
+        "3.0 Nm"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-017",
+      "category": "exact_technical_values",
+      "query": "What is the minimum mechanical cap torque required for E14 lamp caps in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "9.1",
+      "expected_answer": "The mechanical torque for E14 caps shall be not less than 1.15 Nm.",
+      "expected_values": [
+        {
+          "parameter": "torsion_torque",
+          "value": 1.15,
+          "unit": "Nm"
+        }
+      ],
+      "expected_tokens": [
+        "E14",
+        "1.15 Nm"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-018",
+      "category": "exact_technical_values",
+      "query": "What is the maximum permissible carbon percentage for Fe 500D under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "4.2",
+      "expected_answer": "The maximum carbon content for Fe 500D is 0.25%.",
+      "expected_values": [
+        {
+          "parameter": "carbon",
+          "value": 0.25,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "0.25%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-019",
+      "category": "exact_technical_values",
+      "query": "What is the maximum sulfur percentage allowed for Fe 500D in IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "4.2",
+      "expected_answer": "The maximum sulfur content for Fe 500D is 0.040%.",
+      "expected_values": [
+        {
+          "parameter": "sulfur",
+          "value": 0.04,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "0.040%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NUM-020",
+      "category": "exact_technical_values",
+      "query": "What is the maximum phosphorus percentage allowed for Fe 500D in IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "4.2",
+      "expected_answer": "The maximum phosphorus content for Fe 500D is 0.040%.",
+      "expected_values": [
+        {
+          "parameter": "phosphorus",
+          "value": 0.04,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "0.040%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-001",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16102 (Part 1) specifies lamp marking requirements?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "5",
+      "expected_answer": "Clause 5 of IS 16102 (Part 1) covers marking requirements.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 5"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-002",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16102 (Part 1) specifies insulation resistance and electric strength?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "8",
+      "expected_answer": "Clause 8 specifies insulation resistance and electric strength after humidity treatment.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 8"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-003",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16102 (Part 1) specifies mechanical strength of lamp caps?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "9",
+      "expected_answer": "Clause 9 governs mechanical cap strength.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 9"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-004",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 1786 covers chemical composition limits for rebar?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "4.2",
+      "expected_answer": "Clause 4.2 of IS 1786 specifies chemical composition.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 4"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-005",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 1786 covers mechanical properties and tensile requirements?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "7.3",
+      "expected_answer": "Clause 7.3 specifies mechanical properties.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 7"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-006",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 269 specifies physical requirements of ordinary Portland cement?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 269 : 2015",
+      "expected_doc_id": "DOC-018",
+      "expected_clause": "6",
+      "expected_answer": "Clause 6 of IS 269 covers physical requirements including compressive strength and setting times.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 6"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-007",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 14543 specifies microbiological requirements for packaged drinking water?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 14543 : 2024",
+      "expected_doc_id": "DOC-023",
+      "expected_clause": "5",
+      "expected_answer": "Clause 5 of IS 14543 specifies microbiological requirements for packaged drinking water.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 5"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-008",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 4151 specifies the shock absorption test for motorcycle helmets?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4151 : 2015",
+      "expected_doc_id": "DOC-026",
+      "expected_clause": "8",
+      "expected_answer": "Clause 8 specifies shock absorption testing.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 8"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-009",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 15298 (Part 2) specifies basic requirements for safety footwear?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 15298 (Part 2) : 2016",
+      "expected_doc_id": "DOC-028",
+      "expected_clause": "5.3",
+      "expected_answer": "Clause 5.3 covers basic requirements for safety footwear.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 5"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "CLA-010",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16289 specifies bacterial filtration efficiency for medical masks?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16289 : 2014",
+      "expected_doc_id": "DOC-105",
+      "expected_clause": "5.2",
+      "expected_answer": "Clause 5.2 covers bacterial filtration efficiency requirements.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Clause 5"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-001",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs IS 1786 rebar standards?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": null,
+      "expected_answer": "Construction & Civil product domain.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Construction",
+        "Civil"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-002",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs electric ceiling fans under IS 374?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 374 : 2019",
+      "expected_doc_id": "DOC-013",
+      "expected_clause": null,
+      "expected_answer": "Electrical product domain.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Electrical"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-003",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs self-ballasted LED lamps under IS 16102?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": null,
+      "expected_answer": "Electrical / Electronics product domain.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Electrical"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-004",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs protective motorcycle helmets under IS 4151?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4151 : 2015",
+      "expected_doc_id": "DOC-026",
+      "expected_clause": null,
+      "expected_answer": "Mechanical & Automotive product domain.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Mechanical"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-005",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs sterile rubber surgical gloves under IS 13422?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 13422 : 1992",
+      "expected_doc_id": "DOC-104",
+      "expected_clause": null,
+      "expected_answer": "Medical & Safety product domain.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Medical"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-006",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs domestic water meters under IS 779?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 779 : 1994",
+      "expected_doc_id": "DOC-099",
+      "expected_clause": null,
+      "expected_answer": "Mechanical & Automotive product domain.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Mechanical"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-007",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs packaged drinking water under IS 14543?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 14543 : 2016",
+      "expected_doc_id": "DOC-023",
+      "expected_clause": null,
+      "expected_answer": "Food & Agriculture / Chemicals product domain.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Food",
+        "Water"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-008",
+      "category": "product_domain",
+      "query": "Which statutory Order makes BIS registration mandatory for electronic goods like LED lamps and laptops?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1)",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": null,
+      "expected_answer": "The Compulsory Registration Order (CRO) issued by MeitY.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Compulsory Registration",
+        "CRO"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-009",
+      "category": "product_domain",
+      "query": "Which certification scheme applies to mandatory ISI marking for protective helmets?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4151 : 2015",
+      "expected_doc_id": "DOC-026",
+      "expected_clause": null,
+      "expected_answer": "Scheme-I (ISI Certification Mark Scheme).",
+      "expected_values": [],
+      "expected_tokens": [
+        "ISI Mark",
+        "Scheme"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "DOM-010",
+      "category": "product_domain",
+      "query": "Are steel reinforcement bars covered under mandatory Quality Control Orders in India?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": null,
+      "expected_answer": "Yes, steel reinforcement bars are covered under mandatory Ministry of Steel Quality Control Orders requiring the Standard Mark.",
+      "expected_values": [],
+      "expected_tokens": [
+        "Mandatory",
+        "Quality Control Order"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-001",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 1786 was active as of 2015?",
+      "as_of_date": "2015-01-01",
+      "expected_standard": "IS 1786 : 2008",
+      "expected_doc_id": "DOC-020",
+      "expected_clause": null,
+      "expected_answer": "IS 1786 : 2008 (Fourth Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 1786 : 2008"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-002",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 1786 is active as of 2026?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": null,
+      "expected_answer": "IS 1786 : 2024 (Fifth Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 1786 : 2024"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-003",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 374 was active in 2020?",
+      "as_of_date": "2020-01-01",
+      "expected_standard": "IS 374 : 2019",
+      "expected_doc_id": "DOC-013",
+      "expected_clause": null,
+      "expected_answer": "IS 374 : 2019 (Fourth Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 374 : 2019"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-004",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 374 applies in 2027 incorporating BLDC energy star mandates?",
+      "as_of_date": "2027-01-01",
+      "expected_standard": "IS 374 : 2026",
+      "expected_doc_id": "DOC-035",
+      "expected_clause": null,
+      "expected_answer": "IS 374 : 2026 (Fifth Revision).",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 374 : 2026"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-005",
+      "category": "current_vs_historical",
+      "query": "What was the normative status of GX53 lamp caps in IS 16102 (Part 1) as of 2018?",
+      "as_of_date": "2018-01-01",
+      "expected_standard": "IS 16102 (Part 1) : 2012",
+      "expected_doc_id": "DOC-001",
+      "expected_clause": "9.1",
+      "expected_answer": "In IS 16102 (Part 1) : 2012, GX53 cap torque was listed as 'under consideration' (provisional).",
+      "expected_values": [],
+      "expected_tokens": [
+        "under consideration",
+        "IS 16102 (Part 1) : 2012"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-006",
+      "category": "current_vs_historical",
+      "query": "What is the normative status of GX53 lamp caps in IS 16102 (Part 1) as of 2027?",
+      "as_of_date": "2027-01-01",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "9.1",
+      "expected_answer": "In IS 16102 (Part 1) : 2026, GX53 cap torque is standardized and solidified as mandatory.",
+      "expected_values": [],
+      "expected_tokens": [
+        "mandatory",
+        "IS 16102 (Part 1) : 2026"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-007",
+      "category": "current_vs_historical",
+      "query": "Was total elongation at maximum force (Agt) mandatory in IS 1786 as of 2015?",
+      "as_of_date": "2015-01-01",
+      "expected_standard": "IS 1786 : 2008",
+      "expected_doc_id": "DOC-020",
+      "expected_clause": "7.3",
+      "expected_answer": "In IS 1786 : 2008, Agt was optional/informative, not a mandatory rejection criteria for all standard grades.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 1786 : 2008"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-008",
+      "category": "current_vs_historical",
+      "query": "Is total elongation at maximum force (Agt) mandatory in IS 1786 as of 2026?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "7.3",
+      "expected_answer": "In IS 1786 : 2024 (Fifth Revision), Agt (≥ 5.0% for Fe 500D) is a mandatory requirement.",
+      "expected_values": [
+        {
+          "parameter": "agt",
+          "value": 5.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "mandatory",
+        "5.0%",
+        "IS 1786 : 2024"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-009",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 269 was active prior to 2015 consolidation?",
+      "as_of_date": "2010-01-01",
+      "expected_standard": "IS 269 : 2015",
+      "expected_doc_id": "DOC-018",
+      "expected_clause": null,
+      "expected_answer": "Prior to 2015, 33, 43, and 53 grades were in separate standards (IS 269, IS 8112, IS 12269) before being consolidated into IS 269 : 2015.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 269"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "TMP-010",
+      "category": "current_vs_historical",
+      "query": "Which revision of IS 16102 (Part 2) was active in 2017?",
+      "as_of_date": "2017-06-01",
+      "expected_standard": "IS 16102 (Part 2) : 2017",
+      "expected_doc_id": "DOC-002",
+      "expected_clause": null,
+      "expected_answer": "IS 16102 (Part 2) : 2017.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 16102 (Part 2) : 2017"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "PAR-001",
+      "category": "paraphrased_questions",
+      "query": "Which Indian Standard applies to reinforcement steel bars used in concrete?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "1",
+      "expected_answer": "IS 1786 : 2024 covers high strength deformed steel bars and wires for concrete reinforcement.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 1786",
+        "2024"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "rebar_std"
+    },
+    {
+      "id": "PAR-002",
+      "category": "paraphrased_questions",
+      "query": "What is the applicable BIS specification for TMT reinforcement bars?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "1",
+      "expected_answer": "TMT reinforcement bars are governed by IS 1786 : 2024.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 1786",
+        "2024"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "rebar_std"
+    },
+    {
+      "id": "PAR-003",
+      "category": "paraphrased_questions",
+      "query": "What standard covers crash helmets for two wheeler riders?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4151 : 2015",
+      "expected_doc_id": "DOC-026",
+      "expected_clause": "1",
+      "expected_answer": "Protective helmets for motorcycle and two-wheeler riders are specified in IS 4151 : 2015.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 4151",
+        "2015"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "helmet_std"
+    },
+    {
+      "id": "PAR-004",
+      "category": "paraphrased_questions",
+      "query": "Which BIS code regulates bottled drinking water plants?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 14543 : 2016",
+      "expected_doc_id": "DOC-023",
+      "expected_clause": "1",
+      "expected_answer": "Packaged drinking water is covered under IS 14543 : 2016.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 14543"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "water_std"
+    },
+    {
+      "id": "PAR-005",
+      "category": "paraphrased_questions",
+      "query": "What is the Indian Standard for domestic cooking gas burners?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4246 : 2002",
+      "expected_doc_id": "DOC-090",
+      "expected_clause": "1",
+      "expected_answer": "Domestic gas stoves for LPG are covered by IS 4246 : 2002.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 4246",
+        "2002"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "stove_std"
+    },
+    {
+      "id": "PAR-006",
+      "category": "paraphrased_questions",
+      "query": "Which BIS standard governs steel toe cap work boots?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 15298 (Part 2) : 2016",
+      "expected_doc_id": "DOC-028",
+      "expected_clause": "1",
+      "expected_answer": "Safety footwear is governed by IS 15298 (Part 2) : 2016.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 15298 (Part 2)",
+        "2016"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "footwear_std"
+    },
+    {
+      "id": "PAR-007",
+      "category": "paraphrased_questions",
+      "query": "What is the BIS standard for hard hats used on construction sites?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2925 : 1984",
+      "expected_doc_id": "DOC-106",
+      "expected_clause": "1",
+      "expected_answer": "Industrial safety helmets (hard hats) are specified under IS 2925 : 1984.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 2925",
+        "1984"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "industrial_helmet_std"
+    },
+    {
+      "id": "PAR-008",
+      "category": "paraphrased_questions",
+      "query": "Which BIS specification applies to medical rubber examination and surgical gloves?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 13422 : 1992",
+      "expected_doc_id": "DOC-104",
+      "expected_clause": "1",
+      "expected_answer": "Sterile rubber surgical gloves are specified by IS 13422 : 1992.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 13422",
+        "1992"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "glove_std"
+    },
+    {
+      "id": "PAR-009",
+      "category": "paraphrased_questions",
+      "query": "What standard specifies N95 equivalent particulate respirator masks in India?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 9473 : 2002",
+      "expected_doc_id": "DOC-105",
+      "expected_clause": "1",
+      "expected_answer": "Filtering half masks to protect against particles (FFP1, FFP2, FFP3) are specified in IS 9473 : 2002.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 9473",
+        "2002"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "mask_std"
+    },
+    {
+      "id": "PAR-010",
+      "category": "paraphrased_questions",
+      "query": "Which BIS code specifies household pressure cooker safety and burst limits?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2347 : 2017",
+      "expected_doc_id": "DOC-027",
+      "expected_clause": "1",
+      "expected_answer": "Domestic pressure cookers are specified in IS 2347 : 2017.",
+      "expected_values": [],
+      "expected_tokens": [
+        "IS 2347",
+        "2017"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": "cooker_std"
+    },
+    {
+      "id": "MUL-001",
+      "category": "multi_condition",
+      "query": "What are the temperature, relative humidity, and duration conditions for LED lamp humidity cabinet preconditioning in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "8.1",
+      "expected_answer": "The lamp shall be conditioned for 48 h in a cabinet with relative humidity between 91% and 95% and temperature maintained between 25°C and 35°C.",
+      "expected_values": [
+        {
+          "parameter": "duration",
+          "value": 48.0,
+          "unit": "h"
+        },
+        {
+          "parameter": "rh_min",
+          "value": 91.0,
+          "unit": "%"
+        },
+        {
+          "parameter": "rh_max",
+          "value": 95.0,
+          "unit": "%"
+        },
+        {
+          "parameter": "temp_min",
+          "value": 25.0,
+          "unit": "°C"
+        },
+        {
+          "parameter": "temp_max",
+          "value": 35.0,
+          "unit": "°C"
+        }
+      ],
+      "expected_tokens": [
+        "48 h",
+        "91%",
+        "95%",
+        "25°C",
+        "35°C"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "MUL-002",
+      "category": "multi_condition",
+      "query": "What are the proof stress, tensile strength ratio, elongation, and Agt requirements for Fe 500D under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "7.3",
+      "expected_answer": "For Fe 500D: 0.2% proof stress ≥ 500.0 N/mm², tensile/proof stress ratio ≥ 1.10, elongation ≥ 16.0%, and Agt ≥ 5.0%.",
+      "expected_values": [
+        {
+          "parameter": "yield_stress",
+          "value": 500.0,
+          "unit": "N/mm²"
+        },
+        {
+          "parameter": "ts_ys_ratio",
+          "value": 1.1,
+          "unit": "ratio"
+        },
+        {
+          "parameter": "elongation",
+          "value": 16.0,
+          "unit": "%"
+        },
+        {
+          "parameter": "agt",
+          "value": 5.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "500.0 N/mm²",
+        "16.0%",
+        "5.0%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "MUL-003",
+      "category": "multi_condition",
+      "query": "What are the maximum permissible flow errors in upper and lower flow zones for Class A and B water meters in IS 779?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 779 : 1994",
+      "expected_doc_id": "DOC-099",
+      "expected_clause": "9.2",
+      "expected_answer": "Maximum permissible error is ±2% in the upper flow zone (between qt and qmax) and ±5% in the lower flow zone (between qmin and qt) for Class A and B.",
+      "expected_values": [
+        {
+          "parameter": "upper_zone_error",
+          "value": 2.0,
+          "unit": "%"
+        },
+        {
+          "parameter": "lower_zone_error",
+          "value": 5.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "±2%",
+        "±5%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "MUL-004",
+      "category": "multi_condition",
+      "query": "What are the tensile strength and elongation requirements for sterile rubber surgical gloves before and after accelerated ageing in IS 13422?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 13422 : 1992",
+      "expected_doc_id": "DOC-104",
+      "expected_clause": "6.3",
+      "expected_answer": "Before ageing: tensile strength ≥ 24.0 MPa. After accelerated ageing (70°C for 168 h): tensile strength ≥ 18.0 MPa.",
+      "expected_values": [
+        {
+          "parameter": "tensile_unaged",
+          "value": 24.0,
+          "unit": "MPa"
+        },
+        {
+          "parameter": "tensile_aged",
+          "value": 18.0,
+          "unit": "MPa"
+        }
+      ],
+      "expected_tokens": [
+        "24.0 MPa",
+        "18.0 MPa"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "MUL-005",
+      "category": "multi_condition",
+      "query": "What are the maximum limits for Carbon, Sulfur, Phosphorus, and Sulfur+Phosphorus in Fe 500D rebar under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "4.2",
+      "expected_answer": "For Fe 500D: Carbon ≤ 0.25%, Sulfur ≤ 0.040%, Phosphorus ≤ 0.040%, and S+P ≤ 0.075%.",
+      "expected_values": [
+        {
+          "parameter": "carbon",
+          "value": 0.25,
+          "unit": "%"
+        },
+        {
+          "parameter": "sulfur",
+          "value": 0.04,
+          "unit": "%"
+        },
+        {
+          "parameter": "phosphorus",
+          "value": 0.04,
+          "unit": "%"
+        },
+        {
+          "parameter": "s_plus_p",
+          "value": 0.075,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "0.25%",
+        "0.040%",
+        "0.075%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-001",
+      "category": "negative_unanswerable",
+      "query": "What is the exact fatigue life in millions of cycles specified for Fe 500D under IS 1786?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-002",
+      "category": "negative_unanswerable",
+      "query": "What are the BIS standard regulations for liquid propellant rocket engines?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-003",
+      "category": "negative_unanswerable",
+      "query": "What is the retail market price and wholesale distributor discount for IS 16102 certified LED bulbs?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-004",
+      "category": "negative_unanswerable",
+      "query": "What are the mandatory requirements in fake standard IS 99999 : 2099?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-005",
+      "category": "negative_unanswerable",
+      "query": "What is the minimum yield strength specified for non-existent steel grade Fe 9999 in IS 1786?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-006",
+      "category": "negative_unanswerable",
+      "query": "What is the step-by-step recipe for making chocolate cake according to BIS standards?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-007",
+      "category": "negative_unanswerable",
+      "query": "What are the BIS technical guidelines for quantum computer cryogenic dilution refrigerators?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-008",
+      "category": "negative_unanswerable",
+      "query": "Which stock market stocks should I buy for high returns according to Bureau of Indian Standards?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-009",
+      "category": "negative_unanswerable",
+      "query": "What torque moment is required for imaginary cap type Z99 in IS 16102?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "NEG-010",
+      "category": "negative_unanswerable",
+      "query": "What is the legal status and mining regulation of Bitcoin cryptocurrency under BIS?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": null,
+      "expected_doc_id": null,
+      "expected_clause": null,
+      "expected_answer": null,
+      "expected_values": [],
+      "expected_tokens": [
+        "could not find sufficient"
+      ],
+      "negative_case": true,
+      "expected_behavior": "abstain",
+      "paraphrase_group": null
+    },
+    {
+      "id": "ADV-001",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the minimum insulation resistance for self-ballasted LED lamps under IS 16102 equal to 100 MΩ?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 16102 (Part 1) : 2026",
+      "expected_doc_id": "DOC-012",
+      "expected_clause": "8.1",
+      "expected_answer": "No, the minimum insulation resistance specified is 4 MΩ (tested at 500 V DC), not 100 MΩ.",
+      "expected_values": [
+        {
+          "parameter": "insulation_resistance",
+          "value": 4.0,
+          "unit": "MΩ"
+        }
+      ],
+      "expected_tokens": [
+        "4 MΩ",
+        "500 V"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "ADV-002",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the minimum percentage elongation for Fe 500D under IS 1786:2024 15%?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 1786 : 2024",
+      "expected_doc_id": "DOC-034",
+      "expected_clause": "7.3",
+      "expected_answer": "No, the minimum percentage elongation for Fe 500D is 16.0% (not 15%).",
+      "expected_values": [
+        {
+          "parameter": "elongation",
+          "value": 16.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "16.0%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "ADV-003",
+      "category": "numerical_hallucination_stress",
+      "query": "Does IS 2347 require domestic pressure cookers to withstand a burst pressure of 10.0 MPa?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 2347 : 2017",
+      "expected_doc_id": "DOC-027",
+      "expected_clause": "8.2",
+      "expected_answer": "No, the hydraulic burst pressure requirement is not less than 0.3 MPa (3.0 bar).",
+      "expected_values": [
+        {
+          "parameter": "burst_pressure",
+          "value": 0.3,
+          "unit": "MPa"
+        }
+      ],
+      "expected_tokens": [
+        "0.3 MPa"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "ADV-004",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the required toecap impact resistance energy under IS 15298 (Part 2) 500 J?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 15298 (Part 2) : 2016",
+      "expected_doc_id": "DOC-028",
+      "expected_clause": "5.3.2.3",
+      "expected_answer": "No, the specified impact energy for safety footwear toecaps is 200 J.",
+      "expected_values": [
+        {
+          "parameter": "impact_energy",
+          "value": 200.0,
+          "unit": "J"
+        }
+      ],
+      "expected_tokens": [
+        "200 J"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    },
+    {
+      "id": "ADV-005",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the minimum thermal efficiency for domestic LPG stoves in IS 4246 95%?",
+      "as_of_date": "2026-08-31",
+      "expected_standard": "IS 4246 : 2002",
+      "expected_doc_id": "DOC-090",
+      "expected_clause": "7.3",
+      "expected_answer": "No, the minimum thermal efficiency required under IS 4246 is 68%.",
+      "expected_values": [
+        {
+          "parameter": "thermal_efficiency",
+          "value": 68.0,
+          "unit": "%"
+        }
+      ],
+      "expected_tokens": [
+        "68%"
+      ],
+      "negative_case": false,
+      "expected_behavior": "answer",
+      "paraphrase_group": null
+    }
+  ]
+}
