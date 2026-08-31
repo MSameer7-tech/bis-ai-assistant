@@ -1,114 +1,436 @@
 """
-Embedding Manager with Incremental Content-Hash Caching (Step 3).
-Caches embeddings keyed by (content_hash, embedding_model, embedding_model_version)
-to guarantee zero redundant embedding generation across standard updates.
+Dataset-Driven Exact Inverted Index for Phase 2E.
+
+Builds exact retrieval indexes directly from the Chroma SQLite store.
+
+Indexes:
+    - technical identifiers / cap codes
+    - BIS standard numbers
+    - material / cement grades
+    - canonical parameters
 """
 
-import json
 import logging
-from datetime import datetime, timezone
+import re
+import sqlite3
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
-
-from ai.chunking.schema import KnowledgeChunk
-from ai.embeddings.base import BaseEmbeddingProvider
-from ai.embeddings.provider import get_embedding_provider
+from typing import Dict, List, Optional, Set
 
 logger = logging.getLogger(__name__)
 
-ROOT_DIR = Path(__file__).resolve().parent.parent.parent
-VECTOR_DIR = ROOT_DIR / "data" / "vector_store"
-CACHE_FILE = VECTOR_DIR / "embedding_cache.json"
 
+class ExactInvertedIndex:
+    """Inverted index mapping exact technical tokens to chunk IDs."""
 
-class EmbeddingManager:
-    """Manages embedding generation with persistent content-hash caching."""
+    def __init__(self, chunks_dir: Optional[Path] = None):
+        self.chunks_dir = chunks_dir or (
+            Path(__file__).resolve().parents[2]
+            / "data"
+            / "chunks"
+        )
 
-    def __init__(
+        self.chroma_path = (
+            Path(__file__).resolve().parents[2]
+            / "data"
+            / "vector_store"
+            / "chroma"
+            / "chroma.sqlite3"
+        )
+
+        self.identifier_to_chunks: Dict[str, Set[str]] = {}
+        self.parameter_to_chunks: Dict[str, Set[str]] = {}
+        self.grade_to_chunks: Dict[str, Set[str]] = {}
+        self.standard_to_chunks: Dict[str, Set[str]] = {}
+
+        self._build_index()
+
+    @staticmethod
+    def _normalize_key(token: str) -> str:
+        return (
+            str(token)
+            .strip()
+            .lower()
+            .replace(" ", "")
+            .replace("-", "")
+            .replace("_", "")
+        )
+
+    def _add(
         self,
-        provider: Optional[BaseEmbeddingProvider] = None,
-        cache_path: Path = CACHE_FILE,
+        index: Dict[str, Set[str]],
+        key: str,
+        chunk_id: str,
+    ) -> None:
+        if not key or not chunk_id:
+            return
+
+        normalized = self._normalize_key(key)
+
+        if normalized:
+            index.setdefault(normalized, set()).add(chunk_id)
+
+    @staticmethod
+    def _metadata_value(
+        string_value,
+        int_value,
+        float_value,
+        bool_value,
     ):
-        self.provider = provider or get_embedding_provider()
-        self.cache_path = cache_path
-        self.cache: Dict[str, Dict[str, Any]] = self._load_cache()
+        if string_value is not None:
+            return string_value
 
-    def _load_cache(self) -> Dict[str, Dict[str, Any]]:
-        if self.cache_path.exists():
-            try:
-                with open(self.cache_path, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.warning("Could not read embedding cache: %s. Starting fresh.", e)
-        return {}
+        if int_value is not None:
+            return int_value
 
-    def _save_cache(self):
-        self.cache_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(self.cache_path, "w", encoding="utf-8") as f:
-            json.dump(self.cache, f, indent=2)
+        if float_value is not None:
+            return float_value
 
-    def _make_cache_key(self, content_hash: str) -> str:
-        """Cache key: content_hash::model_name::model_version"""
-        m_name = self.provider.model_name
-        m_ver = self.provider.model_version
-        return f"{content_hash}::{m_name}::{m_ver}"
+        return bool_value
 
-    def get_or_create_embeddings(
-        self, chunks: List[KnowledgeChunk]
-    ) -> Tuple[List[List[float]], Dict[str, int]]:
-        """
-        Retrieves cached embeddings for unchanged chunks and generates new embeddings only for uncached chunks.
-        Returns: (embeddings_list, metrics_dict)
-        """
-        embeddings: List[Optional[List[float]]] = [None] * len(chunks)
-        missing_indices: List[int] = []
-        missing_texts: List[str] = []
+    def _load_chroma_chunks(self) -> List[Dict]:
+        """Load chunk IDs and metadata directly from Chroma SQLite."""
+        if not self.chroma_path.exists():
+            logger.warning("Chroma database does not exist: %s", self.chroma_path)
+            return []
 
-        reused_count = 0
-        generated_count = 0
+        conn = sqlite3.connect(f"file:{self.chroma_path}?mode=ro", uri=True)
+        try:
+            cur = conn.cursor()
+            cur.execute("""
+                SELECT id, embedding_id
+                FROM embeddings
+                WHERE embedding_id IS NOT NULL
+                ORDER BY id
+            """)
+            embeddings = cur.fetchall()
+            logger.info("Found %d Chroma embeddings", len(embeddings))
 
-        for idx, chunk in enumerate(chunks):
-            c_hash = chunk.content_hash
-            cache_key = self._make_cache_key(c_hash)
+            chunks = []
+            for embedding_db_id, chunk_id in embeddings:
+                cur.execute("""
+                    SELECT key, string_value, int_value, float_value, bool_value
+                    FROM embedding_metadata
+                    WHERE id = ?
+                """, (embedding_db_id,))
 
-            if cache_key in self.cache:
-                embeddings[idx] = self.cache[cache_key]["embedding"]
-                reused_count += 1
-            else:
-                missing_indices.append(idx)
-                missing_texts.append(chunk.text)
+                metadata = {}
+                for key, string_value, int_value, float_value, bool_value in cur.fetchall():
+                    if string_value is not None:
+                        value = string_value
+                    elif int_value is not None:
+                        value = int_value
+                    elif float_value is not None:
+                        value = float_value
+                    else:
+                        value = bool_value
+                    metadata[key] = value
 
-        # Batch embed missing texts
-        if missing_texts:
-            logger.info("Generating embeddings for %d new/modified chunks...", len(missing_texts))
-            new_vectors = self.provider.embed_texts(missing_texts)
-            now_iso = datetime.now(timezone.utc).isoformat()
+                chunks.append({"chunk_id": chunk_id, "metadata": metadata})
 
-            for i, vec in enumerate(new_vectors):
-                orig_idx = missing_indices[i]
-                embeddings[orig_idx] = vec
-                c_hash = chunks[orig_idx].content_hash
-                cache_key = self._make_cache_key(c_hash)
+            logger.info("Loaded %d Chroma chunks for exact index", len(chunks))
+            return chunks
+        finally:
+            conn.close()
 
-                self.cache[cache_key] = {
-                    "embedding": vec,
-                    "content_hash": c_hash,
-                    "model_name": self.provider.model_name,
-                    "model_version": self.provider.model_version,
-                    "dimension": len(vec),
-                    "created_at": now_iso,
-                }
-                generated_count += 1
+    def _build_index(self) -> None:
+        """Build exact indexes from Chroma metadata."""
 
-            self._save_cache()
+        chunks = self._load_chroma_chunks()
 
-        metrics = {
-            "reused": reused_count,
-            "generated": generated_count,
-            "total": len(chunks),
+        if not chunks:
+            logger.warning(
+                "No Chroma chunks available; exact index is empty"
+            )
+            return
+
+        parameter_patterns = {
+            "insulation_resistance": [
+                "insulation resistance",
+            ],
+            "yield_stress": [
+                "yield stress",
+                "proof stress",
+                "0.2 percent proof stress",
+                "0.2% proof stress",
+            ],
+            "percentage_elongation": [
+                "percentage elongation",
+                "elongation",
+            ],
+            "torque_moment": [
+                "torque",
+                "torsion moment",
+            ],
+            "compressive_strength": [
+                "compressive strength",
+            ],
+            "air_delivery": [
+                "air delivery",
+            ],
+            "proof_pressure": [
+                "proof pressure",
+                "hydraulic pressure",
+                "hydraulic",
+            ],
+            "mass": [
+                "mass",
+            ],
+            "ph": [
+                "ph",
+            ],
         }
-        return [e for e in embeddings if e is not None], metrics
 
-    def embed_query(self, query: str) -> List[float]:
-        """Embeds a user query using the active embedding model."""
-        return self.provider.embed_query(query)
+        for chunk in chunks:
+
+            chunk_id = chunk.get("chunk_id")
+
+            if not chunk_id:
+                continue
+
+            metadata = chunk.get("metadata") or {}
+
+            text = metadata.get(
+                "chroma:document",
+                "",
+            )
+
+            if not isinstance(text, str):
+                text = str(text or "")
+
+            text_lower = text.lower()
+
+            # --------------------------------------------------
+            # Standard
+            # --------------------------------------------------
+
+            standard_number = metadata.get(
+                "standard_number",
+                "",
+            )
+
+            if standard_number:
+
+                standard_number = str(standard_number)
+
+                self._add(
+                    self.standard_to_chunks,
+                    standard_number,
+                    chunk_id,
+                )
+
+                match = re.search(
+                    r"\bIS\s*(\d+)",
+                    standard_number,
+                    re.IGNORECASE,
+                )
+
+                if match:
+
+                    number = match.group(1)
+
+                    self._add(
+                        self.standard_to_chunks,
+                        f"IS{number}",
+                        chunk_id,
+                    )
+
+                    self._add(
+                        self.standard_to_chunks,
+                        number,
+                        chunk_id,
+                    )
+
+            # --------------------------------------------------
+            # Cap / technical identifiers
+            # --------------------------------------------------
+
+            cap_matches = re.findall(
+                r"\b("
+                r"B22d|B15d|GX53|E17|E27|E14|E26|E40|"
+                r"G9|G4|GU10|R7s"
+                r")\b",
+                text,
+                re.IGNORECASE,
+            )
+
+            for cap in cap_matches:
+                self._add(
+                    self.identifier_to_chunks,
+                    cap,
+                    chunk_id,
+                )
+
+            # --------------------------------------------------
+            # Grades
+            # --------------------------------------------------
+
+            grade_matches = re.findall(
+                r"\b("
+                r"Fe\s*550D|Fe\s*550|"
+                r"Fe\s*500D|Fe\s*500|"
+                r"Fe\s*415D|Fe\s*415|"
+                r"Fe\s*600|"
+                r"53\s*Grade|43\s*Grade|33\s*Grade|"
+                r"OPC\s*53|OPC\s*43|OPC\s*33"
+                r")\b",
+                text,
+                re.IGNORECASE,
+            )
+
+            for grade in grade_matches:
+                self._add(
+                    self.grade_to_chunks,
+                    grade,
+                    chunk_id,
+                )
+
+            # --------------------------------------------------
+            # Parameters
+            # --------------------------------------------------
+
+            for parameter, patterns in parameter_patterns.items():
+
+                if any(
+                    pattern.lower() in text_lower
+                    for pattern in patterns
+                ):
+                    self._add(
+                        self.parameter_to_chunks,
+                        parameter,
+                        chunk_id,
+                    )
+
+            # --------------------------------------------------
+            # Structured requirements
+            # --------------------------------------------------
+
+            structured = metadata.get(
+                "structured_data",
+                {},
+            )
+
+            if isinstance(structured, dict):
+
+                requirements = structured.get(
+                    "requirements",
+                    [],
+                )
+
+                if isinstance(requirements, list):
+
+                    for requirement in requirements:
+
+                        if not isinstance(requirement, dict):
+                            continue
+
+                        parameter = requirement.get(
+                            "parameter"
+                        )
+
+                        if parameter:
+                            self._add(
+                                self.parameter_to_chunks,
+                                str(parameter),
+                                chunk_id,
+                            )
+
+        logger.info(
+            "ExactInvertedIndex built: "
+            "%d identifiers, "
+            "%d standards, "
+            "%d grades, "
+            "%d parameter keys",
+            len(self.identifier_to_chunks),
+            len(self.standard_to_chunks),
+            len(self.grade_to_chunks),
+            len(self.parameter_to_chunks),
+        )
+
+    def get_matching_chunks(
+        self,
+        exact_identifiers: Optional[List[str]] = None,
+        parameter: Optional[str] = None,
+        grade: Optional[str] = None,
+        standard_code: Optional[str] = None,
+    ) -> Set[str]:
+        """Return chunk IDs matching exact search keys."""
+
+        matches: Set[str] = set()
+
+        if exact_identifiers:
+
+            for identifier in exact_identifiers:
+
+                normalized = self._normalize_key(
+                    identifier
+                )
+
+                matches.update(
+                    self.identifier_to_chunks.get(
+                        normalized,
+                        set(),
+                    )
+                )
+
+                matches.update(
+                    self.grade_to_chunks.get(
+                        normalized,
+                        set(),
+                    )
+                )
+
+        if parameter:
+
+            normalized_parameter = str(
+                parameter
+            ).strip().lower()
+
+            matches.update(
+                self.parameter_to_chunks.get(
+                    normalized_parameter,
+                    set(),
+                )
+            )
+
+        if grade:
+
+            normalized_grade = self._normalize_key(
+                grade
+            )
+
+            matches.update(
+                self.grade_to_chunks.get(
+                    normalized_grade,
+                    set(),
+                )
+            )
+
+        if standard_code:
+
+            normalized_standard = self._normalize_key(
+                standard_code
+            )
+
+            matches.update(
+                self.standard_to_chunks.get(
+                    normalized_standard,
+                    set(),
+                )
+            )
+
+            match = re.search(
+                r"\bIS\s*(\d+)",
+                str(standard_code),
+                re.IGNORECASE,
+            )
+
+            if match:
+
+                matches.update(
+                    self.standard_to_chunks.get(
+                        f"is{match.group(1)}",
+                        set(),
+                    )
+                )
+
+        return matches
