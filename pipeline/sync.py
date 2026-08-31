@@ -16,6 +16,7 @@ from ai.ingestion.change_detector import ChangeDetector
 from ai.ingestion.manifest import IngestionManifestManager
 from ai.ingestion.update_pipeline import IncrementalUpdatePipeline
 from ai.versioning.semantic_diff import SemanticDiffEngine
+from ai.vectorstore.indexer import IncrementalIndexer
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)-8s | %(message)s")
 logger = logging.getLogger(__name__)
@@ -27,7 +28,7 @@ CHUNKS_DIR = ROOT_DIR / "data" / "chunks"
 
 
 class KnowledgeSyncEngine:
-    """Synchronizes knowledge repository with source records and incremental updates."""
+    """Synchronizes knowledge repository with source records, incremental updates, and vector index."""
 
     def __init__(self):
         self.change_detector = ChangeDetector()
@@ -35,6 +36,7 @@ class KnowledgeSyncEngine:
         self.manifest_manager = IngestionManifestManager()
         self.semantic_diff = SemanticDiffEngine()
         self.chunk_diff = ChunkDiffEngine()
+        self.indexer = IncrementalIndexer()
 
     def sync(self, force: bool = False) -> Dict[str, Any]:
         with open(REGISTRY_PATH, "r", encoding="utf-8") as f:
@@ -65,7 +67,6 @@ class KnowledgeSyncEngine:
 
         docs_requiring_processing = list(updated_docs)
         if force and not docs_requiring_processing:
-            # If forced, run on the first pilot doc
             first_item = registry[0]
             docs_requiring_processing.append((first_item["document_id"], ROOT_DIR / first_item["local_path"]))
 
@@ -74,24 +75,6 @@ class KnowledgeSyncEngine:
         reqs_add = 0
         reqs_rem = 0
         defs_mod = 0
-
-        chunks_unchanged = 0
-        chunks_modified = 0
-        chunks_added = 0
-
-        embeddings_reused = 0
-        embeddings_generated = 0
-
-        # Calculate total chunks in repository
-        for cp in CHUNKS_DIR.glob("DOC-*.json"):
-            if not cp.name.endswith(".chunks.json"):
-                try:
-                    with open(cp, "r", encoding="utf-8") as cf:
-                        chunks_unchanged += len(json.load(cf))
-                except Exception:
-                    pass
-
-        embeddings_reused = chunks_unchanged
 
         # Process any changed documents
         for doc_id, p_path in docs_requiring_processing:
@@ -108,14 +91,8 @@ class KnowledgeSyncEngine:
             reqs_rem += r_diff.get("removed_count", 0)
             defs_mod += sem.get("definitions_diff", {}).get("modified_count", 0)
 
-            c_diff = res.get("chunk_diff", {})
-            c_mod = c_diff.get("modified_count", 0)
-            c_add = c_diff.get("added_count", 0)
-            c_unc = c_diff.get("unchanged_count", 0)
-
-            chunks_modified += c_mod
-            chunks_added += c_add
-            embeddings_generated += (c_mod + c_add)
+        # Execute Incremental Vector Indexing (Step 16)
+        index_metrics = self.indexer.index_chunks()
 
         # Update manifest
         self.manifest_manager.generate_manifest()
@@ -134,13 +111,13 @@ class KnowledgeSyncEngine:
                 "definitions_modified": defs_mod,
             },
             "chunks": {
-                "unchanged": chunks_unchanged,
-                "modified": chunks_modified,
-                "added": chunks_added,
+                "unchanged": index_metrics["unchanged_count"],
+                "modified": index_metrics["modified_count"],
+                "added": index_metrics["added_count"],
             },
             "embeddings": {
-                "reused": embeddings_reused,
-                "generated": embeddings_generated,
+                "reused": index_metrics["embeddings_reused"],
+                "generated": index_metrics["embeddings_generated"],
             },
             "vector_index_status": "Updated successfully",
         }

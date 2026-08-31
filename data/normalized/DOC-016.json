@@ -1,0 +1,407 @@
+{
+  "document_id": "DOC-016",
+  "source_id": "SRC-016",
+  "document_metadata": {
+    "document_id": "DOC-016",
+    "source_id": "SRC-016",
+    "standard_id": "STD-IS_694_2010",
+    "standard_number": "IS 694 : 2010",
+    "title": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC016-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 694 : 2010) covers and specifies requirements for Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision). It applies to pvc_insulated_cables under cables_conductors category in the electrical domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC016-9.1",
+      "clause_number": "9.1",
+      "title": "Conductor Resistance",
+      "content": "Conductor Resistance: Maximum electrical resistance of copper conductor at 20°C for 1.5 sq mm shall be 12.1 Ω/km.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC016-10.1",
+      "clause_number": "10.1",
+      "title": "Insulation Thickness",
+      "content": "Insulation Thickness: Minimum nominal insulation thickness shall be 0.7 mm for 1.5 sq mm cable.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC016-11.2",
+      "clause_number": "11.2",
+      "title": "High Voltage Test",
+      "content": "High Voltage Test: Water immersion test at 3 kV AC applied for 5 min without puncture.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC016-12.1",
+      "clause_number": "12.1",
+      "title": "Spark Test",
+      "content": "Spark Test: Spark testing at 6 kV AC for online extrusion inspection.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC016-0001",
+      "entity_type": "standard",
+      "name": "IS 694 : 2010",
+      "status": "mandatory",
+      "original_value": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision)",
+      "value": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision)",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC016-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC016-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC016-0004",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "1100 V",
+      "value": "1100 V",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "1",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ],
+      "normalized": {
+        "value": 1100,
+        "unit": "V"
+      },
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC016-0005",
+      "entity_type": "value_and_unit",
+      "name": "insulation_resistance",
+      "status": "mandatory",
+      "original_value": "12.1 Ω",
+      "value": "12.1 Ω",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "9.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 12.1,
+        "unit": "Ω"
+      },
+      "unit": "MΩ"
+    },
+    {
+      "entity_id": "ENT-DOC016-0006",
+      "entity_type": "value_and_unit",
+      "name": "temperature",
+      "status": "mandatory",
+      "original_value": "20°C",
+      "value": "20°C",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "9.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 20,
+        "unit": "°C"
+      },
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC016-0007",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "3 kV AC",
+      "value": "3 kV AC",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "11.2",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "11.2",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 3,
+        "unit": "kV"
+      },
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC016-0008",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "6 kV AC",
+      "value": "6 kV AC",
+      "provenance": {
+        "document_id": "DOC-016",
+        "source_id": "SRC-016",
+        "standard": "IS 694 : 2010",
+        "clause": "12.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "12.1",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 6,
+        "unit": "kV"
+      },
+      "unit": "V"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC016-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 694 : 2010",
+      "document_id": "DOC-016",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC016-0002",
+      "subject": "Clause 9.1: Conductor Resistance",
+      "predicate": "part_of",
+      "object": "IS 694 : 2010",
+      "document_id": "DOC-016",
+      "source_clause": "9.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC016-0003",
+      "subject": "Clause 10.1: Insulation Thickness",
+      "predicate": "part_of",
+      "object": "IS 694 : 2010",
+      "document_id": "DOC-016",
+      "source_clause": "10.1",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC016-0004",
+      "subject": "Clause 11.2: High Voltage Test",
+      "predicate": "part_of",
+      "object": "IS 694 : 2010",
+      "document_id": "DOC-016",
+      "source_clause": "11.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC016-0005",
+      "subject": "Clause 12.1: Spark Test",
+      "predicate": "part_of",
+      "object": "IS 694 : 2010",
+      "document_id": "DOC-016",
+      "source_clause": "12.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.627856+00:00",
+    "total_definitions": 0,
+    "total_entities": 8,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-016",
+    "document_id": "DOC-016",
+    "raw_file": null,
+    "sha256": null
+  }
+}

@@ -96,12 +96,17 @@ class TableChunker:
             t_force = NormativeForce.UNDER_CONSIDERATION if has_under_cons else NormativeForce.MANDATORY
 
             c_hash = compute_chunk_content_hash(table_text)
+            p_clause = c_num.split(".")[0] if "." in c_num else None
 
             chunk = KnowledgeChunk(
                 chunk_id=make_chunk_id(target_doc_id, f"Table_{t_num}", idx + 1, prefix="TAB"),
                 document_id=doc_id,
                 version_id=version_id,
                 source_id=source_id,
+                standard_number=std_num,
+                clause_number=c_num or t_num_raw,
+                parent_clause=p_clause,
+                section_number=p_clause,
                 chunk_type=ChunkType.TABLE,
                 title=t_title,
                 table_number=t_num,
@@ -111,9 +116,9 @@ class TableChunker:
                     number=c_num or t_num_raw,
                     title=t_title,
                     depth=2,
-                    parent_clause=c_num.split(".")[0] if "." in c_num else None,
-                    hierarchy_path=[c_num.split(".")[0], c_num] if "." in c_num else [t_num_raw],
-                    section_number=c_num.split(".")[0] if "." in c_num else None,
+                    parent_clause=p_clause,
+                    hierarchy_path=[p_clause, c_num] if p_clause else [t_num_raw],
+                    section_number=p_clause,
                     section_title=t_title,
                 ),
                 normative_context=NormativeContext(
@@ -121,13 +126,18 @@ class TableChunker:
                     modal_keywords=["table values", "torque", "bending moment"],
                     verbatim_normative_statements=[f"{t_title} values in Clause {c_num}"],
                 ),
+                normative_force=t_force.value,
                 text=table_text,
                 content_hash=c_hash,
                 entities=[],
                 requirements=[],
                 conditions=[],
                 references=refs_by_clause.get(c_num, []),
+                pages=[p_num],
                 page_refs=[p_num],
+                temporal_status="current",
+                valid_from="2012-08-01",
+                valid_until=None,
                 provenance=ChunkProvenance(
                     document_id=doc_id,
                     source_id=source_id,

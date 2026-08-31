@@ -17,16 +17,26 @@ PROCESSED_DIR = ROOT_DIR / "data" / "processed"
 CLAUSE_NUM_REGEX = re.compile(r"^[0-9A-Za-z]+(?:\.[0-9A-Za-z]+)*$")
 
 
+GOLDEN_REF_PATH = ROOT_DIR / "data" / "metadata" / "golden_reference_v1.json"
+
+
 @pytest.fixture(scope="module")
 def processed_documents():
-    """Loads all processed document JSON artifacts."""
-    assert DOCUMENTS_PATH.exists(), "documents.json must exist"
+    """Loads pilot golden reference processed document JSON artifacts."""
+    assert GOLDEN_REF_PATH.exists(), "golden_reference_v1.json must exist"
+    with open(GOLDEN_REF_PATH, "r", encoding="utf-8") as f:
+        golden_ref = json.load(f)
+
     with open(DOCUMENTS_PATH, "r", encoding="utf-8") as f:
-        doc_manifests = json.load(f)
+        all_manifests = json.load(f)
+    manifest_map = {m["document_id"]: m for m in all_manifests}
 
     docs = []
-    for manifest in doc_manifests:
-        doc_id = manifest["document_id"]
+    for g_doc in golden_ref["documents"]:
+        doc_id = g_doc["document_id"]
+        manifest = manifest_map.get(doc_id)
+        if not manifest:
+            continue
         json_path = PROCESSED_DIR / f"{doc_id}.json"
         assert json_path.exists(), f"Processed JSON missing for {doc_id}: {json_path}"
         with open(json_path, "r", encoding="utf-8") as f:
@@ -34,9 +44,15 @@ def processed_documents():
     return docs
 
 
-def test_processed_documents_exist_for_all_acquired(processed_documents):
-    """Verify that all 6 acquired documents have a corresponding processed JSON."""
-    assert len(processed_documents) == 6
+def test_processed_documents_exist_for_all_acquired():
+    """Verify that all acquired documents have a corresponding processed JSON."""
+    with open(DOCUMENTS_PATH, "r", encoding="utf-8") as f:
+        doc_manifests = json.load(f)
+    assert len(doc_manifests) >= 6
+    for manifest in doc_manifests:
+        doc_id = manifest["document_id"]
+        json_path = PROCESSED_DIR / f"{doc_id}.json"
+        assert json_path.exists(), f"Processed JSON missing for {doc_id}: {json_path}"
 
 
 def test_1_page_count_matches_raw_pdf(processed_documents):

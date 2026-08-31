@@ -1,0 +1,369 @@
+{
+  "document_id": "DOC-014",
+  "source_id": "SRC-014",
+  "document_metadata": {
+    "document_id": "DOC-014",
+    "source_id": "SRC-014",
+    "standard_id": "STD-IS_555_1979",
+    "standard_number": "IS 555 : 1979",
+    "title": "Specification for Table Type Electric Fans and Regulators",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC014-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 555 : 1979) covers and specifies requirements for Specification for Table Type Electric Fans and Regulators. It applies to electric_table_fans under fans category in the electrical domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC014-7.1",
+      "clause_number": "7.1",
+      "title": "Air Delivery",
+      "content": "Air Delivery: The minimum air delivery for 400 mm sweep table fans shall be 70 m³/min.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC014-7.2",
+      "clause_number": "7.2",
+      "title": "Power Input",
+      "content": "Power Input: Power input shall not exceed 55 W at maximum speed.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC014-8.1",
+      "clause_number": "8.1",
+      "title": "Insulation Resistance",
+      "content": "Insulation Resistance: Shall not be less than 2 MΩ.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC014-0001",
+      "entity_type": "standard",
+      "name": "IS 555 : 1979",
+      "status": "mandatory",
+      "original_value": "Specification for Table Type Electric Fans and Regulators",
+      "value": "Specification for Table Type Electric Fans and Regulators",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC014-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC014-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC014-0004",
+      "entity_type": "test",
+      "name": "Air Delivery Test",
+      "status": "mandatory",
+      "original_value": "Air Delivery Test",
+      "value": "Air Delivery Test",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC014-0005",
+      "entity_type": "value_and_unit",
+      "name": "air_delivery",
+      "status": "mandatory",
+      "original_value": "70 m³/min",
+      "value": "70 m³/min",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 70,
+        "unit": "m³/min"
+      },
+      "unit": "m³/min"
+    },
+    {
+      "entity_id": "ENT-DOC014-0006",
+      "entity_type": "value_and_unit",
+      "name": "wattage",
+      "status": "mandatory",
+      "original_value": "55 W",
+      "value": "55 W",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "7.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 55,
+        "unit": "W"
+      },
+      "unit": "W"
+    },
+    {
+      "entity_id": "ENT-DOC014-0007",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "8.1",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC014-0008",
+      "entity_type": "value_and_unit",
+      "name": "insulation_resistance",
+      "status": "mandatory",
+      "original_value": "2 MΩ",
+      "value": "2 MΩ",
+      "provenance": {
+        "document_id": "DOC-014",
+        "source_id": "SRC-014",
+        "standard": "IS 555 : 1979",
+        "clause": "8.1",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 2,
+        "unit": "MΩ"
+      },
+      "unit": "MΩ"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC014-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 555 : 1979",
+      "document_id": "DOC-014",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC014-0002",
+      "subject": "Clause 7.1: Air Delivery",
+      "predicate": "part_of",
+      "object": "IS 555 : 1979",
+      "document_id": "DOC-014",
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC014-0003",
+      "subject": "Clause 7.2: Power Input",
+      "predicate": "part_of",
+      "object": "IS 555 : 1979",
+      "document_id": "DOC-014",
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC014-0004",
+      "subject": "Clause 8.1: Insulation Resistance",
+      "predicate": "part_of",
+      "object": "IS 555 : 1979",
+      "document_id": "DOC-014",
+      "source_clause": "8.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.619801+00:00",
+    "total_definitions": 0,
+    "total_entities": 8,
+    "total_requirements": 0,
+    "total_relationships": 4,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-014",
+    "document_id": "DOC-014",
+    "raw_file": null,
+    "sha256": null
+  }
+}

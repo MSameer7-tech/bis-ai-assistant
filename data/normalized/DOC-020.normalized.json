@@ -1,0 +1,537 @@
+{
+  "document_id": "DOC-020",
+  "source_id": "SRC-020",
+  "document_metadata": {
+    "document_id": "DOC-020",
+    "source_id": "SRC-020",
+    "standard_id": "STD-IS_1786_2008",
+    "standard_number": "IS 1786 : 2008",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fourth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC020-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 1786 : 2008) covers and specifies requirements for High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fourth Revision). It applies to high_strength_deformed_steel_bars under steel_metals category in the construction_civil domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC020-7.1",
+      "clause_number": "7.1",
+      "title": "Yield Stress (0.2% Proof Stress)",
+      "content": "Yield Stress (0.2% Proof Stress): Fe 415 minimum 415 N/mm² (415 MPa); Fe 500 minimum 500 N/mm² (500 MPa); Fe 550 minimum 550 N/mm² (550 MPa); Fe 600 minimum 600 N/mm² (600 MPa).",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC020-7.2",
+      "clause_number": "7.2",
+      "title": "Tensile Strength (TS)",
+      "content": "Tensile Strength (TS): For Fe 500, minimum tensile strength shall be 545 N/mm² (TS/YS ratio >= 1.08).",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC020-7.3",
+      "clause_number": "7.3",
+      "title": "Elongation",
+      "content": "Elongation: Minimum percentage elongation on gauge length 5.65√A shall be 14.5% for Fe 415, 12.0% for Fe 500, 10.0% for Fe 550, and 10.0% for Fe 600.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC020-8.1",
+      "clause_number": "8.1",
+      "title": "Bend Test",
+      "content": "Bend Test: No transverse cracks on the tension side around mandrel diameter specified in Table 4.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC020-8.2",
+      "clause_number": "8.2",
+      "title": "Rebend Test",
+      "content": "Rebend Test: Bar bent through 135°, aged in boiling water for 30 min, and bent back through 157.5° without rupture.",
+      "page_start": 6,
+      "page_end": 7,
+      "page_refs": [
+        6,
+        7
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC020-4.1",
+      "clause_number": "4.1",
+      "title": "Chemical Composition",
+      "content": "Chemical Composition: Maximum Carbon 0.30%, Sulphur 0.055%, Phosphorus 0.055% for Fe 500.",
+      "page_start": 7,
+      "page_end": 8,
+      "page_refs": [
+        7,
+        8
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC020-0001",
+      "entity_type": "standard",
+      "name": "IS 1786 : 2008",
+      "status": "mandatory",
+      "original_value": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fourth Revision)",
+      "value": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fourth Revision)",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC020-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC020-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC020-0004",
+      "entity_type": "test",
+      "name": "Tensile Yield Test",
+      "status": "mandatory",
+      "original_value": "Tensile Yield Test",
+      "value": "Tensile Yield Test",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC020-0005",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "2%",
+      "value": "2%",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 2,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC020-0006",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "415 N/mm²",
+      "value": "415 N/mm²",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 415,
+        "unit": "N/mm²"
+      },
+      "unit": "N/mm²"
+    },
+    {
+      "entity_id": "ENT-DOC020-0007",
+      "entity_type": "test",
+      "name": "Tensile Yield Test",
+      "status": "mandatory",
+      "original_value": "Tensile Yield Test",
+      "value": "Tensile Yield Test",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "7.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC020-0008",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "545 N/mm²",
+      "value": "545 N/mm²",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "7.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 545,
+        "unit": "N/mm²"
+      },
+      "unit": "N/mm²"
+    },
+    {
+      "entity_id": "ENT-DOC020-0009",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "5%",
+      "value": "5%",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "7.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "7.3",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 5,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC020-0010",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "30%",
+      "value": "30%",
+      "provenance": {
+        "document_id": "DOC-020",
+        "source_id": "SRC-020",
+        "standard": "IS 1786 : 2008",
+        "clause": "4.1",
+        "page": 7,
+        "pages": [
+          7,
+          8
+        ]
+      },
+      "source_clause": "4.1",
+      "source_pages": [
+        7,
+        8
+      ],
+      "normalized": {
+        "value": 30,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC020-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2008",
+      "document_id": "DOC-020",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC020-0002",
+      "subject": "Clause 7.1: Yield Stress (0.2% Proof Stress)",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2008",
+      "document_id": "DOC-020",
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC020-0003",
+      "subject": "Clause 7.2: Tensile Strength (TS)",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2008",
+      "document_id": "DOC-020",
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC020-0004",
+      "subject": "Clause 7.3: Elongation",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2008",
+      "document_id": "DOC-020",
+      "source_clause": "7.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC020-0005",
+      "subject": "Clause 8.1: Bend Test",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2008",
+      "document_id": "DOC-020",
+      "source_clause": "8.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC020-0006",
+      "subject": "Clause 8.2: Rebend Test",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2008",
+      "document_id": "DOC-020",
+      "source_clause": "8.2",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC020-0007",
+      "subject": "Clause 4.1: Chemical Composition",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2008",
+      "document_id": "DOC-020",
+      "source_clause": "4.1",
+      "source_pages": [
+        7,
+        8
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [
+    {
+      "table_id": "TABLE-001",
+      "title": "Table 1",
+      "clause": "",
+      "source_page": 1,
+      "headers": [],
+      "normalized_headers": [],
+      "rows": [
+        {
+          "col_0": "parameter",
+          "col_1": "value",
+          "col_2": "normative_status"
+        }
+      ],
+      "raw_markdown": "",
+      "semantic_table_id": "TABLE-DOC020-T001"
+    }
+  ],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.644410+00:00",
+    "total_definitions": 0,
+    "total_entities": 10,
+    "total_requirements": 0,
+    "total_relationships": 7,
+    "total_cross_references": 0,
+    "total_tables": 1,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-020",
+    "document_id": "DOC-020",
+    "raw_file": null,
+    "sha256": null
+  }
+}

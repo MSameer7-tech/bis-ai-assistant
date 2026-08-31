@@ -1,12 +1,10 @@
 """
-Phase 2E Chunk Schema and Typed Models (Step 7).
-Defines self-contained semantic knowledge chunks with immutable stable identities,
-version lineage (DOC-001-v001::8.1.1::REQ-001), content hashes, clause hierarchies,
-normative modal keywords, structured tables, definitions, and cross-references.
+Structure-Aware Semantic Chunking Schema and Contracts for Phase 2E and Phase 3.
+Freezes the chunk contract for Vector Database indexing and Hybrid Retrieval.
 """
 
-import hashlib
 from enum import Enum
+import hashlib
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field
 
@@ -28,15 +26,25 @@ class ChunkType(str, Enum):
 
 class NormativeForce(str, Enum):
     MANDATORY = "mandatory"
-    PROHIBITION = "prohibition"
+    RECOMMENDED = "recommended"
+    RECOMMENDATION = "recommended"
+    PERMITTED = "permitted"
+    PROHIBITED = "prohibited"
+    PROHIBITION = "prohibited"
     UNDER_CONSIDERATION = "under_consideration"
-    RECOMMENDATION = "recommendation"
     INFORMATIVE = "informative"
+
+
+class NormativeContext(BaseModel):
+    normative_force: NormativeForce = NormativeForce.INFORMATIVE
+    modal_keywords: List[str] = Field(default_factory=list)
+    verbatim_normative_statements: List[str] = Field(default_factory=list)
+    compliance_verification_method: Optional[str] = None
 
 
 class ChunkClause(BaseModel):
     number: str
-    title: str
+    title: Optional[str] = None
     depth: int = 1
     parent_clause: Optional[str] = None
     hierarchy_path: List[str] = Field(default_factory=list)
@@ -44,17 +52,10 @@ class ChunkClause(BaseModel):
     section_title: Optional[str] = None
 
 
-class NormativeContext(BaseModel):
-    normative_force: NormativeForce = NormativeForce.MANDATORY
-    modal_keywords: List[str] = Field(default_factory=list)
-    verbatim_normative_statements: List[str] = Field(default_factory=list)
-    compliance_verification_method: Optional[str] = None
-
-
 class ChunkCrossReference(BaseModel):
     standard: str
     target_location: Optional[str] = None
-    relationship: str = "normative_reference"
+    relationship: str = "references"
     reference_type: str = "normative"
     context_snippet: Optional[str] = None
 
@@ -70,14 +71,23 @@ class ChunkProvenance(BaseModel):
 
 
 class KnowledgeChunk(BaseModel):
+    """
+    Frozen Chunk Contract for BIS Knowledge Retrieval (Step 1).
+    Guarantees consistent schema across all pilot and production standards.
+    """
     chunk_id: str
     document_id: str
     version_id: Optional[str] = None
     source_id: str
+    standard_number: Optional[str] = None
+    clause_number: Optional[str] = None
+    parent_clause: Optional[str] = None
+    section_number: Optional[str] = None
     chunk_type: ChunkType
     title: Optional[str] = None
     clause: ChunkClause
     normative_context: NormativeContext = Field(default_factory=NormativeContext)
+    normative_force: str = "informative"
     text: str
     content_hash: Optional[str] = None
     term: Optional[str] = None
@@ -89,7 +99,11 @@ class KnowledgeChunk(BaseModel):
     requirements: List[Dict[str, Any]] = Field(default_factory=list)
     conditions: List[Dict[str, Any]] = Field(default_factory=list)
     references: List[ChunkCrossReference] = Field(default_factory=list)
-    page_refs: List[int]
+    pages: List[int] = Field(default_factory=list)
+    page_refs: List[int] = Field(default_factory=list)
+    temporal_status: str = "current"  # "current", "superseded", "provisional"
+    valid_from: Optional[str] = None
+    valid_until: Optional[str] = None
     provenance: ChunkProvenance
     metadata: Dict[str, Any] = Field(default_factory=dict)
 

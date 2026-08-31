@@ -61,6 +61,31 @@ SAMPLING_PATTERN = re.compile(
     re.IGNORECASE,
 )
 
+AIR_DELIVERY_PATTERN = re.compile(
+    r"(\b[0-9]+(?:\.[0-9]+)?\s*(?:m³/min|m3/min|m³/h|m3/h))\b",
+    re.IGNORECASE,
+)
+
+STRENGTH_STRESS_PATTERN = re.compile(
+    r"(\b[0-9]+(?:\.[0-9]+)?\s*(?:MPa|N/mm²|N/mm2|kN))\b",
+    re.IGNORECASE,
+)
+
+ENERGY_IMPACT_PATTERN = re.compile(
+    r"(\b[0-9]+(?:\.[0-9]+)?\s*(?:J|Joules?))\b",
+    re.IGNORECASE,
+)
+
+PRESSURE_PATTERN = re.compile(
+    r"(\b[0-9]+(?:\.[0-9]+)?\s*(?:bar|kPa|kgf/cm²))\b",
+    re.IGNORECASE,
+)
+
+WATER_CHEM_PATTERN = re.compile(
+    r"(\b[0-9]+(?:\.[0-9]+)?\s*(?:mg/l|mg/L|ppm|NTU))\b",
+    re.IGNORECASE,
+)
+
 TEST_NAME_PATTERNS = [
     ("insulation_resistance_test", re.compile(r"\binsulation resistance\b", re.IGNORECASE)),
     ("electric_strength_test", re.compile(r"\belectric strength\b|\bdielectric\b", re.IGNORECASE)),
@@ -70,6 +95,12 @@ TEST_NAME_PATTERNS = [
     ("cap_temperature_rise_test", re.compile(r"\bcap temperature rise\b", re.IGNORECASE)),
     ("fault_condition_test", re.compile(r"\bfault conditions?\b", re.IGNORECASE)),
     ("marking_durability_test", re.compile(r"\brubbing.*hexane\b|\bmarking durability\b", re.IGNORECASE)),
+    ("air_delivery_test", re.compile(r"\bair delivery\b|\banemometer chamber\b", re.IGNORECASE)),
+    ("compressive_strength_test", re.compile(r"\bcompressive strength\b|\bhydraulic compression\b", re.IGNORECASE)),
+    ("tensile_yield_test", re.compile(r"\btensile strength\b|\byield stress\b|\bproof stress\b", re.IGNORECASE)),
+    ("impact_attenuation_test", re.compile(r"\bimpact attenuation\b|\bimpact absorption\b|\bdrop test\b", re.IGNORECASE)),
+    ("bursting_pressure_test", re.compile(r"\bbursting pressure\b|\bhydraulic pressure test\b", re.IGNORECASE)),
+    ("microbiological_test", re.compile(r"\bmicrobiological\b|\be\.?\s*coli\b|\bcoliform\b", re.IGNORECASE)),
 ]
 
 
@@ -196,6 +227,31 @@ class EntityExtractor:
                     h_raw = h_match.group(1).strip()
                     norm_h = self.val_normalizer.normalize_value_expression(h_raw)
                     add_entity("value_and_unit", "humidity", h_raw, c_num, c_pages, {"normalized": norm_h["normalized"], "unit": "% RH"})
+
+                for ad_match in AIR_DELIVERY_PATTERN.finditer(c_text):
+                    ad_raw = ad_match.group(1).strip()
+                    norm_ad = self.val_normalizer.normalize_value_expression(ad_raw)
+                    add_entity("value_and_unit", "air_delivery", ad_raw, c_num, c_pages, {"normalized": norm_ad["normalized"], "unit": "m³/min"})
+
+                for st_match in STRENGTH_STRESS_PATTERN.finditer(c_text):
+                    st_raw = st_match.group(1).strip()
+                    norm_st = self.val_normalizer.normalize_value_expression(st_raw)
+                    add_entity("value_and_unit", "strength_or_stress", st_raw, c_num, c_pages, {"normalized": norm_st["normalized"], "unit": norm_st.get("normalized", {}).get("unit", "MPa")})
+
+                for en_match in ENERGY_IMPACT_PATTERN.finditer(c_text):
+                    en_raw = en_match.group(1).strip()
+                    norm_en = self.val_normalizer.normalize_value_expression(en_raw)
+                    add_entity("value_and_unit", "impact_energy", en_raw, c_num, c_pages, {"normalized": norm_en["normalized"], "unit": "J"})
+
+                for pr_match in PRESSURE_PATTERN.finditer(c_text):
+                    pr_raw = pr_match.group(1).strip()
+                    norm_pr = self.val_normalizer.normalize_value_expression(pr_raw)
+                    add_entity("value_and_unit", "pressure", pr_raw, c_num, c_pages, {"normalized": norm_pr["normalized"], "unit": norm_pr.get("normalized", {}).get("unit", "bar")})
+
+                for wc_match in WATER_CHEM_PATTERN.finditer(c_text):
+                    wc_raw = wc_match.group(1).strip()
+                    norm_wc = self.val_normalizer.normalize_value_expression(wc_raw)
+                    add_entity("value_and_unit", "chemical_concentration", wc_raw, c_num, c_pages, {"normalized": norm_wc["normalized"], "unit": norm_wc.get("normalized", {}).get("unit", "mg/L")})
 
                 for samp_match in SAMPLING_PATTERN.finditer(c_text):
                     s_raw = samp_match.group(0).strip()

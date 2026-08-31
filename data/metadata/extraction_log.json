@@ -107,8 +107,8 @@
   {
     "document_id": "DOC-001",
     "source_id": "SRC-001",
-    "start_time": "2026-08-30T15:54:03.748228+00:00",
-    "completion_time": "2026-08-30T15:54:04.405153+00:00",
+    "start_time": "2026-08-31T05:35:00.539913+00:00",
+    "completion_time": "2026-08-31T05:35:01.221216+00:00",
     "total_pages": 17,
     "total_clauses": 114,
     "total_tables": 2,

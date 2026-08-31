@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import Any, Dict, Optional
 import httpx
 
+from ai.acquisition.url_normalizer import normalize_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -28,12 +30,13 @@ class DocumentDownloader:
 
     def check_remote_metadata(self, url: str) -> Dict[str, Any]:
         """Performs HEAD request to check ETag and Last-Modified headers before full download."""
+        clean_url = normalize_url(url)
         try:
             with httpx.Client(timeout=self.timeout, follow_redirects=True) as client:
-                res = client.head(url)
+                res = client.head(clean_url)
                 headers = res.headers
                 return {
-                    "url": url,
+                    "url": clean_url,
                     "status_code": res.status_code,
                     "etag": headers.get("etag"),
                     "last_modified": headers.get("last-modified"),
@@ -50,10 +53,11 @@ class DocumentDownloader:
         expected_sha256: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Downloads document to target_path and verifies SHA-256 hash."""
+        clean_url = normalize_url(url)
         target_path.parent.mkdir(parents=True, exist_ok=True)
         try:
             with httpx.Client(timeout=self.timeout, follow_redirects=True) as client:
-                res = client.get(url)
+                res = client.get(clean_url)
                 res.raise_for_status()
 
                 with open(target_path, "wb") as f:

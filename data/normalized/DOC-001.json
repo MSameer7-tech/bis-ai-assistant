@@ -5043,6 +5043,35 @@
     },
     {
       "entity_id": "ENT-DOC001-0037",
+      "entity_type": "value_and_unit",
+      "name": "impact_energy",
+      "status": "mandatory",
+      "original_value": "27J",
+      "value": "27J",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "6.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
+      "source_clause": "6.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "normalized": {
+        "value": 27,
+        "unit": "J"
+      },
+      "unit": "J"
+    },
+    {
+      "entity_id": "ENT-DOC001-0038",
       "entity_type": "lamp_cap",
       "name": "E12",
       "status": "mandatory",
@@ -5064,7 +5093,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0038",
+      "entity_id": "ENT-DOC001-0039",
       "entity_type": "lamp_cap",
       "name": "E14",
       "status": "mandatory",
@@ -5086,7 +5115,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0039",
+      "entity_id": "ENT-DOC001-0040",
       "entity_type": "lamp_cap",
       "name": "E17",
       "status": "mandatory",
@@ -5108,7 +5137,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0040",
+      "entity_id": "ENT-DOC001-0041",
       "entity_type": "lamp_cap",
       "name": "E26",
       "status": "mandatory",
@@ -5130,7 +5159,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0041",
+      "entity_id": "ENT-DOC001-0042",
       "entity_type": "lamp_cap",
       "name": "E27",
       "status": "mandatory",
@@ -5152,7 +5181,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0042",
+      "entity_id": "ENT-DOC001-0043",
       "entity_type": "lamp_cap",
       "name": "GU10",
       "status": "mandatory",
@@ -5174,7 +5203,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0043",
+      "entity_id": "ENT-DOC001-0044",
       "entity_type": "lamp_cap",
       "name": "GZ10",
       "status": "mandatory",
@@ -5196,7 +5225,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0044",
+      "entity_id": "ENT-DOC001-0045",
       "entity_type": "referenced_standard",
       "name": "IS 9206",
       "status": "mandatory",
@@ -5220,7 +5249,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0045",
+      "entity_id": "ENT-DOC001-0046",
       "entity_type": "lamp_cap",
       "name": "B22",
       "status": "mandatory",
@@ -5244,7 +5273,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0046",
+      "entity_id": "ENT-DOC001-0047",
       "entity_type": "lamp_cap",
       "name": "B15",
       "status": "mandatory",
@@ -5268,7 +5297,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0047",
+      "entity_id": "ENT-DOC001-0048",
       "entity_type": "lamp_cap",
       "name": "GU10",
       "status": "mandatory",
@@ -5292,7 +5321,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0048",
+      "entity_id": "ENT-DOC001-0049",
       "entity_type": "lamp_cap",
       "name": "GZ10",
       "status": "mandatory",
@@ -5316,7 +5345,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0049",
+      "entity_id": "ENT-DOC001-0050",
       "entity_type": "lamp_cap",
       "name": "GX53",
       "status": "mandatory",
@@ -5340,7 +5369,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0050",
+      "entity_id": "ENT-DOC001-0051",
       "entity_type": "test",
       "name": "Electric Strength Test",
       "status": "mandatory",
@@ -5364,7 +5393,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0051",
+      "entity_id": "ENT-DOC001-0052",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
@@ -5388,7 +5417,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0052",
+      "entity_id": "ENT-DOC001-0053",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
@@ -5410,7 +5439,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0053",
+      "entity_id": "ENT-DOC001-0054",
       "entity_type": "test",
       "name": "Electric Strength Test",
       "status": "mandatory",
@@ -5432,7 +5461,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0054",
+      "entity_id": "ENT-DOC001-0055",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "status": "mandatory",
@@ -5454,7 +5483,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0055",
+      "entity_id": "ENT-DOC001-0056",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
@@ -5476,7 +5505,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0056",
+      "entity_id": "ENT-DOC001-0057",
       "entity_type": "value_and_unit",
       "name": "voltage",
       "status": "mandatory",
@@ -5503,7 +5532,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC001-0057",
+      "entity_id": "ENT-DOC001-0058",
       "entity_type": "value_and_unit",
       "name": "insulation_resistance",
       "status": "mandatory",
@@ -5530,7 +5559,7 @@
       "unit": "MΩ"
     },
     {
-      "entity_id": "ENT-DOC001-0058",
+      "entity_id": "ENT-DOC001-0059",
       "entity_type": "value_and_unit",
       "name": "temperature",
       "status": "mandatory",
@@ -5557,7 +5586,7 @@
       "unit": "°C"
     },
     {
-      "entity_id": "ENT-DOC001-0059",
+      "entity_id": "ENT-DOC001-0060",
       "entity_type": "referenced_standard",
       "name": "IS 10322",
       "status": "mandatory",
@@ -5579,7 +5608,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0060",
+      "entity_id": "ENT-DOC001-0061",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
@@ -5601,7 +5630,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0061",
+      "entity_id": "ENT-DOC001-0062",
       "entity_type": "test",
       "name": "Electric Strength Test",
       "status": "mandatory",
@@ -5623,7 +5652,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0062",
+      "entity_id": "ENT-DOC001-0063",
       "entity_type": "test",
       "name": "Torsion Test",
       "status": "mandatory",
@@ -5651,38 +5680,12 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0063",
+      "entity_id": "ENT-DOC001-0064",
       "entity_type": "lamp_cap",
       "name": "B15D",
       "status": "mandatory",
       "original_value": "B15D",
       "value": "B15D",
-      "provenance": {
-        "document_id": "DOC-001",
-        "source_id": "SRC-001",
-        "standard": "IS 16102 (Part 1) : 2012",
-        "clause": "9.1",
-        "page": 9,
-        "pages": [
-          9,
-          10,
-          11
-        ]
-      },
-      "source_clause": "9.1",
-      "source_pages": [
-        9,
-        10,
-        11
-      ]
-    },
-    {
-      "entity_id": "ENT-DOC001-0064",
-      "entity_type": "test",
-      "name": "Torsion Test",
-      "status": "mandatory",
-      "original_value": "Torsion Test",
-      "value": "Torsion Test",
       "provenance": {
         "document_id": "DOC-001",
         "source_id": "SRC-001",
@@ -5713,6 +5716,32 @@
         "document_id": "DOC-001",
         "source_id": "SRC-001",
         "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "9.1",
+        "page": 9,
+        "pages": [
+          9,
+          10,
+          11
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0066",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
+      "value": "Torsion Test",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
         "clause": "9.3",
         "page": 12,
         "pages": [
@@ -5725,7 +5754,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0066",
+      "entity_id": "ENT-DOC001-0067",
       "entity_type": "value_and_unit",
       "name": "voltage",
       "status": "mandatory",
@@ -5752,7 +5781,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC001-0067",
+      "entity_id": "ENT-DOC001-0068",
       "entity_type": "lamp_cap",
       "name": "B15",
       "status": "mandatory",
@@ -5776,7 +5805,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0068",
+      "entity_id": "ENT-DOC001-0069",
       "entity_type": "lamp_cap",
       "name": "B22",
       "status": "mandatory",
@@ -5800,7 +5829,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0069",
+      "entity_id": "ENT-DOC001-0070",
       "entity_type": "test",
       "name": "Torsion Test",
       "status": "mandatory",
@@ -5824,7 +5853,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0070",
+      "entity_id": "ENT-DOC001-0071",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
       "status": "mandatory",
@@ -5848,7 +5877,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0071",
+      "entity_id": "ENT-DOC001-0072",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
       "status": "mandatory",
@@ -5872,7 +5901,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0072",
+      "entity_id": "ENT-DOC001-0073",
       "entity_type": "value_and_unit",
       "name": "wattage",
       "status": "mandatory",
@@ -5901,7 +5930,7 @@
       "unit": "W"
     },
     {
-      "entity_id": "ENT-DOC001-0073",
+      "entity_id": "ENT-DOC001-0074",
       "entity_type": "value_and_unit",
       "name": "temperature_rise",
       "status": "mandatory",
@@ -5930,7 +5959,7 @@
       "unit": "K"
     },
     {
-      "entity_id": "ENT-DOC001-0074",
+      "entity_id": "ENT-DOC001-0075",
       "entity_type": "value_and_unit",
       "name": "temperature",
       "status": "mandatory",
@@ -5961,7 +5990,7 @@
       "unit": "°C"
     },
     {
-      "entity_id": "ENT-DOC001-0075",
+      "entity_id": "ENT-DOC001-0076",
       "entity_type": "referenced_standard",
       "name": "IS 11000",
       "status": "mandatory",
@@ -5985,7 +6014,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0076",
+      "entity_id": "ENT-DOC001-0077",
       "entity_type": "referenced_standard",
       "name": "is 650",
       "status": "mandatory",
@@ -6009,7 +6038,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0077",
+      "entity_id": "ENT-DOC001-0078",
       "entity_type": "referenced_standard",
       "name": "IS 4261",
       "status": "mandatory",
@@ -6033,7 +6062,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0078",
+      "entity_id": "ENT-DOC001-0079",
       "entity_type": "test",
       "name": "Ball Pressure Test",
       "status": "mandatory",
@@ -6057,7 +6086,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0079",
+      "entity_id": "ENT-DOC001-0080",
       "entity_type": "test",
       "name": "Glow Wire Test",
       "status": "mandatory",
@@ -6081,7 +6110,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0080",
+      "entity_id": "ENT-DOC001-0081",
       "entity_type": "value_and_unit",
       "name": "temperature",
       "status": "mandatory",
@@ -6110,7 +6139,7 @@
       "unit": "°C"
     },
     {
-      "entity_id": "ENT-DOC001-0081",
+      "entity_id": "ENT-DOC001-0082",
       "entity_type": "test",
       "name": "Fault Condition Test",
       "status": "mandatory",
@@ -6134,7 +6163,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0082",
+      "entity_id": "ENT-DOC001-0083",
       "entity_type": "test",
       "name": "Fault Condition Test",
       "status": "mandatory",
@@ -6156,7 +6185,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0083",
+      "entity_id": "ENT-DOC001-0084",
       "entity_type": "test",
       "name": "Fault Condition Test",
       "status": "mandatory",
@@ -6178,7 +6207,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0084",
+      "entity_id": "ENT-DOC001-0085",
       "entity_type": "referenced_standard",
       "name": "IS 16001",
       "status": "mandatory",
@@ -6200,7 +6229,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0085",
+      "entity_id": "ENT-DOC001-0086",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "status": "mandatory",
@@ -6222,7 +6251,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0086",
+      "entity_id": "ENT-DOC001-0087",
       "entity_type": "referenced_standard",
       "name": "IS 8913",
       "status": "mandatory",
@@ -6244,7 +6273,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0087",
+      "entity_id": "ENT-DOC001-0088",
       "entity_type": "value_and_unit",
       "name": "temperature_rise",
       "status": "mandatory",
@@ -6271,7 +6300,7 @@
       "unit": "K"
     },
     {
-      "entity_id": "ENT-DOC001-0088",
+      "entity_id": "ENT-DOC001-0089",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
@@ -6293,7 +6322,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0089",
+      "entity_id": "ENT-DOC001-0090",
       "entity_type": "value_and_unit",
       "name": "voltage",
       "status": "mandatory",
@@ -6320,7 +6349,7 @@
       "unit": "V"
     },
     {
-      "entity_id": "ENT-DOC001-0090",
+      "entity_id": "ENT-DOC001-0091",
       "entity_type": "referenced_standard",
       "name": "IS 15885",
       "status": "mandatory",
@@ -6344,7 +6373,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0091",
+      "entity_id": "ENT-DOC001-0092",
       "entity_type": "referenced_standard",
       "name": "IS 16002",
       "status": "mandatory",
@@ -6366,34 +6395,12 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0092",
+      "entity_id": "ENT-DOC001-0093",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
       "original_value": "Insulation Resistance Test",
       "value": "Insulation Resistance Test",
-      "provenance": {
-        "document_id": "DOC-001",
-        "source_id": "SRC-001",
-        "standard": "IS 16102 (Part 1) : 2012",
-        "clause": "16.2.1",
-        "page": 15,
-        "pages": [
-          15
-        ]
-      },
-      "source_clause": "16.2.1",
-      "source_pages": [
-        15
-      ]
-    },
-    {
-      "entity_id": "ENT-DOC001-0093",
-      "entity_type": "test",
-      "name": "Electric Strength Test",
-      "status": "mandatory",
-      "original_value": "Electric Strength Test",
-      "value": "Electric Strength Test",
       "provenance": {
         "document_id": "DOC-001",
         "source_id": "SRC-001",
@@ -6412,6 +6419,28 @@
     {
       "entity_id": "ENT-DOC001-0094",
       "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "16.2.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
+      "source_clause": "16.2.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0095",
+      "entity_type": "test",
       "name": "Torsion Test",
       "status": "mandatory",
       "original_value": "Torsion Test",
@@ -6432,7 +6461,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0095",
+      "entity_id": "ENT-DOC001-0096",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
@@ -6454,7 +6483,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0096",
+      "entity_id": "ENT-DOC001-0097",
       "entity_type": "test",
       "name": "Electric Strength Test",
       "status": "mandatory",
@@ -6476,7 +6505,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0097",
+      "entity_id": "ENT-DOC001-0098",
       "entity_type": "test",
       "name": "Torsion Test",
       "status": "mandatory",
@@ -6498,34 +6527,12 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0098",
+      "entity_id": "ENT-DOC001-0099",
       "entity_type": "test",
       "name": "Cap Temperature Rise Test",
       "status": "mandatory",
       "original_value": "Cap Temperature Rise Test",
       "value": "Cap Temperature Rise Test",
-      "provenance": {
-        "document_id": "DOC-001",
-        "source_id": "SRC-001",
-        "standard": "IS 16102 (Part 1) : 2012",
-        "clause": "17.1.1",
-        "page": 15,
-        "pages": [
-          15
-        ]
-      },
-      "source_clause": "17.1.1",
-      "source_pages": [
-        15
-      ]
-    },
-    {
-      "entity_id": "ENT-DOC001-0099",
-      "entity_type": "test",
-      "name": "Fault Condition Test",
-      "status": "mandatory",
-      "original_value": "Fault Condition Test",
-      "value": "Fault Condition Test",
       "provenance": {
         "document_id": "DOC-001",
         "source_id": "SRC-001",
@@ -6552,6 +6559,28 @@
         "document_id": "DOC-001",
         "source_id": "SRC-001",
         "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.1.1",
+        "page": 15,
+        "pages": [
+          15
+        ]
+      },
+      "source_clause": "17.1.1",
+      "source_pages": [
+        15
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0101",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
         "clause": "17.1.4",
         "page": 15,
         "pages": [
@@ -6564,7 +6593,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0101",
+      "entity_id": "ENT-DOC001-0102",
       "entity_type": "test",
       "name": "Insulation Resistance Test",
       "status": "mandatory",
@@ -6588,7 +6617,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0102",
+      "entity_id": "ENT-DOC001-0103",
       "entity_type": "test",
       "name": "Electric Strength Test",
       "status": "mandatory",
@@ -6612,36 +6641,12 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0103",
+      "entity_id": "ENT-DOC001-0104",
       "entity_type": "test",
       "name": "Torsion Test",
       "status": "mandatory",
       "original_value": "Torsion Test",
       "value": "Torsion Test",
-      "provenance": {
-        "document_id": "DOC-001",
-        "source_id": "SRC-001",
-        "standard": "IS 16102 (Part 1) : 2012",
-        "clause": "17.2",
-        "page": 15,
-        "pages": [
-          15,
-          16
-        ]
-      },
-      "source_clause": "17.2",
-      "source_pages": [
-        15,
-        16
-      ]
-    },
-    {
-      "entity_id": "ENT-DOC001-0104",
-      "entity_type": "test",
-      "name": "Cap Temperature Rise Test",
-      "status": "mandatory",
-      "original_value": "Cap Temperature Rise Test",
-      "value": "Cap Temperature Rise Test",
       "provenance": {
         "document_id": "DOC-001",
         "source_id": "SRC-001",
@@ -6670,6 +6675,30 @@
         "document_id": "DOC-001",
         "source_id": "SRC-001",
         "standard": "IS 16102 (Part 1) : 2012",
+        "clause": "17.2",
+        "page": 15,
+        "pages": [
+          15,
+          16
+        ]
+      },
+      "source_clause": "17.2",
+      "source_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC001-0106",
+      "entity_type": "test",
+      "name": "Cap Temperature Rise Test",
+      "status": "mandatory",
+      "original_value": "Cap Temperature Rise Test",
+      "value": "Cap Temperature Rise Test",
+      "provenance": {
+        "document_id": "DOC-001",
+        "source_id": "SRC-001",
+        "standard": "IS 16102 (Part 1) : 2012",
         "clause": "17.2.1",
         "page": 15,
         "pages": [
@@ -6684,7 +6713,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0106",
+      "entity_id": "ENT-DOC001-0107",
       "entity_type": "annex",
       "name": "ANNEX A",
       "status": "mandatory",
@@ -6706,7 +6735,7 @@
       ]
     },
     {
-      "entity_id": "ENT-DOC001-0107",
+      "entity_id": "ENT-DOC001-0108",
       "entity_type": "annex",
       "name": "ANNEX B",
       "status": "mandatory",
@@ -10454,9 +10483,9 @@
     }
   ],
   "normalization_metadata": {
-    "normalized_at": "2026-08-30T15:54:03.082510+00:00",
+    "normalized_at": "2026-08-31T05:35:01.234943+00:00",
     "total_definitions": 12,
-    "total_entities": 107,
+    "total_entities": 108,
     "total_requirements": 19,
     "total_relationships": 187,
     "total_cross_references": 22,

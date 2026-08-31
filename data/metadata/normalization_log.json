@@ -1,28 +1,5 @@
 [
   {
-    "document_id": "DOC-001",
-    "normalized_at": "2026-08-30T15:54:03.094256+00:00",
-    "status": "normalized",
-    "is_valid": true,
-    "checks": {
-      "entities_extracted": true,
-      "requirements_extracted": true,
-      "definitions_extracted": true,
-      "requirements_structure_valid": true,
-      "cross_references_valid": true,
-      "provenance_binding_valid": true,
-      "safety_under_consideration_guarded": true,
-      "overall_semantic_valid": true
-    },
-    "stats": {
-      "total_entities": 107,
-      "total_definitions": 12,
-      "total_requirements": 19,
-      "total_cross_references": 22,
-      "total_tables": 2
-    }
-  },
-  {
     "document_id": "DOC-007",
     "normalized_at": "2026-08-30T15:54:03.102886+00:00",
     "status": "normalized",
@@ -135,6 +112,558 @@
       "total_requirements": 6,
       "total_cross_references": 5,
       "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-013",
+    "normalized_at": "2026-08-30T19:42:09.614627+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 11,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 1
+    }
+  },
+  {
+    "document_id": "DOC-014",
+    "normalized_at": "2026-08-30T19:42:09.621549+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 8,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-015",
+    "normalized_at": "2026-08-30T19:42:09.625618+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 5,
+      "total_definitions": 0,
+      "total_requirements": 1,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-016",
+    "normalized_at": "2026-08-30T19:42:09.629503+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 8,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-017",
+    "normalized_at": "2026-08-30T19:42:09.633537+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 5,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-018",
+    "normalized_at": "2026-08-30T19:42:09.637410+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 7,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 1
+    }
+  },
+  {
+    "document_id": "DOC-019",
+    "normalized_at": "2026-08-30T19:42:09.641799+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 7,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-020",
+    "normalized_at": "2026-08-30T19:42:09.646516+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 10,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 1
+    }
+  },
+  {
+    "document_id": "DOC-021",
+    "normalized_at": "2026-08-30T19:42:09.650893+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 10,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 1,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-022",
+    "normalized_at": "2026-08-30T19:42:09.654835+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 5,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-023",
+    "normalized_at": "2026-08-30T19:42:09.659316+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 7,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-024",
+    "normalized_at": "2026-08-30T19:42:09.663266+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 5,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-025",
+    "normalized_at": "2026-08-30T19:42:09.666873+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 6,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-026",
+    "normalized_at": "2026-08-30T19:42:09.671168+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 8,
+      "total_definitions": 0,
+      "total_requirements": 1,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-027",
+    "normalized_at": "2026-08-30T19:42:09.675544+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 7,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-028",
+    "normalized_at": "2026-08-30T19:42:09.679440+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 5,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-029",
+    "normalized_at": "2026-08-30T19:42:09.683418+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 7,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-030",
+    "normalized_at": "2026-08-30T19:42:09.687884+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 8,
+      "total_definitions": 0,
+      "total_requirements": 1,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-031",
+    "normalized_at": "2026-08-30T19:42:09.693199+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 6,
+      "total_definitions": 0,
+      "total_requirements": 1,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-032",
+    "normalized_at": "2026-08-30T19:42:09.698183+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 10,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-033",
+    "normalized_at": "2026-08-30T19:42:09.702403+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 6,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-034",
+    "normalized_at": "2026-08-30T19:42:09.706556+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 9,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-035",
+    "normalized_at": "2026-08-30T19:42:09.710461+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 8,
+      "total_definitions": 0,
+      "total_requirements": 0,
+      "total_cross_references": 0,
+      "total_tables": 0
+    }
+  },
+  {
+    "document_id": "DOC-001",
+    "normalized_at": "2026-08-31T05:35:01.245972+00:00",
+    "status": "normalized",
+    "is_valid": true,
+    "checks": {
+      "entities_extracted": true,
+      "requirements_extracted": true,
+      "definitions_extracted": true,
+      "requirements_structure_valid": true,
+      "cross_references_valid": true,
+      "provenance_binding_valid": true,
+      "safety_under_consideration_guarded": true,
+      "overall_semantic_valid": true
+    },
+    "stats": {
+      "total_entities": 108,
+      "total_definitions": 12,
+      "total_requirements": 19,
+      "total_cross_references": 22,
+      "total_tables": 2
     }
   }
 ]

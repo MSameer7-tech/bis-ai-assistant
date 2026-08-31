@@ -1,7 +1,7 @@
 """
-Structure-Aware Semantic Chunker for BIS Documents (Step 7).
-Assigns immutable stable chunk identities (e.g. DOC-001-v001::8.1.1::REQ-001),
-computes SHA-256 content hashes for incremental indexing, and preserves full hierarchy lineage.
+Structure-Aware Semantic Chunker Implementation for BIS Documents (Phase 2E & Phase 3).
+Executes boundary rules, preserves hierarchical clause trees, isolates definitions and tables,
+preserves normative modal keywords, assigns stable IDs, and computes content hashes.
 """
 
 import json
@@ -27,35 +27,42 @@ from ai.chunking.validators import ChunkValidator
 logger = logging.getLogger(__name__)
 
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
-NORMALIZED_DIR = ROOT_DIR / "data" / "normalized"
-CHUNKS_DIR = ROOT_DIR / "data" / "chunks"
+DATA_DIR = ROOT_DIR / "data"
+NORMALIZED_DIR = DATA_DIR / "normalized"
+CHUNKS_DIR = DATA_DIR / "chunks"
 
 
 def map_cross_references(raw_refs: List[Dict[str, Any]]) -> List[ChunkCrossReference]:
-    """Maps raw cross-reference objects into typed ChunkCrossReference instances (Step 9)."""
-    mapped = []
+    """Maps normalized cross reference dictionaries to Pydantic ChunkCrossReference objects."""
+    res = []
     for r in raw_refs:
-        std = r.get("target_standard", "")
-        if not std:
-            continue
-        rel = "requirements_apply" if "shall" in r.get("context_snippet", "").lower() else "normative_reference"
-        if r.get("reference_type") == "test_method":
-            rel = "test_method_applies"
-        elif r.get("reference_type") == "definition":
-            rel = "definition_applies"
+        std = r.get("target_standard") or r.get("standard") or r.get("target_standard_or_clause") or "UNKNOWN"
+        ref_type = r.get("reference_type", "normative")
+        rel = r.get("relationship")
+        if not rel:
+            if ref_type == "test_method":
+                rel = "test_method_applies"
+            elif ref_type == "requirement":
+                rel = "requirements_apply"
+            elif ref_type == "definition":
+                rel = "definition_applies"
+            else:
+                rel = "references"
 
-        mapped.append(ChunkCrossReference(
-            standard=std,
-            target_location=r.get("target_location"),
-            relationship=rel,
-            reference_type=r.get("reference_type", "normative"),
-            context_snippet=r.get("context_snippet"),
-        ))
-    return mapped
+        res.append(
+            ChunkCrossReference(
+                standard=std,
+                target_location=r.get("target_clause") or r.get("target_location"),
+                relationship=rel,
+                reference_type=ref_type,
+                context_snippet=r.get("context_snippet"),
+            )
+        )
+    return res
 
 
 class StructureAwareChunker:
-    """Chunks normalized BIS documents into semantically coherent knowledge units with stable identities."""
+    """Creates discrete, self-contained knowledge chunks from Phase 2D normalized standards."""
 
     def __init__(self):
         self.table_chunker = TableChunker()
@@ -82,6 +89,22 @@ class StructureAwareChunker:
         doc_meta = norm_doc.get("document_metadata", {})
         source_id = norm_doc.get("source_id", "SRC-UNKNOWN")
         std_num = str(doc_meta.get("standard_number") or doc_meta.get("title", document_id)).strip()
+        # Lookup authentic publication date from registry or metadata
+        registry_path = ROOT_DIR / "data" / "metadata" / "source_registry.json"
+        reg_pub_date = None
+        if registry_path.exists():
+            try:
+                with open(registry_path, "r", encoding="utf-8") as rf:
+                    reg_data = json.load(rf)
+                    for r in reg_data:
+                        if r.get("document_id") == document_id or r.get("source_id") == source_id:
+                            reg_pub_date = r.get("publication_date")
+                            break
+            except Exception:
+                pass
+
+        default_pub = "2026-08-01" if ("2026" in document_id or "2026" in std_num) else ("2017-01-01" if "2017" in std_num else "2012-08-01")
+        pub_date = reg_pub_date or doc_meta.get("publication_date") or default_pub
 
         target_ver_id = version_id or norm_doc.get("version_id") or f"{document_id}-v001"
 
@@ -123,6 +146,10 @@ class StructureAwareChunker:
                 document_id=document_id,
                 version_id=target_ver_id,
                 source_id=source_id,
+                standard_number=std_num,
+                clause_number=c_num,
+                parent_clause="3",
+                section_number="3",
                 chunk_type=ChunkType.DEFINITION,
                 title=def_title,
                 term=term,
@@ -141,6 +168,7 @@ class StructureAwareChunker:
                     modal_keywords=["definition"],
                     verbatim_normative_statements=[f"{term} — {definition_text}"],
                 ),
+                normative_force="informative",
                 text=def_qa_text,
                 content_hash=c_hash,
                 entities=[{
@@ -151,7 +179,11 @@ class StructureAwareChunker:
                 requirements=[],
                 conditions=[],
                 references=refs_by_clause.get(c_num, []),
+                pages=pages,
                 page_refs=pages,
+                temporal_status="current",
+                valid_from=pub_date,
+                valid_until=None,
                 provenance=ChunkProvenance(
                     document_id=document_id,
                     source_id=source_id,
@@ -175,6 +207,8 @@ class StructureAwareChunker:
             version_id=target_ver_id,
         )
         chunks.extend(table_chunks)
+
+        seq_tracker: Dict[str, int] = {}
 
         # 3. Clause & Requirement Chunks with Hierarchy, Normative Context, and Cross-References (Step 9)
         def traverse_clauses(
@@ -224,28 +258,59 @@ class StructureAwareChunker:
                     ch_type = ChunkType.GENERAL_PROVISION
                     pfx = "GEN"
 
-                hierarchy_str = " > ".join(current_chain)
-                enriched_text = f"[{hierarchy_str}] Clause {c_num} - {c_title} (Page {c_pages}):\n{c_text.strip()}"
-
-                if c_reqs:
-                    for r in c_reqs:
-                        if r.get("conditions"):
-                            enriched_text += f"\n[Condition]: {json.dumps(r['conditions'])}"
-                        if r.get("test"):
-                            enriched_text += f"\n[Test Procedure]: {json.dumps(r['test'])}"
-                        if r.get("acceptance_criterion"):
-                            enriched_text += f"\n[Acceptance Criterion]: {json.dumps(r['acceptance_criterion'])}"
-
+                # Extract Normative Modals & Force
                 norm_context = extract_normative_context(c_text, c_reqs)
-                parent_clause_id = parent_chain[-1] if parent_chain else None
 
+                # Format self-contained chunk text with rich semantic context
+                std_title = str(doc_meta.get("title", "")).strip()
+                title_suffix = f" - {std_title}" if std_title else ""
+                
+                text_lines = [
+                    f"Clause {c_num}: {c_title}",
+                    f"Standard: {std_num}{title_suffix} (Section {curr_sec_num} {curr_sec_title}, Pages {c_pages})",
+                ]
+                if doc_meta.get("product_domain"):
+                    text_lines.append(f"Domain: {doc_meta.get('product_domain')} | Category: {doc_meta.get('product_category')} | Product: {doc_meta.get('product_type')}")
+                text_lines.extend([
+                    f"Normative Force: {norm_context.normative_force.value.upper()}",
+                    "",
+                    c_text.strip() if c_text else f"{c_title} provision as specified in {std_num}.",
+                ])
+
+                # Append machine-readable requirements
+                if c_reqs:
+                    text_lines.append("\nStructured Requirements:")
+                    for r in c_reqs:
+                        param = r.get("parameter", "requirement")
+                        op = r.get("operator", "")
+                        val = r.get("value", "")
+                        unit = r.get("unit", "")
+                        st = r.get("status", "mandatory")
+                        text_lines.append(f"  • {param}: {op} {val} {unit} [Status: {st}]".strip())
+
+                # Append cross-references
+                if c_refs:
+                    text_lines.append("\nReferenced Standards:")
+                    for ref in c_refs:
+                        text_lines.append(f"  • {ref.standard} ({ref.relationship})")
+
+                enriched_text = "\n".join(text_lines)
                 c_hash = compute_chunk_content_hash(enriched_text)
 
+                parent_clause_id = ".".join(c_num.split(".")[:-1]) if "." in c_num else None
+                key = f"{c_num}_{pfx}"
+                seq_tracker[key] = seq_tracker.get(key, 0) + 1
+                seq = seq_tracker[key]
+
                 chunk = KnowledgeChunk(
-                    chunk_id=make_chunk_id(target_ver_id, c_num, idx + 1, prefix=pfx),
+                    chunk_id=make_chunk_id(target_ver_id, c_num, seq, prefix=pfx),
                     document_id=document_id,
                     version_id=target_ver_id,
                     source_id=source_id,
+                    standard_number=std_num,
+                    clause_number=c_num,
+                    parent_clause=parent_clause_id,
+                    section_number=curr_sec_num,
                     chunk_type=ch_type,
                     title=c_title,
                     clause=ChunkClause(
@@ -258,13 +323,18 @@ class StructureAwareChunker:
                         section_title=curr_sec_title,
                     ),
                     normative_context=norm_context,
+                    normative_force=norm_context.normative_force.value,
                     text=enriched_text,
                     content_hash=c_hash,
                     entities=c_ents,
                     requirements=c_reqs,
                     conditions=[r.get("conditions") for r in c_reqs if r.get("conditions")],
                     references=c_refs,
+                    pages=c_pages,
                     page_refs=c_pages,
+                    temporal_status="current",
+                    valid_from=pub_date,
+                    valid_until=None,
                     provenance=ChunkProvenance(
                         document_id=document_id,
                         source_id=source_id,
@@ -302,6 +372,10 @@ class StructureAwareChunker:
                 document_id=document_id,
                 version_id=target_ver_id,
                 source_id=source_id,
+                standard_number=std_num,
+                clause_number=a_id,
+                parent_clause=None,
+                section_number=a_id,
                 chunk_type=ChunkType.ANNEX,
                 title=a_title,
                 clause=ChunkClause(
@@ -313,13 +387,18 @@ class StructureAwareChunker:
                     section_title=a_title,
                 ),
                 normative_context=extract_normative_context(a_text, []),
+                normative_force="informative",
                 text=annex_text,
                 content_hash=c_hash,
                 entities=[],
                 requirements=[],
                 conditions=[],
                 references=refs_by_clause.get(a_id, []),
+                pages=a_pages,
                 page_refs=a_pages,
+                temporal_status="current",
+                valid_from=pub_date,
+                valid_until=None,
                 provenance=ChunkProvenance(
                     document_id=document_id,
                     source_id=source_id,
@@ -359,23 +438,24 @@ class StructureAwareChunker:
 
         return serialized_chunks
 
-    def chunk_all_documents(self) -> Dict[str, List[Dict[str, Any]]]:
-        """Chunks all normalized documents."""
-        results = {}
-        for p in sorted(NORMALIZED_DIR.glob("DOC-*.json")):
-            if not p.name.endswith(".normalized.json"):
-                doc_id = p.stem
-                results[doc_id] = self.chunk_document(doc_id)
-        return results
-
 
 def chunk_document(document_id: str, version_id: Optional[str] = None) -> List[Dict[str, Any]]:
-    """Convenience helper function to chunk a single document."""
+    """Convenience helper function to chunk a single normalized document."""
     chunker = StructureAwareChunker()
     return chunker.chunk_document(document_id, version_id=version_id)
 
 
 def chunk_all_documents() -> Dict[str, List[Dict[str, Any]]]:
-    """Convenience helper function to chunk all documents."""
+    """Batch chunks all normalized documents in data/normalized/."""
     chunker = StructureAwareChunker()
-    return chunker.chunk_all_documents()
+    results = {}
+    for norm_file in sorted(NORMALIZED_DIR.glob("DOC-*.json")):
+        if norm_file.name.endswith(".normalized.json"):
+            continue
+        doc_id = norm_file.stem
+        try:
+            chunks = chunker.chunk_document(doc_id)
+            results[doc_id] = chunks
+        except Exception as e:
+            logger.error("Failed to chunk %s: %s", doc_id, e)
+    return results

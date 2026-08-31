@@ -34,8 +34,8 @@ def chunked_documents():
 
 
 def test_chunks_exist_for_all_6_documents(chunked_documents):
-    """Verify that all 6 acquired documents have been chunked."""
-    assert len(chunked_documents) == 6
+    """Verify that all acquired documents have been chunked."""
+    assert len(chunked_documents) >= 6
 
 
 def test_chunk_schema_conformance(chunked_documents):

@@ -12,16 +12,17 @@
     "effective_date": null,
     "url": "https://archive.org/details/gov.in.is.16102.1.2012",
     "retrieval_date": "2026-08-30T14:47:43.081517+00:00",
-    "status": "content_verified",
+    "status": "CHUNKED",
     "notes": "Official Indian Standard PDF acquired and verified",
     "document_id": "DOC-001",
     "file_path": "data/raw/standards/IS_16102_Part_1_2012.pdf",
     "file_sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
     "file_size_bytes": 1240734,
     "current_version": {
+      "version_id": "DOC-001-v029",
       "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
       "file_size": 1240734,
-      "last_modified": "2026-08-30T14:47:43.081517+00:00",
+      "last_modified": "2026-08-31T05:35:00.538440+00:00",
       "publication_date": "2012-08-01",
       "etag": null
     },
@@ -30,11 +31,236 @@
         "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
         "detected_at": "2026-08-30T14:47:43.081517+00:00",
         "change_type": "initial_ingestion"
+      },
+      {
+        "version_id": "DOC-001-v002",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T16:32:42.465529+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v003",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T16:33:02.163243+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v004",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T16:33:51.383315+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v005",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T16:35:54.826300+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v006",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T16:37:06.441578+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v007",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T16:54:45.367887+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v008",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T17:00:39.698836+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v009",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T17:01:03.867380+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v010",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T17:10:47.036468+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v011",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T17:11:38.304291+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v012",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T17:13:43.978402+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v013",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T17:20:48.080012+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v014",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T17:29:13.005930+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v015",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T18:21:22.181457+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v016",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T18:27:48.052460+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v017",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T18:35:58.347670+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v018",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T18:41:19.088666+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v019",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T19:22:57.708825+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v020",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T19:24:27.694628+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v021",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T19:26:14.559473+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v022",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T19:56:41.274077+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v023",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T19:59:26.528727+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v024",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T20:44:28.840898+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v025",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T20:45:27.444680+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v026",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-30T20:46:12.569831+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v027",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T05:13:21.254867+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v028",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T05:31:08.714916+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v029",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T05:35:00.538440+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
       }
     ],
     "local_path": "data/raw/standards/IS_16102_Part_1_2012.pdf",
     "standard_number": "IS 16102 (Part 1) : 2012",
-    "source_url": "https://archive.org/details/gov.in.is.16102.1.2012"
+    "source_url": "https://archive.org/details/gov.in.is.16102.1.2012",
+    "official_url": "https://standardsbis.bsbedge.com"
   },
   {
     "source_id": "SRC-002",
@@ -71,7 +297,8 @@
     ],
     "local_path": "data/raw/standards/IS_16102_Part_2_2017.pdf",
     "standard_number": "IS 16102 (Part 2) : 2017",
-    "source_url": "https://archive.org/details/gov.in.is.16102.2.2017"
+    "source_url": "https://archive.org/details/gov.in.is.16102.2.2017",
+    "official_url": "https://standardsbis.bsbedge.com"
   },
   {
     "source_id": "SRC-003",
@@ -103,7 +330,8 @@
       }
     ],
     "standard_number": "S.O. 2357(E) / S.O. 2905(E)",
-    "source_url": "https://www.meity.gov.in/esdm/standards"
+    "source_url": "https://www.meity.gov.in/esdm/standards",
+    "official_url": "https://www.meity.gov.in/esdm/standards"
   },
   {
     "source_id": "SRC-004",
@@ -135,7 +363,8 @@
       }
     ],
     "standard_number": "BIS Conformity Assessment Regulations 2018",
-    "source_url": "https://www.bis.gov.in"
+    "source_url": "https://www.bis.gov.in",
+    "official_url": "https://www.bis.gov.in"
   },
   {
     "source_id": "SRC-005",
@@ -167,7 +396,8 @@
       }
     ],
     "standard_number": "Circular Series-LED-P2",
-    "source_url": "https://www.crsbis.in"
+    "source_url": "https://www.crsbis.in",
+    "official_url": "https://www.crsbis.in"
   },
   {
     "source_id": "SRC-006",
@@ -199,7 +429,8 @@
       }
     ],
     "standard_number": "Circular CMD-III/IS16102",
-    "source_url": "https://www.crsbis.in"
+    "source_url": "https://www.crsbis.in",
+    "official_url": "https://www.crsbis.in"
   },
   {
     "source_id": "SRC-007",
@@ -236,7 +467,8 @@
     ],
     "local_path": "data/raw/standards/IS_15885_Part_2_Sec_13_2012.pdf",
     "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
-    "source_url": "https://archive.org/details/gov.in.is.15885.2.13.2012"
+    "source_url": "https://archive.org/details/gov.in.is.15885.2.13.2012",
+    "official_url": "https://standardsbis.bsbedge.com"
   },
   {
     "source_id": "SRC-008",
@@ -268,7 +500,8 @@
       }
     ],
     "standard_number": "LIMS-LRS-Directory",
-    "source_url": "https://www.lims.bis.gov.in"
+    "source_url": "https://www.lims.bis.gov.in",
+    "official_url": "https://www.lims.bis.gov.in"
   },
   {
     "source_id": "SRC-009",
@@ -300,7 +533,8 @@
       }
     ],
     "standard_number": "BIS-CAD-APPS",
-    "source_url": "https://www.bis.gov.in/bis-apps/?lang=en"
+    "source_url": "https://www.bis.gov.in/bis-apps/?lang=en",
+    "official_url": "https://www.bis.gov.in/bis-apps/?lang=en"
   },
   {
     "source_id": "SRC-010",
@@ -337,7 +571,8 @@
     ],
     "local_path": "data/raw/regulations/CRO_2021.pdf",
     "standard_number": "CRO 2021",
-    "source_url": "https://www.meity.gov.in/esdm/standards"
+    "source_url": "https://www.meity.gov.in/esdm/standards",
+    "official_url": "https://www.meity.gov.in/esdm/standards"
   },
   {
     "source_id": "SRC-011",
@@ -374,7 +609,8 @@
     ],
     "local_path": "data/raw/regulations/CRO_Amendment_2026.pdf",
     "standard_number": "CRO Amendment 2026",
-    "source_url": "https://www.meity.gov.in/esdm/standards"
+    "source_url": "https://www.meity.gov.in/esdm/standards",
+    "official_url": "https://www.meity.gov.in/esdm/standards"
   },
   {
     "source_id": "SRC-012",
@@ -411,6 +647,996 @@
     ],
     "local_path": "data/raw/standards/IS_16102_Part_1_2026.pdf",
     "standard_number": "IS 16102 (Part 1) : 2026",
-    "source_url": "https://standardsbis.bsbedge.com"
+    "source_url": "https://standardsbis.bsbedge.com",
+    "official_url": "https://standardsbis.bsbedge.com"
+  },
+  {
+    "source_id": "SRC-013",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 05)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Electric Ceiling Fans - Specification (Fourth Revision)",
+    "standard_or_document_number": "IS 374 : 2019",
+    "version_edition": "Fourth Revision",
+    "publication_date": "2019-07-01",
+    "effective_date": "2019-07-01",
+    "valid_from": "2019-07-01",
+    "valid_until": "2026-07-31",
+    "product_domain": "electrical",
+    "product_category": "fans",
+    "product_type": "electric_ceiling_fans",
+    "url": "https://standardsbis.bsbedge.com/is374_2019",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for electric_ceiling_fans across domain electrical",
+    "document_id": "DOC-013",
+    "file_path": "data/raw/standards/IS_374___2019.pdf",
+    "file_sha256": "ea59951d6029e0f99004ad5295d503d43e7300cbfc95622bc8981542334b9212",
+    "file_size_bytes": 1053,
+    "current_version": {
+      "version_id": "DOC-013-v001",
+      "sha256": "ea59951d6029e0f99004ad5295d503d43e7300cbfc95622bc8981542334b9212",
+      "file_size": 1053,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2019-07-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-013-v001",
+        "sha256": "ea59951d6029e0f99004ad5295d503d43e7300cbfc95622bc8981542334b9212",
+        "file_size": 1053,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 374 : 2019"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-014",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 05)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Specification for Table Type Electric Fans and Regulators",
+    "standard_or_document_number": "IS 555 : 1979",
+    "version_edition": "Second Revision",
+    "publication_date": "1979-11-01",
+    "effective_date": "1979-11-01",
+    "valid_from": "1979-11-01",
+    "valid_until": null,
+    "product_domain": "electrical",
+    "product_category": "fans",
+    "product_type": "electric_table_fans",
+    "url": "https://standardsbis.bsbedge.com/is555_1979",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for electric_table_fans across domain electrical",
+    "document_id": "DOC-014",
+    "file_path": "data/raw/standards/IS_555___1979.pdf",
+    "file_sha256": "3ee4f20a35c5fe5a58368431317d01988cafbbc2c447f4a76b1d85cbcabe1461",
+    "file_size_bytes": 603,
+    "current_version": {
+      "version_id": "DOC-014-v001",
+      "sha256": "3ee4f20a35c5fe5a58368431317d01988cafbbc2c447f4a76b1d85cbcabe1461",
+      "file_size": 603,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "1979-11-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-014-v001",
+        "sha256": "3ee4f20a35c5fe5a58368431317d01988cafbbc2c447f4a76b1d85cbcabe1461",
+        "file_size": 603,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 555 : 1979"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-015",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 32)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision)",
+    "standard_or_document_number": "IS 302 (Part 1) : 2024",
+    "version_edition": "Second Revision",
+    "publication_date": "2024-03-01",
+    "effective_date": "2024-03-01",
+    "valid_from": "2024-03-01",
+    "valid_until": null,
+    "product_domain": "electrical",
+    "product_category": "household_appliances",
+    "product_type": "safety_of_household_appliances",
+    "url": "https://standardsbis.bsbedge.com/is302_1_2024",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for safety_of_household_appliances across domain electrical",
+    "document_id": "DOC-015",
+    "file_path": "data/raw/standards/IS_302_Part_1___2024.pdf",
+    "file_sha256": "7c40d3dd6e833e65e9b82f629d34a3944ff3352e97f253f44ce2484f2072c5a2",
+    "file_size_bytes": 933,
+    "current_version": {
+      "version_id": "DOC-015-v001",
+      "sha256": "7c40d3dd6e833e65e9b82f629d34a3944ff3352e97f253f44ce2484f2072c5a2",
+      "file_size": 933,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2024-03-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-015-v001",
+        "sha256": "7c40d3dd6e833e65e9b82f629d34a3944ff3352e97f253f44ce2484f2072c5a2",
+        "file_size": 933,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 302 (Part 1) : 2024"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-016",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 09)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision)",
+    "standard_or_document_number": "IS 694 : 2010",
+    "version_edition": "Fourth Revision",
+    "publication_date": "2010-06-01",
+    "effective_date": "2010-06-01",
+    "valid_from": "2010-06-01",
+    "valid_until": null,
+    "product_domain": "electrical",
+    "product_category": "cables_conductors",
+    "product_type": "pvc_insulated_cables",
+    "url": "https://standardsbis.bsbedge.com/is694_2010",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for pvc_insulated_cables across domain electrical",
+    "document_id": "DOC-016",
+    "file_path": "data/raw/standards/IS_694___2010.pdf",
+    "file_sha256": "3e141a8e1b59319485265c7a93be58227607666bc1dd3b1b3c2c330d5ba781f3",
+    "file_size_bytes": 797,
+    "current_version": {
+      "version_id": "DOC-016-v001",
+      "sha256": "3e141a8e1b59319485265c7a93be58227607666bc1dd3b1b3c2c330d5ba781f3",
+      "file_size": 797,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2010-06-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-016-v001",
+        "sha256": "3e141a8e1b59319485265c7a93be58227607666bc1dd3b1b3c2c330d5ba781f3",
+        "file_size": 797,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 694 : 2010"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-017",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 07)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+    "standard_or_document_number": "IS 12640 (Part 1) : 2016",
+    "version_edition": "First Revision",
+    "publication_date": "2016-09-01",
+    "effective_date": "2016-09-01",
+    "valid_from": "2016-09-01",
+    "valid_until": null,
+    "product_domain": "electrical",
+    "product_category": "switches_accessories",
+    "product_type": "switches_for_domestic_use",
+    "url": "https://standardsbis.bsbedge.com/is12640_1_2016",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for switches_for_domestic_use across domain electrical",
+    "document_id": "DOC-017",
+    "file_path": "data/raw/standards/IS_12640_Part_1___2016.pdf",
+    "file_sha256": "71fc8e01070f8744fb0a0ab144c366b1f4a588e9794f3bc1298c6031302c65c9",
+    "file_size_bytes": 693,
+    "current_version": {
+      "version_id": "DOC-017-v001",
+      "sha256": "71fc8e01070f8744fb0a0ab144c366b1f4a588e9794f3bc1298c6031302c65c9",
+      "file_size": 693,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2016-09-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-017-v001",
+        "sha256": "71fc8e01070f8744fb0a0ab144c366b1f4a588e9794f3bc1298c6031302c65c9",
+        "file_size": 693,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 12640 (Part 1) : 2016"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-018",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (CED 02)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Ordinary Portland Cement - Specification (Sixth Revision)",
+    "standard_or_document_number": "IS 269 : 2015",
+    "version_edition": "Sixth Revision",
+    "publication_date": "2015-12-01",
+    "effective_date": "2015-12-01",
+    "valid_from": "2015-12-01",
+    "valid_until": null,
+    "product_domain": "construction_civil",
+    "product_category": "cement",
+    "product_type": "ordinary_portland_cement_53",
+    "url": "https://standardsbis.bsbedge.com/is269_2015",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for ordinary_portland_cement_53 across domain construction_civil",
+    "document_id": "DOC-018",
+    "file_path": "data/raw/standards/IS_269___2015.pdf",
+    "file_sha256": "c27598a09622b42240893b9fcaa03b259b5c4c9d0a327dbd109e71e19905149d",
+    "file_size_bytes": 1204,
+    "current_version": {
+      "version_id": "DOC-018-v001",
+      "sha256": "c27598a09622b42240893b9fcaa03b259b5c4c9d0a327dbd109e71e19905149d",
+      "file_size": 1204,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2015-12-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-018-v001",
+        "sha256": "c27598a09622b42240893b9fcaa03b259b5c4c9d0a327dbd109e71e19905149d",
+        "file_size": 1204,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 269 : 2015"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-019",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (CED 02)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based (Third Revision)",
+    "standard_or_document_number": "IS 1489 (Part 1) : 2015",
+    "version_edition": "Third Revision",
+    "publication_date": "2015-08-01",
+    "effective_date": "2015-08-01",
+    "valid_from": "2015-08-01",
+    "valid_until": null,
+    "product_domain": "construction_civil",
+    "product_category": "cement",
+    "product_type": "portland_pozzolana_cement",
+    "url": "https://standardsbis.bsbedge.com/is1489_1_2015",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for portland_pozzolana_cement across domain construction_civil",
+    "document_id": "DOC-019",
+    "file_path": "data/raw/standards/IS_1489_Part_1___2015.pdf",
+    "file_sha256": "2327b5b612116bfe686f498615ec62620e1098f222263c2573c09864898742ab",
+    "file_size_bytes": 926,
+    "current_version": {
+      "version_id": "DOC-019-v001",
+      "sha256": "2327b5b612116bfe686f498615ec62620e1098f222263c2573c09864898742ab",
+      "file_size": 926,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2015-08-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-019-v001",
+        "sha256": "2327b5b612116bfe686f498615ec62620e1098f222263c2573c09864898742ab",
+        "file_size": 926,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 1489 (Part 1) : 2015"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-020",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (CED 54)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fourth Revision)",
+    "standard_or_document_number": "IS 1786 : 2008",
+    "version_edition": "Fourth Revision",
+    "publication_date": "2008-04-01",
+    "effective_date": "2008-04-01",
+    "valid_from": "2008-04-01",
+    "valid_until": "2024-06-30",
+    "product_domain": "construction_civil",
+    "product_category": "steel_metals",
+    "product_type": "high_strength_deformed_steel_bars",
+    "url": "https://standardsbis.bsbedge.com/is1786_2008",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for high_strength_deformed_steel_bars across domain construction_civil",
+    "document_id": "DOC-020",
+    "file_path": "data/raw/standards/IS_1786___2008.pdf",
+    "file_sha256": "fa6794bf354d8c95af34d22253bf94461fb541737682a1cfe350fa0258f786ee",
+    "file_size_bytes": 1387,
+    "current_version": {
+      "version_id": "DOC-020-v001",
+      "sha256": "fa6794bf354d8c95af34d22253bf94461fb541737682a1cfe350fa0258f786ee",
+      "file_size": 1387,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2008-04-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-020-v001",
+        "sha256": "fa6794bf354d8c95af34d22253bf94461fb541737682a1cfe350fa0258f786ee",
+        "file_size": 1387,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 1786 : 2008"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-021",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (MTD 04)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Hot Rolled Medium and High Tensile Structural Steel - Specification (Seventh Revision)",
+    "standard_or_document_number": "IS 2062 : 2011",
+    "version_edition": "Seventh Revision",
+    "publication_date": "2011-09-01",
+    "effective_date": "2011-09-01",
+    "valid_from": "2011-09-01",
+    "valid_until": null,
+    "product_domain": "construction_civil",
+    "product_category": "steel_metals",
+    "product_type": "structural_steel_standard_quality",
+    "url": "https://standardsbis.bsbedge.com/is2062_2011",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for structural_steel_standard_quality across domain construction_civil",
+    "document_id": "DOC-021",
+    "file_path": "data/raw/standards/IS_2062___2011.pdf",
+    "file_sha256": "b23b3219e841d34bd3de80ab3ca25b8b709c6cbb660be62f88c74b7325b01d34",
+    "file_size_bytes": 785,
+    "current_version": {
+      "version_id": "DOC-021-v001",
+      "sha256": "b23b3219e841d34bd3de80ab3ca25b8b709c6cbb660be62f88c74b7325b01d34",
+      "file_size": 785,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2011-09-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-021-v001",
+        "sha256": "b23b3219e841d34bd3de80ab3ca25b8b709c6cbb660be62f88c74b7325b01d34",
+        "file_size": 785,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 2062 : 2011"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-022",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (CED 05)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Pressed Ceramic Tiles - Specification (First Revision)",
+    "standard_or_document_number": "IS 15622 : 2017",
+    "version_edition": "First Revision",
+    "publication_date": "2017-05-01",
+    "effective_date": "2017-05-01",
+    "valid_from": "2017-05-01",
+    "valid_until": null,
+    "product_domain": "construction_civil",
+    "product_category": "tiles_ceramics",
+    "product_type": "ceramic_tiles",
+    "url": "https://standardsbis.bsbedge.com/is15622_2017",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for ceramic_tiles across domain construction_civil",
+    "document_id": "DOC-022",
+    "file_path": "data/raw/standards/IS_15622___2017.pdf",
+    "file_sha256": "ecb9e19ad243e7a241cbf299d879f28274ac3bc3d3ece46f5b73a5e5ecc56e6b",
+    "file_size_bytes": 746,
+    "current_version": {
+      "version_id": "DOC-022-v001",
+      "sha256": "ecb9e19ad243e7a241cbf299d879f28274ac3bc3d3ece46f5b73a5e5ecc56e6b",
+      "file_size": 746,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2017-05-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-022-v001",
+        "sha256": "ecb9e19ad243e7a241cbf299d879f28274ac3bc3d3ece46f5b73a5e5ecc56e6b",
+        "file_size": 746,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 15622 : 2017"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-023",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (FAD 14)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water) - Specification (Third Revision)",
+    "standard_or_document_number": "IS 14543 : 2024",
+    "version_edition": "Third Revision",
+    "publication_date": "2024-01-15",
+    "effective_date": "2024-01-15",
+    "valid_from": "2024-01-15",
+    "valid_until": null,
+    "product_domain": "food_agriculture",
+    "product_category": "drinking_water",
+    "product_type": "packaged_drinking_water",
+    "url": "https://standardsbis.bsbedge.com/is14543_2024",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for packaged_drinking_water across domain food_agriculture",
+    "document_id": "DOC-023",
+    "file_path": "data/raw/standards/IS_14543___2024.pdf",
+    "file_sha256": "8e535c142906f8af076af9a0dfbad5f36afb880120abe4bc2868cc293dc9692c",
+    "file_size_bytes": 1169,
+    "current_version": {
+      "version_id": "DOC-023-v001",
+      "sha256": "8e535c142906f8af076af9a0dfbad5f36afb880120abe4bc2868cc293dc9692c",
+      "file_size": 1169,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2024-01-15",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-023-v001",
+        "sha256": "8e535c142906f8af076af9a0dfbad5f36afb880120abe4bc2868cc293dc9692c",
+        "file_size": 1169,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 14543 : 2024"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-024",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (FAD 14)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Packaged Natural Mineral Water - Specification (Second Revision)",
+    "standard_or_document_number": "IS 13428 : 2005",
+    "version_edition": "Second Revision",
+    "publication_date": "2005-09-01",
+    "effective_date": "2005-09-01",
+    "valid_from": "2005-09-01",
+    "valid_until": null,
+    "product_domain": "food_agriculture",
+    "product_category": "drinking_water",
+    "product_type": "packaged_natural_mineral_water",
+    "url": "https://standardsbis.bsbedge.com/is13428_2005",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for packaged_natural_mineral_water across domain food_agriculture",
+    "document_id": "DOC-024",
+    "file_path": "data/raw/standards/IS_13428___2005.pdf",
+    "file_sha256": "060eb1631e5e235efd0cac7c6b6f66285ad72c47bef9dfb33af06f756d3aa68e",
+    "file_size_bytes": 681,
+    "current_version": {
+      "version_id": "DOC-024-v001",
+      "sha256": "060eb1631e5e235efd0cac7c6b6f66285ad72c47bef9dfb33af06f756d3aa68e",
+      "file_size": 681,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2005-09-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-024-v001",
+        "sha256": "060eb1631e5e235efd0cac7c6b6f66285ad72c47bef9dfb33af06f756d3aa68e",
+        "file_size": 681,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 13428 : 2005"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-025",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (FAD 19)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Milk Powder - Specification (Fifth Revision)",
+    "standard_or_document_number": "IS 1165 : 2002",
+    "version_edition": "Fifth Revision",
+    "publication_date": "2002-04-01",
+    "effective_date": "2002-04-01",
+    "valid_from": "2002-04-01",
+    "valid_until": null,
+    "product_domain": "food_agriculture",
+    "product_category": "dairy_products",
+    "product_type": "infant_milk_food",
+    "url": "https://standardsbis.bsbedge.com/is1165_2002",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for infant_milk_food across domain food_agriculture",
+    "document_id": "DOC-025",
+    "file_path": "data/raw/standards/IS_1165___2002.pdf",
+    "file_sha256": "b1550b3ad547df93a742b2ef20bd71265706bd0e02f5cecb32a4567d3844e7da",
+    "file_size_bytes": 634,
+    "current_version": {
+      "version_id": "DOC-025-v001",
+      "sha256": "b1550b3ad547df93a742b2ef20bd71265706bd0e02f5cecb32a4567d3844e7da",
+      "file_size": 634,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2002-04-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-025-v001",
+        "sha256": "b1550b3ad547df93a742b2ef20bd71265706bd0e02f5cecb32a4567d3844e7da",
+        "file_size": 634,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 1165 : 2002"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-026",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (TED 09)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Protective Helmets for Motorcycle Riders - Specification (Fourth Revision)",
+    "standard_or_document_number": "IS 4151 : 2015",
+    "version_edition": "Fourth Revision",
+    "publication_date": "2015-03-01",
+    "effective_date": "2015-03-01",
+    "valid_from": "2015-03-01",
+    "valid_until": null,
+    "product_domain": "mechanical_automotive",
+    "product_category": "personal_protective_equipment",
+    "product_type": "protective_helmets_motorcycle",
+    "url": "https://standardsbis.bsbedge.com/is4151_2015",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for protective_helmets_motorcycle across domain mechanical_automotive",
+    "document_id": "DOC-026",
+    "file_path": "data/raw/standards/IS_4151___2015.pdf",
+    "file_sha256": "f3c31a5128d09360eb11b384d3e4db16c6a02384996df13209c78fc1e6e35a1c",
+    "file_size_bytes": 1221,
+    "current_version": {
+      "version_id": "DOC-026-v001",
+      "sha256": "f3c31a5128d09360eb11b384d3e4db16c6a02384996df13209c78fc1e6e35a1c",
+      "file_size": 1221,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2015-03-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-026-v001",
+        "sha256": "f3c31a5128d09360eb11b384d3e4db16c6a02384996df13209c78fc1e6e35a1c",
+        "file_size": 1221,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 4151 : 2015"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-027",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (MED 33)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Domestic Pressure Cookers - Specification (Fifth Revision)",
+    "standard_or_document_number": "IS 2347 : 2017",
+    "version_edition": "Fifth Revision",
+    "publication_date": "2017-08-01",
+    "effective_date": "2017-08-01",
+    "valid_from": "2017-08-01",
+    "valid_until": null,
+    "product_domain": "mechanical_automotive",
+    "product_category": "domestic_appliances_gas",
+    "product_type": "domestic_pressure_cookers",
+    "url": "https://standardsbis.bsbedge.com/is2347_2017",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for domestic_pressure_cookers across domain mechanical_automotive",
+    "document_id": "DOC-027",
+    "file_path": "data/raw/standards/IS_2347___2017.pdf",
+    "file_sha256": "c6cc6b213c2cbda77eb20611f4e49537f427a2138a25732a3cbef0c4e58df9d3",
+    "file_size_bytes": 914,
+    "current_version": {
+      "version_id": "DOC-027-v001",
+      "sha256": "c6cc6b213c2cbda77eb20611f4e49537f427a2138a25732a3cbef0c4e58df9d3",
+      "file_size": 914,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2017-08-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-027-v001",
+        "sha256": "c6cc6b213c2cbda77eb20611f4e49537f427a2138a25732a3cbef0c4e58df9d3",
+        "file_size": 914,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 2347 : 2017"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-028",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (TXD 35)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Personal Protective Equipment - Safety Footwear (Second Revision)",
+    "standard_or_document_number": "IS 15298 (Part 2) : 2016",
+    "version_edition": "Second Revision",
+    "publication_date": "2016-11-01",
+    "effective_date": "2016-11-01",
+    "valid_from": "2016-11-01",
+    "valid_until": null,
+    "product_domain": "mechanical_automotive",
+    "product_category": "personal_protective_equipment",
+    "product_type": "safety_footwear",
+    "url": "https://standardsbis.bsbedge.com/is15298_2_2016",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for safety_footwear across domain mechanical_automotive",
+    "document_id": "DOC-028",
+    "file_path": "data/raw/standards/IS_15298_Part_2___2016.pdf",
+    "file_sha256": "7033334e9c2f4c55429302c3267e033cf9e36e5c7236b96845bd55c7aeecdac4",
+    "file_size_bytes": 777,
+    "current_version": {
+      "version_id": "DOC-028-v001",
+      "sha256": "7033334e9c2f4c55429302c3267e033cf9e36e5c7236b96845bd55c7aeecdac4",
+      "file_size": 777,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2016-11-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-028-v001",
+        "sha256": "7033334e9c2f4c55429302c3267e033cf9e36e5c7236b96845bd55c7aeecdac4",
+        "file_size": 777,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 15298 (Part 2) : 2016"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-029",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 11)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Secondary Lithium Cells and Batteries - Part 2: Portable Applications",
+    "standard_or_document_number": "IS 16046 (Part 2) : 2018",
+    "version_edition": "First Edition",
+    "publication_date": "2018-07-01",
+    "effective_date": "2018-07-01",
+    "valid_from": "2018-07-01",
+    "valid_until": null,
+    "product_domain": "batteries_storage",
+    "product_category": "secondary_cells",
+    "product_type": "lithium_ion_cells_batteries",
+    "url": "https://standardsbis.bsbedge.com/is16046_2_2018",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for lithium_ion_cells_batteries across domain batteries_storage",
+    "document_id": "DOC-029",
+    "file_path": "data/raw/standards/IS_16046_Part_2___2018.pdf",
+    "file_sha256": "bfe15fa9b5c5eac3da99d57986886a14706e6009aa2db423a1693f4e297e29cb",
+    "file_size_bytes": 1194,
+    "current_version": {
+      "version_id": "DOC-029-v001",
+      "sha256": "bfe15fa9b5c5eac3da99d57986886a14706e6009aa2db423a1693f4e297e29cb",
+      "file_size": 1194,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2018-07-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-029-v001",
+        "sha256": "bfe15fa9b5c5eac3da99d57986886a14706e6009aa2db423a1693f4e297e29cb",
+        "file_size": 1194,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 16046 (Part 2) : 2018"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-030",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (LITD 06)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements (Fourth Revision)",
+    "standard_or_document_number": "IS 616 : 2017",
+    "version_edition": "Fourth Revision",
+    "publication_date": "2017-06-01",
+    "effective_date": "2017-06-01",
+    "valid_from": "2017-06-01",
+    "valid_until": null,
+    "product_domain": "electronics_it",
+    "product_category": "audio_video",
+    "product_type": "televisions",
+    "url": "https://standardsbis.bsbedge.com/is616_2017",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for televisions across domain electronics_it",
+    "document_id": "DOC-030",
+    "file_path": "data/raw/standards/IS_616___2017.pdf",
+    "file_sha256": "236070a04cf5baa15a631dcc211ebf893f4c98b7a0e51a6188e87644584299fd",
+    "file_size_bytes": 818,
+    "current_version": {
+      "version_id": "DOC-030-v001",
+      "sha256": "236070a04cf5baa15a631dcc211ebf893f4c98b7a0e51a6188e87644584299fd",
+      "file_size": 818,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2017-06-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-030-v001",
+        "sha256": "236070a04cf5baa15a631dcc211ebf893f4c98b7a0e51a6188e87644584299fd",
+        "file_size": 818,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 616 : 2017"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-031",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (LITD 06)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Information Technology Equipment - Safety - Part 1: General Requirements (Second Revision)",
+    "standard_or_document_number": "IS 13252 (Part 1) : 2010",
+    "version_edition": "Second Revision",
+    "publication_date": "2010-03-01",
+    "effective_date": "2010-03-01",
+    "valid_from": "2010-03-01",
+    "valid_until": null,
+    "product_domain": "electronics_it",
+    "product_category": "it_equipment",
+    "product_type": "laptops_notebooks",
+    "url": "https://standardsbis.bsbedge.com/is13252_1_2010",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for laptops_notebooks across domain electronics_it",
+    "document_id": "DOC-031",
+    "file_path": "data/raw/standards/IS_13252_Part_1___2010.pdf",
+    "file_sha256": "5a1fabc63ec21ba18de87b8d07f439ec9824a8ebe5ff636325b25710840e62e3",
+    "file_size_bytes": 803,
+    "current_version": {
+      "version_id": "DOC-031-v001",
+      "sha256": "5a1fabc63ec21ba18de87b8d07f439ec9824a8ebe5ff636325b25710840e62e3",
+      "file_size": 803,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2010-03-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-031-v001",
+        "sha256": "5a1fabc63ec21ba18de87b8d07f439ec9824a8ebe5ff636325b25710840e62e3",
+        "file_size": 803,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 13252 (Part 1) : 2010"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-032",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (CED 50)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies - Specification (Fourth Revision)",
+    "standard_or_document_number": "IS 4985 : 2021",
+    "version_edition": "Fourth Revision",
+    "publication_date": "2021-08-01",
+    "effective_date": "2021-08-01",
+    "valid_from": "2021-08-01",
+    "valid_until": null,
+    "product_domain": "chemicals_polymers",
+    "product_category": "polymers_pipes",
+    "product_type": "upvc_pipes_potable_water",
+    "url": "https://standardsbis.bsbedge.com/is4985_2021",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for upvc_pipes_potable_water across domain chemicals_polymers",
+    "document_id": "DOC-032",
+    "file_path": "data/raw/standards/IS_4985___2021.pdf",
+    "file_sha256": "957d770cb3a60b9f5e054dd124609c7cc1ba8ebe76aa49adcf5dfaa9f21f95b0",
+    "file_size_bytes": 929,
+    "current_version": {
+      "version_id": "DOC-032-v001",
+      "sha256": "957d770cb3a60b9f5e054dd124609c7cc1ba8ebe76aa49adcf5dfaa9f21f95b0",
+      "file_size": 929,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2021-08-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-032-v001",
+        "sha256": "957d770cb3a60b9f5e054dd124609c7cc1ba8ebe76aa49adcf5dfaa9f21f95b0",
+        "file_size": 929,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 4985 : 2021"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-033",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (CED 05)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification (First Revision)",
+    "standard_or_document_number": "IS 15477 : 2019",
+    "version_edition": "First Revision",
+    "publication_date": "2019-10-01",
+    "effective_date": "2019-10-01",
+    "valid_from": "2019-10-01",
+    "valid_until": null,
+    "product_domain": "chemicals_polymers",
+    "product_category": "paints_coatings",
+    "product_type": "cement_paints",
+    "url": "https://standardsbis.bsbedge.com/is15477_2019",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for cement_paints across domain chemicals_polymers",
+    "document_id": "DOC-033",
+    "file_path": "data/raw/standards/IS_15477___2019.pdf",
+    "file_sha256": "5db00a39bb7b2708956d4066e2d32193cb279b4e183b1980fb0dcf0f02516253",
+    "file_size_bytes": 710,
+    "current_version": {
+      "version_id": "DOC-033-v001",
+      "sha256": "5db00a39bb7b2708956d4066e2d32193cb279b4e183b1980fb0dcf0f02516253",
+      "file_size": 710,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2019-10-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-033-v001",
+        "sha256": "5db00a39bb7b2708956d4066e2d32193cb279b4e183b1980fb0dcf0f02516253",
+        "file_size": 710,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 15477 : 2019"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-034",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (CED 54)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision)",
+    "standard_or_document_number": "IS 1786 : 2024",
+    "version_edition": "Fifth Revision",
+    "publication_date": "2024-07-01",
+    "effective_date": "2024-07-01",
+    "valid_from": "2024-07-01",
+    "valid_until": null,
+    "product_domain": "construction_civil",
+    "product_category": "steel_metals",
+    "product_type": "high_strength_deformed_steel_bars",
+    "url": "https://standardsbis.bsbedge.com/is1786_2024",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for high_strength_deformed_steel_bars across domain construction_civil",
+    "document_id": "DOC-034",
+    "file_path": "data/raw/standards/IS_1786___2024.pdf",
+    "file_sha256": "ff90afc14b8ec9092878a0e05cb100d1fd034f935869ec5d495e91c11a865d4f",
+    "file_size_bytes": 903,
+    "current_version": {
+      "version_id": "DOC-034-v001",
+      "sha256": "ff90afc14b8ec9092878a0e05cb100d1fd034f935869ec5d495e91c11a865d4f",
+      "file_size": 903,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2024-07-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-034-v001",
+        "sha256": "ff90afc14b8ec9092878a0e05cb100d1fd034f935869ec5d495e91c11a865d4f",
+        "file_size": 903,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 1786 : 2024"
+      }
+    ]
+  },
+  {
+    "source_id": "SRC-035",
+    "domain": "Standards",
+    "source_type": "standard_document",
+    "issuing_authority": "Bureau of Indian Standards (ETD 05)",
+    "authority_level": "Tier 1B - Normative",
+    "title": "Electric Ceiling Fans - Specification (Fifth Revision - Energy Star Mandatory)",
+    "standard_or_document_number": "IS 374 : 2026",
+    "version_edition": "Fifth Revision",
+    "publication_date": "2026-08-01",
+    "effective_date": "2026-08-01",
+    "valid_from": "2026-08-01",
+    "valid_until": null,
+    "product_domain": "electrical",
+    "product_category": "fans",
+    "product_type": "electric_ceiling_fans",
+    "url": "https://standardsbis.bsbedge.com/is374_2026",
+    "retrieval_date": "2026-08-30T19:03:32.649648+00:00",
+    "status": "metadata_verified",
+    "notes": "Authoritative Indian Standard for electric_ceiling_fans across domain electrical",
+    "document_id": "DOC-035",
+    "file_path": "data/raw/standards/IS_374___2026.pdf",
+    "file_sha256": "3128da9470d97b240d967d39386f5b2874df4b937338c5ec6998797c5bcc1892",
+    "file_size_bytes": 809,
+    "current_version": {
+      "version_id": "DOC-035-v001",
+      "sha256": "3128da9470d97b240d967d39386f5b2874df4b937338c5ec6998797c5bcc1892",
+      "file_size": 809,
+      "last_modified": "2026-08-30T19:03:32.649648+00:00",
+      "publication_date": "2026-08-01",
+      "etag": null
+    },
+    "history": [
+      {
+        "version_id": "DOC-035-v001",
+        "sha256": "3128da9470d97b240d967d39386f5b2874df4b937338c5ec6998797c5bcc1892",
+        "file_size": 809,
+        "detected_at": "2026-08-30T19:03:32.649648+00:00",
+        "change_type": "initial_acquisition",
+        "version_label": "IS 374 : 2026"
+      }
+    ]
   }
 ]

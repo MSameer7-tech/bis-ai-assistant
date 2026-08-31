@@ -14,12 +14,12 @@ TOLERANCE_TEMP_REGEX = re.compile(
 )
 
 RANGE_REGEX = re.compile(
-    r"(?:between\s+)?([0-9]+(?:\.[0-9]+)?)\s*(?:and|to|[\-–])\s*([0-9]+(?:\.[0-9]+)?)\s*(%|°C|V|W|MΩ|kΩ|Ω|Nm|K|h|min|s|percent|hours?|minutes?|seconds?)(?:$|\s|\b)",
+    r"(?:between\s+)?([0-9]+(?:\.[0-9]+)?)\s*(?:and|to|[\-–])\s*([0-9]+(?:\.[0-9]+)?)\s*(%|°C|V|W|MΩ|kΩ|Ω|Nm|K|h|min|s|percent|hours?|minutes?|seconds?|MPa|N/mm²|N/mm2|m³/min|m3/min|bar|kPa|kN|J|mg/l|mg/L|ppm|NTU|pH)(?:$|\s|\b)",
     re.IGNORECASE,
 )
 
 NUMERIC_UNIT_REGEX = re.compile(
-    r"([0-9]+(?:\s+[0-9]+)*(?:\.[0-9]+)?)\s*(MΩ|kΩ|Ω|Mohm|ohm|V|kV|W|kW|Nm|K|°C|Hz|kHz|percent|%|h|hours?|min|minutes?|s|seconds?|kg|g|mm|cm|m)(?:$|\s|\b)",
+    r"([0-9]+(?:\s+[0-9]+)*(?:\.[0-9]+)?)\s*(MΩ|kΩ|Ω|Mohm|ohm|V|kV|W|kW|Nm|K|°C|Hz|kHz|percent|%|h|hours?|min|minutes?|s|seconds?|kg|g|mm|cm|m|MPa|N/mm²|N/mm2|m³/min|m3/min|bar|kPa|kN|J|Joules?|mg/l|mg/L|ppm|NTU|rpm|pH)(?:$|\s|\b)",
     re.IGNORECASE,
 )
 
@@ -85,6 +85,14 @@ class ValueNormalizer:
                 "minute": "min",
                 "seconds": "s",
                 "second": "s",
+                "m3/min": "m³/min",
+                "n/mm2": "N/mm²",
+                "joules": "J",
+                "joule": "J",
+                "mg/l": "mg/L",
+                "mpa": "MPa",
+                "kpa": "kPa",
+                "kn": "kN",
             }
             canonical_unit = unit_map.get(raw_unit.lower(), raw_unit)
 

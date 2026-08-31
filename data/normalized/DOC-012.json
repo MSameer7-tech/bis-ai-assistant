@@ -647,7 +647,7 @@
       "subclauses": [
         {
           "clause_number": "8.1",
-          "title": "Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?.",
+          "title": "Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 MΩ.",
           "parent_clause": "8",
           "depth": 2,
           "page_start": 2,
@@ -655,7 +655,7 @@
           "page_refs": [
             2
           ],
-          "content": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?.",
+          "content": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 MΩ.",
           "subclauses": [],
           "semantic_type": "requirement",
           "semantic_tags": [
@@ -736,8 +736,8 @@
                 "pages": [
                   2
                 ],
-                "section": "Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?.",
-                "original_text": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?."
+                "section": "Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 MΩ.",
+                "original_text": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 MΩ."
               }
             }
           ],
@@ -2003,7 +2003,7 @@
     },
     {
       "relationship_id": "REL-DOC012-0024",
-      "subject": "Clause 8.1: Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?.",
+      "subject": "Clause 8.1: Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 MΩ.",
       "predicate": "part_of",
       "object": "IS 16102 (Part 1) : 2026",
       "document_id": "DOC-012",
@@ -2635,8 +2635,8 @@
         "pages": [
           2
         ],
-        "section": "Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?.",
-        "original_text": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 M?."
+        "section": "Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 MΩ.",
+        "original_text": "8.1 Insulation resistance between current-carrying metal parts and accessible parts shall be not less than 4 MΩ."
       }
     },
     {

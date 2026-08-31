@@ -1,0 +1,183 @@
+{
+  "version": "1.0.0",
+  "description": "Controlled product domain taxonomy for Bureau of Indian Standards (BIS) knowledge indexing",
+  "domains": {
+    "electrical": {
+      "name": "Electrical & Lighting",
+      "categories": {
+        "lamps": [
+          "self_ballasted_led_lamps",
+          "tubular_fluorescent_lamps",
+          "tungsten_filament_lamps",
+          "fixed_general_purpose_luminaires"
+        ],
+        "fans": [
+          "electric_ceiling_fans",
+          "electric_table_fans",
+          "pedestal_fans",
+          "exhaust_fans"
+        ],
+        "switches_accessories": [
+          "switches_for_domestic_use",
+          "plugs_and_socket_outlets",
+          "conduits_for_electrical_installations",
+          "lamp_holders"
+        ],
+        "cables_conductors": [
+          "pvc_insulated_cables",
+          "cross_linked_polyethylene_cables",
+          "conductors_for_overhead_lines"
+        ],
+        "motors_transformers": [
+          "three_phase_induction_motors",
+          "distribution_transformers",
+          "power_transformers"
+        ],
+        "household_appliances": [
+          "electric_irons",
+          "storage_water_heaters",
+          "electric_immersion_heaters",
+          "electric_room_heaters",
+          "safety_of_household_appliances"
+        ]
+      }
+    },
+    "electronics_it": {
+      "name": "Electronics & Information Technology",
+      "categories": {
+        "audio_video": [
+          "televisions",
+          "audio_amplifiers",
+          "optical_disc_players"
+        ],
+        "it_equipment": [
+          "laptops_notebooks",
+          "printers_plotters",
+          "scanners",
+          "set_top_boxes",
+          "servers_data_storage"
+        ],
+        "telecom_mobile": [
+          "mobile_phones",
+          "smart_watches",
+          "tablets"
+        ],
+        "power_supplies": [
+          "power_adapters_it",
+          "smps_audio_video",
+          "ups_inverters"
+        ]
+      }
+    },
+    "construction_civil": {
+      "name": "Civil Engineering & Construction Materials",
+      "categories": {
+        "cement": [
+          "ordinary_portland_cement_33",
+          "ordinary_portland_cement_43",
+          "ordinary_portland_cement_53",
+          "portland_pozzolana_cement",
+          "portland_slag_cement",
+          "white_portland_cement"
+        ],
+        "steel_metals": [
+          "high_strength_deformed_steel_bars",
+          "structural_steel_standard_quality",
+          "galvanized_steel_sheets",
+          "mild_steel_tubes"
+        ],
+        "concrete_aggregates": [
+          "coarse_and_fine_aggregates",
+          "ready_mixed_concrete",
+          "precast_concrete_pipes"
+        ],
+        "tiles_ceramics": [
+          "ceramic_tiles",
+          "vitrified_tiles",
+          "clay_roofing_tiles"
+        ]
+      }
+    },
+    "food_agriculture": {
+      "name": "Food & Agricultural Products",
+      "categories": {
+        "drinking_water": [
+          "packaged_drinking_water",
+          "packaged_natural_mineral_water"
+        ],
+        "dairy_products": [
+          "pasteurized_milk",
+          "infant_milk_food",
+          "butter_ghee",
+          "condensed_milk"
+        ],
+        "spices_condiments": [
+          "black_pepper",
+          "turmeric_powder",
+          "chilli_powder",
+          "coriander_powder"
+        ],
+        "edible_oils": [
+          "mustard_oil",
+          "groundnut_oil",
+          "refined_sunflower_oil"
+        ]
+      }
+    },
+    "mechanical_automotive": {
+      "name": "Mechanical, Automotive & Safety Goods",
+      "categories": {
+        "personal_protective_equipment": [
+          "protective_helmets_motorcycle",
+          "industrial_safety_helmets",
+          "safety_footwear",
+          "respiratory_protective_devices"
+        ],
+        "domestic_appliances_gas": [
+          "domestic_pressure_cookers",
+          "domestic_gas_stoves_lpg",
+          "lpg_cylinders_valves"
+        ],
+        "fire_safety": [
+          "portable_fire_extinguishers",
+          "fire_hydrant_systems"
+        ]
+      }
+    },
+    "chemicals_polymers": {
+      "name": "Chemicals, Polymers & Petroleum Products",
+      "categories": {
+        "paints_coatings": [
+          "ready_mixed_paints_enamel",
+          "distempers",
+          "cement_paints"
+        ],
+        "polymers_pipes": [
+          "upvc_pipes_potable_water",
+          "polyethylene_pipes_water_supply",
+          "pvc_pipes_drainage"
+        ],
+        "fertilizers": [
+          "urea",
+          "di_ammonium_phosphate",
+          "single_superphosphate"
+        ]
+      }
+    },
+    "batteries_storage": {
+      "name": "Batteries & Energy Storage",
+      "categories": {
+        "secondary_cells": [
+          "lithium_ion_cells_batteries",
+          "nickel_metal_hydride_cells",
+          "lead_acid_batteries_starter",
+          "stationary_lead_acid_batteries"
+        ],
+        "primary_cells": [
+          "zinc_carbon_batteries",
+          "alkaline_manganese_dioxide_batteries"
+        ]
+      }
+    }
+  }
+}
