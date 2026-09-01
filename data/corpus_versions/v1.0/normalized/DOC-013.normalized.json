@@ -1,0 +1,549 @@
+{
+  "document_id": "DOC-013",
+  "source_id": "SRC-013",
+  "document_metadata": {
+    "document_id": "DOC-013",
+    "source_id": "SRC-013",
+    "standard_id": "STD-IS_374_2019",
+    "standard_number": "IS 374 : 2019",
+    "title": "Electric Ceiling Fans - Specification (Fourth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC013-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 374 : 2019) covers and specifies requirements for Electric Ceiling Fans - Specification (Fourth Revision). It applies to electric_ceiling_fans under fans category in the electrical domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC013-8.1",
+      "clause_number": "8.1",
+      "title": "Air Delivery",
+      "content": "Air Delivery: The minimum air delivery for 1200 mm sweep ceiling fans shall be 210 m³/min at rated voltage.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC013-8.2",
+      "clause_number": "8.2",
+      "title": "Power Input",
+      "content": "Power Input: The maximum power input for 1200 mm fans shall not exceed 50 W (BEE 5-star equivalent).",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC013-8.3",
+      "clause_number": "8.3",
+      "title": "Service Value",
+      "content": "Service Value: The service value shall not be less than 4.2 m³/min/W.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC013-9.1",
+      "clause_number": "9.1",
+      "title": "Temperature Rise",
+      "content": "Temperature Rise: The temperature rise of fan winding shall not exceed 75 K for Class E insulation.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC013-10.1",
+      "clause_number": "10.1",
+      "title": "Insulation Resistance",
+      "content": "Insulation Resistance: Insulation resistance shall not be less than 2 MΩ with 500 V DC.",
+      "page_start": 6,
+      "page_end": 7,
+      "page_refs": [
+        6,
+        7
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC013-0001",
+      "entity_type": "standard",
+      "name": "IS 374 : 2019",
+      "status": "mandatory",
+      "original_value": "Electric Ceiling Fans - Specification (Fourth Revision)",
+      "value": "Electric Ceiling Fans - Specification (Fourth Revision)",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC013-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC013-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC013-0004",
+      "entity_type": "test",
+      "name": "Air Delivery Test",
+      "status": "mandatory",
+      "original_value": "Air Delivery Test",
+      "value": "Air Delivery Test",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC013-0005",
+      "entity_type": "value_and_unit",
+      "name": "air_delivery",
+      "status": "mandatory",
+      "original_value": "210 m³/min",
+      "value": "210 m³/min",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 210,
+        "unit": "m³/min"
+      },
+      "unit": "m³/min"
+    },
+    {
+      "entity_id": "ENT-DOC013-0006",
+      "entity_type": "value_and_unit",
+      "name": "wattage",
+      "status": "mandatory",
+      "original_value": "50 W",
+      "value": "50 W",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "8.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "8.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 50,
+        "unit": "W"
+      },
+      "unit": "W"
+    },
+    {
+      "entity_id": "ENT-DOC013-0007",
+      "entity_type": "value_and_unit",
+      "name": "air_delivery",
+      "status": "mandatory",
+      "original_value": "4.2 m³/min",
+      "value": "4.2 m³/min",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "8.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "8.3",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 4.2,
+        "unit": "m³/min"
+      },
+      "unit": "m³/min"
+    },
+    {
+      "entity_id": "ENT-DOC013-0008",
+      "entity_type": "value_and_unit",
+      "name": "temperature_rise",
+      "status": "mandatory",
+      "original_value": "75 K",
+      "value": "75 K",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "9.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 75,
+        "unit": "K"
+      },
+      "unit": "K"
+    },
+    {
+      "entity_id": "ENT-DOC013-0009",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "10.1",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "source_clause": "10.1",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC013-0010",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "500 V DC",
+      "value": "500 V DC",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "10.1",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "source_clause": "10.1",
+      "source_pages": [
+        6,
+        7
+      ],
+      "normalized": {
+        "value": 500,
+        "unit": "V"
+      },
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC013-0011",
+      "entity_type": "value_and_unit",
+      "name": "insulation_resistance",
+      "status": "mandatory",
+      "original_value": "2 MΩ",
+      "value": "2 MΩ",
+      "provenance": {
+        "document_id": "DOC-013",
+        "source_id": "SRC-013",
+        "standard": "IS 374 : 2019",
+        "clause": "10.1",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "source_clause": "10.1",
+      "source_pages": [
+        6,
+        7
+      ],
+      "normalized": {
+        "value": 2,
+        "unit": "MΩ"
+      },
+      "unit": "MΩ"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC013-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 374 : 2019",
+      "document_id": "DOC-013",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC013-0002",
+      "subject": "Clause 8.1: Air Delivery",
+      "predicate": "part_of",
+      "object": "IS 374 : 2019",
+      "document_id": "DOC-013",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC013-0003",
+      "subject": "Clause 8.2: Power Input",
+      "predicate": "part_of",
+      "object": "IS 374 : 2019",
+      "document_id": "DOC-013",
+      "source_clause": "8.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC013-0004",
+      "subject": "Clause 8.3: Service Value",
+      "predicate": "part_of",
+      "object": "IS 374 : 2019",
+      "document_id": "DOC-013",
+      "source_clause": "8.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC013-0005",
+      "subject": "Clause 9.1: Temperature Rise",
+      "predicate": "part_of",
+      "object": "IS 374 : 2019",
+      "document_id": "DOC-013",
+      "source_clause": "9.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC013-0006",
+      "subject": "Clause 9.1",
+      "predicate": "prohibits",
+      "object": "Cap Temperature Rise > 120 K",
+      "document_id": "DOC-013",
+      "source_clause": "9.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC013-0007",
+      "subject": "Clause 10.1: Insulation Resistance",
+      "predicate": "part_of",
+      "object": "IS 374 : 2019",
+      "document_id": "DOC-013",
+      "source_clause": "10.1",
+      "source_pages": [
+        6,
+        7
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [
+    {
+      "table_id": "TABLE-001",
+      "title": "Table 1",
+      "clause": "",
+      "source_page": 1,
+      "headers": [],
+      "normalized_headers": [],
+      "rows": [
+        {
+          "col_0": "parameter",
+          "col_1": "value",
+          "col_2": "normative_status"
+        }
+      ],
+      "raw_markdown": "",
+      "semantic_table_id": "TABLE-DOC013-T001"
+    }
+  ],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.611115+00:00",
+    "total_definitions": 0,
+    "total_entities": 11,
+    "total_requirements": 0,
+    "total_relationships": 7,
+    "total_cross_references": 0,
+    "total_tables": 1,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-013",
+    "document_id": "DOC-013",
+    "raw_file": null,
+    "sha256": null
+  }
+}

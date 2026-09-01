@@ -1,0 +1,122 @@
+[
+  {
+    "document_id": "DOC-001",
+    "source_id": "SRC-001",
+    "standard_number": "IS 16102 (Part 1) : 2012",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 129,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-007",
+    "source_id": "SRC-007",
+    "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 61,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-002",
+    "source_id": "SRC-002",
+    "standard_number": "IS 16102 (Part 2) : 2017",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 153,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-010",
+    "source_id": "SRC-010",
+    "standard_number": "CRO 2021",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 5,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-011",
+    "source_id": "SRC-011",
+    "standard_number": "CRO Amendment 2026",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 2,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  },
+  {
+    "document_id": "DOC-012",
+    "source_id": "SRC-012",
+    "standard_number": "IS 16102 (Part 1) : 2026",
+    "verification_type": "manual_structure_aware_chunking_review",
+    "verified_by": "developer",
+    "status": "chunking_verified",
+    "total_chunks": 28,
+    "checks": {
+      "clause_coverage": "passed",
+      "requirement_coverage": "passed",
+      "definition_coverage": "passed",
+      "table_preservation": "passed",
+      "annex_preservation": "passed",
+      "provenance": "passed",
+      "normative_language": "passed",
+      "under_consideration": "passed",
+      "cross_references": "passed"
+    }
+  }
+]

@@ -1,5 +1,5 @@
 /**
- * BIS AI Assistant - Frontend Client Logic
+ * BIS AI Assistant - Production Frontend Client Logic (Phase 7)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,9 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Results Elements
     const resultsCard = document.getElementById('resultsCard');
     const groundingBadge = document.getElementById('groundingBadge');
+    const intentBadge = document.getElementById('intentBadge');
     const temporalBadge = document.getElementById('temporalBadge');
     const confidenceVal = document.getElementById('confidenceVal');
+    const entityBanner = document.getElementById('entityBanner');
+    const entityTitle = document.getElementById('entityTitle');
+    const entityMeta = document.getElementById('entityMeta');
     const answerText = document.getElementById('answerText');
+    
+    const numericalSection = document.getElementById('numericalSection');
+    const numericalTableBody = document.getElementById('numericalTableBody');
+    
+    const claimsSection = document.getElementById('claimsSection');
+    const claimsList = document.getElementById('claimsList');
+
     const citationsList = document.getElementById('citationsList');
     const guardrailDetails = document.getElementById('guardrailDetails');
     const evidenceCount = document.getElementById('evidenceCount');
@@ -33,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let allStandards = [];
     let currentDomain = 'all';
+    let currentConversationId = 'session-' + Math.random().toString(36).substring(2, 9);
 
     // Toggle Custom Date Input
     asOfDateSelect.addEventListener('change', () => {
@@ -94,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return matchDom && matchSearch;
         });
 
-        catalogCount.textContent = `${filtered.length} Standards`;
+        catalogCount.textContent = `${filtered.length} Entities`;
         standardsList.innerHTML = '';
 
         if (filtered.length === 0) {
@@ -149,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // UI Loading State
         submitBtn.disabled = true;
-        btnText.textContent = 'Analyzing...';
+        btnText.textContent = 'Verifying...';
         btnSpinner.classList.remove('hidden');
 
         try {
@@ -159,7 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({
                     query: q,
                     as_of_date: asOf,
-                    top_k: topK
+                    top_k: topK,
+                    conversation_id: currentConversationId
                 })
             });
 
@@ -174,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(`Error: ${err.message}`);
         } finally {
             submitBtn.disabled = false;
-            btnText.textContent = 'Query Standard';
+            btnText.textContent = 'Query Assistant';
             btnSpinner.classList.add('hidden');
         }
     }
@@ -184,26 +197,96 @@ document.addEventListener('DOMContentLoaded', () => {
         handleQuerySubmit();
     });
 
-    // 4. Render Results
+    // 4. Render Production Results
     function renderResults(data) {
         resultsCard.classList.remove('hidden');
         resultsCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-        // Confidence & Status
-        confidenceVal.textContent = data.confidence !== undefined ? data.confidence.toFixed(2) : '1.0';
-        temporalBadge.textContent = data.temporal_context || 'Current Effective Edition';
+        const payload = data.production_payload || {};
 
+        // Confidence & Status
+        const conf = payload.evidence_confidence !== undefined ? payload.evidence_confidence : data.confidence;
+        confidenceVal.textContent = conf !== undefined ? Number(conf).toFixed(2) : '1.00';
+        temporalBadge.textContent = data.temporal_context || 'Current Enforced Editions';
+
+        // Intent Badge
+        if (payload.intent && payload.intent.type) {
+            intentBadge.textContent = `Intent: ${payload.intent.type.replace(/_/g, ' ')}`;
+        } else {
+            intentBadge.textContent = 'Intent: TECHNICAL COMPLIANCE';
+        }
+
+        // Grounding status
         const gRes = data.guardrail_result || {};
-        if (gRes.passed) {
+        if (gRes.passed && payload.status !== 'guardrail_blocked' && payload.status !== 'refusal') {
             groundingBadge.className = 'badge-success';
             groundingBadge.textContent = '✅ Grounded & Verified';
-        } else {
+        } else if (payload.status === 'refusal' || gRes.refusal_required) {
             groundingBadge.className = 'badge-warning';
-            groundingBadge.textContent = '⚠️ Guardrail Abstention / Out of Scope';
+            groundingBadge.textContent = '⚠️ Grounded Refusal / Out of Scope';
+        } else {
+            groundingBadge.className = 'badge-danger';
+            groundingBadge.textContent = '🛑 Guardrail Blocked';
+        }
+
+        // Entity Banner
+        if (payload.entities && payload.entities.length > 0) {
+            const ent = payload.entities[0];
+            entityTitle.textContent = ent.name || ent.id;
+            entityMeta.textContent = `${ent.domain ? ent.domain.replace(/_/g, ' ').toUpperCase() : 'BIS STANDARD'} • ${ent.mandatory_certification ? 'Compulsory ISI Marking' : 'Voluntary Specification'}`;
+            entityBanner.classList.remove('hidden');
+        } else {
+            entityBanner.classList.add('hidden');
         }
 
         // Format Answer
         answerText.innerHTML = formatMarkdown(data.answer);
+
+        // Numerical Verification Table
+        const numChecks = payload.numerical_verifications || data.numerical_verifications || [];
+        if (numChecks.length > 0) {
+            numericalTableBody.innerHTML = '';
+            numChecks.forEach(nv => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><strong>${nv.parameter || 'Parameter'}</strong></td>
+                    <td>${nv.claim_value} ${nv.claim_unit}</td>
+                    <td>${nv.source_value >= 0 ? `${nv.source_value} ${nv.source_unit}` : 'Not Found in Source'}</td>
+                    <td><code>${nv.claim_unit}</code></td>
+                    <td>${nv.passed ? '<span class="status-pass">✅ PASSED (0 Delta)</span>' : '<span class="status-fail">❌ FAILED MISMATCH</span>'}</td>
+                `;
+                numericalTableBody.appendChild(tr);
+            });
+            numericalSection.classList.remove('hidden');
+        } else {
+            numericalSection.classList.add('hidden');
+        }
+
+        // Atomic Claims Grounding Breakdown
+        const claims = payload.claims || data.claims || [];
+        if (claims.length > 0) {
+            claimsList.innerHTML = '';
+            claims.forEach(cl => {
+                const div = document.createElement('div');
+                div.className = `claim-card ${cl.verified ? 'verified' : 'unverified'}`;
+                const evDetails = cl.evidence && cl.evidence.length > 0 
+                    ? cl.evidence.map(ev => `<code>${ev.standard_number} Cl. ${ev.clause} (p. ${ev.page || 'N/A'})</code>`).join(' &bull; ')
+                    : '<em>No direct chunk entailment</em>';
+                
+                div.innerHTML = `
+                    <div class="claim-header">
+                        <span class="claim-id">${cl.claim_id}</span>
+                        <span class="claim-status">${cl.verified ? '✅ Verified Entailment' : '⚠️ Low Grounding'}</span>
+                    </div>
+                    <div class="claim-text">${cl.text}</div>
+                    <div class="claim-evidence">Grounding Evidence: ${evDetails}</div>
+                `;
+                claimsList.appendChild(div);
+            });
+            claimsSection.classList.remove('hidden');
+        } else {
+            claimsSection.classList.add('hidden');
+        }
 
         // Citations
         citationsList.innerHTML = '';
@@ -213,12 +296,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.className = 'citation-card';
                 card.innerHTML = `
                     <div class="citation-header">
-                        <span>${c.standard_number}</span>
+                        <span>${c.standard_number || c.standard}</span>
                         <span>${c.verified ? '✅ Verified' : '⚠️ Unverified'}</span>
                     </div>
                     <div class="citation-meta">
                         <span><strong>Clause:</strong> ${c.clause || 'N/A'}</span>
-                        <span><strong>Pages:</strong> ${c.pages && c.pages.length ? c.pages.join(', ') : 'N/A'}</span>
+                        <span><strong>Pages:</strong> ${c.pages && c.pages.length ? c.pages.join(', ') : (c.page || 'N/A')}</span>
                         <span><strong>Doc ID:</strong> ${c.source_id || c.chunk_id ? c.chunk_id.split('::')[0] : 'DOC'}</span>
                     </div>
                 `;
@@ -231,10 +314,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Guardrail Box
         guardrailDetails.innerHTML = '';
         const checks = [
-            `<strong>Grounding Confidence:</strong> ${(gRes.grounding_confidence * 100).toFixed(0)}%`,
-            `<strong>Refusal Status:</strong> ${gRes.refusal_required ? 'Triggered' : 'Not Required (Answer Permitted)'}`,
-            `<strong>Numerical Claims Checked:</strong> ${gRes.numerical_checks ? gRes.numerical_checks.length : 0} verified against source text`,
-            `<strong>Normative Force Checks:</strong> ${gRes.normative_checks ? gRes.normative_checks.length : 0} passed`
+            `<strong>Grounding Confidence:</strong> ${(conf * 100).toFixed(0)}%`,
+            `<strong>Refusal Status:</strong> ${payload.status === 'refusal' || gRes.refusal_required ? `Triggered (${payload.refusal_reason || 'Out of Scope'})` : 'Not Required (Answer Grounded)'}`,
+            `<strong>Deterministic Numerical Verifications:</strong> ${numChecks.length} parameters checked`,
+            `<strong>Atomic Claims Verified:</strong> ${claims.filter(c => c.verified).length} / ${claims.length} propositions entailed`
         ];
         if (gRes.violations && gRes.violations.length > 0) {
             checks.push(`<strong style="color: var(--accent-rose);">Violations:</strong> ${gRes.violations.join('; ')}`);

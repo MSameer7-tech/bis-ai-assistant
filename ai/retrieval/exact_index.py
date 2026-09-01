@@ -230,10 +230,25 @@ class ExactInvertedIndex:
 
         if product:
             prod_clean = product.strip().lower()
-            std_target = self.PRODUCT_TO_STANDARDS.get(prod_clean)
-            if std_target:
-                for std_key, cids in self.standard_to_chunks.items():
-                    if std_target in std_key or std_key in std_target:
-                        matched.update(cids)
+            try:
+                from ai.retrieval.product_resolver import resolve_product
+                resolved = resolve_product(prod_clean)
+                if resolved and resolved.get("standard_number"):
+                    std_norm = self._normalize_key(resolved["standard_number"])
+                    for std_key, cids in self.standard_to_chunks.items():
+                        if std_norm in std_key or std_key in std_norm:
+                            matched.update(cids)
+                else:
+                    std_target = self.PRODUCT_TO_STANDARDS.get(prod_clean)
+                    if std_target:
+                        for std_key, cids in self.standard_to_chunks.items():
+                            if std_target in std_key or std_key in std_target:
+                                matched.update(cids)
+            except Exception:
+                std_target = self.PRODUCT_TO_STANDARDS.get(prod_clean)
+                if std_target:
+                    for std_key, cids in self.standard_to_chunks.items():
+                        if std_target in std_key or std_key in std_target:
+                            matched.update(cids)
 
         return matched

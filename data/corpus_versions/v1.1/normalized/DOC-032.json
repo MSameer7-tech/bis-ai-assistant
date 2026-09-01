@@ -1,0 +1,472 @@
+{
+  "document_id": "DOC-032",
+  "source_id": "SRC-032",
+  "document_metadata": {
+    "document_id": "DOC-032",
+    "source_id": "SRC-032",
+    "standard_id": "STD-IS_4985_2021",
+    "standard_number": "IS 4985 : 2021",
+    "title": "Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies - Specification (Fourth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC032-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 4985 : 2021) covers and specifies requirements for Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies - Specification (Fourth Revision). It applies to upvc_pipes_potable_water under polymers_pipes category in the chemicals_polymers domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC032-8.1",
+      "clause_number": "8.1",
+      "title": "Hydrostatic Pressure Test",
+      "content": "Hydrostatic Pressure Test: Pipes shall withstand internal hydrostatic pressure test at 27°C with circumferential hoop stress of 10.0 MPa for 1 h without burst.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement",
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC032-8.2",
+      "clause_number": "8.2",
+      "title": "Long-Term Hydrostatic Test",
+      "content": "Long-Term Hydrostatic Test: 1000 h hydrostatic test at 60°C with 4.2 MPa hoop stress without failure.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC032-9.1",
+      "clause_number": "9.1",
+      "title": "Impact Test (Falling Weight)",
+      "content": "Impact Test (Falling Weight): Striker dropped from 2.0 m height on pipe cooled to 0°C; True Impact Rate of Failure (TIR) shall not exceed 10%.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement",
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC032-10.1",
+      "clause_number": "10.1",
+      "title": "Opacity",
+      "content": "Opacity: Light transmission percentage through pipe wall shall not exceed 0.2%.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC032-0001",
+      "entity_type": "standard",
+      "name": "IS 4985 : 2021",
+      "status": "mandatory",
+      "original_value": "Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies - Specification (Fourth Revision)",
+      "value": "Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies - Specification (Fourth Revision)",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC032-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC032-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC032-0004",
+      "entity_type": "value_and_unit",
+      "name": "temperature",
+      "status": "mandatory",
+      "original_value": "27°C",
+      "value": "27°C",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 27,
+        "unit": "°C"
+      },
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC032-0005",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "10.0 MPa",
+      "value": "10.0 MPa",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 10.0,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC032-0006",
+      "entity_type": "value_and_unit",
+      "name": "temperature",
+      "status": "mandatory",
+      "original_value": "60°C",
+      "value": "60°C",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "8.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "8.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 60,
+        "unit": "°C"
+      },
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC032-0007",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "4.2 MPa",
+      "value": "4.2 MPa",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "8.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "8.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 4.2,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC032-0008",
+      "entity_type": "value_and_unit",
+      "name": "temperature",
+      "status": "mandatory",
+      "original_value": "0°C",
+      "value": "0°C",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "9.1",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 0,
+        "unit": "°C"
+      },
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC032-0009",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "10%",
+      "value": "10%",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "9.1",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 10,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC032-0010",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "2%",
+      "value": "2%",
+      "provenance": {
+        "document_id": "DOC-032",
+        "source_id": "SRC-032",
+        "standard": "IS 4985 : 2021",
+        "clause": "10.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "10.1",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 2,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC032-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 4985 : 2021",
+      "document_id": "DOC-032",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC032-0002",
+      "subject": "Clause 8.1: Hydrostatic Pressure Test",
+      "predicate": "part_of",
+      "object": "IS 4985 : 2021",
+      "document_id": "DOC-032",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC032-0003",
+      "subject": "Clause 8.2: Long-Term Hydrostatic Test",
+      "predicate": "part_of",
+      "object": "IS 4985 : 2021",
+      "document_id": "DOC-032",
+      "source_clause": "8.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC032-0004",
+      "subject": "Clause 9.1: Impact Test (Falling Weight)",
+      "predicate": "part_of",
+      "object": "IS 4985 : 2021",
+      "document_id": "DOC-032",
+      "source_clause": "9.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC032-0005",
+      "subject": "Clause 10.1: Opacity",
+      "predicate": "part_of",
+      "object": "IS 4985 : 2021",
+      "document_id": "DOC-032",
+      "source_clause": "10.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.696170+00:00",
+    "total_definitions": 0,
+    "total_entities": 10,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-032",
+    "document_id": "DOC-032",
+    "raw_file": null,
+    "sha256": null
+  }
+}

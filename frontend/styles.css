@@ -604,3 +604,168 @@ body {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+/* ================= Phase 7 Production Additions ================= */
+.version-badge {
+    font-size: 0.68rem;
+    background: rgba(56, 189, 248, 0.15);
+    color: var(--accent-cyan);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 2px 8px;
+    border-radius: 12px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.badge-danger {
+    background: rgba(244, 63, 94, 0.15);
+    color: var(--accent-rose);
+    border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+.entity-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(99, 102, 241, 0.1));
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: var(--radius-md);
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+
+.entity-icon {
+    font-size: 1.5rem;
+}
+
+.entity-details strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.entity-details span {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+}
+
+/* Numerical Verification Table */
+.numerical-section {
+    margin-top: 20px;
+    background: rgba(10, 15, 29, 0.4);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    padding: 14px;
+}
+
+.numerical-section h4 {
+    font-size: 0.88rem;
+    color: var(--accent-amber);
+    margin-bottom: 10px;
+}
+
+.numerical-table-container {
+    overflow-x: auto;
+}
+
+.numerical-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+.numerical-table th,
+.numerical-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.numerical-table th {
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.status-pass {
+    color: var(--accent-emerald);
+    font-weight: 600;
+}
+
+.status-fail {
+    color: var(--accent-rose);
+    font-weight: 600;
+}
+
+/* Atomic Claims Breakdown */
+.claims-section {
+    margin-top: 20px;
+    background: rgba(10, 15, 29, 0.4);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    padding: 14px;
+}
+
+.claims-section h4 {
+    font-size: 0.88rem;
+    color: var(--accent-indigo);
+    margin-bottom: 10px;
+}
+
+.claims-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.claim-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid var(--border-glass);
+    border-left: 3px solid var(--accent-emerald);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-size: 0.8rem;
+}
+
+.claim-card.unverified {
+    border-left-color: var(--accent-amber);
+}
+
+.claim-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.claim-id {
+    font-weight: 600;
+    font-family: var(--font-mono);
+}
+
+.claim-status {
+    color: var(--accent-emerald);
+    font-weight: 600;
+}
+
+.claim-text {
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.claim-evidence {
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+}
+
+.claim-evidence code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+}

@@ -1,0 +1,416 @@
+{
+  "document_id": "DOC-035",
+  "source_id": "SRC-035",
+  "document_metadata": {
+    "document_id": "DOC-035",
+    "source_id": "SRC-035",
+    "standard_id": "STD-IS_374_2026",
+    "standard_number": "IS 374 : 2026",
+    "title": "Electric Ceiling Fans - Specification (Fifth Revision - Energy Star Mandatory)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC035-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 374 : 2026) covers and specifies requirements for Electric Ceiling Fans - Specification (Fifth Revision - Energy Star Mandatory). It applies to electric_ceiling_fans under fans category in the electrical domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC035-8.1",
+      "clause_number": "8.1",
+      "title": "Air Delivery",
+      "content": "Air Delivery: The minimum air delivery for 1200 mm sweep BLDC ceiling fans shall be 220 m³/min at rated voltage (increased from 210 m³/min).",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC035-8.2",
+      "clause_number": "8.2",
+      "title": "Power Input",
+      "content": "Power Input: Maximum power input for 1200 mm fans shall not exceed 35 W for BLDC motors (reduced from 50 W).",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC035-8.3",
+      "clause_number": "8.3",
+      "title": "Service Value",
+      "content": "Service Value: Minimum service value increased to 6.28 m³/min/W for Star 1 rating.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC035-9.1",
+      "clause_number": "9.1",
+      "title": "Temperature Rise",
+      "content": "Temperature Rise: Temperature rise of BLDC electronic drive shall not exceed 45 K.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC035-0001",
+      "entity_type": "standard",
+      "name": "IS 374 : 2026",
+      "status": "mandatory",
+      "original_value": "Electric Ceiling Fans - Specification (Fifth Revision - Energy Star Mandatory)",
+      "value": "Electric Ceiling Fans - Specification (Fifth Revision - Energy Star Mandatory)",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC035-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC035-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC035-0004",
+      "entity_type": "test",
+      "name": "Air Delivery Test",
+      "status": "mandatory",
+      "original_value": "Air Delivery Test",
+      "value": "Air Delivery Test",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC035-0005",
+      "entity_type": "value_and_unit",
+      "name": "air_delivery",
+      "status": "mandatory",
+      "original_value": "220 m³/min",
+      "value": "220 m³/min",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 220,
+        "unit": "m³/min"
+      },
+      "unit": "m³/min"
+    },
+    {
+      "entity_id": "ENT-DOC035-0006",
+      "entity_type": "value_and_unit",
+      "name": "wattage",
+      "status": "mandatory",
+      "original_value": "35 W",
+      "value": "35 W",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "8.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "8.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 35,
+        "unit": "W"
+      },
+      "unit": "W"
+    },
+    {
+      "entity_id": "ENT-DOC035-0007",
+      "entity_type": "value_and_unit",
+      "name": "air_delivery",
+      "status": "mandatory",
+      "original_value": "6.28 m³/min",
+      "value": "6.28 m³/min",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "8.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "8.3",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 6.28,
+        "unit": "m³/min"
+      },
+      "unit": "m³/min"
+    },
+    {
+      "entity_id": "ENT-DOC035-0008",
+      "entity_type": "value_and_unit",
+      "name": "temperature_rise",
+      "status": "mandatory",
+      "original_value": "45 K",
+      "value": "45 K",
+      "provenance": {
+        "document_id": "DOC-035",
+        "source_id": "SRC-035",
+        "standard": "IS 374 : 2026",
+        "clause": "9.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 45,
+        "unit": "K"
+      },
+      "unit": "K"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC035-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 374 : 2026",
+      "document_id": "DOC-035",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC035-0002",
+      "subject": "Clause 8.1: Air Delivery",
+      "predicate": "part_of",
+      "object": "IS 374 : 2026",
+      "document_id": "DOC-035",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC035-0003",
+      "subject": "Clause 8.2: Power Input",
+      "predicate": "part_of",
+      "object": "IS 374 : 2026",
+      "document_id": "DOC-035",
+      "source_clause": "8.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC035-0004",
+      "subject": "Clause 8.3: Service Value",
+      "predicate": "part_of",
+      "object": "IS 374 : 2026",
+      "document_id": "DOC-035",
+      "source_clause": "8.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC035-0005",
+      "subject": "Clause 9.1: Temperature Rise",
+      "predicate": "part_of",
+      "object": "IS 374 : 2026",
+      "document_id": "DOC-035",
+      "source_clause": "9.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC035-0006",
+      "subject": "Clause 9.1",
+      "predicate": "prohibits",
+      "object": "Cap Temperature Rise > 120 K",
+      "document_id": "DOC-035",
+      "source_clause": "9.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.708751+00:00",
+    "total_definitions": 0,
+    "total_entities": 8,
+    "total_requirements": 0,
+    "total_relationships": 6,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-035",
+    "document_id": "DOC-035",
+    "raw_file": null,
+    "sha256": null
+  }
+}

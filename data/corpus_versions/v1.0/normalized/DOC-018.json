@@ -1,0 +1,427 @@
+{
+  "document_id": "DOC-018",
+  "source_id": "SRC-018",
+  "document_metadata": {
+    "document_id": "DOC-018",
+    "source_id": "SRC-018",
+    "standard_id": "STD-IS_269_2015",
+    "standard_number": "IS 269 : 2015",
+    "title": "Ordinary Portland Cement - Specification (Sixth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC018-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 269 : 2015) covers and specifies requirements for Ordinary Portland Cement - Specification (Sixth Revision). It applies to ordinary_portland_cement_53 under cement category in the construction_civil domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC018-6.1",
+      "clause_number": "6.1",
+      "title": "Compressive Strength",
+      "content": "Compressive Strength: For 53 Grade OPC, the 28-day compressive strength shall not be less than 53 MPa (53 N/mm²). 7-day strength shall not be less than 37 MPa. 3-day strength shall not be less than 27 MPa.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC018-6.2",
+      "clause_number": "6.2",
+      "title": "Setting Time",
+      "content": "Setting Time: Initial setting time shall not be less than 30 min. Final setting time shall not exceed 600 min.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC018-6.3",
+      "clause_number": "6.3",
+      "title": "Fineness",
+      "content": "Fineness: Specific surface area by Blaine air permeability method shall not be less than 225 m²/kg.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC018-6.4",
+      "clause_number": "6.4",
+      "title": "Soundness",
+      "content": "Soundness: Expansion by Le-Chatelier method shall not exceed 10 mm; by Autoclave method shall not exceed 0.8%.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC018-5.1",
+      "clause_number": "5.1",
+      "title": "Chemical Requirements",
+      "content": "Chemical Requirements: Total loss on ignition (LOI) shall not exceed 4.0%. Insoluble residue shall not exceed 3.0%.",
+      "page_start": 6,
+      "page_end": 7,
+      "page_refs": [
+        6,
+        7
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC018-0001",
+      "entity_type": "standard",
+      "name": "IS 269 : 2015",
+      "status": "mandatory",
+      "original_value": "Ordinary Portland Cement - Specification (Sixth Revision)",
+      "value": "Ordinary Portland Cement - Specification (Sixth Revision)",
+      "provenance": {
+        "document_id": "DOC-018",
+        "source_id": "SRC-018",
+        "standard": "IS 269 : 2015",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC018-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-018",
+        "source_id": "SRC-018",
+        "standard": "IS 269 : 2015",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC018-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-018",
+        "source_id": "SRC-018",
+        "standard": "IS 269 : 2015",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC018-0004",
+      "entity_type": "test",
+      "name": "Compressive Strength Test",
+      "status": "mandatory",
+      "original_value": "Compressive Strength Test",
+      "value": "Compressive Strength Test",
+      "provenance": {
+        "document_id": "DOC-018",
+        "source_id": "SRC-018",
+        "standard": "IS 269 : 2015",
+        "clause": "6.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "6.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC018-0005",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "53 MPa",
+      "value": "53 MPa",
+      "provenance": {
+        "document_id": "DOC-018",
+        "source_id": "SRC-018",
+        "standard": "IS 269 : 2015",
+        "clause": "6.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "6.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 53,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC018-0006",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "8%",
+      "value": "8%",
+      "provenance": {
+        "document_id": "DOC-018",
+        "source_id": "SRC-018",
+        "standard": "IS 269 : 2015",
+        "clause": "6.4",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "6.4",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 8,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC018-0007",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "0%",
+      "value": "0%",
+      "provenance": {
+        "document_id": "DOC-018",
+        "source_id": "SRC-018",
+        "standard": "IS 269 : 2015",
+        "clause": "5.1",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "source_clause": "5.1",
+      "source_pages": [
+        6,
+        7
+      ],
+      "normalized": {
+        "value": 0,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC018-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 269 : 2015",
+      "document_id": "DOC-018",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC018-0002",
+      "subject": "Clause 6.1: Compressive Strength",
+      "predicate": "part_of",
+      "object": "IS 269 : 2015",
+      "document_id": "DOC-018",
+      "source_clause": "6.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC018-0003",
+      "subject": "Clause 6.2: Setting Time",
+      "predicate": "part_of",
+      "object": "IS 269 : 2015",
+      "document_id": "DOC-018",
+      "source_clause": "6.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC018-0004",
+      "subject": "Clause 6.3: Fineness",
+      "predicate": "part_of",
+      "object": "IS 269 : 2015",
+      "document_id": "DOC-018",
+      "source_clause": "6.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC018-0005",
+      "subject": "Clause 6.4: Soundness",
+      "predicate": "part_of",
+      "object": "IS 269 : 2015",
+      "document_id": "DOC-018",
+      "source_clause": "6.4",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC018-0006",
+      "subject": "Clause 5.1: Chemical Requirements",
+      "predicate": "part_of",
+      "object": "IS 269 : 2015",
+      "document_id": "DOC-018",
+      "source_clause": "5.1",
+      "source_pages": [
+        6,
+        7
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [
+    {
+      "table_id": "TABLE-001",
+      "title": "Table 1",
+      "clause": "",
+      "source_page": 1,
+      "headers": [],
+      "normalized_headers": [],
+      "rows": [
+        {
+          "col_0": "parameter",
+          "col_1": "value",
+          "col_2": "normative_status"
+        }
+      ],
+      "raw_markdown": "",
+      "semantic_table_id": "TABLE-DOC018-T001"
+    }
+  ],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.635599+00:00",
+    "total_definitions": 0,
+    "total_entities": 7,
+    "total_requirements": 0,
+    "total_relationships": 6,
+    "total_cross_references": 0,
+    "total_tables": 1,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-018",
+    "document_id": "DOC-018",
+    "raw_file": null,
+    "sha256": null
+  }
+}

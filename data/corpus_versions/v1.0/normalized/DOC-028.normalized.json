@@ -1,0 +1,293 @@
+{
+  "document_id": "DOC-028",
+  "source_id": "SRC-028",
+  "document_metadata": {
+    "document_id": "DOC-028",
+    "source_id": "SRC-028",
+    "standard_id": "STD-IS_15298_P2_2016",
+    "standard_number": "IS 15298 (Part 2) : 2016",
+    "title": "Personal Protective Equipment - Safety Footwear (Second Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC028-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 15298 (Part 2) : 2016) covers and specifies requirements for Personal Protective Equipment - Safety Footwear (Second Revision). It applies to safety_footwear under personal_protective_equipment category in the mechanical_automotive domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC028-5.3.2.2",
+      "clause_number": "5.3.2.2",
+      "title": "Impact Resistance",
+      "content": "Impact Resistance: Steel toecap shall withstand impact energy of 200 J with minimum clearance under toecap >= 14.0 mm for size 8.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC028-5.3.2.3",
+      "clause_number": "5.3.2.3",
+      "title": "Compression Resistance",
+      "content": "Compression Resistance: Toecap shall withstand compression load of 15 kN with minimum clearance >= 14.0 mm.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC028-5.8.1",
+      "clause_number": "5.8.1",
+      "title": "Slip Resistance",
+      "content": "Slip Resistance: Dynamic friction coefficient on ceramic tile with NaLS lubricant shall be >= 0.32 for forward heel slip.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC028-0001",
+      "entity_type": "standard",
+      "name": "IS 15298 (Part 2) : 2016",
+      "status": "mandatory",
+      "original_value": "Personal Protective Equipment - Safety Footwear (Second Revision)",
+      "value": "Personal Protective Equipment - Safety Footwear (Second Revision)",
+      "provenance": {
+        "document_id": "DOC-028",
+        "source_id": "SRC-028",
+        "standard": "IS 15298 (Part 2) : 2016",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC028-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-028",
+        "source_id": "SRC-028",
+        "standard": "IS 15298 (Part 2) : 2016",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC028-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-028",
+        "source_id": "SRC-028",
+        "standard": "IS 15298 (Part 2) : 2016",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC028-0004",
+      "entity_type": "value_and_unit",
+      "name": "impact_energy",
+      "status": "mandatory",
+      "original_value": "200 J",
+      "value": "200 J",
+      "provenance": {
+        "document_id": "DOC-028",
+        "source_id": "SRC-028",
+        "standard": "IS 15298 (Part 2) : 2016",
+        "clause": "5.3.2.2",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "5.3.2.2",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 200,
+        "unit": "J"
+      },
+      "unit": "J"
+    },
+    {
+      "entity_id": "ENT-DOC028-0005",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "15 kN",
+      "value": "15 kN",
+      "provenance": {
+        "document_id": "DOC-028",
+        "source_id": "SRC-028",
+        "standard": "IS 15298 (Part 2) : 2016",
+        "clause": "5.3.2.3",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "5.3.2.3",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 15,
+        "unit": "kN"
+      },
+      "unit": "kN"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC028-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 15298 (Part 2) : 2016",
+      "document_id": "DOC-028",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC028-0002",
+      "subject": "Clause 5.3.2.2: Impact Resistance",
+      "predicate": "part_of",
+      "object": "IS 15298 (Part 2) : 2016",
+      "document_id": "DOC-028",
+      "source_clause": "5.3.2.2",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC028-0003",
+      "subject": "Clause 5.3.2.3: Compression Resistance",
+      "predicate": "part_of",
+      "object": "IS 15298 (Part 2) : 2016",
+      "document_id": "DOC-028",
+      "source_clause": "5.3.2.3",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC028-0004",
+      "subject": "Clause 5.8.1: Slip Resistance",
+      "predicate": "part_of",
+      "object": "IS 15298 (Part 2) : 2016",
+      "document_id": "DOC-028",
+      "source_clause": "5.8.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.677799+00:00",
+    "total_definitions": 0,
+    "total_entities": 5,
+    "total_requirements": 0,
+    "total_relationships": 4,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-028",
+    "document_id": "DOC-028",
+    "raw_file": null,
+    "sha256": null
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "document_id": "DOC-015",
+  "source_id": "SRC-015",
+  "document_metadata": {
+    "document_id": "DOC-015",
+    "source_id": "SRC-015",
+    "standard_id": "STD-IS_302_P1_2024",
+    "standard_number": "IS 302 (Part 1) : 2024",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC015-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 302 (Part 1) : 2024) covers and specifies requirements for Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision). It applies to safety_of_household_appliances under household_appliances category in the electrical domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC015-8.1",
+      "clause_number": "8.1",
+      "title": "Protection Against Electric Shock",
+      "content": "Protection Against Electric Shock: Live parts shall not be accessible with standard test finger.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC015-13.2",
+      "clause_number": "13.2",
+      "title": "Leakage Current",
+      "content": "Leakage Current: Electric leakage current shall not exceed 0.75 mA for Class I portable appliances.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC015-13.3",
+      "clause_number": "13.3",
+      "title": "Electric Strength",
+      "content": "Electric Strength: The insulation shall withstand 1250 V AC for 1 min without breakdown.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [
+        {
+          "entity_type": "requirement",
+          "requirement_type": "dielectric_test",
+          "requirement_id": "REQ-DOC015-13.3-ES",
+          "status": "mandatory",
+          "clause": "13.3",
+          "subject": "self-ballasted LED lamp",
+          "parameter": "dielectric_electric_strength",
+          "operator": "==",
+          "original_value": "4 000 V a.c.",
+          "normalized": {
+            "value": 4000,
+            "unit": "V a.c."
+          },
+          "value": 4000,
+          "unit": "V a.c.",
+          "conditions": {
+            "humidity_treatment": "immediately following 48 h humidity treatment"
+          },
+          "test": {
+            "test_voltage": "4 000 V a.c. (r.m.s.)",
+            "frequency": "50 Hz",
+            "duration": "1 minute (60 s)"
+          },
+          "acceptance_criterion": {
+            "minimum": 4000,
+            "unit": "V a.c.",
+            "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+          },
+          "exceptions": null,
+          "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+          "source_pages": [
+            4,
+            5
+          ],
+          "provenance": {
+            "document_id": "DOC-015",
+            "source_id": "SRC-015",
+            "standard": "IS 302 (Part 1) : 2024",
+            "clause": "13.3",
+            "page": 4,
+            "pages": [
+              4,
+              5
+            ],
+            "section": "Electric Strength",
+            "original_text": "Electric Strength: The insulation shall withstand 1250 V AC for 1 min without breakdown."
+          }
+        }
+      ],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC015-19.1",
+      "clause_number": "19.1",
+      "title": "Abnormal Operation",
+      "content": "Abnormal Operation: Appliances shall not catch fire or emit molten metal under stalled condition.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC015-29.1",
+      "clause_number": "29.1",
+      "title": "Creepage and Clearance",
+      "content": "Creepage and Clearance: Clearance shall not be less than 3.0 mm for basic insulation.",
+      "page_start": 6,
+      "page_end": 7,
+      "page_refs": [
+        6,
+        7
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC015-0001",
+      "entity_type": "standard",
+      "name": "IS 302 (Part 1) : 2024",
+      "status": "mandatory",
+      "original_value": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision)",
+      "value": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision)",
+      "provenance": {
+        "document_id": "DOC-015",
+        "source_id": "SRC-015",
+        "standard": "IS 302 (Part 1) : 2024",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC015-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-015",
+        "source_id": "SRC-015",
+        "standard": "IS 302 (Part 1) : 2024",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC015-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-015",
+        "source_id": "SRC-015",
+        "standard": "IS 302 (Part 1) : 2024",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC015-0004",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-015",
+        "source_id": "SRC-015",
+        "standard": "IS 302 (Part 1) : 2024",
+        "clause": "13.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "13.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC015-0005",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "1250 V AC",
+      "value": "1250 V AC",
+      "provenance": {
+        "document_id": "DOC-015",
+        "source_id": "SRC-015",
+        "standard": "IS 302 (Part 1) : 2024",
+        "clause": "13.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "13.3",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 1250,
+        "unit": "V"
+      },
+      "unit": "V"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC015-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 302 (Part 1) : 2024",
+      "document_id": "DOC-015",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0002",
+      "subject": "Clause 8.1: Protection Against Electric Shock",
+      "predicate": "part_of",
+      "object": "IS 302 (Part 1) : 2024",
+      "document_id": "DOC-015",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0003",
+      "subject": "Clause 8.1",
+      "predicate": "prohibits",
+      "object": "Access to Live Conductive Parts",
+      "document_id": "DOC-015",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0004",
+      "subject": "Clause 13.2: Leakage Current",
+      "predicate": "part_of",
+      "object": "IS 302 (Part 1) : 2024",
+      "document_id": "DOC-015",
+      "source_clause": "13.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0005",
+      "subject": "Clause 13.3: Electric Strength",
+      "predicate": "part_of",
+      "object": "IS 302 (Part 1) : 2024",
+      "document_id": "DOC-015",
+      "source_clause": "13.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0006",
+      "subject": "Clause 19.1: Abnormal Operation",
+      "predicate": "part_of",
+      "object": "IS 302 (Part 1) : 2024",
+      "document_id": "DOC-015",
+      "source_clause": "19.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0007",
+      "subject": "Clause 29.1: Creepage and Clearance",
+      "predicate": "part_of",
+      "object": "IS 302 (Part 1) : 2024",
+      "document_id": "DOC-015",
+      "source_clause": "29.1",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0008",
+      "subject": "Clause 13.3",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-015",
+      "source_clause": "13.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0009",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_limit",
+      "object": "== 4000 V a.c.",
+      "document_id": "DOC-015",
+      "source_clause": "13.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0010",
+      "subject": "dielectric_electric_strength",
+      "predicate": "tested_by",
+      "object": "4 000 V a.c. (r.m.s.)",
+      "document_id": "DOC-015",
+      "source_clause": "13.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC015-0011",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: immediately following 48 h humidity treatment",
+      "document_id": "DOC-015",
+      "source_clause": "13.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC015-13.3-ES",
+      "status": "mandatory",
+      "clause": "13.3",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
+      "value": 4000,
+      "unit": "V a.c.",
+      "conditions": {
+        "humidity_treatment": "immediately following 48 h humidity treatment"
+      },
+      "test": {
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute (60 s)"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+      "source_pages": [
+        4,
+        5
+      ],
+      "provenance": {
+        "document_id": "DOC-015",
+        "source_id": "SRC-015",
+        "standard": "IS 302 (Part 1) : 2024",
+        "clause": "13.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ],
+        "section": "Electric Strength",
+        "original_text": "Electric Strength: The insulation shall withstand 1250 V AC for 1 min without breakdown."
+      }
+    }
+  ],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.623797+00:00",
+    "total_definitions": 0,
+    "total_entities": 5,
+    "total_requirements": 1,
+    "total_relationships": 11,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-015",
+    "document_id": "DOC-015",
+    "raw_file": null,
+    "sha256": null
+  }
+}

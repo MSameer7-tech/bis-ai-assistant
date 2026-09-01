@@ -1,0 +1,75 @@
+{
+  "reference_version": "1.0.0",
+  "name": "golden_reference_v1",
+  "description": "Frozen pilot reference dataset of 6 core BIS lamp documents and verified amendments (DOC-001 through DOC-012)",
+  "frozen_at": "2026-08-31T00:18:00Z",
+  "documents": [
+    {
+      "document_id": "DOC-001",
+      "source_id": "SRC-001",
+      "standard_number": "IS 16102 (Part 1) : 2012",
+      "product_domain": "electrical",
+      "product_category": "lamps",
+      "product_type": "self_ballasted_led_lamps",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+      "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+      "total_chunks": 142
+    },
+    {
+      "document_id": "DOC-002",
+      "source_id": "SRC-002",
+      "standard_number": "IS 16102 (Part 2) : 2012",
+      "product_domain": "electrical",
+      "product_category": "lamps",
+      "product_type": "self_ballasted_led_lamps",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements",
+      "sha256": "e3065a953e5e4bc0e0c3b0eb6ff99ee65123d11b3bc2245b0cf8d655fba7eb13",
+      "total_chunks": 128
+    },
+    {
+      "document_id": "DOC-007",
+      "source_id": "SRC-007",
+      "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
+      "product_domain": "electrical",
+      "product_category": "lamps",
+      "product_type": "self_ballasted_led_lamps",
+      "title": "Lamp Controlgear - Part 2: Particular Requirements - Section 13: D.C. or A.C. Supplied Electronic Controlgear for LED Modules",
+      "sha256": "025e1a3bc8c3e8a38c2dc51e1882e3f538fa9e5309ebdb63b15ad3dbe7f2081d",
+      "total_chunks": 62
+    },
+    {
+      "document_id": "DOC-010",
+      "source_id": "SRC-010",
+      "standard_number": "CRO-2012-ORDER",
+      "product_domain": "electrical",
+      "product_category": "lamps",
+      "product_type": "self_ballasted_led_lamps",
+      "title": "Electronics and Information Technology Goods (Requirements for Compulsory Registration) Order, 2012",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "total_chunks": 9
+    },
+    {
+      "document_id": "DOC-011",
+      "source_id": "SRC-011",
+      "standard_number": "STI-16102-1",
+      "product_domain": "electrical",
+      "product_category": "lamps",
+      "product_type": "self_ballasted_led_lamps",
+      "title": "Scheme of Inspection and Testing for IS 16102 (Part 1) : 2012",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "total_chunks": 3
+    },
+    {
+      "document_id": "DOC-012",
+      "source_id": "SRC-012",
+      "standard_number": "IS 16102 (Part 1) : 2026",
+      "product_domain": "electrical",
+      "product_category": "lamps",
+      "product_type": "self_ballasted_led_lamps",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements (First Revision)",
+      "sha256": "3cb478b05615ee5d92e59df0eb8ba2a7f5c531d04ba4e0f40d6c9ff975bf992a",
+      "total_chunks": 34
+    }
+  ],
+  "total_pilot_chunks": 378
+}

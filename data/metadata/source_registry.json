@@ -19,10 +19,10 @@
     "file_sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
     "file_size_bytes": 1240734,
     "current_version": {
-      "version_id": "DOC-001-v046",
+      "version_id": "DOC-001-v061",
       "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
       "file_size": 1240734,
-      "last_modified": "2026-08-31T10:46:27.292513+00:00",
+      "last_modified": "2026-09-01T10:51:07.435363+00:00",
       "publication_date": "2012-08-01",
       "etag": null
     },
@@ -389,6 +389,126 @@
         "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
         "file_size": 1240734,
         "detected_at": "2026-08-31T10:46:27.292513+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v047",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T11:29:10.749710+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v048",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T12:20:39.112711+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v049",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T17:05:24.432905+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v050",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T17:13:47.116291+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v051",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T17:30:23.087298+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v052",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T17:32:32.472984+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v053",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T17:41:48.750902+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v054",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T18:01:09.639521+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v055",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T18:11:21.137370+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v056",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-08-31T18:46:07.874575+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v057",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-09-01T05:07:09.310846+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v058",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-09-01T05:58:54.086588+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v059",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-09-01T06:02:35.978239+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v060",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-09-01T10:49:21.706957+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v061",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-09-01T10:51:07.435363+00:00",
         "change_type": "revision_update",
         "version_label": "IS 16102 (Part 1) : 2012"
       }

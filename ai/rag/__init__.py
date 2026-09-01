@@ -20,7 +20,6 @@ from ai.rag.generator import (
 from ai.rag.citation import CitationExtractor
 from ai.rag.guardrails import ComplianceGuardrails
 from ai.rag.answer import AnswerFormatter
-from ai.rag.pipeline import RAGPipeline
 
 __all__ = [
     "RetrievedChunk",
@@ -41,3 +40,10 @@ __all__ = [
     "AnswerFormatter",
     "RAGPipeline"
 ]
+
+
+def __getattr__(name: str):
+    if name == "RAGPipeline":
+        from ai.rag.pipeline import RAGPipeline
+        return RAGPipeline
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

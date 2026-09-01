@@ -1,0 +1,4312 @@
+{
+  "document_id": "DOC-007",
+  "source_id": "SRC-007",
+  "document_metadata": {
+    "document_id": "DOC-007",
+    "source_id": "SRC-007",
+    "standard_id": "STD-IS_15885_P2_S13_2012",
+    "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
+    "title": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+    "version": "Reaffirmed 2022",
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": "data/raw/standards/IS_15885_Part_2_Sec_13_2012.pdf",
+    "sha256": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e"
+  },
+  "semantic_sections": [
+    {
+      "section_id": "SEC-DOC007-01",
+      "section_number": "1",
+      "title": "SCOPE",
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-02",
+      "section_number": "2",
+      "title": "REFERENCES",
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-03",
+      "section_number": "3",
+      "title": "TERMINOLOGY",
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-04",
+      "section_number": "4",
+      "title": "GENERAL REQUIREMENTS",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-05",
+      "section_number": "5",
+      "title": "GENERAL NOTES ON TESTS",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-06",
+      "section_number": "6",
+      "title": "CLASSIFICATION",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-07",
+      "section_number": "7",
+      "title": "MARKING",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-08",
+      "section_number": "8",
+      "title": "PROTECTION AGAINST ACCIDENTAL",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-09",
+      "section_number": "9",
+      "title": "TERMINALS",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-10",
+      "section_number": "10",
+      "title": "PROVISIONS FOR PROTECTIVE EARTHING",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-11",
+      "section_number": "11",
+      "title": "MOISTURE RESISTANCE AND INSULATION",
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-12",
+      "section_number": "12",
+      "title": "ELECTRIC STRENGTH",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-13",
+      "section_number": "13",
+      "title": "THERMAL ENDURANCE TEST FOR",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-14",
+      "section_number": "14",
+      "title": "FAULT CONDITIONS",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-15",
+      "section_number": "15",
+      "title": "TRANSFORMER HEATING",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-16",
+      "section_number": "16",
+      "title": "CONSTRUCTION",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-17",
+      "section_number": "17",
+      "title": "CREEPAGE DISTANCES AND CLEARANCES",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-18",
+      "section_number": "18",
+      "title": "SCREWS, CURRENT-CARRYING PARTS",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-19",
+      "section_number": "19",
+      "title": "RESISTANCE TO HEAT, FIRE AND",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-20",
+      "section_number": "20",
+      "title": "RESISTANCE TO CORROSION",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    },
+    {
+      "section_id": "SEC-DOC007-21",
+      "section_number": "21",
+      "title": "TESTS",
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ]
+    }
+  ],
+  "clauses": [
+    {
+      "clause_number": "1",
+      "title": "SCOPE",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ],
+      "content": "1 SCOPE\nThis standard (Part 2/Sec 13) specifies particular safety\nrequirements for electronic control gear for use on d.c.\nsupplies up to and including 1 000 V and a.c. supplies\nup to and including 1 000 V at 50 Hz and at an output\nfrequency which can deviate from the supply\nfrequency, associated with LED modules.\nControl gear for LED modules specified in this\nstandard are designed to provide constant voltage or\ncurrent at SELV or higher voltages. Deviations from\nthe pure voltage and current types do not exclude the\ngear from this standard.\nThe Annexes A, B, C, D, E, F, G, H and L of IS 15885\n(Part 1) : 2011 ‘Safety of lamp controlgear: Part 1\nGeneral requirements’ which are applicable according\nto this Part and Section and using the word ‘lamp’ are\nunderstood to also comprise LED modules.\nParticular requirements for SELV control gears are\ngiven in Annex I.\nPerformance requirements shall be covered by a\nseparate standard (see IS 16104 : 2012 ‘d.c. or a.c.\nsupplied electronic controgear for LED Modules —\nPerformance requirements’).\nPlug-in control gear, being part of the luminaire, are\ncovered as for built-in control gear by the additional\nrequirements of the luminaire standard.",
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "requirement",
+        "scope"
+      ],
+      "clause_id": "CLAUSE-DOC007-1",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "2",
+      "title": "REFERENCES",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 6,
+      "page_end": 6,
+      "page_refs": [
+        6
+      ],
+      "content": "2 REFERENCES\nThe standards listed below contain provisions which\nthrough reference in this text, constitute provisions of\nthis standard. At the time of publication, the editions\nindicated were valid. All standards are subject to\nrevision and parties to agreements based on this\nstandard are encouraged to investigate the possibility\nof applying the most recent editions of the standards\nlisted as follows:\nIS No.\nTitle\n2500 (Part 1) :\nSampling procedures for inspection\n2000\nby attributes: Part 1 Sampling schemes\nindexed by acceptance quality limit\n(AQL) for lot-by-lot inspection\nIS No.\nTitle\n15885 (Part 1) :\nSafety of lamp controlgear: Part 1\n2011\nGeneral requirements",
+      "subclauses": [],
+      "semantic_type": "sampling_requirement",
+      "semantic_tags": [
+        "reference",
+        "sampling_requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-2",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "3",
+      "title": "TERMINOLOGY",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 6,
+      "page_end": 7,
+      "page_refs": [
+        6,
+        7
+      ],
+      "content": "3 TERMINOLOGY\nFor the purpose of this standard, the definitions given\nin IS 15885 (Part 1) and the following shall apply.",
+      "subclauses": [
+        {
+          "clause_number": "3.1",
+          "title": "Electronic Controlgear for LED Modules —",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.1 Electronic Controlgear for LED Modules —\nUnit inserted between the supply and one or more\nLED modules which serves to supply the LED\nmodule(s) with its (their) rated voltage or rated\ncurrent. The unit may consist of one or more separate\ncomponents and may include means for dimming,\ncorrecting the power factor and suppressing radio\ninterference.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.1",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0001",
+              "term": "Electronic Controlgear for LED Modules",
+              "definition": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcting the power factor and suppressing radio interference.",
+              "source_clause": "3.1",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.1",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcti"
+              },
+              "term_id": "TERM-electronic_controlgear_for_led_modules"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.2",
+          "title": "d.c. or a.c. Supplied Controlgear —  Controlgear",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.2 d.c. or a.c. Supplied Controlgear —  Controlgear\nthat includes stabilizing elements for operating one or\nmore LED module(s).",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.2",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "3.3",
+          "title": "SELV Controlgear — Controlgear providing a",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.3 SELV Controlgear — Controlgear providing a\nSELV output isolated from the supply mains by means\nsuch as a safety isolating transformer.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.3",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0002",
+              "term": "SELV Controlgear",
+              "definition": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer.",
+              "source_clause": "3.3",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.3",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer."
+              },
+              "term_id": "TERM-selv_controlgear"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.4",
+          "title": "Associated Controlgear —  Controlgear designed",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.4 Associated Controlgear —  Controlgear designed\nto supply specific appliance(s) or equipment,\nincorporated or not incorporated.\nNOTE — An example of an associated control gear is an\nelectronic control gear within an emergency unit where it is\nassigned in a one-to-one relation to battery driven ballast.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.4",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0003",
+              "term": "Associated Controlgear",
+              "definition": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated.",
+              "source_clause": "3.4",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.4",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated."
+              },
+              "term_id": "TERM-associated_controlgear"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.5",
+          "title": "Plug-in Controlgear — Controlgear incorporated",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.5 Plug-in Controlgear — Controlgear incorporated\nin an enclosure provided with an integral plug as the\nmeans of connection of the electrical supply.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.5",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0004",
+              "term": "Plug-in Controlgear",
+              "definition": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply.",
+              "source_clause": "3.5",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.5",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply."
+              },
+              "term_id": "TERM-plug_in_controlgear"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.6",
+          "title": "Rated Output Voltage for Constant Voltage",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.6 Rated Output Voltage for Constant Voltage\nControlgear — Output voltage, at rated supply\nvoltage, rated frequency and at rated output power,\nassigned to the control gear.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.6",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0005",
+              "term": "Controlgear",
+              "definition": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
+              "source_clause": "3.6",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.6",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
+              },
+              "term_id": "TERM-controlgear"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.7",
+          "title": "Rated Output Current for Constant Current",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 6,
+          "page_refs": [
+            6
+          ],
+          "content": "3.7 Rated Output Current for Constant Current\nControlgear — Output current, at rated supply voltage,\nrated frequency and at rated output power, assigned to\nthe control gear.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.7",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0006",
+              "term": "Controlgear",
+              "definition": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
+              "source_clause": "3.7",
+              "source_pages": [
+                6
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.7",
+                "page": 6,
+                "pages": [
+                  6
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
+              },
+              "term_id": "TERM-controlgear"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.8",
+          "title": "Light Emitting Diode (LED) — Solid state device",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 6,
+          "page_end": 7,
+          "page_refs": [
+            6,
+            7
+          ],
+          "content": "3.8 Light Emitting Diode (LED) — Solid state device\nIS 15885 (Part 2/Sec 13) : 2012\nembodying a p-n junction, emitting optical radiation\nwhen excited by an electric current.\nNOTE — This definition is independent from the existence of\nenclosure(s) and of terminals.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.8",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0007",
+              "term": "Light Emitting Diode (LED)",
+              "definition": "Solid state device",
+              "source_clause": "3.8",
+              "source_pages": [
+                6,
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.8",
+                "page": 6,
+                "pages": [
+                  6,
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Solid state device"
+              },
+              "term_id": "TERM-light_emitting_diode_led"
+            },
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0008",
+              "term": "IS 15885 (Part 2/Sec 13)",
+              "definition": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current.",
+              "source_clause": "3.8",
+              "source_pages": [
+                6,
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.8",
+                "page": 6,
+                "pages": [
+                  6,
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current."
+              },
+              "term_id": "TERM-is_15885_part_2_sec_13"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.9",
+          "title": "LED Module —  Unit supplied as a light source.",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.9 LED Module —  Unit supplied as a light source.\nIn addition to one or more LEDs it may contain further\ncomponents, for example optical, electrical,\nmechanical and/or electronic.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.9",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0009",
+              "term": "LED Module",
+              "definition": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic.",
+              "source_clause": "3.9",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.9",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic."
+              },
+              "term_id": "TERM-led_module"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.10",
+          "title": "Maximum Output Voltage —  Maximum voltage",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.10 Maximum Output Voltage —  Maximum voltage\nwhich can occur between the output terminals for\nconstant current controlgear in any load condition.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.10",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0010",
+              "term": "Maximum Output Voltage",
+              "definition": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition.",
+              "source_clause": "3.10",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.10",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition."
+              },
+              "term_id": "TERM-maximum_output_voltage"
+            }
+          ]
+        },
+        {
+          "clause_number": "3.11",
+          "title": "Acceptance Test —  Tests carried out on samples",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "3.11 Acceptance Test —  Tests carried out on samples\ntaken from a lot for the acceptance of the lot.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "test_method"
+          ],
+          "clause_id": "CLAUSE-DOC007-3.11",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC007-0011",
+              "term": "Acceptance Test",
+              "definition": "Tests carried out on samples taken from a lot for the acceptance of the lot.",
+              "source_clause": "3.11",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "3.11",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "Tests carried out on samples taken from a lot for the acceptance of the lot."
+              },
+              "term_id": "TERM-acceptance_test"
+            }
+          ]
+        }
+      ],
+      "semantic_type": "definition",
+      "semantic_tags": [
+        "definition",
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-3",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "4",
+      "title": "GENERAL REQUIREMENTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ],
+      "content": "4 GENERAL REQUIREMENTS\nThe requirements of 4 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nControlgears providing SELV shall comply with the\nrequirements of Annex I. This includes insulation\nresistance, electric strength, creepage distances and\nclearance between primary and secondary circuits.\nControlgear which are not of the pure voltage and\ncurrent types are tested according to the requirements\nof either a voltage source or a current source, whichever\ncomes closer to the electrical behaviour of the\ncontrolgear.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-4",
+      "requirements": [
+        {
+          "entity_type": "requirement",
+          "requirement_type": "dielectric_test",
+          "requirement_id": "REQ-DOC007-4-ES",
+          "status": "mandatory",
+          "clause": "4",
+          "subject": "self-ballasted LED lamp",
+          "parameter": "dielectric_electric_strength",
+          "operator": "==",
+          "original_value": "4 000 V a.c.",
+          "normalized": {
+            "value": 4000,
+            "unit": "V a.c."
+          },
+          "value": 4000,
+          "unit": "V a.c.",
+          "conditions": {
+            "humidity_treatment": "immediately following 48 h humidity treatment"
+          },
+          "test": {
+            "test_voltage": "4 000 V a.c. (r.m.s.)",
+            "frequency": "50 Hz",
+            "duration": "1 minute (60 s)"
+          },
+          "acceptance_criterion": {
+            "minimum": 4000,
+            "unit": "V a.c.",
+            "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+          },
+          "exceptions": null,
+          "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+          "source_pages": [
+            7
+          ],
+          "provenance": {
+            "document_id": "DOC-007",
+            "source_id": "SRC-007",
+            "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+            "clause": "4",
+            "page": 7,
+            "pages": [
+              7
+            ],
+            "section": "GENERAL REQUIREMENTS",
+            "original_text": "4 GENERAL REQUIREMENTS\nThe requirements of 4 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nControlgears providing SELV shall comply with the\nrequirements of Annex I. This includes insulation\nresistance, electric strength, creepage distances and\nclearance betw"
+          }
+        }
+      ],
+      "definitions": []
+    },
+    {
+      "clause_number": "5",
+      "title": "GENERAL NOTES ON TESTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ],
+      "content": "5 GENERAL NOTES ON TESTS\nThe requirements of 5 of IS 15885 (Part 1) shall apply\nalong with the following additional requirements.\nThe following number of specimens shall be submitted\nfor testing:\na)\nOne unit for the tests of 6 to 12 and 15 to 21;\nand\nb)\nOne unit for the tests of 14 (additional units\nor components, where necessary, may be\nrequired in consultation with the\nmanufacturer).",
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "requirement",
+        "test_method"
+      ],
+      "clause_id": "CLAUSE-DOC007-5",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "6",
+      "title": "CLASSIFICATION",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ],
+      "content": "6 CLASSIFICATION\nControl gears are classified according to the method\nof installation given in 6 of IS 15885 (Part 1) and\naccording to,\na)\nprotection against electric shock;\nb)\nauto-wound control gear;\nc)\nseparating control gears;\nd)\nisolating control gears; and\ne)\nSELV control gears.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-6",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "7",
+      "title": "MARKING",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ],
+      "content": "7 MARKING",
+      "subclauses": [
+        {
+          "clause_number": "7.1",
+          "title": "(h), (j) and (s) of IS 15885 (Part 1); and",
+          "parent_clause": "7",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "7.1 (h), (j) and (s) of IS 15885 (Part 1); and\nb)\nMention whether the controlgear has mains-\nconnected windings.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC007-7.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "7.2",
+          "title": "Information to be Provided, if Applicable",
+          "parent_clause": "7",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "7.2 Information to be Provided, if Applicable\nIn addition to the above mandatory markings, the\nfollowing information, if applicable, shall be given\neither on the control gear, or be made available in the\nmanufacturer’s catalogue :\na)",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC007-7.2",
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "mandatory_marking",
+              "requirement_id": "REQ-DOC007-7.2-MARK",
+              "status": "mandatory",
+              "clause": "7.2",
+              "subject": "self-ballasted LED lamp",
+              "parameter": "mandatory_marking_elements",
+              "operator": "mandatory",
+              "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+              "normalized": {
+                "items": [
+                  "Mark of origin (trademark)",
+                  "Rated voltage or voltage range (V)",
+                  "Rated wattage (W)",
+                  "Rated frequency (Hz)",
+                  "Standard Mark (CRS Registration Number)"
+                ]
+              },
+              "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+              "unit": null,
+              "conditions": {
+                "durability_test": "Rubbing 15 s with hexane soaked cloth"
+              },
+              "test": {
+                "inspection": "Visual examination after durability rubbing"
+              },
+              "acceptance_criterion": {
+                "mandatory_items": [
+                  "Mark of origin (trademark)",
+                  "Rated voltage or voltage range (V)",
+                  "Rated wattage (W)",
+                  "Rated frequency (Hz)",
+                  "Standard Mark (CRS Registration Number)"
+                ],
+                "criterion_text": "Marking shall remain legible and easily discernible"
+              },
+              "exceptions": null,
+              "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
+              "source_pages": [
+                7
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "7.2",
+                "page": 7,
+                "pages": [
+                  7
+                ],
+                "section": "Information to be Provided, if Applicable",
+                "original_text": "7.2 Information to be Provided, if Applicable\nIn addition to the above mandatory markings, the\nfollowing information, if applicable, shall be given\neither on the control gear, or be made available in the\nmanufacturer’s catalogue :\na)"
+              }
+            }
+          ],
+          "definitions": []
+        },
+        {
+          "clause_number": "7.1",
+          "title": "(h), (j) and (s) of IS 15885 (Part 1); and",
+          "parent_clause": "7",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "7.1 (h), (j) and (s) of IS 15885 (Part 1); and\nb)\nMention whether the controlgear has mains-\nconnected windings.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC007-7.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "7.3",
+          "title": "BIS Certification Marking",
+          "parent_clause": "7",
+          "depth": 2,
+          "page_start": 7,
+          "page_end": 7,
+          "page_refs": [
+            7
+          ],
+          "content": "7.3 BIS Certification Marking\nThe controlgear may also be marked with the Standard\nMark.",
+          "subclauses": [
+            {
+              "clause_number": "7.3.1",
+              "title": "The use of the Standard Mark is governed by the",
+              "parent_clause": "7.3",
+              "depth": 3,
+              "page_start": 7,
+              "page_end": 7,
+              "page_refs": [
+                7
+              ],
+              "content": "7.3.1 The use of the Standard Mark is governed by the\nprovisions of the Bureau of Indian Standards Act, 1986\nand the Rules and Regulations made thereunder. The\ndetails of conditions under which the licence for the\nuse of the Standard Mark may be granted to\nmanufacturers or producers may be obtained from the\nBureau of Indian Standards.",
+              "subclauses": [],
+              "semantic_type": "requirement",
+              "semantic_tags": [
+                "requirement"
+              ],
+              "clause_id": "CLAUSE-DOC007-7.3.1",
+              "requirements": [],
+              "definitions": []
+            }
+          ],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "marking_requirement"
+          ],
+          "clause_id": "CLAUSE-DOC007-7.3",
+          "requirements": [],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "marking_requirement",
+      "semantic_tags": [
+        "marking_requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-7",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "8",
+      "title": "PROTECTION AGAINST ACCIDENTAL",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ],
+      "content": "8 PROTECTION AGAINST ACCIDENTAL\nCONTACT WITH LIVE PARTS\nThe requirements of 10 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-8",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "9",
+      "title": "TERMINALS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ],
+      "content": "9 TERMINALS\nThe requirements of 8 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-9",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "10",
+      "title": "PROVISIONS FOR PROTECTIVE EARTHING",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 7,
+      "page_refs": [
+        7
+      ],
+      "content": "10 PROVISIONS FOR PROTECTIVE EARTHING\nThe requirements of 9 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-10",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "11",
+      "title": "MOISTURE RESISTANCE AND INSULATION",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 7,
+      "page_end": 8,
+      "page_refs": [
+        7,
+        8
+      ],
+      "content": "11 MOISTURE RESISTANCE AND INSULATION\nThe requirements of 11 of IS 15885 (Part 1) shall\napply.\nIS 15885 (Part 2/Sec 13) : 2012",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-11",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "12",
+      "title": "ELECTRIC STRENGTH",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "12 ELECTRIC STRENGTH\nThe requirements of 12 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-12",
+      "requirements": [
+        {
+          "entity_type": "requirement",
+          "requirement_type": "dielectric_test",
+          "requirement_id": "REQ-DOC007-12-ES",
+          "status": "mandatory",
+          "clause": "12",
+          "subject": "self-ballasted LED lamp",
+          "parameter": "dielectric_electric_strength",
+          "operator": "==",
+          "original_value": "4 000 V a.c.",
+          "normalized": {
+            "value": 4000,
+            "unit": "V a.c."
+          },
+          "value": 4000,
+          "unit": "V a.c.",
+          "conditions": {
+            "humidity_treatment": "immediately following 48 h humidity treatment"
+          },
+          "test": {
+            "test_voltage": "4 000 V a.c. (r.m.s.)",
+            "frequency": "50 Hz",
+            "duration": "1 minute (60 s)"
+          },
+          "acceptance_criterion": {
+            "minimum": 4000,
+            "unit": "V a.c.",
+            "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+          },
+          "exceptions": null,
+          "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+          "source_pages": [
+            8
+          ],
+          "provenance": {
+            "document_id": "DOC-007",
+            "source_id": "SRC-007",
+            "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+            "clause": "12",
+            "page": 8,
+            "pages": [
+              8
+            ],
+            "section": "ELECTRIC STRENGTH",
+            "original_text": "12 ELECTRIC STRENGTH\nThe requirements of 12 of IS 15885 (Part 1) shall apply."
+          }
+        }
+      ],
+      "definitions": []
+    },
+    {
+      "clause_number": "13",
+      "title": "THERMAL ENDURANCE TEST FOR",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "13 THERMAL ENDURANCE TEST FOR\nWINDINGS OF BALLASTS\nThe requirements of 13 of IS 15885 (Part 1) is not\napplicable.",
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "clause_id": "CLAUSE-DOC007-13",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "14",
+      "title": "FAULT CONDITIONS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "14 FAULT CONDITIONS\nThe requirements of 14 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nIn the case of control gear provided with the marking,\nthe requirements specified in Annex C shall be fulfilled.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-14",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "15",
+      "title": "TRANSFORMER HEATING",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "15 TRANSFORMER HEATING\nSELV, isolating and separating control gears shall be\ntested according to L-6 and L-7 of IS 15885 (Part 1),\nwhere the requirements for control gears providing\nSELV are valid also for separating and isolating control\ngears.\nFor SELV control gears, the output voltage shall not\nexceed the limits given in 10.4 of IS 15885 (Part 1),\nduring the tests of 15.1 and 15.2.",
+      "subclauses": [
+        {
+          "clause_number": "15.1",
+          "title": "Normal Operation",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 8,
+          "page_refs": [
+            8
+          ],
+          "content": "15.1 Normal Operation\nThe requirements of L-6 of IS 15885 (Part 1) shall\napply, together with the following additional\nrequirement.\nFor built-in and integral control gears tests shall be\nmade under conditions such that the convertors is\nbrought to tc, as reached under normal operation at\nrated supply voltage.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC007-15.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "15.2",
+          "title": "Abnormal Operation",
+          "parent_clause": "15",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 8,
+          "page_refs": [
+            8
+          ],
+          "content": "15.2 Abnormal Operation\nThe requirements of L-7 of IS 15885 (Part 1) shall\napply. In addition the following test at any voltage\nbetween 90 percent and 110 percent of the rated supply\nvoltage shall be performed if relevant, with the control\ngear operating according to the manufacturer’s\ninstructions (including heatsinks, if specified) for 1 h.\nConnect double the LED modules or equivalent load\nfor which the control gear is designed,\na)\nin parallel to the output terminals, for constant\nvoltage output types; and\nb)\nin series to the output terminals, for the\nconstant current output types.\nDuring and at the end of the tests specified above, the\ncontrol gear shall show no defect impairing safety, nor\nshall any smoke or flammable gases be produced.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC007-15.2",
+          "requirements": [],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-15",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "16",
+      "title": "CONSTRUCTION",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "16 CONSTRUCTION\nThe requirements of 15 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-16",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "17",
+      "title": "CREEPAGE DISTANCES AND CLEARANCES",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "17 CREEPAGE DISTANCES AND CLEARANCES\nUnless otherwise specified in 14 the requirements of 16\nof IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "exception",
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-17",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "18",
+      "title": "SCREWS, CURRENT-CARRYING PARTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "18 SCREWS, CURRENT-CARRYING PARTS\nAND CONNECTIONS\nThe requirements of 17 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-18",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "19",
+      "title": "RESISTANCE TO HEAT, FIRE AND",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "19 RESISTANCE TO HEAT, FIRE AND\nTRACKING\nThe requirements of 18 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-19",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "20",
+      "title": "RESISTANCE TO CORROSION",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 8,
+      "page_refs": [
+        8
+      ],
+      "content": "20 RESISTANCE TO CORROSION\nThe requirements of 19 of IS 15885 (Part 1) shall apply.",
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC007-20",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "21",
+      "title": "TESTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 8,
+      "page_end": 9,
+      "page_refs": [
+        8,
+        9
+      ],
+      "content": "21 TESTS",
+      "subclauses": [
+        {
+          "clause_number": "21.1",
+          "title": "Classification of Tests",
+          "parent_clause": "21",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 8,
+          "page_refs": [
+            8
+          ],
+          "content": "21.1 Classification of Tests",
+          "subclauses": [
+            {
+              "clause_number": "21.1.1",
+              "title": "Type Tests",
+              "parent_clause": "21.1",
+              "depth": 3,
+              "page_start": 8,
+              "page_end": 8,
+              "page_refs": [
+                8
+              ],
+              "content": "21.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of controlgear, sample\nbeing drawn preferably from regular production lot:\na)\nMarking (see 7);\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions for protective earthing (see10);\ne)\nMoisture resistance (see 11);\nf)\nElectric strength (see 12);\ng)\nThermal endurance test for windings of\nballasts (see 13);\nh)\nFault conditions (see 14);\nj)\nTransformer heating (see 15);\nk)\nConstruction (see 16);\nm) Creepage distances and clearances (see 17);\nn)\nScrews, current-carrying parts and\nconnections (see 18);\np)\nResistance to heat, fire and tracking (see 19);\nand\nq)\nResistance to corrosion (see 20).",
+              "subclauses": [],
+              "semantic_type": "test_method",
+              "semantic_tags": [
+                "requirement",
+                "test_method"
+              ],
+              "clause_id": "CLAUSE-DOC007-21.1.1",
+              "requirements": [
+                {
+                  "entity_type": "requirement",
+                  "requirement_type": "dielectric_test",
+                  "requirement_id": "REQ-DOC007-21.1.1-ES",
+                  "status": "mandatory",
+                  "clause": "21.1.1",
+                  "subject": "self-ballasted LED lamp",
+                  "parameter": "dielectric_electric_strength",
+                  "operator": "==",
+                  "original_value": "4 000 V a.c.",
+                  "normalized": {
+                    "value": 4000,
+                    "unit": "V a.c."
+                  },
+                  "value": 4000,
+                  "unit": "V a.c.",
+                  "conditions": {
+                    "humidity_treatment": "immediately following 48 h humidity treatment"
+                  },
+                  "test": {
+                    "test_voltage": "4 000 V a.c. (r.m.s.)",
+                    "frequency": "50 Hz",
+                    "duration": "1 minute (60 s)"
+                  },
+                  "acceptance_criterion": {
+                    "minimum": 4000,
+                    "unit": "V a.c.",
+                    "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+                  },
+                  "exceptions": null,
+                  "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+                  "source_pages": [
+                    8
+                  ],
+                  "provenance": {
+                    "document_id": "DOC-007",
+                    "source_id": "SRC-007",
+                    "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                    "clause": "21.1.1",
+                    "page": 8,
+                    "pages": [
+                      8
+                    ],
+                    "section": "Type Tests",
+                    "original_text": "21.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of controlgear, sample\nbeing drawn preferably from regular production lot:\na)\nMarking (see 7);\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions fo"
+                  }
+                }
+              ],
+              "definitions": []
+            }
+          ],
+          "semantic_type": "test_method",
+          "semantic_tags": [
+            "test_method"
+          ],
+          "clause_id": "CLAUSE-DOC007-21.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "21.2",
+          "title": "Acceptance Test",
+          "parent_clause": "21",
+          "depth": 2,
+          "page_start": 8,
+          "page_end": 9,
+          "page_refs": [
+            8,
+            9
+          ],
+          "content": "21.2 Acceptance Test\nThe sampling plan for acceptance tests shall be as\nspecified in IS 2500 (Part 1). The following shall\nconstitute as acceptance tests:\na)\nMarking (see 7);\nIS 15885 (Part 2/Sec 13) : 2012\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions for protective earthing (see10);\nThe requirements of Annex A of IS 15885 (Part 1) shall apply.\ne)\nMoisture resistance (see 11);\nf)\nelectric strength (see 12);\ng)\nFault conditions (see 14); and\nh)\nTransformer heating (see 15).",
+          "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "requirement",
+            "sampling_requirement",
+            "test_method"
+          ],
+          "clause_id": "CLAUSE-DOC007-21.2",
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "dielectric_test",
+              "requirement_id": "REQ-DOC007-21.2-ES",
+              "status": "mandatory",
+              "clause": "21.2",
+              "subject": "self-ballasted LED lamp",
+              "parameter": "dielectric_electric_strength",
+              "operator": "==",
+              "original_value": "4 000 V a.c.",
+              "normalized": {
+                "value": 4000,
+                "unit": "V a.c."
+              },
+              "value": 4000,
+              "unit": "V a.c.",
+              "conditions": {
+                "humidity_treatment": "immediately following 48 h humidity treatment"
+              },
+              "test": {
+                "test_voltage": "4 000 V a.c. (r.m.s.)",
+                "frequency": "50 Hz",
+                "duration": "1 minute (60 s)"
+              },
+              "acceptance_criterion": {
+                "minimum": 4000,
+                "unit": "V a.c.",
+                "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+              },
+              "exceptions": null,
+              "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+              "source_pages": [
+                8,
+                9
+              ],
+              "provenance": {
+                "document_id": "DOC-007",
+                "source_id": "SRC-007",
+                "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+                "clause": "21.2",
+                "page": 8,
+                "pages": [
+                  8,
+                  9
+                ],
+                "section": "Acceptance Test",
+                "original_text": "21.2 Acceptance Test\nThe sampling plan for acceptance tests shall be as\nspecified in IS 2500 (Part 1). The following shall\nconstitute as acceptance tests:\na)\nMarking (see 7);\nIS 15885 (Part 2/Sec 13) : 2012\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nPr"
+              }
+            }
+          ],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "clause_id": "CLAUSE-DOC007-21",
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0001",
+      "term": "Electronic Controlgear for LED Modules",
+      "definition": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcting the power factor and suppressing radio interference.",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.1",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Unit inserted between the supply and one or more LED modules which serves to supply the LED module(s) with its (their) rated voltage or rated current. The unit may consist of one or more separate components and may include means for dimming, correcti"
+      },
+      "term_id": "TERM-electronic_controlgear_for_led_modules"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0002",
+      "term": "SELV Controlgear",
+      "definition": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer.",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.3",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Controlgear providing a SELV output isolated from the supply mains by means such as a safety isolating transformer."
+      },
+      "term_id": "TERM-selv_controlgear"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0003",
+      "term": "Associated Controlgear",
+      "definition": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated.",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.4",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Controlgear designed to supply specific appliance(s) or equipment, incorporated or not incorporated."
+      },
+      "term_id": "TERM-associated_controlgear"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0004",
+      "term": "Plug-in Controlgear",
+      "definition": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply.",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.5",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Controlgear incorporated in an enclosure provided with an integral plug as the means of connection of the electrical supply."
+      },
+      "term_id": "TERM-plug_in_controlgear"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0005",
+      "term": "Controlgear",
+      "definition": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
+      "source_clause": "3.6",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.6",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Output voltage, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
+      },
+      "term_id": "TERM-controlgear"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0006",
+      "term": "Controlgear",
+      "definition": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear.",
+      "source_clause": "3.7",
+      "source_pages": [
+        6
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.7",
+        "page": 6,
+        "pages": [
+          6
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Output current, at rated supply voltage, rated frequency and at rated output power, assigned to the control gear."
+      },
+      "term_id": "TERM-controlgear"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0007",
+      "term": "Light Emitting Diode (LED)",
+      "definition": "Solid state device",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.8",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Solid state device"
+      },
+      "term_id": "TERM-light_emitting_diode_led"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0008",
+      "term": "IS 15885 (Part 2/Sec 13)",
+      "definition": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current.",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.8",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "2012 embodying a p-n junction, emitting optical radiation when excited by an electric current."
+      },
+      "term_id": "TERM-is_15885_part_2_sec_13"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0009",
+      "term": "LED Module",
+      "definition": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic.",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.9",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Unit supplied as a light source. In addition to one or more LEDs it may contain further components, for example optical, electrical, mechanical and/or electronic."
+      },
+      "term_id": "TERM-led_module"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0010",
+      "term": "Maximum Output Voltage",
+      "definition": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition.",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.10",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Maximum voltage which can occur between the output terminals for constant current controlgear in any load condition."
+      },
+      "term_id": "TERM-maximum_output_voltage"
+    },
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC007-0011",
+      "term": "Acceptance Test",
+      "definition": "Tests carried out on samples taken from a lot for the acceptance of the lot.",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3.11",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "Tests carried out on samples taken from a lot for the acceptance of the lot."
+      },
+      "term_id": "TERM-acceptance_test"
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC007-0001",
+      "entity_type": "standard",
+      "name": "IS 15885 (Part 2/Sec 13) : 2012",
+      "status": "mandatory",
+      "original_value": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+      "value": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0004",
+      "entity_type": "product",
+      "name": "LED Controlgear",
+      "status": "mandatory",
+      "original_value": "d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+      "value": "d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0005",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885\n(Part 1) : 2011",
+      "status": "mandatory",
+      "original_value": "IS 15885\n(Part 1) : 2011",
+      "value": "IS 15885\n(Part 1) : 2011",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0006",
+      "entity_type": "referenced_standard",
+      "name": "IS 16104 : 2012",
+      "status": "mandatory",
+      "original_value": "IS 16104 : 2012",
+      "value": "IS 16104 : 2012",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0007",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "000 V",
+      "value": "000 V",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "1",
+        "page": 6,
+        "pages": [
+          6
+        ]
+      },
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "normalized": {
+        "value": 0,
+        "unit": "V"
+      },
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC007-0008",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "3",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0009",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "4",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0010",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "4",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0011",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "5",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "5",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0012",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "6",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "6",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0013",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "7.1",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0014",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "8",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "8",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0015",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "9",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0016",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "10",
+        "page": 7,
+        "pages": [
+          7
+        ]
+      },
+      "source_clause": "10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0017",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "11",
+        "page": 7,
+        "pages": [
+          7,
+          8
+        ]
+      },
+      "source_clause": "11",
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0018",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "12",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0019",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "12",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0020",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "13",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "13",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0021",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "14",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "14",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0022",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "14",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "14",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0023",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "15",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "15",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0024",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "15.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "15.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0025",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "15.2",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "15.2",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0026",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "16",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "16",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0027",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "17",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "17",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0028",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "18",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "18",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0029",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "19",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "19",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0030",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "20",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "20",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0031",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.1.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0032",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.1.1",
+        "page": 8,
+        "pages": [
+          8
+        ]
+      },
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0033",
+      "entity_type": "referenced_standard",
+      "name": "IS 2500",
+      "status": "mandatory",
+      "original_value": "IS 2500",
+      "value": "IS 2500",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0034",
+      "entity_type": "referenced_standard",
+      "name": "IS 15885",
+      "status": "mandatory",
+      "original_value": "IS 15885",
+      "value": "IS 15885",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0035",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0036",
+      "entity_type": "test",
+      "name": "Fault Condition Test",
+      "status": "mandatory",
+      "original_value": "Fault Condition Test",
+      "value": "Fault Condition Test",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ]
+      },
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0037",
+      "entity_type": "annex",
+      "name": "ANNEX A",
+      "status": "mandatory",
+      "original_value": "ANNEX A",
+      "value": "ANNEX A",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX A",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
+      "source_clause": "ANNEX A",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0038",
+      "entity_type": "annex",
+      "name": "ANNEX B",
+      "status": "mandatory",
+      "original_value": "ANNEX B",
+      "value": "ANNEX B",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX B",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
+      "source_clause": "ANNEX B",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0039",
+      "entity_type": "annex",
+      "name": "ANNEX C",
+      "status": "mandatory",
+      "original_value": "ANNEX C",
+      "value": "ANNEX C",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX C",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
+      "source_clause": "ANNEX C",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0040",
+      "entity_type": "annex",
+      "name": "ANNEX D",
+      "status": "mandatory",
+      "original_value": "ANNEX D",
+      "value": "ANNEX D",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX D",
+        "page": 9,
+        "pages": [
+          9
+        ]
+      },
+      "source_clause": "ANNEX D",
+      "source_pages": [
+        9
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0041",
+      "entity_type": "annex",
+      "name": "ANNEX E",
+      "status": "mandatory",
+      "original_value": "ANNEX E",
+      "value": "ANNEX E",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX E",
+        "page": 9,
+        "pages": [
+          9,
+          10
+        ]
+      },
+      "source_clause": "ANNEX E",
+      "source_pages": [
+        9,
+        10
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0042",
+      "entity_type": "annex",
+      "name": "ANNEX F",
+      "status": "mandatory",
+      "original_value": "ANNEX F",
+      "value": "ANNEX F",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX F",
+        "page": 10,
+        "pages": [
+          10
+        ]
+      },
+      "source_clause": "ANNEX F",
+      "source_pages": [
+        10
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0043",
+      "entity_type": "annex",
+      "name": "ANNEX G",
+      "status": "mandatory",
+      "original_value": "ANNEX G",
+      "value": "ANNEX G",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX G",
+        "page": 10,
+        "pages": [
+          10
+        ]
+      },
+      "source_clause": "ANNEX G",
+      "source_pages": [
+        10
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0044",
+      "entity_type": "annex",
+      "name": "ANNEX H",
+      "status": "mandatory",
+      "original_value": "ANNEX H",
+      "value": "ANNEX H",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX H",
+        "page": 10,
+        "pages": [
+          10
+        ]
+      },
+      "source_clause": "ANNEX H",
+      "source_pages": [
+        10
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC007-0045",
+      "entity_type": "annex",
+      "name": "ANNEX I",
+      "status": "mandatory",
+      "original_value": "ANNEX I",
+      "value": "ANNEX I",
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "ANNEX I",
+        "page": 10,
+        "pages": [
+          10,
+          11
+        ]
+      },
+      "source_clause": "ANNEX I",
+      "source_pages": [
+        10,
+        11
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC007-0001",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "applies_to",
+      "object": "LED Controlgear",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0002",
+      "subject": "Clause 1: SCOPE",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0003",
+      "subject": "Clause 2: REFERENCES",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0004",
+      "subject": "Clause 3: TERMINOLOGY",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0005",
+      "subject": "Clause 3",
+      "predicate": "defines",
+      "object": "TERMINOLOGY",
+      "document_id": "DOC-007",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0006",
+      "subject": "Clause 3.1: Electronic Controlgear for LED Modules —",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0007",
+      "subject": "Clause 3.1",
+      "predicate": "defines",
+      "object": "Electronic Controlgear for LED Modules —",
+      "document_id": "DOC-007",
+      "source_clause": "3.1",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0008",
+      "subject": "Clause 3.2: d.c. or a.c. Supplied Controlgear —  Controlgear",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0009",
+      "subject": "Clause 3.2",
+      "predicate": "defines",
+      "object": "d.c. or a.c. Supplied Controlgear —  Controlgear",
+      "document_id": "DOC-007",
+      "source_clause": "3.2",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0010",
+      "subject": "Clause 3.3: SELV Controlgear — Controlgear providing a",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0011",
+      "subject": "Clause 3.3",
+      "predicate": "defines",
+      "object": "SELV Controlgear — Controlgear providing a",
+      "document_id": "DOC-007",
+      "source_clause": "3.3",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0012",
+      "subject": "Clause 3.4: Associated Controlgear —  Controlgear designed",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0013",
+      "subject": "Clause 3.4",
+      "predicate": "defines",
+      "object": "Associated Controlgear —  Controlgear designed",
+      "document_id": "DOC-007",
+      "source_clause": "3.4",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0014",
+      "subject": "Clause 3.5: Plug-in Controlgear — Controlgear incorporated",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0015",
+      "subject": "Clause 3.5",
+      "predicate": "defines",
+      "object": "Plug-in Controlgear — Controlgear incorporated",
+      "document_id": "DOC-007",
+      "source_clause": "3.5",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0016",
+      "subject": "Clause 3.6: Rated Output Voltage for Constant Voltage",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.6",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0017",
+      "subject": "Clause 3.6",
+      "predicate": "defines",
+      "object": "Rated Output Voltage for Constant Voltage",
+      "document_id": "DOC-007",
+      "source_clause": "3.6",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0018",
+      "subject": "Clause 3.7: Rated Output Current for Constant Current",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.7",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0019",
+      "subject": "Clause 3.7",
+      "predicate": "defines",
+      "object": "Rated Output Current for Constant Current",
+      "document_id": "DOC-007",
+      "source_clause": "3.7",
+      "source_pages": [
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0020",
+      "subject": "Clause 3.8: Light Emitting Diode (LED) — Solid state device",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0021",
+      "subject": "Clause 3.8",
+      "predicate": "defines",
+      "object": "Light Emitting Diode (LED) — Solid state device",
+      "document_id": "DOC-007",
+      "source_clause": "3.8",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0022",
+      "subject": "Clause 3.9: LED Module —  Unit supplied as a light source.",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0023",
+      "subject": "Clause 3.9",
+      "predicate": "defines",
+      "object": "LED Module —  Unit supplied as a light source.",
+      "document_id": "DOC-007",
+      "source_clause": "3.9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0024",
+      "subject": "Clause 3.10: Maximum Output Voltage —  Maximum voltage",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0025",
+      "subject": "Clause 3.10",
+      "predicate": "defines",
+      "object": "Maximum Output Voltage —  Maximum voltage",
+      "document_id": "DOC-007",
+      "source_clause": "3.10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0026",
+      "subject": "Clause 3.11: Acceptance Test —  Tests carried out on samples",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0027",
+      "subject": "Clause 3.11",
+      "predicate": "defines",
+      "object": "Acceptance Test —  Tests carried out on samples",
+      "document_id": "DOC-007",
+      "source_clause": "3.11",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0028",
+      "subject": "Clause 4: GENERAL REQUIREMENTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0029",
+      "subject": "Clause 5: GENERAL NOTES ON TESTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "5",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0030",
+      "subject": "Clause 6: CLASSIFICATION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "6",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0031",
+      "subject": "Clause 7: MARKING",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0032",
+      "subject": "Clause 7.1: (h), (j) and (s) of IS 15885 (Part 1); and",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0033",
+      "subject": "Clause 7.2: Information to be Provided, if Applicable",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0034",
+      "subject": "Clause 7.3: BIS Certification Marking",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.3",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0035",
+      "subject": "Clause 7.3.1: The use of the Standard Mark is governed by the",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "7.3.1",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0036",
+      "subject": "Clause 8: PROTECTION AGAINST ACCIDENTAL",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "8",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0037",
+      "subject": "Clause 9: TERMINALS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "9",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0038",
+      "subject": "Clause 10: PROVISIONS FOR PROTECTIVE EARTHING",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "10",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0039",
+      "subject": "Clause 11: MOISTURE RESISTANCE AND INSULATION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "11",
+      "source_pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0040",
+      "subject": "Clause 12: ELECTRIC STRENGTH",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0041",
+      "subject": "Clause 13: THERMAL ENDURANCE TEST FOR",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "13",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0042",
+      "subject": "Clause 14: FAULT CONDITIONS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "14",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0043",
+      "subject": "Clause 15: TRANSFORMER HEATING",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "15",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0044",
+      "subject": "Clause 15.1: Normal Operation",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "15.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0045",
+      "subject": "Clause 15.2: Abnormal Operation",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "15.2",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0046",
+      "subject": "Clause 16: CONSTRUCTION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "16",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0047",
+      "subject": "Clause 17: CREEPAGE DISTANCES AND CLEARANCES",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "17",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0048",
+      "subject": "Clause 18: SCREWS, CURRENT-CARRYING PARTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "18",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0049",
+      "subject": "Clause 19: RESISTANCE TO HEAT, FIRE AND",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "19",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0050",
+      "subject": "Clause 20: RESISTANCE TO CORROSION",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "20",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0051",
+      "subject": "Clause 21: TESTS",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "21",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0052",
+      "subject": "Clause 21.1: Classification of Tests",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "21.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0053",
+      "subject": "Clause 21.1.1: Type Tests",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0054",
+      "subject": "Clause 21.2: Acceptance Test",
+      "predicate": "part_of",
+      "object": "IS 15885 (Part 2/Sec 13) : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0055",
+      "subject": "Clause 4",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0056",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_limit",
+      "object": "== 4000 V a.c.",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0057",
+      "subject": "dielectric_electric_strength",
+      "predicate": "tested_by",
+      "object": "4 000 V a.c. (r.m.s.)",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0058",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: immediately following 48 h humidity treatment",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0059",
+      "subject": "Clause 7.2",
+      "predicate": "requires",
+      "object": "mandatory_marking_elements",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0060",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_limit",
+      "object": "mandatory Trade mark, rated voltage, rated wattage, rated frequency, standard mark None",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0061",
+      "subject": "mandatory_marking_elements",
+      "predicate": "tested_by",
+      "object": "Visual examination after durability rubbing",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0062",
+      "subject": "mandatory_marking_elements",
+      "predicate": "has_condition",
+      "object": "durability_test: Rubbing 15 s with hexane soaked cloth",
+      "document_id": "DOC-007",
+      "source_clause": "7.2",
+      "source_pages": [
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0063",
+      "subject": "Clause 12",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-007",
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0064",
+      "subject": "Clause 21.1.1",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-007",
+      "source_clause": "21.1.1",
+      "source_pages": [
+        8
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0065",
+      "subject": "Clause 21.2",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC007-0066",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 15885\n(Part 1) : 2011 (Part 1)",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "reference_type": "normative"
+    },
+    {
+      "relationship_id": "REL-DOC007-0067",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 16104 : 2012",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "reference_type": "normative"
+    },
+    {
+      "relationship_id": "REL-DOC007-0068",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 15885 (Part 1)",
+      "document_id": "DOC-007",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ],
+      "reference_type": "definition"
+    },
+    {
+      "relationship_id": "REL-DOC007-0069",
+      "subject": "IS 15885 (Part 2/Sec 13) : 2012",
+      "predicate": "references",
+      "object": "IS 2500 (Part 1)",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "reference_type": "test_method"
+    }
+  ],
+  "requirements": [
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-4-ES",
+      "status": "mandatory",
+      "clause": "4",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
+      "value": 4000,
+      "unit": "V a.c.",
+      "conditions": {
+        "humidity_treatment": "immediately following 48 h humidity treatment"
+      },
+      "test": {
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute (60 s)"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "4",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "GENERAL REQUIREMENTS",
+        "original_text": "4 GENERAL REQUIREMENTS\nThe requirements of 4 of IS 15885 (Part 1) shall apply,\ntogether with the following additional requirements.\nControlgears providing SELV shall comply with the\nrequirements of Annex I. This includes insulation\nresistance, electric strength, creepage distances and\nclearance betw"
+      }
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "mandatory_marking",
+      "requirement_id": "REQ-DOC007-7.2-MARK",
+      "status": "mandatory",
+      "clause": "7.2",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "mandatory_marking_elements",
+      "operator": "mandatory",
+      "original_value": "Mark of origin, rated voltage, rated wattage, rated frequency, standard mark",
+      "normalized": {
+        "items": [
+          "Mark of origin (trademark)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration Number)"
+        ]
+      },
+      "value": "Trade mark, rated voltage, rated wattage, rated frequency, standard mark",
+      "unit": null,
+      "conditions": {
+        "durability_test": "Rubbing 15 s with hexane soaked cloth"
+      },
+      "test": {
+        "inspection": "Visual examination after durability rubbing"
+      },
+      "acceptance_criterion": {
+        "mandatory_items": [
+          "Mark of origin (trademark)",
+          "Rated voltage or voltage range (V)",
+          "Rated wattage (W)",
+          "Rated frequency (Hz)",
+          "Standard Mark (CRS Registration Number)"
+        ],
+        "criterion_text": "Marking shall remain legible and easily discernible"
+      },
+      "exceptions": null,
+      "evidence": "Lamps shall be clearly and durably marked with mandatory details.",
+      "source_pages": [
+        7
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "7.2",
+        "page": 7,
+        "pages": [
+          7
+        ],
+        "section": "Information to be Provided, if Applicable",
+        "original_text": "7.2 Information to be Provided, if Applicable\nIn addition to the above mandatory markings, the\nfollowing information, if applicable, shall be given\neither on the control gear, or be made available in the\nmanufacturer’s catalogue :\na)"
+      }
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-12-ES",
+      "status": "mandatory",
+      "clause": "12",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
+      "value": 4000,
+      "unit": "V a.c.",
+      "conditions": {
+        "humidity_treatment": "immediately following 48 h humidity treatment"
+      },
+      "test": {
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute (60 s)"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+      "source_pages": [
+        8
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "12",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section": "ELECTRIC STRENGTH",
+        "original_text": "12 ELECTRIC STRENGTH\nThe requirements of 12 of IS 15885 (Part 1) shall apply."
+      }
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-21.1.1-ES",
+      "status": "mandatory",
+      "clause": "21.1.1",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
+      "value": 4000,
+      "unit": "V a.c.",
+      "conditions": {
+        "humidity_treatment": "immediately following 48 h humidity treatment"
+      },
+      "test": {
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute (60 s)"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+      "source_pages": [
+        8
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.1.1",
+        "page": 8,
+        "pages": [
+          8
+        ],
+        "section": "Type Tests",
+        "original_text": "21.1.1 Type Tests\nThe following shall constitute the type tests to be\ncarried out on selected sample of controlgear, sample\nbeing drawn preferably from regular production lot:\na)\nMarking (see 7);\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nProvisions fo"
+      }
+    },
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC007-21.2-ES",
+      "status": "mandatory",
+      "clause": "21.2",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
+      "value": 4000,
+      "unit": "V a.c.",
+      "conditions": {
+        "humidity_treatment": "immediately following 48 h humidity treatment"
+      },
+      "test": {
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute (60 s)"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+      "source_pages": [
+        8,
+        9
+      ],
+      "provenance": {
+        "document_id": "DOC-007",
+        "source_id": "SRC-007",
+        "standard": "IS 15885 (Part 2/Sec 13) : 2012",
+        "clause": "21.2",
+        "page": 8,
+        "pages": [
+          8,
+          9
+        ],
+        "section": "Acceptance Test",
+        "original_text": "21.2 Acceptance Test\nThe sampling plan for acceptance tests shall be as\nspecified in IS 2500 (Part 1). The following shall\nconstitute as acceptance tests:\na)\nMarking (see 7);\nIS 15885 (Part 2/Sec 13) : 2012\nb)\nProtection against accidental contact with live\nparts (see 8);\nc)\nTerminals (see 9);\nd)\nPr"
+      }
+    }
+  ],
+  "cross_references": [
+    {
+      "reference_id": "REF-DOC007-0001",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "target_standard": "IS 15885\n(Part 1) : 2011",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "this standard. The Annexes A, B, C, D, E, F, G, H and L of IS 15885 (Part 1) : 2011 ‘Safety of lamp controlgear: Part 1 General requirements’ which are applicable"
+    },
+    {
+      "reference_id": "REF-DOC007-0002",
+      "document_id": "DOC-007",
+      "source_clause": "1",
+      "source_pages": [
+        6
+      ],
+      "target_standard": "IS 16104 : 2012",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": "e requirements shall be covered by a separate standard (see IS 16104 : 2012 ‘d.c. or a.c. supplied electronic controgear for LED Modules — Performance requ"
+    },
+    {
+      "reference_id": "REF-DOC007-0003",
+      "document_id": "DOC-007",
+      "source_clause": "3",
+      "source_pages": [
+        6,
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "definition",
+      "context_snippet": "For the purpose of this standard, the definitions given in IS 15885 (Part 1) and the following shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0004",
+      "document_id": "DOC-007",
+      "source_clause": "4",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "4 GENERAL REQUIREMENTS The requirements of 4 of IS 15885 (Part 1) shall apply, together with the following additional requirements. Cont"
+    },
+    {
+      "reference_id": "REF-DOC007-0005",
+      "document_id": "DOC-007",
+      "source_clause": "5",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "5 GENERAL NOTES ON TESTS The requirements of 5 of IS 15885 (Part 1) shall apply along with the following additional requirements. The foll"
+    },
+    {
+      "reference_id": "REF-DOC007-0006",
+      "document_id": "DOC-007",
+      "source_clause": "6",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "ified according to the method of installation given in 6 of IS 15885 (Part 1) and according to, a) protection against electric shock; b) auto-wound"
+    },
+    {
+      "reference_id": "REF-DOC007-0007",
+      "document_id": "DOC-007",
+      "source_clause": "7.1",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "7.1 (h), (j) and (s) of IS 15885 (Part 1); and b) Mention whether the controlgear has mains- connected windings."
+    },
+    {
+      "reference_id": "REF-DOC007-0008",
+      "document_id": "DOC-007",
+      "source_clause": "8",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "CCIDENTAL CONTACT WITH LIVE PARTS The requirements of 10 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0009",
+      "document_id": "DOC-007",
+      "source_clause": "9",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "9 TERMINALS The requirements of 8 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0010",
+      "document_id": "DOC-007",
+      "source_clause": "10",
+      "source_pages": [
+        7
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "PROVISIONS FOR PROTECTIVE EARTHING The requirements of 9 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0011",
+      "document_id": "DOC-007",
+      "source_clause": "11",
+      "source_pages": [
+        7,
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "OISTURE RESISTANCE AND INSULATION The requirements of 11 of IS 15885 (Part 1) shall apply. IS 15885 (Part 2/Sec 13) : 2012"
+    },
+    {
+      "reference_id": "REF-DOC007-0012",
+      "document_id": "DOC-007",
+      "source_clause": "12",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "12 ELECTRIC STRENGTH The requirements of 12 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0013",
+      "document_id": "DOC-007",
+      "source_clause": "13",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "NCE TEST FOR WINDINGS OF BALLASTS The requirements of 13 of IS 15885 (Part 1) is not applicable."
+    },
+    {
+      "reference_id": "REF-DOC007-0014",
+      "document_id": "DOC-007",
+      "source_clause": "14",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "14 FAULT CONDITIONS The requirements of 14 of IS 15885 (Part 1) shall apply, together with the following additional requirements. In t"
+    },
+    {
+      "reference_id": "REF-DOC007-0015",
+      "document_id": "DOC-007",
+      "source_clause": "15",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "g control gears shall be tested according to L-6 and L-7 of IS 15885 (Part 1), where the requirements for control gears providing SELV are valid als"
+    },
+    {
+      "reference_id": "REF-DOC007-0016",
+      "document_id": "DOC-007",
+      "source_clause": "15.1",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "15.1 Normal Operation The requirements of L-6 of IS 15885 (Part 1) shall apply, together with the following additional requirement. For b"
+    },
+    {
+      "reference_id": "REF-DOC007-0017",
+      "document_id": "DOC-007",
+      "source_clause": "15.2",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "15.2 Abnormal Operation The requirements of L-7 of IS 15885 (Part 1) shall apply. In addition the following test at any voltage between 90"
+    },
+    {
+      "reference_id": "REF-DOC007-0018",
+      "document_id": "DOC-007",
+      "source_clause": "16",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "16 CONSTRUCTION The requirements of 15 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0019",
+      "document_id": "DOC-007",
+      "source_clause": "17",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "Unless otherwise specified in 14 the requirements of 16 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0020",
+      "document_id": "DOC-007",
+      "source_clause": "18",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "NT-CARRYING PARTS AND CONNECTIONS The requirements of 17 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0021",
+      "document_id": "DOC-007",
+      "source_clause": "19",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "STANCE TO HEAT, FIRE AND TRACKING The requirements of 18 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0022",
+      "document_id": "DOC-007",
+      "source_clause": "20",
+      "source_pages": [
+        8
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "normative",
+      "context_snippet": "20 RESISTANCE TO CORROSION The requirements of 19 of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "reference_id": "REF-DOC007-0023",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "target_standard": "IS 2500",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "sampling plan for acceptance tests shall be as specified in IS 2500 (Part 1). The following shall constitute as acceptance tests: a) Marking (see 7"
+    },
+    {
+      "reference_id": "REF-DOC007-0024",
+      "document_id": "DOC-007",
+      "source_clause": "21.2",
+      "source_pages": [
+        8,
+        9
+      ],
+      "target_standard": "IS 15885",
+      "target_location": "Part 1",
+      "reference_type": "test_method",
+      "context_snippet": "protective earthing (see10); The requirements of Annex A of IS 15885 (Part 1) shall apply. e) Moisture resistance (see 11); f) electric strength (se"
+    }
+  ],
+  "references": [
+    "IS 15885",
+    "IS 15885\n(Part 1) : 2011",
+    "IS 16104 : 2012",
+    "IS 2500"
+  ],
+  "tables": [],
+  "annexes": [
+    {
+      "annex_id": "ANNEX A",
+      "title": "ANNEX A",
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ],
+      "content": "ANNEX A\n(Clause 1)\nTEST TO ESTABLISH WHETHER A CONDUCTIVE PART IS A LIVE PART WHICH\nMAY CAUSE AN ELECTRIC SHOCK"
+    },
+    {
+      "annex_id": "ANNEX B",
+      "title": "ANNEX B",
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ],
+      "content": "ANNEX B\n(Clause 1)\nPARTICULAR REQUIREMENTS FOR THERMALLY PROTECTED LAMP CONTROL GEAR\nThe requirements of Annex B of IS 15885 (Part 1) is not applicable."
+    },
+    {
+      "annex_id": "ANNEX C",
+      "title": "ANNEX C",
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ],
+      "content": "ANNEX C\n(Clauses 1 and 14)\nPARTICULAR REQUIREMENTS FOR ELECTRONIC LAMP CONTROL GEAR WITH\nMEANS OF PROTECTION AGAINST OVERHEATING\nThe requirements of Annex C of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "annex_id": "ANNEX D",
+      "title": "ANNEX D",
+      "page_start": 9,
+      "page_end": 9,
+      "page_refs": [
+        9
+      ],
+      "content": "ANNEX D\n(Clause 1)\nREQUIREMENTS FOR CARRYING OUT THE HEATING TESTS OF THERMALLY\nPROTECTED LAMP CONTROL GEAR\nThe requirements of Annex D of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "annex_id": "ANNEX E",
+      "title": "ANNEX E",
+      "page_start": 9,
+      "page_end": 10,
+      "page_refs": [
+        9,
+        10
+      ],
+      "content": "ANNEX E\n(Clause 1)\nUSE OF CONSTANT S OTHER THAN 4 500 IN TW TESTS\nThe requirements of Annex E of IS 15885 (Part 1) shall apply.\nIS 15885 (Part 2/Sec 13) : 2012"
+    },
+    {
+      "annex_id": "ANNEX F",
+      "title": "ANNEX F",
+      "page_start": 10,
+      "page_end": 10,
+      "page_refs": [
+        10
+      ],
+      "content": "ANNEX F\n(Clause 1)\nDRAUGHT-PROOF ENCLOSURE\nThe requirements of Annex F of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "annex_id": "ANNEX G",
+      "title": "ANNEX G",
+      "page_start": 10,
+      "page_end": 10,
+      "page_refs": [
+        10
+      ],
+      "content": "ANNEX G\n(Clause 1)\nEXPLANATION OF THE DERIVATION OF THE VALUES OF PULSE VOLTAGES\nThe requirements of Annex G of IS 15885 (Part 1) are not applicable."
+    },
+    {
+      "annex_id": "ANNEX H",
+      "title": "ANNEX H",
+      "page_start": 10,
+      "page_end": 10,
+      "page_refs": [
+        10
+      ],
+      "content": "ANNEX H\n(Clause 1)\nTESTS\nThe requirements of Annex H of IS 15885 (Part 1) shall apply."
+    },
+    {
+      "annex_id": "ANNEX I",
+      "title": "ANNEX I",
+      "page_start": 10,
+      "page_end": 11,
+      "page_refs": [
+        10,
+        11
+      ],
+      "content": "ANNEX I\n(Clauses 1 and 4)\nPARTICULAR ADDITIONAL REQUIREMENTS FOR SELV d.c. OR a.c. SUPPLIED ELECTRONIC\nCONTROL GEARS FOR LED MODULES\nThe requirements are under consideration.\nPublished by BIS, New Delhi\nBureau of Indian Standards\nBIS is a statutory institution established under the Bureau of Indian Standards Act, 1986 to promote\nharmonious development of the activities of standardization, marking and quality certification of goods\nand attending to connected matters in the country.\nCopyright\nBIS has the copyright of all its publications. No part of these publications may be reproduced in any form\nwithout the prior permission in writing of BIS. This does not preclude the free use, in the course of\nimplementing the standard, of necessary details, such as symbols and sizes, type or grade designations.\nEnquiries relating to copyright be addressed to the Director (Publications), BIS.\nReview of Indian Standards\nAmendments are issued to standards as the need arises on the basis of comments. Standards are also reviewed\nperiodically; a standard along with amendments is reaffirmed when such review indicates that no changes are\nneeded; if the review indicates that changes are needed, it is taken up for revision. Users of Indian Standards\nshould ascertain that they are in possession of the latest amendments or edition by referring to the latest issue of\n‘BIS Catalogue’ and ‘Standards : Monthly Additions’.\nThis Indian Standard has been developed from Doc No.: ETD  23 (6302).\nAmendments Issued Since Publication\nAmend No.\nDate of Issue\nText Affected\nBUREAU OF INDIAN STANDARDS\nHeadquarters:\nManak Bhavan, 9 Bahadur Shah Zafar Marg, New Delhi 110002\nTelephones : 2323 0131, 2323 3375, 2323 9402\nWebsite: www.bis.org.in\nRegional Offices:\nTelephones\nCentral\n: Manak Bhavan, 9 Bahadur Shah Zafar Marg\n2323 7617\nNEW DELHI 110002\n2323 3841\nEastern\n: 1/14 C.I.T. Scheme VII M, V. I. P. Road, Kankurgachi\n2337 8499, 2337 8561\nKOLKATA 700054\n2337 8626, 2337 9120\nNorthern\n: SCO 335-336, Sector 34-A, CHANDIGARH 160022\n60 3843\n60 9285\nSouthern\n: C.I.T. Campus, IV Cross Road, CHENNAI 600113\n2254 1216, 2254 1442\n2254 2519, 2254 2315\nWestern\n: Manakalaya, E9 MIDC, Marol, Andheri (East)\n2832 9295, 2832 7858\nMUMBAI 400093\n2832 7891, 2832 7892\nBranches:\nAHMEDABAD. BANGALORE. BHOPAL. BHUBANESHWAR. COIMBATORE. DEHRADUN.\nFARIDABAD. GHAZIABAD. GUWAHATI. HYDERABAD. JAIPUR. KANPUR. LUCKNOW.\nNAGPUR. PARWANOO. PATNA. PUNE. RAJKOT. THIRUVANANTHAPURAM.\nVISAKHAPATNAM.\n\u0001\n\u0001\n\u0001\n\u0001\n\u0001"
+    }
+  ],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T15:54:03.098390+00:00",
+    "total_definitions": 11,
+    "total_entities": 45,
+    "total_requirements": 5,
+    "total_relationships": 69,
+    "total_cross_references": 24,
+    "total_tables": 0,
+    "total_references": 4,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-007",
+    "document_id": "DOC-007",
+    "raw_file": "data/raw/standards/IS_15885_Part_2_Sec_13_2012.pdf",
+    "sha256": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e"
+  }
+}

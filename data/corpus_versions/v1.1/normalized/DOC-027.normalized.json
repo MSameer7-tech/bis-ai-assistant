@@ -1,0 +1,377 @@
+{
+  "document_id": "DOC-027",
+  "source_id": "SRC-027",
+  "document_metadata": {
+    "document_id": "DOC-027",
+    "source_id": "SRC-027",
+    "standard_id": "STD-IS_2347_2017",
+    "standard_number": "IS 2347 : 2017",
+    "title": "Domestic Pressure Cookers - Specification (Fifth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC027-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 2347 : 2017) covers and specifies requirements for Domestic Pressure Cookers - Specification (Fifth Revision). It applies to domestic_pressure_cookers under domestic_appliances_gas category in the mechanical_automotive domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC027-7.1",
+      "clause_number": "7.1",
+      "title": "Operating Pressure",
+      "content": "Operating Pressure: Operating pressure regulated by weight valve shall be 1.0 bar (100 kPa ± 10 kPa).",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC027-7.2",
+      "clause_number": "7.2",
+      "title": "Safety Pressure Release Device",
+      "content": "Safety Pressure Release Device: Safety valve/fusible plug shall release pressure between 1.4 bar and 2.0 bar (140 kPa to 200 kPa).",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC027-8.1",
+      "clause_number": "8.1",
+      "title": "Hydraulic Bursting Pressure Test",
+      "content": "Hydraulic Bursting Pressure Test: The cooker body and lid assembly shall withstand hydraulic proof pressure of not less than 3.0 bar (300 kPa) without permanent deformation or leakage.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement",
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC027-8.2",
+      "clause_number": "8.2",
+      "title": "Thermal Shock Test",
+      "content": "Thermal Shock Test: Heated dry cooker immersed in cold water without warping or cracking.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC027-0001",
+      "entity_type": "standard",
+      "name": "IS 2347 : 2017",
+      "status": "mandatory",
+      "original_value": "Domestic Pressure Cookers - Specification (Fifth Revision)",
+      "value": "Domestic Pressure Cookers - Specification (Fifth Revision)",
+      "provenance": {
+        "document_id": "DOC-027",
+        "source_id": "SRC-027",
+        "standard": "IS 2347 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC027-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-027",
+        "source_id": "SRC-027",
+        "standard": "IS 2347 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC027-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-027",
+        "source_id": "SRC-027",
+        "standard": "IS 2347 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC027-0004",
+      "entity_type": "value_and_unit",
+      "name": "pressure",
+      "status": "mandatory",
+      "original_value": "1.0 bar",
+      "value": "1.0 bar",
+      "provenance": {
+        "document_id": "DOC-027",
+        "source_id": "SRC-027",
+        "standard": "IS 2347 : 2017",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 1.0,
+        "unit": "bar"
+      },
+      "unit": "bar"
+    },
+    {
+      "entity_id": "ENT-DOC027-0005",
+      "entity_type": "value_and_unit",
+      "name": "pressure",
+      "status": "mandatory",
+      "original_value": "1.4 bar",
+      "value": "1.4 bar",
+      "provenance": {
+        "document_id": "DOC-027",
+        "source_id": "SRC-027",
+        "standard": "IS 2347 : 2017",
+        "clause": "7.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 1.4,
+        "unit": "bar"
+      },
+      "unit": "bar"
+    },
+    {
+      "entity_id": "ENT-DOC027-0006",
+      "entity_type": "test",
+      "name": "Bursting Pressure Test",
+      "status": "mandatory",
+      "original_value": "Bursting Pressure Test",
+      "value": "Bursting Pressure Test",
+      "provenance": {
+        "document_id": "DOC-027",
+        "source_id": "SRC-027",
+        "standard": "IS 2347 : 2017",
+        "clause": "8.1",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC027-0007",
+      "entity_type": "value_and_unit",
+      "name": "pressure",
+      "status": "mandatory",
+      "original_value": "3.0 bar",
+      "value": "3.0 bar",
+      "provenance": {
+        "document_id": "DOC-027",
+        "source_id": "SRC-027",
+        "standard": "IS 2347 : 2017",
+        "clause": "8.1",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 3.0,
+        "unit": "bar"
+      },
+      "unit": "bar"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC027-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 2347 : 2017",
+      "document_id": "DOC-027",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC027-0002",
+      "subject": "Clause 7.1: Operating Pressure",
+      "predicate": "part_of",
+      "object": "IS 2347 : 2017",
+      "document_id": "DOC-027",
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC027-0003",
+      "subject": "Clause 7.2: Safety Pressure Release Device",
+      "predicate": "part_of",
+      "object": "IS 2347 : 2017",
+      "document_id": "DOC-027",
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC027-0004",
+      "subject": "Clause 8.1: Hydraulic Bursting Pressure Test",
+      "predicate": "part_of",
+      "object": "IS 2347 : 2017",
+      "document_id": "DOC-027",
+      "source_clause": "8.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC027-0005",
+      "subject": "Clause 8.2: Thermal Shock Test",
+      "predicate": "part_of",
+      "object": "IS 2347 : 2017",
+      "document_id": "DOC-027",
+      "source_clause": "8.2",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.673854+00:00",
+    "total_definitions": 0,
+    "total_entities": 7,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-027",
+    "document_id": "DOC-027",
+    "raw_file": null,
+    "sha256": null
+  }
+}

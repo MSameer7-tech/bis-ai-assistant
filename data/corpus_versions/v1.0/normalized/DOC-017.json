@@ -1,0 +1,287 @@
+{
+  "document_id": "DOC-017",
+  "source_id": "SRC-017",
+  "document_metadata": {
+    "document_id": "DOC-017",
+    "source_id": "SRC-017",
+    "standard_id": "STD-IS_12640_P1_2016",
+    "standard_number": "IS 12640 (Part 1) : 2016",
+    "title": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC017-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 12640 (Part 1) : 2016) covers and specifies requirements for Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1. It applies to switches_for_domestic_use under switches_accessories category in the electrical domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC017-5.3.1",
+      "clause_number": "5.3.1",
+      "title": "Rated Residual Operating Current (IΔn)",
+      "content": "Rated Residual Operating Current (IΔn): Preferred values are 30 mA, 100 mA, and 300 mA.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC017-9.9",
+      "clause_number": "9.9",
+      "title": "Tripping Time",
+      "content": "Tripping Time: Maximum operating time at rated residual current 30 mA shall not exceed 300 ms (0.3 s).",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC017-9.11",
+      "clause_number": "9.11",
+      "title": "Dielectric Properties",
+      "content": "Dielectric Properties: Shall withstand test voltage of 2000 V AC for 1 min.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC017-0001",
+      "entity_type": "standard",
+      "name": "IS 12640 (Part 1) : 2016",
+      "status": "mandatory",
+      "original_value": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+      "value": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+      "provenance": {
+        "document_id": "DOC-017",
+        "source_id": "SRC-017",
+        "standard": "IS 12640 (Part 1) : 2016",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC017-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-017",
+        "source_id": "SRC-017",
+        "standard": "IS 12640 (Part 1) : 2016",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC017-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-017",
+        "source_id": "SRC-017",
+        "standard": "IS 12640 (Part 1) : 2016",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC017-0004",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-017",
+        "source_id": "SRC-017",
+        "standard": "IS 12640 (Part 1) : 2016",
+        "clause": "9.11",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "9.11",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC017-0005",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "2000 V AC",
+      "value": "2000 V AC",
+      "provenance": {
+        "document_id": "DOC-017",
+        "source_id": "SRC-017",
+        "standard": "IS 12640 (Part 1) : 2016",
+        "clause": "9.11",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "9.11",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 2000,
+        "unit": "V"
+      },
+      "unit": "V"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC017-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 12640 (Part 1) : 2016",
+      "document_id": "DOC-017",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC017-0002",
+      "subject": "Clause 5.3.1: Rated Residual Operating Current (IΔn)",
+      "predicate": "part_of",
+      "object": "IS 12640 (Part 1) : 2016",
+      "document_id": "DOC-017",
+      "source_clause": "5.3.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC017-0003",
+      "subject": "Clause 9.9: Tripping Time",
+      "predicate": "part_of",
+      "object": "IS 12640 (Part 1) : 2016",
+      "document_id": "DOC-017",
+      "source_clause": "9.9",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC017-0004",
+      "subject": "Clause 9.11: Dielectric Properties",
+      "predicate": "part_of",
+      "object": "IS 12640 (Part 1) : 2016",
+      "document_id": "DOC-017",
+      "source_clause": "9.11",
+      "source_pages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.632013+00:00",
+    "total_definitions": 0,
+    "total_entities": 5,
+    "total_requirements": 0,
+    "total_relationships": 4,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-017",
+    "document_id": "DOC-017",
+    "raw_file": null,
+    "sha256": null
+  }
+}

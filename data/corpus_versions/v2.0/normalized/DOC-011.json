@@ -1,0 +1,282 @@
+{
+  "document_id": "DOC-011",
+  "source_id": "SRC-011",
+  "document_metadata": {
+    "document_id": "DOC-011",
+    "source_id": "SRC-011",
+    "standard_id": "STD-CRO_AMENDMENT_2026",
+    "standard_number": "CRO Amendment 2026",
+    "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
+    "version": "2026 Amendment",
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": "data/raw/regulations/CRO_Amendment_2026.pdf",
+    "sha256": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2"
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_number": "1",
+      "title": "Short title and commencement",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "1. Short title and commencement.?\n(1) This Order may be called the Electronics and Information Technology Goods (Requirement of Compulsory\nRegistration) Amendment Order, 2026.\n(2) It shall come into force on the date of its publication in the Official Gazette.",
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "requirement",
+        "scope"
+      ],
+      "clause_id": "CLAUSE-DOC011-1",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "2",
+      "title": "Amendment in the Schedule",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "2. Amendment in the Schedule.?\nIn the Schedule to the Electronics and Information Technology Goods (Requirement of Compulsory\nRegistration) Order, 2021:\nFor the entry relating to 'Self-Ballasted LED Lamps for General Lighting Services', the corresponding standard\nIS 16102 (Part 1):2012 shall stand amended to include IS 16102 (Part 1):2026 (First Revision).\nThe concurrent implementation and transition guidelines issued by the Bureau of Indian Standards shall apply.",
+      "subclauses": [],
+      "semantic_type": "reference",
+      "semantic_tags": [
+        "reference",
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC011-2",
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC011-0001",
+      "entity_type": "standard",
+      "name": "CRO Amendment 2026",
+      "status": "mandatory",
+      "original_value": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
+      "value": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC011-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC011-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC011-0004",
+      "entity_type": "referenced_standard",
+      "name": "IS 16102 (Part 1):2012",
+      "status": "mandatory",
+      "original_value": "IS 16102 (Part 1):2012",
+      "value": "IS 16102 (Part 1):2012",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "2",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC011-0005",
+      "entity_type": "referenced_standard",
+      "name": "IS 16102 (Part 1):2026",
+      "status": "mandatory",
+      "original_value": "IS 16102 (Part 1):2026",
+      "value": "IS 16102 (Part 1):2026",
+      "provenance": {
+        "document_id": "DOC-011",
+        "source_id": "SRC-011",
+        "standard": "CRO Amendment 2026",
+        "clause": "2",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC011-0001",
+      "subject": "Clause 1: Short title and commencement",
+      "predicate": "part_of",
+      "object": "CRO Amendment 2026",
+      "document_id": "DOC-011",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC011-0002",
+      "subject": "Clause 2: Amendment in the Schedule",
+      "predicate": "part_of",
+      "object": "CRO Amendment 2026",
+      "document_id": "DOC-011",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC011-0003",
+      "subject": "CRO Amendment 2026",
+      "predicate": "references",
+      "object": "IS 16102 (Part 1):2012",
+      "document_id": "DOC-011",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "related_standard"
+    },
+    {
+      "relationship_id": "REL-DOC011-0004",
+      "subject": "CRO Amendment 2026",
+      "predicate": "references",
+      "object": "IS 16102 (Part 1):2026",
+      "document_id": "DOC-011",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "reference_type": "related_standard"
+    },
+    {
+      "relationship_id": "REL-DOC011-0005",
+      "subject": "CRO Amendment 2026",
+      "predicate": "amends",
+      "object": "Electronics and Information Technology Goods (Requirement for Compulsory Registration) Order, 2021",
+      "document_id": "DOC-011",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [
+    {
+      "reference_id": "REF-DOC011-0001",
+      "document_id": "DOC-011",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 16102 (Part 1):2012",
+      "target_location": null,
+      "reference_type": "related_standard",
+      "context_snippet": "for General Lighting Services', the corresponding standard IS 16102 (Part 1):2012 shall stand amended to include IS 16102 (Part 1):2026 (First Revision). The con"
+    },
+    {
+      "reference_id": "REF-DOC011-0002",
+      "document_id": "DOC-011",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ],
+      "target_standard": "IS 16102 (Part 1):2026",
+      "target_location": null,
+      "reference_type": "related_standard",
+      "context_snippet": "ndard IS 16102 (Part 1):2012 shall stand amended to include IS 16102 (Part 1):2026 (First Revision). The concurrent implementation and transition guidelines issue"
+    }
+  ],
+  "references": [
+    "IS 16102 (Part 1):2012",
+    "IS 16102 (Part 1):2026"
+  ],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T15:54:03.122392+00:00",
+    "total_definitions": 0,
+    "total_entities": 5,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 2,
+    "total_tables": 0,
+    "total_references": 2,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-011",
+    "document_id": "DOC-011",
+    "raw_file": "data/raw/regulations/CRO_Amendment_2026.pdf",
+    "sha256": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2"
+  }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "document_id": "DOC-001",
+    "source_id": "SRC-001",
+    "standard_number": "IS 16102 (Part 1) : 2012",
+    "verification_type": "manual_semantic_normalization_review",
+    "verified_by": "developer",
+    "status": "semantic_verified",
+    "checks": {
+      "metadata": "passed",
+      "clause_classification": "passed",
+      "definitions": "passed",
+      "entities": "passed",
+      "requirements": "passed",
+      "numeric_values": "passed",
+      "units": "passed",
+      "conditions": "passed",
+      "tables": "passed",
+      "references": "passed",
+      "under_consideration": "passed",
+      "provenance": "passed",
+      "question_based_validation": "passed",
+      "relationships": "passed",
+      "normative_language": "passed"
+    },
+    "questions_benchmark": {
+      "Q1_max_wattage": "60 W (Clause 1)",
+      "Q2_min_insulation_resistance": "4 MΩ (Clause 8.1.1)",
+      "Q3_humidity_conditions": "48 h, 91-95% RH, 25-35°C (Clause 8.1.1)",
+      "Q4_cap_temperature_rise": "120 K (Clause 10)",
+      "Q5_itq_sample_size": "25 lamps (Clause 15.2)",
+      "Q6_e17_cap_torque": "1.5 Nm (Table 3, Clause 9.1)",
+      "Q7_gx53_under_consideration": "3 Nm, status: under_consideration (Table 3, Clause 9.1)"
+    }
+  }
+]

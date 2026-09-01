@@ -1,0 +1,317 @@
+{
+  "document_id": "DOC-024",
+  "source_id": "SRC-024",
+  "document_metadata": {
+    "document_id": "DOC-024",
+    "source_id": "SRC-024",
+    "standard_id": "STD-IS_13428_2005",
+    "standard_number": "IS 13428 : 2005",
+    "title": "Packaged Natural Mineral Water - Specification (Second Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC024-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 13428 : 2005) covers and specifies requirements for Packaged Natural Mineral Water - Specification (Second Revision). It applies to packaged_natural_mineral_water under drinking_water category in the food_agriculture domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC024-4.1",
+      "clause_number": "4.1",
+      "title": "Natural Source",
+      "content": "Natural Source: Must originate from an underground natural water table or geologically protected spring.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC024-5.1",
+      "clause_number": "5.1",
+      "title": "pH Range",
+      "content": "pH Range: pH shall be between 6.5 and 8.5.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC024-5.2",
+      "clause_number": "5.2",
+      "title": "Total Dissolved Solids",
+      "content": "Total Dissolved Solids: Between 150 mg/L and 700 mg/L.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC024-6.1",
+      "clause_number": "6.1",
+      "title": "Microbiological Criteria",
+      "content": "Microbiological Criteria: E. coli and coliforms shall be absent in 250 mL.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC024-0001",
+      "entity_type": "standard",
+      "name": "IS 13428 : 2005",
+      "status": "mandatory",
+      "original_value": "Packaged Natural Mineral Water - Specification (Second Revision)",
+      "value": "Packaged Natural Mineral Water - Specification (Second Revision)",
+      "provenance": {
+        "document_id": "DOC-024",
+        "source_id": "SRC-024",
+        "standard": "IS 13428 : 2005",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC024-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-024",
+        "source_id": "SRC-024",
+        "standard": "IS 13428 : 2005",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC024-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-024",
+        "source_id": "SRC-024",
+        "standard": "IS 13428 : 2005",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC024-0004",
+      "entity_type": "value_and_unit",
+      "name": "chemical_concentration",
+      "status": "mandatory",
+      "original_value": "150 mg/L",
+      "value": "150 mg/L",
+      "provenance": {
+        "document_id": "DOC-024",
+        "source_id": "SRC-024",
+        "standard": "IS 13428 : 2005",
+        "clause": "5.2",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 150,
+        "unit": "mg/L"
+      },
+      "unit": "mg/L"
+    },
+    {
+      "entity_id": "ENT-DOC024-0005",
+      "entity_type": "test",
+      "name": "Microbiological Test",
+      "status": "mandatory",
+      "original_value": "Microbiological Test",
+      "value": "Microbiological Test",
+      "provenance": {
+        "document_id": "DOC-024",
+        "source_id": "SRC-024",
+        "standard": "IS 13428 : 2005",
+        "clause": "6.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "6.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC024-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 13428 : 2005",
+      "document_id": "DOC-024",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC024-0002",
+      "subject": "Clause 4.1: Natural Source",
+      "predicate": "part_of",
+      "object": "IS 13428 : 2005",
+      "document_id": "DOC-024",
+      "source_clause": "4.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC024-0003",
+      "subject": "Clause 5.1: pH Range",
+      "predicate": "part_of",
+      "object": "IS 13428 : 2005",
+      "document_id": "DOC-024",
+      "source_clause": "5.1",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC024-0004",
+      "subject": "Clause 5.2: Total Dissolved Solids",
+      "predicate": "part_of",
+      "object": "IS 13428 : 2005",
+      "document_id": "DOC-024",
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC024-0005",
+      "subject": "Clause 6.1: Microbiological Criteria",
+      "predicate": "part_of",
+      "object": "IS 13428 : 2005",
+      "document_id": "DOC-024",
+      "source_clause": "6.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.661647+00:00",
+    "total_definitions": 0,
+    "total_entities": 5,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-024",
+    "document_id": "DOC-024",
+    "raw_file": null,
+    "sha256": null
+  }
+}

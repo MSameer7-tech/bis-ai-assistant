@@ -14,6 +14,8 @@ class StructuredQuery(BaseModel):
     product: Optional[str] = Field(None, description="Identified product entity")
     grade: Optional[str] = Field(None, description="Identified material/product grade (e.g. Fe 500D, 53 Grade)")
     material: Optional[str] = Field(None, description="Identified material (e.g. steel, cement)")
+    subject_material: Optional[str] = Field(None, description="Identified subject material (e.g. titanium, steel, cement, kevlar, inconel)")
+    revision: Optional[str] = Field(None, description="Identified edition/revision (e.g. Fifth, Fourth)")
     parameter: Optional[str] = Field(None, description="Canonical parameter identifier")
     requested_unit: Optional[str] = Field(None, description="Requested physical unit")
     operator: Optional[str] = Field(None, description="Operator: minimum, maximum, equal, range")
@@ -149,6 +151,29 @@ class QueryParser:
         q_clean = query.strip()
         q_lower = q_clean.lower()
 
+        # 0. Check for broad single-word ambiguous queries
+        AMBIGUOUS_PATTERNS = [
+            r"^(?:which|what|is there a)\s+(?:indian\s+standard|bis\s+standard|standard|specification)?\s*(?:applies to|covers|governs|is for|for)\s+(pipes?|steel|fans?|cement|cables?|helmets?|boots?|masks?)\??$",
+            r"^(?:which|what)\s+standard\s+(?:applies to|covers|governs)\s+(pipes?|steel|fans?|cement|cables?|helmets?|boots?|masks?)\??$",
+            r"^(?:what is the (?:requirement|specification|standard) for)\s+(pipes?|steel|fans?|cement|cables?|helmets?|boots?|masks?)\??$"
+        ]
+        for ap in AMBIGUOUS_PATTERNS:
+            if re.search(ap, q_lower):
+                return StructuredQuery(
+                    raw_query=q_clean,
+                    intent="OUT_OF_SCOPE",
+                    as_of_date=as_of_date
+                )
+
+        # Clean Hinglish phrasing to extract underlying core subject
+        q_hinglish_cleaned = re.sub(r"\bke\s+liye\s+kaunsa\s+(?:bis|indian)?\s*standard\s+(?:hai|apply\s+hota\s+hai)\b", "", q_clean, flags=re.I)
+        q_hinglish_cleaned = re.sub(r"\bpar\s+kaunsa\s+(?:bis|indian)?\s*standard\s+apply\s+hota\s+hai\b", "", q_hinglish_cleaned, flags=re.I)
+        q_hinglish_cleaned = re.sub(r"\bka\s+standard\s+number\s+kya\s+hai\b", "", q_hinglish_cleaned, flags=re.I)
+        q_hinglish_cleaned = re.sub(r"\bka\s+minimum\s+yield\s+strength\s+kitna\s+hai\b", "minimum yield strength", q_hinglish_cleaned, flags=re.I).strip()
+        if q_hinglish_cleaned:
+            q_clean = q_hinglish_cleaned
+            q_lower = q_clean.lower()
+
         # 1. Check for Out-of-Scope Intent
         for term in OUT_OF_SCOPE_TERMS:
             if term in q_lower:
@@ -158,9 +183,16 @@ class QueryParser:
                     as_of_date=as_of_date
                 )
 
-        # 2. Extract Standard Number if present
-        std_match = re.search(r"\bIS\s+(\d+(?:\s*\([^)]+\))?(?:\s*:\s*\d{4})?)", q_clean, re.IGNORECASE)
-        standard_code = f"IS {std_match.group(1).strip()}" if std_match else None
+        # Extract explicit year from query if as_of_date is not specified
+        if as_of_date is None:
+            year_match = re.search(r":\s*(\d{4})\b|\bin\s+(\d{4})\b|\b(\d{4})\s+edition\b", q_clean, re.IGNORECASE)
+            if year_match:
+                extracted_year = next(g for g in year_match.groups() if g is not None)
+                as_of_date = f"{extracted_year}-12-31"
+
+        # 2. Extract Standard Number / Statutory Code if present
+        std_match = re.search(r"\b(IS\s+\d+(?:\s*\([^)]+\))?(?:\s*:\s*\d{4})?|CRO\s+(?:Amendment\s+)?\d+|QCO\s+\d+)", q_clean, re.IGNORECASE)
+        standard_code = std_match.group(1).strip() if std_match else None
 
         # 3. Extract Clause Number if present
         clause_match = re.search(r"\bclause\s+([0-9]+(?:\.[0-9]+)*)", q_clean, re.IGNORECASE)
@@ -168,15 +200,54 @@ class QueryParser:
 
         # 4. Extract Grade / Material
         grade = None
-        grade_match = re.search(r"\b(Fe\s*550D|Fe\s*550|Fe\s*500D|Fe\s*500|Fe\s*415D|Fe\s*415|Fe\s*600|53\s*Grade|43\s*Grade|33\s*Grade)\b", q_clean, re.IGNORECASE)
+        grade_match = re.search(r"\b(Fe\s*550D|Fe\s*550|Fe\s*500D|Fe\s*500|Fe\s*415D|Fe\s*415|Fe\s*600|53\s*Grade|43\s*Grade|33\s*Grade|Grade\s*5)\b", q_clean, re.IGNORECASE)
         if grade_match:
             grade = grade_match.group(1).replace("  ", " ")
 
         material = None
-        if "steel" in q_lower:
+        if ("steel" in q_lower or "rebar" in q_lower) and not any(w in q_lower for w in ["conduit", "sheet", "strip", "cylinder", "wire", "paint", "billet", "ingot"]):
             material = "steel"
-        elif "cement" in q_lower:
+        elif "cement" in q_lower and "paint" not in q_lower:
             material = "cement"
+
+        # 4b. Extract Subject Material & Unsupported Non-BIS Materials
+        UNSUPPORTED_MATERIALS = [
+            "carbon fiber reinforced polymer", "polymer composite", "ultra high molecular weight polyethylene",
+            "titanium", "ti-6al-4v", "kevlar", "aramid", "inconel", "inconel 718", "inconel 625",
+            "carbon fiber", "carbon-fibre", "cfrp", "graphene", "zirconium", "magnesium alloy", "az31",
+            "nickel alloy", "nickel superalloy", "tungsten carbide", "molybdenum", "molybdenum disilicide",
+            "cobalt chrome", "beryllium copper", "boron nitride", "nitinol", "uhmwpe", "aerogel", "gallium nitride"
+        ]
+
+        subject_material = None
+        for unsup in UNSUPPORTED_MATERIALS:
+            if unsup in q_lower:
+                subject_material = unsup.replace(" ", "_").replace("-", "_")
+                break
+
+        if not subject_material:
+            if "steel" in q_lower or "rebar" in q_lower or "tmt" in q_lower or (grade and "fe" in grade.lower()):
+                subject_material = "steel"
+            elif "cement" in q_lower or "opc" in q_lower or "ppc" in q_lower:
+                subject_material = "cement"
+            elif "copper" in q_lower:
+                subject_material = "copper"
+            elif "aluminum" in q_lower or "aluminium" in q_lower:
+                subject_material = "aluminum"
+            elif "rubber" in q_lower or "latex" in q_lower:
+                subject_material = "rubber"
+            elif "drinking water" in q_lower or "mineral water" in q_lower or "water" in q_lower:
+                subject_material = "water"
+            elif "pvc" in q_lower:
+                subject_material = "pvc"
+            elif "glass" in q_lower:
+                subject_material = "glass"
+
+        # 4c. Extract Revision
+        revision = None
+        rev_match = re.search(r"\b(first|second|third|fourth|fifth|sixth|seventh|eighth|1st|2nd|3rd|4th|5th|6th|7th|8th)\s+revision\b", q_clean, re.IGNORECASE)
+        if rev_match:
+            revision = rev_match.group(1).capitalize()
 
         # 5. Extract Exact Technical Identifiers (Caps, Codes)
         exact_identifiers = []
@@ -186,12 +257,21 @@ class QueryParser:
         if grade and grade not in exact_identifiers:
             exact_identifiers.append(grade)
 
-        # 6. Extract Product Entity
+        # 6. Extract Product Entity using Dynamic Product Resolver
         product = None
-        for pattern, prod_name in PRODUCT_PATTERNS:
-            if re.search(pattern, q_lower):
-                product = prod_name
-                break
+        try:
+            from ai.retrieval.product_resolver import resolve_product
+            resolved = resolve_product(q_clean)
+            if resolved:
+                product = resolved["normalized_name"]
+        except Exception:
+            pass
+
+        if not product:
+            for pattern, prod_name in PRODUCT_PATTERNS:
+                if re.search(pattern, q_lower):
+                    product = prod_name
+                    break
 
         # 7. Extract Operator
         operator = None
@@ -222,7 +302,9 @@ class QueryParser:
             requested_unit = unit_match.group(1)
 
         # 10. Determine Overall Intent
-        if any(q_lower.startswith(w) for w in ["which bis standard", "which standard", "what standard", "which indian standard"]):
+        if any(w in q_lower for w in ["is bis certification mandatory", "require an isi mark", "under indian qco", "mandatory certification", "isi mark mandatory", "is certification mandatory", "require isi mark", "requires an isi mark", "covered under qco", "mandatory for"]):
+            intent = "CERTIFICATION_QUERY"
+        elif any(w in q_lower for w in ["kaunsa bis standard", "kaunsa standard", "kaunsa indian standard", "ke liye kaunsa", "par kaunsa", "which bis standard", "which standard", "what standard", "which indian standard", "what bis standard", "what is the applicable indian standard", "which is standard"]):
             intent = "STANDARD_IDENTIFICATION"
         elif canonical_param is not None:
             intent = "PARAMETER_QUERY"
@@ -241,6 +323,8 @@ class QueryParser:
             product=product,
             grade=grade,
             material=material,
+            subject_material=subject_material,
+            revision=revision,
             parameter=canonical_param,
             requested_unit=requested_unit,
             operator=operator,

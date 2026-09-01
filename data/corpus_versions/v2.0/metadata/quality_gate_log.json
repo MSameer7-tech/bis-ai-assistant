@@ -1,0 +1,542 @@
+{
+  "audited_at": "2026-08-30T19:54:52.178898+00:00",
+  "total_documents": 29,
+  "verified": 29,
+  "rejected": 0,
+  "manual_review_queue": [
+    {
+      "document_id": "DOC-001",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+      "risk_flags": [
+        "CONTAINS_TABLES",
+        "PROVISIONAL_REQUIREMENTS"
+      ]
+    },
+    {
+      "document_id": "DOC-002",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements",
+      "risk_flags": [
+        "CONTAINS_TABLES"
+      ]
+    },
+    {
+      "document_id": "DOC-011",
+      "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
+      "risk_flags": [
+        "AMENDMENT"
+      ]
+    },
+    {
+      "document_id": "DOC-012",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements (First Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-013",
+      "title": "Electric Ceiling Fans - Specification (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ]
+    },
+    {
+      "document_id": "DOC-014",
+      "title": "Specification for Table Type Electric Fans and Regulators",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-015",
+      "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-016",
+      "title": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-017",
+      "title": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-018",
+      "title": "Ordinary Portland Cement - Specification (Sixth Revision)",
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ]
+    },
+    {
+      "document_id": "DOC-019",
+      "title": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based (Third Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-020",
+      "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ]
+    },
+    {
+      "document_id": "DOC-021",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel - Specification (Seventh Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-022",
+      "title": "Pressed Ceramic Tiles - Specification (First Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-023",
+      "title": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water) - Specification (Third Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-024",
+      "title": "Packaged Natural Mineral Water - Specification (Second Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-025",
+      "title": "Milk Powder - Specification (Fifth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-026",
+      "title": "Protective Helmets for Motorcycle Riders - Specification (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-027",
+      "title": "Domestic Pressure Cookers - Specification (Fifth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-028",
+      "title": "Personal Protective Equipment - Safety Footwear (Second Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-030",
+      "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-031",
+      "title": "Information Technology Equipment - Safety - Part 1: General Requirements (Second Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-032",
+      "title": "Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies - Specification (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-033",
+      "title": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification (First Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-034",
+      "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-035",
+      "title": "Electric Ceiling Fans - Specification (Fifth Revision - Energy Star Mandatory)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    }
+  ],
+  "document_reports": [
+    {
+      "document_id": "DOC-001",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "CONTAINS_TABLES",
+        "PROVISIONAL_REQUIREMENTS"
+      ],
+      "total_clauses": 35,
+      "total_entities": 108,
+      "total_chunks": 129
+    },
+    {
+      "document_id": "DOC-007",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [],
+      "total_clauses": 21,
+      "total_entities": 45,
+      "total_chunks": 61
+    },
+    {
+      "document_id": "DOC-002",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "CONTAINS_TABLES"
+      ],
+      "total_clauses": 22,
+      "total_entities": 22,
+      "total_chunks": 153
+    },
+    {
+      "document_id": "DOC-010",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [],
+      "total_clauses": 5,
+      "total_entities": 10,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-011",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "AMENDMENT"
+      ],
+      "total_clauses": 2,
+      "total_entities": 5,
+      "total_chunks": 2
+    },
+    {
+      "document_id": "DOC-012",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 11,
+      "total_entities": 27,
+      "total_chunks": 28
+    },
+    {
+      "document_id": "DOC-013",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ],
+      "total_clauses": 6,
+      "total_entities": 11,
+      "total_chunks": 7
+    },
+    {
+      "document_id": "DOC-014",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 4,
+      "total_entities": 8,
+      "total_chunks": 4
+    },
+    {
+      "document_id": "DOC-015",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 6,
+      "total_entities": 5,
+      "total_chunks": 6
+    },
+    {
+      "document_id": "DOC-016",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 8,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-017",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 4,
+      "total_entities": 5,
+      "total_chunks": 4
+    },
+    {
+      "document_id": "DOC-018",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ],
+      "total_clauses": 6,
+      "total_entities": 7,
+      "total_chunks": 7
+    },
+    {
+      "document_id": "DOC-019",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 6,
+      "total_entities": 7,
+      "total_chunks": 6
+    },
+    {
+      "document_id": "DOC-020",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ],
+      "total_clauses": 7,
+      "total_entities": 10,
+      "total_chunks": 8
+    },
+    {
+      "document_id": "DOC-021",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 4,
+      "total_entities": 10,
+      "total_chunks": 4
+    },
+    {
+      "document_id": "DOC-022",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 5,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-023",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 7,
+      "total_entities": 7,
+      "total_chunks": 7
+    },
+    {
+      "document_id": "DOC-024",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 5,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-025",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 6,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-026",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 7,
+      "total_entities": 8,
+      "total_chunks": 7
+    },
+    {
+      "document_id": "DOC-027",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 7,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-028",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 4,
+      "total_entities": 5,
+      "total_chunks": 4
+    },
+    {
+      "document_id": "DOC-029",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [],
+      "total_clauses": 7,
+      "total_entities": 7,
+      "total_chunks": 7
+    },
+    {
+      "document_id": "DOC-030",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 8,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-031",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 6,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-032",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 10,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-033",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 4,
+      "total_entities": 6,
+      "total_chunks": 4
+    },
+    {
+      "document_id": "DOC-034",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 9,
+      "total_chunks": 5
+    },
+    {
+      "document_id": "DOC-035",
+      "passed": true,
+      "state": "CHUNKING_VERIFIED",
+      "issues": [],
+      "risk_flags": [
+        "NEW_REVISION"
+      ],
+      "total_clauses": 5,
+      "total_entities": 8,
+      "total_chunks": 5
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIS AI Technical Assistant | Grounded Indian Standards Intelligence</title>
+    <title>BIS AI Technical Assistant | Production Grounded Standards Intelligence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,15 +16,15 @@
             <div class="brand">
                 <div class="logo-badge">BIS</div>
                 <div class="brand-info">
-                    <h1>BIS AI Technical Assistant</h1>
-                    <span class="subtext">Bureau of Indian Standards Grounded RAG Intelligence</span>
+                    <h1>BIS AI Technical Assistant <span class="version-badge">v2.0 Production</span></h1>
+                    <span class="subtext">Bureau of Indian Standards Grounded RAG & Provenance Engine</span>
                 </div>
             </div>
             <div class="stats-bar" id="statsBar">
-                <div class="stat-pill"><span class="pill-dot"></span> <strong>116</strong> Documents</div>
-                <div class="stat-pill"><span class="pill-dot"></span> <strong>1,961</strong> Chunks</div>
-                <div class="stat-pill"><span class="pill-dot"></span> <strong>7</strong> Product Domains</div>
-                <div class="stat-pill badge-green"><span class="pill-dot green"></span> <strong>100%</strong> Grounded</div>
+                <div class="stat-pill"><span class="pill-dot"></span> <strong>663</strong> Entities</div>
+                <div class="stat-pill"><span class="pill-dot"></span> <strong>2,266</strong> KG Edges</div>
+                <div class="stat-pill"><span class="pill-dot"></span> <strong>559</strong> Products</div>
+                <div class="stat-pill badge-green"><span class="pill-dot green"></span> <strong>100%</strong> Zero-Hallucination</div>
             </div>
         </header>
 
@@ -35,8 +35,8 @@
                 <!-- Search & Controls Card -->
                 <div class="glass-card query-card">
                     <div class="card-header">
-                        <h2>🔍 Ask BIS Technical Compliance</h2>
-                        <span class="badge-tag">Zero-Hallucination Verified</span>
+                        <h2>🔍 Ask BIS Technical Compliance & Standards</h2>
+                        <span class="badge-tag">Deterministic Grounding Enforced</span>
                     </div>
 
                     <form id="queryForm" class="query-form">
@@ -44,7 +44,7 @@
                             <textarea 
                                 id="queryInput" 
                                 class="query-textarea" 
-                                placeholder="E.g., What is the minimum insulation resistance required for self-ballasted LED lamps under IS 16102?"
+                                placeholder="E.g., What is the minimum yield strength for Fe 500D rebar under IS 1786?"
                                 rows="3"
                                 required
                             ></textarea>
@@ -74,7 +74,7 @@
                             </div>
 
                             <button type="submit" id="submitBtn" class="btn-primary">
-                                <span id="btnText">Query Standard</span>
+                                <span id="btnText">Query Assistant</span>
                                 <div id="btnSpinner" class="spinner hidden"></div>
                             </button>
                         </div>
@@ -96,10 +96,20 @@
                     <div class="result-top-bar">
                         <div class="status-indicator">
                             <span id="groundingBadge" class="badge-success">✅ Grounded & Verified</span>
+                            <span id="intentBadge" class="badge-neutral">Intent: Loading...</span>
                             <span id="temporalBadge" class="badge-neutral">Current Standard</span>
                         </div>
                         <div class="confidence-indicator">
-                            <span>Confidence: <strong id="confidenceVal">1.0</strong></span>
+                            <span>Evidence Confidence: <strong id="confidenceVal">1.00</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Resolved Entity Banner -->
+                    <div id="entityBanner" class="entity-banner hidden">
+                        <span class="entity-icon">🏷️</span>
+                        <div class="entity-details">
+                            <strong id="entityTitle">IS 1786:2024</strong>
+                            <span id="entityMeta">Construction & Civil | Mandatory ISI Mark Compulsory</span>
                         </div>
                     </div>
 
@@ -109,21 +119,46 @@
                         <div id="answerText" class="answer-text markdown-body"></div>
                     </div>
 
+                    <!-- Deterministic Numerical Verification Table -->
+                    <div id="numericalSection" class="numerical-section hidden">
+                        <h4>⚖️ Numerical Safety & Parameter Verification</h4>
+                        <div class="numerical-table-container">
+                            <table class="numerical-table">
+                                <thead>
+                                    <tr>
+                                        <th>Parameter</th>
+                                        <th>Claimed Value</th>
+                                        <th>Authoritative Source</th>
+                                        <th>Unit</th>
+                                        <th>Audit Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="numericalTableBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Atomic Claim Grounding Breakdown -->
+                    <div id="claimsSection" class="claims-section hidden">
+                        <h4>🔍 Atomic Claim-by-Claim Evidence Entailment</h4>
+                        <div id="claimsList" class="claims-list"></div>
+                    </div>
+
                     <!-- Verified Citations -->
                     <div class="citations-section">
-                        <h4>📚 Verified Citations & Statutory Provenance</h4>
+                        <h4>📚 Authoritative Citations & Statutory Provenance</h4>
                         <div id="citationsList" class="citations-grid"></div>
                     </div>
 
                     <!-- Guardrail Verdict -->
                     <div class="guardrail-section">
-                        <h4>🛡️ Quality Guardrail Verification</h4>
+                        <h4>🛡️ Safety Guardrail Verdict</h4>
                         <div id="guardrailDetails" class="guardrail-box"></div>
                     </div>
 
                     <!-- Evidence Inspector (Accordion) -->
                     <details class="evidence-accordion">
-                        <summary>🔍 Inspect Retrieved Raw Evidence Chunks (<span id="evidenceCount">0</span> Chunks)</summary>
+                        <summary>📑 Inspect Retrieved Raw Evidence Chunks (<span id="evidenceCount">0</span> Chunks)</summary>
                         <div id="evidenceList" class="evidence-list"></div>
                     </details>
                 </div>
@@ -133,8 +168,8 @@
             <aside class="sidebar-section">
                 <div class="glass-card catalog-card">
                     <div class="catalog-header">
-                        <h3>📖 7 Product Domains Catalog</h3>
-                        <span class="badge-count" id="catalogCount">110 Standards</span>
+                        <h3>📖 BIS Universe Catalog</h3>
+                        <span class="badge-count" id="catalogCount">663 Entities</span>
                     </div>
 
                     <div class="domain-filter-tabs" id="domainTabs">
@@ -149,7 +184,7 @@
                     </div>
 
                     <div class="search-catalog-box">
-                        <input type="text" id="catalogSearch" placeholder="Search standard e.g. IS 1786, cement..." class="select-input">
+                        <input type="text" id="catalogSearch" placeholder="Search standard e.g. IS 1786, TMT bars, cement..." class="select-input">
                     </div>
 
                     <div class="standards-list" id="standardsList">

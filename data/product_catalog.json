@@ -1,0 +1,5101 @@
+{
+  "products": [
+    {
+      "product_id": "PRD-000001",
+      "name": "Electric Ceiling Fans",
+      "aliases": [
+        "ceiling fan",
+        "ceiling fans",
+        "electric ceiling fan",
+        "bldc fan",
+        "bldc ceiling fan",
+        "energy efficient fan",
+        "electric ceiling fans \u2014 specification",
+        "energy efficient bldc)"
+      ],
+      "standard_number": "IS 374",
+      "document_id": "DOC-035",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000007",
+      "name": "Table Type Electric Fans",
+      "aliases": [
+        "desk fan"
+      ],
+      "standard_number": "IS 555",
+      "document_id": "DOC-014",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000011",
+      "name": "Propeller Type AC Ventilating and Exhaust Fans",
+      "aliases": [
+        "exhaust fan",
+        "exhaust fans",
+        "ventilating fan",
+        "propeller type ac ventilating fans"
+      ],
+      "standard_number": "IS 2312",
+      "document_id": "DOC-036",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000015",
+      "name": "Safety of Household Electrical Appliances - General",
+      "aliases": [
+        "electrical safety",
+        "household appliances",
+        "domestic appliances"
+      ],
+      "standard_number": "IS 302 (Part 1)",
+      "document_id": "DOC-015",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000019",
+      "name": "Electric Irons",
+      "aliases": [
+        "electric iron",
+        "dry iron",
+        "steam iron",
+        "electric irons \u2014 specification"
+      ],
+      "standard_number": "IS 366",
+      "document_id": "DOC-037",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000023",
+      "name": "Stationary Storage Type Electric Water Heaters",
+      "aliases": [
+        "water heater",
+        "geyser",
+        "electric water heater",
+        "stationary storage water heater"
+      ],
+      "standard_number": "IS 2082",
+      "document_id": "DOC-038",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000027",
+      "name": "Electric Immersion Water Heaters",
+      "aliases": [
+        "immersion heater",
+        "water immersion heater",
+        "electric immersion heater",
+        "electric immersion water heaters \u2014 specification"
+      ],
+      "standard_number": "IS 368",
+      "document_id": "DOC-039",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000030",
+      "name": "PVC Insulated Cables for Working Voltages up to 1100V",
+      "aliases": [
+        "pvc wire",
+        "pvc insulated cable",
+        "domestic wiring",
+        "building wire",
+        "pvc cables"
+      ],
+      "standard_number": "IS 694",
+      "document_id": "DOC-016",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000035",
+      "name": "Crosslinked Polyethylene Insulated Cables for Voltages up to 1100V",
+      "aliases": [
+        "xlpe cable",
+        "cross linked polyethylene cable",
+        "power cable xlpe"
+      ],
+      "standard_number": "IS 7098 (Part 1)",
+      "document_id": "DOC-040",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000038",
+      "name": "Aluminium Conductors for Overhead Transmission (ACSR)",
+      "aliases": [
+        "acsr conductor",
+        "overhead conductor",
+        "aluminum conductor",
+        "transmission wire"
+      ],
+      "standard_number": "IS 398 (Part 2)",
+      "document_id": "DOC-041",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "aluminum"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000042",
+      "name": "Switches for Domestic and Similar Fixed Electrical Installations",
+      "aliases": [
+        "light switch",
+        "domestic switch",
+        "modular switch",
+        "switches for domestic installations"
+      ],
+      "standard_number": "IS 3854",
+      "document_id": "DOC-042",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000046",
+      "name": "Plugs and Socket-Outlets for Domestic and Similar Purposes",
+      "aliases": [
+        "plug and socket",
+        "3 pin plug",
+        "power socket",
+        "plugs and socket outlets"
+      ],
+      "standard_number": "IS 1293",
+      "document_id": "DOC-043",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000050",
+      "name": "Rigid Steel Conduits for Electrical Wiring",
+      "aliases": [
+        "electrical conduit",
+        "steel conduit",
+        "metal conduit for electrical wiring"
+      ],
+      "standard_number": "IS 1653",
+      "document_id": "DOC-044",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000053",
+      "name": "Residual Current Operated Circuit-Breakers without Integral Overcurrent Protection (RCCB)",
+      "aliases": [
+        "residual current circuit breaker",
+        "earth leakage circuit breaker"
+      ],
+      "standard_number": "IS 12640 (Part 1)",
+      "document_id": "DOC-017",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000057",
+      "name": "Electric Kettles and Liquid Heaters",
+      "aliases": [
+        "electric kettle",
+        "kettle",
+        "tea maker"
+      ],
+      "standard_number": "IS 302 (Part 2/Sec 15)",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000060",
+      "name": "Room Air Conditioners",
+      "aliases": [
+        "air conditioner",
+        "room ac",
+        "split ac",
+        "window ac"
+      ],
+      "standard_number": "IS 1391 (Part 1)",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000064",
+      "name": "Frost-Free Refrigerating Appliances",
+      "aliases": [
+        "refrigerator",
+        "frost free refrigerator",
+        "direct cool fridge"
+      ],
+      "standard_number": "IS 15750",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000067",
+      "name": "Self-Ballasted LED Lamps for General Lighting \u2014 Safety",
+      "aliases": [
+        "led bulb",
+        "led bulbs",
+        "self ballasted led lamp",
+        "self ballasted led lamps",
+        "self-ballasted led lamp",
+        "self-ballasted led lamps",
+        "led lamp",
+        "led lamps",
+        "led light bulb",
+        "b22 led bulb",
+        "e27 led bulb"
+      ],
+      "standard_number": "IS 16102 (Part 1)",
+      "document_id": "DOC-012",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000078",
+      "name": "Self-Ballasted LED Lamps for General Lighting \u2014 Performance",
+      "aliases": [
+        "led bulb performance",
+        "led luminous flux",
+        "led efficacy",
+        "led lamp performance",
+        "performance requirements for self ballasted led lamps",
+        "performance of self-ballasted led lamps"
+      ],
+      "standard_number": "IS 16102 (Part 2)",
+      "document_id": "DOC-002",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000084",
+      "name": "Luminaires \u2014 Particular Requirements: Fixed General Purpose Luminaires",
+      "aliases": [
+        "led luminaire",
+        "fixed led luminaire",
+        "led batten",
+        "led downlight",
+        "led panel light"
+      ],
+      "standard_number": "IS 10322 (Part 5/Sec 1)",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000089",
+      "name": "Lamp Controlgear \u2014 AC/DC Supplied Electronic Controlgear for LED Modules",
+      "aliases": [
+        "led driver",
+        "electronic controlgear for led",
+        "led power supply"
+      ],
+      "standard_number": "IS 15885 (Part 2/Sec 13)",
+      "document_id": "DOC-007",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000092",
+      "name": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes (Lithium Systems)",
+      "aliases": [
+        "lithium ion battery",
+        "lithium ion batteries",
+        "lithium-ion battery",
+        "lithium-ion batteries",
+        "li-ion battery",
+        "li ion battery",
+        "lithium battery",
+        "lithium batteries",
+        "secondary lithium battery",
+        "secondary lithium batteries",
+        "secondary lithium cell",
+        "secondary lithium cells",
+        "secondary lithium",
+        "mobile phone battery",
+        "laptop battery",
+        "power bank battery",
+        "lithium pouch cell",
+        "18650 cell"
+      ],
+      "standard_number": "IS 16046 (Part 2)",
+      "document_id": "DOC-029",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000110",
+      "name": "Secondary Cells and Batteries Containing Alkaline Electrolytes (Nickel Systems)",
+      "aliases": [
+        "nickel battery",
+        "nickel metal hydride battery",
+        "nimh cell",
+        "nickel cadmium battery"
+      ],
+      "standard_number": "IS 16046 (Part 1)",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000114",
+      "name": "Compulsory Registration Order (CRO / CRS)",
+      "aliases": [
+        "compulsory registration scheme",
+        "cro order",
+        "meity cro"
+      ],
+      "standard_number": "IS 13252 (Part 1)",
+      "document_id": "DOC-031",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000120",
+      "name": "Information Technology Equipment \u2014 Safety",
+      "aliases": [
+        "laptop",
+        "desktop computer",
+        "it safety",
+        "computer safety",
+        "server"
+      ],
+      "standard_number": "IS 13252 (Part 1)",
+      "document_id": "DOC-031",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000126",
+      "name": "Audio, Video and Similar Electronic Apparatus \u2014 Safety Requirements",
+      "aliases": [
+        "audio video equipment",
+        "television",
+        "smart tv",
+        "amplifier",
+        "music system",
+        "audio, video and similar electronic apparatus \u2014 safety requirements"
+      ],
+      "standard_number": "IS 616",
+      "document_id": "DOC-030",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000131",
+      "name": "AC Static Direct Connected Watt-Hour Smart Meters",
+      "aliases": [
+        "smart meter",
+        "ac static prepaid electricity meter",
+        "prepaid energy meter"
+      ],
+      "standard_number": "IS 16444 (Part 1)",
+      "document_id": "DOC-045",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000134",
+      "name": "Electronic Security & IT Surveillance Systems",
+      "aliases": [
+        "cctv camera",
+        "security camera",
+        "surveillance camera",
+        "ip camera"
+      ],
+      "standard_number": "IS 13252 (Part 1)",
+      "document_id": "DOC-031",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000138",
+      "name": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement",
+      "aliases": [
+        "tmt reinforcement bars",
+        "tmt reinforcement bar",
+        "tmt bar",
+        "tmt bars",
+        "high strength deformed steel bars",
+        "reinforcement steel bars",
+        "reinforcement steel",
+        "rebar",
+        "rebars",
+        "concrete reinforcement wire",
+        "fe 500d",
+        "fe 550d",
+        "fe 600",
+        "high strength deformed steel bars and wires for concrete reinforcement \u2014 specification"
+      ],
+      "standard_number": "IS 1786",
+      "document_id": "DOC-034",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel",
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000151",
+      "name": "Hot Rolled Medium and High Tensile Structural Steel",
+      "aliases": [
+        "mild steel plate",
+        "steel section",
+        "structural steel standard",
+        "e250 steel",
+        "e350 steel",
+        "hot rolled medium and high tensile structural steel \u2014 specification"
+      ],
+      "standard_number": "IS 2062",
+      "document_id": "DOC-021",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000157",
+      "name": "Carbon Steel Cast Billet Ingots, Billets, Blooms and Slabs for Re-rolling",
+      "aliases": [
+        "carbon steel billet",
+        "steel billet for re-rolling",
+        "bloom"
+      ],
+      "standard_number": "IS 2830",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000161",
+      "name": "Cold Reduced Carbon Steel Sheet and Strip",
+      "aliases": [
+        "cold rolled steel sheet",
+        "cr sheet",
+        "cr coil"
+      ],
+      "standard_number": "IS 513 (Part 1)",
+      "document_id": "DOC-101",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000164",
+      "name": "Hot Rolled Carbon Steel Sheet and Strip",
+      "aliases": [
+        "hot rolled steel sheet",
+        "hr sheet",
+        "hr plate",
+        "hr coil",
+        "hot rolled carbon steel sheet and strip \u2014 specification"
+      ],
+      "standard_number": "IS 1079",
+      "document_id": "DOC-102",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000168",
+      "name": "Covered Electrodes for Manual Metal Arc Welding",
+      "aliases": [
+        "welding electrode",
+        "covered electrode for manual metal arc welding"
+      ],
+      "standard_number": "IS 814",
+      "document_id": "DOC-103",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000170",
+      "name": "Ordinary Portland Cement (33, 43 and 53 Grades)",
+      "aliases": [
+        "opc cement",
+        "opc 43",
+        "opc 53",
+        "opc 33"
+      ],
+      "standard_number": "IS 269",
+      "document_id": "DOC-018",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000175",
+      "name": "Portland Pozzolana Cement \u2014 Part 1: Fly Ash Based",
+      "aliases": [
+        "ppc cement",
+        "fly ash cement",
+        "pozzolana cement flyash based"
+      ],
+      "standard_number": "IS 1489 (Part 1)",
+      "document_id": "DOC-019",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000179",
+      "name": "Portland Pozzolana Cement \u2014 Part 2: Calcined Clay Based",
+      "aliases": [
+        "calcined clay cement",
+        "ppc calcined clay",
+        "pozzolana cement calcined clay"
+      ],
+      "standard_number": "IS 1489 (Part 2)",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000182",
+      "name": "Portland Slag Cement",
+      "aliases": [
+        "psc cement",
+        "slag cement",
+        "portland slag cement \u2014 specification"
+      ],
+      "standard_number": "IS 455",
+      "document_id": "DOC-068",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000185",
+      "name": "Code of Practice for Plain and Reinforced Concrete",
+      "aliases": [
+        "plain concrete",
+        "reinforced concrete",
+        "rcc code",
+        "concrete code of practice"
+      ],
+      "standard_number": "IS 456",
+      "document_id": "DOC-070",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000189",
+      "name": "Coarse and Fine Aggregate for Concrete",
+      "aliases": [
+        "coarse aggregate",
+        "fine aggregate",
+        "concrete aggregate",
+        "sand for concrete",
+        "crushed stone",
+        "coarse and fine aggregate for concrete \u2014 specification"
+      ],
+      "standard_number": "IS 383",
+      "document_id": "DOC-069",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000194",
+      "name": "General Construction in Steel \u2014 Code of Practice",
+      "aliases": [
+        "steel structure code",
+        "steel design code"
+      ],
+      "standard_number": "IS 800",
+      "document_id": "DOC-071",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000197",
+      "name": "Common Burnt Clay Building Bricks",
+      "aliases": [
+        "common burnt clay bricks",
+        "red bricks",
+        "building bricks",
+        "common burnt clay building bricks \u2014 specification"
+      ],
+      "standard_number": "IS 1077",
+      "document_id": "DOC-072",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000200",
+      "name": "Concrete Masonry Units \u2014 Hollow and Solid Concrete Blocks",
+      "aliases": [
+        "concrete block",
+        "hollow concrete block",
+        "solid concrete block"
+      ],
+      "standard_number": "IS 2185 (Part 1)",
+      "document_id": "DOC-073",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000203",
+      "name": "Precast Concrete Paving Blocks",
+      "aliases": [
+        "interlocking concrete paver block",
+        "paver block",
+        "paving block"
+      ],
+      "standard_number": "IS 15658",
+      "document_id": "DOC-074",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000206",
+      "name": "Unplasticized PVC Pipes for Potable Water Supplies",
+      "aliases": [
+        "upvc pipe",
+        "pvc water pipe",
+        "potable water supply pipe"
+      ],
+      "standard_number": "IS 4985",
+      "document_id": "DOC-032",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc",
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000209",
+      "name": "Pressed Ceramic Tiles",
+      "aliases": [
+        "ceramic tile",
+        "vitrified tile",
+        "floor tile",
+        "wall tile"
+      ],
+      "standard_number": "IS 15622",
+      "document_id": "DOC-022",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000213",
+      "name": "Adhesives for Use with Ceramic Tiles and Mosaics",
+      "aliases": [
+        "tile adhesive",
+        "ceramic tile adhesive",
+        "tile grout"
+      ],
+      "standard_number": "IS 15477",
+      "document_id": "DOC-033",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000216",
+      "name": "Industrial Safety Helmets",
+      "aliases": [
+        "industrial safety helmet",
+        "industrial helmet",
+        "industrial helmets",
+        "hard hat",
+        "hard hats",
+        "safety helmet",
+        "safety helmets",
+        "industrial safety headgear",
+        "industrial safety helmets \u2014 specification"
+      ],
+      "standard_number": "IS 2925",
+      "document_id": "DOC-106",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000225",
+      "name": "Protective Helmets for Two Wheeler Riders",
+      "aliases": [
+        "two wheeler helmet",
+        "two wheeler helmets",
+        "motorcycle helmet",
+        "motorcycle helmets",
+        "protective helmet for two wheeler riders",
+        "two wheeler headgear",
+        "rider helmet",
+        "crash helmet",
+        "helmet",
+        "protective helmets for two wheeler riders \u2014 specification"
+      ],
+      "standard_number": "IS 4151",
+      "document_id": "DOC-026",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000235",
+      "name": "Personal Protective Equipment \u2014 Safety Belts and Harnesses",
+      "aliases": [
+        "full body harness",
+        "full body harnesses",
+        "safety harness",
+        "safety harnesses",
+        "safety belt",
+        "safety belts",
+        "fall arrest harness",
+        "fall protection belt",
+        "safety belts and harnesses"
+      ],
+      "standard_number": "IS 3521 (Part 1)",
+      "document_id": "DOC-107",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000244",
+      "name": "Personal Protective Equipment \u2014 Part 2: Safety Footwear",
+      "aliases": [
+        "safety footwear",
+        "safety shoes",
+        "steel toe boot",
+        "work boots",
+        "protective footwear",
+        "industrial safety shoes"
+      ],
+      "standard_number": "IS 15298 (Part 2)",
+      "document_id": "DOC-028",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000250",
+      "name": "Industrial Safety Gloves \u2014 Leather and Cotton Gloves",
+      "aliases": [
+        "protective gloves",
+        "leather safety gloves",
+        "work gloves",
+        "industrial gloves"
+      ],
+      "standard_number": "IS 6994 (Part 1)",
+      "document_id": "DOC-108",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000254",
+      "name": "Surgical Rubber Gloves",
+      "aliases": [
+        "surgical gloves",
+        "medical gloves",
+        "rubber examination gloves"
+      ],
+      "standard_number": "IS 13422",
+      "document_id": "DOC-104",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "rubber"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000257",
+      "name": "Medical Face Masks",
+      "aliases": [
+        "medical face mask",
+        "surgical mask",
+        "3 ply mask",
+        "medical face masks \u2014 specification"
+      ],
+      "standard_number": "IS 16289",
+      "document_id": "DOC-110",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000260",
+      "name": "Respiratory Protective Devices \u2014 Filtering Half Masks to Protect Against Particles",
+      "aliases": [
+        "respiratory mask",
+        "n95 mask",
+        "particulate filtering respirator",
+        "dust mask",
+        "filtering half masks to protect against particles",
+        "respiratory protective devices \u2014 filtering half masks to protect against particles",
+        "respiratory protective devices \u2014 filtering half masks to protect against particles \u2014 specification"
+      ],
+      "standard_number": "IS 9473",
+      "document_id": "DOC-105",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000264",
+      "name": "Personal Protective Equipment \u2014 Protective Coveralls for Healthcare",
+      "aliases": [
+        "coverall",
+        "ppe coverall",
+        "protective clothing against infectious agents"
+      ],
+      "standard_number": "IS 17423",
+      "document_id": "DOC-111",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000267",
+      "name": "Domestic Gas Stoves for Use with Liquefied Petroleum Gases",
+      "aliases": [
+        "gas stove",
+        "lpg stove",
+        "gas cookstove",
+        "domestic gas stove",
+        "lpg cookstove",
+        "burner gas stove",
+        "domestic gas stoves for use with liquefied petroleum gases \u2014 specification"
+      ],
+      "standard_number": "IS 4246",
+      "document_id": "DOC-090",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000273",
+      "name": "Domestic Pressure Cookers",
+      "aliases": [
+        "pressure cooker",
+        "domestic pressure cooker",
+        "aluminium pressure cooker",
+        "stainless steel pressure cooker",
+        "domestic pressure cookers \u2014 specification"
+      ],
+      "standard_number": "IS 2347",
+      "document_id": "DOC-027",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000277",
+      "name": "Welded Low Carbon Steel Cylinders for Low Pressure Liquefiable Gases (LPG)",
+      "aliases": [
+        "lpg cylinder",
+        "cooking gas cylinder",
+        "domestic lpg cylinder"
+      ],
+      "standard_number": "IS 3196 (Part 1)",
+      "document_id": "DOC-061",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000280",
+      "name": "Low Pressure Regulators for Use with Liquefied Petroleum Gas Mixtures",
+      "aliases": [
+        "lpg regulator",
+        "gas regulator",
+        "low pressure regulator for lpg"
+      ],
+      "standard_number": "IS 9798",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000283",
+      "name": "Rubber Hoses for Liquefied Petroleum Gas (LPG)",
+      "aliases": [
+        "lpg hose",
+        "gas rubber hose",
+        "rubber hose for lpg"
+      ],
+      "standard_number": "IS 9573",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "rubber"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000286",
+      "name": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water)",
+      "aliases": [
+        "bottled drinking water plants",
+        "bottled drinking water plant",
+        "packaged drinking water other than packaged natural mineral water",
+        "bottled water",
+        "bottled drinking water",
+        "packaged water",
+        "mineral water",
+        "packaged drinking water  \u2014 specification"
+      ],
+      "standard_number": "IS 14543",
+      "document_id": "DOC-023",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000293",
+      "name": "Packaged Natural Mineral Water",
+      "aliases": [
+        "natural mineral water",
+        "spring water",
+        "packaged natural mineral water \u2014 specification"
+      ],
+      "standard_number": "IS 13428",
+      "document_id": "DOC-024",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000296",
+      "name": "Drinking Water",
+      "aliases": [
+        "tap water",
+        "potable water standard",
+        "drinking water specification",
+        "drinking water \u2014 specification"
+      ],
+      "standard_number": "IS 10500",
+      "document_id": "DOC-064",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000300",
+      "name": "Infant Milk Substitutes",
+      "aliases": [
+        "infant milk food",
+        "baby milk",
+        "infant formula",
+        "infant milk substitutes \u2014 specification"
+      ],
+      "standard_number": "IS 14433",
+      "document_id": "DOC-078",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000303",
+      "name": "Milk Powder",
+      "aliases": [
+        "whole milk powder",
+        "skimmed milk powder",
+        "milk powder \u2014 specification"
+      ],
+      "standard_number": "IS 1165",
+      "document_id": "DOC-025",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000306",
+      "name": "Condensed Milk, Partly Skimmed and Skimmed Condensed Milk",
+      "aliases": [
+        "condensed milk",
+        "sweetened condensed milk",
+        "condensed milk, partly skimmed and skimmed condensed milk \u2014 specification"
+      ],
+      "standard_number": "IS 1166",
+      "document_id": "DOC-081",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000308",
+      "name": "Pasteurized Butter",
+      "aliases": [
+        "white butter"
+      ],
+      "standard_number": "IS 13690",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000311",
+      "name": "Iodized Salt, Vacuum Evaporated Salt and Refined Iodized Salt",
+      "aliases": [
+        "edible common salt",
+        "iodized salt",
+        "vacuum evaporated salt"
+      ],
+      "standard_number": "IS 7224",
+      "document_id": "DOC-087",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000315",
+      "name": "Toilet Soap",
+      "aliases": [
+        "bath soap",
+        "grade 1 soap",
+        "grade 2 soap"
+      ],
+      "standard_number": "IS 2888",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000319",
+      "name": "Laundry Soaps",
+      "aliases": [
+        "laundry soap",
+        "washing soap",
+        "detergent bar"
+      ],
+      "standard_number": "IS 285",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000322",
+      "name": "Synthetic Detergents for Household Use",
+      "aliases": [
+        "synthetic detergent powder",
+        "washing powder",
+        "laundry detergent"
+      ],
+      "standard_number": "IS 4955",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000325",
+      "name": "Portable Fire Extinguishers \u2014 Performance and Construction",
+      "aliases": [
+        "fire extinguisher",
+        "portable fire extinguisher",
+        "abc fire extinguisher",
+        "co2 fire extinguisher",
+        "dry powder fire extinguisher",
+        "performance and construction",
+        "portable fire extinguishers \u2014 performance and construction",
+        "portable fire extinguishers \u2014 performance and construction \u2014 specification"
+      ],
+      "standard_number": "IS 15683",
+      "document_id": "DOC-091",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000330",
+      "name": "Portable Fire Extinguishers: Water and Foam Type",
+      "aliases": [
+        "water fire extinguisher",
+        "foam fire extinguisher"
+      ],
+      "standard_number": "IS 940",
+      "document_id": "DOC-093",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000332",
+      "name": "Unlined Flax Canvas Hose for Fire Fighting",
+      "aliases": [
+        "fire hose",
+        "delivery hose",
+        "unlined flax fire hose"
+      ],
+      "standard_number": "IS 4927",
+      "document_id": null,
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000335",
+      "name": "Fire Hose Delivery Couplings, Branch Pipe, Nozzles and Strainer",
+      "aliases": [
+        "fire hydrant",
+        "fire hose delivery coupling",
+        "landing valve",
+        "fire hose delivery couplings, branch pipe, nozzles and strainer \u2014 specification"
+      ],
+      "standard_number": "IS 903",
+      "document_id": "DOC-100",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000338",
+      "name": "Water Meters (Domestic Type)",
+      "aliases": [
+        "water meter",
+        "domestic water meter",
+        "water flow meter",
+        "water meters  \u2014 specification"
+      ],
+      "standard_number": "IS 779",
+      "document_id": "DOC-099",
+      "domain": "general",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000345",
+      "name": "Specification for Propeller Type AC Ventilating and Exhaust Fans",
+      "aliases": [
+        "propeller type ac ventilating and exhaust fans"
+      ],
+      "standard_number": "IS 2312",
+      "document_id": "DOC-036",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000346",
+      "name": "Safety of Household and Similar Electrical Appliances \u2014 Part 1: General Requirements",
+      "aliases": [
+        "safety of household and similar electrical appliances \u2014 part 1: general requirements"
+      ],
+      "standard_number": "IS 302 (Part 1)",
+      "document_id": "DOC-015",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000352",
+      "name": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V",
+      "aliases": [],
+      "standard_number": "IS 694",
+      "document_id": "DOC-016",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000353",
+      "name": "Cross-Linked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: Working Voltages up to 1100 V",
+      "aliases": [
+        "cross",
+        "linked polyethylene insulated thermoplastic sheathed cables",
+        "working voltages up to 1100 v",
+        "cross-linked polyethylene insulated thermoplastic sheathed cables \u2014 part 1: working voltages up to 1100 v"
+      ],
+      "standard_number": "IS 7098 (Part 1)",
+      "document_id": "DOC-040",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000357",
+      "name": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 2: Aluminium Conductors, Galvanized Steel-Reinforced (ACSR)",
+      "aliases": [
+        "aluminium conductors, galvanized steel",
+        "reinforced",
+        "aluminium conductors for overhead transmission purposes \u2014 part 2: aluminium conductors, galvanized steel-reinforced"
+      ],
+      "standard_number": "IS 398 (Part 2)",
+      "document_id": "DOC-041",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel",
+        "aluminum"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000362",
+      "name": "Plugs and Socket-Outlets for Domestic and Similar Purposes of Rated Voltage up to 250 V",
+      "aliases": [
+        "plugs and socket",
+        "outlets for domestic and similar purposes of rated voltage up to 250 v"
+      ],
+      "standard_number": "IS 1293",
+      "document_id": "DOC-043",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000365",
+      "name": "Specification for Rigid Steel Conduits for Electrical Wiring",
+      "aliases": [
+        "rigid steel conduits for electrical wiring"
+      ],
+      "standard_number": "IS 1653",
+      "document_id": "DOC-044",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000366",
+      "name": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+      "aliases": [
+        "residual current operated circuit",
+        "breakers for household and similar uses"
+      ],
+      "standard_number": "IS 12640 (Part 1)",
+      "document_id": "DOC-017",
+      "domain": "electrical",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000370",
+      "name": "Self-Ballasted LED Lamps for General Lighting Services \u2014 Part 1: Safety Requirements",
+      "aliases": [
+        "ballasted led lamps for general lighting services",
+        "self-ballasted led lamps for general lighting services \u2014 part 1: safety requirements"
+      ],
+      "standard_number": "IS 16102 (Part 1)",
+      "document_id": "DOC-012",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000375",
+      "name": "Information Technology Equipment \u2014 Safety \u2014 Part 1: General Requirements",
+      "aliases": [
+        "safety",
+        "information technology equipment \u2014 safety \u2014 part 1: general requirements"
+      ],
+      "standard_number": "IS 13252 (Part 1)",
+      "document_id": "DOC-031",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000377",
+      "name": "Secondary Cells and Batteries for Portable Applications \u2014 Part 2: Lithium Systems",
+      "aliases": [
+        "lithium systems",
+        "secondary cells and batteries for portable applications \u2014 part 2: lithium systems"
+      ],
+      "standard_number": "IS 16046 (Part 2)",
+      "document_id": "DOC-029",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000380",
+      "name": "AC Static Direct Connected kWh Smart Meters \u2014 Part 1: Electricity Metering",
+      "aliases": [
+        "electricity metering",
+        "ac static direct connected kwh smart meters \u2014 part 1: electricity metering"
+      ],
+      "standard_number": "IS 16444 (Part 1)",
+      "document_id": "DOC-045",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000383",
+      "name": "Lamp Controlgear \u2014 Part 1: General and Safety Requirements",
+      "aliases": [
+        "lamp controlgear \u2014 part 1: general and safety requirements"
+      ],
+      "standard_number": "IS 15885 (Part 1)",
+      "document_id": "DOC-046",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000385",
+      "name": "General Lighting \u2014 LEDs and LED Modules \u2014 Terms and Definitions",
+      "aliases": [
+        "leds and led modules"
+      ],
+      "standard_number": "IS 16101",
+      "document_id": "DOC-047",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000388",
+      "name": "LED Modules for General Lighting \u2014 Part 1: Safety Requirements",
+      "aliases": [
+        "led modules for general lighting \u2014 part 1: safety requirements"
+      ],
+      "standard_number": "IS 16103 (Part 1)",
+      "document_id": "DOC-048",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000390",
+      "name": "Luminaires Performance \u2014 Part 2: Particular Requirements, Section 1: LED Luminaires",
+      "aliases": [
+        "luminaires performance \u2014 part 2: particular requirements, section 1: led luminaires"
+      ],
+      "standard_number": "IS 16107 (Part 2/Sec 1)",
+      "document_id": "DOC-049",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000393",
+      "name": "Uninterruptible Power Systems (UPS) \u2014 Part 1: General and Safety Requirements for UPS",
+      "aliases": [
+        "uninterruptible power systems  \u2014 part 1: general and safety  ups"
+      ],
+      "standard_number": "IS 16242 (Part 1)",
+      "document_id": "DOC-050",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000396",
+      "name": "Mobile Phone Handsets \u2014 Part 3: Language Support for Indian Languages",
+      "aliases": [
+        "language support for indian languages",
+        "mobile phone handsets \u2014 part 3: language support for indian languages"
+      ],
+      "standard_number": "IS 16333 (Part 3)",
+      "document_id": "DOC-051",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000399",
+      "name": "CCTV Surveillance Systems for Use in Security Applications \u2014 Video Systems",
+      "aliases": [
+        "video systems",
+        "cctv surveillance systems for use in security applications \u2014 video systems"
+      ],
+      "standard_number": "IS 16500",
+      "document_id": "DOC-052",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000402",
+      "name": "Television Sets \u2014 Integrated Digital Terrestrial Television Receivers",
+      "aliases": [
+        "integrated digital terrestrial television receivers",
+        "television sets \u2014 integrated digital terrestrial television receivers",
+        "television sets \u2014 integrated digital terrestrial television receivers \u2014 specification"
+      ],
+      "standard_number": "IS 18112",
+      "document_id": "DOC-053",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000405",
+      "name": "Specification for Hearing Aids (First Edition)",
+      "aliases": [
+        "hearing aids"
+      ],
+      "standard_number": "IS 7354",
+      "document_id": "DOC-054",
+      "domain": "electronics_it",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000406",
+      "name": "Ordinary Portland Cement",
+      "aliases": [
+        "ordinary portland cement \u2014 specification"
+      ],
+      "standard_number": "IS 269",
+      "document_id": "DOC-018",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000407",
+      "name": "Portland Pozzolana Cement",
+      "aliases": [
+        "fly ash based",
+        "portland pozzolana cement \u2014 specification \u2014 part 1: fly ash based"
+      ],
+      "standard_number": "IS 1489 (Part 1)",
+      "document_id": "DOC-019",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000416",
+      "name": "Plain and Reinforced Concrete \u2014 Code of Practice",
+      "aliases": [
+        "plain and reinforced concrete \u2014 code of practice"
+      ],
+      "standard_number": "IS 456",
+      "document_id": "DOC-070",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000421",
+      "name": "Concrete Masonry Units",
+      "aliases": [
+        "hollow and solid concrete blocks",
+        "concrete masonry units \u2014 specification \u2014 part 1: hollow and solid concrete blocks"
+      ],
+      "standard_number": "IS 2185 (Part 1)",
+      "document_id": "DOC-073",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000424",
+      "name": "Precast Concrete Blocks for Paving",
+      "aliases": [
+        "precast concrete blocks for paving \u2014 specification"
+      ],
+      "standard_number": "IS 15658",
+      "document_id": "DOC-074",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000426",
+      "name": "Specification for Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement \u2014 Part 1: Mild Steel and Medium Tensile Steel Bars",
+      "aliases": [
+        "mild steel and medium tensile steel bars and hard",
+        "drawn steel wire for concrete reinforcement",
+        "mild steel and medium tensile steel bars",
+        "mild steel and medium tensile steel bars and hard-drawn steel wire for concrete reinforcement \u2014 part 1: mild steel and medium tensile steel bars"
+      ],
+      "standard_number": "IS 432 (Part 1)",
+      "document_id": "DOC-075",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel",
+        "cement"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000430",
+      "name": "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces \u2014 Code of Practice",
+      "aliases": [
+        "ductile design and detailing of reinforced concrete structures subjected to seismic forces \u2014 code of practice"
+      ],
+      "standard_number": "IS 13920",
+      "document_id": "DOC-076",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000432",
+      "name": "Criteria for Earthquake Resistant Design of Structures \u2014 Part 1: General Provisions and Buildings",
+      "aliases": [
+        "criteria for earthquake resistant design of structures \u2014 part 1: general provisions and buildings"
+      ],
+      "standard_number": "IS 1893 (Part 1)",
+      "document_id": "DOC-077",
+      "domain": "construction_civil",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000439",
+      "name": "Processed Cereal Based Complementary Foods for Infants",
+      "aliases": [
+        "processed cereal based complementary foods for infants \u2014 specification"
+      ],
+      "standard_number": "IS 11536",
+      "document_id": "DOC-079",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000441",
+      "name": "Compounded Feeds for Cattle",
+      "aliases": [
+        "compounded feeds for cattle \u2014 specification"
+      ],
+      "standard_number": "IS 2052",
+      "document_id": "DOC-080",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000446",
+      "name": "Determination of Fat in Whole Milk, Evaporated Milk and Condensed Milk by Gerber Method \u2014 Part 1: Milk",
+      "aliases": [
+        "determination of fat in whole milk, evaporated milk and condensed milk by gerber method \u2014 part 1: milk"
+      ],
+      "standard_number": "IS 1224 (Part 1)",
+      "document_id": "DOC-082",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000449",
+      "name": "Specification for Canned Rasgulla (First Edition)",
+      "aliases": [
+        "canned rasgulla"
+      ],
+      "standard_number": "IS 4079",
+      "document_id": "DOC-083",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000450",
+      "name": "Follow-up Formula",
+      "aliases": [
+        "follow",
+        "up formula",
+        "follow-up formula \u2014 specification"
+      ],
+      "standard_number": "IS 15757",
+      "document_id": "DOC-084",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000453",
+      "name": "Groundnut Oil",
+      "aliases": [
+        "groundnut oil \u2014 specification"
+      ],
+      "standard_number": "IS 544",
+      "document_id": "DOC-085",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000455",
+      "name": "Mustard Oil",
+      "aliases": [
+        "mustard oil \u2014 specification"
+      ],
+      "standard_number": "IS 4277",
+      "document_id": "DOC-086",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000457",
+      "name": "Iodized Salt",
+      "aliases": [
+        "iodized salt \u2014 specification"
+      ],
+      "standard_number": "IS 7224",
+      "document_id": "DOC-087",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000458",
+      "name": "Code of Practice for Installation and Maintenance of Tube Wells for Food and Agricultural Purposes",
+      "aliases": [
+        "installation and maintenance of tube wells for food and agricultural purposes"
+      ],
+      "standard_number": "IS 10083",
+      "document_id": "DOC-088",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000459",
+      "name": "Determination of Nitrogen and Protein in Food Products by Kjeldahl Method",
+      "aliases": [],
+      "standard_number": "IS 5949",
+      "document_id": "DOC-089",
+      "domain": "food_agriculture",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000467",
+      "name": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted)",
+      "aliases": [
+        "fire extinguisher, carbon dioxide type  \u2014 specification"
+      ],
+      "standard_number": "IS 2878",
+      "document_id": "DOC-092",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000469",
+      "name": "Portable Fire Extinguishers, Water Type (Gas Cartridge)",
+      "aliases": [
+        "portable fire extinguishers, water type  \u2014 specification"
+      ],
+      "standard_number": "IS 940",
+      "document_id": "DOC-093",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000471",
+      "name": "Polyvinyl Chloride (PVC) Industrial Boots",
+      "aliases": [
+        "polyvinyl chloride  industrial boots \u2014 specification"
+      ],
+      "standard_number": "IS 12254",
+      "document_id": "DOC-094",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000473",
+      "name": "Non-refillable Metallic Containers for Liquefied Petroleum Gas",
+      "aliases": [
+        "refillable metallic containers for liquefied petroleum gas",
+        "non-refillable metallic containers for liquefied petroleum gas \u2014 specification"
+      ],
+      "standard_number": "IS 13745",
+      "document_id": "DOC-095",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000475",
+      "name": "Steel Wire Ropes for General Engineering Purposes",
+      "aliases": [
+        "steel wire ropes for general engineering purposes \u2014 specification"
+      ],
+      "standard_number": "IS 14842",
+      "document_id": "DOC-096",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000477",
+      "name": "Steel Tubes for Mechanical and General Engineering Purposes",
+      "aliases": [
+        "steel tubes for mechanical and general engineering purposes \u2014 specification"
+      ],
+      "standard_number": "IS 3601",
+      "document_id": "DOC-097",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000479",
+      "name": "Specification for Line Pipe",
+      "aliases": [
+        "line pipe"
+      ],
+      "standard_number": "IS 1978",
+      "document_id": "DOC-098",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000484",
+      "name": "Cold Reduced Carbon Steel Sheet and Strip \u2014 Part 1: Cold Forming and Drawing Steel",
+      "aliases": [
+        "cold forming and drawing steel",
+        "cold reduced carbon steel sheet and strip \u2014 part 1: cold forming and drawing steel"
+      ],
+      "standard_number": "IS 513 (Part 1)",
+      "document_id": "DOC-101",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000489",
+      "name": "Covered Electrodes for Manual Metal Arc Welding of Carbon and Carbon Manganese Steel",
+      "aliases": [
+        "covered electrodes for manual metal arc welding of carbon and carbon manganese steel \u2014 specification"
+      ],
+      "standard_number": "IS 814",
+      "document_id": "DOC-103",
+      "domain": "mechanical_automotive",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000493",
+      "name": "Personal Protective Equipment \u2014 Safety Footwear",
+      "aliases": [
+        "personal protective equipment \u2014 safety footwear"
+      ],
+      "standard_number": "IS 15298 (Part 2)",
+      "document_id": "DOC-028",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000494",
+      "name": "Sterile Rubber Surgical Gloves",
+      "aliases": [
+        "sterile rubber surgical gloves \u2014 specification"
+      ],
+      "standard_number": "IS 13422",
+      "document_id": "DOC-104",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "rubber"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000500",
+      "name": "Personal Protective Equipment \u2014 Safety Belts and Harnesses \u2014 Part 1: Full Body Harness",
+      "aliases": [
+        "personal protective equipment \u2014 safety belts and harnesses \u2014 part 1: full body harness"
+      ],
+      "standard_number": "IS 3521 (Part 1)",
+      "document_id": "DOC-107",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000501",
+      "name": "Specification for Industrial Safety Gloves \u2014 Part 1: Leather and Cotton Gloves",
+      "aliases": [
+        "industrial safety gloves",
+        "leather and cotton gloves",
+        "industrial safety gloves \u2014 part 1: leather and cotton gloves"
+      ],
+      "standard_number": "IS 6994 (Part 1)",
+      "document_id": "DOC-108",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000504",
+      "name": "Specification for Eye-Protectors",
+      "aliases": [
+        "protectors",
+        "eye-protectors"
+      ],
+      "standard_number": "IS 5983",
+      "document_id": "DOC-109",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000508",
+      "name": "Coveralls for Healthcare Personnel",
+      "aliases": [
+        "coveralls for healthcare personnel \u2014 specification"
+      ],
+      "standard_number": "IS 17423",
+      "document_id": "DOC-111",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000510",
+      "name": "Medical Electrical Equipment \u2014 Part 1: General Requirements for Basic Safety and Essential Performance",
+      "aliases": [
+        "medical electrical equipment \u2014 part 1: general  basic safety and essential performance"
+      ],
+      "standard_number": "IS 13450 (Part 1)",
+      "document_id": "DOC-112",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000512",
+      "name": "Medical Electrical Equipment \u2014 Part 2-24: Particular Requirements for the Basic Safety of Infusion Pumps and Controllers",
+      "aliases": [
+        "medical electrical equipment \u2014 part 2-24: particular  the basic safety of infusion pumps and controllers"
+      ],
+      "standard_number": "IS 13450 (Part 2/Sec 24)",
+      "document_id": "DOC-113",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000515",
+      "name": "Medical Electrical Equipment \u2014 Part 2-37: Particular Requirements for the Safety of Ultrasonic Medical Diagnostic Equipment",
+      "aliases": [
+        "medical electrical equipment \u2014 part 2-37: particular  the safety of ultrasonic medical diagnostic equipment"
+      ],
+      "standard_number": "IS 13450 (Part 2/Sec 37)",
+      "document_id": "DOC-114",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000518",
+      "name": "Diagnostic Medical X-Ray Equipment \u2014 Part 1: General and Safety Requirements",
+      "aliases": [
+        "diagnostic medical x",
+        "ray equipment",
+        "diagnostic medical x-ray equipment \u2014 part 1: general and safety requirements"
+      ],
+      "standard_number": "IS 7620 (Part 1)",
+      "document_id": "DOC-115",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000522",
+      "name": "Specification for Wheelchairs, Folding, Adult Size (First Edition)",
+      "aliases": [
+        "wheelchairs, folding, adult size"
+      ],
+      "standard_number": "IS 8607",
+      "document_id": "DOC-116",
+      "domain": "medical_safety",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000523",
+      "name": "Plastic Emulsion Paint",
+      "aliases": [
+        "plastic emulsion paint \u2014 specification"
+      ],
+      "standard_number": "IS 15489",
+      "document_id": "DOC-055",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000525",
+      "name": "Unplasticized Polyvinyl Chloride (UPVC) Pipes for Potable Water Supplies",
+      "aliases": [
+        "unplasticized polyvinyl chloride  pipes for potable water supplies \u2014 specification"
+      ],
+      "standard_number": "IS 4985",
+      "document_id": "DOC-032",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc",
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000527",
+      "name": "Thermoplastics Pipes and Fittings \u2014 Methods of Test \u2014 Part 1: Measurement of Dimensions",
+      "aliases": [
+        "measurement of dimensions",
+        "thermoplastics pipes and fittings \u2014 methods of test \u2014 part 1: measurement of dimensions"
+      ],
+      "standard_number": "IS 12235 (Part 1)",
+      "document_id": "DOC-056",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000530",
+      "name": "Steel Tubes, Tubulars and Other Wrought Steel Fittings \u2014 Part 1: Steel Tubes",
+      "aliases": [
+        "steel tubes",
+        "steel tubes, tubulars and other wrought steel fittings \u2014 part 1: steel tubes"
+      ],
+      "standard_number": "IS 1239 (Part 1)",
+      "document_id": "DOC-057",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000533",
+      "name": "Rotomoulded Polyethylene Water Storage Tanks",
+      "aliases": [
+        "rotomoulded polyethylene water storage tanks \u2014 specification"
+      ],
+      "standard_number": "IS 12701",
+      "document_id": "DOC-058",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000535",
+      "name": "Unplasticized Polyvinyl Chloride (UPVC) Pipes for Soil and Waste Discharge Systems Inside Buildings",
+      "aliases": [],
+      "standard_number": "IS 13592",
+      "document_id": "DOC-059",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "pvc"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000536",
+      "name": "Polyethylene Pipes for the Supply of Gaseous Fuels",
+      "aliases": [
+        "polyethylene pipes for the supply of gaseous fuels \u2014 specification"
+      ],
+      "standard_number": "IS 14885",
+      "document_id": "DOC-060",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000538",
+      "name": "Welded Low Carbon Steel Cylinders for Low Pressure Liquefiable Gases \u2014 Part 1: Cylinders for LPG",
+      "aliases": [
+        "cylinders for lpg",
+        "welded low carbon steel cylinders for low pressure liquefiable gases \u2014 part 1: cylinders for lpg"
+      ],
+      "standard_number": "IS 3196 (Part 1)",
+      "document_id": "DOC-061",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "steel"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000541",
+      "name": "Automotive Vehicles \u2014 Pneumatic Tyres for Passenger Car Vehicles \u2014 Diagonal and Radial Ply",
+      "aliases": [
+        "pneumatic tyres for passenger car vehicles",
+        "automotive vehicles \u2014 pneumatic tyres for passenger car vehicles \u2014 diagonal and radial ply"
+      ],
+      "standard_number": "IS 15633",
+      "document_id": "DOC-062",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000545",
+      "name": "Automotive Vehicles \u2014 Pneumatic Tyres for Commercial Vehicles \u2014 Diagonal and Radial Ply",
+      "aliases": [
+        "pneumatic tyres for commercial vehicles",
+        "automotive vehicles \u2014 pneumatic tyres for commercial vehicles \u2014 diagonal and radial ply"
+      ],
+      "standard_number": "IS 15636",
+      "document_id": "DOC-063",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000550",
+      "name": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles",
+      "aliases": [
+        "adhesives for use with ceramic, mosaic and stone tiles \u2014 specification"
+      ],
+      "standard_number": "IS 15477",
+      "document_id": "DOC-033",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000552",
+      "name": "Code of Practice for General Design Details and Preparatory Work for Damp-Proofing and Waterproofing of Buildings",
+      "aliases": [
+        "proofing and waterproofing of buildings"
+      ],
+      "standard_number": "IS 3067",
+      "document_id": "DOC-065",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "water"
+      ],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000555",
+      "name": "Methods of Sampling and Test for Paints, Varnishes and Related Products \u2014 Part 1: Tests on Liquid Paints (General and Physical)",
+      "aliases": [
+        "tests on liquid paints",
+        "methods of sampling and test for paints, varnishes and related products \u2014 part 1: tests on liquid paints"
+      ],
+      "standard_number": "IS 101 (Part 1/Sec 1)",
+      "document_id": "DOC-066",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [],
+      "parameters": []
+    },
+    {
+      "product_id": "PRD-000558",
+      "name": "Cement Paint",
+      "aliases": [
+        "cement paint \u2014 specification"
+      ],
+      "standard_number": "IS 5410",
+      "document_id": "DOC-067",
+      "domain": "chemicals_materials",
+      "department": "ETD",
+      "mandatory_certification": true,
+      "materials": [
+        "cement"
+      ],
+      "parameters": []
+    }
+  ],
+  "standards": [
+    {
+      "standard_number": "IS 16102 (Part 1) : 2026",
+      "clean_number": "IS 16102 (Part 1)",
+      "edition": null,
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements (First Revision)",
+      "document_id": "DOC-012",
+      "domain": "general",
+      "products": [
+        "Self-Ballasted LED Lamps for General Lighting \u2014 Safety",
+        "Self-Ballasted LED Lamps for General Lighting Services \u2014 Part 1: Safety Requirements"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16102 (Part 2) : 2017",
+      "clean_number": "IS 16102 (Part 2)",
+      "edition": null,
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements",
+      "document_id": "DOC-002",
+      "domain": "general",
+      "products": [
+        "Self-Ballasted LED Lamps for General Lighting \u2014 Performance"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "1",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "0.77",
+        "0.5",
+        "0.40",
+        "0.35",
+        "0.33",
+        "0.15",
+        "9",
+        "0.5",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
+      "clean_number": "IS 15885 (Part 2/Sec 13)",
+      "edition": null,
+      "title": "Lamp Controlgear - Part 2-13: Particular Requirements for d.c. or a.c. Supplied Electronic Controlgear for LED Modules",
+      "document_id": "DOC-007",
+      "domain": "general",
+      "products": [
+        "Lamp Controlgear \u2014 AC/DC Supplied Electronic Controlgear for LED Modules"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "CRO 2021",
+      "clean_number": "CRO 2021",
+      "edition": null,
+      "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Order, 2021",
+      "document_id": "DOC-010",
+      "domain": "general",
+      "products": [],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "CRO Amendment 2026",
+      "clean_number": "CRO Amendment 2026",
+      "edition": null,
+      "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
+      "document_id": "DOC-011",
+      "domain": "general",
+      "products": [],
+      "clauses": [
+        "1",
+        "2"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 374 : 2026",
+      "clean_number": "IS 374",
+      "edition": "Fifth Revision",
+      "title": "Electric Ceiling Fans - Specification (Fifth Revision - Energy Star Mandatory)",
+      "document_id": "DOC-035",
+      "domain": "electrical",
+      "products": [
+        "electric_ceiling_fans",
+        "Electric Ceiling Fans"
+      ],
+      "clauses": [
+        "1",
+        "8.1",
+        "8.2",
+        "8.3",
+        "9.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 555 : 1979",
+      "clean_number": "IS 555",
+      "edition": "Second Revision",
+      "title": "Specification for Table Type Electric Fans and Regulators",
+      "document_id": "DOC-014",
+      "domain": "electrical",
+      "products": [
+        "electric_table_fans",
+        "Table Type Electric Fans"
+      ],
+      "clauses": [
+        "1",
+        "7.1",
+        "7.2",
+        "8.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 302 (Part 1) : 2024",
+      "clean_number": "IS 302 (Part 1)",
+      "edition": "Second Revision",
+      "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision)",
+      "document_id": "DOC-015",
+      "domain": "electrical",
+      "products": [
+        "safety_of_household_appliances",
+        "Safety of Household Electrical Appliances - General",
+        "Safety of Household and Similar Electrical Appliances \u2014 Part 1: General Requirements"
+      ],
+      "clauses": [
+        "1",
+        "8.1",
+        "13.2",
+        "13.3",
+        "19.1",
+        "29.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 694 : 2010",
+      "clean_number": "IS 694",
+      "edition": "Fourth Revision",
+      "title": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision)",
+      "document_id": "DOC-016",
+      "domain": "electrical",
+      "products": [
+        "pvc_insulated_cables",
+        "PVC Insulated Cables for Working Voltages up to 1100V",
+        "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V"
+      ],
+      "clauses": [
+        "1",
+        "9.1",
+        "10.1",
+        "11.2",
+        "12.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 12640 (Part 1) : 2016",
+      "clean_number": "IS 12640 (Part 1)",
+      "edition": "First Revision",
+      "title": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+      "document_id": "DOC-017",
+      "domain": "electrical",
+      "products": [
+        "switches_for_domestic_use",
+        "Residual Current Operated Circuit-Breakers without Integral Overcurrent Protection (RCCB)",
+        "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1"
+      ],
+      "clauses": [
+        "1",
+        "5.3.1",
+        "9.9",
+        "9.11"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 269 : 2015",
+      "clean_number": "IS 269",
+      "edition": "Sixth Revision",
+      "title": "Ordinary Portland Cement - Specification (Sixth Revision)",
+      "document_id": "DOC-018",
+      "domain": "construction_civil",
+      "products": [
+        "ordinary_portland_cement_53",
+        "Ordinary Portland Cement (33, 43 and 53 Grades)",
+        "Ordinary Portland Cement"
+      ],
+      "clauses": [
+        "1",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "5.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1489 (Part 1) : 2015",
+      "clean_number": "IS 1489 (Part 1)",
+      "edition": "Third Revision",
+      "title": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based (Third Revision)",
+      "document_id": "DOC-019",
+      "domain": "construction_civil",
+      "products": [
+        "portland_pozzolana_cement",
+        "Portland Pozzolana Cement \u2014 Part 1: Fly Ash Based",
+        "Portland Pozzolana Cement"
+      ],
+      "clauses": [
+        "1",
+        "5.1",
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1786 : 2024",
+      "clean_number": "IS 1786",
+      "edition": "Fifth Revision",
+      "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision)",
+      "document_id": "DOC-034",
+      "domain": "construction_civil",
+      "products": [
+        "high_strength_deformed_steel_bars",
+        "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement"
+      ],
+      "clauses": [
+        "1",
+        "7.1",
+        "7.2",
+        "7.3",
+        "4.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2062 : 2011",
+      "clean_number": "IS 2062",
+      "edition": "Seventh Revision",
+      "title": "Hot Rolled Medium and High Tensile Structural Steel - Specification (Seventh Revision)",
+      "document_id": "DOC-021",
+      "domain": "construction_civil",
+      "products": [
+        "structural_steel_standard_quality",
+        "Hot Rolled Medium and High Tensile Structural Steel"
+      ],
+      "clauses": [
+        "1",
+        "8.1",
+        "9.1",
+        "6.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15622 : 2017",
+      "clean_number": "IS 15622",
+      "edition": "First Revision",
+      "title": "Pressed Ceramic Tiles - Specification (First Revision)",
+      "document_id": "DOC-022",
+      "domain": "construction_civil",
+      "products": [
+        "ceramic_tiles",
+        "Pressed Ceramic Tiles"
+      ],
+      "clauses": [
+        "1",
+        "5.1",
+        "6.1",
+        "6.2",
+        "7.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 14543 : 2024",
+      "clean_number": "IS 14543",
+      "edition": "Third Revision",
+      "title": "Packaged Drinking Water (Other Than Packaged Natural Mineral Water) - Specification (Third Revision)",
+      "document_id": "DOC-023",
+      "domain": "food_agriculture",
+      "products": [
+        "packaged_drinking_water",
+        "Packaged Drinking Water (Other Than Packaged Natural Mineral Water)"
+      ],
+      "clauses": [
+        "1",
+        "4.1",
+        "4.2",
+        "4.3",
+        "5.1",
+        "6.1",
+        "7.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13428 : 2005",
+      "clean_number": "IS 13428",
+      "edition": "Second Revision",
+      "title": "Packaged Natural Mineral Water - Specification (Second Revision)",
+      "document_id": "DOC-024",
+      "domain": "food_agriculture",
+      "products": [
+        "packaged_natural_mineral_water",
+        "Packaged Natural Mineral Water"
+      ],
+      "clauses": [
+        "1",
+        "4.1",
+        "5.1",
+        "5.2",
+        "6.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1165 : 2002",
+      "clean_number": "IS 1165",
+      "edition": "Fifth Revision",
+      "title": "Milk Powder - Specification (Fifth Revision)",
+      "document_id": "DOC-025",
+      "domain": "food_agriculture",
+      "products": [
+        "infant_milk_food",
+        "Milk Powder"
+      ],
+      "clauses": [
+        "1",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 4151 : 2015",
+      "clean_number": "IS 4151",
+      "edition": "Fourth Revision",
+      "title": "Protective Helmets for Motorcycle Riders - Specification (Fourth Revision)",
+      "document_id": "DOC-026",
+      "domain": "mechanical_automotive",
+      "products": [
+        "protective_helmets_motorcycle",
+        "Protective Helmets for Two Wheeler Riders"
+      ],
+      "clauses": [
+        "1",
+        "6.1",
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4",
+        "10.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2347 : 2017",
+      "clean_number": "IS 2347",
+      "edition": "Fifth Revision",
+      "title": "Domestic Pressure Cookers - Specification (Fifth Revision)",
+      "document_id": "DOC-027",
+      "domain": "mechanical_automotive",
+      "products": [
+        "domestic_pressure_cookers",
+        "Domestic Pressure Cookers"
+      ],
+      "clauses": [
+        "1",
+        "7.1",
+        "7.2",
+        "8.1",
+        "8.2"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15298 (Part 2) : 2016",
+      "clean_number": "IS 15298 (Part 2)",
+      "edition": "Second Revision",
+      "title": "Personal Protective Equipment - Safety Footwear (Second Revision)",
+      "document_id": "DOC-028",
+      "domain": "mechanical_automotive",
+      "products": [
+        "safety_footwear",
+        "Personal Protective Equipment \u2014 Part 2: Safety Footwear",
+        "Personal Protective Equipment \u2014 Safety Footwear"
+      ],
+      "clauses": [
+        "1",
+        "5.3.2.2",
+        "5.3.2.3",
+        "5.8.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16046 (Part 2) : 2018",
+      "clean_number": "IS 16046 (Part 2)",
+      "edition": "First Edition",
+      "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Secondary Lithium Cells and Batteries - Part 2: Portable Applications",
+      "document_id": "DOC-029",
+      "domain": "batteries_storage",
+      "products": [
+        "lithium_ion_cells_batteries",
+        "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes (Lithium Systems)",
+        "Secondary Cells and Batteries for Portable Applications \u2014 Part 2: Lithium Systems"
+      ],
+      "clauses": [
+        "1",
+        "7.2.1",
+        "7.3.2",
+        "7.3.3",
+        "7.3.4",
+        "7.3.6",
+        "7.3.8"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 616 : 2017",
+      "clean_number": "IS 616",
+      "edition": "Fourth Revision",
+      "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements (Fourth Revision)",
+      "document_id": "DOC-030",
+      "domain": "electronics_it",
+      "products": [
+        "televisions",
+        "Audio, Video and Similar Electronic Apparatus \u2014 Safety Requirements"
+      ],
+      "clauses": [
+        "1",
+        "9.1",
+        "10.3",
+        "14.1",
+        "18.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13252 (Part 1) : 2010",
+      "clean_number": "IS 13252 (Part 1)",
+      "edition": "Second Revision",
+      "title": "Information Technology Equipment - Safety - Part 1: General Requirements (Second Revision)",
+      "document_id": "DOC-031",
+      "domain": "electronics_it",
+      "products": [
+        "laptops_notebooks",
+        "Compulsory Registration Order (CRO / CRS)",
+        "Information Technology Equipment \u2014 Safety",
+        "Electronic Security & IT Surveillance Systems",
+        "Information Technology Equipment \u2014 Safety \u2014 Part 1: General Requirements"
+      ],
+      "clauses": [
+        "1",
+        "2.1",
+        "5.1",
+        "5.2",
+        "4.2"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 4985 : 2021",
+      "clean_number": "IS 4985",
+      "edition": "Fourth Revision",
+      "title": "Unplasticized Polyvinyl Chloride (uPVC) Pipes for Potable Water Supplies - Specification (Fourth Revision)",
+      "document_id": "DOC-032",
+      "domain": "chemicals_polymers",
+      "products": [
+        "upvc_pipes_potable_water",
+        "Unplasticized PVC Pipes for Potable Water Supplies",
+        "Unplasticized Polyvinyl Chloride (UPVC) Pipes for Potable Water Supplies"
+      ],
+      "clauses": [
+        "1",
+        "8.1",
+        "8.2",
+        "9.1",
+        "10.1"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15477 : 2019",
+      "clean_number": "IS 15477",
+      "edition": "First Revision",
+      "title": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification (First Revision)",
+      "document_id": "DOC-033",
+      "domain": "chemicals_polymers",
+      "products": [
+        "cement_paints",
+        "Adhesives for Use with Ceramic Tiles and Mosaics",
+        "Adhesives for Use with Ceramic, Mosaic and Stone Tiles"
+      ],
+      "clauses": [
+        "1",
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2312 : 1967",
+      "clean_number": "IS 2312",
+      "edition": null,
+      "title": "Specification for Propeller Type AC Ventilating and Exhaust Fans (First Revision)",
+      "document_id": "DOC-036",
+      "domain": "general",
+      "products": [
+        "Propeller Type AC Ventilating and Exhaust Fans",
+        "Specification for Propeller Type AC Ventilating and Exhaust Fans"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 366 : 1991",
+      "clean_number": "IS 366",
+      "edition": null,
+      "title": "Electric Irons \u2014 Specification (Third Revision)",
+      "document_id": "DOC-037",
+      "domain": "general",
+      "products": [
+        "Electric Irons"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2082 : 2018",
+      "clean_number": "IS 2082",
+      "edition": null,
+      "title": "Stationary Storage Type Electric Water Heaters (Fifth Revision)",
+      "document_id": "DOC-038",
+      "domain": "general",
+      "products": [
+        "Stationary Storage Type Electric Water Heaters"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 368 : 2014",
+      "clean_number": "IS 368",
+      "edition": null,
+      "title": "Electric Immersion Water Heaters \u2014 Specification (Fifth Revision)",
+      "document_id": "DOC-039",
+      "domain": "general",
+      "products": [
+        "Electric Immersion Water Heaters"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 7098 (Part 1) : 1988",
+      "clean_number": "IS 7098 (Part 1)",
+      "edition": null,
+      "title": "Cross-Linked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: Working Voltages up to 1100 V",
+      "document_id": "DOC-040",
+      "domain": "general",
+      "products": [
+        "Crosslinked Polyethylene Insulated Cables for Voltages up to 1100V",
+        "Cross-Linked Polyethylene Insulated Thermoplastic Sheathed Cables \u2014 Part 1: Working Voltages up to 1100 V"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 398 (Part 2) : 1996",
+      "clean_number": "IS 398 (Part 2)",
+      "edition": null,
+      "title": "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 2: Aluminium Conductors, Galvanized Steel-Reinforced (ACSR)",
+      "document_id": "DOC-041",
+      "domain": "general",
+      "products": [
+        "Aluminium Conductors for Overhead Transmission (ACSR)",
+        "Aluminium Conductors for Overhead Transmission Purposes \u2014 Part 2: Aluminium Conductors, Galvanized Steel-Reinforced (ACSR)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 3854 : 1997",
+      "clean_number": "IS 3854",
+      "edition": null,
+      "title": "Switches for Domestic and Similar Fixed Electrical Installations (Second Revision)",
+      "document_id": "DOC-042",
+      "domain": "general",
+      "products": [
+        "Switches for Domestic and Similar Fixed Electrical Installations"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1293 : 2019",
+      "clean_number": "IS 1293",
+      "edition": null,
+      "title": "Plugs and Socket-Outlets for Domestic and Similar Purposes of Rated Voltage up to 250 V (Fourth Revision)",
+      "document_id": "DOC-043",
+      "domain": "general",
+      "products": [
+        "Plugs and Socket-Outlets for Domestic and Similar Purposes",
+        "Plugs and Socket-Outlets for Domestic and Similar Purposes of Rated Voltage up to 250 V"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1653 : 1972",
+      "clean_number": "IS 1653",
+      "edition": null,
+      "title": "Specification for Rigid Steel Conduits for Electrical Wiring (Second Revision)",
+      "document_id": "DOC-044",
+      "domain": "general",
+      "products": [
+        "Rigid Steel Conduits for Electrical Wiring",
+        "Specification for Rigid Steel Conduits for Electrical Wiring"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16444 (Part 1) : 2015",
+      "clean_number": "IS 16444 (Part 1)",
+      "edition": null,
+      "title": "AC Static Direct Connected kWh Smart Meters \u2014 Part 1: Electricity Metering",
+      "document_id": "DOC-045",
+      "domain": "general",
+      "products": [
+        "AC Static Direct Connected Watt-Hour Smart Meters",
+        "AC Static Direct Connected kWh Smart Meters \u2014 Part 1: Electricity Metering"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15885 (Part 1) : 2011",
+      "clean_number": "IS 15885 (Part 1)",
+      "edition": null,
+      "title": "Lamp Controlgear \u2014 Part 1: General and Safety Requirements",
+      "document_id": "DOC-046",
+      "domain": "general",
+      "products": [
+        "Lamp Controlgear \u2014 Part 1: General and Safety Requirements"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16101 : 2012",
+      "clean_number": "IS 16101",
+      "edition": null,
+      "title": "General Lighting \u2014 LEDs and LED Modules \u2014 Terms and Definitions",
+      "document_id": "DOC-047",
+      "domain": "general",
+      "products": [
+        "General Lighting \u2014 LEDs and LED Modules \u2014 Terms and Definitions"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16103 (Part 1) : 2012",
+      "clean_number": "IS 16103 (Part 1)",
+      "edition": null,
+      "title": "LED Modules for General Lighting \u2014 Part 1: Safety Requirements",
+      "document_id": "DOC-048",
+      "domain": "general",
+      "products": [
+        "LED Modules for General Lighting \u2014 Part 1: Safety Requirements"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16107 (Part 2/Sec 1) : 2012",
+      "clean_number": "IS 16107 (Part 2/Sec 1)",
+      "edition": null,
+      "title": "Luminaires Performance \u2014 Part 2: Particular Requirements, Section 1: LED Luminaires",
+      "document_id": "DOC-049",
+      "domain": "general",
+      "products": [
+        "Luminaires Performance \u2014 Part 2: Particular Requirements, Section 1: LED Luminaires"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16242 (Part 1) : 2014",
+      "clean_number": "IS 16242 (Part 1)",
+      "edition": null,
+      "title": "Uninterruptible Power Systems (UPS) \u2014 Part 1: General and Safety Requirements for UPS",
+      "document_id": "DOC-050",
+      "domain": "general",
+      "products": [
+        "Uninterruptible Power Systems (UPS) \u2014 Part 1: General and Safety Requirements for UPS"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16333 (Part 3) : 2022",
+      "clean_number": "IS 16333 (Part 3)",
+      "edition": null,
+      "title": "Mobile Phone Handsets \u2014 Part 3: Language Support for Indian Languages (Third Revision)",
+      "document_id": "DOC-051",
+      "domain": "general",
+      "products": [
+        "Mobile Phone Handsets \u2014 Part 3: Language Support for Indian Languages"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16500 : 2017",
+      "clean_number": "IS 16500",
+      "edition": null,
+      "title": "CCTV Surveillance Systems for Use in Security Applications \u2014 Video Systems",
+      "document_id": "DOC-052",
+      "domain": "general",
+      "products": [
+        "CCTV Surveillance Systems for Use in Security Applications \u2014 Video Systems"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 18112 : 2022",
+      "clean_number": "IS 18112",
+      "edition": null,
+      "title": "Television Sets \u2014 Integrated Digital Terrestrial Television Receivers \u2014 Specification",
+      "document_id": "DOC-053",
+      "domain": "general",
+      "products": [
+        "Television Sets \u2014 Integrated Digital Terrestrial Television Receivers"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 7354 : 1974",
+      "clean_number": "IS 7354",
+      "edition": null,
+      "title": "Specification for Hearing Aids (First Edition)",
+      "document_id": "DOC-054",
+      "domain": "general",
+      "products": [
+        "Specification for Hearing Aids (First Edition)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15489 : 2004",
+      "clean_number": "IS 15489",
+      "edition": null,
+      "title": "Plastic Emulsion Paint \u2014 Specification (First Revision)",
+      "document_id": "DOC-055",
+      "domain": "general",
+      "products": [
+        "Plastic Emulsion Paint"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 12235 (Part 1) : 2004",
+      "clean_number": "IS 12235 (Part 1)",
+      "edition": null,
+      "title": "Thermoplastics Pipes and Fittings \u2014 Methods of Test \u2014 Part 1: Measurement of Dimensions",
+      "document_id": "DOC-056",
+      "domain": "general",
+      "products": [
+        "Thermoplastics Pipes and Fittings \u2014 Methods of Test \u2014 Part 1: Measurement of Dimensions"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1239 (Part 1) : 2004",
+      "clean_number": "IS 1239 (Part 1)",
+      "edition": null,
+      "title": "Steel Tubes, Tubulars and Other Wrought Steel Fittings \u2014 Part 1: Steel Tubes (Sixth Revision)",
+      "document_id": "DOC-057",
+      "domain": "general",
+      "products": [
+        "Steel Tubes, Tubulars and Other Wrought Steel Fittings \u2014 Part 1: Steel Tubes"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 12701 : 1996",
+      "clean_number": "IS 12701",
+      "edition": null,
+      "title": "Rotomoulded Polyethylene Water Storage Tanks \u2014 Specification (First Revision)",
+      "document_id": "DOC-058",
+      "domain": "general",
+      "products": [
+        "Rotomoulded Polyethylene Water Storage Tanks"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13592 : 2013",
+      "clean_number": "IS 13592",
+      "edition": null,
+      "title": "Unplasticized Polyvinyl Chloride (UPVC) Pipes for Soil and Waste Discharge Systems Inside Buildings (First Revision)",
+      "document_id": "DOC-059",
+      "domain": "general",
+      "products": [
+        "Unplasticized Polyvinyl Chloride (UPVC) Pipes for Soil and Waste Discharge Systems Inside Buildings"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 14885 : 2001",
+      "clean_number": "IS 14885",
+      "edition": null,
+      "title": "Polyethylene Pipes for the Supply of Gaseous Fuels \u2014 Specification (First Edition)",
+      "document_id": "DOC-060",
+      "domain": "general",
+      "products": [
+        "Polyethylene Pipes for the Supply of Gaseous Fuels"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 3196 (Part 1) : 2006",
+      "clean_number": "IS 3196 (Part 1)",
+      "edition": null,
+      "title": "Welded Low Carbon Steel Cylinders for Low Pressure Liquefiable Gases \u2014 Part 1: Cylinders for LPG",
+      "document_id": "DOC-061",
+      "domain": "general",
+      "products": [
+        "Welded Low Carbon Steel Cylinders for Low Pressure Liquefiable Gases (LPG)",
+        "Welded Low Carbon Steel Cylinders for Low Pressure Liquefiable Gases \u2014 Part 1: Cylinders for LPG"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15633 : 2005",
+      "clean_number": "IS 15633",
+      "edition": null,
+      "title": "Automotive Vehicles \u2014 Pneumatic Tyres for Passenger Car Vehicles \u2014 Diagonal and Radial Ply",
+      "document_id": "DOC-062",
+      "domain": "general",
+      "products": [
+        "Automotive Vehicles \u2014 Pneumatic Tyres for Passenger Car Vehicles \u2014 Diagonal and Radial Ply"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15636 : 2012",
+      "clean_number": "IS 15636",
+      "edition": null,
+      "title": "Automotive Vehicles \u2014 Pneumatic Tyres for Commercial Vehicles \u2014 Diagonal and Radial Ply (First Revision)",
+      "document_id": "DOC-063",
+      "domain": "general",
+      "products": [
+        "Automotive Vehicles \u2014 Pneumatic Tyres for Commercial Vehicles \u2014 Diagonal and Radial Ply"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 10500 : 2012",
+      "clean_number": "IS 10500",
+      "edition": null,
+      "title": "Drinking Water \u2014 Specification (Second Revision)",
+      "document_id": "DOC-064",
+      "domain": "general",
+      "products": [
+        "Drinking Water"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 3067 : 1988",
+      "clean_number": "IS 3067",
+      "edition": null,
+      "title": "Code of Practice for General Design Details and Preparatory Work for Damp-Proofing and Waterproofing of Buildings (First Revision)",
+      "document_id": "DOC-065",
+      "domain": "general",
+      "products": [
+        "Code of Practice for General Design Details and Preparatory Work for Damp-Proofing and Waterproofing of Buildings"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 101 (Part 1/Sec 1) : 1986",
+      "clean_number": "IS 101 (Part 1/Sec 1)",
+      "edition": null,
+      "title": "Methods of Sampling and Test for Paints, Varnishes and Related Products \u2014 Part 1: Tests on Liquid Paints (General and Physical)",
+      "document_id": "DOC-066",
+      "domain": "general",
+      "products": [
+        "Methods of Sampling and Test for Paints, Varnishes and Related Products \u2014 Part 1: Tests on Liquid Paints (General and Physical)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 5410 : 2013",
+      "clean_number": "IS 5410",
+      "edition": null,
+      "title": "Cement Paint \u2014 Specification (Second Revision)",
+      "document_id": "DOC-067",
+      "domain": "general",
+      "products": [
+        "Cement Paint"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 455 : 2015",
+      "clean_number": "IS 455",
+      "edition": null,
+      "title": "Portland Slag Cement \u2014 Specification (Sixth Revision)",
+      "document_id": "DOC-068",
+      "domain": "general",
+      "products": [
+        "Portland Slag Cement"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 383 : 2016",
+      "clean_number": "IS 383",
+      "edition": null,
+      "title": "Coarse and Fine Aggregate for Concrete \u2014 Specification (Third Revision)",
+      "document_id": "DOC-069",
+      "domain": "general",
+      "products": [
+        "Coarse and Fine Aggregate for Concrete"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 456 : 2000",
+      "clean_number": "IS 456",
+      "edition": null,
+      "title": "Plain and Reinforced Concrete \u2014 Code of Practice (Fourth Revision)",
+      "document_id": "DOC-070",
+      "domain": "general",
+      "products": [
+        "Code of Practice for Plain and Reinforced Concrete",
+        "Plain and Reinforced Concrete \u2014 Code of Practice"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 800 : 2007",
+      "clean_number": "IS 800",
+      "edition": null,
+      "title": "General Construction in Steel \u2014 Code of Practice (Third Revision)",
+      "document_id": "DOC-071",
+      "domain": "general",
+      "products": [
+        "General Construction in Steel \u2014 Code of Practice"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1077 : 1992",
+      "clean_number": "IS 1077",
+      "edition": null,
+      "title": "Common Burnt Clay Building Bricks \u2014 Specification (Fifth Revision)",
+      "document_id": "DOC-072",
+      "domain": "general",
+      "products": [
+        "Common Burnt Clay Building Bricks"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2185 (Part 1) : 2005",
+      "clean_number": "IS 2185 (Part 1)",
+      "edition": null,
+      "title": "Concrete Masonry Units \u2014 Specification \u2014 Part 1: Hollow and Solid Concrete Blocks (Third Revision)",
+      "document_id": "DOC-073",
+      "domain": "general",
+      "products": [
+        "Concrete Masonry Units \u2014 Hollow and Solid Concrete Blocks",
+        "Concrete Masonry Units"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15658 : 2006",
+      "clean_number": "IS 15658",
+      "edition": null,
+      "title": "Precast Concrete Blocks for Paving \u2014 Specification (First Edition)",
+      "document_id": "DOC-074",
+      "domain": "general",
+      "products": [
+        "Precast Concrete Paving Blocks",
+        "Precast Concrete Blocks for Paving"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 432 (Part 1) : 1982",
+      "clean_number": "IS 432 (Part 1)",
+      "edition": null,
+      "title": "Specification for Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement \u2014 Part 1: Mild Steel and Medium Tensile Steel Bars",
+      "document_id": "DOC-075",
+      "domain": "general",
+      "products": [
+        "Specification for Mild Steel and Medium Tensile Steel Bars and Hard-Drawn Steel Wire for Concrete Reinforcement \u2014 Part 1: Mild Steel and Medium Tensile Steel Bars"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13920 : 2016",
+      "clean_number": "IS 13920",
+      "edition": null,
+      "title": "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces \u2014 Code of Practice (First Revision)",
+      "document_id": "DOC-076",
+      "domain": "general",
+      "products": [
+        "Ductile Design and Detailing of Reinforced Concrete Structures Subjected to Seismic Forces \u2014 Code of Practice"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1893 (Part 1) : 2016",
+      "clean_number": "IS 1893 (Part 1)",
+      "edition": null,
+      "title": "Criteria for Earthquake Resistant Design of Structures \u2014 Part 1: General Provisions and Buildings (Sixth Revision)",
+      "document_id": "DOC-077",
+      "domain": "general",
+      "products": [
+        "Criteria for Earthquake Resistant Design of Structures \u2014 Part 1: General Provisions and Buildings"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 14433 : 2022",
+      "clean_number": "IS 14433",
+      "edition": null,
+      "title": "Infant Milk Substitutes \u2014 Specification (Second Revision)",
+      "document_id": "DOC-078",
+      "domain": "general",
+      "products": [
+        "Infant Milk Substitutes"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 11536 : 2007",
+      "clean_number": "IS 11536",
+      "edition": null,
+      "title": "Processed Cereal Based Complementary Foods for Infants \u2014 Specification (Second Revision)",
+      "document_id": "DOC-079",
+      "domain": "general",
+      "products": [
+        "Processed Cereal Based Complementary Foods for Infants"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2052 : 2009",
+      "clean_number": "IS 2052",
+      "edition": null,
+      "title": "Compounded Feeds for Cattle \u2014 Specification (Fifth Revision)",
+      "document_id": "DOC-080",
+      "domain": "general",
+      "products": [
+        "Compounded Feeds for Cattle"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1166 : 2022",
+      "clean_number": "IS 1166",
+      "edition": null,
+      "title": "Condensed Milk, Partly Skimmed and Skimmed Condensed Milk \u2014 Specification (Third Revision)",
+      "document_id": "DOC-081",
+      "domain": "general",
+      "products": [
+        "Condensed Milk, Partly Skimmed and Skimmed Condensed Milk"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1224 (Part 1) : 1977",
+      "clean_number": "IS 1224 (Part 1)",
+      "edition": null,
+      "title": "Determination of Fat in Whole Milk, Evaporated Milk and Condensed Milk by Gerber Method \u2014 Part 1: Milk",
+      "document_id": "DOC-082",
+      "domain": "general",
+      "products": [
+        "Determination of Fat in Whole Milk, Evaporated Milk and Condensed Milk by Gerber Method \u2014 Part 1: Milk"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 4079 : 1967",
+      "clean_number": "IS 4079",
+      "edition": null,
+      "title": "Specification for Canned Rasgulla (First Edition)",
+      "document_id": "DOC-083",
+      "domain": "general",
+      "products": [
+        "Specification for Canned Rasgulla (First Edition)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15757 : 2007",
+      "clean_number": "IS 15757",
+      "edition": null,
+      "title": "Follow-up Formula \u2014 Specification (First Edition)",
+      "document_id": "DOC-084",
+      "domain": "general",
+      "products": [
+        "Follow-up Formula"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 544 : 2014",
+      "clean_number": "IS 544",
+      "edition": null,
+      "title": "Groundnut Oil \u2014 Specification (Third Revision)",
+      "document_id": "DOC-085",
+      "domain": "general",
+      "products": [
+        "Groundnut Oil"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 4277 : 2014",
+      "clean_number": "IS 4277",
+      "edition": null,
+      "title": "Mustard Oil \u2014 Specification (Third Revision)",
+      "document_id": "DOC-086",
+      "domain": "general",
+      "products": [
+        "Mustard Oil"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 7224 : 2006",
+      "clean_number": "IS 7224",
+      "edition": null,
+      "title": "Iodized Salt \u2014 Specification (Third Revision)",
+      "document_id": "DOC-087",
+      "domain": "general",
+      "products": [
+        "Iodized Salt, Vacuum Evaporated Salt and Refined Iodized Salt",
+        "Iodized Salt"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 10083 : 1982",
+      "clean_number": "IS 10083",
+      "edition": null,
+      "title": "Code of Practice for Installation and Maintenance of Tube Wells for Food and Agricultural Purposes",
+      "document_id": "DOC-088",
+      "domain": "general",
+      "products": [
+        "Code of Practice for Installation and Maintenance of Tube Wells for Food and Agricultural Purposes"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 5949 : 1990",
+      "clean_number": "IS 5949",
+      "edition": null,
+      "title": "Determination of Nitrogen and Protein in Food Products by Kjeldahl Method (First Revision)",
+      "document_id": "DOC-089",
+      "domain": "general",
+      "products": [
+        "Determination of Nitrogen and Protein in Food Products by Kjeldahl Method"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 4246 : 2002",
+      "clean_number": "IS 4246",
+      "edition": null,
+      "title": "Domestic Gas Stoves for Use with Liquefied Petroleum Gases \u2014 Specification (Fifth Revision)",
+      "document_id": "DOC-090",
+      "domain": "general",
+      "products": [
+        "Domestic Gas Stoves for Use with Liquefied Petroleum Gases"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 15683 : 2018",
+      "clean_number": "IS 15683",
+      "edition": null,
+      "title": "Portable Fire Extinguishers \u2014 Performance and Construction \u2014 Specification (First Revision)",
+      "document_id": "DOC-091",
+      "domain": "general",
+      "products": [
+        "Portable Fire Extinguishers \u2014 Performance and Construction"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2878 : 2004",
+      "clean_number": "IS 2878",
+      "edition": null,
+      "title": "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted) \u2014 Specification (Third Revision)",
+      "document_id": "DOC-092",
+      "domain": "general",
+      "products": [
+        "Fire Extinguisher, Carbon Dioxide Type (Portable and Trolley Mounted)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 940 : 2003",
+      "clean_number": "IS 940",
+      "edition": null,
+      "title": "Portable Fire Extinguishers, Water Type (Gas Cartridge) \u2014 Specification (Fourth Revision)",
+      "document_id": "DOC-093",
+      "domain": "general",
+      "products": [
+        "Portable Fire Extinguishers: Water and Foam Type",
+        "Portable Fire Extinguishers, Water Type (Gas Cartridge)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 12254 : 1993",
+      "clean_number": "IS 12254",
+      "edition": null,
+      "title": "Polyvinyl Chloride (PVC) Industrial Boots \u2014 Specification (Second Revision)",
+      "document_id": "DOC-094",
+      "domain": "general",
+      "products": [
+        "Polyvinyl Chloride (PVC) Industrial Boots"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13745 : 1993",
+      "clean_number": "IS 13745",
+      "edition": null,
+      "title": "Non-refillable Metallic Containers for Liquefied Petroleum Gas \u2014 Specification (First Edition)",
+      "document_id": "DOC-095",
+      "domain": "general",
+      "products": [
+        "Non-refillable Metallic Containers for Liquefied Petroleum Gas"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 14842 : 2000",
+      "clean_number": "IS 14842",
+      "edition": null,
+      "title": "Steel Wire Ropes for General Engineering Purposes \u2014 Specification (First Edition)",
+      "document_id": "DOC-096",
+      "domain": "general",
+      "products": [
+        "Steel Wire Ropes for General Engineering Purposes"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 3601 : 2006",
+      "clean_number": "IS 3601",
+      "edition": null,
+      "title": "Steel Tubes for Mechanical and General Engineering Purposes \u2014 Specification (Third Revision)",
+      "document_id": "DOC-097",
+      "domain": "general",
+      "products": [
+        "Steel Tubes for Mechanical and General Engineering Purposes"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1978 : 1982",
+      "clean_number": "IS 1978",
+      "edition": null,
+      "title": "Specification for Line Pipe (Second Revision)",
+      "document_id": "DOC-098",
+      "domain": "general",
+      "products": [
+        "Specification for Line Pipe"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 779 : 1994",
+      "clean_number": "IS 779",
+      "edition": null,
+      "title": "Water Meters (Domestic Type) \u2014 Specification (Sixth Revision)",
+      "document_id": "DOC-099",
+      "domain": "general",
+      "products": [
+        "Water Meters (Domestic Type)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 903 : 1993",
+      "clean_number": "IS 903",
+      "edition": null,
+      "title": "Fire Hose Delivery Couplings, Branch Pipe, Nozzles and Strainer \u2014 Specification (Fourth Revision)",
+      "document_id": "DOC-100",
+      "domain": "general",
+      "products": [
+        "Fire Hose Delivery Couplings, Branch Pipe, Nozzles and Strainer"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 513 (Part 1) : 2016",
+      "clean_number": "IS 513 (Part 1)",
+      "edition": null,
+      "title": "Cold Reduced Carbon Steel Sheet and Strip \u2014 Part 1: Cold Forming and Drawing Steel (Sixth Revision)",
+      "document_id": "DOC-101",
+      "domain": "general",
+      "products": [
+        "Cold Reduced Carbon Steel Sheet and Strip",
+        "Cold Reduced Carbon Steel Sheet and Strip \u2014 Part 1: Cold Forming and Drawing Steel"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 1079 : 2017",
+      "clean_number": "IS 1079",
+      "edition": null,
+      "title": "Hot Rolled Carbon Steel Sheet and Strip \u2014 Specification (Sixth Revision)",
+      "document_id": "DOC-102",
+      "domain": "general",
+      "products": [
+        "Hot Rolled Carbon Steel Sheet and Strip"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 814 : 2004",
+      "clean_number": "IS 814",
+      "edition": null,
+      "title": "Covered Electrodes for Manual Metal Arc Welding of Carbon and Carbon Manganese Steel \u2014 Specification (Sixth Revision)",
+      "document_id": "DOC-103",
+      "domain": "general",
+      "products": [
+        "Covered Electrodes for Manual Metal Arc Welding",
+        "Covered Electrodes for Manual Metal Arc Welding of Carbon and Carbon Manganese Steel"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13422 : 1992",
+      "clean_number": "IS 13422",
+      "edition": null,
+      "title": "Sterile Rubber Surgical Gloves \u2014 Specification (First Edition)",
+      "document_id": "DOC-104",
+      "domain": "general",
+      "products": [
+        "Surgical Rubber Gloves",
+        "Sterile Rubber Surgical Gloves"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 9473 : 2002",
+      "clean_number": "IS 9473",
+      "edition": null,
+      "title": "Respiratory Protective Devices \u2014 Filtering Half Masks to Protect Against Particles \u2014 Specification (First Revision)",
+      "document_id": "DOC-105",
+      "domain": "general",
+      "products": [
+        "Respiratory Protective Devices \u2014 Filtering Half Masks to Protect Against Particles"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 2925 : 1984",
+      "clean_number": "IS 2925",
+      "edition": null,
+      "title": "Industrial Safety Helmets \u2014 Specification (Second Revision)",
+      "document_id": "DOC-106",
+      "domain": "general",
+      "products": [
+        "Industrial Safety Helmets"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 3521 (Part 1) : 2021",
+      "clean_number": "IS 3521 (Part 1)",
+      "edition": null,
+      "title": "Personal Protective Equipment \u2014 Safety Belts and Harnesses \u2014 Part 1: Full Body Harness",
+      "document_id": "DOC-107",
+      "domain": "general",
+      "products": [
+        "Personal Protective Equipment \u2014 Safety Belts and Harnesses",
+        "Personal Protective Equipment \u2014 Safety Belts and Harnesses \u2014 Part 1: Full Body Harness"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 6994 (Part 1) : 1973",
+      "clean_number": "IS 6994 (Part 1)",
+      "edition": null,
+      "title": "Specification for Industrial Safety Gloves \u2014 Part 1: Leather and Cotton Gloves",
+      "document_id": "DOC-108",
+      "domain": "general",
+      "products": [
+        "Industrial Safety Gloves \u2014 Leather and Cotton Gloves",
+        "Specification for Industrial Safety Gloves \u2014 Part 1: Leather and Cotton Gloves"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 5983 : 1980",
+      "clean_number": "IS 5983",
+      "edition": null,
+      "title": "Specification for Eye-Protectors (First Revision)",
+      "document_id": "DOC-109",
+      "domain": "general",
+      "products": [
+        "Specification for Eye-Protectors"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 16289 : 2014",
+      "clean_number": "IS 16289",
+      "edition": null,
+      "title": "Medical Face Masks \u2014 Specification (First Edition)",
+      "document_id": "DOC-110",
+      "domain": "general",
+      "products": [
+        "Medical Face Masks"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 17423 : 2020",
+      "clean_number": "IS 17423",
+      "edition": null,
+      "title": "Coveralls for Healthcare Personnel \u2014 Specification (First Edition)",
+      "document_id": "DOC-111",
+      "domain": "general",
+      "products": [
+        "Personal Protective Equipment \u2014 Protective Coveralls for Healthcare",
+        "Coveralls for Healthcare Personnel"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13450 (Part 1) : 2018",
+      "clean_number": "IS 13450 (Part 1)",
+      "edition": null,
+      "title": "Medical Electrical Equipment \u2014 Part 1: General Requirements for Basic Safety and Essential Performance",
+      "document_id": "DOC-112",
+      "domain": "general",
+      "products": [
+        "Medical Electrical Equipment \u2014 Part 1: General Requirements for Basic Safety and Essential Performance"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13450 (Part 2/Sec 24) : 2019",
+      "clean_number": "IS 13450 (Part 2/Sec 24)",
+      "edition": null,
+      "title": "Medical Electrical Equipment \u2014 Part 2-24: Particular Requirements for the Basic Safety of Infusion Pumps and Controllers",
+      "document_id": "DOC-113",
+      "domain": "general",
+      "products": [
+        "Medical Electrical Equipment \u2014 Part 2-24: Particular Requirements for the Basic Safety of Infusion Pumps and Controllers"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 13450 (Part 2/Sec 37) : 2018",
+      "clean_number": "IS 13450 (Part 2/Sec 37)",
+      "edition": null,
+      "title": "Medical Electrical Equipment \u2014 Part 2-37: Particular Requirements for the Safety of Ultrasonic Medical Diagnostic Equipment",
+      "document_id": "DOC-114",
+      "domain": "general",
+      "products": [
+        "Medical Electrical Equipment \u2014 Part 2-37: Particular Requirements for the Safety of Ultrasonic Medical Diagnostic Equipment"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 7620 (Part 1) : 1986",
+      "clean_number": "IS 7620 (Part 1)",
+      "edition": null,
+      "title": "Diagnostic Medical X-Ray Equipment \u2014 Part 1: General and Safety Requirements (First Revision)",
+      "document_id": "DOC-115",
+      "domain": "general",
+      "products": [
+        "Diagnostic Medical X-Ray Equipment \u2014 Part 1: General and Safety Requirements"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    },
+    {
+      "standard_number": "IS 8607 : 1977",
+      "clean_number": "IS 8607",
+      "edition": null,
+      "title": "Specification for Wheelchairs, Folding, Adult Size (First Edition)",
+      "document_id": "DOC-116",
+      "domain": "general",
+      "products": [
+        "Specification for Wheelchairs, Folding, Adult Size (First Edition)"
+      ],
+      "clauses": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "requirements": []
+    }
+  ],
+  "requirements": [
+    {
+      "document_id": "DOC-001",
+      "standard_number": "IS 16102 (Part 1) : 2012",
+      "clause_number": "8",
+      "clause_title": "INSULATION RESISTANCE AND ELECTRIC",
+      "parameter": "insulation_resistance",
+      "value": 4.0,
+      "unit": "M\u03a9",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-001-v059::8::REQ-001",
+      "raw_text": "8 INSULATION RESISTANCE AND ELECTRIC\nSTRENGTH AFTER HUMIDITY TREATMENT"
+    },
+    {
+      "document_id": "DOC-012",
+      "standard_number": "IS 16102 (Part 1) : 2026",
+      "clause_number": "8",
+      "clause_title": "INSULATION RESISTANCE AND ELECTRIC STRENGTH AFTER HUMIDITY TREATMENT",
+      "parameter": "insulation_resistance",
+      "value": 4.0,
+      "unit": "M\u03a9",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-012-v001::8::REQ-001",
+      "raw_text": "8 INSULATION RESISTANCE AND ELECTRIC STRENGTH AFTER HUMIDITY TREATMENT"
+    },
+    {
+      "document_id": "DOC-013",
+      "standard_number": "IS 374 : 2019",
+      "clause_number": "10.1",
+      "clause_title": "Insulation Resistance",
+      "parameter": "insulation_resistance",
+      "value": 2.0,
+      "unit": "M\u03a9",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-013-v001::10.1::GEN-001",
+      "raw_text": "Insulation Resistance: Insulation resistance shall not be less than 2 M\u03a9 with 500 V DC."
+    },
+    {
+      "document_id": "DOC-014",
+      "standard_number": "IS 555 : 1979",
+      "clause_number": "8.1",
+      "clause_title": "Insulation Resistance",
+      "parameter": "insulation_resistance",
+      "value": 2.0,
+      "unit": "M\u03a9",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-014-v001::8.1::GEN-001",
+      "raw_text": "Insulation Resistance: Shall not be less than 2 M\u03a9."
+    },
+    {
+      "document_id": "DOC-018",
+      "standard_number": "IS 269 : 2015",
+      "clause_number": "6.1",
+      "clause_title": "Compressive Strength",
+      "parameter": "compressive_strength",
+      "value": 53.0,
+      "unit": "MPa",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-018-v001::6.1::GEN-001",
+      "raw_text": "Compressive Strength: For 53 Grade OPC, the 28-day compressive strength shall not be less than 53 MPa (53 N/mm\u00b2). 7-day strength shall not be less than 37 MPa. 3-day strength shall not be less than 27"
+    },
+    {
+      "document_id": "DOC-019",
+      "standard_number": "IS 1489 (Part 1) : 2015",
+      "clause_number": "6.1",
+      "clause_title": "Compressive Strength",
+      "parameter": "compressive_strength",
+      "value": 33.0,
+      "unit": "MPa",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-019-v001::6.1::GEN-001",
+      "raw_text": "Compressive Strength: 28-day compressive strength shall not be less than 33 MPa. 7-day strength shall not be less than 22 MPa. 3-day strength shall not be less than 16 MPa."
+    },
+    {
+      "document_id": "DOC-020",
+      "standard_number": "IS 1786 : 2008",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress (0.2% Proof Stress)",
+      "parameter": "yield_stress",
+      "value": 500.0,
+      "unit": "MPa",
+      "grade": "Fe 500D",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-020-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress (0.2% Proof Stress): Fe 415 minimum 415 N/mm\u00b2 (415 MPa); Fe 500 minimum 500 N/mm\u00b2 (500 MPa); Fe 550 minimum 550 N/mm\u00b2 (550 MPa); Fe 600 minimum 600 N/mm\u00b2 (600 MPa)."
+    },
+    {
+      "document_id": "DOC-020",
+      "standard_number": "IS 1786 : 2008",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress (0.2% Proof Stress)",
+      "parameter": "yield_stress",
+      "value": 415.0,
+      "unit": "MPa",
+      "grade": "Fe 415",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-020-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress (0.2% Proof Stress): Fe 415 minimum 415 N/mm\u00b2 (415 MPa); Fe 500 minimum 500 N/mm\u00b2 (500 MPa); Fe 550 minimum 550 N/mm\u00b2 (550 MPa); Fe 600 minimum 600 N/mm\u00b2 (600 MPa)."
+    },
+    {
+      "document_id": "DOC-020",
+      "standard_number": "IS 1786 : 2008",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress (0.2% Proof Stress)",
+      "parameter": "yield_stress",
+      "value": 500.0,
+      "unit": "MPa",
+      "grade": "Fe 500",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-020-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress (0.2% Proof Stress): Fe 415 minimum 415 N/mm\u00b2 (415 MPa); Fe 500 minimum 500 N/mm\u00b2 (500 MPa); Fe 550 minimum 550 N/mm\u00b2 (550 MPa); Fe 600 minimum 600 N/mm\u00b2 (600 MPa)."
+    },
+    {
+      "document_id": "DOC-020",
+      "standard_number": "IS 1786 : 2008",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress (0.2% Proof Stress)",
+      "parameter": "yield_stress",
+      "value": 550.0,
+      "unit": "MPa",
+      "grade": "Fe 550",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-020-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress (0.2% Proof Stress): Fe 415 minimum 415 N/mm\u00b2 (415 MPa); Fe 500 minimum 500 N/mm\u00b2 (500 MPa); Fe 550 minimum 550 N/mm\u00b2 (550 MPa); Fe 600 minimum 600 N/mm\u00b2 (600 MPa)."
+    },
+    {
+      "document_id": "DOC-020",
+      "standard_number": "IS 1786 : 2008",
+      "clause_number": "7.2",
+      "clause_title": "Tensile Strength (TS)",
+      "parameter": "tensile_strength",
+      "value": 545.0,
+      "unit": "MPa",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-020-v001::7.2::REQ-001",
+      "raw_text": "Tensile Strength (TS): For Fe 500, minimum tensile strength shall be 545 N/mm\u00b2 (TS/YS ratio >= 1.08)."
+    },
+    {
+      "document_id": "DOC-020",
+      "standard_number": "IS 1786 : 2008",
+      "clause_number": "7.3",
+      "clause_title": "Elongation",
+      "parameter": "percentage_elongation",
+      "value": 14.5,
+      "unit": "%",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-020-v001::7.3::REQ-001",
+      "raw_text": "Elongation: Minimum percentage elongation on gauge length 5.65\u221aA shall be 14.5% for Fe 415, 12.0% for Fe 500, 10.0% for Fe 550, and 10.0% for Fe 600."
+    },
+    {
+      "document_id": "DOC-021",
+      "standard_number": "IS 2062 : 2011",
+      "clause_number": "8.1",
+      "clause_title": "Tensile Properties",
+      "parameter": "tensile_strength",
+      "value": 250.0,
+      "unit": "MPa",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-021-v001::8.1::REQ-001",
+      "raw_text": "Tensile Properties: For Grade E250 (Fe 410 W), minimum yield strength is 250 MPa for thickness < 20 mm; tensile strength 410 MPa; minimum elongation 23%."
+    },
+    {
+      "document_id": "DOC-021",
+      "standard_number": "IS 2062 : 2011",
+      "clause_number": "8.1",
+      "clause_title": "Tensile Properties",
+      "parameter": "percentage_elongation",
+      "value": 23.0,
+      "unit": "%",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-021-v001::8.1::REQ-001",
+      "raw_text": "Tensile Properties: For Grade E250 (Fe 410 W), minimum yield strength is 250 MPa for thickness < 20 mm; tensile strength 410 MPa; minimum elongation 23%."
+    },
+    {
+      "document_id": "DOC-029",
+      "standard_number": "IS 16046 (Part 2) : 2018",
+      "clause_number": "7.3.2",
+      "clause_title": "External Short Circuit",
+      "parameter": "insulation_resistance",
+      "value": 80.0,
+      "unit": "M\u03a9",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-029-v001::7.3.2::REQ-001",
+      "raw_text": "External Short Circuit: Short circuit at 55\u00b0C with external resistance < 80 m\u03a9; cell shall not catch fire or explode; case temperature shall not exceed 150\u00b0C."
+    },
+    {
+      "document_id": "DOC-030",
+      "standard_number": "IS 616 : 2017",
+      "clause_number": "10.3",
+      "clause_title": "Insulation Resistance",
+      "parameter": "insulation_resistance",
+      "value": 4.0,
+      "unit": "M\u03a9",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-030-v001::10.3::REQ-001",
+      "raw_text": "Insulation Resistance: Shall not be less than 4 M\u03a9 between mains plug and accessible enclosure."
+    },
+    {
+      "document_id": "DOC-034",
+      "standard_number": "IS 1786 : 2024",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress",
+      "parameter": "yield_stress",
+      "value": 500.0,
+      "unit": "MPa",
+      "grade": "Fe 500D",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-034-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress: Fe 500D minimum proof stress 500 MPa; Fe 550D minimum 550 MPa; Fe 650 minimum 650 MPa (new high-grade steel introduction)."
+    },
+    {
+      "document_id": "DOC-034",
+      "standard_number": "IS 1786 : 2024",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress",
+      "parameter": "yield_stress",
+      "value": 550.0,
+      "unit": "MPa",
+      "grade": "Fe 550D",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-034-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress: Fe 500D minimum proof stress 500 MPa; Fe 550D minimum 550 MPa; Fe 650 minimum 650 MPa (new high-grade steel introduction)."
+    },
+    {
+      "document_id": "DOC-034",
+      "standard_number": "IS 1786 : 2024",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress",
+      "parameter": "yield_stress",
+      "value": 650.0,
+      "unit": "MPa",
+      "grade": "Fe 650",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-034-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress: Fe 500D minimum proof stress 500 MPa; Fe 550D minimum 550 MPa; Fe 650 minimum 650 MPa (new high-grade steel introduction)."
+    },
+    {
+      "document_id": "DOC-034",
+      "standard_number": "IS 1786 : 2024",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress",
+      "parameter": "yield_stress",
+      "value": 500.0,
+      "unit": "MPa",
+      "grade": "Fe 500",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-034-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress: Fe 500D minimum proof stress 500 MPa; Fe 550D minimum 550 MPa; Fe 650 minimum 650 MPa (new high-grade steel introduction)."
+    },
+    {
+      "document_id": "DOC-034",
+      "standard_number": "IS 1786 : 2024",
+      "clause_number": "7.1",
+      "clause_title": "Yield Stress",
+      "parameter": "yield_stress",
+      "value": 550.0,
+      "unit": "MPa",
+      "grade": "Fe 550",
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-034-v001::7.1::REQ-001",
+      "raw_text": "Yield Stress: Fe 500D minimum proof stress 500 MPa; Fe 550D minimum 550 MPa; Fe 650 minimum 650 MPa (new high-grade steel introduction)."
+    },
+    {
+      "document_id": "DOC-034",
+      "standard_number": "IS 1786 : 2024",
+      "clause_number": "7.2",
+      "clause_title": "Tensile Strength",
+      "parameter": "tensile_strength",
+      "value": 565.0,
+      "unit": "MPa",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-034-v001::7.2::REQ-001",
+      "raw_text": "Tensile Strength: For Fe 500D, minimum tensile strength 565 MPa (TS/YS ratio >= 1.12 for seismic earthquake resistance zones)."
+    },
+    {
+      "document_id": "DOC-034",
+      "standard_number": "IS 1786 : 2024",
+      "clause_number": "7.3",
+      "clause_title": "Elongation",
+      "parameter": "percentage_elongation",
+      "value": 16.0,
+      "unit": "%",
+      "grade": null,
+      "normative_force": "MANDATORY",
+      "source_chunk_id": "DOC-034-v001::7.3::REQ-001",
+      "raw_text": "Elongation: Fe 500D minimum elongation increased to 16.0% (enhanced ductility)."
+    }
+  ],
+  "domains": [
+    "batteries_storage",
+    "chemicals_materials",
+    "chemicals_polymers",
+    "construction_civil",
+    "electrical",
+    "electronics_it",
+    "food_agriculture",
+    "general",
+    "mechanical_automotive",
+    "medical_safety"
+  ],
+  "stats": {
+    "total_products": 150,
+    "total_standards": 107,
+    "total_requirements": 23,
+    "total_domains": 10
+  }
+}

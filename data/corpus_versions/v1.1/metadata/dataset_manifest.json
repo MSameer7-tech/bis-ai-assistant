@@ -1,0 +1,129 @@
+{
+  "dataset_version": "1.0.0",
+  "generated_at": "2026-08-30T19:54:52.178898+00:00",
+  "documents": 29,
+  "verified_documents": 29,
+  "rejected_documents": 0,
+  "product_domains": {
+    "electrical": 12,
+    "construction_civil": 6,
+    "food_agriculture": 3,
+    "mechanical_automotive": 3,
+    "batteries_storage": 1,
+    "electronics_it": 2,
+    "chemicals_polymers": 2
+  },
+  "total_chunks": 503,
+  "total_indexed_chunks": 503,
+  "source_hashes": {
+    "DOC-001": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+    "DOC-007": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
+    "DOC-002": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
+    "DOC-010": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
+    "DOC-011": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
+    "DOC-012": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
+    "DOC-013": "ea59951d6029e0f99004ad5295d503d43e7300cbfc95622bc8981542334b9212",
+    "DOC-014": "3ee4f20a35c5fe5a58368431317d01988cafbbc2c447f4a76b1d85cbcabe1461",
+    "DOC-015": "7c40d3dd6e833e65e9b82f629d34a3944ff3352e97f253f44ce2484f2072c5a2",
+    "DOC-016": "3e141a8e1b59319485265c7a93be58227607666bc1dd3b1b3c2c330d5ba781f3",
+    "DOC-017": "71fc8e01070f8744fb0a0ab144c366b1f4a588e9794f3bc1298c6031302c65c9",
+    "DOC-018": "c27598a09622b42240893b9fcaa03b259b5c4c9d0a327dbd109e71e19905149d",
+    "DOC-019": "2327b5b612116bfe686f498615ec62620e1098f222263c2573c09864898742ab",
+    "DOC-020": "fa6794bf354d8c95af34d22253bf94461fb541737682a1cfe350fa0258f786ee",
+    "DOC-021": "b23b3219e841d34bd3de80ab3ca25b8b709c6cbb660be62f88c74b7325b01d34",
+    "DOC-022": "ecb9e19ad243e7a241cbf299d879f28274ac3bc3d3ece46f5b73a5e5ecc56e6b",
+    "DOC-023": "8e535c142906f8af076af9a0dfbad5f36afb880120abe4bc2868cc293dc9692c",
+    "DOC-024": "060eb1631e5e235efd0cac7c6b6f66285ad72c47bef9dfb33af06f756d3aa68e",
+    "DOC-025": "b1550b3ad547df93a742b2ef20bd71265706bd0e02f5cecb32a4567d3844e7da",
+    "DOC-026": "f3c31a5128d09360eb11b384d3e4db16c6a02384996df13209c78fc1e6e35a1c",
+    "DOC-027": "c6cc6b213c2cbda77eb20611f4e49537f427a2138a25732a3cbef0c4e58df9d3",
+    "DOC-028": "7033334e9c2f4c55429302c3267e033cf9e36e5c7236b96845bd55c7aeecdac4",
+    "DOC-029": "bfe15fa9b5c5eac3da99d57986886a14706e6009aa2db423a1693f4e297e29cb",
+    "DOC-030": "236070a04cf5baa15a631dcc211ebf893f4c98b7a0e51a6188e87644584299fd",
+    "DOC-031": "5a1fabc63ec21ba18de87b8d07f439ec9824a8ebe5ff636325b25710840e62e3",
+    "DOC-032": "957d770cb3a60b9f5e054dd124609c7cc1ba8ebe76aa49adcf5dfaa9f21f95b0",
+    "DOC-033": "5db00a39bb7b2708956d4066e2d32193cb279b4e183b1980fb0dcf0f02516253",
+    "DOC-034": "ff90afc14b8ec9092878a0e05cb100d1fd034f935869ec5d495e91c11a865d4f",
+    "DOC-035": "3128da9470d97b240d967d39386f5b2874df4b937338c5ec6998797c5bcc1892"
+  },
+  "pipeline_version": "2.0.0",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "quality_gate_status": "PASSED",
+  "manual_review_sample_queue_size": 26,
+  "manual_review_samples": [
+    {
+      "document_id": "DOC-001",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+      "risk_flags": [
+        "CONTAINS_TABLES",
+        "PROVISIONAL_REQUIREMENTS"
+      ]
+    },
+    {
+      "document_id": "DOC-002",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 2: Performance Requirements",
+      "risk_flags": [
+        "CONTAINS_TABLES"
+      ]
+    },
+    {
+      "document_id": "DOC-011",
+      "title": "Electronics and Information Technology Goods (Requirement of Compulsory Registration) Amendment Order, 2026",
+      "risk_flags": [
+        "AMENDMENT"
+      ]
+    },
+    {
+      "document_id": "DOC-012",
+      "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements (First Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-013",
+      "title": "Electric Ceiling Fans - Specification (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ]
+    },
+    {
+      "document_id": "DOC-014",
+      "title": "Specification for Table Type Electric Fans and Regulators",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-015",
+      "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements (Second Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-016",
+      "title": "Polyvinyl Chloride Insulated Cables for Working Voltages up to and Including 1100 V (Fourth Revision)",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-017",
+      "title": "Residual Current Operated Circuit-Breakers for Household and Similar Uses (RCCBs) - Part 1",
+      "risk_flags": [
+        "NEW_REVISION"
+      ]
+    },
+    {
+      "document_id": "DOC-018",
+      "title": "Ordinary Portland Cement - Specification (Sixth Revision)",
+      "risk_flags": [
+        "NEW_REVISION",
+        "CONTAINS_TABLES"
+      ]
+    }
+  ]
+}

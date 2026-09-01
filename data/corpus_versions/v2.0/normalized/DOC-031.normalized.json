@@ -1,0 +1,508 @@
+{
+  "document_id": "DOC-031",
+  "source_id": "SRC-031",
+  "document_metadata": {
+    "document_id": "DOC-031",
+    "source_id": "SRC-031",
+    "standard_id": "STD-IS_13252_P1_2010",
+    "standard_number": "IS 13252 (Part 1) : 2010",
+    "title": "Information Technology Equipment - Safety - Part 1: General Requirements (Second Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC031-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 13252 (Part 1) : 2010) covers and specifies requirements for Information Technology Equipment - Safety - Part 1: General Requirements (Second Revision). It applies to laptops_notebooks under it_equipment category in the electronics_it domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC031-2.1",
+      "clause_number": "2.1",
+      "title": "Protection from Electric Shock",
+      "content": "Protection from Electric Shock: SELV (Safety Extra Low Voltage) circuit shall not exceed 42.4 V peak AC or 60 V DC.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC031-5.1",
+      "clause_number": "5.1",
+      "title": "Touch Current",
+      "content": "Touch Current: Maximum touch current for Class I IT equipment shall not exceed 3.5 mA.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC031-5.2",
+      "clause_number": "5.2",
+      "title": "Electric Strength",
+      "content": "Electric Strength: Primary to SELV isolation shall withstand 3000 V AC (or 4242 V DC) for 1 min.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [
+        {
+          "entity_type": "requirement",
+          "requirement_type": "dielectric_test",
+          "requirement_id": "REQ-DOC031-5.2-ES",
+          "status": "mandatory",
+          "clause": "5.2",
+          "subject": "self-ballasted LED lamp",
+          "parameter": "dielectric_electric_strength",
+          "operator": "==",
+          "original_value": "4 000 V a.c.",
+          "normalized": {
+            "value": 4000,
+            "unit": "V a.c."
+          },
+          "value": 4000,
+          "unit": "V a.c.",
+          "conditions": {
+            "humidity_treatment": "immediately following 48 h humidity treatment"
+          },
+          "test": {
+            "test_voltage": "4 000 V a.c. (r.m.s.)",
+            "frequency": "50 Hz",
+            "duration": "1 minute (60 s)"
+          },
+          "acceptance_criterion": {
+            "minimum": 4000,
+            "unit": "V a.c.",
+            "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+          },
+          "exceptions": null,
+          "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+          "source_pages": [
+            4,
+            5
+          ],
+          "provenance": {
+            "document_id": "DOC-031",
+            "source_id": "SRC-031",
+            "standard": "IS 13252 (Part 1) : 2010",
+            "clause": "5.2",
+            "page": 4,
+            "pages": [
+              4,
+              5
+            ],
+            "section": "Electric Strength",
+            "original_text": "Electric Strength: Primary to SELV isolation shall withstand 3000 V AC (or 4242 V DC) for 1 min."
+          }
+        }
+      ],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC031-4.2",
+      "clause_number": "4.2",
+      "title": "Stability Test",
+      "content": "Stability Test: Laptop power adapter shall not tilt over on 10° inclined plane.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "requirement",
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC031-0001",
+      "entity_type": "standard",
+      "name": "IS 13252 (Part 1) : 2010",
+      "status": "mandatory",
+      "original_value": "Information Technology Equipment - Safety - Part 1: General Requirements (Second Revision)",
+      "value": "Information Technology Equipment - Safety - Part 1: General Requirements (Second Revision)",
+      "provenance": {
+        "document_id": "DOC-031",
+        "source_id": "SRC-031",
+        "standard": "IS 13252 (Part 1) : 2010",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC031-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-031",
+        "source_id": "SRC-031",
+        "standard": "IS 13252 (Part 1) : 2010",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC031-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-031",
+        "source_id": "SRC-031",
+        "standard": "IS 13252 (Part 1) : 2010",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC031-0004",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "42.4 V",
+      "value": "42.4 V",
+      "provenance": {
+        "document_id": "DOC-031",
+        "source_id": "SRC-031",
+        "standard": "IS 13252 (Part 1) : 2010",
+        "clause": "2.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "2.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 42.4,
+        "unit": "V"
+      },
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC031-0005",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-031",
+        "source_id": "SRC-031",
+        "standard": "IS 13252 (Part 1) : 2010",
+        "clause": "5.2",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC031-0006",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "3000 V AC",
+      "value": "3000 V AC",
+      "provenance": {
+        "document_id": "DOC-031",
+        "source_id": "SRC-031",
+        "standard": "IS 13252 (Part 1) : 2010",
+        "clause": "5.2",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 3000,
+        "unit": "V"
+      },
+      "unit": "V"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC031-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-031",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0002",
+      "subject": "Clause 2.1: Protection from Electric Shock",
+      "predicate": "part_of",
+      "object": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-031",
+      "source_clause": "2.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0003",
+      "subject": "Clause 2.1",
+      "predicate": "prohibits",
+      "object": "Access to Live Conductive Parts",
+      "document_id": "DOC-031",
+      "source_clause": "2.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0004",
+      "subject": "Clause 5.1: Touch Current",
+      "predicate": "part_of",
+      "object": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-031",
+      "source_clause": "5.1",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0005",
+      "subject": "Clause 5.2: Electric Strength",
+      "predicate": "part_of",
+      "object": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-031",
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0006",
+      "subject": "Clause 4.2: Stability Test",
+      "predicate": "part_of",
+      "object": "IS 13252 (Part 1) : 2010",
+      "document_id": "DOC-031",
+      "source_clause": "4.2",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0007",
+      "subject": "Clause 5.2",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-031",
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0008",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_limit",
+      "object": "== 4000 V a.c.",
+      "document_id": "DOC-031",
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0009",
+      "subject": "dielectric_electric_strength",
+      "predicate": "tested_by",
+      "object": "4 000 V a.c. (r.m.s.)",
+      "document_id": "DOC-031",
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC031-0010",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: immediately following 48 h humidity treatment",
+      "document_id": "DOC-031",
+      "source_clause": "5.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC031-5.2-ES",
+      "status": "mandatory",
+      "clause": "5.2",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
+      "value": 4000,
+      "unit": "V a.c.",
+      "conditions": {
+        "humidity_treatment": "immediately following 48 h humidity treatment"
+      },
+      "test": {
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute (60 s)"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+      "source_pages": [
+        4,
+        5
+      ],
+      "provenance": {
+        "document_id": "DOC-031",
+        "source_id": "SRC-031",
+        "standard": "IS 13252 (Part 1) : 2010",
+        "clause": "5.2",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ],
+        "section": "Electric Strength",
+        "original_text": "Electric Strength: Primary to SELV isolation shall withstand 3000 V AC (or 4242 V DC) for 1 min."
+      }
+    }
+  ],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.690631+00:00",
+    "total_definitions": 0,
+    "total_entities": 6,
+    "total_requirements": 1,
+    "total_relationships": 10,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-031",
+    "document_id": "DOC-031",
+    "raw_file": null,
+    "sha256": null
+  }
+}

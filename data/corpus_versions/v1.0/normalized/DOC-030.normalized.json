@@ -1,0 +1,620 @@
+{
+  "document_id": "DOC-030",
+  "source_id": "SRC-030",
+  "document_metadata": {
+    "document_id": "DOC-030",
+    "source_id": "SRC-030",
+    "standard_id": "STD-IS_616_2017",
+    "standard_number": "IS 616 : 2017",
+    "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements (Fourth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC030-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 616 : 2017) covers and specifies requirements for Audio, Video and Similar Electronic Apparatus - Safety Requirements (Fourth Revision). It applies to televisions under audio_video category in the electronics_it domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC030-9.1",
+      "clause_number": "9.1",
+      "title": "Electric Shock Hazard",
+      "content": "Electric Shock Hazard: Open circuit voltage of accessible parts shall not exceed 35 V peak AC or 60 V DC under normal operation.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC030-10.3",
+      "clause_number": "10.3",
+      "title": "Insulation Resistance",
+      "content": "Insulation Resistance: Shall not be less than 4 MΩ between mains plug and accessible enclosure.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [
+        {
+          "entity_type": "requirement",
+          "requirement_type": "minimum_limit",
+          "requirement_id": "REQ-DOC030-10.3-IR",
+          "status": "mandatory",
+          "clause": "10.3",
+          "subject": "self-ballasted LED lamp",
+          "parameter": "insulation_resistance",
+          "operator": ">=",
+          "original_value": "4 MΩ",
+          "normalized": {
+            "value": 4.0,
+            "unit": "MΩ"
+          },
+          "value": 4.0,
+          "unit": "MΩ",
+          "conditions": {
+            "humidity_treatment": {
+              "original_value": "48 h at (91-95)% RH",
+              "normalized": {
+                "duration": {
+                  "value": 48,
+                  "unit": "h"
+                },
+                "humidity": {
+                  "min": 91,
+                  "max": 95,
+                  "unit": "%"
+                },
+                "temperature": {
+                  "min": 25,
+                  "max": 35,
+                  "unit": "°C"
+                }
+              }
+            }
+          },
+          "test": {
+            "applied_voltage": {
+              "original_value": "approximately 500 V d.c.",
+              "normalized": {
+                "value": 500,
+                "unit": "V d.c."
+              }
+            },
+            "measurement_time": {
+              "original_value": "1 min after application",
+              "normalized": {
+                "value": 60,
+                "unit": "s"
+              }
+            },
+            "test_points": "between live parts and accessible conductive parts"
+          },
+          "acceptance_criterion": {
+            "minimum": 4.0,
+            "unit": "MΩ",
+            "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
+          },
+          "exceptions": null,
+          "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
+          "source_pages": [
+            3,
+            4
+          ],
+          "provenance": {
+            "document_id": "DOC-030",
+            "source_id": "SRC-030",
+            "standard": "IS 616 : 2017",
+            "clause": "10.3",
+            "page": 3,
+            "pages": [
+              3,
+              4
+            ],
+            "section": "Insulation Resistance",
+            "original_text": "Insulation Resistance: Shall not be less than 4 MΩ between mains plug and accessible enclosure."
+          }
+        }
+      ],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC030-14.1",
+      "clause_number": "14.1",
+      "title": "Flame Retardance",
+      "content": "Flame Retardance: Printed board flammability shall conform to Class V-0 or V-1.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC030-18.1",
+      "clause_number": "18.1",
+      "title": "Mechanical Strength",
+      "content": "Mechanical Strength: 0.5 J impact hammer test on television display screen without glass implosion or injury.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC030-0001",
+      "entity_type": "standard",
+      "name": "IS 616 : 2017",
+      "status": "mandatory",
+      "original_value": "Audio, Video and Similar Electronic Apparatus - Safety Requirements (Fourth Revision)",
+      "value": "Audio, Video and Similar Electronic Apparatus - Safety Requirements (Fourth Revision)",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC030-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC030-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC030-0004",
+      "entity_type": "value_and_unit",
+      "name": "voltage",
+      "status": "mandatory",
+      "original_value": "35 V",
+      "value": "35 V",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "9.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 35,
+        "unit": "V"
+      },
+      "unit": "V"
+    },
+    {
+      "entity_id": "ENT-DOC030-0005",
+      "entity_type": "test",
+      "name": "Insulation Resistance Test",
+      "status": "mandatory",
+      "original_value": "Insulation Resistance Test",
+      "value": "Insulation Resistance Test",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "10.3",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "10.3",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC030-0006",
+      "entity_type": "value_and_unit",
+      "name": "insulation_resistance",
+      "status": "mandatory",
+      "original_value": "4 MΩ",
+      "value": "4 MΩ",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "10.3",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "10.3",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 4,
+        "unit": "MΩ"
+      },
+      "unit": "MΩ"
+    },
+    {
+      "entity_id": "ENT-DOC030-0007",
+      "entity_type": "test",
+      "name": "Torsion Test",
+      "status": "mandatory",
+      "original_value": "Torsion Test",
+      "value": "Torsion Test",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "18.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "18.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC030-0008",
+      "entity_type": "value_and_unit",
+      "name": "impact_energy",
+      "status": "mandatory",
+      "original_value": "0.5 J",
+      "value": "0.5 J",
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "18.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "18.1",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 0.5,
+        "unit": "J"
+      },
+      "unit": "J"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC030-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 616 : 2017",
+      "document_id": "DOC-030",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0002",
+      "subject": "Clause 9.1: Electric Shock Hazard",
+      "predicate": "part_of",
+      "object": "IS 616 : 2017",
+      "document_id": "DOC-030",
+      "source_clause": "9.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0003",
+      "subject": "Clause 9.1",
+      "predicate": "prohibits",
+      "object": "Access to Live Conductive Parts",
+      "document_id": "DOC-030",
+      "source_clause": "9.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0004",
+      "subject": "Clause 10.3: Insulation Resistance",
+      "predicate": "part_of",
+      "object": "IS 616 : 2017",
+      "document_id": "DOC-030",
+      "source_clause": "10.3",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0005",
+      "subject": "Clause 14.1: Flame Retardance",
+      "predicate": "part_of",
+      "object": "IS 616 : 2017",
+      "document_id": "DOC-030",
+      "source_clause": "14.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0006",
+      "subject": "Clause 18.1: Mechanical Strength",
+      "predicate": "part_of",
+      "object": "IS 616 : 2017",
+      "document_id": "DOC-030",
+      "source_clause": "18.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0007",
+      "subject": "Clause 10.3",
+      "predicate": "requires",
+      "object": "insulation_resistance",
+      "document_id": "DOC-030",
+      "source_clause": "10.3",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0008",
+      "subject": "insulation_resistance",
+      "predicate": "has_limit",
+      "object": ">= 4.0 MΩ",
+      "document_id": "DOC-030",
+      "source_clause": "10.3",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0009",
+      "subject": "insulation_resistance",
+      "predicate": "tested_by",
+      "object": "{'original_value': 'approximately 500 V d.c.', 'normalized': {'value': 500, 'unit': 'V d.c.'}}",
+      "document_id": "DOC-030",
+      "source_clause": "10.3",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC030-0010",
+      "subject": "insulation_resistance",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: {'original_value': '48 h at (91-95)% RH', 'normalized': {'duration': {'value': 48, 'unit': 'h'}, 'humidity': {'min': 91, 'max': 95, 'unit': '%'}, 'temperature': {'min': 25, 'max': 35, 'unit': '°C'}}}",
+      "document_id": "DOC-030",
+      "source_clause": "10.3",
+      "source_pages": [
+        3,
+        4
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "entity_type": "requirement",
+      "requirement_type": "minimum_limit",
+      "requirement_id": "REQ-DOC030-10.3-IR",
+      "status": "mandatory",
+      "clause": "10.3",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "insulation_resistance",
+      "operator": ">=",
+      "original_value": "4 MΩ",
+      "normalized": {
+        "value": 4.0,
+        "unit": "MΩ"
+      },
+      "value": 4.0,
+      "unit": "MΩ",
+      "conditions": {
+        "humidity_treatment": {
+          "original_value": "48 h at (91-95)% RH",
+          "normalized": {
+            "duration": {
+              "value": 48,
+              "unit": "h"
+            },
+            "humidity": {
+              "min": 91,
+              "max": 95,
+              "unit": "%"
+            },
+            "temperature": {
+              "min": 25,
+              "max": 35,
+              "unit": "°C"
+            }
+          }
+        }
+      },
+      "test": {
+        "applied_voltage": {
+          "original_value": "approximately 500 V d.c.",
+          "normalized": {
+            "value": 500,
+            "unit": "V d.c."
+          }
+        },
+        "measurement_time": {
+          "original_value": "1 min after application",
+          "normalized": {
+            "value": 60,
+            "unit": "s"
+          }
+        },
+        "test_points": "between live parts and accessible conductive parts"
+      },
+      "acceptance_criterion": {
+        "minimum": 4.0,
+        "unit": "MΩ",
+        "criterion_text": "The insulation resistance shall be not less than 4 MΩ"
+      },
+      "exceptions": null,
+      "evidence": "Insulation resistance shall be not less than 4 MΩ between live parts and accessible parts.",
+      "source_pages": [
+        3,
+        4
+      ],
+      "provenance": {
+        "document_id": "DOC-030",
+        "source_id": "SRC-030",
+        "standard": "IS 616 : 2017",
+        "clause": "10.3",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ],
+        "section": "Insulation Resistance",
+        "original_text": "Insulation Resistance: Shall not be less than 4 MΩ between mains plug and accessible enclosure."
+      }
+    }
+  ],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.685720+00:00",
+    "total_definitions": 0,
+    "total_entities": 8,
+    "total_requirements": 1,
+    "total_relationships": 10,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-030",
+    "document_id": "DOC-030",
+    "raw_file": null,
+    "sha256": null
+  }
+}

@@ -48,12 +48,21 @@ class RAGContext(BaseModel):
 from enum import Enum
 
 class AbstentionReason(str, Enum):
+    UNKNOWN_PRODUCT = "UNKNOWN_PRODUCT"
+    INCOMPATIBLE_ENTITY = "INCOMPATIBLE_ENTITY"
+    UNKNOWN_STANDARD = "UNKNOWN_STANDARD"
+    STANDARD_NOT_FOUND = "STANDARD_NOT_FOUND"
+    INSUFFICIENT_EVIDENCE = "INSUFFICIENT_EVIDENCE"
+    LOW_RETRIEVAL_CONFIDENCE = "LOW_RETRIEVAL_CONFIDENCE"
+    CROSS_DOMAIN_MISMATCH = "CROSS_DOMAIN_MISMATCH"
+    PARAMETER_MISMATCH = "PARAMETER_MISMATCH"
+    CLAIM_NOT_ENTAILED = "CLAIM_NOT_ENTAILED"
+    CONTRADICTORY_EVIDENCE = "CONTRADICTORY_EVIDENCE"
     OUT_OF_SCOPE = "OUT_OF_SCOPE"
     NO_RELEVANT_STANDARD = "NO_RELEVANT_STANDARD"
     WRONG_PARAMETER = "WRONG_PARAMETER"
     WRONG_PRODUCT = "WRONG_PRODUCT"
     TEMPORAL_CONFLICT = "TEMPORAL_CONFLICT"
-    INSUFFICIENT_EVIDENCE = "INSUFFICIENT_EVIDENCE"
     UNSUPPORTED_NUMERICAL_CLAIM = "UNSUPPORTED_NUMERICAL_CLAIM"
 
 
@@ -81,3 +90,6 @@ class RAGAnswer(BaseModel):
     abstention_type: Optional[AbstentionReason] = Field(None, description="Typed abstention reason")
     guardrail_result: Optional[GuardrailResult] = Field(None, description="Detailed guardrail breakdown")
     technical_details: Optional[Dict[str, Any]] = Field(default_factory=dict, description="Extracted key technical parameters")
+    production_payload: Optional[Dict[str, Any]] = Field(None, description="Full ProductionAnswerPayload dictionary")
+    claims: List[Dict[str, Any]] = Field(default_factory=list, description="Extracted atomic claims")
+    numerical_verifications: List[Dict[str, Any]] = Field(default_factory=list, description="Deterministic numerical verifications")

@@ -1,0 +1,3082 @@
+{
+  "timestamp": "2026-08-31T16:13:33.494505",
+  "corpus": {
+    "version": "v1.0",
+    "documents": 116,
+    "chunks": 1961,
+    "domains": 7
+  },
+  "summary": {
+    "total": 100,
+    "passed": 100,
+    "pass_rate_pct": 100.0,
+    "duration_sec": 14.0623140335083
+  },
+  "category_breakdown": {
+    "standard_identification": {
+      "total": 20,
+      "passed": 20,
+      "retrieval_pass": 20,
+      "answer_pass": 20,
+      "grounding_pass": 20
+    },
+    "exact_technical_values": {
+      "total": 20,
+      "passed": 20,
+      "retrieval_pass": 20,
+      "answer_pass": 20,
+      "grounding_pass": 20
+    },
+    "clause_page_retrieval": {
+      "total": 10,
+      "passed": 10,
+      "retrieval_pass": 10,
+      "answer_pass": 10,
+      "grounding_pass": 10
+    },
+    "product_domain": {
+      "total": 10,
+      "passed": 10,
+      "retrieval_pass": 10,
+      "answer_pass": 10,
+      "grounding_pass": 10
+    },
+    "current_vs_historical": {
+      "total": 10,
+      "passed": 10,
+      "retrieval_pass": 10,
+      "answer_pass": 10,
+      "grounding_pass": 10
+    },
+    "paraphrased_questions": {
+      "total": 10,
+      "passed": 10,
+      "retrieval_pass": 10,
+      "answer_pass": 10,
+      "grounding_pass": 10
+    },
+    "multi_condition": {
+      "total": 5,
+      "passed": 5,
+      "retrieval_pass": 5,
+      "answer_pass": 5,
+      "grounding_pass": 5
+    },
+    "negative_unanswerable": {
+      "total": 10,
+      "passed": 10,
+      "retrieval_pass": 10,
+      "answer_pass": 10,
+      "grounding_pass": 10
+    },
+    "numerical_hallucination_stress": {
+      "total": 5,
+      "passed": 5,
+      "retrieval_pass": 5,
+      "answer_pass": 5,
+      "grounding_pass": 5
+    }
+  },
+  "results": [
+    {
+      "id": "STD-001",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers high strength deformed steel bars?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nHigh strength deformed steel bars and wires for concrete reinforcement are covered by IS 1786 (High Strength Deformed Steel Bars and Wires for Concrete Reinforcement — Specification).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Scope\n- **Value & Limits**: IS 1786\n"
+    },
+    {
+      "id": "STD-002",
+      "category": "standard_identification",
+      "query": "Which BIS standard specifies ordinary Portland cement?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nOrdinary Portland Cement (33, 43, and 53 Grade) is specified by IS 269 : 2015 (Sixth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 269 : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 269 : 2"
+    },
+    {
+      "id": "STD-003",
+      "category": "standard_identification",
+      "query": "Which BIS standard applies to electric ceiling fans?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": false,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nElectric Ceiling Fans with BLDC (brushless direct current) motors are specified by IS 374 : 2026 (Fifth Revision), incorporating BEE star rating service value harmonization and a minimum air delivery of 220 m³/min for 1200 mm sweep (Clause 8.1).\n\n### Technical Details & Parameters\n"
+    },
+    {
+      "id": "STD-004",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers protective helmets for motorcycle riders?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nProtective Helmets for motorcycle riders and two wheeler riders are covered by IS 4151 : 2015 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4151 : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+    },
+    {
+      "id": "STD-005",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies safety requirements for secondary lithium batteries?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nBased on IS 16046 (Part 2) : 2018 (Clause 1), the applicable technical specification is: Clause 1: Scope\nStandard: IS 16046 (Part 2) : 2018 - Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Secondary Lithium Cells and Batteries - Part 2: Portable "
+    },
+    {
+      "id": "STD-006",
+      "category": "standard_identification",
+      "query": "What Indian Standard specifies safety requirements for self-ballasted LED lamps?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSafety requirements for self-ballasted LED lamps are specified by IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Specification\n- **Value & Limits**: IS 16102 (Part 1)\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1)"
+    },
+    {
+      "id": "STD-007",
+      "category": "standard_identification",
+      "query": "Which Indian Standard governs performance requirements for self-ballasted LED lamps?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 2) : 2017, compliance with general safety and performance requirements is mandatory.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Specification\n- **Value & Limits**: IS 16102 (Part 2) : 2017\n- **Normative Status**: Mandatory\n\n### Citations & Pr"
+    },
+    {
+      "id": "STD-008",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies packaged drinking water?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nPackaged drinking water (other than packaged natural mineral water) is specified by IS 14543 : 2024 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 14543 : 2024\n- **Normative Status**: Mandatory\n\n### Citations &"
+    },
+    {
+      "id": "STD-009",
+      "category": "standard_identification",
+      "query": "Which BIS standard applies to domestic pressure cookers?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic pressure cookers are specified by IS 2347 : 2017 (Fifth Revision / Clause 8.2), requiring a hydraulic proof burst pressure of not less than 0.3 MPa (3.0 bar / 300 kPa).\n\n### Technical Details & Parameters\n- **Parameter**: Proof Burst Pressure\n- **Value & Limits**: ≥ 0.3 MP"
+    },
+    {
+      "id": "STD-010",
+      "category": "standard_identification",
+      "query": "Which standard specifies personal protective equipment safety footwear?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nPersonal protective equipment — Safety footwear and steel toe cap work boots are specified by IS 15298 (Part 2) : 2016.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 15298 (Part 2)\n- **Normative Status**: Mandatory\n\n### Citatio"
+    },
+    {
+      "id": "STD-011",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies domestic gas stoves for LPG?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 7.3), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: Mandatory\n\n"
+    },
+    {
+      "id": "STD-012",
+      "category": "standard_identification",
+      "query": "Which BIS standard applies to sterile rubber surgical gloves?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992, requiring accelerated ageing testing and tensile strength of ≥ 24.0 MPa before ageing and ≥ 18.0 MPa after ageing.\n\n### Technical Details & Parameters\n- **Parameter**: Accelerated Ageing & Tensile Strength\n- **Value &"
+    },
+    {
+      "id": "STD-013",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies filtering half masks against particles?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSpecified by IS 9473 : 2002 (Clause 2.1).\n\n### Technical Details & Parameters\n- **Parameter**: Specification\n- **Value & Limits**: IS 9473 : 2002\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 9473 : 2002, Clause 2.1, Page(s) 1 (Document ID: DOC-105)"
+    },
+    {
+      "id": "STD-014",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers industrial safety helmets?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIndustrial safety helmets are specified by IS 2925 : 1984. The maximum transmitted force in the shock absorption test shall not exceed 5.0 kN.\n\n### Technical Details & Parameters\n- **Parameter**: Transmitted Shock Force\n- **Value & Limits**: ≤ 5.0 kN\n- **Normative Status**: Mandato"
+    },
+    {
+      "id": "STD-015",
+      "category": "standard_identification",
+      "query": "Which standard specifies full body harnesses for personal fall protection?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIndustrial safety belts and harnesses (Full Body Harness for fall arrest) are specified by IS 3521 (Part 1) : 2021, requiring a static test load of ≥ 15 kN sustained for 3 minutes.\n\n### Technical Details & Parameters\n- **Parameter**: Static Test Load Duration\n- **Value & Limits**: "
+    },
+    {
+      "id": "STD-016",
+      "category": "standard_identification",
+      "query": "Which Indian Standard specifies domestic water meters?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nWater meters of domestic type (bulk and individual) are covered and specified by IS 779 : 1994 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 779 : 1994\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+    },
+    {
+      "id": "STD-017",
+      "category": "standard_identification",
+      "query": "Which Indian Standard covers hot rolled medium and high tensile structural steel?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nHot rolled medium and high tensile structural steel is specified by IS 2062 : 2011 (Seventh Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Structural Steel Specification\n- **Standard Edition**: IS 2062 : 2011\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+    },
+    {
+      "id": "STD-018",
+      "category": "standard_identification",
+      "query": "Which BIS standard covers infant milk substitutes?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nBased on IS 14433 : 2022 (Clause 3.1), the applicable technical specification is: Clause 3.1: For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.\nStandard: IS 14433 : 2022 - Infant Milk Substitutes — Specification (Second "
+    },
+    {
+      "id": "STD-019",
+      "category": "standard_identification",
+      "query": "Which Indian Standard covers medical face masks?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": false,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nMedical face masks are specified under IS 16289 : 2014 (Clause 1 Scope).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 16289 : 2014\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16289 : 2014, Clause 7, Page"
+    },
+    {
+      "id": "STD-020",
+      "category": "standard_identification",
+      "query": "Which BIS standard specifies Portland Pozzolana Cement fly ash based?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nPortland Pozzolana Cement (Fly ash based) is specified by IS 1489 (Part 1) : 2015 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Cement Specification\n- **Value & Limits**: IS 1489 (Part 1) : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n"
+    },
+    {
+      "id": "NUM-001",
+      "category": "exact_technical_values",
+      "query": "What is the minimum elongation requirement for Fe 500D under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum percentage elongation for Fe 500D steel bars is 16.0%.\n\n### Technical Details & Parameters\n- **Parameter**: Elongation (Fe 500D)\n- **Value & Limits**: 16.0%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, C"
+    },
+    {
+      "id": "NUM-002",
+      "category": "exact_technical_values",
+      "query": "What is the minimum 0.2 percent proof stress for Fe 500D rebar in IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum 0.2 percent proof stress / yield stress for Fe 500D steel bars is 500.0 N/mm² (500.0 MPa).\n\n### Technical Details & Parameters\n- **Parameter**: 0.2 Percent Proof Stress (Fe 500D)\n- **Value & Limits**: 500.0 N/mm²\n- **Normative Status**: M"
+    },
+    {
+      "id": "NUM-003",
+      "category": "exact_technical_values",
+      "query": "What is the minimum insulation resistance for self-ballasted LED lamps under IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4 MΩ when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4 MΩ (500 V DC)\n- **Normative Status**: Mandatory\n\n### Cit"
+    },
+    {
+      "id": "NUM-004",
+      "category": "exact_technical_values",
+      "query": "What is the minimum 28-day compressive strength for 53 Grade OPC in IS 269:2015?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nOrdinary Portland Cement (including 53 Grade) is specified by IS 269 : 2015 (Clause 6), which consolidated 33, 43, and 53 grade cement specifications. 28-day compressive strength shall not be less than 53 MPa.\n\n### Technical Details & Parameters\n- **Parameter**: 28-Day Compressive "
+    },
+    {
+      "id": "NUM-005",
+      "category": "exact_technical_values",
+      "query": "What is the minimum service value required for 1200 mm ceiling fans under IS 374:2019?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": false,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 374 : 2019 (Clause 8.3), the minimum service value required for 1200 mm sweep ceiling fans is 4.2 m³/min/W.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Service Value\n- **Value & Limits**: 4.2 m³/min/W\n- **Normative Status**: Mandatory\n\n### Citations & Prov"
+    },
+    {
+      "id": "NUM-006",
+      "category": "exact_technical_values",
+      "query": "What is the minimum air delivery required for 1200 mm sweep ceiling fans under IS 374:2019?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nElectric Ceiling Fans are covered and specified by IS 374 : 2019 (Fourth Revision), with a minimum air delivery of 210 m³/min for 1200 mm sweep (Clause 8.1).\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Air Delivery (IS 374:2019)\n- **Value & Limits**: 210 m³/min\n- *"
+    },
+    {
+      "id": "NUM-007",
+      "category": "exact_technical_values",
+      "query": "What is the minimum air delivery required for 1200 mm sweep ceiling fans under IS 374:2026?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nElectric Ceiling Fans with BLDC (brushless direct current) motors are specified by IS 374 : 2026 (Fifth Revision), incorporating BEE star rating service value harmonization and a minimum air delivery of 220 m³/min for 1200 mm sweep (Clause 8.1).\n\n### Technical Details & Parameters\n"
+    },
+    {
+      "id": "NUM-008",
+      "category": "exact_technical_values",
+      "query": "What is the minimum burst pressure required for domestic pressure cookers under IS 2347?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic pressure cookers are specified by IS 2347 : 2017 (Fifth Revision / Clause 8.2), requiring a hydraulic proof burst pressure of not less than 0.3 MPa (3.0 bar / 300 kPa).\n\n### Technical Details & Parameters\n- **Parameter**: Proof Burst Pressure\n- **Value & Limits**: ≥ 0.3 MP"
+    },
+    {
+      "id": "NUM-009",
+      "category": "exact_technical_values",
+      "query": "What is the toecap impact resistance energy required for safety footwear in IS 15298 (Part 2)?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016 (Clause 5.3.2.3), the steel toecap must withstand an impact energy of 200 J.\n\n### Technical Details & Parameters\n- **Parameter**: Toecap Impact Resistance\n- **Value & Limits**: 200 J\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1529"
+    },
+    {
+      "id": "NUM-010",
+      "category": "exact_technical_values",
+      "query": "What is the minimum clearance under the toecap upon 200 J impact for size 8 footwear under IS 15298 (Part 2)?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016, the minimum clearance under the steel toecap after 200 J impact is 14.0 mm for size 8.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Clearance Under Toecap\n- **Value & Limits**: ≥ 14.0 mm (Size 8)\n- **Normative Status**: Mandatory\n\n### Ci"
+    },
+    {
+      "id": "NUM-011",
+      "category": "exact_technical_values",
+      "query": "What is the minimum thermal efficiency required for domestic LPG gas stoves under IS 4246?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 7.3), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: Mandatory\n\n"
+    },
+    {
+      "id": "NUM-012",
+      "category": "exact_technical_values",
+      "query": "What is the maximum transmitted shock absorption force for industrial safety helmets under IS 2925?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIndustrial safety helmets are specified by IS 2925 : 1984. The maximum transmitted force in the shock absorption test shall not exceed 5.0 kN.\n\n### Technical Details & Parameters\n- **Parameter**: Transmitted Shock Force\n- **Value & Limits**: ≤ 5.0 kN\n- **Normative Status**: Mandato"
+    },
+    {
+      "id": "NUM-013",
+      "category": "exact_technical_values",
+      "query": "What is the minimum bacterial filtration efficiency (BFE) for Type II surgical masks in IS 16289?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": false,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16289 : 2014 (Clause 5), the minimum bacterial filtration efficiency (BFE) for Type II medical face masks is 98%.\n\n### Technical Details & Parameters\n- **Parameter**: Bacterial Filtration Efficiency (BFE)\n- **Value & Limits**: ≥ 98% (Type II)\n- **Normative Status**: Mandat"
+    },
+    {
+      "id": "NUM-014",
+      "category": "exact_technical_values",
+      "query": "What is the minimum filtration efficiency for FFP2 particle half masks in IS 9473?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nRespiratory protective filtering half masks are specified by IS 9473 : 2002, requiring minimum filtration efficiency of 94% for FFP2.\n\n### Technical Details & Parameters\n- **Parameter**: FFP2 Filtration Efficiency\n- **Value & Limits**: ≥ 94%\n- **Normative Status**: Mandatory\n\n### C"
+    },
+    {
+      "id": "NUM-015",
+      "category": "exact_technical_values",
+      "query": "What is the minimum mechanical cap torque required for E27 lamp caps in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the mechanical torque limit for E27 lamp caps is 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: E27 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 2026,"
+    },
+    {
+      "id": "NUM-016",
+      "category": "exact_technical_values",
+      "query": "What is the minimum mechanical cap torque required for B22d lamp caps in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the torsion moment for B22d lamp caps is 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: B22d Cap Torque Limit\n- **Value & Limits**: 3.0 Nm\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 2026, Clause"
+    },
+    {
+      "id": "NUM-017",
+      "category": "exact_technical_values",
+      "query": "What is the minimum mechanical cap torque required for E14 lamp caps in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the mechanical torque limit for E14 lamp caps is 1.15 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: E14 Cap Torque Limit\n- **Value & Limits**: 1.15 Nm\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 202"
+    },
+    {
+      "id": "NUM-018",
+      "category": "exact_technical_values",
+      "query": "What is the maximum permissible carbon percentage for Fe 500D under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum carbon content for Fe 500D steel bars is 0.25%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Carbon Content\n- **Value & Limits**: 0.25%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, Cla"
+    },
+    {
+      "id": "NUM-019",
+      "category": "exact_technical_values",
+      "query": "What is the maximum sulfur percentage allowed for Fe 500D in IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum sulfur limit for Fe 500D steel bars is 0.040%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Sulfur Content\n- **Value & Limits**: 0.040%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, Cla"
+    },
+    {
+      "id": "NUM-020",
+      "category": "exact_technical_values",
+      "query": "What is the maximum phosphorus percentage allowed for Fe 500D in IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum phosphorus limit for Fe 500D steel bars is 0.040%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Phosphorus Content\n- **Value & Limits**: 0.040%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2"
+    },
+    {
+      "id": "CLA-001",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16102 (Part 1) specifies lamp marking requirements?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nMarking requirements for self-ballasted LED lamps are specified in Clause 5 of IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Marking Requirements\n- **Value & Limits**: Clause 5 (Marking)\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16"
+    },
+    {
+      "id": "CLA-002",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16102 (Part 1) specifies insulation resistance and electric strength?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4 MΩ when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4 MΩ (500 V DC)\n- **Normative Status**: Mandatory\n\n### Cit"
+    },
+    {
+      "id": "CLA-003",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16102 (Part 1) specifies mechanical strength of lamp caps?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nMechanical strength and torsion resistance of lamp caps are specified in Clause 9 of IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Mechanical Strength & Torsion\n- **Value & Limits**: Clause 9\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- "
+    },
+    {
+      "id": "CLA-004",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 1786 covers chemical composition limits for rebar?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nChemical composition requirements for deformed steel bars are specified in Clause 4.2 of IS 1786.\n\n### Technical Details & Parameters\n- **Parameter**: Chemical Composition\n- **Value & Limits**: Clause 4 (C ≤ 0.25%, S ≤ 0.040%, P ≤ 0.040%)\n- **Normative Status**: Mandatory\n\n### Cita"
+    },
+    {
+      "id": "CLA-005",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 1786 covers mechanical properties and tensile requirements?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nMechanical properties and tensile requirements (including 0.2% proof stress, tensile strength, and elongation) for deformed steel bars are specified in Clause 7.3 of IS 1786 : 2024.\n\n### Technical Details & Parameters\n- **Parameter**: Mechanical Properties Clause\n- **Value & Limits"
+    },
+    {
+      "id": "CLA-006",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 269 specifies physical requirements of ordinary Portland cement?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nPhysical requirements of ordinary Portland cement (including compressive strength, fineness, soundness, and setting times) are specified in Clause 6 of IS 269 : 2015.\n\n### Technical Details & Parameters\n- **Parameter**: Physical Requirements Clause\n- **Value & Limits**: Clause 6\n- "
+    },
+    {
+      "id": "CLA-007",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 14543 specifies microbiological requirements for packaged drinking water?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nMicrobiological requirements for packaged drinking water are specified in Clause 5 of IS 14543 (Total Coliform and E. coli absent in 250 mL).\n\n### Technical Details & Parameters\n- **Parameter**: Microbiological Requirements\n- **Value & Limits**: Clause 5\n- **Normative Status**: Man"
+    },
+    {
+      "id": "CLA-008",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 4151 specifies the shock absorption test for motorcycle helmets?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 4151 : 2015, Clause 8 describes the shock absorption test for protective helmets (specifying peak deceleration not exceeding 300 g).\n\n### Technical Details & Parameters\n- **Parameter**: Shock Absorption Clause\n- **Value & Limits**: Clause 8\n- **Normative Status**: Mandator"
+    },
+    {
+      "id": "CLA-009",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 15298 (Part 2) specifies basic requirements for safety footwear?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nBasic requirements for safety footwear are specified in Clause 5 of IS 15298 (Part 2).\n\n### Technical Details & Parameters\n- **Parameter**: Basic Requirements\n- **Value & Limits**: Clause 5\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 15298 (Part 2) : 2016, Cl"
+    },
+    {
+      "id": "CLA-010",
+      "category": "clause_page_retrieval",
+      "query": "Which clause in IS 16289 specifies bacterial filtration efficiency for medical masks?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": false,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16289 : 2014, Clause 5 covers performance requirements for bacterial filtration efficiency (BFE).\n\n### Technical Details & Parameters\n- **Parameter**: Filtration Performance Clause\n- **Value & Limits**: Clause 5\n- **Normative Status**: Mandatory\n\n### Citations & Provenance"
+    },
+    {
+      "id": "DOM-001",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs IS 1786 rebar standards?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nHigh strength deformed steel bars and wires for concrete reinforcement under IS 1786 are governed under the Construction & Civil product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Construction & Civil\n- **Normative Status**: Ma"
+    },
+    {
+      "id": "DOM-002",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs electric ceiling fans under IS 374?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": false,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nElectric ceiling fans governed under IS 374 belong to the Electrical product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Electrical\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 374 : 2026, Clause 1, Page(s)"
+    },
+    {
+      "id": "DOM-003",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs self-ballasted LED lamps under IS 16102?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 2
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSelf-ballasted LED lamps governed under IS 16102 belong to the Electrical / Electronics & IT product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Electrical / Electronics & IT\n- **Normative Status**: Mandatory\n\n### Citations & Pr"
+    },
+    {
+      "id": "DOM-004",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs protective motorcycle helmets under IS 4151?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nProtective helmets for motorcycle riders under IS 4151 are governed under the Mechanical & Automotive product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Mechanical & Automotive\n- **Normative Status**: Mandatory\n\n### Citations &"
+    },
+    {
+      "id": "DOM-005",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs sterile rubber surgical gloves under IS 13422?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves under IS 13422 are governed under the Medical & Safety product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Medical & Safety\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 13422 "
+    },
+    {
+      "id": "DOM-006",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs domestic water meters under IS 779?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic water meters under IS 779 are governed under the Mechanical & Automotive product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Mechanical & Automotive\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 779"
+    },
+    {
+      "id": "DOM-007",
+      "category": "product_domain",
+      "query": "Which BIS product domain governs packaged drinking water under IS 14543?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nPackaged drinking water under IS 14543 is governed under the Food & Agriculture / Chemicals product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Food & Agriculture / Chemicals\n- **Normative Status**: Mandatory\n\n### Citations & Pr"
+    },
+    {
+      "id": "DOM-008",
+      "category": "product_domain",
+      "query": "Which statutory Order makes BIS registration mandatory for electronic goods like LED lamps and laptops?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 2
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nThe Compulsory Registration Order (CRO) issued by MeitY makes BIS registration mandatory for electronic goods like LED lamps and laptops under the Compulsory Registration Scheme (CRS).\n\n### Technical Details & Parameters\n- **Parameter**: Statutory Order\n- **Value & Limits**: Compul"
+    },
+    {
+      "id": "DOM-009",
+      "category": "product_domain",
+      "query": "Which certification scheme applies to mandatory ISI marking for protective helmets?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nMandatory ISI marking for protective motorcycle helmets operates under Scheme-I (ISI Mark Certification Scheme) of the BIS Conformity Assessment Regulations.\n\n### Technical Details & Parameters\n- **Parameter**: Certification Scheme\n- **Value & Limits**: Scheme-I (ISI Mark Scheme)\n-"
+    },
+    {
+      "id": "DOM-010",
+      "category": "product_domain",
+      "query": "Are steel reinforcement bars covered under mandatory Quality Control Orders in India?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nYes, steel reinforcement bars and high strength deformed steel bars are covered under mandatory Quality Control Orders (QCO) issued by the Ministry of Steel requiring the Standard Mark (ISI mark).\n\n### Technical Details & Parameters\n- **Parameter**: Regulatory Requirement\n- **Value"
+    },
+    {
+      "id": "TMP-001",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 1786 was active as of 2015?",
+      "as_of_date": "2015-01-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nOn 2015-06-01, the active version of the standard was IS 1786 : 2008 (High Strength Deformed Steel Bars and Wires for Concrete Reinforcement — Specification, Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 1786"
+    },
+    {
+      "id": "TMP-002",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 1786 is active as of 2026?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn 2025, the active edition is IS 1786 : 2024 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 1786 : 2024\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, Clause 1, Page(s) 1 (Doc"
+    },
+    {
+      "id": "TMP-003",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 374 was active in 2020?",
+      "as_of_date": "2020-01-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn 2020, the active edition was IS 374 : 2019 (Electric Ceiling Fans — Specification, Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 374 : 2019\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- I"
+    },
+    {
+      "id": "TMP-004",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 374 applies in 2027 incorporating BLDC energy star mandates?",
+      "as_of_date": "2027-01-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn 2027, the active edition is IS 374 : 2026 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 374 : 2026\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 374 : 2026, Clause 1, Page(s) 1 (Docume"
+    },
+    {
+      "id": "TMP-005",
+      "category": "current_vs_historical",
+      "query": "What was the normative status of GX53 lamp caps in IS 16102 (Part 1) as of 2018?",
+      "as_of_date": "2018-01-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 16102 (Part 1) : 2012 Table 2, the torque requirement for GX53 cap is listed as 3.0 Nm (under consideration / provisional).\n\n### Technical Details & Parameters\n- **Parameter**: GX53 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm (under consideration)\n- **Normative Status**: Ma"
+    },
+    {
+      "id": "TMP-006",
+      "category": "current_vs_historical",
+      "query": "What is the normative status of GX53 lamp caps in IS 16102 (Part 1) as of 2027?",
+      "as_of_date": "2027-01-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 16102 (Part 1) : 2026, the torque requirement for GX53 cap was solidified as mandatory at 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: GX53 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm (Mandatory)\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n"
+    },
+    {
+      "id": "TMP-007",
+      "category": "current_vs_historical",
+      "query": "Was total elongation at maximum force (Agt) mandatory in IS 1786 as of 2015?",
+      "as_of_date": "2015-01-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nOn 2015-06-01, the active version of the standard was IS 1786 : 2008 (High Strength Deformed Steel Bars and Wires for Concrete Reinforcement — Specification, Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 1786"
+    },
+    {
+      "id": "TMP-008",
+      "category": "current_vs_historical",
+      "query": "Is total elongation at maximum force (Agt) mandatory in IS 1786 as of 2026?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024, total elongation at maximum force (Agt ≥ 5.0%) measured on gauge length is mandatory for Fe 500D.\n\n### Technical Details & Parameters\n- **Parameter**: Total Elongation at Max Force (Agt)\n- **Value & Limits**: Agt ≥ 5.0%\n- **Normative Status**: Mandatory\n\n### Cita"
+    },
+    {
+      "id": "TMP-009",
+      "category": "current_vs_historical",
+      "query": "What edition of IS 269 was active prior to 2015 consolidation?",
+      "as_of_date": "2010-01-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn the 2015 revision of IS 269, the earlier separate standards IS 8112 (43 Grade OPC) and IS 12269 (53 Grade OPC) were consolidated into the single comprehensive standard IS 269 : 2015.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Consolidation\n- **Value & Limits**"
+    },
+    {
+      "id": "TMP-010",
+      "category": "current_vs_historical",
+      "query": "Which revision of IS 16102 (Part 2) was active in 2017?",
+      "as_of_date": "2017-06-01",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 2) : 2017, the test duration specified for the lumen maintenance test is 2000 h.\n\n### Technical Details & Parameters\n- **Parameter**: Lumen Maintenance Test Duration\n- **Value & Limits**: 2000 h\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS"
+    },
+    {
+      "id": "PAR-001",
+      "category": "paraphrased_questions",
+      "query": "Which Indian Standard applies to reinforcement steel bars used in concrete?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nBased on IS 1786 : 2024 (Clause 1), the applicable technical specification is: Clause 1: Scope\nStandard: IS 1786 : 2024 - High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision) (Section 1 Scope, Pages [1])\nNormative Force: INFORMA..."
+    },
+    {
+      "id": "PAR-002",
+      "category": "paraphrased_questions",
+      "query": "What is the applicable BIS specification for TMT reinforcement bars?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nBased on IS 1786 : 2024 (Clause 4.1), the applicable technical specification is: Clause 4.1: Chemical Composition\nStandard: IS 1786 : 2024 - High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision) (Section 4.1 Chemical Composition, P."
+    },
+    {
+      "id": "PAR-003",
+      "category": "paraphrased_questions",
+      "query": "What standard covers crash helmets for two wheeler riders?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nProtective Helmets for motorcycle riders and two wheeler riders are covered by IS 4151 : 2015 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4151 : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+    },
+    {
+      "id": "PAR-004",
+      "category": "paraphrased_questions",
+      "query": "Which BIS code regulates bottled drinking water plants?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nPackaged drinking water (other than packaged natural mineral water) is specified by IS 14543 : 2024 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 14543 : 2024\n- **Normative Status**: Mandatory\n\n### Citations &"
+    },
+    {
+      "id": "PAR-005",
+      "category": "paraphrased_questions",
+      "query": "What is the Indian Standard for domestic cooking gas burners?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic gas stoves and cooking gas burners for use with liquefied petroleum gases (LPG) are specified by IS 4246 : 2002 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4246 : 2002\n- **Normative Status**: Mandat"
+    },
+    {
+      "id": "PAR-006",
+      "category": "paraphrased_questions",
+      "query": "Which BIS standard governs steel toe cap work boots?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nPersonal protective equipment — Safety footwear and steel toe cap work boots are specified by IS 15298 (Part 2) : 2016.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 15298 (Part 2)\n- **Normative Status**: Mandatory\n\n### Citatio"
+    },
+    {
+      "id": "PAR-007",
+      "category": "paraphrased_questions",
+      "query": "What is the BIS standard for hard hats used on construction sites?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nBased on IS 2925 : 1984 (Clause 1.2), the applicable technical specification is: Clause 1.2: Products conforming to this standard shall be manufactured to ensure safety, reliability, and performance.\nStandard: IS 2925 : 1984 - Industrial Safety Helmets — Specification (Second Revi."
+    },
+    {
+      "id": "PAR-008",
+      "category": "paraphrased_questions",
+      "query": "Which BIS specification applies to medical rubber examination and surgical gloves?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992, requiring accelerated ageing testing and tensile strength of ≥ 24.0 MPa before ageing and ≥ 18.0 MPa after ageing.\n\n### Technical Details & Parameters\n- **Parameter**: Accelerated Ageing & Tensile Strength\n- **Value &"
+    },
+    {
+      "id": "PAR-009",
+      "category": "paraphrased_questions",
+      "query": "What standard specifies N95 equivalent particulate respirator masks in India?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSpecified by IS 9473 : 2002 (Clause 2.1).\n\n### Technical Details & Parameters\n- **Parameter**: Specification\n- **Value & Limits**: IS 9473 : 2002\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 9473 : 2002, Clause 2.1, Page(s) 1 (Document ID: DOC-105)"
+    },
+    {
+      "id": "PAR-010",
+      "category": "paraphrased_questions",
+      "query": "Which BIS code specifies household pressure cooker safety and burst limits?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic pressure cookers are specified by IS 2347 : 2017 (Fifth Revision / Clause 8.2), requiring a hydraulic proof burst pressure of not less than 0.3 MPa (3.0 bar / 300 kPa).\n\n### Technical Details & Parameters\n- **Parameter**: Proof Burst Pressure\n- **Value & Limits**: ≥ 0.3 MP"
+    },
+    {
+      "id": "MUL-001",
+      "category": "multi_condition",
+      "query": "What are the temperature, relative humidity, and duration conditions for LED lamp humidity cabinet preconditioning in IS 16102 (Part 1)?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the humidity cabinet preconditioning conditions are: 48 h duration with relative humidity between 91% and 95% and temperature maintained between 25°C and 35°C.\n\n### Technical Details & Parameters\n- **Parameter**: Humidity Preconditioning Conditio"
+    },
+    {
+      "id": "MUL-002",
+      "category": "multi_condition",
+      "query": "What are the proof stress, tensile strength ratio, elongation, and Agt requirements for Fe 500D under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 1786 : 2024 (Table 3 / Clause 7.3), the mechanical requirements for Fe 500D are: 0.2 percent proof stress ≥ 500.0 N/mm², tensile strength ratio (TS/YS) ≥ 1.10, elongation ≥ 16.0%, and Agt ≥ 5.0%.\n\n### Technical Details & Parameters\n- **Parameter**: Fe 500D Mechanical Requi"
+    },
+    {
+      "id": "MUL-003",
+      "category": "multi_condition",
+      "query": "What are the maximum permissible flow errors in upper and lower flow zones for Class A and B water meters in IS 779?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic water meters under IS 779 : 1994 specify a maximum permissible error of ±2% in the upper flow zone and ±5% in the lower flow zone for Class A and B.\n\n### Technical Details & Parameters\n- **Parameter**: Permissible Flow Error\n- **Value & Limits**: ±2% upper, ±5% lower\n- **N"
+    },
+    {
+      "id": "MUL-004",
+      "category": "multi_condition",
+      "query": "What are the tensile strength and elongation requirements for sterile rubber surgical gloves before and after accelerated ageing in IS 13422?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": false,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992, requiring accelerated ageing testing and tensile strength of ≥ 24.0 MPa before ageing and ≥ 18.0 MPa after ageing.\n\n### Technical Details & Parameters\n- **Parameter**: Accelerated Ageing & Tensile Strength\n- **Value &"
+    },
+    {
+      "id": "MUL-005",
+      "category": "multi_condition",
+      "query": "What are the maximum limits for Carbon, Sulfur, Phosphorus, and Sulfur+Phosphorus in Fe 500D rebar under IS 1786:2024?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Table 1 / Clause 4.2), the maximum chemical limits for Fe 500D rebar are: Carbon ≤ 0.25%, Sulfur ≤ 0.040%, Phosphorus ≤ 0.040%, and Sulfur+Phosphorus (S+P) ≤ 0.075%.\n\n### Technical Details & Parameters\n- **Parameter**: Fe 500D Chemical Composition Limits\n- **Valu"
+    },
+    {
+      "id": "NEG-001",
+      "category": "negative_unanswerable",
+      "query": "What is the exact fatigue life in millions of cycles specified for Fe 500D under IS 1786?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-002",
+      "category": "negative_unanswerable",
+      "query": "What are the BIS standard regulations for liquid propellant rocket engines?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-003",
+      "category": "negative_unanswerable",
+      "query": "What is the retail market price and wholesale distributor discount for IS 16102 certified LED bulbs?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-004",
+      "category": "negative_unanswerable",
+      "query": "What are the mandatory requirements in fake standard IS 99999 : 2099?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-005",
+      "category": "negative_unanswerable",
+      "query": "What is the minimum yield strength specified for non-existent steel grade Fe 9999 in IS 1786?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-006",
+      "category": "negative_unanswerable",
+      "query": "What is the step-by-step recipe for making chocolate cake according to BIS standards?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-007",
+      "category": "negative_unanswerable",
+      "query": "What are the BIS technical guidelines for quantum computer cryogenic dilution refrigerators?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-008",
+      "category": "negative_unanswerable",
+      "query": "Which stock market stocks should I buy for high returns according to Bureau of Indian Standards?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-009",
+      "category": "negative_unanswerable",
+      "query": "What torque moment is required for imaginary cap type Z99 in IS 16102?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "NEG-010",
+      "category": "negative_unanswerable",
+      "query": "What is the legal status and mining regulation of Bitcoin cryptocurrency under BIS?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": null
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+    },
+    {
+      "id": "ADV-001",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the minimum insulation resistance for self-ballasted LED lamps under IS 16102 equal to 100 MΩ?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4 MΩ when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4 MΩ (500 V DC)\n- **Normative Status**: Mandatory\n\n### Cit"
+    },
+    {
+      "id": "ADV-002",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the minimum percentage elongation for Fe 500D under IS 1786:2024 15%?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum percentage elongation for Fe 500D steel bars is 16.0%.\n\n### Technical Details & Parameters\n- **Parameter**: Elongation (Fe 500D)\n- **Value & Limits**: 16.0%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, C"
+    },
+    {
+      "id": "ADV-003",
+      "category": "numerical_hallucination_stress",
+      "query": "Does IS 2347 require domestic pressure cookers to withstand a burst pressure of 10.0 MPa?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic pressure cookers are specified by IS 2347 : 2017 (Fifth Revision / Clause 8.2), requiring a hydraulic proof burst pressure of not less than 0.3 MPa (3.0 bar / 300 kPa).\n\n### Technical Details & Parameters\n- **Parameter**: Proof Burst Pressure\n- **Value & Limits**: ≥ 0.3 MP"
+    },
+    {
+      "id": "ADV-004",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the required toecap impact resistance energy under IS 15298 (Part 2) 500 J?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016 (Clause 5.3.2.3), the steel toecap must withstand an impact energy of 200 J.\n\n### Technical Details & Parameters\n- **Parameter**: Toecap Impact Resistance\n- **Value & Limits**: 200 J\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1529"
+    },
+    {
+      "id": "ADV-005",
+      "category": "numerical_hallucination_stress",
+      "query": "Is the minimum thermal efficiency for domestic LPG stoves in IS 4246 95%?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": false,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": true
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": true,
+      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 7.3), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: Mandatory\n\n"
+    }
+  ]
+}

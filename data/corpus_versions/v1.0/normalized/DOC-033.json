@@ -1,0 +1,320 @@
+{
+  "document_id": "DOC-033",
+  "source_id": "SRC-033",
+  "document_metadata": {
+    "document_id": "DOC-033",
+    "source_id": "SRC-033",
+    "standard_id": "STD-IS_15477_2019",
+    "standard_number": "IS 15477 : 2019",
+    "title": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification (First Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC033-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 15477 : 2019) covers and specifies requirements for Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification (First Revision). It applies to cement_paints under paints_coatings category in the chemicals_polymers domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC033-5.1",
+      "clause_number": "5.1",
+      "title": "Tensile Adhesion Strength",
+      "content": "Tensile Adhesion Strength: Type 2 tile adhesive 28-day tensile adhesion strength shall be >= 1.0 N/mm² under dry conditions.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC033-5.2",
+      "clause_number": "5.2",
+      "title": "Shear Adhesion Strength",
+      "content": "Shear Adhesion Strength: Shear adhesion strength after 14 days dry curing shall be >= 1.25 N/mm².",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC033-5.3",
+      "clause_number": "5.3",
+      "title": "Open Time",
+      "content": "Open Time: Tensile adhesion strength after 20 min open time shall be >= 0.5 N/mm².",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC033-0001",
+      "entity_type": "standard",
+      "name": "IS 15477 : 2019",
+      "status": "mandatory",
+      "original_value": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification (First Revision)",
+      "value": "Adhesives for Use with Ceramic, Mosaic and Stone Tiles - Specification (First Revision)",
+      "provenance": {
+        "document_id": "DOC-033",
+        "source_id": "SRC-033",
+        "standard": "IS 15477 : 2019",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC033-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-033",
+        "source_id": "SRC-033",
+        "standard": "IS 15477 : 2019",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC033-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-033",
+        "source_id": "SRC-033",
+        "standard": "IS 15477 : 2019",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC033-0004",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "1.0 N/mm²",
+      "value": "1.0 N/mm²",
+      "provenance": {
+        "document_id": "DOC-033",
+        "source_id": "SRC-033",
+        "standard": "IS 15477 : 2019",
+        "clause": "5.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "5.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 1.0,
+        "unit": "N/mm²"
+      },
+      "unit": "N/mm²"
+    },
+    {
+      "entity_id": "ENT-DOC033-0005",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "1.25 N/mm²",
+      "value": "1.25 N/mm²",
+      "provenance": {
+        "document_id": "DOC-033",
+        "source_id": "SRC-033",
+        "standard": "IS 15477 : 2019",
+        "clause": "5.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "5.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 1.25,
+        "unit": "N/mm²"
+      },
+      "unit": "N/mm²"
+    },
+    {
+      "entity_id": "ENT-DOC033-0006",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "0.5 N/mm²",
+      "value": "0.5 N/mm²",
+      "provenance": {
+        "document_id": "DOC-033",
+        "source_id": "SRC-033",
+        "standard": "IS 15477 : 2019",
+        "clause": "5.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "5.3",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 0.5,
+        "unit": "N/mm²"
+      },
+      "unit": "N/mm²"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC033-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 15477 : 2019",
+      "document_id": "DOC-033",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC033-0002",
+      "subject": "Clause 5.1: Tensile Adhesion Strength",
+      "predicate": "part_of",
+      "object": "IS 15477 : 2019",
+      "document_id": "DOC-033",
+      "source_clause": "5.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC033-0003",
+      "subject": "Clause 5.2: Shear Adhesion Strength",
+      "predicate": "part_of",
+      "object": "IS 15477 : 2019",
+      "document_id": "DOC-033",
+      "source_clause": "5.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC033-0004",
+      "subject": "Clause 5.3: Open Time",
+      "predicate": "part_of",
+      "object": "IS 15477 : 2019",
+      "document_id": "DOC-033",
+      "source_clause": "5.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.700436+00:00",
+    "total_definitions": 0,
+    "total_entities": 6,
+    "total_requirements": 0,
+    "total_relationships": 4,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-033",
+    "document_id": "DOC-033",
+    "raw_file": null,
+    "sha256": null
+  }
+}

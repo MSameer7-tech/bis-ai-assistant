@@ -166,10 +166,67 @@ class ChangeDetector:
             "source_id": item.get("source_id"),
             "has_changed": True,
             "change_type": "content_update",
-            "current_hash": actual_hash,
             "previous_hash": known_hash,
+            "current_hash": actual_hash,
+            "new_version_id": new_version_id,
             "action_required": "reprocess_and_reembed",
         }
+
+    def classify_change(
+        self,
+        candidate_record: Dict[str, Any],
+        target_file_path: Optional[Path] = None,
+    ) -> Dict[str, Any]:
+        """
+        Phase 5B authoritative change classification: NEW, UPDATED, UNCHANGED, REMOVED.
+        """
+        doc_id = candidate_record.get("document_id") or candidate_record.get("candidate_id")
+        registry = self._load_registry()
+        item = next((s for s in registry if s.get("document_id") == doc_id), None)
+
+        if not item:
+            return {
+                "entity_id": doc_id,
+                "detected_change": "NEW",
+                "previous_hash": None,
+                "new_hash": None,
+                "action": "ACQUIRE",
+                "details": "Newly discovered catalog entity not yet in corpus"
+            }
+
+        cur_ver = item.get("current_version", {})
+        known_hash = cur_ver.get("sha256") or item.get("file_sha256")
+
+        fp = target_file_path or (ROOT_DIR / item.get("local_path", ""))
+        if not fp or not fp.exists():
+            return {
+                "entity_id": doc_id,
+                "detected_change": "NEW",
+                "previous_hash": known_hash,
+                "new_hash": None,
+                "action": "ACQUIRE",
+                "details": "Registered document missing physical file"
+            }
+
+        actual_hash = compute_sha256(fp)
+        if actual_hash == known_hash:
+            return {
+                "entity_id": doc_id,
+                "detected_change": "UNCHANGED",
+                "previous_hash": known_hash,
+                "new_hash": actual_hash,
+                "action": "SKIP",
+                "details": "SHA-256 content hash matches registered baseline exactly"
+            }
+        else:
+            return {
+                "entity_id": doc_id,
+                "detected_change": "UPDATED",
+                "previous_hash": known_hash,
+                "new_hash": actual_hash,
+                "action": "ACQUIRE",
+                "details": "SHA-256 content hash differs from registered baseline"
+            }
 
     def compute_semantic_diff_between_versions(
         self, old_doc_id: str, new_doc_id: str

@@ -1,0 +1,409 @@
+{
+  "document_id": "DOC-019",
+  "source_id": "SRC-019",
+  "document_metadata": {
+    "document_id": "DOC-019",
+    "source_id": "SRC-019",
+    "standard_id": "STD-IS_1489_P1_2015",
+    "standard_number": "IS 1489 (Part 1) : 2015",
+    "title": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based (Third Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC019-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 1489 (Part 1) : 2015) covers and specifies requirements for Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based (Third Revision). It applies to portland_pozzolana_cement under cement category in the construction_civil domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC019-5.1",
+      "clause_number": "5.1",
+      "title": "Fly Ash Content",
+      "content": "Fly Ash Content: Fly ash proportion shall be between 15% and 35% by mass of PPC.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC019-6.1",
+      "clause_number": "6.1",
+      "title": "Compressive Strength",
+      "content": "Compressive Strength: 28-day compressive strength shall not be less than 33 MPa. 7-day strength shall not be less than 22 MPa. 3-day strength shall not be less than 16 MPa.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC019-6.2",
+      "clause_number": "6.2",
+      "title": "Setting Time",
+      "content": "Setting Time: Initial setting time shall not be less than 30 min; final setting time shall not exceed 600 min.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC019-6.3",
+      "clause_number": "6.3",
+      "title": "Fineness",
+      "content": "Fineness: Specific surface area shall not be less than 300 m²/kg.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC019-6.4",
+      "clause_number": "6.4",
+      "title": "Drying Shrinkage",
+      "content": "Drying Shrinkage: Final drying shrinkage shall not exceed 0.15%.",
+      "page_start": 6,
+      "page_end": 7,
+      "page_refs": [
+        6,
+        7
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC019-0001",
+      "entity_type": "standard",
+      "name": "IS 1489 (Part 1) : 2015",
+      "status": "mandatory",
+      "original_value": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based (Third Revision)",
+      "value": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based (Third Revision)",
+      "provenance": {
+        "document_id": "DOC-019",
+        "source_id": "SRC-019",
+        "standard": "IS 1489 (Part 1) : 2015",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC019-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-019",
+        "source_id": "SRC-019",
+        "standard": "IS 1489 (Part 1) : 2015",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC019-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-019",
+        "source_id": "SRC-019",
+        "standard": "IS 1489 (Part 1) : 2015",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC019-0004",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "15%",
+      "value": "15%",
+      "provenance": {
+        "document_id": "DOC-019",
+        "source_id": "SRC-019",
+        "standard": "IS 1489 (Part 1) : 2015",
+        "clause": "5.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "5.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 15,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC019-0005",
+      "entity_type": "test",
+      "name": "Compressive Strength Test",
+      "status": "mandatory",
+      "original_value": "Compressive Strength Test",
+      "value": "Compressive Strength Test",
+      "provenance": {
+        "document_id": "DOC-019",
+        "source_id": "SRC-019",
+        "standard": "IS 1489 (Part 1) : 2015",
+        "clause": "6.1",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "6.1",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC019-0006",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "33 MPa",
+      "value": "33 MPa",
+      "provenance": {
+        "document_id": "DOC-019",
+        "source_id": "SRC-019",
+        "standard": "IS 1489 (Part 1) : 2015",
+        "clause": "6.1",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "6.1",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 33,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC019-0007",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "15%",
+      "value": "15%",
+      "provenance": {
+        "document_id": "DOC-019",
+        "source_id": "SRC-019",
+        "standard": "IS 1489 (Part 1) : 2015",
+        "clause": "6.4",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "source_clause": "6.4",
+      "source_pages": [
+        6,
+        7
+      ],
+      "normalized": {
+        "value": 15,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC019-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 1489 (Part 1) : 2015",
+      "document_id": "DOC-019",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC019-0002",
+      "subject": "Clause 5.1: Fly Ash Content",
+      "predicate": "part_of",
+      "object": "IS 1489 (Part 1) : 2015",
+      "document_id": "DOC-019",
+      "source_clause": "5.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC019-0003",
+      "subject": "Clause 6.1: Compressive Strength",
+      "predicate": "part_of",
+      "object": "IS 1489 (Part 1) : 2015",
+      "document_id": "DOC-019",
+      "source_clause": "6.1",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC019-0004",
+      "subject": "Clause 6.2: Setting Time",
+      "predicate": "part_of",
+      "object": "IS 1489 (Part 1) : 2015",
+      "document_id": "DOC-019",
+      "source_clause": "6.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC019-0005",
+      "subject": "Clause 6.3: Fineness",
+      "predicate": "part_of",
+      "object": "IS 1489 (Part 1) : 2015",
+      "document_id": "DOC-019",
+      "source_clause": "6.3",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC019-0006",
+      "subject": "Clause 6.4: Drying Shrinkage",
+      "predicate": "part_of",
+      "object": "IS 1489 (Part 1) : 2015",
+      "document_id": "DOC-019",
+      "source_clause": "6.4",
+      "source_pages": [
+        6,
+        7
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.640104+00:00",
+    "total_definitions": 0,
+    "total_entities": 7,
+    "total_requirements": 0,
+    "total_relationships": 6,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-019",
+    "document_id": "DOC-019",
+    "raw_file": null,
+    "sha256": null
+  }
+}

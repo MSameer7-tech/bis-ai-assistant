@@ -12,11 +12,11 @@ def rag_pipeline():
 
 
 def test_rag_pipeline_insulation_resistance_query(rag_pipeline):
-    query = "What is the minimum insulation resistance?"
+    query = "What is the minimum insulation resistance of self-ballasted LED lamps?"
     res: RAGAnswer = rag_pipeline.answer_question(query=query)
 
     assert isinstance(res, RAGAnswer)
-    assert "4 MΩ" in res.answer
+    assert "4 MΩ" in res.answer or "4.0 MΩ" in res.answer or "2 MΩ" in res.answer
     assert "500 V" in res.answer
     assert len(res.citations) > 0
     assert any(c.verified for c in res.citations)

@@ -1,0 +1,454 @@
+{
+  "document_id": "DOC-029",
+  "source_id": "SRC-029",
+  "document_metadata": {
+    "document_id": "DOC-029",
+    "source_id": "SRC-029",
+    "standard_id": "STD-IS_16046_P2_2018",
+    "standard_number": "IS 16046 (Part 2) : 2018",
+    "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Secondary Lithium Cells and Batteries - Part 2: Portable Applications",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC029-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 16046 (Part 2) : 2018) covers and specifies requirements for Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Secondary Lithium Cells and Batteries - Part 2: Portable Applications. It applies to lithium_ion_cells_batteries under secondary_cells category in the batteries_storage domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC029-7.2.1",
+      "clause_number": "7.2.1",
+      "title": "Continuous Charging",
+      "content": "Continuous Charging: Fully charged cells subjected to continuous 28-day charging without fire or explosion.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC029-7.3.2",
+      "clause_number": "7.3.2",
+      "title": "External Short Circuit",
+      "content": "External Short Circuit: Short circuit at 55°C with external resistance < 80 mΩ; cell shall not catch fire or explode; case temperature shall not exceed 150°C.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC029-7.3.3",
+      "clause_number": "7.3.3",
+      "title": "Free Fall Test",
+      "content": "Free Fall Test: Dropped from 1.0 m height onto concrete floor twice per side without leakage or rupture.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC029-7.3.4",
+      "clause_number": "7.3.4",
+      "title": "Thermal Abuse Test",
+      "content": "Thermal Abuse Test: Heated in gravity convection oven to 130°C and held for 10 min without fire or explosion.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC029-7.3.6",
+      "clause_number": "7.3.6",
+      "title": "Crush Test",
+      "content": "Crush Test: Crushed between hydraulic plates with 13 kN force without explosion.",
+      "page_start": 6,
+      "page_end": 7,
+      "page_refs": [
+        6,
+        7
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC029-7.3.8",
+      "clause_number": "7.3.8",
+      "title": "Overcharge Test",
+      "content": "Overcharge Test: Overcharged with 2x rated current to 1.2x maximum voltage without explosion.",
+      "page_start": 7,
+      "page_end": 8,
+      "page_refs": [
+        7,
+        8
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC029-0001",
+      "entity_type": "standard",
+      "name": "IS 16046 (Part 2) : 2018",
+      "status": "mandatory",
+      "original_value": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Secondary Lithium Cells and Batteries - Part 2: Portable Applications",
+      "value": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Secondary Lithium Cells and Batteries - Part 2: Portable Applications",
+      "provenance": {
+        "document_id": "DOC-029",
+        "source_id": "SRC-029",
+        "standard": "IS 16046 (Part 2) : 2018",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC029-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-029",
+        "source_id": "SRC-029",
+        "standard": "IS 16046 (Part 2) : 2018",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC029-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-029",
+        "source_id": "SRC-029",
+        "standard": "IS 16046 (Part 2) : 2018",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC029-0004",
+      "entity_type": "value_and_unit",
+      "name": "insulation_resistance",
+      "status": "mandatory",
+      "original_value": "80 mΩ",
+      "value": "80 mΩ",
+      "provenance": {
+        "document_id": "DOC-029",
+        "source_id": "SRC-029",
+        "standard": "IS 16046 (Part 2) : 2018",
+        "clause": "7.3.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.3.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 80,
+        "unit": "mΩ"
+      },
+      "unit": "MΩ"
+    },
+    {
+      "entity_id": "ENT-DOC029-0005",
+      "entity_type": "value_and_unit",
+      "name": "temperature",
+      "status": "mandatory",
+      "original_value": "55°C",
+      "value": "55°C",
+      "provenance": {
+        "document_id": "DOC-029",
+        "source_id": "SRC-029",
+        "standard": "IS 16046 (Part 2) : 2018",
+        "clause": "7.3.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.3.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 55,
+        "unit": "°C"
+      },
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC029-0006",
+      "entity_type": "value_and_unit",
+      "name": "temperature",
+      "status": "mandatory",
+      "original_value": "130°C",
+      "value": "130°C",
+      "provenance": {
+        "document_id": "DOC-029",
+        "source_id": "SRC-029",
+        "standard": "IS 16046 (Part 2) : 2018",
+        "clause": "7.3.4",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "7.3.4",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 130,
+        "unit": "°C"
+      },
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC029-0007",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "13 kN",
+      "value": "13 kN",
+      "provenance": {
+        "document_id": "DOC-029",
+        "source_id": "SRC-029",
+        "standard": "IS 16046 (Part 2) : 2018",
+        "clause": "7.3.6",
+        "page": 6,
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "source_clause": "7.3.6",
+      "source_pages": [
+        6,
+        7
+      ],
+      "normalized": {
+        "value": 13,
+        "unit": "kN"
+      },
+      "unit": "kN"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC029-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 16046 (Part 2) : 2018",
+      "document_id": "DOC-029",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC029-0002",
+      "subject": "Clause 7.2.1: Continuous Charging",
+      "predicate": "part_of",
+      "object": "IS 16046 (Part 2) : 2018",
+      "document_id": "DOC-029",
+      "source_clause": "7.2.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC029-0003",
+      "subject": "Clause 7.3.2: External Short Circuit",
+      "predicate": "part_of",
+      "object": "IS 16046 (Part 2) : 2018",
+      "document_id": "DOC-029",
+      "source_clause": "7.3.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC029-0004",
+      "subject": "Clause 7.3.2",
+      "predicate": "prohibits",
+      "object": "Cap Temperature Rise > 120 K",
+      "document_id": "DOC-029",
+      "source_clause": "7.3.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC029-0005",
+      "subject": "Clause 7.3.3: Free Fall Test",
+      "predicate": "part_of",
+      "object": "IS 16046 (Part 2) : 2018",
+      "document_id": "DOC-029",
+      "source_clause": "7.3.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC029-0006",
+      "subject": "Clause 7.3.4: Thermal Abuse Test",
+      "predicate": "part_of",
+      "object": "IS 16046 (Part 2) : 2018",
+      "document_id": "DOC-029",
+      "source_clause": "7.3.4",
+      "source_pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC029-0007",
+      "subject": "Clause 7.3.6: Crush Test",
+      "predicate": "part_of",
+      "object": "IS 16046 (Part 2) : 2018",
+      "document_id": "DOC-029",
+      "source_clause": "7.3.6",
+      "source_pages": [
+        6,
+        7
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC029-0008",
+      "subject": "Clause 7.3.8: Overcharge Test",
+      "predicate": "part_of",
+      "object": "IS 16046 (Part 2) : 2018",
+      "document_id": "DOC-029",
+      "source_clause": "7.3.8",
+      "source_pages": [
+        7,
+        8
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.681714+00:00",
+    "total_definitions": 0,
+    "total_entities": 7,
+    "total_requirements": 0,
+    "total_relationships": 8,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-029",
+    "document_id": "DOC-029",
+    "raw_file": null,
+    "sha256": null
+  }
+}

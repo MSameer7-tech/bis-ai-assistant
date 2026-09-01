@@ -1,0 +1,352 @@
+{
+  "document_id": "DOC-025",
+  "source_id": "SRC-025",
+  "document_metadata": {
+    "document_id": "DOC-025",
+    "source_id": "SRC-025",
+    "standard_id": "STD-IS_1165_2002",
+    "standard_number": "IS 1165 : 2002",
+    "title": "Milk Powder - Specification (Fifth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC025-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 1165 : 2002) covers and specifies requirements for Milk Powder - Specification (Fifth Revision). It applies to infant_milk_food under dairy_products category in the food_agriculture domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC025-4.1",
+      "clause_number": "4.1",
+      "title": "Moisture",
+      "content": "Moisture: Moisture content shall not exceed 4.0% by mass for whole milk powder.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC025-4.2",
+      "clause_number": "4.2",
+      "title": "Milk Fat",
+      "content": "Milk Fat: Milk fat content shall not be less than 26.0% by mass.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "acceptance_criterion",
+      "semantic_tags": [
+        "acceptance_criterion",
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC025-4.3",
+      "clause_number": "4.3",
+      "title": "Total Ash",
+      "content": "Total Ash: Total ash on dry basis shall not exceed 7.3%.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC025-4.4",
+      "clause_number": "4.4",
+      "title": "Insolubility Index",
+      "content": "Insolubility Index: Insolubility index shall not exceed 2.0 mL.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC025-0001",
+      "entity_type": "standard",
+      "name": "IS 1165 : 2002",
+      "status": "mandatory",
+      "original_value": "Milk Powder - Specification (Fifth Revision)",
+      "value": "Milk Powder - Specification (Fifth Revision)",
+      "provenance": {
+        "document_id": "DOC-025",
+        "source_id": "SRC-025",
+        "standard": "IS 1165 : 2002",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC025-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-025",
+        "source_id": "SRC-025",
+        "standard": "IS 1165 : 2002",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC025-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-025",
+        "source_id": "SRC-025",
+        "standard": "IS 1165 : 2002",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC025-0004",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "0%",
+      "value": "0%",
+      "provenance": {
+        "document_id": "DOC-025",
+        "source_id": "SRC-025",
+        "standard": "IS 1165 : 2002",
+        "clause": "4.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "4.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 0,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC025-0005",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "0%",
+      "value": "0%",
+      "provenance": {
+        "document_id": "DOC-025",
+        "source_id": "SRC-025",
+        "standard": "IS 1165 : 2002",
+        "clause": "4.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "4.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 0,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC025-0006",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "3%",
+      "value": "3%",
+      "provenance": {
+        "document_id": "DOC-025",
+        "source_id": "SRC-025",
+        "standard": "IS 1165 : 2002",
+        "clause": "4.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "4.3",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 3,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC025-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 1165 : 2002",
+      "document_id": "DOC-025",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC025-0002",
+      "subject": "Clause 4.1: Moisture",
+      "predicate": "part_of",
+      "object": "IS 1165 : 2002",
+      "document_id": "DOC-025",
+      "source_clause": "4.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC025-0003",
+      "subject": "Clause 4.2: Milk Fat",
+      "predicate": "part_of",
+      "object": "IS 1165 : 2002",
+      "document_id": "DOC-025",
+      "source_clause": "4.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC025-0004",
+      "subject": "Clause 4.3: Total Ash",
+      "predicate": "part_of",
+      "object": "IS 1165 : 2002",
+      "document_id": "DOC-025",
+      "source_clause": "4.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC025-0005",
+      "subject": "Clause 4.4: Insolubility Index",
+      "predicate": "part_of",
+      "object": "IS 1165 : 2002",
+      "document_id": "DOC-025",
+      "source_clause": "4.4",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.665149+00:00",
+    "total_definitions": 0,
+    "total_entities": 6,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-025",
+    "document_id": "DOC-025",
+    "raw_file": null,
+    "sha256": null
+  }
+}

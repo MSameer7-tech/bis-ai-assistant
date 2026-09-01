@@ -1,0 +1,72 @@
+[
+  {
+    "query_id": "Q001",
+    "question": "What is the minimum insulation resistance for self-ballasted LED lamps?",
+    "required_clause": "8.1.1",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "requirement"
+  },
+  {
+    "query_id": "Q002",
+    "question": "What is the maximum rated wattage?",
+    "required_clause": "1",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "scope"
+  },
+  {
+    "query_id": "Q003",
+    "question": "What is the cap temperature-rise limit?",
+    "required_clause": "10",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "requirement"
+  },
+  {
+    "query_id": "Q004",
+    "question": "What torque applies to an E17 cap?",
+    "required_clause": "Table_3",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "table"
+  },
+  {
+    "query_id": "Q005",
+    "question": "What torque applies to GX53 cap?",
+    "required_clause": "Table_3",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "table"
+  },
+  {
+    "query_id": "Q006",
+    "question": "What are the insulation resistance test conditions and humidity?",
+    "required_clause": "8.1.1",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "requirement"
+  },
+  {
+    "query_id": "Q007",
+    "question": "What is the definition of a self-ballasted LED lamp?",
+    "required_clause": "3.1",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "definition"
+  },
+  {
+    "query_id": "Q008",
+    "question": "What does Clause 8.1.1 require?",
+    "required_clause": "8.1.1",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "requirement"
+  },
+  {
+    "query_id": "Q009",
+    "question": "What is IS 15885 Part 1 related to in insulation resistance?",
+    "required_clause": "8.1.1",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "requirement"
+  },
+  {
+    "query_id": "Q010",
+    "question": "Is the GX53 3 Nm requirement mandatory or under consideration?",
+    "required_clause": "Table_3",
+    "required_standard": "IS 16102 (Part 1) : 2012",
+    "expected_type": "table"
+  }
+]

@@ -1,0 +1,455 @@
+{
+  "document_id": "DOC-021",
+  "source_id": "SRC-021",
+  "document_metadata": {
+    "document_id": "DOC-021",
+    "source_id": "SRC-021",
+    "standard_id": "STD-IS_2062_2011",
+    "standard_number": "IS 2062 : 2011",
+    "title": "Hot Rolled Medium and High Tensile Structural Steel - Specification (Seventh Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC021-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 2062 : 2011) covers and specifies requirements for Hot Rolled Medium and High Tensile Structural Steel - Specification (Seventh Revision). It applies to structural_steel_standard_quality under steel_metals category in the construction_civil domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC021-8.1",
+      "clause_number": "8.1",
+      "title": "Tensile Properties",
+      "content": "Tensile Properties: For Grade E250 (Fe 410 W), minimum yield strength is 250 MPa for thickness < 20 mm; tensile strength 410 MPa; minimum elongation 23%.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC021-9.1",
+      "clause_number": "9.1",
+      "title": "Charpy V-Notch Impact Test",
+      "content": "Charpy V-Notch Impact Test: Minimum impact energy 27 J at designated temperature (0°C for subgrade B, -20°C for subgrade C).",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC021-6.1",
+      "clause_number": "6.1",
+      "title": "Carbon Equivalent (CE)",
+      "content": "Carbon Equivalent (CE): Maximum CE shall not exceed 0.42 for weldable structural steel.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC021-0001",
+      "entity_type": "standard",
+      "name": "IS 2062 : 2011",
+      "status": "mandatory",
+      "original_value": "Hot Rolled Medium and High Tensile Structural Steel - Specification (Seventh Revision)",
+      "value": "Hot Rolled Medium and High Tensile Structural Steel - Specification (Seventh Revision)",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC021-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC021-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC021-0004",
+      "entity_type": "referenced_standard",
+      "name": "is 250",
+      "status": "mandatory",
+      "original_value": "is 250",
+      "value": "is 250",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC021-0005",
+      "entity_type": "test",
+      "name": "Tensile Yield Test",
+      "status": "mandatory",
+      "original_value": "Tensile Yield Test",
+      "value": "Tensile Yield Test",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC021-0006",
+      "entity_type": "value_and_unit",
+      "name": "wattage",
+      "status": "mandatory",
+      "original_value": "410 W",
+      "value": "410 W",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 410,
+        "unit": "W"
+      },
+      "unit": "W"
+    },
+    {
+      "entity_id": "ENT-DOC021-0007",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "23%",
+      "value": "23%",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 23,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC021-0008",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "250 MPa",
+      "value": "250 MPa",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "8.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 250,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC021-0009",
+      "entity_type": "value_and_unit",
+      "name": "temperature",
+      "status": "mandatory",
+      "original_value": "0°C",
+      "value": "0°C",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "9.1",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 0,
+        "unit": "°C"
+      },
+      "unit": "°C"
+    },
+    {
+      "entity_id": "ENT-DOC021-0010",
+      "entity_type": "value_and_unit",
+      "name": "impact_energy",
+      "status": "mandatory",
+      "original_value": "27 J",
+      "value": "27 J",
+      "provenance": {
+        "document_id": "DOC-021",
+        "source_id": "SRC-021",
+        "standard": "IS 2062 : 2011",
+        "clause": "9.1",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "9.1",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 27,
+        "unit": "J"
+      },
+      "unit": "J"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC021-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 2062 : 2011",
+      "document_id": "DOC-021",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC021-0002",
+      "subject": "Clause 8.1: Tensile Properties",
+      "predicate": "part_of",
+      "object": "IS 2062 : 2011",
+      "document_id": "DOC-021",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC021-0003",
+      "subject": "Clause 9.1: Charpy V-Notch Impact Test",
+      "predicate": "part_of",
+      "object": "IS 2062 : 2011",
+      "document_id": "DOC-021",
+      "source_clause": "9.1",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC021-0004",
+      "subject": "Clause 6.1: Carbon Equivalent (CE)",
+      "predicate": "part_of",
+      "object": "IS 2062 : 2011",
+      "document_id": "DOC-021",
+      "source_clause": "6.1",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC021-0005",
+      "subject": "IS 2062 : 2011",
+      "predicate": "references",
+      "object": "is 250",
+      "document_id": "DOC-021",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "reference_type": "normative"
+    }
+  ],
+  "requirements": [],
+  "cross_references": [
+    {
+      "reference_id": "REF-DOC021-0001",
+      "document_id": "DOC-021",
+      "source_clause": "8.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "target_standard": "is 250",
+      "target_location": null,
+      "reference_type": "normative",
+      "context_snippet": "operties: For Grade E250 (Fe 410 W), minimum yield strength is 250 MPa for thickness < 20 mm; tensile strength 410 MPa; minimum elongation 23%."
+    }
+  ],
+  "references": [
+    "is 250"
+  ],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.649157+00:00",
+    "total_definitions": 0,
+    "total_entities": 10,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 1,
+    "total_tables": 0,
+    "total_references": 1,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-021",
+    "document_id": "DOC-021",
+    "raw_file": null,
+    "sha256": null
+  }
+}

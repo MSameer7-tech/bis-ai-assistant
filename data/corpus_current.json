@@ -1,0 +1,11 @@
+{
+  "current_production_version": "v2.0",
+  "promoted_at": "2026-08-31T23:12:10.119705",
+  "status": "PROMOTED_TO_PRODUCTION",
+  "golden_pass_rate": "100.0%",
+  "pytest_pass_rate": "162/162",
+  "sitewide_eval_pass_rate": "950/950 (100.0%)",
+  "catalog_entities": 663,
+  "product_terms": 559,
+  "knowledge_graph_edges": 2266
+}

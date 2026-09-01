@@ -1,0 +1,428 @@
+{
+  "document_id": "DOC-034",
+  "source_id": "SRC-034",
+  "document_metadata": {
+    "document_id": "DOC-034",
+    "source_id": "SRC-034",
+    "standard_id": "STD-IS_1786_2024",
+    "standard_number": "IS 1786 : 2024",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC034-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 1786 : 2024) covers and specifies requirements for High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision). It applies to high_strength_deformed_steel_bars under steel_metals category in the construction_civil domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC034-7.1",
+      "clause_number": "7.1",
+      "title": "Yield Stress",
+      "content": "Yield Stress: Fe 500D minimum proof stress 500 MPa; Fe 550D minimum 550 MPa; Fe 650 minimum 650 MPa (new high-grade steel introduction).",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC034-7.2",
+      "clause_number": "7.2",
+      "title": "Tensile Strength",
+      "content": "Tensile Strength: For Fe 500D, minimum tensile strength 565 MPa (TS/YS ratio >= 1.12 for seismic earthquake resistance zones).",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC034-7.3",
+      "clause_number": "7.3",
+      "title": "Elongation",
+      "content": "Elongation: Fe 500D minimum elongation increased to 16.0% (enhanced ductility).",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC034-4.1",
+      "clause_number": "4.1",
+      "title": "Chemical Composition",
+      "content": "Chemical Composition: Maximum Carbon 0.25%, Sulphur 0.040%, Phosphorus 0.040% for Fe 500D (stricter purity limit).",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC034-0001",
+      "entity_type": "standard",
+      "name": "IS 1786 : 2024",
+      "status": "mandatory",
+      "original_value": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision)",
+      "value": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification (Fifth Revision)",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC034-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC034-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC034-0004",
+      "entity_type": "test",
+      "name": "Tensile Yield Test",
+      "status": "mandatory",
+      "original_value": "Tensile Yield Test",
+      "value": "Tensile Yield Test",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC034-0005",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "500 MPa",
+      "value": "500 MPa",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "7.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 500,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC034-0006",
+      "entity_type": "test",
+      "name": "Tensile Yield Test",
+      "status": "mandatory",
+      "original_value": "Tensile Yield Test",
+      "value": "Tensile Yield Test",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "7.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC034-0007",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "565 MPa",
+      "value": "565 MPa",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "7.2",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 565,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC034-0008",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "0%",
+      "value": "0%",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "7.3",
+        "page": 4,
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "source_clause": "7.3",
+      "source_pages": [
+        4,
+        5
+      ],
+      "normalized": {
+        "value": 0,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC034-0009",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "25%",
+      "value": "25%",
+      "provenance": {
+        "document_id": "DOC-034",
+        "source_id": "SRC-034",
+        "standard": "IS 1786 : 2024",
+        "clause": "4.1",
+        "page": 5,
+        "pages": [
+          5,
+          6
+        ]
+      },
+      "source_clause": "4.1",
+      "source_pages": [
+        5,
+        6
+      ],
+      "normalized": {
+        "value": 25,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC034-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2024",
+      "document_id": "DOC-034",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC034-0002",
+      "subject": "Clause 7.1: Yield Stress",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2024",
+      "document_id": "DOC-034",
+      "source_clause": "7.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC034-0003",
+      "subject": "Clause 7.2: Tensile Strength",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2024",
+      "document_id": "DOC-034",
+      "source_clause": "7.2",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC034-0004",
+      "subject": "Clause 7.3: Elongation",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2024",
+      "document_id": "DOC-034",
+      "source_clause": "7.3",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC034-0005",
+      "subject": "Clause 4.1: Chemical Composition",
+      "predicate": "part_of",
+      "object": "IS 1786 : 2024",
+      "document_id": "DOC-034",
+      "source_clause": "4.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.704612+00:00",
+    "total_definitions": 0,
+    "total_entities": 9,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-034",
+    "document_id": "DOC-034",
+    "raw_file": null,
+    "sha256": null
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "document_id": "DOC-022",
+  "source_id": "SRC-022",
+  "document_metadata": {
+    "document_id": "DOC-022",
+    "source_id": "SRC-022",
+    "standard_id": "STD-IS_15622_2017",
+    "standard_number": "IS 15622 : 2017",
+    "title": "Pressed Ceramic Tiles - Specification (First Revision)",
+    "version": null,
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": null,
+    "sha256": null
+  },
+  "semantic_sections": [],
+  "clauses": [
+    {
+      "clause_id": "CLAUSE-DOC022-1",
+      "clause_number": "1",
+      "title": "Scope",
+      "content": "Scope: This Indian Standard (IS 15622 : 2017) covers and specifies requirements for Pressed Ceramic Tiles - Specification (First Revision). It applies to ceramic_tiles under tiles_ceramics category in the construction_civil domain.",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "subclauses": [],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC022-5.1",
+      "clause_number": "5.1",
+      "title": "Water Absorption",
+      "content": "Water Absorption: Group B Ia (Vitrified tiles) water absorption shall be <= 0.08%.",
+      "page_start": 2,
+      "page_end": 3,
+      "page_refs": [
+        2,
+        3
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC022-6.1",
+      "clause_number": "6.1",
+      "title": "Modulus of Rupture",
+      "content": "Modulus of Rupture: Minimum bending strength (modulus of rupture) shall be 35 N/mm² for Group B Ia.",
+      "page_start": 3,
+      "page_end": 4,
+      "page_refs": [
+        3,
+        4
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC022-6.2",
+      "clause_number": "6.2",
+      "title": "Breaking Strength",
+      "content": "Breaking Strength: Minimum breaking strength shall be 1300 N for tiles thickness >= 7.5 mm.",
+      "page_start": 4,
+      "page_end": 5,
+      "page_refs": [
+        4,
+        5
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_id": "CLAUSE-DOC022-7.1",
+      "clause_number": "7.1",
+      "title": "Deep Abrasion Resistance",
+      "content": "Deep Abrasion Resistance: Maximum volume loss for unglazed tiles shall not exceed 175 mm³.",
+      "page_start": 5,
+      "page_end": 6,
+      "page_refs": [
+        5,
+        6
+      ],
+      "subclauses": [],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC022-0001",
+      "entity_type": "standard",
+      "name": "IS 15622 : 2017",
+      "status": "mandatory",
+      "original_value": "Pressed Ceramic Tiles - Specification (First Revision)",
+      "value": "Pressed Ceramic Tiles - Specification (First Revision)",
+      "provenance": {
+        "document_id": "DOC-022",
+        "source_id": "SRC-022",
+        "standard": "IS 15622 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC022-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-022",
+        "source_id": "SRC-022",
+        "standard": "IS 15622 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC022-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-022",
+        "source_id": "SRC-022",
+        "standard": "IS 15622 : 2017",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC022-0004",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "08%",
+      "value": "08%",
+      "provenance": {
+        "document_id": "DOC-022",
+        "source_id": "SRC-022",
+        "standard": "IS 15622 : 2017",
+        "clause": "5.1",
+        "page": 2,
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "source_clause": "5.1",
+      "source_pages": [
+        2,
+        3
+      ],
+      "normalized": {
+        "value": 8,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC022-0005",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "35 N/mm²",
+      "value": "35 N/mm²",
+      "provenance": {
+        "document_id": "DOC-022",
+        "source_id": "SRC-022",
+        "standard": "IS 15622 : 2017",
+        "clause": "6.1",
+        "page": 3,
+        "pages": [
+          3,
+          4
+        ]
+      },
+      "source_clause": "6.1",
+      "source_pages": [
+        3,
+        4
+      ],
+      "normalized": {
+        "value": 35,
+        "unit": "N/mm²"
+      },
+      "unit": "N/mm²"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC022-0001",
+      "subject": "Clause 1: Scope",
+      "predicate": "part_of",
+      "object": "IS 15622 : 2017",
+      "document_id": "DOC-022",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC022-0002",
+      "subject": "Clause 5.1: Water Absorption",
+      "predicate": "part_of",
+      "object": "IS 15622 : 2017",
+      "document_id": "DOC-022",
+      "source_clause": "5.1",
+      "source_pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC022-0003",
+      "subject": "Clause 6.1: Modulus of Rupture",
+      "predicate": "part_of",
+      "object": "IS 15622 : 2017",
+      "document_id": "DOC-022",
+      "source_clause": "6.1",
+      "source_pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC022-0004",
+      "subject": "Clause 6.2: Breaking Strength",
+      "predicate": "part_of",
+      "object": "IS 15622 : 2017",
+      "document_id": "DOC-022",
+      "source_clause": "6.2",
+      "source_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC022-0005",
+      "subject": "Clause 7.1: Deep Abrasion Resistance",
+      "predicate": "part_of",
+      "object": "IS 15622 : 2017",
+      "document_id": "DOC-022",
+      "source_clause": "7.1",
+      "source_pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "requirements": [],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-30T19:42:09.653040+00:00",
+    "total_definitions": 0,
+    "total_entities": 5,
+    "total_requirements": 0,
+    "total_relationships": 5,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-022",
+    "document_id": "DOC-022",
+    "raw_file": null,
+    "sha256": null
+  }
+}

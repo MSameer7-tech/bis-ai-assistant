@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-31T16:13:33.494505",
+  "timestamp": "2026-09-01T16:36:03.720999",
   "corpus": {
     "version": "v1.0",
     "documents": 116,
@@ -8,9 +8,9 @@
   },
   "summary": {
     "total": 100,
-    "passed": 100,
-    "pass_rate_pct": 100.0,
-    "duration_sec": 14.0623140335083
+    "passed": 98,
+    "pass_rate_pct": 98.0,
+    "duration_sec": 17.14222812652588
   },
   "category_breakdown": {
     "standard_identification": {
@@ -22,9 +22,9 @@
     },
     "exact_technical_values": {
       "total": 20,
-      "passed": 20,
+      "passed": 19,
       "retrieval_pass": 20,
-      "answer_pass": 20,
+      "answer_pass": 19,
       "grounding_pass": 20
     },
     "clause_page_retrieval": {
@@ -36,10 +36,10 @@
     },
     "product_domain": {
       "total": 10,
-      "passed": 10,
-      "retrieval_pass": 10,
+      "passed": 9,
+      "retrieval_pass": 9,
       "answer_pass": 10,
-      "grounding_pass": 10
+      "grounding_pass": 9
     },
     "current_vs_historical": {
       "total": 10,
@@ -136,7 +136,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nOrdinary Portland Cement (33, 43, and 53 Grade) is specified by IS 269 : 2015 (Sixth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 269 : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 269 : 2"
+      "raw_answer": "### Direct Answer\nOrdinary Portland Cement (33, 43, and 53 Grade) is specified by IS 269 : 2015 (Sixth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 269 : 2015\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 269 :"
     },
     {
       "id": "STD-003",
@@ -144,7 +144,7 @@
       "query": "Which BIS standard applies to electric ceiling fans?",
       "as_of_date": "2026-08-31",
       "retrieval": {
-        "correct_doc": false,
+        "correct_doc": true,
         "correct_standard": true,
         "correct_clause": true,
         "rank": 1
@@ -166,7 +166,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nElectric Ceiling Fans with BLDC (brushless direct current) motors are specified by IS 374 : 2026 (Fifth Revision), incorporating BEE star rating service value harmonization and a minimum air delivery of 220 m³/min for 1200 mm sweep (Clause 8.1).\n\n### Technical Details & Parameters\n"
+      "raw_answer": "### Direct Answer\nElectric Ceiling Fans are specified by IS 374 : 2019 (Clause 1).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Specification\n- **Value & Limits**: IS 374 : 2019\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 374 : 2019, Clause 1, Page(s) 1 (Doc"
     },
     {
       "id": "STD-004",
@@ -196,7 +196,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nProtective Helmets for motorcycle riders and two wheeler riders are covered by IS 4151 : 2015 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4151 : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+      "raw_answer": "### Direct Answer\nProtective Helmets for motorcycle riders and two wheeler riders are covered by IS 4151 : 2015 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4151 : 2015\n- **Normative Status**: INFORMATIVE\n\n### Citations & Pro"
     },
     {
       "id": "STD-005",
@@ -234,7 +234,7 @@
       "query": "What Indian Standard specifies safety requirements for self-ballasted LED lamps?",
       "as_of_date": "2026-08-31",
       "retrieval": {
-        "correct_doc": true,
+        "correct_doc": false,
         "correct_standard": true,
         "correct_clause": true,
         "rank": 1
@@ -256,7 +256,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSafety requirements for self-ballasted LED lamps are specified by IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Specification\n- **Value & Limits**: IS 16102 (Part 1)\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1)"
+      "raw_answer": "### Direct Answer\nSafety requirements for self-ballasted LED lamps are specified by IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Specification\n- **Value & Limits**: IS 16102 (Part 1)\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 16102 (Part "
     },
     {
       "id": "STD-007",
@@ -286,7 +286,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 2) : 2017, compliance with general safety and performance requirements is mandatory.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Specification\n- **Value & Limits**: IS 16102 (Part 2) : 2017\n- **Normative Status**: Mandatory\n\n### Citations & Pr"
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 2) : 2017, compliance with general safety and performance requirements is mandatory.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Specification\n- **Value & Limits**: IS 16102 (Part 2) : 2017\n- **Normative Status**: INFORMATIVE\n\n### Citations & "
     },
     {
       "id": "STD-008",
@@ -316,7 +316,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nPackaged drinking water (other than packaged natural mineral water) is specified by IS 14543 : 2024 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 14543 : 2024\n- **Normative Status**: Mandatory\n\n### Citations &"
+      "raw_answer": "### Direct Answer\nPackaged drinking water (other than packaged natural mineral water) is specified by IS 14543 : 2024 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 14543 : 2024\n- **Normative Status**: INFORMATIVE\n\n### Citations"
     },
     {
       "id": "STD-009",
@@ -376,7 +376,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nPersonal protective equipment — Safety footwear and steel toe cap work boots are specified by IS 15298 (Part 2) : 2016.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 15298 (Part 2)\n- **Normative Status**: Mandatory\n\n### Citatio"
+      "raw_answer": "### Direct Answer\nPersonal protective equipment — Safety footwear and steel toe cap work boots are specified by IS 15298 (Part 2) : 2016.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 15298 (Part 2)\n- **Normative Status**: INFORMATIVE\n\n### Citat"
     },
     {
       "id": "STD-011",
@@ -406,7 +406,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 7.3), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: Mandatory\n\n"
+      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 5.1), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: INFORMATIVE"
     },
     {
       "id": "STD-012",
@@ -436,7 +436,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992, requiring accelerated ageing testing and tensile strength of ≥ 24.0 MPa before ageing and ≥ 18.0 MPa after ageing.\n\n### Technical Details & Parameters\n- **Parameter**: Accelerated Ageing & Tensile Strength\n- **Value &"
+      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992 (First Edition).\n\n### Technical Details & Parameters\n- **Parameter**: Applicable Standard\n- **Value & Limits**: IS 13422 : 1992\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 13422 : 1992, Clause 1."
     },
     {
       "id": "STD-013",
@@ -466,7 +466,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSpecified by IS 9473 : 2002 (Clause 2.1).\n\n### Technical Details & Parameters\n- **Parameter**: Specification\n- **Value & Limits**: IS 9473 : 2002\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 9473 : 2002, Clause 2.1, Page(s) 1 (Document ID: DOC-105)"
+      "raw_answer": "### Direct Answer\nSpecified by IS 9473 : 2002 (Clause 6).\n\n### Technical Details & Parameters\n- **Parameter**: Specification\n- **Value & Limits**: IS 9473 : 2002\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 9473 : 2002, Clause 6, Page(s) 1 (Document ID: DOC-105)"
     },
     {
       "id": "STD-014",
@@ -496,7 +496,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIndustrial safety helmets are specified by IS 2925 : 1984. The maximum transmitted force in the shock absorption test shall not exceed 5.0 kN.\n\n### Technical Details & Parameters\n- **Parameter**: Transmitted Shock Force\n- **Value & Limits**: ≤ 5.0 kN\n- **Normative Status**: Mandato"
+      "raw_answer": "### Direct Answer\nIndustrial safety helmets are specified by IS 2925 : 1984. The maximum transmitted force in the shock absorption test shall not exceed 5.0 kN.\n\n### Technical Details & Parameters\n- **Parameter**: Transmitted Shock Force\n- **Value & Limits**: ≤ 5.0 kN\n- **Normative Status**: INFORMA"
     },
     {
       "id": "STD-015",
@@ -556,7 +556,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nWater meters of domestic type (bulk and individual) are covered and specified by IS 779 : 1994 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 779 : 1994\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+      "raw_answer": "### Direct Answer\nWater meters of domestic type (bulk and individual) are covered and specified by IS 779 : 1994 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 779 : 1994\n- **Normative Status**: MANDATORY\n\n### Citations & Prove"
     },
     {
       "id": "STD-017",
@@ -567,7 +567,7 @@
         "correct_doc": true,
         "correct_standard": true,
         "correct_clause": true,
-        "rank": 1
+        "rank": 5
       },
       "answer": {
         "standard_correct": true,
@@ -586,7 +586,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nHot rolled medium and high tensile structural steel is specified by IS 2062 : 2011 (Seventh Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Structural Steel Specification\n- **Standard Edition**: IS 2062 : 2011\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+      "raw_answer": "### Direct Answer\nHot rolled medium and high tensile structural steel is specified by IS 2062 : 2011 (Seventh Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Structural Steel Specification\n- **Value & Limits**: IS 2062 : 2011\n- **Normative Status**: INFORMATIVE\n\n### Citations & Prove"
     },
     {
       "id": "STD-018",
@@ -646,7 +646,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nMedical face masks are specified under IS 16289 : 2014 (Clause 1 Scope).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 16289 : 2014\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16289 : 2014, Clause 7, Page"
+      "raw_answer": "### Direct Answer\nMedical face masks are specified under IS 16289 : 2014 (Clause 1 Scope).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 16289 : 2014\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 16289 : 2014, Clause 4.2, Pa"
     },
     {
       "id": "STD-020",
@@ -676,7 +676,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nPortland Pozzolana Cement (Fly ash based) is specified by IS 1489 (Part 1) : 2015 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Cement Specification\n- **Value & Limits**: IS 1489 (Part 1) : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n"
+      "raw_answer": "### Direct Answer\nPortland Pozzolana Cement (Fly ash based) is specified by IS 1489 (Part 1) : 2015 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Cement Specification\n- **Value & Limits**: IS 1489 (Part 1) : 2015\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n"
     },
     {
       "id": "NUM-001",
@@ -706,7 +706,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum percentage elongation for Fe 500D steel bars is 16.0%.\n\n### Technical Details & Parameters\n- **Parameter**: Elongation (Fe 500D)\n- **Value & Limits**: 16.0%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, C"
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum percentage elongation for Fe 500D steel bars is 16.0% (16.0 percent).\n\n### Technical Details & Parameters\n- **Parameter**: Percentage Elongation (Fe 500D)\n- **Value & Limits**: 16.0%\n- **Normative Status**: INFORMATIVE\n\n### Citations & Pr"
     },
     {
       "id": "NUM-002",
@@ -722,7 +722,7 @@
       "answer": {
         "standard_correct": true,
         "value_correct": true,
-        "clause_correct": true,
+        "clause_correct": false,
         "tokens_present": true
       },
       "grounding": {
@@ -736,7 +736,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum 0.2 percent proof stress / yield stress for Fe 500D steel bars is 500.0 N/mm² (500.0 MPa).\n\n### Technical Details & Parameters\n- **Parameter**: 0.2 Percent Proof Stress (Fe 500D)\n- **Value & Limits**: 500.0 N/mm²\n- **Normative Status**: M"
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.1), the minimum 0.2 percent proof stress / yield stress for Fe 500D steel bars is 500.0 N/mm² (500.0 MPa).\n\n### Technical Details & Parameters\n- **Parameter**: 0.2 Percent Proof Stress (Fe 500D)\n- **Value & Limits**: 500.0 N/mm²\n- **Normative Status**: I"
     },
     {
       "id": "NUM-003",
@@ -766,12 +766,42 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4 MΩ when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4 MΩ (500 V DC)\n- **Normative Status**: Mandatory\n\n### Cit"
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4.0 MΩ (4.0 Mohm / 4 MΩ) when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4.0 MΩ (500 V DC)\n- **Normative Status"
     },
     {
       "id": "NUM-004",
       "category": "exact_technical_values",
       "query": "What is the minimum 28-day compressive strength for 53 Grade OPC in IS 269:2015?",
+      "as_of_date": "2026-08-31",
+      "retrieval": {
+        "correct_doc": true,
+        "correct_standard": true,
+        "correct_clause": true,
+        "rank": 1
+      },
+      "answer": {
+        "standard_correct": true,
+        "value_correct": true,
+        "clause_correct": true,
+        "tokens_present": false
+      },
+      "grounding": {
+        "citation_present": true,
+        "citation_correct": true,
+        "claims_supported": true
+      },
+      "guardrail": {
+        "passed": true,
+        "grounding_confidence": 1.0,
+        "violations": []
+      },
+      "passed": false,
+      "raw_answer": "### Direct Answer\nOrdinary Portland Cement (53 Grade) under IS 269 : 2015 (Clause 6.1) specifies a minimum 28-day compressive strength of 53.0 MPa.\n\n### Technical Details & Parameters\n- **Parameter**: 28-Day Compressive Strength\n- **Value & Limits**: ≥ 53.0 MPa\n- **Normative Status**: PROHIBITED\n\n##"
+    },
+    {
+      "id": "NUM-005",
+      "category": "exact_technical_values",
+      "query": "What is the minimum service value required for 1200 mm ceiling fans under IS 374:2019?",
       "as_of_date": "2026-08-31",
       "retrieval": {
         "correct_doc": true,
@@ -796,37 +826,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nOrdinary Portland Cement (including 53 Grade) is specified by IS 269 : 2015 (Clause 6), which consolidated 33, 43, and 53 grade cement specifications. 28-day compressive strength shall not be less than 53 MPa.\n\n### Technical Details & Parameters\n- **Parameter**: 28-Day Compressive "
-    },
-    {
-      "id": "NUM-005",
-      "category": "exact_technical_values",
-      "query": "What is the minimum service value required for 1200 mm ceiling fans under IS 374:2019?",
-      "as_of_date": "2026-08-31",
-      "retrieval": {
-        "correct_doc": false,
-        "correct_standard": true,
-        "correct_clause": true,
-        "rank": 1
-      },
-      "answer": {
-        "standard_correct": true,
-        "value_correct": true,
-        "clause_correct": true,
-        "tokens_present": true
-      },
-      "grounding": {
-        "citation_present": true,
-        "citation_correct": true,
-        "claims_supported": true
-      },
-      "guardrail": {
-        "passed": true,
-        "grounding_confidence": 1.0,
-        "violations": []
-      },
-      "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 374 : 2019 (Clause 8.3), the minimum service value required for 1200 mm sweep ceiling fans is 4.2 m³/min/W.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Service Value\n- **Value & Limits**: 4.2 m³/min/W\n- **Normative Status**: Mandatory\n\n### Citations & Prov"
+      "raw_answer": "### Direct Answer\nUnder IS 374 : 2019 (Clause 8.3), the minimum service value required for 1200 mm sweep ceiling fans is 4.2 m³/min/W.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Service Value\n- **Value & Limits**: 4.2 m³/min/W\n- **Normative Status**: MANDATORY\n\n### Citations & Prov"
     },
     {
       "id": "NUM-006",
@@ -856,7 +856,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nElectric Ceiling Fans are covered and specified by IS 374 : 2019 (Fourth Revision), with a minimum air delivery of 210 m³/min for 1200 mm sweep (Clause 8.1).\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Air Delivery (IS 374:2019)\n- **Value & Limits**: 210 m³/min\n- *"
+      "raw_answer": "### Direct Answer\nElectric Ceiling Fans under IS 374 : 2019 (Fourth Revision / Clause 8.1) specify a minimum air delivery of 210 m³/min for 1200 mm sweep.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Air Delivery (IS 374:2019)\n- **Value & Limits**: 210 m³/min\n- **Normative Status**: "
     },
     {
       "id": "NUM-007",
@@ -886,7 +886,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nElectric Ceiling Fans with BLDC (brushless direct current) motors are specified by IS 374 : 2026 (Fifth Revision), incorporating BEE star rating service value harmonization and a minimum air delivery of 220 m³/min for 1200 mm sweep (Clause 8.1).\n\n### Technical Details & Parameters\n"
+      "raw_answer": "### Direct Answer\nElectric Ceiling Fans with BLDC motors under IS 374 : 2026 (Fifth Revision / Clause 8.1) specify a minimum air delivery of 220 m³/min for 1200 mm sweep.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Air Delivery (IS 374:2026)\n- **Value & Limits**: 220 m³/min\n- **Norm"
     },
     {
       "id": "NUM-008",
@@ -946,7 +946,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016 (Clause 5.3.2.3), the steel toecap must withstand an impact energy of 200 J.\n\n### Technical Details & Parameters\n- **Parameter**: Toecap Impact Resistance\n- **Value & Limits**: 200 J\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1529"
+      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016 (Clause 5.3.2.3), the steel toecap must withstand an impact energy of 200 J.\n\n### Technical Details & Parameters\n- **Parameter**: Toecap Impact Resistance\n- **Value & Limits**: 200 J\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 1529"
     },
     {
       "id": "NUM-010",
@@ -976,7 +976,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016, the minimum clearance under the steel toecap after 200 J impact is 14.0 mm for size 8.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Clearance Under Toecap\n- **Value & Limits**: ≥ 14.0 mm (Size 8)\n- **Normative Status**: Mandatory\n\n### Ci"
+      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016, the minimum clearance under the steel toecap after 200 J impact is 14.0 mm for size 8.\n\n### Technical Details & Parameters\n- **Parameter**: Minimum Clearance Under Toecap\n- **Value & Limits**: ≥ 14.0 mm (Size 8)\n- **Normative Status**: MANDATORY\n\n### Ci"
     },
     {
       "id": "NUM-011",
@@ -992,7 +992,7 @@
       "answer": {
         "standard_correct": true,
         "value_correct": true,
-        "clause_correct": true,
+        "clause_correct": false,
         "tokens_present": true
       },
       "grounding": {
@@ -1006,7 +1006,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 7.3), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: Mandatory\n\n"
+      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 5.1), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: INFORMATIVE"
     },
     {
       "id": "NUM-012",
@@ -1036,7 +1036,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIndustrial safety helmets are specified by IS 2925 : 1984. The maximum transmitted force in the shock absorption test shall not exceed 5.0 kN.\n\n### Technical Details & Parameters\n- **Parameter**: Transmitted Shock Force\n- **Value & Limits**: ≤ 5.0 kN\n- **Normative Status**: Mandato"
+      "raw_answer": "### Direct Answer\nIndustrial safety helmets are specified by IS 2925 : 1984. The maximum transmitted force in the shock absorption test shall not exceed 5.0 kN.\n\n### Technical Details & Parameters\n- **Parameter**: Transmitted Shock Force\n- **Value & Limits**: ≤ 5.0 kN\n- **Normative Status**: INFORMA"
     },
     {
       "id": "NUM-013",
@@ -1046,7 +1046,7 @@
       "retrieval": {
         "correct_doc": false,
         "correct_standard": true,
-        "correct_clause": true,
+        "correct_clause": false,
         "rank": 1
       },
       "answer": {
@@ -1066,7 +1066,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 16289 : 2014 (Clause 5), the minimum bacterial filtration efficiency (BFE) for Type II medical face masks is 98%.\n\n### Technical Details & Parameters\n- **Parameter**: Bacterial Filtration Efficiency (BFE)\n- **Value & Limits**: ≥ 98% (Type II)\n- **Normative Status**: Mandat"
+      "raw_answer": "### Direct Answer\nUnder IS 16289 : 2014 (Clause 5), the minimum bacterial filtration efficiency (BFE) for Type II medical face masks is 98%.\n\n### Technical Details & Parameters\n- **Parameter**: Bacterial Filtration Efficiency (BFE)\n- **Value & Limits**: ≥ 98% (Type II)\n- **Normative Status**: INFORM"
     },
     {
       "id": "NUM-014",
@@ -1096,7 +1096,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nRespiratory protective filtering half masks are specified by IS 9473 : 2002, requiring minimum filtration efficiency of 94% for FFP2.\n\n### Technical Details & Parameters\n- **Parameter**: FFP2 Filtration Efficiency\n- **Value & Limits**: ≥ 94%\n- **Normative Status**: Mandatory\n\n### C"
+      "raw_answer": "### Direct Answer\nRespiratory protective filtering half masks are specified by IS 9473 : 2002, requiring minimum filtration efficiency of 94% for FFP2.\n\n### Technical Details & Parameters\n- **Parameter**: FFP2 Filtration Efficiency\n- **Value & Limits**: ≥ 94%\n- **Normative Status**: INFORMATIVE\n\n###"
     },
     {
       "id": "NUM-015",
@@ -1126,7 +1126,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the mechanical torque limit for E27 lamp caps is 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: E27 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 2026,"
+      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the mechanical torque limit for E27 lamp caps is 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: E27 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 2026,"
     },
     {
       "id": "NUM-016",
@@ -1156,7 +1156,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the torsion moment for B22d lamp caps is 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: B22d Cap Torque Limit\n- **Value & Limits**: 3.0 Nm\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 2026, Clause"
+      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the torsion moment for B22d lamp caps is 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: B22d Cap Torque Limit\n- **Value & Limits**: 3.0 Nm\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 2026, Clause"
     },
     {
       "id": "NUM-017",
@@ -1186,7 +1186,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the mechanical torque limit for E14 lamp caps is 1.15 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: E14 Cap Torque Limit\n- **Value & Limits**: 1.15 Nm\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 202"
+      "raw_answer": "### Direct Answer\nIn Table 2 of IS 16102 (Part 1), the mechanical torque limit for E14 lamp caps is 1.15 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: E14 Cap Torque Limit\n- **Value & Limits**: 1.15 Nm\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 16102 (Part 1) : 202"
     },
     {
       "id": "NUM-018",
@@ -1216,7 +1216,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum carbon content for Fe 500D steel bars is 0.25%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Carbon Content\n- **Value & Limits**: 0.25%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, Cla"
+      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum carbon content for Fe 500D steel bars is 0.25%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Carbon Content\n- **Value & Limits**: 0.25%\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 1786 : 2024, C"
     },
     {
       "id": "NUM-019",
@@ -1246,7 +1246,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum sulfur limit for Fe 500D steel bars is 0.040%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Sulfur Content\n- **Value & Limits**: 0.040%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, Cla"
+      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum sulfur limit for Fe 500D steel bars is 0.040%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Sulfur Content\n- **Value & Limits**: 0.040%\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 1786 : 2024, C"
     },
     {
       "id": "NUM-020",
@@ -1276,7 +1276,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum phosphorus limit for Fe 500D steel bars is 0.040%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Phosphorus Content\n- **Value & Limits**: 0.040%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2"
+      "raw_answer": "### Direct Answer\nIn IS 1786 (Table 1 / Clause 4.2), the maximum phosphorus limit for Fe 500D steel bars is 0.040%.\n\n### Technical Details & Parameters\n- **Parameter**: Maximum Phosphorus Content\n- **Value & Limits**: 0.040%\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 1786 :"
     },
     {
       "id": "CLA-001",
@@ -1306,7 +1306,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nMarking requirements for self-ballasted LED lamps are specified in Clause 5 of IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Marking Requirements\n- **Value & Limits**: Clause 5 (Marking)\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 16"
+      "raw_answer": "### Direct Answer\nMarking requirements for self-ballasted LED lamps are specified in Clause 5 of IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Marking Requirements\n- **Value & Limits**: Clause 5 (Marking)\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 16"
     },
     {
       "id": "CLA-002",
@@ -1336,7 +1336,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4 MΩ when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4 MΩ (500 V DC)\n- **Normative Status**: Mandatory\n\n### Cit"
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4.0 MΩ (4.0 Mohm / 4 MΩ) when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4.0 MΩ (500 V DC)\n- **Normative Status"
     },
     {
       "id": "CLA-003",
@@ -1366,7 +1366,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nMechanical strength and torsion resistance of lamp caps are specified in Clause 9 of IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Mechanical Strength & Torsion\n- **Value & Limits**: Clause 9\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- "
+      "raw_answer": "### Direct Answer\nMechanical strength and torsion resistance of lamp caps are specified in Clause 9 of IS 16102 (Part 1).\n\n### Technical Details & Parameters\n- **Parameter**: Mechanical Strength & Torsion\n- **Value & Limits**: Clause 9\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- "
     },
     {
       "id": "CLA-004",
@@ -1382,7 +1382,7 @@
       "answer": {
         "standard_correct": true,
         "value_correct": true,
-        "clause_correct": true,
+        "clause_correct": false,
         "tokens_present": true
       },
       "grounding": {
@@ -1396,7 +1396,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nChemical composition requirements for deformed steel bars are specified in Clause 4.2 of IS 1786.\n\n### Technical Details & Parameters\n- **Parameter**: Chemical Composition\n- **Value & Limits**: Clause 4 (C ≤ 0.25%, S ≤ 0.040%, P ≤ 0.040%)\n- **Normative Status**: Mandatory\n\n### Cita"
+      "raw_answer": "### Direct Answer\nChemical composition requirements for deformed steel bars are specified in Clause 4.1 of IS 1786.\n\n### Technical Details & Parameters\n- **Parameter**: Chemical Composition\n- **Value & Limits**: Clause 4 (C ≤ 0.25%, S ≤ 0.040%, P ≤ 0.040%)\n- **Normative Status**: INFORMATIVE\n\n### Ci"
     },
     {
       "id": "CLA-005",
@@ -1412,7 +1412,7 @@
       "answer": {
         "standard_correct": true,
         "value_correct": true,
-        "clause_correct": true,
+        "clause_correct": false,
         "tokens_present": true
       },
       "grounding": {
@@ -1426,7 +1426,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nMechanical properties and tensile requirements (including 0.2% proof stress, tensile strength, and elongation) for deformed steel bars are specified in Clause 7.3 of IS 1786 : 2024.\n\n### Technical Details & Parameters\n- **Parameter**: Mechanical Properties Clause\n- **Value & Limits"
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.2), the minimum tensile strength for Fe 500D steel bars is 565.0 MPa (565.0 N/mm²).\n\n### Technical Details & Parameters\n- **Parameter**: Tensile Strength (Fe 500D)\n- **Value & Limits**: 565.0 MPa\n- **Normative Status**: INFORMATIVE\n\n### Citations & Prove"
     },
     {
       "id": "CLA-006",
@@ -1486,7 +1486,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nMicrobiological requirements for packaged drinking water are specified in Clause 5 of IS 14543 (Total Coliform and E. coli absent in 250 mL).\n\n### Technical Details & Parameters\n- **Parameter**: Microbiological Requirements\n- **Value & Limits**: Clause 5\n- **Normative Status**: Man"
+      "raw_answer": "### Direct Answer\nMicrobiological requirements for packaged drinking water are specified in Clause 5 of IS 14543 (Total Coliform and E. coli absent in 250 mL).\n\n### Technical Details & Parameters\n- **Parameter**: Microbiological Requirements\n- **Value & Limits**: Clause 5\n- **Normative Status**: MAN"
     },
     {
       "id": "CLA-008",
@@ -1516,7 +1516,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 4151 : 2015, Clause 8 describes the shock absorption test for protective helmets (specifying peak deceleration not exceeding 300 g).\n\n### Technical Details & Parameters\n- **Parameter**: Shock Absorption Clause\n- **Value & Limits**: Clause 8\n- **Normative Status**: Mandator"
+      "raw_answer": "### Direct Answer\nUnder IS 4151 : 2015, Clause 8 describes the shock absorption test for protective helmets (specifying peak deceleration not exceeding 300 g).\n\n### Technical Details & Parameters\n- **Parameter**: Shock Absorption Clause\n- **Value & Limits**: Clause 8\n- **Normative Status**: PROHIBIT"
     },
     {
       "id": "CLA-009",
@@ -1546,7 +1546,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nBasic requirements for safety footwear are specified in Clause 5 of IS 15298 (Part 2).\n\n### Technical Details & Parameters\n- **Parameter**: Basic Requirements\n- **Value & Limits**: Clause 5\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 15298 (Part 2) : 2016, Cl"
+      "raw_answer": "### Direct Answer\nBasic requirements for safety footwear are specified in Clause 5 of IS 15298 (Part 2).\n\n### Technical Details & Parameters\n- **Parameter**: Basic Requirements\n- **Value & Limits**: Clause 5\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 15298 (Part 2) : 2016, "
     },
     {
       "id": "CLA-010",
@@ -1556,7 +1556,7 @@
       "retrieval": {
         "correct_doc": false,
         "correct_standard": true,
-        "correct_clause": true,
+        "correct_clause": false,
         "rank": 1
       },
       "answer": {
@@ -1576,7 +1576,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 16289 : 2014, Clause 5 covers performance requirements for bacterial filtration efficiency (BFE).\n\n### Technical Details & Parameters\n- **Parameter**: Filtration Performance Clause\n- **Value & Limits**: Clause 5\n- **Normative Status**: Mandatory\n\n### Citations & Provenance"
+      "raw_answer": "### Direct Answer\nUnder IS 16289 : 2014, Clause 5 covers performance requirements for bacterial filtration efficiency (BFE).\n\n### Technical Details & Parameters\n- **Parameter**: Filtration Performance Clause\n- **Value & Limits**: Clause 5\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenan"
     },
     {
       "id": "DOM-001",
@@ -1606,7 +1606,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nHigh strength deformed steel bars and wires for concrete reinforcement under IS 1786 are governed under the Construction & Civil product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Construction & Civil\n- **Normative Status**: Ma"
+      "raw_answer": "### Direct Answer\nHigh strength deformed steel bars and wires for concrete reinforcement under IS 1786 are governed under the Construction & Civil product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Construction & Civil\n- **Normative Status**: IN"
     },
     {
       "id": "DOM-002",
@@ -1614,7 +1614,7 @@
       "query": "Which BIS product domain governs electric ceiling fans under IS 374?",
       "as_of_date": "2026-08-31",
       "retrieval": {
-        "correct_doc": false,
+        "correct_doc": true,
         "correct_standard": true,
         "correct_clause": true,
         "rank": 1
@@ -1636,7 +1636,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nElectric ceiling fans governed under IS 374 belong to the Electrical product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Electrical\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 374 : 2026, Clause 1, Page(s)"
+      "raw_answer": "### Direct Answer\nElectric ceiling fans governed under IS 374 belong to the Electrical product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Electrical\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 374 : 2019, Clause 1, Page("
     },
     {
       "id": "DOM-003",
@@ -1647,7 +1647,7 @@
         "correct_doc": true,
         "correct_standard": true,
         "correct_clause": true,
-        "rank": 2
+        "rank": 1
       },
       "answer": {
         "standard_correct": true,
@@ -1666,7 +1666,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSelf-ballasted LED lamps governed under IS 16102 belong to the Electrical / Electronics & IT product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Electrical / Electronics & IT\n- **Normative Status**: Mandatory\n\n### Citations & Pr"
+      "raw_answer": "### Direct Answer\nSelf-ballasted LED lamps governed under IS 16102 belong to the Electrical / Electronics & IT product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Electrical / Electronics & IT\n- **Normative Status**: MANDATORY\n\n### Citations & Pr"
     },
     {
       "id": "DOM-004",
@@ -1696,7 +1696,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nProtective helmets for motorcycle riders under IS 4151 are governed under the Mechanical & Automotive product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Mechanical & Automotive\n- **Normative Status**: Mandatory\n\n### Citations &"
+      "raw_answer": "### Direct Answer\nProtective helmets for motorcycle riders under IS 4151 are governed under the Mechanical & Automotive product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Mechanical & Automotive\n- **Normative Status**: INFORMATIVE\n\n### Citations"
     },
     {
       "id": "DOM-005",
@@ -1726,7 +1726,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves under IS 13422 are governed under the Medical & Safety product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Medical & Safety\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 13422 "
+      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves under IS 13422 are governed under the Medical & Safety product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Medical & Safety\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 13422 "
     },
     {
       "id": "DOM-006",
@@ -1756,7 +1756,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nDomestic water meters under IS 779 are governed under the Mechanical & Automotive product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Mechanical & Automotive\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 779"
+      "raw_answer": "### Direct Answer\nDomestic water meters under IS 779 are governed under the Mechanical & Automotive product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Mechanical & Automotive\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 779"
     },
     {
       "id": "DOM-007",
@@ -1786,7 +1786,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nPackaged drinking water under IS 14543 is governed under the Food & Agriculture / Chemicals product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Food & Agriculture / Chemicals\n- **Normative Status**: Mandatory\n\n### Citations & Pr"
+      "raw_answer": "### Direct Answer\nPackaged drinking water under IS 14543 is governed under the Food & Agriculture / Chemicals product domain.\n\n### Technical Details & Parameters\n- **Parameter**: Product Domain\n- **Value & Limits**: Food & Agriculture / Chemicals\n- **Normative Status**: INFORMATIVE\n\n### Citations & "
     },
     {
       "id": "DOM-008",
@@ -1797,7 +1797,7 @@
         "correct_doc": true,
         "correct_standard": true,
         "correct_clause": true,
-        "rank": 2
+        "rank": 1
       },
       "answer": {
         "standard_correct": true,
@@ -1854,20 +1854,20 @@
       "query": "Are steel reinforcement bars covered under mandatory Quality Control Orders in India?",
       "as_of_date": "2026-08-31",
       "retrieval": {
-        "correct_doc": true,
-        "correct_standard": true,
+        "correct_doc": false,
+        "correct_standard": false,
         "correct_clause": true,
-        "rank": 1
+        "rank": null
       },
       "answer": {
-        "standard_correct": true,
+        "standard_correct": false,
         "value_correct": true,
         "clause_correct": true,
         "tokens_present": true
       },
       "grounding": {
         "citation_present": true,
-        "citation_correct": true,
+        "citation_correct": false,
         "claims_supported": true
       },
       "guardrail": {
@@ -1875,7 +1875,7 @@
         "grounding_confidence": 1.0,
         "violations": []
       },
-      "passed": true,
+      "passed": false,
       "raw_answer": "### Direct Answer\nYes, steel reinforcement bars and high strength deformed steel bars are covered under mandatory Quality Control Orders (QCO) issued by the Ministry of Steel requiring the Standard Mark (ISI mark).\n\n### Technical Details & Parameters\n- **Parameter**: Regulatory Requirement\n- **Value"
     },
     {
@@ -1936,7 +1936,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn 2025, the active edition is IS 1786 : 2024 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 1786 : 2024\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, Clause 1, Page(s) 1 (Doc"
+      "raw_answer": "### Direct Answer\nIn 2025, the active edition is IS 1786 : 2024 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 1786 : 2024\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 1786 : 2024, Clause 1, Page(s) 1 (D"
     },
     {
       "id": "TMP-003",
@@ -1966,7 +1966,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn 2020, the active edition was IS 374 : 2019 (Electric Ceiling Fans — Specification, Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 374 : 2019\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- I"
+      "raw_answer": "### Direct Answer\nIn 2020, the active edition was IS 374 : 2019 (Electric Ceiling Fans — Specification, Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 374 : 2019\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n-"
     },
     {
       "id": "TMP-004",
@@ -1996,7 +1996,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn 2027, the active edition is IS 374 : 2026 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 374 : 2026\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 374 : 2026, Clause 1, Page(s) 1 (Docume"
+      "raw_answer": "### Direct Answer\nIn 2027, the active edition is IS 374 : 2026 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Active Standard Edition\n- **Value & Limits**: IS 374 : 2026\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 374 : 2026, Clause 1, Page(s) 1 (Docu"
     },
     {
       "id": "TMP-005",
@@ -2026,7 +2026,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 16102 (Part 1) : 2012 Table 2, the torque requirement for GX53 cap is listed as 3.0 Nm (under consideration / provisional).\n\n### Technical Details & Parameters\n- **Parameter**: GX53 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm (under consideration)\n- **Normative Status**: Ma"
+      "raw_answer": "### Direct Answer\nIn IS 16102 (Part 1) : 2012 Table 2, the torque requirement for GX53 cap is listed as 3.0 Nm (under consideration / provisional).\n\n### Technical Details & Parameters\n- **Parameter**: GX53 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm (under consideration)\n- **Normative Status**: IN"
     },
     {
       "id": "TMP-006",
@@ -2056,7 +2056,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 16102 (Part 1) : 2026, the torque requirement for GX53 cap was solidified as mandatory at 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: GX53 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm (Mandatory)\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n"
+      "raw_answer": "### Direct Answer\nIn IS 16102 (Part 1) : 2026, the torque requirement for GX53 cap was solidified as mandatory at 3.0 Nm.\n\n### Technical Details & Parameters\n- **Parameter**: GX53 Cap Torque Limit\n- **Value & Limits**: 3.0 Nm (Mandatory)\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n"
     },
     {
       "id": "TMP-007",
@@ -2116,7 +2116,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024, total elongation at maximum force (Agt ≥ 5.0%) measured on gauge length is mandatory for Fe 500D.\n\n### Technical Details & Parameters\n- **Parameter**: Total Elongation at Max Force (Agt)\n- **Value & Limits**: Agt ≥ 5.0%\n- **Normative Status**: Mandatory\n\n### Cita"
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024, total elongation at maximum force (Agt ≥ 5.0%) measured on gauge length is mandatory for Fe 500D.\n\n### Technical Details & Parameters\n- **Parameter**: Total Elongation at Max Force (Agt)\n- **Value & Limits**: Agt ≥ 5.0%\n- **Normative Status**: INFORMATIVE\n\n### Ci"
     },
     {
       "id": "TMP-009",
@@ -2176,7 +2176,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 2) : 2017, the test duration specified for the lumen maintenance test is 2000 h.\n\n### Technical Details & Parameters\n- **Parameter**: Lumen Maintenance Test Duration\n- **Value & Limits**: 2000 h\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS"
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 2) : 2017, performance requirements specify 2000 h lumen maintenance test and rated life claim of 25 000 h.\n\n### Technical Details & Parameters\n- **Parameter**: Lumen Maintenance & Life\n- **Value & Limits**: 2000 h (Rated Life 25 000 h)\n- **Normative Status**: "
     },
     {
       "id": "PAR-001",
@@ -2266,7 +2266,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nProtective Helmets for motorcycle riders and two wheeler riders are covered by IS 4151 : 2015 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4151 : 2015\n- **Normative Status**: Mandatory\n\n### Citations & Prove"
+      "raw_answer": "### Direct Answer\nProtective Helmets for motorcycle riders and two wheeler riders are covered by IS 4151 : 2015 (Fourth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4151 : 2015\n- **Normative Status**: INFORMATIVE\n\n### Citations & Pro"
     },
     {
       "id": "PAR-004",
@@ -2277,7 +2277,7 @@
         "correct_doc": true,
         "correct_standard": true,
         "correct_clause": true,
-        "rank": 1
+        "rank": 3
       },
       "answer": {
         "standard_correct": true,
@@ -2296,7 +2296,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nPackaged drinking water (other than packaged natural mineral water) is specified by IS 14543 : 2024 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 14543 : 2024\n- **Normative Status**: Mandatory\n\n### Citations &"
+      "raw_answer": "### Direct Answer\nPackaged drinking water (other than packaged natural mineral water) is specified by IS 14543 : 2024 (Third Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 14543 : 2024\n- **Normative Status**: INFORMATIVE\n\n### Citations"
     },
     {
       "id": "PAR-005",
@@ -2326,7 +2326,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nDomestic gas stoves and cooking gas burners for use with liquefied petroleum gases (LPG) are specified by IS 4246 : 2002 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4246 : 2002\n- **Normative Status**: Mandat"
+      "raw_answer": "### Direct Answer\nDomestic gas stoves and cooking gas burners for use with liquefied petroleum gases (LPG) are specified by IS 4246 : 2002 (Fifth Revision).\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 4246 : 2002\n- **Normative Status**: INFORM"
     },
     {
       "id": "PAR-006",
@@ -2356,7 +2356,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nPersonal protective equipment — Safety footwear and steel toe cap work boots are specified by IS 15298 (Part 2) : 2016.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 15298 (Part 2)\n- **Normative Status**: Mandatory\n\n### Citatio"
+      "raw_answer": "### Direct Answer\nPersonal protective equipment — Safety footwear and steel toe cap work boots are specified by IS 15298 (Part 2) : 2016.\n\n### Technical Details & Parameters\n- **Parameter**: Standard Applicability\n- **Value & Limits**: IS 15298 (Part 2)\n- **Normative Status**: MANDATORY\n\n### Citatio"
     },
     {
       "id": "PAR-007",
@@ -2386,7 +2386,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nBased on IS 2925 : 1984 (Clause 1.2), the applicable technical specification is: Clause 1.2: Products conforming to this standard shall be manufactured to ensure safety, reliability, and performance.\nStandard: IS 2925 : 1984 - Industrial Safety Helmets — Specification (Second Revi."
+      "raw_answer": "### Direct Answer\nBased on IS 2925 : 1984 (Clause 5), the applicable technical specification is: Clause 5: SAFETY AND PERFORMANCE REQUIREMENTS\nStandard: IS 2925 : 1984 - Industrial Safety Helmets — Specification (Second Revision) (Section 5 SAFETY AND PERFORMANCE REQUIREMENTS, Pages [1])\nNormativ..."
     },
     {
       "id": "PAR-008",
@@ -2416,7 +2416,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992, requiring accelerated ageing testing and tensile strength of ≥ 24.0 MPa before ageing and ≥ 18.0 MPa after ageing.\n\n### Technical Details & Parameters\n- **Parameter**: Accelerated Ageing & Tensile Strength\n- **Value &"
+      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992 (First Edition).\n\n### Technical Details & Parameters\n- **Parameter**: Applicable Standard\n- **Value & Limits**: IS 13422 : 1992\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 13422 : 1992, Clause 1."
     },
     {
       "id": "PAR-009",
@@ -2446,7 +2446,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSpecified by IS 9473 : 2002 (Clause 2.1).\n\n### Technical Details & Parameters\n- **Parameter**: Specification\n- **Value & Limits**: IS 9473 : 2002\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 9473 : 2002, Clause 2.1, Page(s) 1 (Document ID: DOC-105)"
+      "raw_answer": "### Direct Answer\nSpecified by IS 9473 : 2002 (Clause 6).\n\n### Technical Details & Parameters\n- **Parameter**: Specification\n- **Value & Limits**: IS 9473 : 2002\n- **Normative Status**: INFORMATIVE\n\n### Citations & Provenance\n- IS 9473 : 2002, Clause 6, Page(s) 1 (Document ID: DOC-105)"
     },
     {
       "id": "PAR-010",
@@ -2596,7 +2596,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nSterile rubber surgical gloves are specified by IS 13422 : 1992, requiring accelerated ageing testing and tensile strength of ≥ 24.0 MPa before ageing and ≥ 18.0 MPa after ageing.\n\n### Technical Details & Parameters\n- **Parameter**: Accelerated Ageing & Tensile Strength\n- **Value &"
+      "raw_answer": "### Direct Answer\nUnder IS 13422 : 1992, sterile rubber surgical gloves require accelerated ageing testing and tensile strength of ≥ 24.0 MPa before ageing and ≥ 18.0 MPa after ageing.\n\n### Technical Details & Parameters\n- **Parameter**: Accelerated Ageing & Tensile Strength\n- **Value & Limits**: ≥ "
     },
     {
       "id": "MUL-005",
@@ -2656,7 +2656,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-002",
@@ -2686,7 +2686,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-003",
@@ -2716,7 +2716,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-004",
@@ -2746,7 +2746,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-005",
@@ -2776,7 +2776,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-006",
@@ -2806,7 +2806,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-007",
@@ -2836,7 +2836,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-008",
@@ -2866,7 +2866,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-009",
@@ -2896,7 +2896,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "NEG-010",
@@ -2926,7 +2926,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question."
+      "raw_answer": "I could not find sufficient information in the retrieved BIS standards corpus to answer this question. This question falls outside the technical scope of the Bureau of Indian Standards (BIS) specifications, product certification, and mandatory Quality Control Orders."
     },
     {
       "id": "ADV-001",
@@ -2956,7 +2956,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4 MΩ when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4 MΩ (500 V DC)\n- **Normative Status**: Mandatory\n\n### Cit"
+      "raw_answer": "### Direct Answer\nUnder IS 16102 (Part 1) Clause 8.1, the minimum insulation resistance shall not be less than 4.0 MΩ (4.0 Mohm / 4 MΩ) when tested with 500 V DC.\n\n### Technical Details & Parameters\n- **Parameter**: Insulation Resistance\n- **Value & Limits**: ≥ 4.0 MΩ (500 V DC)\n- **Normative Status"
     },
     {
       "id": "ADV-002",
@@ -2986,7 +2986,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum percentage elongation for Fe 500D steel bars is 16.0%.\n\n### Technical Details & Parameters\n- **Parameter**: Elongation (Fe 500D)\n- **Value & Limits**: 16.0%\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1786 : 2024, C"
+      "raw_answer": "### Direct Answer\nIn IS 1786 : 2024 (Clause 7.3), the minimum percentage elongation for Fe 500D steel bars is 16.0% (16.0 percent).\n\n### Technical Details & Parameters\n- **Parameter**: Percentage Elongation (Fe 500D)\n- **Value & Limits**: 16.0%\n- **Normative Status**: INFORMATIVE\n\n### Citations & Pr"
     },
     {
       "id": "ADV-003",
@@ -3046,7 +3046,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016 (Clause 5.3.2.3), the steel toecap must withstand an impact energy of 200 J.\n\n### Technical Details & Parameters\n- **Parameter**: Toecap Impact Resistance\n- **Value & Limits**: 200 J\n- **Normative Status**: Mandatory\n\n### Citations & Provenance\n- IS 1529"
+      "raw_answer": "### Direct Answer\nIn IS 15298 (Part 2) : 2016 (Clause 5.3.2.3), the steel toecap must withstand an impact energy of 200 J.\n\n### Technical Details & Parameters\n- **Parameter**: Toecap Impact Resistance\n- **Value & Limits**: 200 J\n- **Normative Status**: MANDATORY\n\n### Citations & Provenance\n- IS 1529"
     },
     {
       "id": "ADV-005",
@@ -3062,7 +3062,7 @@
       "answer": {
         "standard_correct": true,
         "value_correct": true,
-        "clause_correct": true,
+        "clause_correct": false,
         "tokens_present": true
       },
       "grounding": {
@@ -3076,7 +3076,7 @@
         "violations": []
       },
       "passed": true,
-      "raw_answer": "### Direct Answer\nDomestic gas stoves for use with LPG are specified by IS 4246 : 2002 (Fifth Revision / Clause 7.3), requiring a minimum thermal efficiency of 68%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68%\n- **Normative Status**: Mandatory\n\n"
+      "raw_answer": "### Direct Answer\nNo. Under IS 4246 : 2002 (Clause 5.1), the minimum thermal efficiency required for domestic LPG gas stoves is 68%, not 95%.\n\n### Technical Details & Parameters\n- **Parameter**: Thermal Efficiency\n- **Value & Limits**: ≥ 68% (not 95%)\n- **Normative Status**: INFORMATIVE\n\n### Citatio"
     }
   ]
 }

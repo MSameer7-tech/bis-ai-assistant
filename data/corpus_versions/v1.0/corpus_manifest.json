@@ -1,0 +1,24 @@
+{
+  "corpus_version": "v1.0",
+  "created_at": "2026-08-31T16:55:12.632742",
+  "total_documents": 116,
+  "total_chunks": 1961,
+  "golden_test_cases": 100,
+  "phase3_pass_rate": "100.0%",
+  "pytest_tests_passed": 162,
+  "metadata_checksums": {
+    "chunking_verification_log.json": "b8ef7f9f64f4b12d66fab7b7c9dc526df20f34c51d712b53caa93401259d1b7f",
+    "dataset_manifest.json": "3a400c12d1611e6026d7060be35a02376451e8f241def168d7a75d1178543e61",
+    "documents.json": "1497f2e64e9d7a6366f538424efff635bf89ed7701983022cebd3b7be32e26da",
+    "extraction_log.json": "8aa35c745f0e08927d12774ba64268e3802144e3945ebbe789777dd1a6550773",
+    "golden_reference_v1.json": "f5f9f0b3746bc449d256bb5662bde0b234c233e03beaf0e95afa44b8bce4aa25",
+    "ingestion_manifest.json": "96136b04a8190f5eaf0e3194222db487ac8614318f512dfb34bcad95e745a8a6",
+    "normalization_log.json": "cfe67576f3dbd2132fe6cf350a2b27bc62f123bb4438d70fa610034492815c8b",
+    "normalization_verification_log.json": "5d440a1f73d619c970c40f785804ed5acc263192d3d98627e24c8bf135969d85",
+    "quality_gate_log.json": "f29e434601f20ee9c21e96ee2549c2a6b25bf05195a6b4aeb2c3995a9ac5bea9",
+    "source_registry.json": "8f55db7edcb2afb9b4cf9b0d38b28c2410af273df26905cf2dff507188d0645e",
+    "vector_indexing_verification_log.json": "2673e2d40ce38eccb0b5b430731550be603019bf37e49f9e109b3b5e8b1c3fa5",
+    "verification_log.json": "d7f30423b37754801b15ba9f742ce8c26df0c403b3bcc7ee2384aa11e6bfcddd"
+  },
+  "status": "FROZEN_BASELINE"
+}

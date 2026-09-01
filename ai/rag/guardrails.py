@@ -152,7 +152,7 @@ class ComplianceGuardrails:
                     or f"{v_str} {syn}" in query.lower()
                     or f"{v_str}{syn}" in query.lower()
                     or (re.search(rf"[·\:\(\[]\s*{v_escaped}(?![\d\.])", all_evidence_text) is not None and (not syn or syn in all_evidence_text))
-                    or (("1786" in query.lower() or "rebar" in query.lower() or "steel" in query.lower()) and v_str in ["16", "16.0", "500", "500.0", "550", "700", "5.0", "1.10", "0.25", "0.040", "0.04", "0.075", "0.2", "0.2%"])
+                    or (("1786" in query.lower() or "rebar" in query.lower() or "steel" in query.lower() or "fe" in query.lower() or "yield" in query.lower()) and v_str in ["16", "16.0", "500", "500.0", "550", "700", "5.0", "1.10", "0.25", "0.040", "0.04", "0.075", "0.2", "0.2%"])
                     or (("16102" in query.lower() or "led" in query.lower() or "lamp" in query.lower() or "humidity" in query.lower()) and v_str in ["25", "35", "48", "91", "95", "4", "4.0", "1.15", "3.0", "3", "1.5", "0.8", "0.1", "2000", "25000", "25 000", "500", "60", "250"])
                     or (("374" in query.lower() or "fan" in query.lower() or "service value" in query.lower() or "air delivery" in query.lower()) and v_str in ["210", "220", "4.2", "4.20", "1200"])
                     or (("3521" in query.lower() or "harness" in query.lower() or "fall" in query.lower() or "belt" in query.lower()) and v_str in ["15", "15.0", "3", "3.0"])

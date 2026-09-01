@@ -1,0 +1,1040 @@
+{
+  "document_id": "DOC-093",
+  "source_id": "SRC-093",
+  "document_metadata": {
+    "document_id": "DOC-093",
+    "source_id": "SRC-093",
+    "standard_id": "STD-IS_940_2003",
+    "standard_number": "IS 940 : 2003",
+    "title": "Portable Fire Extinguishers, Water Type (Gas Cartridge) — Specification (Fourth Revision)",
+    "version": "Fourth Revision",
+    "issuing_authority": "Bureau of Indian Standards / Ministry of Electronics & IT",
+    "source_file": "data/raw/standards/DOC-093_IS_940___2003.pdf",
+    "sha256": "04da6fdb843a561124f711d1e6e41920d61c28ecb6742c5ec888b90af2be8f96"
+  },
+  "semantic_sections": [
+    {
+      "section_id": "SEC-DOC093-01",
+      "section_number": "1",
+      "title": "SCOPE",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    },
+    {
+      "section_id": "SEC-DOC093-02",
+      "section_number": "2",
+      "title": "NORMATIVE REFERENCES",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    },
+    {
+      "section_id": "SEC-DOC093-03",
+      "section_number": "3",
+      "title": "TERMINOLOGY",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    },
+    {
+      "section_id": "SEC-DOC093-04",
+      "section_number": "4",
+      "title": "GENERAL REQUIREMENTS",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    },
+    {
+      "section_id": "SEC-DOC093-05",
+      "section_number": "5",
+      "title": "SAFETY AND PERFORMANCE REQUIREMENTS",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    },
+    {
+      "section_id": "SEC-DOC093-06",
+      "section_number": "6",
+      "title": "TESTS AND METHODS OF TEST",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    },
+    {
+      "section_id": "SEC-DOC093-07",
+      "section_number": "7",
+      "title": "MARKING AND PACKING",
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ]
+    }
+  ],
+  "clauses": [
+    {
+      "clause_number": "1",
+      "title": "SCOPE",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "1 SCOPE",
+      "subclauses": [
+        {
+          "clause_number": "1.1",
+          "title": "This standard prescribes the technical specifications, requirements, methods of sampling, and tests for Portable Fire Extinguishers, W",
+          "parent_clause": "1",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "1.1 This standard prescribes the technical specifications, requirements, methods of sampling, and tests for Portable Fire Extinguishers, W",
+          "subclauses": [],
+          "semantic_type": "scope",
+          "semantic_tags": [
+            "requirement",
+            "sampling_requirement",
+            "scope",
+            "test_method"
+          ],
+          "clause_id": "CLAUSE-DOC093-1.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "1.2",
+          "title": "Products conforming to this standard shall be manufactured to ensure safety, reliability, and performance.",
+          "parent_clause": "1",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "1.2 Products conforming to this standard shall be manufactured to ensure safety, reliability, and performance.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-1.2",
+          "requirements": [],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "scope",
+      "semantic_tags": [
+        "scope"
+      ],
+      "clause_id": "CLAUSE-DOC093-1",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "2",
+      "title": "NORMATIVE REFERENCES",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "2 NORMATIVE REFERENCES",
+      "subclauses": [
+        {
+          "clause_number": "2.1",
+          "title": "The standards listed in this clause contain provisions which through reference in this text constitute provisions of this standard.",
+          "parent_clause": "2",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "2.1 The standards listed in this clause contain provisions which through reference in this text constitute provisions of this standard.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-2.1",
+          "requirements": [],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "reference",
+      "semantic_tags": [
+        "reference"
+      ],
+      "clause_id": "CLAUSE-DOC093-2",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "3",
+      "title": "TERMINOLOGY",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "3 TERMINOLOGY",
+      "subclauses": [
+        {
+          "clause_number": "3.1",
+          "title": "For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+          "parent_clause": "3",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "3.1 For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+          "subclauses": [],
+          "semantic_type": "definition",
+          "semantic_tags": [
+            "definition",
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-3.1",
+          "requirements": [],
+          "definitions": [
+            {
+              "entity_type": "definition",
+              "definition_id": "DEF-DOC093-0001",
+              "term": "For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+              "definition": "3.1 For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+              "source_clause": "3.1",
+              "source_pages": [
+                1
+              ],
+              "provenance": {
+                "document_id": "DOC-093",
+                "source_id": "SRC-093",
+                "standard": "IS 940 : 2003",
+                "clause": "3.1",
+                "page": 1,
+                "pages": [
+                  1
+                ],
+                "section": "3 TERMINOLOGY",
+                "original_text": "3.1 For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply."
+              },
+              "term_id": "TERM-for_the_purpose_of_this_standard_terms_and_definitions_given_in_is_iso_guidelines_and_this_clause_shall_apply"
+            }
+          ]
+        }
+      ],
+      "semantic_type": "definition",
+      "semantic_tags": [
+        "definition"
+      ],
+      "clause_id": "CLAUSE-DOC093-3",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "4",
+      "title": "GENERAL REQUIREMENTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "4 GENERAL REQUIREMENTS",
+      "subclauses": [
+        {
+          "clause_number": "4.1",
+          "title": "Materials used in construction shall be of proven quality and suitable for the intended operating environment.",
+          "parent_clause": "4",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "4.1 Materials used in construction shall be of proven quality and suitable for the intended operating environment.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-4.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "4.2",
+          "title": "Workmanship and finish shall be smooth, free from burrs, defects, and surface irregularities.",
+          "parent_clause": "4",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "4.2 Workmanship and finish shall be smooth, free from burrs, defects, and surface irregularities.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-4.2",
+          "requirements": [],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC093-4",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "5",
+      "title": "SAFETY AND PERFORMANCE REQUIREMENTS",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "5 SAFETY AND PERFORMANCE REQUIREMENTS",
+      "subclauses": [
+        {
+          "clause_number": "5.1",
+          "title": "9-litre capacity water type extinguishers, minimum 95% discharge within 60 to 120 seconds, hydraulic stretch test at 3.0 MPa.",
+          "parent_clause": "5",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "5.1 9-litre capacity water type extinguishers, minimum 95% discharge within 60 to 120 seconds, hydraulic stretch test at 3.0 MPa.",
+          "subclauses": [],
+          "semantic_type": "test_method",
+          "semantic_tags": [
+            "test_method"
+          ],
+          "clause_id": "CLAUSE-DOC093-5.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "5.2",
+          "title": "The product shall satisfy all dielectric strength, temperature rise, mechanical endurance, and operational limits specified herein.",
+          "parent_clause": "5",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "5.2 The product shall satisfy all dielectric strength, temperature rise, mechanical endurance, and operational limits specified herein.",
+          "subclauses": [],
+          "semantic_type": "requirement",
+          "semantic_tags": [
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-5.2",
+          "requirements": [
+            {
+              "entity_type": "requirement",
+              "requirement_type": "dielectric_test",
+              "requirement_id": "REQ-DOC093-5.2-ES",
+              "status": "mandatory",
+              "clause": "5.2",
+              "subject": "self-ballasted LED lamp",
+              "parameter": "dielectric_electric_strength",
+              "operator": "==",
+              "original_value": "4 000 V a.c.",
+              "normalized": {
+                "value": 4000,
+                "unit": "V a.c."
+              },
+              "value": 4000,
+              "unit": "V a.c.",
+              "conditions": {
+                "humidity_treatment": "immediately following 48 h humidity treatment"
+              },
+              "test": {
+                "test_voltage": "4 000 V a.c. (r.m.s.)",
+                "frequency": "50 Hz",
+                "duration": "1 minute (60 s)"
+              },
+              "acceptance_criterion": {
+                "minimum": 4000,
+                "unit": "V a.c.",
+                "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+              },
+              "exceptions": null,
+              "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+              "source_pages": [
+                1
+              ],
+              "provenance": {
+                "document_id": "DOC-093",
+                "source_id": "SRC-093",
+                "standard": "IS 940 : 2003",
+                "clause": "5.2",
+                "page": 1,
+                "pages": [
+                  1
+                ],
+                "section": "The product shall satisfy all dielectric strength, temperature rise, mechanical endurance, and operational limits specified herein.",
+                "original_text": "5.2 The product shall satisfy all dielectric strength, temperature rise, mechanical endurance, and operational limits specified herein."
+              }
+            }
+          ],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "requirement",
+      "semantic_tags": [
+        "requirement"
+      ],
+      "clause_id": "CLAUSE-DOC093-5",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "6",
+      "title": "TESTS AND METHODS OF TEST",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "6 TESTS AND METHODS OF TEST",
+      "subclauses": [
+        {
+          "clause_number": "6.1",
+          "title": "Type tests and acceptance tests shall be carried out in accredited laboratory conditions.",
+          "parent_clause": "6",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "6.1 Type tests and acceptance tests shall be carried out in accredited laboratory conditions.",
+          "subclauses": [],
+          "semantic_type": "test_method",
+          "semantic_tags": [
+            "requirement",
+            "test_method"
+          ],
+          "clause_id": "CLAUSE-DOC093-6.1",
+          "requirements": [],
+          "definitions": []
+        },
+        {
+          "clause_number": "6.2",
+          "title": "Sampling criteria and conformance criteria shall follow Bureau of Indian Standards procedures.",
+          "parent_clause": "6",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "6.2 Sampling criteria and conformance criteria shall follow Bureau of Indian Standards procedures.",
+          "subclauses": [],
+          "semantic_type": "sampling_requirement",
+          "semantic_tags": [
+            "requirement",
+            "sampling_requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-6.2",
+          "requirements": [],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "test_method",
+      "semantic_tags": [
+        "test_method"
+      ],
+      "clause_id": "CLAUSE-DOC093-6",
+      "requirements": [],
+      "definitions": []
+    },
+    {
+      "clause_number": "7",
+      "title": "MARKING AND PACKING",
+      "parent_clause": null,
+      "depth": 1,
+      "page_start": 1,
+      "page_end": 1,
+      "page_refs": [
+        1
+      ],
+      "content": "7 MARKING AND PACKING",
+      "subclauses": [
+        {
+          "clause_number": "7.1",
+          "title": "Each product shall be marked with the manufacturer name, trade-mark, standard designation, and BIS Standard Mark (ISI).",
+          "parent_clause": "7",
+          "depth": 2,
+          "page_start": 1,
+          "page_end": 1,
+          "page_refs": [
+            1
+          ],
+          "content": "7.1 Each product shall be marked with the manufacturer name, trade-mark, standard designation, and BIS Standard Mark (ISI).",
+          "subclauses": [],
+          "semantic_type": "marking_requirement",
+          "semantic_tags": [
+            "marking_requirement",
+            "requirement"
+          ],
+          "clause_id": "CLAUSE-DOC093-7.1",
+          "requirements": [],
+          "definitions": []
+        }
+      ],
+      "semantic_type": "marking_requirement",
+      "semantic_tags": [
+        "marking_requirement"
+      ],
+      "clause_id": "CLAUSE-DOC093-7",
+      "requirements": [],
+      "definitions": []
+    }
+  ],
+  "definitions": [
+    {
+      "entity_type": "definition",
+      "definition_id": "DEF-DOC093-0001",
+      "term": "For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+      "definition": "3.1 For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+      "source_clause": "3.1",
+      "source_pages": [
+        1
+      ],
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "3.1",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "section": "3 TERMINOLOGY",
+        "original_text": "3.1 For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply."
+      },
+      "term_id": "TERM-for_the_purpose_of_this_standard_terms_and_definitions_given_in_is_iso_guidelines_and_this_clause_shall_apply"
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "ENT-DOC093-0001",
+      "entity_type": "standard",
+      "name": "IS 940 : 2003",
+      "status": "mandatory",
+      "original_value": "Portable Fire Extinguishers, Water Type (Gas Cartridge) — Specification (Fourth Revision)",
+      "value": "Portable Fire Extinguishers, Water Type (Gas Cartridge) — Specification (Fourth Revision)",
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC093-0002",
+      "entity_type": "authority",
+      "name": "Bureau of Indian Standards (BIS)",
+      "status": "mandatory",
+      "original_value": "National Standards Body of India",
+      "value": "National Standards Body of India",
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC093-0003",
+      "entity_type": "authority",
+      "name": "Ministry of Electronics and Information Technology (MeitY)",
+      "status": "mandatory",
+      "original_value": "Statutory Order Authority",
+      "value": "Statutory Order Authority",
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "0",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "0",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "entity_id": "ENT-DOC093-0004",
+      "entity_type": "value_and_unit",
+      "name": "humidity",
+      "status": "mandatory",
+      "original_value": "95%",
+      "value": "95%",
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "5.1",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "5.1",
+      "source_pages": [
+        1
+      ],
+      "normalized": {
+        "value": 95,
+        "unit": "%"
+      },
+      "unit": "% RH"
+    },
+    {
+      "entity_id": "ENT-DOC093-0005",
+      "entity_type": "value_and_unit",
+      "name": "strength_or_stress",
+      "status": "mandatory",
+      "original_value": "3.0 MPa",
+      "value": "3.0 MPa",
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "5.1",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "5.1",
+      "source_pages": [
+        1
+      ],
+      "normalized": {
+        "value": 3.0,
+        "unit": "MPa"
+      },
+      "unit": "MPa"
+    },
+    {
+      "entity_id": "ENT-DOC093-0006",
+      "entity_type": "test",
+      "name": "Electric Strength Test",
+      "status": "mandatory",
+      "original_value": "Electric Strength Test",
+      "value": "Electric Strength Test",
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "5.2",
+        "page": 1,
+        "pages": [
+          1
+        ]
+      },
+      "source_clause": "5.2",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL-DOC093-0001",
+      "subject": "Clause 1: SCOPE",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0002",
+      "subject": "Clause 1.1: This standard prescribes the technical specifications, requirements, methods of sampling, and tests for Portable Fire Extinguishers, W",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "1.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0003",
+      "subject": "Clause 1.2: Products conforming to this standard shall be manufactured to ensure safety, reliability, and performance.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "1.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0004",
+      "subject": "Clause 2: NORMATIVE REFERENCES",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0005",
+      "subject": "Clause 2.1: The standards listed in this clause contain provisions which through reference in this text constitute provisions of this standard.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "2.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0006",
+      "subject": "Clause 3: TERMINOLOGY",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "3",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0007",
+      "subject": "Clause 3",
+      "predicate": "defines",
+      "object": "TERMINOLOGY",
+      "document_id": "DOC-093",
+      "source_clause": "3",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0008",
+      "subject": "Clause 3.1: For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "3.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0009",
+      "subject": "Clause 3.1",
+      "predicate": "defines",
+      "object": "For the purpose of this standard, terms and definitions given in IS/ISO guidelines and this clause shall apply.",
+      "document_id": "DOC-093",
+      "source_clause": "3.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0010",
+      "subject": "Clause 4: GENERAL REQUIREMENTS",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "4",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0011",
+      "subject": "Clause 4.1: Materials used in construction shall be of proven quality and suitable for the intended operating environment.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "4.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0012",
+      "subject": "Clause 4.2: Workmanship and finish shall be smooth, free from burrs, defects, and surface irregularities.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "4.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0013",
+      "subject": "Clause 5: SAFETY AND PERFORMANCE REQUIREMENTS",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "5",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0014",
+      "subject": "Clause 5.1: 9-litre capacity water type extinguishers, minimum 95% discharge within 60 to 120 seconds, hydraulic stretch test at 3.0 MPa.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "5.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0015",
+      "subject": "Clause 5.2: The product shall satisfy all dielectric strength, temperature rise, mechanical endurance, and operational limits specified herein.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "5.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0016",
+      "subject": "Clause 6: TESTS AND METHODS OF TEST",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "6",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0017",
+      "subject": "Clause 6.1: Type tests and acceptance tests shall be carried out in accredited laboratory conditions.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "6.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0018",
+      "subject": "Clause 6.2: Sampling criteria and conformance criteria shall follow Bureau of Indian Standards procedures.",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "6.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0019",
+      "subject": "Clause 7: MARKING AND PACKING",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "7",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0020",
+      "subject": "Clause 7.1: Each product shall be marked with the manufacturer name, trade-mark, standard designation, and BIS Standard Mark (ISI).",
+      "predicate": "part_of",
+      "object": "IS 940 : 2003",
+      "document_id": "DOC-093",
+      "source_clause": "7.1",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0021",
+      "subject": "Clause 5.2",
+      "predicate": "requires",
+      "object": "dielectric_electric_strength",
+      "document_id": "DOC-093",
+      "source_clause": "5.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0022",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_limit",
+      "object": "== 4000 V a.c.",
+      "document_id": "DOC-093",
+      "source_clause": "5.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0023",
+      "subject": "dielectric_electric_strength",
+      "predicate": "tested_by",
+      "object": "4 000 V a.c. (r.m.s.)",
+      "document_id": "DOC-093",
+      "source_clause": "5.2",
+      "source_pages": [
+        1
+      ]
+    },
+    {
+      "relationship_id": "REL-DOC093-0024",
+      "subject": "dielectric_electric_strength",
+      "predicate": "has_condition",
+      "object": "humidity_treatment: immediately following 48 h humidity treatment",
+      "document_id": "DOC-093",
+      "source_clause": "5.2",
+      "source_pages": [
+        1
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "entity_type": "requirement",
+      "requirement_type": "dielectric_test",
+      "requirement_id": "REQ-DOC093-5.2-ES",
+      "status": "mandatory",
+      "clause": "5.2",
+      "subject": "self-ballasted LED lamp",
+      "parameter": "dielectric_electric_strength",
+      "operator": "==",
+      "original_value": "4 000 V a.c.",
+      "normalized": {
+        "value": 4000,
+        "unit": "V a.c."
+      },
+      "value": 4000,
+      "unit": "V a.c.",
+      "conditions": {
+        "humidity_treatment": "immediately following 48 h humidity treatment"
+      },
+      "test": {
+        "test_voltage": "4 000 V a.c. (r.m.s.)",
+        "frequency": "50 Hz",
+        "duration": "1 minute (60 s)"
+      },
+      "acceptance_criterion": {
+        "minimum": 4000,
+        "unit": "V a.c.",
+        "criterion_text": "No flashover or breakdown shall occur during the 1 minute application"
+      },
+      "exceptions": null,
+      "evidence": "A test voltage of 4 000 V a.c. shall be applied for 1 min without breakdown.",
+      "source_pages": [
+        1
+      ],
+      "provenance": {
+        "document_id": "DOC-093",
+        "source_id": "SRC-093",
+        "standard": "IS 940 : 2003",
+        "clause": "5.2",
+        "page": 1,
+        "pages": [
+          1
+        ],
+        "section": "The product shall satisfy all dielectric strength, temperature rise, mechanical endurance, and operational limits specified herein.",
+        "original_text": "5.2 The product shall satisfy all dielectric strength, temperature rise, mechanical endurance, and operational limits specified herein."
+      }
+    }
+  ],
+  "cross_references": [],
+  "references": [],
+  "tables": [],
+  "annexes": [],
+  "normalization_metadata": {
+    "normalized_at": "2026-08-31T06:38:10.509221+00:00",
+    "total_definitions": 1,
+    "total_entities": 6,
+    "total_requirements": 1,
+    "total_relationships": 24,
+    "total_cross_references": 0,
+    "total_tables": 0,
+    "total_references": 0,
+    "status": "normalized"
+  },
+  "provenance": {
+    "source_id": "SRC-093",
+    "document_id": "DOC-093",
+    "raw_file": "data/raw/standards/DOC-093_IS_940___2003.pdf",
+    "sha256": "04da6fdb843a561124f711d1e6e41920d61c28ecb6742c5ec888b90af2be8f96"
+  }
+}
