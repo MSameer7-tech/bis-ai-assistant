@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "os": "Darwin",
+  "architecture": "arm64",
+  "python_version": "3.13",
+  "virtual_environment_path": "scratch/embedding_venv",
+  "pytorch_version": "2.14.0",
+  "sentence_transformers_version": "6.0.1",
+  "transformers_version": "5.16.1",
+  "tokenizers_version": "0.23.2",
+  "huggingface_hub_version": "1.30.0",
+  "onnx_runtime_version": null,
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "PRESENT",
+  "local_model_path": "data/models/embeddings/all-MiniLM-L6-v2/",
+  "embedding_dimension": 384,
+  "device": "cpu",
+  "normalization": "L2",
+  "similarity_metric": "Cosine Similarity",
+  "offline_loading_status": "PASSED",
+  "deterministic_test_status": "PASSED",
+  "package_installation_status": "PASSED",
+  "model_file_inventory": [
+    "89 files stored locally"
+  ]
+}

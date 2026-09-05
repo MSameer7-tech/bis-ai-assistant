@@ -1,0 +1,98 @@
+{
+  "manifest_version": "1.0",
+  "phase": "Phase 2B: Official Source Registry",
+  "project": "BIS AI Technical Assistant",
+  "description": "Taxonomy and operational protocol definitions for accessing official BIS and statutory knowledge source endpoints.",
+  "access_methods": [
+    {
+      "method_code": "DIRECT_HTML",
+      "name": "Direct HTML Extraction",
+      "protocol": "HTTPS GET",
+      "description": "Direct retrieval of static or server-rendered HTML pages containing structured regulatory or explanatory text.",
+      "request_headers": {
+        "User-Agent": "BIS-AI-Technical-Assistant-Acquisition/1.0 (Government-Regulatory-Research; Contact: contact@bis.gov.in)",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      },
+      "rate_limit_guidelines": {
+        "max_requests_per_minute": 30,
+        "cooldown_period_sec": 2.0
+      },
+      "pagination_type": "NONE"
+    },
+    {
+      "method_code": "HTML_SEARCH",
+      "name": "HTML Search Endpoint Query",
+      "protocol": "HTTPS GET / POST",
+      "description": "Parameterized search queries against official search interfaces (e.g. searching standard number, keyword, or commodity).",
+      "request_headers": {
+        "User-Agent": "BIS-AI-Technical-Assistant-Acquisition/1.0",
+        "Accept": "text/html"
+      },
+      "rate_limit_guidelines": {
+        "max_requests_per_minute": 20,
+        "cooldown_period_sec": 3.0
+      },
+      "pagination_type": "QUERY_PARAM_PAGE"
+    },
+    {
+      "method_code": "HTML_CATALOG",
+      "name": "Paginated HTML Catalog Scraping",
+      "protocol": "HTTPS GET",
+      "description": "Traversing tabular directories and paginated listings of standards, laboratories, or compulsory items.",
+      "request_headers": {
+        "User-Agent": "BIS-AI-Technical-Assistant-Acquisition/1.0",
+        "Accept": "text/html"
+      },
+      "rate_limit_guidelines": {
+        "max_requests_per_minute": 20,
+        "cooldown_period_sec": 2.5
+      },
+      "pagination_type": "OFFSET_OR_PAGE_NUMBER"
+    },
+    {
+      "method_code": "PDF_LINK_DISCOVERY",
+      "name": "PDF Link Extraction & Streaming",
+      "protocol": "HTTPS GET (PDF Stream)",
+      "description": "Discovery of embedded normative PDF links (standards, amendments, product manuals, SIT schedules) followed by streamed download and SHA-256 validation.",
+      "request_headers": {
+        "User-Agent": "BIS-AI-Technical-Assistant-Acquisition/1.0",
+        "Accept": "application/pdf,*/*"
+      },
+      "rate_limit_guidelines": {
+        "max_requests_per_minute": 15,
+        "cooldown_period_sec": 4.0
+      },
+      "pagination_type": "LINK_TRAVERSAL"
+    },
+    {
+      "method_code": "SEARCH_ENDPOINT",
+      "name": "Statutory Gazette Search Engine",
+      "protocol": "HTTPS GET / POST",
+      "description": "Search against The Gazette of India repository for Extraordinary S.O. notifications by ministry and keyword.",
+      "request_headers": {
+        "User-Agent": "BIS-AI-Technical-Assistant-Acquisition/1.0",
+        "Accept": "text/html,application/pdf"
+      },
+      "rate_limit_guidelines": {
+        "max_requests_per_minute": 15,
+        "cooldown_period_sec": 4.0
+      },
+      "pagination_type": "FORM_SESSION_PAGE"
+    },
+    {
+      "method_code": "REGISTRY_QUERY",
+      "name": "Online Database Registry Query",
+      "protocol": "HTTPS POST / AJAX Endpoint",
+      "description": "Querying operative licence databases (Manakonline) or CRS registration status registers with CSRF token support.",
+      "request_headers": {
+        "User-Agent": "BIS-AI-Technical-Assistant-Acquisition/1.0",
+        "Accept": "application/json,text/html"
+      },
+      "rate_limit_guidelines": {
+        "max_requests_per_minute": 10,
+        "cooldown_period_sec": 5.0
+      },
+      "pagination_type": "AJAX_JSON_PAGING"
+    }
+  ]
+}

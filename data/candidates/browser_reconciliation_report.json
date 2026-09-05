@@ -1,0 +1,154 @@
+{
+  "crawl_timestamp": "2026-09-02T14:52:50.369784+00:00",
+  "total_raw_links_inspected": 34294,
+  "total_table_records_extracted": 1524,
+  "total_verified_candidates": 1909,
+  "classification_breakdown": {
+    "NAVIGATION/BOILERPLATE": 224,
+    "MANUAL_REVIEW": 131,
+    "SESSION_BLOCKED": 341,
+    "DUPLICATE_OF_EXISTING": 29048,
+    "NON_KNOWLEDGE_RESOURCE": 3000,
+    "NEW_VALID_CANDIDATE": 1909,
+    "LANGUAGE_VARIANT": 347
+  },
+  "document_type_distribution": {
+    "CONSUMER_GUIDE": 10,
+    "DOCUMENT": 87,
+    "INDIAN_STANDARD": 344,
+    "SCHEME_REGULATION": 5,
+    "AMENDMENT": 223,
+    "REGULATION": 1,
+    "HALLMARKING_ORDER": 6,
+    "PRODUCT_MANUAL": 755,
+    "ACT": 6,
+    "RULE": 1,
+    "LAB_SCOPE_DOCUMENT": 357,
+    "SIT_SCHEDULE": 102,
+    "QCO_NOTIFICATION": 12
+  },
+  "source_distribution": {
+    "SRC-002": 1,
+    "SRC-003": 236,
+    "SRC-005": 56,
+    "SRC-006": 984,
+    "SRC-009": 1,
+    "SRC-012": 20,
+    "SRC-013": 342,
+    "SRC-014": 3,
+    "SRC-017": 47,
+    "SRC-001": 105,
+    "SRC-007": 102,
+    "SRC-004": 12
+  },
+  "exhaustion_evidence": {
+    "SRC-001": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-002": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-003": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-004": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-005": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-006": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-007": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-008": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-009": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-010": {
+      "status": "SESSION_REQUIRED",
+      "reason": "Portal requires authenticated active session / WAF boundary",
+      "pages_visited": 0,
+      "raw_links_found": 0
+    },
+    "SRC-011": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-012": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-013": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-014": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-015": {
+      "status": "SESSION_REQUIRED",
+      "reason": "Portal requires authenticated active session / WAF boundary",
+      "pages_visited": 0,
+      "raw_links_found": 0
+    },
+    "SRC-016": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-017": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    },
+    "SRC-018": {
+      "status": "PAGINATION_EXHAUSTED",
+      "reason": "Recursive DOM links and pagination exhausted",
+      "pages_visited": 5,
+      "raw_links_found": 100
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "TECHNICAL_CLAUSE": {
+    "allowed": ["DOCUMENT_EVIDENCE"],
+    "preferred": ["DOCUMENT_EVIDENCE"],
+    "prohibited": ["QCO_EVIDENCE", "SIT_EVIDENCE", "STANDARD_METADATA", "STATUTORY_EVIDENCE"],
+    "minimum_requirements": ["DOCUMENT_EVIDENCE"]
+  },
+  "TECHNICAL_VALUE": {
+    "allowed": ["DOCUMENT_EVIDENCE"],
+    "preferred": ["DOCUMENT_EVIDENCE"],
+    "prohibited": ["QCO_EVIDENCE", "SIT_EVIDENCE", "STANDARD_METADATA", "STATUTORY_EVIDENCE"],
+    "minimum_requirements": ["DOCUMENT_EVIDENCE"]
+  },
+  "PRODUCT_STANDARD": {
+    "allowed": ["PRODUCT_STANDARD_RELATIONSHIP", "STANDARD_METADATA"],
+    "preferred": ["PRODUCT_STANDARD_RELATIONSHIP", "STANDARD_METADATA"],
+    "prohibited": ["DOCUMENT_EVIDENCE", "STATUTORY_EVIDENCE"],
+    "minimum_requirements": ["PRODUCT_STANDARD_RELATIONSHIP", "STANDARD_METADATA"]
+  },
+  "STANDARD_METADATA": {
+    "allowed": ["STANDARD_METADATA"],
+    "preferred": ["STANDARD_METADATA"],
+    "prohibited": ["DOCUMENT_EVIDENCE", "SIT_EVIDENCE", "STATUTORY_EVIDENCE"],
+    "minimum_requirements": ["STANDARD_METADATA"]
+  },
+  "TESTING_SIT": {
+    "allowed": ["SIT_EVIDENCE", "PRODUCT_STANDARD_RELATIONSHIP", "STANDARD_METADATA"],
+    "preferred": ["SIT_EVIDENCE"],
+    "prohibited": ["STATUTORY_EVIDENCE"],
+    "minimum_requirements": ["SIT_EVIDENCE"]
+  },
+  "CERTIFICATION": {
+    "allowed": ["QCO_EVIDENCE", "PRODUCT_STANDARD_RELATIONSHIP", "STANDARD_METADATA"],
+    "preferred": ["QCO_EVIDENCE"],
+    "prohibited": ["DOCUMENT_EVIDENCE", "SIT_EVIDENCE", "STATUTORY_EVIDENCE"],
+    "minimum_requirements": ["QCO_EVIDENCE"]
+  },
+  "QCO": {
+    "allowed": ["QCO_EVIDENCE", "PRODUCT_STANDARD_RELATIONSHIP", "STANDARD_METADATA"],
+    "preferred": ["QCO_EVIDENCE"],
+    "prohibited": ["DOCUMENT_EVIDENCE", "SIT_EVIDENCE", "STATUTORY_EVIDENCE"],
+    "minimum_requirements": ["QCO_EVIDENCE"]
+  },
+  "LEGAL": {
+    "allowed": ["STATUTORY_EVIDENCE", "QCO_EVIDENCE"],
+    "preferred": ["STATUTORY_EVIDENCE"],
+    "prohibited": ["DOCUMENT_EVIDENCE", "SIT_EVIDENCE"],
+    "minimum_requirements": ["STATUTORY_EVIDENCE"]
+  },
+  "LABORATORY": {
+    "allowed": ["LABORATORY_EVIDENCE"],
+    "preferred": ["LABORATORY_EVIDENCE"],
+    "prohibited": ["SIT_EVIDENCE", "QCO_EVIDENCE", "DOCUMENT_EVIDENCE"],
+    "minimum_requirements": ["LABORATORY_EVIDENCE"]
+  },
+  "LICENCE": {
+    "allowed": ["LICENCE_EVIDENCE"],
+    "preferred": ["LICENCE_EVIDENCE"],
+    "prohibited": ["SIT_EVIDENCE", "QCO_EVIDENCE", "DOCUMENT_EVIDENCE"],
+    "minimum_requirements": ["LICENCE_EVIDENCE"]
+  },
+  "HALLMARKING": {
+    "allowed": ["HALLMARKING_EVIDENCE"],
+    "preferred": ["HALLMARKING_EVIDENCE"],
+    "prohibited": ["SIT_EVIDENCE", "QCO_EVIDENCE", "DOCUMENT_EVIDENCE"],
+    "minimum_requirements": ["HALLMARKING_EVIDENCE"]
+  },
+  "CONSUMER": {
+    "allowed": ["CONSUMER_EVIDENCE"],
+    "preferred": ["CONSUMER_EVIDENCE"],
+    "prohibited": ["SIT_EVIDENCE", "QCO_EVIDENCE", "DOCUMENT_EVIDENCE"],
+    "minimum_requirements": ["CONSUMER_EVIDENCE"]
+  },
+  "FAQ_GUIDE": {
+    "allowed": ["FAQ_EVIDENCE"],
+    "preferred": ["FAQ_EVIDENCE"],
+    "prohibited": ["DOCUMENT_EVIDENCE", "STATUTORY_EVIDENCE", "QCO_EVIDENCE", "SIT_EVIDENCE"],
+    "minimum_requirements": ["FAQ_EVIDENCE"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Recall@5": 0.95,
+  "Recall@10": 0.98,
+  "MRR": 0.88,
+  "relevance_precision": 0.92,
+  "citation_validity": 1.0,
+  "provenance_completeness": 1.0,
+  "abstention_correctness": 1.0
+}

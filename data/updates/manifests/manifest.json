@@ -1,0 +1,14 @@
+{
+  "update_batch_id": "batch_initial_incremental_10_7",
+  "integration_version": "1.0",
+  "corpus_fingerprint": "phase6_immutable_baseline_hash",
+  "resulting_corpus_fingerprint": "phase10_7_incremental_hash_01",
+  "source_records": 100,
+  "unchanged": 85,
+  "changed": 5,
+  "new": 8,
+  "duplicate": 2,
+  "failures": 0,
+  "release_status": "RELEASED",
+  "creation_timestamp": "2026-09-04T05:58:07.705256"
+}

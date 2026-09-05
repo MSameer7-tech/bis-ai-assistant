@@ -1,0 +1,31 @@
+[
+  {
+    "source_url": "https://www.bis.gov.in/faqs/",
+    "document_type": "FAQ",
+    "authority_level": "BIS_OFFICIAL_GUIDANCE",
+    "retrieved_at": "2026-09-03T19:31:08.226788+00:00",
+    "terminal_status": "FETCH_FAILED",
+    "error": "HTTPSConnectionPool(host='www.bis.gov.in', port=443): Read timed out. (read timeout=5)"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/guidelines-2/",
+    "document_type": "GUIDE",
+    "authority_level": "BIS_OFFICIAL_GUIDANCE",
+    "retrieved_at": "2026-09-03T19:31:13.552651+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/consumer-affairs/publications-on-consumer-awareness/",
+    "document_type": "BOOKLET",
+    "authority_level": "BIS_OFFICIAL_GUIDANCE",
+    "retrieved_at": "2026-09-03T19:31:17.181729+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.manakonline.in/biscrs/guidelines",
+    "document_type": "AWARENESS_PUBLICATION",
+    "authority_level": "BIS_OFFICIAL_GUIDANCE",
+    "retrieved_at": "2026-09-03T19:31:20.382071+00:00",
+    "terminal_status": "ACCESS_RESTRICTED"
+  }
+]

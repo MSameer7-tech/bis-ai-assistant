@@ -1,0 +1,80 @@
+{
+  "benchmark_version": "1.0",
+  "queries": [
+    {
+      "id": "Q-001",
+      "category": "A. Exact Indian Standard lookup",
+      "query": "Which standard covers high strength deformed steel bars and wires for concrete reinforcement?",
+      "expected_document_id": "DOC-034",
+      "expected_standard": "IS 1786"
+    },
+    {
+      "id": "Q-002",
+      "category": "A. Exact Indian Standard lookup",
+      "query": "Which Indian standard governs electric ceiling fans?",
+      "expected_standard": "IS 374"
+    },
+    {
+      "id": "Q-003",
+      "category": "B. Clause lookup",
+      "query": "What is the minimum yield strength of Fe 500D?",
+      "expected_document_id": "DOC-034",
+      "expected_clause": "7.1"
+    },
+    {
+      "id": "Q-004",
+      "category": "B. Clause lookup",
+      "query": "What is the minimum insulation resistance of self-ballasted LED lamps?",
+      "expected_standard": "IS 16102 (Part 1)",
+      "expected_clause": "8.1"
+    },
+    {
+      "id": "Q-005",
+      "category": "C. Product-to-standard",
+      "query": "domestic gas stoves for use with liquefied petroleum gas",
+      "expected_standard": "IS 4246"
+    },
+    {
+      "id": "Q-006",
+      "category": "D. Testing requirements",
+      "query": "What is the test method for determining the thermal efficiency of domestic gas stoves?",
+      "expected_standard": "IS 4246"
+    },
+    {
+      "id": "Q-007",
+      "category": "E. Certification requirements",
+      "query": "Requirements for BIS Standard Mark on packaged drinking water",
+      "expected_standard": "IS 14543"
+    },
+    {
+      "id": "Q-008",
+      "category": "F. Laboratory retrieval",
+      "query": "INSUFFICIENT_CORPUS_COVERAGE",
+      "expected_document_id": "NONE"
+    },
+    {
+      "id": "Q-009",
+      "category": "G. Hallmarking",
+      "query": "INSUFFICIENT_CORPUS_COVERAGE",
+      "expected_document_id": "NONE"
+    },
+    {
+      "id": "Q-010",
+      "category": "H. Cross-document retrieval",
+      "query": "What is the difference between yield stress in IS 1786 and structural steel in IS 2062?",
+      "expected_standard": "IS 1786, IS 2062"
+    },
+    {
+      "id": "Q-011",
+      "category": "I. Semantic technical query",
+      "query": "Is it mandatory to use a specific type of capping for LED lamps?",
+      "expected_standard": "IS 16102 (Part 1)"
+    },
+    {
+      "id": "Q-012",
+      "category": "J. Exact identifier query",
+      "query": "Fe 550D",
+      "expected_document_id": "DOC-034"
+    }
+  ]
+}

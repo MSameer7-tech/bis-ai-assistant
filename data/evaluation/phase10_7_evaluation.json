@@ -1,0 +1,14 @@
+{
+  "unchanged_detection_accuracy": 1.0,
+  "changed_detection_accuracy": 1.0,
+  "duplicate_detection_accuracy": 1.0,
+  "identity_resolution_accuracy": 1.0,
+  "extraction_success": 1.0,
+  "indexing_success": 1.0,
+  "transaction_success": 1.0,
+  "rollback_success": 1.0,
+  "provenance_completeness": 1.0,
+  "deterministic_rerun_consistency": 1.0,
+  "index_integrity": 1.0,
+  "release_gate_correctness": 1.0
+}

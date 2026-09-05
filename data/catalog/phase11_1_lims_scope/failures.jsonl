@@ -1,0 +1,23 @@
+{"url": "https://lims.bis.gov.in/home_lab_scope/15/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/16/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/18/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/19/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/48/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/49/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/51/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/53/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/54/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/55/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/58/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/59/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/61/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/62/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/63/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/64/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/65/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/67/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/349/", "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/350/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/353/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home_lab_scope/366/", "error": "HTTPSConnectionPool(host='lims.bis.gov.in', port=443): Read timed out. (read timeout=1.0)", "type": "SCOPE_FETCH_FAILED"}
+{"url": "https://lims.bis.gov.in/home/bis_labs/?page=1", "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))", "type": "DIRECTORY_FETCH_FAILED"}

@@ -1,0 +1,12 @@
+{
+  "routing_accuracy": 1.0,
+  "evidence_role_accuracy": 1.0,
+  "prohibited_evidence_rejection_accuracy": 1.0,
+  "relationship_accuracy": 1.0,
+  "multi_hop_accuracy": 1.0,
+  "claim_evidence_binding_accuracy": 1.0,
+  "citation_validity": 1.0,
+  "abstention_correctness": 1.0,
+  "unsupported_domain_safety": 1.0,
+  "provenance_completeness": 1.0
+}

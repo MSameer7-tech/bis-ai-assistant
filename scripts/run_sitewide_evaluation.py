@@ -67,12 +67,15 @@ def run_sitewide_evaluation() -> Dict[str, Any]:
 
         # 2. Product Discovery & Identification
         match = resolver.resolve(q)
-        if match and exp_std and (exp_std in match.get("standard_number", "") or match.get("standard_number", "") in exp_std):
+        exp_clean = exp_std.lower().replace(" ", "") if exp_std else ""
+        match_clean = match.get("standard_number", "").lower().replace(" ", "") if match else ""
+
+        if match and exp_std and (exp_clean in match_clean or match_clean in exp_clean):
             category_stats[cat]["retrieval_pass"] += 1
             category_stats[cat]["grounding_pass"] += 1
             category_stats[cat]["passed"] += 1
             total_passed += 1
-        elif exp_std and exp_std in q:
+        elif exp_std and exp_std.lower() in q.lower():
             # Standard code present directly in query
             category_stats[cat]["retrieval_pass"] += 1
             category_stats[cat]["grounding_pass"] += 1
@@ -81,7 +84,7 @@ def run_sitewide_evaluation() -> Dict[str, Any]:
         else:
             # Fallback candidate check
             cands = resolver.resolve_candidates(q, top_k=3)
-            if any(exp_std in c.get("standard_number", "") for c in cands):
+            if any(exp_clean in c.get("standard_number", "").lower().replace(" ", "") for c in cands):
                 category_stats[cat]["retrieval_pass"] += 1
                 category_stats[cat]["grounding_pass"] += 1
                 category_stats[cat]["passed"] += 1

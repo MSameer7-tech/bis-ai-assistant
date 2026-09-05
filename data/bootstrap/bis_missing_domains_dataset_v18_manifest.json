@@ -1,0 +1,22 @@
+{
+  "v17_baseline_count": 696,
+  "v18_total_count": 1026,
+  "newly_added": 330,
+  "rejected_duplicates": 121,
+  "rejected_insufficient_authority": 0,
+  "inaccessible_sources": 0,
+  "conflicting_records": 0,
+  "recognized_labs_discovered": 20,
+  "recognized_labs_acquired": 1,
+  "empanelled_labs_discovered": 20,
+  "empanelled_labs_acquired": 0,
+  "scope_pages_discovered": 40,
+  "scope_pages_successfully_acquired": 18,
+  "domain_coverage": {
+    "HALLMARKING": 180,
+    "LABORATORIES": 728,
+    "LICENCES_REGISTRATIONS": 43,
+    "CONSUMER_BIS_CARE": 25,
+    "FAQ_GUIDES_BOOKLETS": 50
+  }
+}

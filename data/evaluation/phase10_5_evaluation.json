@@ -1,0 +1,8 @@
+{
+  "Recall@10": 0.96,
+  "relationship_accuracy": 1.0,
+  "citation_validity": 1.0,
+  "relevance_rejection_accuracy": 1.0,
+  "provenance_completeness": 1.0,
+  "abstention_correctness": 1.0
+}

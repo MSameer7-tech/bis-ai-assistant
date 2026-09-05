@@ -1,0 +1,9 @@
+{
+  "run_type": "FULL",
+  "timestamp": "2026-09-04T08:30:18.120325+00:00",
+  "total_urls_discovered": 242,
+  "urls_crawled": 51,
+  "records_acquired": 43,
+  "failures": 7,
+  "pdfs_extracted": 40
+}

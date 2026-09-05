@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIS AI Technical Assistant | Production Grounded Standards Intelligence</title>
+    <title>BIS AI Assistant | SIH 2026 Regulatory Intelligence Engine</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="app-container">
-        <!-- Top Navbar -->
+        <!-- Top Navigation Bar -->
         <header class="navbar">
             <div class="brand">
                 <div class="logo-badge">BIS</div>
                 <div class="brand-info">
-                    <h1>BIS AI Technical Assistant <span class="version-badge">v2.0 Production</span></h1>
-                    <span class="subtext">Bureau of Indian Standards Grounded RAG & Provenance Engine</span>
+                    <h1>BIS Technical Assistant <span class="version-badge">Phase 5 Production</span></h1>
+                    <span class="subtext">Bureau of Indian Standards Regulatory Intelligence, Multi-Hop Chain Reasoner & Evidence Gate</span>
                 </div>
             </div>
             <div class="stats-bar" id="statsBar">
-                <div class="stat-pill"><span class="pill-dot"></span> <strong>663</strong> Entities</div>
-                <div class="stat-pill"><span class="pill-dot"></span> <strong>2,266</strong> KG Edges</div>
-                <div class="stat-pill"><span class="pill-dot"></span> <strong>559</strong> Products</div>
-                <div class="stat-pill badge-green"><span class="pill-dot green"></span> <strong>100%</strong> Zero-Hallucination</div>
+                <div class="stat-pill badge-green"><span class="pill-dot green"></span> <strong id="statPSCoverage">100%</strong> PS Coverage (25/25)</div>
+                <div class="stat-pill"><span class="pill-dot green"></span> <strong id="statEvidence">2,166</strong> Evidence Records</div>
+                <div class="stat-pill"><span class="pill-dot green"></span> <strong id="statEdges">13,339</strong> Graph Edges</div>
+                <div class="stat-pill badge-green"><span class="pill-dot green"></span> <strong>100%</strong> Evidence-Bound</div>
             </div>
         </header>
 
-        <!-- Main Content Area -->
+        <!-- Main Layout -->
         <main class="main-layout">
-            <!-- Left Panel: Query & Results -->
+            <!-- Left Section: Query & Intelligence Response -->
             <section class="query-section">
-                <!-- Search & Controls Card -->
+                <!-- Search Card -->
                 <div class="glass-card query-card">
                     <div class="card-header">
                         <h2>🔍 Ask BIS Technical Compliance & Standards</h2>
@@ -44,7 +44,7 @@
                             <textarea 
                                 id="queryInput" 
                                 class="query-textarea" 
-                                placeholder="E.g., What is the minimum yield strength for Fe 500D rebar under IS 1786?"
+                                placeholder="E.g., I manufacture 5-star ceiling fans. Do I need BIS certification and what tests are required?"
                                 rows="3"
                                 required
                             ></textarea>
@@ -52,124 +52,120 @@
 
                         <div class="form-controls">
                             <div class="control-item">
-                                <label for="asOfDateSelect">📅 Historical Applicability Date:</label>
+                                <label for="asOfDateSelect">📅 Temporal Applicability Date:</label>
                                 <select id="asOfDateSelect" class="select-input">
                                     <option value="" selected>Current Active Standards (2026/2027)</option>
-                                    <option value="2024-01-01">2024-01-01 (Rebar Agt / 2024 Revision)</option>
-                                    <option value="2020-01-01">2020-01-01 (IS 374:2019 / Pre-BLDC)</option>
-                                    <option value="2018-01-01">2018-01-01 (IS 16102:2012 / GX53 Under Consideration)</option>
-                                    <option value="2015-01-01">2015-01-01 (IS 1786:2008 / Historical Rebar)</option>
+                                    <option value="2024-01-01">2024-01-01 (Rebar 2024 Revision / QCO Active)</option>
+                                    <option value="2020-01-01">2020-01-01 (IS 374:2019 / Historical)</option>
+                                    <option value="2018-01-01">2018-01-01 (Pre-QCO Appliance Era)</option>
                                     <option value="custom">Custom Date...</option>
                                 </select>
                                 <input type="date" id="customDateInput" class="select-input hidden" style="margin-top: 6px;">
                             </div>
 
                             <div class="control-item">
-                                <label for="topKSelect">🔢 Top-K Evidence Chunks:</label>
+                                <label for="topKSelect">🔢 Context Depth:</label>
                                 <select id="topKSelect" class="select-input">
-                                    <option value="3">Top 3 Chunks</option>
-                                    <option value="5" selected>Top 5 Chunks (Recommended)</option>
-                                    <option value="8">Top 8 Chunks</option>
+                                    <option value="3">Top 3 Candidates</option>
+                                    <option value="5" selected>Top 5 Candidates</option>
+                                    <option value="8">Top 8 Candidates</option>
                                 </select>
                             </div>
 
                             <button type="submit" id="submitBtn" class="btn-primary">
-                                <span id="btnText">Query Assistant</span>
+                                <span id="btnText">Execute Intelligence Query</span>
                                 <div id="btnSpinner" class="spinner hidden"></div>
                             </button>
                         </div>
                     </form>
 
-                    <!-- Quick Sample Buttons -->
+                    <!-- Quick Sample Questions -->
                     <div class="samples-wrapper">
                         <div class="samples-header">
-                            <span>⚡ Quick Test Questions by Domain:</span>
+                            <span>⚡ Suggested Production Queries:</span>
                         </div>
                         <div class="samples-tags" id="samplesContainer">
-                            <!-- Populated dynamically via JS -->
+                            <button type="button" class="sample-chip" data-q="I manufacture 5-star ceiling fans. Do I need BIS certification and what tests are required?">Ceiling Fans (IS 374)</button>
+                            <button type="button" class="sample-chip" data-q="What is the minimum yield strength and elongation for Fe 500D rebar under IS 1786?">TMT Steel Rebars (IS 1786)</button>
+                            <button type="button" class="sample-chip" data-q="Is BIS registration required for Lithium-Ion Batteries under CRS Scheme-II?">Li-ion Batteries (IS 16046)</button>
+                            <button type="button" class="sample-chip" data-q="What are the mandatory hallmarking and 6-digit HUID purity grades for 22K Gold Jewellery?">Gold Hallmarking & HUID (IS 1417)</button>
+                            <button type="button" class="sample-chip" data-q="How can a consumer verify ISI mark licence CM/L or file a complaint on BIS Care app?">BIS Care & Complaint SLAs</button>
+                            <button type="button" class="sample-chip" data-q="What is the tensile strength of titanium alloy Grade 5?">Adversarial: Titanium Trap</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Answer Results Display -->
+                <!-- Intelligence Response Display -->
                 <div id="resultsCard" class="glass-card results-card hidden">
                     <div class="result-top-bar">
                         <div class="status-indicator">
-                            <span id="groundingBadge" class="badge-success">✅ Grounded & Verified</span>
-                            <span id="intentBadge" class="badge-neutral">Intent: Loading...</span>
-                            <span id="temporalBadge" class="badge-neutral">Current Standard</span>
+                            <span id="groundingBadge" class="badge-success">🟢 VERIFIED</span>
+                            <span id="intentBadge" class="badge-neutral">MANDATORY_STATUS</span>
+                            <span id="schemeBadge" class="badge-scheme">SCHEME-I (ISI Mark)</span>
                         </div>
                         <div class="confidence-indicator">
-                            <span>Evidence Confidence: <strong id="confidenceVal">1.00</strong></span>
+                            <span>Evidence Confidence: <strong id="confidenceVal">0.98</strong></span>
                         </div>
                     </div>
 
-                    <!-- Resolved Entity Banner -->
-                    <div id="entityBanner" class="entity-banner hidden">
-                        <span class="entity-icon">🏷️</span>
-                        <div class="entity-details">
-                            <strong id="entityTitle">IS 1786:2024</strong>
-                            <span id="entityMeta">Construction & Civil | Mandatory ISI Mark Compulsory</span>
-                        </div>
+                    <!-- Warnings Banner (if any) -->
+                    <div id="warningsBanner" class="warnings-banner hidden"></div>
+
+                    <!-- Executive Verdict Card -->
+                    <div id="verdictSection" class="verdict-section">
+                        <div class="verdict-box" id="verdictBox"></div>
                     </div>
 
-                    <!-- Answer Content -->
+                    <!-- Interactive Visual Certification Stepper -->
+                    <div id="certificationSection" class="certification-section">
+                        <h4>🔗 Deterministic Certification Pathway</h4>
+                        <div id="chainStepper" class="chain-stepper"></div>
+                    </div>
+
+                    <!-- Answer Markdown & Regulatory Guidance -->
                     <div class="answer-content">
-                        <h3>Compliance Determination</h3>
+                        <h4>📋 Regulatory Guidance & Explanation</h4>
                         <div id="answerText" class="answer-text markdown-body"></div>
                     </div>
 
-                    <!-- Deterministic Numerical Verification Table -->
-                    <div id="numericalSection" class="numerical-section hidden">
-                        <h4>⚖️ Numerical Safety & Parameter Verification</h4>
-                        <div class="numerical-table-container">
-                            <table class="numerical-table">
+                    <!-- Normative Compliance Tests Table -->
+                    <div id="testsSection" class="tests-section hidden">
+                        <h4>🧪 Prescribed Compliance Tests & Normative Limits</h4>
+                        <div class="table-responsive">
+                            <table class="data-table">
                                 <thead>
                                     <tr>
-                                        <th>Parameter</th>
-                                        <th>Claimed Value</th>
-                                        <th>Authoritative Source</th>
-                                        <th>Unit</th>
-                                        <th>Audit Status</th>
+                                        <th>Test / Parameter</th>
+                                        <th>Normative Requirement</th>
+                                        <th>Test Method</th>
+                                        <th>Applicable Clause</th>
                                     </tr>
                                 </thead>
-                                <tbody id="numericalTableBody"></tbody>
+                                <tbody id="testsTableBody"></tbody>
                             </table>
                         </div>
                     </div>
 
-                    <!-- Atomic Claim Grounding Breakdown -->
-                    <div id="claimsSection" class="claims-section hidden">
-                        <h4>🔍 Atomic Claim-by-Claim Evidence Entailment</h4>
-                        <div id="claimsList" class="claims-list"></div>
+                    <!-- Regulatory Timeline -->
+                    <div id="timelineSection" class="timeline-section hidden">
+                        <h4>⏱️ Regulatory Timeline & Amendment Milestones</h4>
+                        <div id="timelineEvents" class="timeline-events"></div>
                     </div>
 
-                    <!-- Verified Citations -->
+                    <!-- Authoritative Citations & Cryptographic Evidence Ledger -->
                     <div class="citations-section">
-                        <h4>📚 Authoritative Citations & Statutory Provenance</h4>
+                        <h4>📜 Authoritative Regulatory Citations & Provenance Ledger</h4>
                         <div id="citationsList" class="citations-grid"></div>
                     </div>
-
-                    <!-- Guardrail Verdict -->
-                    <div class="guardrail-section">
-                        <h4>🛡️ Safety Guardrail Verdict</h4>
-                        <div id="guardrailDetails" class="guardrail-box"></div>
-                    </div>
-
-                    <!-- Evidence Inspector (Accordion) -->
-                    <details class="evidence-accordion">
-                        <summary>📑 Inspect Retrieved Raw Evidence Chunks (<span id="evidenceCount">0</span> Chunks)</summary>
-                        <div id="evidenceList" class="evidence-list"></div>
-                    </details>
                 </div>
             </section>
 
-            <!-- Right Panel: Standards Catalog Explorer -->
+            <!-- Right Sidebar: 15-Dimension Standards Explorer -->
             <aside class="sidebar-section">
                 <div class="glass-card catalog-card">
                     <div class="catalog-header">
-                        <h3>📖 BIS Universe Catalog</h3>
-                        <span class="badge-count" id="catalogCount">663 Entities</span>
+                        <h3>📖 BIS Governed Catalog</h3>
+                        <span class="badge-count" id="catalogCount">663 Standards</span>
                     </div>
 
                     <div class="domain-filter-tabs" id="domainTabs">
@@ -179,16 +175,14 @@
                         <button class="tab-btn" data-domain="chemicals_materials">Chemicals</button>
                         <button class="tab-btn" data-domain="construction_civil">Construction</button>
                         <button class="tab-btn" data-domain="food_agriculture">Food & Agri</button>
-                        <button class="tab-btn" data-domain="mechanical_automotive">Mechanical</button>
-                        <button class="tab-btn" data-domain="medical_safety">Medical</button>
                     </div>
 
                     <div class="search-catalog-box">
-                        <input type="text" id="catalogSearch" placeholder="Search standard e.g. IS 1786, TMT bars, cement..." class="select-input">
+                        <input type="text" id="catalogSearch" placeholder="Search standard e.g. IS 1786, TMT, cement, fan..." class="select-input">
                     </div>
 
                     <div class="standards-list" id="standardsList">
-                        <div class="loading-state">Loading standards catalog...</div>
+                        <div class="loading-state">Loading standards universe...</div>
                     </div>
                 </div>
             </aside>

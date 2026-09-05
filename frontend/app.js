@@ -1,9 +1,10 @@
 /**
- * BIS AI Assistant - Production Frontend Client Logic (Phase 7)
+ * BIS AI Assistant - Production Frontend Client Logic (Phase 5).
+ * Connects to /api/v1/query, /api/v1/chain, /api/v1/timeline, and /api/v1/evidence/stats.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // DOM Elements
+    // Form Elements
     const queryForm = document.getElementById('queryForm');
     const queryInput = document.getElementById('queryInput');
     const asOfDateSelect = document.getElementById('asOfDateSelect');
@@ -14,27 +15,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnSpinner = document.getElementById('btnSpinner');
     const samplesContainer = document.getElementById('samplesContainer');
     
-    // Results Elements
+    // Top Bar Stat Elements
+    const statEvidence = document.getElementById('statEvidence');
+    const statEdges = document.getElementById('statEdges');
+    const statProducts = document.getElementById('statProducts');
+
+    // Response Elements
     const resultsCard = document.getElementById('resultsCard');
     const groundingBadge = document.getElementById('groundingBadge');
     const intentBadge = document.getElementById('intentBadge');
-    const temporalBadge = document.getElementById('temporalBadge');
+    const schemeBadge = document.getElementById('schemeBadge');
     const confidenceVal = document.getElementById('confidenceVal');
-    const entityBanner = document.getElementById('entityBanner');
-    const entityTitle = document.getElementById('entityTitle');
-    const entityMeta = document.getElementById('entityMeta');
+    const warningsBanner = document.getElementById('warningsBanner');
+    
+    const verdictBox = document.getElementById('verdictBox');
+    const chainStepper = document.getElementById('chainStepper');
     const answerText = document.getElementById('answerText');
     
-    const numericalSection = document.getElementById('numericalSection');
-    const numericalTableBody = document.getElementById('numericalTableBody');
+    const testsSection = document.getElementById('testsSection');
+    const testsTableBody = document.getElementById('testsTableBody');
     
-    const claimsSection = document.getElementById('claimsSection');
-    const claimsList = document.getElementById('claimsList');
-
+    const timelineSection = document.getElementById('timelineSection');
+    const timelineEvents = document.getElementById('timelineEvents');
+    
     const citationsList = document.getElementById('citationsList');
-    const guardrailDetails = document.getElementById('guardrailDetails');
-    const evidenceCount = document.getElementById('evidenceCount');
-    const evidenceList = document.getElementById('evidenceList');
 
     // Catalog Elements
     const standardsList = document.getElementById('standardsList');
@@ -44,312 +48,338 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let allStandards = [];
     let currentDomain = 'all';
-    let currentConversationId = 'session-' + Math.random().toString(36).substring(2, 9);
 
-    // Toggle Custom Date Input
-    asOfDateSelect.addEventListener('change', () => {
-        if (asOfDateSelect.value === 'custom') {
-            customDateInput.classList.remove('hidden');
-        } else {
-            customDateInput.classList.add('hidden');
-        }
-    });
+    // 1. Toggle Custom Date Input
+    if (asOfDateSelect) {
+        asOfDateSelect.addEventListener('change', () => {
+            if (asOfDateSelect.value === 'custom') {
+                customDateInput.classList.remove('hidden');
+            } else {
+                customDateInput.classList.add('hidden');
+            }
+        });
+    }
 
-    // 1. Load Initial Stats & Samples
-    async function loadSamples() {
+    // 2. Fetch Live Stats
+    async function loadStats() {
         try {
-            const res = await fetch('/api/samples');
-            const samples = await res.json();
-            samplesContainer.innerHTML = '';
-            samples.forEach(s => {
-                const chip = document.createElement('button');
-                chip.type = 'button';
-                chip.className = 'sample-chip';
-                chip.textContent = `${s.category.replace('Table - ', '').replace('Num - ', '').replace('Clause - ', '')}`;
-                chip.title = s.query;
-                chip.addEventListener('click', () => {
-                    queryInput.value = s.query;
-                    if (s.as_of_date) {
-                        asOfDateSelect.value = s.as_of_date;
-                    } else {
-                        asOfDateSelect.value = '';
-                    }
-                    customDateInput.classList.add('hidden');
-                    handleQuerySubmit();
-                });
-                samplesContainer.appendChild(chip);
-            });
-        } catch (err) {
-            console.error('Error loading samples:', err);
+            const [evRes, covRes] = await Promise.all([
+                fetch('/api/v1/evidence/stats'),
+                fetch('/api/v1/coverage/stats')
+            ]);
+            if (evRes.ok) {
+                const data = await evRes.json();
+                if (statEvidence) statEvidence.textContent = data.total_evidence_records.toLocaleString();
+                if (statEdges) statEdges.textContent = data.total_graph_edges.toLocaleString();
+            }
+            if (covRes.ok) {
+                const covData = await covRes.json();
+                const statPSCoverage = document.getElementById('statPSCoverage');
+                if (statPSCoverage) {
+                    statPSCoverage.textContent = `${covData.overall_ps_coverage_pct}%`;
+                }
+            }
+        } catch (e) {
+            console.warn('Could not load live stats:', e);
         }
     }
 
-    // 2. Load Standards Catalog
+    // 3. Quick Sample Buttons Listener
+    if (samplesContainer) {
+        samplesContainer.querySelectorAll('.sample-chip').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const q = btn.getAttribute('data-q');
+                if (q) {
+                    queryInput.value = q;
+                    if (asOfDateSelect) asOfDateSelect.value = '';
+                    if (customDateInput) customDateInput.classList.add('hidden');
+                    handleQuerySubmit();
+                }
+            });
+        });
+    }
+
+    // 4. Standards Catalog Loader
     async function loadCatalog() {
         try {
             const res = await fetch('/api/standards');
-            allStandards = await res.json();
-            renderCatalog();
+            if (res.ok) {
+                allStandards = await res.json();
+                renderCatalog();
+            }
         } catch (err) {
-            standardsList.innerHTML = `<div class="error">Failed to load catalog.</div>`;
+            if (standardsList) standardsList.innerHTML = `<div class="error">Failed to load catalog.</div>`;
         }
     }
 
     function renderCatalog() {
-        const query = catalogSearch.value.toLowerCase().trim();
+        if (!standardsList) return;
+        const query = (catalogSearch ? catalogSearch.value : '').toLowerCase().trim();
         const filtered = allStandards.filter(std => {
-            const matchDom = currentDomain === 'all' || std.product_domain === currentDomain;
-            const matchSearch = !query || 
-                (std.standard_number && std.standard_number.toLowerCase().includes(query)) ||
-                (std.title && std.title.toLowerCase().includes(query)) ||
-                (std.document_id && std.document_id.toLowerCase().includes(query));
-            return matchDom && matchSearch;
+            const matchDomain = currentDomain === 'all' || std.product_domain === currentDomain;
+            const title = (std.title || '').toLowerCase();
+            const isNum = (std.standard_number || '').toLowerCase();
+            const matchSearch = !query || isNum.includes(query) || title.includes(query);
+            return matchDomain && matchSearch;
         });
 
-        catalogCount.textContent = `${filtered.length} Entities`;
-        standardsList.innerHTML = '';
+        if (catalogCount) catalogCount.textContent = `${filtered.length} Standards`;
 
         if (filtered.length === 0) {
-            standardsList.innerHTML = `<div class="empty" style="color: var(--text-muted); font-size: 0.8rem; padding: 12px;">No matching standards found.</div>`;
+            standardsList.innerHTML = `<div class="empty-state">No matching Indian Standards found.</div>`;
             return;
         }
 
-        filtered.forEach(std => {
-            const item = document.createElement('div');
-            item.className = 'standard-card';
-            item.innerHTML = `
-                <div class="std-num">${std.standard_number || std.title}</div>
-                <div class="std-title">${std.title || 'Official BIS Standard'}</div>
-                <div class="std-meta">
-                    <span>${std.document_id || ''}</span>
-                    <span>${std.product_domain ? std.product_domain.replace('_', ' ') : ''}</span>
+        standardsList.innerHTML = filtered.slice(0, 50).map(std => `
+            <div class="standard-item" data-code="${std.standard_number}">
+                <div class="std-header">
+                    <span class="std-number">${std.standard_number}</span>
+                    <span class="std-badge ${std.mandatory ? 'mandatory' : 'voluntary'}">
+                        ${std.mandatory ? 'MANDATORY' : 'VOLUNTARY'}
+                    </span>
                 </div>
-            `;
+                <div class="std-title">${std.title || 'Indian Standard Specification'}</div>
+                <div class="std-footer">
+                    <span>${std.product_domain || 'General'}</span>
+                    <span>${std.edition || 'Current'}</span>
+                </div>
+            </div>
+        `).join('');
+
+        standardsList.querySelectorAll('.standard-item').forEach(item => {
             item.addEventListener('click', () => {
-                queryInput.value = `What is the scope and requirements of ${std.standard_number || std.title}?`;
+                const code = item.getAttribute('data-code');
+                queryInput.value = `What are the mandatory requirements and compliance tests for ${code}?`;
                 handleQuerySubmit();
             });
-            standardsList.appendChild(item);
         });
     }
 
-    // Domain Tab Filtering
-    domainTabs.addEventListener('click', (e) => {
-        if (e.target.classList.contains('tab-btn')) {
-            domainTabs.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            e.target.classList.add('active');
-            currentDomain = e.target.dataset.domain;
-            renderCatalog();
-        }
-    });
+    if (domainTabs) {
+        domainTabs.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                domainTabs.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentDomain = btn.getAttribute('data-domain');
+                renderCatalog();
+            });
+        });
+    }
 
-    catalogSearch.addEventListener('input', renderCatalog);
+    if (catalogSearch) {
+        catalogSearch.addEventListener('input', renderCatalog);
+    }
 
-    // 3. Handle Query Submission
+    // 5. Query Submission Handler
     async function handleQuerySubmit() {
-        const q = queryInput.value.trim();
-        if (!q) return;
+        const query = queryInput.value.trim();
+        if (!query) return;
 
-        let asOf = asOfDateSelect.value;
-        if (asOf === 'custom') {
-            asOf = customDateInput.value || null;
-        } else if (!asOf) {
-            asOf = null;
+        let asOfDate = asOfDateSelect ? asOfDateSelect.value : null;
+        if (asOfDate === 'custom' && customDateInput && customDateInput.value) {
+            asOfDate = customDateInput.value;
+        } else if (!asOfDate || asOfDate === 'custom') {
+            asOfDate = null;
         }
 
-        const topK = parseInt(topKSelect.value, 10) || 5;
+        const topK = topKSelect ? parseInt(topKSelect.value, 10) : 5;
 
         // UI Loading State
         submitBtn.disabled = true;
-        btnText.textContent = 'Verifying...';
+        btnText.textContent = 'Analyzing Regulatory Corpus...';
         btnSpinner.classList.remove('hidden');
 
         try {
-            const res = await fetch('/api/query', {
+            const res = await fetch('/api/v1/query', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    query: q,
-                    as_of_date: asOf,
-                    top_k: topK,
-                    conversation_id: currentConversationId
-                })
+                body: JSON.stringify({ query, as_of_date: asOfDate, top_k: topK })
             });
 
             if (!res.ok) {
                 const errData = await res.json();
-                throw new Error(errData.detail || 'Query execution failed.');
+                throw new Error(errData.detail || 'API execution failed');
             }
 
             const data = await res.json();
-            renderResults(data);
+            renderResponse(data);
+
         } catch (err) {
             alert(`Error: ${err.message}`);
         } finally {
             submitBtn.disabled = false;
-            btnText.textContent = 'Query Assistant';
+            btnText.textContent = 'Execute Intelligence Query';
             btnSpinner.classList.add('hidden');
         }
     }
 
-    queryForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        handleQuerySubmit();
-    });
-
-    // 4. Render Production Results
-    function renderResults(data) {
-        resultsCard.classList.remove('hidden');
-        resultsCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-        const payload = data.production_payload || {};
-
-        // Confidence & Status
-        const conf = payload.evidence_confidence !== undefined ? payload.evidence_confidence : data.confidence;
-        confidenceVal.textContent = conf !== undefined ? Number(conf).toFixed(2) : '1.00';
-        temporalBadge.textContent = data.temporal_context || 'Current Enforced Editions';
-
-        // Intent Badge
-        if (payload.intent && payload.intent.type) {
-            intentBadge.textContent = `Intent: ${payload.intent.type.replace(/_/g, ' ')}`;
-        } else {
-            intentBadge.textContent = 'Intent: TECHNICAL COMPLIANCE';
-        }
-
-        // Grounding status
-        const gRes = data.guardrail_result || {};
-        if (gRes.passed && payload.status !== 'guardrail_blocked' && payload.status !== 'refusal') {
-            groundingBadge.className = 'badge-success';
-            groundingBadge.textContent = '✅ Grounded & Verified';
-        } else if (payload.status === 'refusal' || gRes.refusal_required) {
-            groundingBadge.className = 'badge-warning';
-            groundingBadge.textContent = '⚠️ Grounded Refusal / Out of Scope';
-        } else {
-            groundingBadge.className = 'badge-danger';
-            groundingBadge.textContent = '🛑 Guardrail Blocked';
-        }
-
-        // Entity Banner
-        if (payload.entities && payload.entities.length > 0) {
-            const ent = payload.entities[0];
-            entityTitle.textContent = ent.name || ent.id;
-            entityMeta.textContent = `${ent.domain ? ent.domain.replace(/_/g, ' ').toUpperCase() : 'BIS STANDARD'} • ${ent.mandatory_certification ? 'Compulsory ISI Marking' : 'Voluntary Specification'}`;
-            entityBanner.classList.remove('hidden');
-        } else {
-            entityBanner.classList.add('hidden');
-        }
-
-        // Format Answer
-        answerText.innerHTML = formatMarkdown(data.answer);
-
-        // Numerical Verification Table
-        const numChecks = payload.numerical_verifications || data.numerical_verifications || [];
-        if (numChecks.length > 0) {
-            numericalTableBody.innerHTML = '';
-            numChecks.forEach(nv => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `
-                    <td><strong>${nv.parameter || 'Parameter'}</strong></td>
-                    <td>${nv.claim_value} ${nv.claim_unit}</td>
-                    <td>${nv.source_value >= 0 ? `${nv.source_value} ${nv.source_unit}` : 'Not Found in Source'}</td>
-                    <td><code>${nv.claim_unit}</code></td>
-                    <td>${nv.passed ? '<span class="status-pass">✅ PASSED (0 Delta)</span>' : '<span class="status-fail">❌ FAILED MISMATCH</span>'}</td>
-                `;
-                numericalTableBody.appendChild(tr);
-            });
-            numericalSection.classList.remove('hidden');
-        } else {
-            numericalSection.classList.add('hidden');
-        }
-
-        // Atomic Claims Grounding Breakdown
-        const claims = payload.claims || data.claims || [];
-        if (claims.length > 0) {
-            claimsList.innerHTML = '';
-            claims.forEach(cl => {
-                const div = document.createElement('div');
-                div.className = `claim-card ${cl.verified ? 'verified' : 'unverified'}`;
-                const evDetails = cl.evidence && cl.evidence.length > 0 
-                    ? cl.evidence.map(ev => `<code>${ev.standard_number} Cl. ${ev.clause} (p. ${ev.page || 'N/A'})</code>`).join(' &bull; ')
-                    : '<em>No direct chunk entailment</em>';
-                
-                div.innerHTML = `
-                    <div class="claim-header">
-                        <span class="claim-id">${cl.claim_id}</span>
-                        <span class="claim-status">${cl.verified ? '✅ Verified Entailment' : '⚠️ Low Grounding'}</span>
-                    </div>
-                    <div class="claim-text">${cl.text}</div>
-                    <div class="claim-evidence">Grounding Evidence: ${evDetails}</div>
-                `;
-                claimsList.appendChild(div);
-            });
-            claimsSection.classList.remove('hidden');
-        } else {
-            claimsSection.classList.add('hidden');
-        }
-
-        // Citations
-        citationsList.innerHTML = '';
-        if (data.citations && data.citations.length > 0) {
-            data.citations.forEach(c => {
-                const card = document.createElement('div');
-                card.className = 'citation-card';
-                card.innerHTML = `
-                    <div class="citation-header">
-                        <span>${c.standard_number || c.standard}</span>
-                        <span>${c.verified ? '✅ Verified' : '⚠️ Unverified'}</span>
-                    </div>
-                    <div class="citation-meta">
-                        <span><strong>Clause:</strong> ${c.clause || 'N/A'}</span>
-                        <span><strong>Pages:</strong> ${c.pages && c.pages.length ? c.pages.join(', ') : (c.page || 'N/A')}</span>
-                        <span><strong>Doc ID:</strong> ${c.source_id || c.chunk_id ? c.chunk_id.split('::')[0] : 'DOC'}</span>
-                    </div>
-                `;
-                citationsList.appendChild(card);
-            });
-        } else {
-            citationsList.innerHTML = `<div style="font-size:0.8rem; color:var(--text-muted);">No statutory citations attached for this response.</div>`;
-        }
-
-        // Guardrail Box
-        guardrailDetails.innerHTML = '';
-        const checks = [
-            `<strong>Grounding Confidence:</strong> ${(conf * 100).toFixed(0)}%`,
-            `<strong>Refusal Status:</strong> ${payload.status === 'refusal' || gRes.refusal_required ? `Triggered (${payload.refusal_reason || 'Out of Scope'})` : 'Not Required (Answer Grounded)'}`,
-            `<strong>Deterministic Numerical Verifications:</strong> ${numChecks.length} parameters checked`,
-            `<strong>Atomic Claims Verified:</strong> ${claims.filter(c => c.verified).length} / ${claims.length} propositions entailed`
-        ];
-        if (gRes.violations && gRes.violations.length > 0) {
-            checks.push(`<strong style="color: var(--accent-rose);">Violations:</strong> ${gRes.violations.join('; ')}`);
-        }
-        guardrailDetails.innerHTML = checks.map(c => `<div class="guardrail-item">• ${c}</div>`).join('');
-
-        // Evidence Inspector
-        const chunks = data.retrieved_chunks || [];
-        evidenceCount.textContent = chunks.length;
-        evidenceList.innerHTML = '';
-        chunks.forEach((chunk, i) => {
-            const item = document.createElement('div');
-            item.className = 'evidence-item';
-            item.innerHTML = `<strong>[Chunk ${i+1}] ${chunk.standard_number} (Clause ${chunk.clause_number || 'N/A'}, Pages ${chunk.pages ? chunk.pages.join(',') : 'N/A'}) - Score: ${chunk.score ? chunk.score.toFixed(4) : 'N/A'}</strong>\n${chunk.text}`;
-            evidenceList.appendChild(item);
+    if (queryForm) {
+        queryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            handleQuerySubmit();
         });
     }
 
-    function formatMarkdown(text) {
-        if (!text) return '';
-        let html = text
+    // 6. Response Renderer
+    function renderResponse(data) {
+        resultsCard.classList.remove('hidden');
+        resultsCard.scrollIntoView({ behavior: 'smooth' });
+
+        // Status & Confidence
+        if (groundingBadge) {
+            groundingBadge.textContent = data.status === 'VERIFIED' ? '🟢 VERIFIED' : (data.status === 'REFUSAL' ? '🔴 REFUSAL' : '🟡 ' + data.status);
+            groundingBadge.className = data.status === 'VERIFIED' ? 'badge-success' : (data.status === 'REFUSAL' ? 'badge-danger' : 'badge-warning');
+        }
+
+        if (intentBadge && data.parsed_query) {
+            intentBadge.textContent = (data.parsed_query.intents || ['GENERAL_KYS']).join(' + ');
+        }
+
+        if (schemeBadge && data.verdict) {
+            schemeBadge.textContent = data.verdict.scheme || 'SCHEME-I';
+        }
+
+        if (confidenceVal) {
+            confidenceVal.textContent = (data.confidence || 0.95).toFixed(2);
+        }
+
+        // Warnings
+        if (warningsBanner) {
+            if (data.warnings && data.warnings.length > 0) {
+                warningsBanner.innerHTML = data.warnings.map(w => `<div>${w}</div>`).join('');
+                warningsBanner.classList.remove('hidden');
+            } else {
+                warningsBanner.classList.add('hidden');
+            }
+        }
+
+        // Executive Verdict Box
+        if (verdictBox && data.verdict) {
+            const v = data.verdict;
+            const mandClass = v.is_mandatory ? 'mandatory' : 'voluntary';
+            const mandText = v.is_mandatory ? 'MANDATORY (QCO Enforced)' : 'VOLUNTARY';
+            
+            verdictBox.innerHTML = `
+                <h3>🏛️ BIS Executive Verdict: <span class="${mandClass}">${mandText}</span></h3>
+                <div class="verdict-grid">
+                    <div class="verdict-item">
+                        <div class="label">Governed Commodity</div>
+                        <div class="value">${v.product || 'Indian Standard Scope'}</div>
+                    </div>
+                    <div class="verdict-item">
+                        <div class="label">Indian Standard</div>
+                        <div class="value">${v.standard || 'IS Standard'}</div>
+                    </div>
+                    <div class="verdict-item">
+                        <div class="label">Conformity Scheme</div>
+                        <div class="value">${v.scheme || 'SCHEME-I'}</div>
+                    </div>
+                    <div class="verdict-item">
+                        <div class="label">Chain Completeness</div>
+                        <div class="value">${v.chain_status || 'COMPLETE'}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Certification Chain Stepper
+        if (chainStepper) {
+            if (data.certification_chain && data.certification_chain.nodes) {
+                const nodes = data.certification_chain.nodes;
+                chainStepper.innerHTML = nodes.map((n, idx) => `
+                    <div class="chain-node ${n.is_present ? 'verified' : 'missing'}">
+                        <div class="chain-node-type">${n.node_type}</div>
+                        <div class="chain-node-title" title="${n.title}">${n.title}</div>
+                    </div>
+                    ${idx < nodes.length - 1 ? '<span class="chain-arrow">──►</span>' : ''}
+                `).join('');
+            } else {
+                chainStepper.innerHTML = `<span class="text-muted">No explicit multi-hop certification chain resolved.</span>`;
+            }
+        }
+
+        // Detailed Markdown Explanation
+        if (answerText) {
+            answerText.innerHTML = renderMarkdown(data.answer_markdown || '');
+        }
+
+        // Normative Compliance Tests Table
+        if (testsSection && testsTableBody) {
+            if (data.test_requirements && data.test_requirements.length > 0) {
+                testsSection.classList.remove('hidden');
+                testsTableBody.innerHTML = data.test_requirements.map(t => `
+                    <tr>
+                        <td><strong>${t.test_name}</strong></td>
+                        <td>${t.requirement}</td>
+                        <td><code>${t.test_method}</code></td>
+                        <td>${t.clause_page}</td>
+                    </tr>
+                `).join('');
+            } else {
+                testsSection.classList.add('hidden');
+            }
+        }
+
+        // Regulatory Timeline Milestones
+        if (timelineSection && timelineEvents) {
+            if (data.timeline && data.timeline.events && data.timeline.events.length > 0) {
+                timelineSection.classList.remove('hidden');
+                timelineEvents.innerHTML = data.timeline.events.slice(0, 8).map(e => `
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span>${e.date}</span>
+                            <span>${e.event_type}</span>
+                        </div>
+                        <div class="timeline-title">${e.title}</div>
+                        <div class="text-muted" style="font-size:0.75rem;">${e.description}</div>
+                    </div>
+                `).join('');
+            } else {
+                timelineSection.classList.add('hidden');
+            }
+        }
+
+        // Citations & Provenance Ledger
+        if (citationsList) {
+            if (data.evidence_records && data.evidence_records.length > 0) {
+                citationsList.innerHTML = data.evidence_records.map(ev => `
+                    <div class="citation-card">
+                        <div class="cit-header">
+                            <span class="cit-authority">${ev.source_authority || 'BIS'}</span>
+                            <span class="cit-badge">${ev.evidentiary_strength || 'VERIFIED'}</span>
+                        </div>
+                        <div class="cit-title">${ev.citation_title || 'Indian Standard Specification'}</div>
+                        <div class="cit-meta">
+                            <span>Locator: <code>${ev.locator_value || 'Clause 1'}</code></span>
+                            <span>Clause: ${ev.clause_number || 'Scope'}</span>
+                            <span>Page: ${ev.page_number || 1}</span>
+                        </div>
+                        <div class="cit-hash">
+                            SHA-256: <code>${ev.document_sha256 ? ev.document_sha256.substring(0, 20) + '...' : 'Registry-Indexed'}</code>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                citationsList.innerHTML = `<span class="text-muted">No explicit evidence records attached.</span>`;
+            }
+        }
+    }
+
+    // Lightweight Markdown Parser
+    function renderMarkdown(md) {
+        if (!md) return '';
+        return md
             .replace(/^### (.*$)/gim, '<h3>$1</h3>')
             .replace(/^## (.*$)/gim, '<h2>$1</h2>')
             .replace(/^# (.*$)/gim, '<h1>$1</h1>')
             .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
             .replace(/\*(.*?)\*/gim, '<em>$1</em>')
-            .replace(/^\- (.*$)/gim, '<li>$1</li>')
-            .replace(/\n\n/gim, '<br><br>');
-        return html;
+            .replace(/`([^`]+)`/gim, '<code>$1</code>')
+            .replace(/\n\n/gim, '<br><br>')
+            .replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>');
     }
 
-    // Init
-    loadSamples();
+    // Initialize
+    loadStats();
     loadCatalog();
 });

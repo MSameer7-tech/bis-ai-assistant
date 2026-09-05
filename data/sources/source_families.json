@@ -1,0 +1,490 @@
+{
+  "manifest_version": "1.1",
+  "phase": "Phase 2A: BIS & Statutory Source Family Discovery",
+  "project": "BIS AI Technical Assistant",
+  "catalog_title": "Authorized BIS and Statutory Knowledge Source Families",
+  "description": "Authoritative catalog of official BIS and statutory information source families, classified by ownership, default authority class, and claim-appropriate evidence roles.",
+  "source_ownership_types": {
+    "BIS_PUBLISHED": "Authored, formulated, and published directly by the Bureau of Indian Standards.",
+    "BIS_OPERATED": "Portals, databases, registries, and operational systems operated by BIS.",
+    "STATUTORY_EXTERNAL": "Statutory legal instruments enacted by Parliament or issued by Central Ministries (e.g. Gazette of India)."
+  },
+  "authority_classes": {
+    "PRIMARY_NORMATIVE": "Legally binding standard specifications, statutory Quality Control Orders (QCOs), and normative inspection/testing schedules.",
+    "OFFICIAL_OPERATIONAL": "Official operational guidelines, Product Manuals, accredited/empanelled laboratory registers, and live licensee/registration ledgers.",
+    "OFFICIAL_INFORMATIVE": "Official explanatory guides, FAQs, portal booklets, and consumer advisory materials.",
+    "STATUTORY_FRAMEWORK": "Acts of Parliament, Gazette Rules, and statutory regulations establishing the legal authority of BIS."
+  },
+  "laboratory_status_types": [
+    "BIS_OWNED",
+    "BIS_RECOGNIZED",
+    "BIS_EMPANELLED",
+    "NABL_ACCREDITED",
+    "OTHER_RECOGNIZED"
+  ],
+  "source_families": [
+    {
+      "source_family_id": "SRCF-001",
+      "name": "Indian Standards Specifications",
+      "source_ownership": "BIS_PUBLISHED",
+      "issuing_authority": "Bureau of Indian Standards",
+      "discovery_authority": "BIS Standard Formulation Technical Committees",
+      "default_authority_class": "PRIMARY_NORMATIVE",
+      "primary_purpose": "Technical, physical, chemical, dimensional, safety, and performance requirements for products and processes.",
+      "possible_claim_roles": [
+        "TECHNICAL_SPECIFICATION",
+        "PERFORMANCE_PARAMETER",
+        "DIMENSIONAL_TOLERANCE",
+        "CHEMICAL_COMPOSITION",
+        "TEST_METHOD",
+        "NORMATIVE_REFERENCE"
+      ],
+      "knowledge_types": [
+        "technical_specifications",
+        "performance_parameters",
+        "dimensional_tolerances",
+        "chemical_compositions",
+        "test_methods",
+        "normative_references",
+        "definitions"
+      ],
+      "ps_requirements": [
+        "RQ-001",
+        "RQ-002",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/know-your-standard/",
+        "https://standardsbis.bsbedge.com/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-002",
+      "name": "Standards Amendments & Revisions",
+      "source_ownership": "BIS_PUBLISHED",
+      "issuing_authority": "Bureau of Indian Standards",
+      "discovery_authority": "BIS Technical Committees",
+      "default_authority_class": "PRIMARY_NORMATIVE",
+      "primary_purpose": "Statutory modifications, errata, addenda, and superseding revisions to published Indian Standards.",
+      "possible_claim_roles": [
+        "CLAUSE_AMENDMENT",
+        "ERRATA_CORRECTION",
+        "VALIDITY_EXTENSION",
+        "SUPERSESSION_STATUS"
+      ],
+      "knowledge_types": [
+        "clause_amendments",
+        "errata_corrections",
+        "validity_extensions",
+        "supersession_notices",
+        "active_revision_history"
+      ],
+      "ps_requirements": [
+        "RQ-001",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/know-your-standard/",
+        "https://www.manakonline.in/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-003",
+      "name": "Quality Control Orders (QCO) & Gazette Notifications",
+      "source_ownership": "STATUTORY_EXTERNAL",
+      "issuing_authority": "Central Government / Ministries (DPIIT, MeitY, MoEFCC, MoS, etc.)",
+      "discovery_authority": "Gazette of India & BIS Compulsory Certification Portal",
+      "default_authority_class": "PRIMARY_NORMATIVE",
+      "evidence_hierarchy": [
+        "Actual Gazette Notification (S.O. instrument)",
+        "Applicable Ministry Statutory Order",
+        "Official BIS Implementation Guidance"
+      ],
+      "primary_purpose": "Statutory orders published in The Gazette of India mandating compulsory standard mark compliance.",
+      "possible_claim_roles": [
+        "MANDATORY_LEGAL_STATUS",
+        "ENFORCEMENT_DATE",
+        "EXEMPTION_PROVISION",
+        "STATUTORY_PENALTY_BASIS"
+      ],
+      "knowledge_types": [
+        "mandatory_enforcement_orders",
+        "gazette_so_notifications",
+        "issuing_ministries",
+        "enforcement_dates",
+        "exemption_clauses",
+        "hs_customs_code_mappings"
+      ],
+      "ps_requirements": [
+        "RQ-001",
+        "RQ-003",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.egazette.gov.in/",
+        "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-004",
+      "name": "BIS Product Manuals",
+      "source_ownership": "BIS_PUBLISHED",
+      "issuing_authority": "Bureau of Indian Standards (CMD)",
+      "discovery_authority": "BIS Product Certification Branch",
+      "default_authority_class": "OFFICIAL_OPERATIONAL",
+      "primary_purpose": "Standard-specific certification guidelines, product grouping, factory testing facilities, and sampling procedures.",
+      "possible_claim_roles": [
+        "GROUPING_GUIDELINES",
+        "FACTORY_TESTING_FACILITY_REQUIREMENTS",
+        "SAMPLING_SIZE_RULES",
+        "SCOPE_OF_LICENCE_PARAMETERS"
+      ],
+      "knowledge_types": [
+        "grouping_guidelines",
+        "in_house_testing_equipment_requirements",
+        "sample_sizes_for_testing",
+        "scope_of_licence_parameters",
+        "grant_of_licence_guidelines"
+      ],
+      "ps_requirements": [
+        "RQ-003",
+        "RQ-004",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/product-certification/product-manuals/",
+        "https://www.manakonline.in/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-005",
+      "name": "Scheme of Inspection and Testing (SIT)",
+      "source_ownership": "BIS_PUBLISHED",
+      "issuing_authority": "Bureau of Indian Standards (CMD)",
+      "discovery_authority": "BIS Certification Branch",
+      "default_authority_class": "OFFICIAL_OPERATIONAL",
+      "primary_purpose": "Prescribed factory quality assurance schedules, mandatory routine/acceptance testing levels, and test frequencies.",
+      "possible_claim_roles": [
+        "ROUTINE_TEST_FREQUENCY",
+        "ACCEPTANCE_TEST_FREQUENCY",
+        "RAW_MATERIAL_VERIFICATION",
+        "LOT_CONTROL_RULES",
+        "MARKING_FEE_SCHEDULE"
+      ],
+      "knowledge_types": [
+        "routine_test_frequencies",
+        "acceptance_test_frequencies",
+        "raw_material_verification_levels",
+        "marking_fee_rates",
+        "lot_control_rules"
+      ],
+      "ps_requirements": [
+        "RQ-001",
+        "RQ-004",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/product-certification/scheme-of-inspection-and-testing/",
+        "https://www.manakonline.in/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-006",
+      "name": "Conformity Assessment Schemes",
+      "source_ownership": "BIS_PUBLISHED",
+      "issuing_authority": "Bureau of Indian Standards",
+      "discovery_authority": "BIS Headquarters & Regulatory Branch",
+      "default_authority_class": "PRIMARY_NORMATIVE",
+      "dynamic_scheme_model": {
+        "scheme_identifier_field": "scheme_identifier",
+        "scheme_name_field": "scheme_name",
+        "applicability_field": "applicability",
+        "status_field": "version_status"
+      },
+      "primary_purpose": "Statutory conformity assessment schemes established under BIS (Conformity Assessment) Regulations 2018.",
+      "possible_claim_roles": [
+        "SCHEME_ELIGIBILITY_RULES",
+        "CONFORMITY_PATHWAY",
+        "SURVEILLANCE_PROCEDURES",
+        "FOREIGN_MANUFACTURER_RULES"
+      ],
+      "knowledge_types": [
+        "scheme_rules_and_eligibility",
+        "scheme_1_isi_mark_regulations",
+        "scheme_2_crs_registration_rules",
+        "scheme_4_hallmarking_regulations",
+        "fmcs_foreign_manufacturer_rules"
+      ],
+      "ps_requirements": [
+        "RQ-003",
+        "RQ-004",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/product-certification/product-certification-overview/",
+        "https://www.crsbis.in/BIS/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-007",
+      "name": "BIS Licences & Registration Registers",
+      "source_ownership": "BIS_OPERATED",
+      "issuing_authority": "Bureau of Indian Standards",
+      "discovery_authority": "BIS Central Licence & CRS Databases",
+      "default_authority_class": "OFFICIAL_OPERATIONAL",
+      "primary_purpose": "Operative manufacturer licence records (CM/L numbers), electronic registrations (R-numbers), and valid brands.",
+      "possible_claim_roles": [
+        "LICENCE_OPERATIVE_STATUS",
+        "MANUFACTURER_VERIFICATION",
+        "BRAND_COVERAGE",
+        "FACTORY_LOCATION"
+      ],
+      "knowledge_types": [
+        "cml_licence_records",
+        "crs_registration_records",
+        "manufacturer_name_and_factory_location",
+        "operative_licence_status",
+        "covered_varieties_and_brands"
+      ],
+      "ps_requirements": [
+        "RQ-004",
+        "RQ-005",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/product-certification/search-licence-details/",
+        "https://www.crsbis.in/BIS/app-status.do"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-008",
+      "name": "BIS Testing Laboratories Registers",
+      "source_ownership": "BIS_OPERATED",
+      "issuing_authority": "Bureau of Indian Standards (LPCD)",
+      "discovery_authority": "BIS Central Laboratory & LPCD Directory",
+      "default_authority_class": "OFFICIAL_OPERATIONAL",
+      "laboratory_status_categories": [
+        "BIS_OWNED",
+        "BIS_RECOGNIZED",
+        "BIS_EMPANELLED",
+        "NABL_ACCREDITED",
+        "OTHER_RECOGNIZED"
+      ],
+      "primary_purpose": "Directory of BIS-owned, recognized, and empanelled laboratories and their authorized testing scopes.",
+      "possible_claim_roles": [
+        "LAB_TESTING_SCOPE",
+        "LAB_RECOGNITION_STATUS",
+        "LAB_LOCATION_AND_CONTACT",
+        "FACILITY_AVAILABILITY"
+      ],
+      "knowledge_types": [
+        "central_and_regional_laboratories",
+        "recognized_partner_laboratories",
+        "accredited_standard_testing_scopes",
+        "lab_code_and_contact_details",
+        "validity_of_recognition"
+      ],
+      "ps_requirements": [
+        "RQ-007",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/laboratories/bis-laboratories/",
+        "https://www.bis.gov.in/laboratories/recognized-laboratories/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-009",
+      "name": "Hallmarking & Precious Metals Architecture",
+      "source_ownership": "BIS_OPERATED",
+      "issuing_authority": "Bureau of Indian Standards (Hallmarking Department)",
+      "discovery_authority": "BIS Central Hallmarking Authority",
+      "default_authority_class": "PRIMARY_NORMATIVE",
+      "subfamilies": [
+        {
+          "subfamily_id": "SRCF-009A",
+          "name": "Hallmarking Standards",
+          "description": "Technical standards for gold (IS 1417) and silver (IS 2112) purity and fineness.",
+          "authority_class": "PRIMARY_NORMATIVE"
+        },
+        {
+          "subfamily_id": "SRCF-009B",
+          "name": "Hallmarking Regulations",
+          "description": "Bureau of Indian Standards (Hallmarking) Regulations 2018.",
+          "authority_class": "STATUTORY_FRAMEWORK"
+        },
+        {
+          "subfamily_id": "SRCF-009C",
+          "name": "Mandatory Hallmarking Orders",
+          "description": "Ministry Orders and Gazetted amendments mandating hallmarking by district.",
+          "authority_class": "PRIMARY_NORMATIVE"
+        },
+        {
+          "subfamily_id": "SRCF-009D",
+          "name": "HUID / Consumer Verification",
+          "description": "6-digit alphanumeric Hallmark Unique Identification laser marking rules & consumer validation.",
+          "authority_class": "OFFICIAL_OPERATIONAL"
+        },
+        {
+          "subfamily_id": "SRCF-009E",
+          "name": "Assaying & Hallmarking Centres (AHC)",
+          "description": "Recognized AHC directory, testing scopes, audit rules, and centre status.",
+          "authority_class": "OFFICIAL_OPERATIONAL"
+        },
+        {
+          "subfamily_id": "SRCF-009F",
+          "name": "Jeweller & Refinery Registrations",
+          "description": "Registered jewellers, gold refineries, and certified bullion manufacturers.",
+          "authority_class": "OFFICIAL_OPERATIONAL"
+        }
+      ],
+      "primary_purpose": "Comprehensive precious metals hallmarking ecosystem, purity grades, HUID verification, and AHC directories.",
+      "possible_claim_roles": [
+        "PURITY_SPECIFICATION",
+        "MANDATORY_HALLMARKING_DISTRICT_STATUS",
+        "HUID_VERIFICATION_RULES",
+        "AHC_CENTRE_LOOKUP"
+      ],
+      "knowledge_types": [
+        "gold_and_silver_purity_standards",
+        "huid_laser_marking_specifications",
+        "assaying_and_hallmarking_centres",
+        "mandatory_hallmarking_districts",
+        "jeweller_registration_guidelines"
+      ],
+      "ps_requirements": [
+        "RQ-005",
+        "RQ-006",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/hallmarking-overview/",
+        "https://www.manakonline.in/MANAK/hallmarking"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-010",
+      "name": "Consumer Services & BIS Care",
+      "source_ownership": "BIS_OPERATED",
+      "issuing_authority": "Bureau of Indian Standards (Consumer Affairs)",
+      "discovery_authority": "BIS Consumer Affairs & Enforcement Branch",
+      "default_authority_class": "OFFICIAL_OPERATIONAL",
+      "primary_purpose": "Standard mark verification workflows, BIS Care mobile app instructions, and consumer complaint/vigilance procedures.",
+      "possible_claim_roles": [
+        "MARK_VERIFICATION_WORKFLOW",
+        "BIS_CARE_USAGE",
+        "COMPLAINT_REDRESSAL_PROCEDURE",
+        "VIGILANCE_REPORTING"
+      ],
+      "knowledge_types": [
+        "standard_mark_verification_rules",
+        "bis_care_app_guidance",
+        "consumer_grievance_redressal_steps",
+        "misuse_of_isi_mark_reporting",
+        "consumer_awareness_advisories"
+      ],
+      "ps_requirements": [
+        "RQ-005",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/consumer-overview/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-011",
+      "name": "BIS Informative FAQs, Guides & Booklets",
+      "source_ownership": "BIS_PUBLISHED",
+      "issuing_authority": "Bureau of Indian Standards",
+      "discovery_authority": "BIS Publications & Public Relations",
+      "default_authority_class": "OFFICIAL_INFORMATIVE",
+      "primary_purpose": "Official explanatory booklets, simplified procedural FAQs, and MSME guides explaining standardisation processes.",
+      "possible_claim_roles": [
+        "GENERAL_PROCEDURAL_GUIDANCE",
+        "MSME_CONCESSION_EXPLANATION",
+        "SIMPLIFIED_PROCESS_OVERVIEW"
+      ],
+      "knowledge_types": [
+        "general_procedural_faqs",
+        "msme_incentive_guidance",
+        "standard_formulation_procedures",
+        "simplified_grant_procedures",
+        "fee_schedules_and_concessions"
+      ],
+      "ps_requirements": [
+        "RQ-001",
+        "RQ-003",
+        "RQ-004",
+        "RQ-008",
+        "RQ-009"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/faq/",
+        "https://www.bis.gov.in/publications/"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "source_family_id": "SRCF-012",
+      "name": "BIS Acts, Rules & Statutory Regulations",
+      "source_ownership": "STATUTORY_EXTERNAL",
+      "issuing_authority": "Parliament of India / Ministry of Consumer Affairs",
+      "discovery_authority": "Legislative Department / Gazette of India",
+      "default_authority_class": "STATUTORY_FRAMEWORK",
+      "temporal_versioning_fields": [
+        "effective_from",
+        "effective_to",
+        "amendment_of",
+        "consolidated_version",
+        "status"
+      ],
+      "primary_purpose": "The statutory foundation of the standardisation, conformity assessment, and enforcement mandate of BIS.",
+      "possible_claim_roles": [
+        "LEGAL_MANDATE_BASIS",
+        "STATUTORY_REGULATION_CLAUSE",
+        "ENFORCEMENT_POWER",
+        "PENALTY_PROVISION"
+      ],
+      "knowledge_types": [
+        "bis_act_2016_provisions",
+        "bis_rules_2018",
+        "conformity_assessment_regulations_2018",
+        "hallmarking_regulations_2018",
+        "penalties_and_enforcement_powers"
+      ],
+      "ps_requirements": [
+        "RQ-001",
+        "RQ-003",
+        "RQ-005",
+        "RQ-006",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "official_entry_urls": [
+        "https://www.bis.gov.in/the-bis-act-rules-regulations/",
+        "https://www.egazette.gov.in/"
+      ],
+      "status": "ACTIVE"
+    }
+  ]
+}

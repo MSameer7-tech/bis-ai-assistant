@@ -1,0 +1,84 @@
+{
+  "manifest_version": "1.1",
+  "phase": "Phase 2B: Official Source Registry",
+  "project": "BIS AI Technical Assistant",
+  "description": "Taxonomy of authority levels, distinguishing Source Authority, Claim Authority, and Legal Mandate Basis.",
+  "legal_mandate_hierarchy": {
+    "description": "Evidence chain required to establish that BIS certification is legally mandatory vs voluntary.",
+    "resolution_chain": [
+      "1. Actual Gazette Notification (S.O. instrument published in The Gazette of India)",
+      "2. Statutory Ministry Order (DPIIT, MeitY, MoEFCC, MoS, etc.)",
+      "3. Governing Indian Standard Scope & Clauses",
+      "4. Official BIS Implementation Portal Information"
+    ]
+  },
+  "authority_levels": [
+    {
+      "level": "LEVEL_A",
+      "code": "PRIMARY_NORMATIVE",
+      "name": "Primary Normative Statutory Evidence",
+      "governing_statute": "BIS Act 2016 & The Gazette of India",
+      "eligible_sources": ["SRCF-001", "SRCF-002", "SRCF-003", "SRCF-005", "SRCF-006", "SRCF-009A", "SRCF-009C"],
+      "allowed_claims": [
+        "TECHNICAL_SPECIFICATION",
+        "PERFORMANCE_PARAMETER",
+        "DIMENSIONAL_TOLERANCE",
+        "CHEMICAL_COMPOSITION",
+        "TEST_METHOD",
+        "MANDATORY_LEGAL_STATUS",
+        "ROUTINE_TEST_FREQUENCY",
+        "PURITY_SPECIFICATION"
+      ],
+      "requires_clause_citation": true,
+      "requires_hash_provenance": true
+    },
+    {
+      "level": "LEVEL_B",
+      "code": "OFFICIAL_OPERATIONAL",
+      "name": "Official Operational & Procedural Knowledge",
+      "governing_statute": "BIS CMD / LPCD Guidelines",
+      "eligible_sources": ["SRCF-004", "SRCF-007", "SRCF-008", "SRCF-009D", "SRCF-009E", "SRCF-009F", "SRCF-010"],
+      "allowed_claims": [
+        "CERTIFICATION_PROCEDURE",
+        "GROUPING_GUIDELINE",
+        "FACTORY_TESTING_EQUIPMENT",
+        "LAB_TESTING_SCOPE",
+        "LAB_RECOGNITION_STATUS",
+        "LICENCE_OPERATIVE_STATUS",
+        "HUID_VERIFICATION_WORKFLOW",
+        "BIS_CARE_USAGE"
+      ],
+      "requires_clause_citation": false,
+      "requires_hash_provenance": true
+    },
+    {
+      "level": "LEVEL_C",
+      "code": "OFFICIAL_INFORMATIVE",
+      "name": "Official Informative & Advisory Guidance",
+      "governing_statute": "BIS Public Relations / Publications",
+      "eligible_sources": ["SRCF-011"],
+      "allowed_claims": [
+        "GENERAL_PROCEDURAL_GUIDANCE",
+        "MSME_CONCESSION_EXPLANATION",
+        "SIMPLIFIED_PROCESS_OVERVIEW"
+      ],
+      "requires_clause_citation": false,
+      "requires_hash_provenance": true
+    },
+    {
+      "level": "LEVEL_D",
+      "code": "STATUTORY_FRAMEWORK",
+      "name": "Parliamentary Acts & Statutory Regulations",
+      "governing_statute": "Parliament of India",
+      "eligible_sources": ["SRCF-012", "SRCF-009B"],
+      "allowed_claims": [
+        "LEGAL_MANDATE_BASIS",
+        "STATUTORY_REGULATION_CLAUSE",
+        "ENFORCEMENT_POWER",
+        "PENALTY_PROVISION"
+      ],
+      "requires_clause_citation": true,
+      "requires_hash_provenance": true
+    }
+  ]
+}

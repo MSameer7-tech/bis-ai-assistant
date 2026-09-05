@@ -1,0 +1,68 @@
+{
+  "domains": {
+    "Phase 8.7-8.10 Indian Standards": {
+      "discovered": 0,
+      "acquired": 0,
+      "readiness": "READY_FOR_FUTURE_INTEGRATION"
+    },
+    "Phase 9.1 Acts/Rules": {
+      "discovered": 10,
+      "acquired": 10,
+      "readiness": "READY_FOR_FUTURE_INTEGRATION"
+    },
+    "Phase 9.2 QCO": {
+      "discovered": 129,
+      "acquired": 121,
+      "readiness": "READY_FOR_FUTURE_INTEGRATION"
+    },
+    "Phase 9.3 SIT": {
+      "discovered": 15,
+      "acquired": 15,
+      "readiness": "READY_FOR_FUTURE_INTEGRATION"
+    },
+    "Phase 9.4 Hallmarking": {
+      "discovered": 6,
+      "acquired": 0,
+      "readiness": "NO_AUTHORITATIVE_DATA"
+    },
+    "Phase 9.5 Laboratories": {
+      "discovered": 4,
+      "acquired": 0,
+      "readiness": "NO_AUTHORITATIVE_DATA"
+    },
+    "Phase 9.6 Licences": {
+      "discovered": 4,
+      "acquired": 0,
+      "readiness": "NO_AUTHORITATIVE_DATA"
+    },
+    "Phase 9.7 Consumer Care": {
+      "discovered": 3,
+      "acquired": 0,
+      "readiness": "NO_AUTHORITATIVE_DATA"
+    },
+    "Phase 9.8 FAQs/Guides": {
+      "discovered": 4,
+      "acquired": 0,
+      "readiness": "NO_AUTHORITATIVE_DATA"
+    }
+  },
+  "relationships": {
+    "Product -> Indian Standard": "COVERED",
+    "Indian Standard -> Metadata": "COVERED",
+    "Product -> Certification Scheme": "PARTIAL",
+    "Product -> QCO": "PARTIAL",
+    "Indian Standard -> SIT": "PARTIAL",
+    "Standard -> Laboratory": "NOT_COVERED",
+    "Laboratory -> Scope": "NOT_COVERED",
+    "Product -> Laboratory": "NOT_COVERED",
+    "Product -> Hallmarking requirement": "NOT_COVERED",
+    "Hallmarking -> HUID verification": "NOT_COVERED",
+    "Licence -> Product/Standard/Scheme": "NOT_COVERED",
+    "Consumer Service -> BIS Care": "NOT_COVERED",
+    "Consumer Service -> Complaint/Grievance": "NOT_COVERED",
+    "FAQ/Guide -> referenced Standard": "NOT_COVERED",
+    "FAQ/Guide -> referenced Scheme": "NOT_COVERED",
+    "QCO -> referenced Standard": "PARTIAL",
+    "Act/Rule -> regulated domain": "PARTIAL"
+  }
+}

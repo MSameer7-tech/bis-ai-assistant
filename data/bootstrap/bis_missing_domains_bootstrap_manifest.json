@@ -1,0 +1,30 @@
+{
+  "domain_stats": {
+    "HALLMARKING": {
+      "candidate_count": 2,
+      "acquired_count": 1,
+      "access_restricted_count": 1
+    },
+    "LABORATORIES": {
+      "candidate_count": 1,
+      "waf_blocked_count": 1
+    },
+    "LICENCES_REGISTRATIONS": {
+      "candidate_count": 1,
+      "session_required_count": 1
+    },
+    "CONSUMER_BIS_CARE": {
+      "candidate_count": 1,
+      "acquired_count": 1
+    },
+    "FAQS_GUIDES_BOOKLETS": {
+      "candidate_count": 1,
+      "fetch_failed_count": 1
+    }
+  },
+  "authoritative_record_count": 2,
+  "mock_record_count": 0,
+  "total_candidates": 6,
+  "provenance_complete_count": 2,
+  "raw_artifact_count": 2
+}

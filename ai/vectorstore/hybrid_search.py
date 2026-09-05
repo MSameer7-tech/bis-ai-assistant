@@ -158,7 +158,7 @@ class HybridSearchEngine:
         q_words = set(re.findall(r"\b[a-z0-9]+\b", q_lower))
 
         def has_any_word(target_words):
-            return any(w in q_words for w in target_words)
+            return any(any(w == tw or w == tw + "s" or w == tw + "es" for tw in target_words) for w in q_words)
 
         if (sq.parameter == "air_delivery" or "air delivery" in q_lower) and has_any_word(["steel", "rebar", "fe", "cement", "water", "helmet", "cooker", "stove"]):
             logger.info("Cross-domain trap detected (air_delivery on non-fan entity) -> abstaining")
@@ -452,9 +452,14 @@ class HybridSearchEngine:
         # Rank by fused RRF score
         sorted_cids = sorted(rrf_scores.keys(), key=lambda x: rrf_scores[x], reverse=True)
 
-        # 7. Format Provenance Results
+        # 7. Duplicate-aware Diversification (Phase 6.7) & Format Results
         final_results = []
-        for cid in sorted_cids[:top_k]:
+        seen_hashes = {} # content_hash -> index in final_results
+        
+        for cid in sorted_cids:
+            if len(final_results) >= top_k:
+                break
+            
             item = chunk_lookup[cid]
             meta = item.get("metadata", {})
             doc_id = meta.get("document_id") or item.get("document_id") or "DOC-UNKNOWN"
@@ -494,7 +499,16 @@ class HybridSearchEngine:
                     "clause": clause,
                     "pages": pages_list,
                 },
+                "duplicate_sources": []
             }
-            final_results.append(result_entry)
+            
+            if c_hash and c_hash in seen_hashes:
+                # Add to existing duplicate sources instead of taking a new slot
+                existing_idx = seen_hashes[c_hash]
+                final_results[existing_idx]["duplicate_sources"].append(result_entry["provenance"])
+            else:
+                if c_hash:
+                    seen_hashes[c_hash] = len(final_results)
+                final_results.append(result_entry)
 
         return final_results

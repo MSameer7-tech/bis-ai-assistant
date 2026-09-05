@@ -1,0 +1,164 @@
+[
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Products under Compulsory Certification",
+    "discovered_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "anchor_text": "Products under Compulsory Certification",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844416+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Use of Standard Mark",
+    "discovered_url": "https://www.bis.gov.in/system-certification-overview/system-certification-licence/use-of-standard-mark/?lang=en",
+    "anchor_text": "Use of Standard Mark",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844538+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "BIS Standard Mark",
+    "discovered_url": "https://www.bis.gov.in/fmcs/certification-process/bis-standard-mark/?lang=en",
+    "anchor_text": "BIS Standard Mark",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844607+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Registration Scheme",
+    "discovered_url": "https://www.bis.gov.in",
+    "anchor_text": "Registration Scheme",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844681+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Products under Compulsory Certification",
+    "discovered_url": "https://www.bis.gov.in/products-under-compulsory-certification-scheme-x/?lang=en",
+    "anchor_text": "Products under Compulsory Certification",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844722+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Product specific information",
+    "discovered_url": "https://www.bis.gov.in/scheme-x-certification/product-specific-information/?lang=en",
+    "anchor_text": "Product specific information",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844733+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Fee",
+    "discovered_url": "https://www.bis.gov.in/scheme-x-certification/fee/?lang=en",
+    "anchor_text": "Fee",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844740+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Link to Registration Portal",
+    "discovered_url": "https://www.bis.gov.in/scheme-x-certification/registration-portal/?lang=en",
+    "anchor_text": "Link to Registration Portal",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844746+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "FAQ",
+    "discovered_url": "https://www.bis.gov.in/scheme-x-certification/faq-scheme-x-certification/?lang=en",
+    "anchor_text": "FAQ",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844752+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Uniform Test Report Formats for Compulsory registration Scheme",
+    "discovered_url": "https://www.bis.gov.in/laboratorys/utrf/?lang=en",
+    "anchor_text": "Uniform Test Report Formats for Compulsory registration Scheme",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.844827+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Jewellers Registration Scheme",
+    "discovered_url": "https://www.bis.gov.in/hallmarking-overview/jewellers-registration-scheme/?lang=en",
+    "anchor_text": "Jewellers Registration Scheme",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.845007+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Gold Monetization Scheme",
+    "discovered_url": "https://www.bis.gov.in/hallmarking-overview/gold-monetization-scheme/?lang=en/",
+    "anchor_text": "Gold Monetization Scheme",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.845076+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Online Complaint Registration",
+    "discovered_url": "https://www.bis.gov.in/consumer-overview/online-complaint-registration/?lang=en",
+    "anchor_text": "Online Complaint Registration",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.845254+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Uniform Test Report Formats for Compulsory registration Scheme",
+    "discovered_url": "https://www.bis.gov.in/index.php/laboratorys/utrf/?lang=en",
+    "anchor_text": "Uniform Test Report Formats for Compulsory registration Scheme",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.845940+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Gold monetization scheme",
+    "discovered_url": "https://www.bis.gov.in/hallmarking-overview/gold-monetization-scheme/?lang=en",
+    "anchor_text": "Gold monetization scheme",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.846182+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Scheme \u2013 I ( Mark Scheme)",
+    "discovered_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-i-mark-scheme/?lang=en",
+    "anchor_text": "Scheme \u2013 I ( Mark Scheme)",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.846604+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Scheme \u2013 II (Registration Scheme)",
+    "discovered_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-ii-registration-scheme/?lang=en",
+    "anchor_text": "Scheme \u2013 II (Registration Scheme)",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.846610+00:00"
+  },
+  {
+    "parent_source_id": "SRC-005",
+    "scheme_name": "Scheme \u2013 IV (Certificate Of Conformity )",
+    "discovered_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/scheme-4/?lang=en",
+    "anchor_text": "Scheme \u2013 IV (Certificate Of Conformity )",
+    "discovery_evidence": "Found via anchor tag inside https://www.bis.gov.in/product-certification/products-under-compulsory-certification/?lang=en",
+    "parent_hash": "b7c35e95dd02354640e2dfb07e2bc43715f09db9fdc94c4b3d5c6d2376095243",
+    "discovered_at": "2026-09-03T11:58:57.846616+00:00"
+  }
+]

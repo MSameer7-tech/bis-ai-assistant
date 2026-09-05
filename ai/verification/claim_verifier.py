@@ -43,7 +43,11 @@ class ClaimVerifier:
             sentences = re.split(r"(?<=[.!?])\s+", clean_line)
             for s in sentences:
                 s_clean = s.strip()
-                if len(s_clean) > 12 and not s_clean.lower().startswith(("citations", "technical details", "direct answer", "source:")):
+                s_lower = s_clean.lower()
+                # Explicitly reject provider error strings from becoming claims
+                if "generation failed" in s_lower or "error code" in s_lower or "api_key" in s_lower or "model_decommissioned" in s_lower or "missing credentials" in s_lower or "provider error" in s_lower:
+                    continue
+                if len(s_clean) > 12 and not s_lower.startswith(("citations", "technical details", "direct answer", "source:")):
                     claims.append(s_clean)
 
         return claims
@@ -59,6 +63,15 @@ class ClaimVerifier:
         """
         raw_claims = cls.decompose_claims(answer_text)
         atomic_claims: List[AtomicClaim] = []
+
+        # Decision Logic & Thresholds:
+        # A claim is verified ONLY IF it achieves an entailment score >= 0.60
+        # Score is built from:
+        # - Token overlap ratio
+        # - Numerical overlap (+0.40)
+        # - Standard code mention (+0.35)
+        # - Clause mention (+0.35)
+        VERIFICATION_THRESHOLD = 0.60
 
         for i, claim_text in enumerate(raw_claims, 1):
             claim_id = f"CLM-{i:03d}"
@@ -99,7 +112,8 @@ class ClaimVerifier:
                     score += 0.40
                 score = min(1.0, score)
 
-                if score >= 0.40 or overlap >= 2 or std_in_claim or clause_in_claim or num_overlap:
+                # Only associate evidence if it contributes meaningfully to entailment
+                if score >= 0.40:
                     if score > best_entailment:
                         best_entailment = score
 
@@ -112,7 +126,7 @@ class ClaimVerifier:
                         quote=chunk_text[:150] + "..." if len(chunk_text) > 150 else chunk_text
                     ))
 
-            is_verified = (best_entailment >= 0.40 or len(matched_evidence) > 0)
+            is_verified = (best_entailment >= VERIFICATION_THRESHOLD)
 
             atomic_claims.append(AtomicClaim(
                 claim_id=claim_id,

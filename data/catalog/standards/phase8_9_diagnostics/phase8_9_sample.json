@@ -1,0 +1,435 @@
+[
+  {
+    "relationship_id": "58efd331beb5",
+    "product_name": "AC Circuit \u2013 Breakers (Category A)- All ratings upto 630 A, upto 440V AC",
+    "raw_standard_value": "IS/IEC 60947: Part 2:2016",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "2",
+      "section": null,
+      "edition_year": "2016",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 2) : 2016",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "69282e597535",
+    "product_name": "All AC utilization categories Upto 250A, Upto 440V AC",
+    "raw_standard_value": "IS/IEC 60947: Part 3:2012",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "3",
+      "section": null,
+      "edition_year": "2012",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 3) : 2012",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "9bf9b5111052",
+    "product_name": "Contactor -All AC utilization categories Upto 32A",
+    "raw_standard_value": "IS/IEC 60947 : Part 4 : Sec 1 : 2018",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "4",
+      "section": "1",
+      "edition_year": "2018",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 4/Sec 1) : 2018",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "9fd003fa5927",
+    "product_name": "All types of product ratings",
+    "raw_standard_value": "IS/IEC 60947 : Part 4 : Sec 2 : 2020",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "4",
+      "section": "2",
+      "edition_year": "2020",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 4/Sec 2) : 2020",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "38f44ac2e5f9",
+    "product_name": "All types of product ratings",
+    "raw_standard_value": "IS/IEC 60947 : Part 4 : Sec 3 : 2020",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "4",
+      "section": "3",
+      "edition_year": "2020",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 4/Sec 3) : 2020",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "6290551dade1",
+    "product_name": "Low-Voltage Switchgear and Controlgear Part 5 Control Circuit Devices and Switching",
+    "raw_standard_value": "IS/IEC 60947 : Part 5 : Sec 1 : 2016",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "5",
+      "section": "1",
+      "edition_year": "2016",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 5/Sec 1) : 2016",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "7e129f33b5ee",
+    "product_name": "All test as per IS/IEC 60947: Part 5: Sec 2: 2007",
+    "raw_standard_value": "IS/IEC 60947: Part 5: Sec 2: 2007",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "5",
+      "section": "2",
+      "edition_year": "2007",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 5/Sec 2) : 2007",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "499ef3314f28",
+    "product_name": "All devices with button type actuator",
+    "raw_standard_value": "IS/IEC 60947 : Part 5 : Sec 5 : 2016",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "5",
+      "section": "5",
+      "edition_year": "2016",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 5/Sec 5) : 2016",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "5be0d12cb780",
+    "product_name": "All types of Pumps for handling liquids, liquid elevators and (or)their assemblies /sub-assemblies /components",
+    "raw_standard_value": "Type A Standard IS 16189:2018/ ISO 12100:2010 (Safety of Machinery General Principles for Design \u2013 Risk Assessment and Risk Reduction) and applicable type B and type C Standards mentioned in the order S.O. 3649 (E) dated 28 August 2024. Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Amendment Order, 2025 S.O. 2579(E) Dated 13 June, 2025 Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Second Amendment Order, 2025 S.O. 5179(E) Dated 13 November, 2025 Rescind Machinery and Electrical Equipment Safety (Omnibus Technical Regulation) Order, 2024. S.O. 239(E) Dated 16 January, 2026",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "16189",
+      "part": null,
+      "section": "ond",
+      "edition_year": "2018",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 16189 (Sec ond) : 2018",
+    "standard_identity_type": "STANDARD_CANDIDATE_WITH_SECTION",
+    "confidence": "HIGH",
+    "confidence_reason": "Contains explicit part/section structure",
+    "referenced_standards": [],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "1a8a957fc8f5",
+    "product_name": "Guidelines for Low Voltage Switchgear and Controlgear: Circuit Breakers (size \u2013 786 KB)",
+    "raw_standard_value": "IS / IEC 60947 \u2013 2",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "2",
+      "section": null,
+      "edition_year": null,
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 2)",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "ad422f10e152",
+    "product_name": "Guidelines for Low Voltage Switchgear and Controlgear: Switches, Disconnectors, Switch Disconnectors and Fuse-Combination Units (size \u2013 1 MB)",
+    "raw_standard_value": "IS / IEC 60947 \u2013 3",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "3",
+      "section": null,
+      "edition_year": null,
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 3)",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "a88b592f5c78",
+    "product_name": "Guidelines for Low Voltage Switchgear and Controlgear: Electromechanical Contactors and Motor Starters (size \u2013 2 MB)",
+    "raw_standard_value": "IS / IEC 60947 \u2013 4 \u2013 1",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "60947",
+      "part": "4",
+      "section": null,
+      "edition_year": null,
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 60947 (Part 4)",
+    "standard_identity_type": "DUAL_STANDARD_REFERENCE",
+    "confidence": "HIGH",
+    "confidence_reason": "Dual standard structure recognized",
+    "referenced_standards": [
+      {
+        "raw": "IEC 60947",
+        "edition_year": null
+      }
+    ],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "1bb6db39694d",
+    "product_name": "AMPLIFIERS WITH INPUT POWER 2000W AND ABOVE",
+    "raw_standard_value": "IS 616:2010 IS 616:2017",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "616",
+      "part": null,
+      "section": null,
+      "edition_year": "2010",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 616 : 2010",
+    "standard_identity_type": "STANDARD_CANDIDATE_WITH_YEAR",
+    "confidence": "HIGH",
+    "confidence_reason": "Contains explicit year structure",
+    "referenced_standards": [],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  },
+  {
+    "relationship_id": "c8c41ca85adf",
+    "product_name": "MICROWAVE OVENS",
+    "raw_standard_value": "IS 302-2-25:2014",
+    "extracted_identity": {
+      "standard_prefix": "IS",
+      "base_number": "302",
+      "part": null,
+      "section": null,
+      "edition_year": "2014",
+      "amendment": null
+    },
+    "normalized_standard_number": "IS 302 : 2014",
+    "standard_identity_type": "STANDARD_CANDIDATE_WITH_YEAR",
+    "confidence": "HIGH",
+    "confidence_reason": "Contains explicit year structure",
+    "referenced_standards": [],
+    "source": {},
+    "reconciliation": {
+      "status": "NOT_FOUND",
+      "src002_internal_bis_id": null,
+      "matched_standard_number": null,
+      "base_standard_match": false,
+      "part_section_validated": false,
+      "year_match": null
+    }
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "manifest_version": "1.1",
+  "project": "BIS AI Technical Assistant",
+  "taxonomy_type": "Engineering Knowledge Domain Architecture",
+  "design_rationale": "The following knowledge domains are an engineering taxonomy created to organize the BIS knowledge required to satisfy the SIH PS, rather than official categories defined by the PS text.",
+  "domains": [
+    {
+      "id": "KD-001",
+      "name": "Indian Standards Specifications & Amendments",
+      "description": "Technical specifications, codes of practice, test methods, amendments, revisions, and dimensional/chemical limits established under the Bureau of Indian Standards Act.",
+      "required_for": [
+        "RQ-001",
+        "RQ-002",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "primary_authorities": ["BIS Standard Formulation Technical Committees"],
+      "core_artifacts": ["Standard Specifications (PDF)", "Amendments", "Normative References"]
+    },
+    {
+      "id": "KD-002",
+      "name": "Certification & Conformity Assessment",
+      "description": "Statutory Quality Control Orders (QCOs), Conformity Assessment Schemes, Product Manuals, and Schemes of Inspection and Testing (SIT).",
+      "required_for": [
+        "RQ-003",
+        "RQ-004",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "primary_authorities": ["Ministry of Consumer Affairs, Food & Public Distribution", "DPIIT", "MeitY", "BIS CMD"],
+      "core_artifacts": ["Gazette Notifications (S.O. orders)", "Product Manuals", "SIT Documents"]
+    },
+    {
+      "id": "KD-003",
+      "name": "Testing and Laboratories",
+      "description": "Prescribed routine, acceptance, and type tests, test parameters, limits, laboratory recognition rules, and directory of accredited BIS & partner test labs.",
+      "required_for": [
+        "RQ-007",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "primary_authorities": ["BIS Central Laboratory", "Regional Laboratories", "LPCD (Lab Policy & Quality Control)"],
+      "core_artifacts": ["Test Parameter Matrices", "Recognized Lab Directory", "NABL Scopes"]
+    },
+    {
+      "id": "KD-004",
+      "name": "Hallmarking",
+      "description": "Assaying, purity standards for gold and silver bullion/jewellery, 6-digit Hallmark Unique Identification (HUID), and Assaying & Hallmarking Centres (AHC).",
+      "required_for": [
+        "RQ-005",
+        "RQ-006",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "primary_authorities": ["BIS Hallmarking Department", "Central Assaying Authority"],
+      "core_artifacts": ["Hallmarking Orders", "HUID Specifications", "AHC Registry"]
+    },
+    {
+      "id": "KD-005",
+      "name": "Consumer Information & Verification",
+      "description": "Consumer verification of Standard Marks (ISI Mark, CRS Logo, Hallmark), BIS Care application workflows, licence validation, and grievance redressal for spurious marks.",
+      "required_for": [
+        "RQ-005",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "primary_authorities": ["BIS Consumer Affairs Department", "Enforcement & Vigilance Branch"],
+      "core_artifacts": ["Licence Ledger", "CRS Registry", "Consumer FAQ & Portals"]
+    },
+    {
+      "id": "KD-006",
+      "name": "General BIS Services & Procedures",
+      "description": "Statutory definitions, portal workflows (Manakonline, e-BIS), foreign manufacturer certification (FMCS), simplified procedures, and general advisory services.",
+      "required_for": [
+        "RQ-001",
+        "RQ-003",
+        "RQ-004",
+        "RQ-005",
+        "RQ-006",
+        "RQ-007",
+        "RQ-008",
+        "RQ-009",
+        "RQ-010"
+      ],
+      "primary_authorities": ["Bureau of Indian Standards Headquarters"],
+      "core_artifacts": ["BIS Act 2016", "Conformity Assessment Regulations 2018", "Operational Guidelines"]
+    }
+  ]
+}

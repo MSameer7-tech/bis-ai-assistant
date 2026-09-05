@@ -1,0 +1,866 @@
+[
+  {
+    "case_id": "RELEASE_EVAL_001",
+    "category": "NORMAL_ANSWERS",
+    "query": "Mock query for release NORMAL_ANSWERS - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_002",
+    "category": "NORMAL_ANSWERS",
+    "query": "Mock query for release NORMAL_ANSWERS - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_003",
+    "category": "NORMAL_ANSWERS",
+    "query": "Mock query for release NORMAL_ANSWERS - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_004",
+    "category": "NORMAL_ANSWERS",
+    "query": "Mock query for release NORMAL_ANSWERS - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_005",
+    "category": "NORMAL_ANSWERS",
+    "query": "Mock query for release NORMAL_ANSWERS - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_006",
+    "category": "NORMAL_ANSWERS",
+    "query": "Mock query for release NORMAL_ANSWERS - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_007",
+    "category": "TECHNICAL_ANSWERS",
+    "query": "Mock query for release TECHNICAL_ANSWERS - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_008",
+    "category": "TECHNICAL_ANSWERS",
+    "query": "Mock query for release TECHNICAL_ANSWERS - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_009",
+    "category": "TECHNICAL_ANSWERS",
+    "query": "Mock query for release TECHNICAL_ANSWERS - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_010",
+    "category": "TECHNICAL_ANSWERS",
+    "query": "Mock query for release TECHNICAL_ANSWERS - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_011",
+    "category": "TECHNICAL_ANSWERS",
+    "query": "Mock query for release TECHNICAL_ANSWERS - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_012",
+    "category": "TECHNICAL_ANSWERS",
+    "query": "Mock query for release TECHNICAL_ANSWERS - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_013",
+    "category": "METADATA_ANSWERS",
+    "query": "Mock query for release METADATA_ANSWERS - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_014",
+    "category": "METADATA_ANSWERS",
+    "query": "Mock query for release METADATA_ANSWERS - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_015",
+    "category": "METADATA_ANSWERS",
+    "query": "Mock query for release METADATA_ANSWERS - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_016",
+    "category": "METADATA_ANSWERS",
+    "query": "Mock query for release METADATA_ANSWERS - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_017",
+    "category": "METADATA_ANSWERS",
+    "query": "Mock query for release METADATA_ANSWERS - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_018",
+    "category": "METADATA_ANSWERS",
+    "query": "Mock query for release METADATA_ANSWERS - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_019",
+    "category": "QCO_ANSWERS",
+    "query": "Mock query for release QCO_ANSWERS - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_020",
+    "category": "QCO_ANSWERS",
+    "query": "Mock query for release QCO_ANSWERS - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_021",
+    "category": "QCO_ANSWERS",
+    "query": "Mock query for release QCO_ANSWERS - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_022",
+    "category": "QCO_ANSWERS",
+    "query": "Mock query for release QCO_ANSWERS - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_023",
+    "category": "QCO_ANSWERS",
+    "query": "Mock query for release QCO_ANSWERS - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_024",
+    "category": "QCO_ANSWERS",
+    "query": "Mock query for release QCO_ANSWERS - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_025",
+    "category": "SIT_ANSWERS",
+    "query": "Mock query for release SIT_ANSWERS - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_026",
+    "category": "SIT_ANSWERS",
+    "query": "Mock query for release SIT_ANSWERS - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_027",
+    "category": "SIT_ANSWERS",
+    "query": "Mock query for release SIT_ANSWERS - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_028",
+    "category": "SIT_ANSWERS",
+    "query": "Mock query for release SIT_ANSWERS - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_029",
+    "category": "SIT_ANSWERS",
+    "query": "Mock query for release SIT_ANSWERS - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_030",
+    "category": "SIT_ANSWERS",
+    "query": "Mock query for release SIT_ANSWERS - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_031",
+    "category": "LEGAL_ANSWERS",
+    "query": "Mock query for release LEGAL_ANSWERS - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_032",
+    "category": "LEGAL_ANSWERS",
+    "query": "Mock query for release LEGAL_ANSWERS - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_033",
+    "category": "LEGAL_ANSWERS",
+    "query": "Mock query for release LEGAL_ANSWERS - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_034",
+    "category": "LEGAL_ANSWERS",
+    "query": "Mock query for release LEGAL_ANSWERS - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_035",
+    "category": "LEGAL_ANSWERS",
+    "query": "Mock query for release LEGAL_ANSWERS - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_036",
+    "category": "LEGAL_ANSWERS",
+    "query": "Mock query for release LEGAL_ANSWERS - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_037",
+    "category": "MULTI_HOP",
+    "query": "Mock query for release MULTI_HOP - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_038",
+    "category": "MULTI_HOP",
+    "query": "Mock query for release MULTI_HOP - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_039",
+    "category": "MULTI_HOP",
+    "query": "Mock query for release MULTI_HOP - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_040",
+    "category": "MULTI_HOP",
+    "query": "Mock query for release MULTI_HOP - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_041",
+    "category": "MULTI_HOP",
+    "query": "Mock query for release MULTI_HOP - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_042",
+    "category": "MULTI_HOP",
+    "query": "Mock query for release MULTI_HOP - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_043",
+    "category": "AMBIGUOUS",
+    "query": "Mock query for release AMBIGUOUS - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_044",
+    "category": "AMBIGUOUS",
+    "query": "Mock query for release AMBIGUOUS - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_045",
+    "category": "AMBIGUOUS",
+    "query": "Mock query for release AMBIGUOUS - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_046",
+    "category": "AMBIGUOUS",
+    "query": "Mock query for release AMBIGUOUS - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_047",
+    "category": "AMBIGUOUS",
+    "query": "Mock query for release AMBIGUOUS - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_048",
+    "category": "AMBIGUOUS",
+    "query": "Mock query for release AMBIGUOUS - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_049",
+    "category": "CONFLICTING",
+    "query": "Mock query for release CONFLICTING - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_050",
+    "category": "CONFLICTING",
+    "query": "Mock query for release CONFLICTING - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_051",
+    "category": "CONFLICTING",
+    "query": "Mock query for release CONFLICTING - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_052",
+    "category": "CONFLICTING",
+    "query": "Mock query for release CONFLICTING - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_053",
+    "category": "CONFLICTING",
+    "query": "Mock query for release CONFLICTING - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_054",
+    "category": "CONFLICTING",
+    "query": "Mock query for release CONFLICTING - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_055",
+    "category": "MISSING_EVIDENCE",
+    "query": "Mock query for release MISSING_EVIDENCE - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_056",
+    "category": "MISSING_EVIDENCE",
+    "query": "Mock query for release MISSING_EVIDENCE - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_057",
+    "category": "MISSING_EVIDENCE",
+    "query": "Mock query for release MISSING_EVIDENCE - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_058",
+    "category": "MISSING_EVIDENCE",
+    "query": "Mock query for release MISSING_EVIDENCE - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_059",
+    "category": "MISSING_EVIDENCE",
+    "query": "Mock query for release MISSING_EVIDENCE - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_060",
+    "category": "MISSING_EVIDENCE",
+    "query": "Mock query for release MISSING_EVIDENCE - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_061",
+    "category": "UNSUPPORTED_DOMAINS",
+    "query": "Mock query for release UNSUPPORTED_DOMAINS - index 0",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_062",
+    "category": "UNSUPPORTED_DOMAINS",
+    "query": "Mock query for release UNSUPPORTED_DOMAINS - index 1",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_063",
+    "category": "UNSUPPORTED_DOMAINS",
+    "query": "Mock query for release UNSUPPORTED_DOMAINS - index 2",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_064",
+    "category": "UNSUPPORTED_DOMAINS",
+    "query": "Mock query for release UNSUPPORTED_DOMAINS - index 3",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_065",
+    "category": "UNSUPPORTED_DOMAINS",
+    "query": "Mock query for release UNSUPPORTED_DOMAINS - index 4",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_066",
+    "category": "UNSUPPORTED_DOMAINS",
+    "query": "Mock query for release UNSUPPORTED_DOMAINS - index 5",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_067",
+    "category": "PROVIDER_FAILURES",
+    "query": "Mock query for release PROVIDER_FAILURES - index 0",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_068",
+    "category": "PROVIDER_FAILURES",
+    "query": "Mock query for release PROVIDER_FAILURES - index 1",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_069",
+    "category": "PROVIDER_FAILURES",
+    "query": "Mock query for release PROVIDER_FAILURES - index 2",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_070",
+    "category": "PROVIDER_FAILURES",
+    "query": "Mock query for release PROVIDER_FAILURES - index 3",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_071",
+    "category": "PROVIDER_FAILURES",
+    "query": "Mock query for release PROVIDER_FAILURES - index 4",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_072",
+    "category": "PROVIDER_FAILURES",
+    "query": "Mock query for release PROVIDER_FAILURES - index 5",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_073",
+    "category": "RETRIEVAL_FAILURES",
+    "query": "Mock query for release RETRIEVAL_FAILURES - index 0",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_074",
+    "category": "RETRIEVAL_FAILURES",
+    "query": "Mock query for release RETRIEVAL_FAILURES - index 1",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_075",
+    "category": "RETRIEVAL_FAILURES",
+    "query": "Mock query for release RETRIEVAL_FAILURES - index 2",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_076",
+    "category": "RETRIEVAL_FAILURES",
+    "query": "Mock query for release RETRIEVAL_FAILURES - index 3",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_077",
+    "category": "RETRIEVAL_FAILURES",
+    "query": "Mock query for release RETRIEVAL_FAILURES - index 4",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_078",
+    "category": "RETRIEVAL_FAILURES",
+    "query": "Mock query for release RETRIEVAL_FAILURES - index 5",
+    "expected_routing": "ABSTENTION",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_079",
+    "category": "CITATION_FAILURES",
+    "query": "Mock query for release CITATION_FAILURES - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_080",
+    "category": "CITATION_FAILURES",
+    "query": "Mock query for release CITATION_FAILURES - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_081",
+    "category": "CITATION_FAILURES",
+    "query": "Mock query for release CITATION_FAILURES - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_082",
+    "category": "CITATION_FAILURES",
+    "query": "Mock query for release CITATION_FAILURES - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_083",
+    "category": "CITATION_FAILURES",
+    "query": "Mock query for release CITATION_FAILURES - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_084",
+    "category": "CITATION_FAILURES",
+    "query": "Mock query for release CITATION_FAILURES - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_085",
+    "category": "LIFECYCLE",
+    "query": "Mock query for release LIFECYCLE - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_086",
+    "category": "LIFECYCLE",
+    "query": "Mock query for release LIFECYCLE - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_087",
+    "category": "LIFECYCLE",
+    "query": "Mock query for release LIFECYCLE - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_088",
+    "category": "LIFECYCLE",
+    "query": "Mock query for release LIFECYCLE - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_089",
+    "category": "LIFECYCLE",
+    "query": "Mock query for release LIFECYCLE - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_090",
+    "category": "LIFECYCLE",
+    "query": "Mock query for release LIFECYCLE - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_091",
+    "category": "NUMERICAL",
+    "query": "Mock query for release NUMERICAL - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_092",
+    "category": "NUMERICAL",
+    "query": "Mock query for release NUMERICAL - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_093",
+    "category": "NUMERICAL",
+    "query": "Mock query for release NUMERICAL - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_094",
+    "category": "NUMERICAL",
+    "query": "Mock query for release NUMERICAL - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_095",
+    "category": "NUMERICAL",
+    "query": "Mock query for release NUMERICAL - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_096",
+    "category": "NUMERICAL",
+    "query": "Mock query for release NUMERICAL - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_097",
+    "category": "MALICIOUS_INPUT",
+    "query": "Mock query for release MALICIOUS_INPUT - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": true,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_098",
+    "category": "MALICIOUS_INPUT",
+    "query": "Mock query for release MALICIOUS_INPUT - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": true,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_099",
+    "category": "MALICIOUS_INPUT",
+    "query": "Mock query for release MALICIOUS_INPUT - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": true,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_100",
+    "category": "MALICIOUS_INPUT",
+    "query": "Mock query for release MALICIOUS_INPUT - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": true,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_101",
+    "category": "MALICIOUS_INPUT",
+    "query": "Mock query for release MALICIOUS_INPUT - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": true,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_102",
+    "category": "MALICIOUS_INPUT",
+    "query": "Mock query for release MALICIOUS_INPUT - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": true,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_103",
+    "category": "UPDATE_ROLLBACK",
+    "query": "Mock query for release UPDATE_ROLLBACK - index 0",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_104",
+    "category": "UPDATE_ROLLBACK",
+    "query": "Mock query for release UPDATE_ROLLBACK - index 1",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_105",
+    "category": "UPDATE_ROLLBACK",
+    "query": "Mock query for release UPDATE_ROLLBACK - index 2",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_106",
+    "category": "UPDATE_ROLLBACK",
+    "query": "Mock query for release UPDATE_ROLLBACK - index 3",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_107",
+    "category": "UPDATE_ROLLBACK",
+    "query": "Mock query for release UPDATE_ROLLBACK - index 4",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  },
+  {
+    "case_id": "RELEASE_EVAL_108",
+    "category": "UPDATE_ROLLBACK",
+    "query": "Mock query for release UPDATE_ROLLBACK - index 5",
+    "expected_routing": "SUPPORTED",
+    "malicious_status": false,
+    "required_evidence": []
+  }
+]

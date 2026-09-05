@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-09-03T18:26:40.811554+00:00",
+  "phase": "9.1",
+  "metrics": {
+    "discovered": 30,
+    "eligible": 30,
+    "acquired": 13,
+    "unchanged": 10,
+    "changed": 2,
+    "duplicate_aliases": 0,
+    "fetch_failed": 2,
+    "http_error": 0,
+    "waf_blocked": 3,
+    "session_required": 0,
+    "access_restricted": 0,
+    "identity_unresolved": 0,
+    "ambiguous": 0,
+    "manual_review": 0
+  }
+}

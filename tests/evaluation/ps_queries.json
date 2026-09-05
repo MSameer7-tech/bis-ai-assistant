@@ -1,0 +1,190 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-01T23:55:00Z",
+  "test_suites": [
+    {
+      "ps_id": "PS-001",
+      "canonical_name": "Electric Ceiling Fans",
+      "expected_standard": "IS 374",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to electric ceiling fans?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is BIS certification mandatory for electric ceiling fans?"},
+        {"intent": "CONFORMITY_SCHEME", "query": "Which certification scheme governs ceiling fans in India?"},
+        {"intent": "TESTING_REQUIREMENTS", "query": "What tests are required for electric ceiling fans?"}
+      ]
+    },
+    {
+      "ps_id": "PS-002",
+      "canonical_name": "TMT Steel Reinforcement Bars",
+      "expected_standard": "IS 1786",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to TMT steel reinforcement bars?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is BIS certification mandatory for TMT bars?"},
+        {"intent": "CONFORMITY_SCHEME", "query": "Which scheme applies to TMT rebars?"},
+        {"intent": "TESTING_REQUIREMENTS", "query": "What tests are required for TMT steel reinforcement bars?"}
+      ]
+    },
+    {
+      "ps_id": "PS-003",
+      "canonical_name": "Lithium-Ion Secondary Batteries & Cells",
+      "expected_standard": "IS 16046 (Part 2)",
+      "expected_scheme": "SCHEME-II",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to lithium-ion batteries?"},
+        {"intent": "MANDATORY_STATUS", "query": "Do lithium ion batteries require mandatory CRS registration?"},
+        {"intent": "CONFORMITY_SCHEME", "query": "What scheme covers lithium battery cells?"}
+      ]
+    },
+    {
+      "ps_id": "PS-004",
+      "canonical_name": "Gold Jewellery & Gold Bullion (Hallmarking)",
+      "expected_standard": "IS 1417",
+      "expected_scheme": "SCHEME-IV",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to gold jewellery hallmarking?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is hallmarking mandatory for 22k gold jewellery?"},
+        {"intent": "CONFORMITY_SCHEME", "query": "Which scheme covers gold hallmarking in India?"}
+      ]
+    },
+    {
+      "ps_id": "PS-005",
+      "canonical_name": "Silver Jewellery & Silver Bullion (Hallmarking)",
+      "expected_standard": "IS 2112",
+      "expected_scheme": "SCHEME-IV",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which standard applies to silver jewellery hallmarking?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is BIS hallmarking mandatory for silver artefacts?"}
+      ]
+    },
+    {
+      "ps_id": "PS-006",
+      "canonical_name": "Self-Ballasted LED Lamps",
+      "expected_standard": "IS 16102 (Part 1)",
+      "expected_scheme": "SCHEME-II",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to LED bulbs and lamps?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is BIS certification mandatory for LED lamps?"}
+      ]
+    },
+    {
+      "ps_id": "PS-007",
+      "canonical_name": "Ordinary Portland Cement (33, 43, 53 Grades)",
+      "expected_standard": "IS 269",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "What standard applies to OPC cement?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is BIS mark compulsory for 53 grade cement?"}
+      ]
+    },
+    {
+      "ps_id": "PS-009",
+      "canonical_name": "Protective Two-Wheeler Helmets",
+      "expected_standard": "IS 4151",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which standard governs two-wheeler motorcycle helmets?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is ISI mark mandatory on two-wheeler helmets?"}
+      ]
+    },
+    {
+      "ps_id": "PS-010",
+      "canonical_name": "Domestic Gas Stoves (LPG)",
+      "expected_standard": "IS 4246",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to domestic LPG gas stoves?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is BIS certification mandatory for domestic gas stoves?"}
+      ]
+    },
+    {
+      "ps_id": "PS-011",
+      "canonical_name": "Domestic Pressure Cookers",
+      "expected_standard": "IS 2347",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to domestic pressure cookers?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is ISI certification mandatory for pressure cookers?"}
+      ]
+    },
+    {
+      "ps_id": "PS-012",
+      "canonical_name": "Packaged Drinking Water",
+      "expected_standard": "IS 14543",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to packaged drinking water?"},
+        {"intent": "MANDATORY_STATUS", "query": "Is BIS certification mandatory for packaged drinking water jars?"}
+      ]
+    },
+    {
+      "ps_id": "PS-014",
+      "canonical_name": "Stationary Storage Electric Water Heaters (Geysers)",
+      "expected_standard": "IS 2082",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which standard applies to electric water geysers?"}
+      ]
+    },
+    {
+      "ps_id": "PS-015",
+      "canonical_name": "Laptops & Notebook Computers",
+      "expected_standard": "IS 13252 (Part 1)",
+      "expected_scheme": "SCHEME-II",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which standard applies to laptop notebook computers?"}
+      ]
+    },
+    {
+      "ps_id": "PS-016",
+      "canonical_name": "Smartphones & Mobile Phones",
+      "expected_standard": "IS 13252 (Part 1)",
+      "expected_scheme": "SCHEME-II",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to mobile phones?"}
+      ]
+    },
+    {
+      "ps_id": "PS-025",
+      "canonical_name": "Domestic Electric Irons",
+      "expected_standard": "IS 366",
+      "expected_scheme": "SCHEME-I",
+      "mandatory": true,
+      "queries": [
+        {"intent": "STANDARD_LOOKUP", "query": "Which BIS standard applies to domestic electric irons?"}
+      ]
+    }
+  ],
+  "adversarial_tests": [
+    {
+      "query": "What BIS certification is required for titanium quantum processors?",
+      "expected_match": null,
+      "should_abstain": true
+    },
+    {
+      "query": "Which BIS standard applies to titanium water bottles?",
+      "expected_match": null,
+      "should_abstain": true
+    },
+    {
+      "query": "I manufacture graphene superconductors. Do I need BIS certification?",
+      "expected_match": null,
+      "should_abstain": true
+    }
+  ]
+}

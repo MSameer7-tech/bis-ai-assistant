@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 class SentenceTransformerEmbeddingProvider(BaseEmbeddingProvider):
     """Local embedding provider using sentence-transformers models."""
 
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2", model_version: str = "1.0.0"):
+    def __init__(self, model_name: str = "BAAI/bge-small-en-v1.5", model_version: str = "1.0.0"):
         self._model_name = model_name
         self._model_version = model_version
         self._model = None
@@ -122,7 +122,7 @@ def get_embedding_provider(
 ) -> BaseEmbeddingProvider:
     """Factory to instantiate the configured embedding provider."""
     p_type = provider_type or os.getenv("EMBEDDING_PROVIDER", "sentence_transformers").lower()
-    m_name = model_name or os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
+    m_name = model_name or os.getenv("EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")
 
     if p_type in ("sentence_transformers", "local", "st"):
         return SentenceTransformerEmbeddingProvider(model_name=m_name)

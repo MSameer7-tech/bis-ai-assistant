@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-01T10:51:08.167157+00:00",
+  "last_run": "2026-09-03T06:05:53.505067+00:00",
   "pipeline_version": "1.0.0",
   "total_documents": 110,
   "documents": {
@@ -8,7 +8,7 @@
       "standard_number": "IS 16102 (Part 1) : 2012",
       "current_hash": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
       "previous_hash": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 129,
       "requires_reindex": false
@@ -18,7 +18,7 @@
       "standard_number": "IS 15885 (Part 2/Sec 13) : 2012",
       "current_hash": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
       "previous_hash": "fd114428ad26ec88bd1b80fc578ca2f48cb075b4588d10b7f034834cb194aa2e",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 61,
       "requires_reindex": false
@@ -28,7 +28,7 @@
       "standard_number": "IS 16102 (Part 2) : 2017",
       "current_hash": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
       "previous_hash": "3c4852bcfc4b175064619904c4bf51d003983f2df00fe305731c9477ad98f214",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 153,
       "requires_reindex": false
@@ -38,7 +38,7 @@
       "standard_number": "CRO 2021",
       "current_hash": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
       "previous_hash": "bda5333879f0599941b5cc3381e804af52f290c993df7c3b7f6570276b10de65",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -48,7 +48,7 @@
       "standard_number": "CRO Amendment 2026",
       "current_hash": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
       "previous_hash": "24cadb7731e483959e1579f3907ec4f7133f59b42cc2f8a1497a457e0bfdd9b2",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 2,
       "requires_reindex": false
@@ -58,7 +58,7 @@
       "standard_number": "IS 16102 (Part 1) : 2026",
       "current_hash": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
       "previous_hash": "ad4cf30f69320a2937b6c77a032ab528032fdb84f176b1a7ace7a0a7924d2465",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 28,
       "requires_reindex": false
@@ -68,7 +68,7 @@
       "standard_number": "IS 374 : 2019",
       "current_hash": "93f9bb581c2a6e3d90dbe58f3da65934dd2b500d12189f870ec9865c7b874e94",
       "previous_hash": "93f9bb581c2a6e3d90dbe58f3da65934dd2b500d12189f870ec9865c7b874e94",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 7,
       "requires_reindex": false
@@ -78,7 +78,7 @@
       "standard_number": "IS 555 : 1979",
       "current_hash": "b1a76ee6228e9cdd600a0b7e15936e6262729126b635b11500cac805c6b1d08d",
       "previous_hash": "b1a76ee6228e9cdd600a0b7e15936e6262729126b635b11500cac805c6b1d08d",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 4,
       "requires_reindex": false
@@ -88,7 +88,7 @@
       "standard_number": "IS 302 (Part 1) : 2024",
       "current_hash": "7565a0c7961c92e84326cf41c1738bd85b3a1fdd41991dec339b86553a93bd7f",
       "previous_hash": "7565a0c7961c92e84326cf41c1738bd85b3a1fdd41991dec339b86553a93bd7f",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 6,
       "requires_reindex": false
@@ -98,7 +98,7 @@
       "standard_number": "IS 694 : 2010",
       "current_hash": "9e21ba8e179e421b0a9fb4999378f2fa1a6e0f49ad562ca4a4d1767ea637b50c",
       "previous_hash": "9e21ba8e179e421b0a9fb4999378f2fa1a6e0f49ad562ca4a4d1767ea637b50c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -108,7 +108,7 @@
       "standard_number": "IS 12640 (Part 1) : 2016",
       "current_hash": "c8cd886a512dfb0e03bb58264349eb457135197e71e53b5f43217f00d87089f6",
       "previous_hash": "c8cd886a512dfb0e03bb58264349eb457135197e71e53b5f43217f00d87089f6",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 4,
       "requires_reindex": false
@@ -118,7 +118,7 @@
       "standard_number": "IS 269 : 2015",
       "current_hash": "aacb3565dabb23749c53f447dff31b1c06858b2f5c9e0309d22ca9cebe0f12f9",
       "previous_hash": "aacb3565dabb23749c53f447dff31b1c06858b2f5c9e0309d22ca9cebe0f12f9",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 7,
       "requires_reindex": false
@@ -128,7 +128,7 @@
       "standard_number": "IS 1489 (Part 1) : 2015",
       "current_hash": "5d75e64be2b2065b39be140224e39c2f0f33c100df72cee8cd01ae18b0450d22",
       "previous_hash": "5d75e64be2b2065b39be140224e39c2f0f33c100df72cee8cd01ae18b0450d22",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 6,
       "requires_reindex": false
@@ -138,7 +138,7 @@
       "standard_number": "IS 1786 : 2008",
       "current_hash": "58aaa12a670f53390d325f6344a3cf86d84aacfae2facbad4bb2d25d0e1fbd67",
       "previous_hash": "58aaa12a670f53390d325f6344a3cf86d84aacfae2facbad4bb2d25d0e1fbd67",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 8,
       "requires_reindex": false
@@ -148,7 +148,7 @@
       "standard_number": "IS 2062 : 2011",
       "current_hash": "a943e6db165bf87e0bfefd7ff7240cec037490e5bf9f7c5dc33c095e4970b37c",
       "previous_hash": "a943e6db165bf87e0bfefd7ff7240cec037490e5bf9f7c5dc33c095e4970b37c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 4,
       "requires_reindex": false
@@ -158,7 +158,7 @@
       "standard_number": "IS 15622 : 2017",
       "current_hash": "9d1a50d42f56f7994d426439e48a62c276f454a3995efd1d3f9af5be4ad67457",
       "previous_hash": "9d1a50d42f56f7994d426439e48a62c276f454a3995efd1d3f9af5be4ad67457",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -168,7 +168,7 @@
       "standard_number": "IS 14543 : 2024",
       "current_hash": "6b666c33d38e9c342c5a0c821dd1b8e5c56401978a679fbad9be50d9c59cab31",
       "previous_hash": "6b666c33d38e9c342c5a0c821dd1b8e5c56401978a679fbad9be50d9c59cab31",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 7,
       "requires_reindex": false
@@ -178,7 +178,7 @@
       "standard_number": "IS 13428 : 2005",
       "current_hash": "432ecc8bb49c15070f09eef95c076a47f52cf9a7e7ee204612dcfbe8a54a0b69",
       "previous_hash": "432ecc8bb49c15070f09eef95c076a47f52cf9a7e7ee204612dcfbe8a54a0b69",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -188,7 +188,7 @@
       "standard_number": "IS 1165 : 2002",
       "current_hash": "b296e8fe4a37864fdc0eb499ee0daf334fafbc4aa62c678611b0864949bd96b2",
       "previous_hash": "b296e8fe4a37864fdc0eb499ee0daf334fafbc4aa62c678611b0864949bd96b2",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -198,7 +198,7 @@
       "standard_number": "IS 4151 : 2015",
       "current_hash": "200729b37739af43b0e4387993be5e799279da8a1b768b4e65ed4090759681a5",
       "previous_hash": "200729b37739af43b0e4387993be5e799279da8a1b768b4e65ed4090759681a5",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 7,
       "requires_reindex": false
@@ -208,7 +208,7 @@
       "standard_number": "IS 2347 : 2017",
       "current_hash": "43b608bccc557514fdaaa946f76ad7c1d4180c00407cd0889fb8d7554a811e20",
       "previous_hash": "43b608bccc557514fdaaa946f76ad7c1d4180c00407cd0889fb8d7554a811e20",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -218,7 +218,7 @@
       "standard_number": "IS 15298 (Part 2) : 2016",
       "current_hash": "2a6da64566977409096c1c68ac1b6798e88ffa4eda1c05e66b209221f8907bfa",
       "previous_hash": "2a6da64566977409096c1c68ac1b6798e88ffa4eda1c05e66b209221f8907bfa",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 4,
       "requires_reindex": false
@@ -228,7 +228,7 @@
       "standard_number": "IS 16046 (Part 2) : 2018",
       "current_hash": "c7c55e2d99362ac06c4a1185563ccb44212a957902e9cc9d1a1160346f6a57e5",
       "previous_hash": "c7c55e2d99362ac06c4a1185563ccb44212a957902e9cc9d1a1160346f6a57e5",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 7,
       "requires_reindex": false
@@ -238,7 +238,7 @@
       "standard_number": "IS 616 : 2017",
       "current_hash": "4ee3fc2354bcbafaaf9592e628fafc219366b183381b0678d001c4fda7f74677",
       "previous_hash": "4ee3fc2354bcbafaaf9592e628fafc219366b183381b0678d001c4fda7f74677",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -248,7 +248,7 @@
       "standard_number": "IS 13252 (Part 1) : 2010",
       "current_hash": "6be452fc81b9444a1a29c0738133972c064b536a38e4216136ccde78e9fcabc3",
       "previous_hash": "6be452fc81b9444a1a29c0738133972c064b536a38e4216136ccde78e9fcabc3",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -258,7 +258,7 @@
       "standard_number": "IS 4985 : 2021",
       "current_hash": "0cf9ead580cac34a7497c5a426cfd377909c63bbece8e4013d8f85f8fc0bf555",
       "previous_hash": "0cf9ead580cac34a7497c5a426cfd377909c63bbece8e4013d8f85f8fc0bf555",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -268,7 +268,7 @@
       "standard_number": "IS 15477 : 2019",
       "current_hash": "c2a0329708bae7fd662599b822495b98738c6318647d9b8a279b24ce6def514c",
       "previous_hash": "c2a0329708bae7fd662599b822495b98738c6318647d9b8a279b24ce6def514c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 4,
       "requires_reindex": false
@@ -278,7 +278,7 @@
       "standard_number": "IS 1786 : 2024",
       "current_hash": "5781b55efe67cef02b2cb9d4ee5b618927c142a805ad4cea4a454814d890d42c",
       "previous_hash": "5781b55efe67cef02b2cb9d4ee5b618927c142a805ad4cea4a454814d890d42c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -288,7 +288,7 @@
       "standard_number": "IS 374 : 2026",
       "current_hash": "b6280e6ba2600d882ea2b7619e8a309de02cd8675c77fb78acb42f7666f75675",
       "previous_hash": "b6280e6ba2600d882ea2b7619e8a309de02cd8675c77fb78acb42f7666f75675",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 5,
       "requires_reindex": false
@@ -298,7 +298,7 @@
       "standard_number": "IS 2312 : 1967",
       "current_hash": "240746f2a4dfdb5a4b66cb1df1dfc4f8d2af40b3526dc6342b71504dc76aeca0",
       "previous_hash": "240746f2a4dfdb5a4b66cb1df1dfc4f8d2af40b3526dc6342b71504dc76aeca0",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -308,7 +308,7 @@
       "standard_number": "IS 366 : 1991",
       "current_hash": "4dd9c1d2bdd0d6bde9b61771581e25e7f849b93c8cc3f8589ee7c34e370e478e",
       "previous_hash": "4dd9c1d2bdd0d6bde9b61771581e25e7f849b93c8cc3f8589ee7c34e370e478e",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -318,7 +318,7 @@
       "standard_number": "IS 2082 : 2018",
       "current_hash": "e48a8f002c97eb70648645a9e4c62b8c34957682fbc336a4e558ddec95f527f3",
       "previous_hash": "e48a8f002c97eb70648645a9e4c62b8c34957682fbc336a4e558ddec95f527f3",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -328,7 +328,7 @@
       "standard_number": "IS 368 : 2014",
       "current_hash": "dd6f47d2e28501f617f2dcd92e3f71d2e7eef4414574e84e1de08275de447731",
       "previous_hash": "dd6f47d2e28501f617f2dcd92e3f71d2e7eef4414574e84e1de08275de447731",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -338,7 +338,7 @@
       "standard_number": "IS 7098 (Part 1) : 1988",
       "current_hash": "f6c963f34b40622ee0c3554057fb7c7650eb06bff53ad2c0e4b9d1b18b678ad7",
       "previous_hash": "f6c963f34b40622ee0c3554057fb7c7650eb06bff53ad2c0e4b9d1b18b678ad7",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -348,7 +348,7 @@
       "standard_number": "IS 398 (Part 2) : 1996",
       "current_hash": "c7d9d1e7bc312ff1a4364bf823c147200ab679402f13f4d3d089f706df5d5964",
       "previous_hash": "c7d9d1e7bc312ff1a4364bf823c147200ab679402f13f4d3d089f706df5d5964",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -358,7 +358,7 @@
       "standard_number": "IS 3854 : 1997",
       "current_hash": "c426bd1174ef0370f51af1032d62762de7ea8f8845e8bbc1c80b41df5dd89a50",
       "previous_hash": "c426bd1174ef0370f51af1032d62762de7ea8f8845e8bbc1c80b41df5dd89a50",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -368,7 +368,7 @@
       "standard_number": "IS 1293 : 2019",
       "current_hash": "2614f1aad113f1a208c704089e176cd1debf6756b1730c1c38ef3240b7f62e55",
       "previous_hash": "2614f1aad113f1a208c704089e176cd1debf6756b1730c1c38ef3240b7f62e55",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -378,7 +378,7 @@
       "standard_number": "IS 1653 : 1972",
       "current_hash": "6d5b02581b66504a86b2e0a90fff7a2cd3bd75309ec783ff3a66be68eec01a9d",
       "previous_hash": "6d5b02581b66504a86b2e0a90fff7a2cd3bd75309ec783ff3a66be68eec01a9d",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -388,7 +388,7 @@
       "standard_number": "IS 16444 (Part 1) : 2015",
       "current_hash": "79d30e442dee4a494a98361123cf901f0e8e4e0cc81bca5553bd4bc8d18c1c9c",
       "previous_hash": "79d30e442dee4a494a98361123cf901f0e8e4e0cc81bca5553bd4bc8d18c1c9c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -398,7 +398,7 @@
       "standard_number": "IS 15885 (Part 1) : 2011",
       "current_hash": "e1de092b24656c6a1788c916d8b242ea9d10a9f5b7c81595e47bcdb6f0e3fa63",
       "previous_hash": "e1de092b24656c6a1788c916d8b242ea9d10a9f5b7c81595e47bcdb6f0e3fa63",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -408,7 +408,7 @@
       "standard_number": "IS 16101 : 2012",
       "current_hash": "8e36e3356e80f148911e743a28b42664aacdf42401e07601e8d143d25ba76066",
       "previous_hash": "8e36e3356e80f148911e743a28b42664aacdf42401e07601e8d143d25ba76066",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -418,7 +418,7 @@
       "standard_number": "IS 16103 (Part 1) : 2012",
       "current_hash": "2d3e983f62fa8abe79664adb12950ed7bbb1b81b03fff6ddf6a2fc693bb5bb28",
       "previous_hash": "2d3e983f62fa8abe79664adb12950ed7bbb1b81b03fff6ddf6a2fc693bb5bb28",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -428,7 +428,7 @@
       "standard_number": "IS 16107 (Part 2/Sec 1) : 2012",
       "current_hash": "a43f5211feb35e31e0b6bf55a0ecf701f85557754986a49bd55d2c8b4f4da591",
       "previous_hash": "a43f5211feb35e31e0b6bf55a0ecf701f85557754986a49bd55d2c8b4f4da591",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -438,7 +438,7 @@
       "standard_number": "IS 16242 (Part 1) : 2014",
       "current_hash": "bc3a300cee7a95aa796e2836a601fe09e2d53eddf89f2a3ad41d4c89811f4914",
       "previous_hash": "bc3a300cee7a95aa796e2836a601fe09e2d53eddf89f2a3ad41d4c89811f4914",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -448,7 +448,7 @@
       "standard_number": "IS 16333 (Part 3) : 2022",
       "current_hash": "cb017106e01a1360948d9a47ab5e6d692ff91a1f118b1d1b06f9e772bcf3400c",
       "previous_hash": "cb017106e01a1360948d9a47ab5e6d692ff91a1f118b1d1b06f9e772bcf3400c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -458,7 +458,7 @@
       "standard_number": "IS 16500 : 2017",
       "current_hash": "5d8c6db74634b1dd05f549ef555bef4541ecf6b747a94c9b7b144264c98aca7e",
       "previous_hash": "5d8c6db74634b1dd05f549ef555bef4541ecf6b747a94c9b7b144264c98aca7e",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -468,7 +468,7 @@
       "standard_number": "IS 18112 : 2022",
       "current_hash": "05e9b19d9009e02e5d5e9c81736a280cb1f415bc9d4b8c3917f4faeff15cef84",
       "previous_hash": "05e9b19d9009e02e5d5e9c81736a280cb1f415bc9d4b8c3917f4faeff15cef84",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -478,7 +478,7 @@
       "standard_number": "IS 7354 : 1974",
       "current_hash": "8a5e145ca9bcc8f8d52788c30898544a1c801fadb744e51e8003d2a8adcddb77",
       "previous_hash": "8a5e145ca9bcc8f8d52788c30898544a1c801fadb744e51e8003d2a8adcddb77",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -488,7 +488,7 @@
       "standard_number": "IS 15489 : 2004",
       "current_hash": "f7b4164cb1fcb64b318f3b498a65d4cf50947e270bb38c0a08f19e16919a5eef",
       "previous_hash": "f7b4164cb1fcb64b318f3b498a65d4cf50947e270bb38c0a08f19e16919a5eef",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -498,7 +498,7 @@
       "standard_number": "IS 12235 (Part 1) : 2004",
       "current_hash": "13f3a3a0165029e8255c533fca305852a0d0c73a85ac9f71fc370266ebbd724b",
       "previous_hash": "13f3a3a0165029e8255c533fca305852a0d0c73a85ac9f71fc370266ebbd724b",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -508,7 +508,7 @@
       "standard_number": "IS 1239 (Part 1) : 2004",
       "current_hash": "bf8f7371a404ea25c248a4400db194d31aab9d3103d57a6025deadca375c8121",
       "previous_hash": "bf8f7371a404ea25c248a4400db194d31aab9d3103d57a6025deadca375c8121",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -518,7 +518,7 @@
       "standard_number": "IS 12701 : 1996",
       "current_hash": "547563f4c5e86eb7cbc7072226de5ba90bcf438786056fb8aa7b456cedb1bd75",
       "previous_hash": "547563f4c5e86eb7cbc7072226de5ba90bcf438786056fb8aa7b456cedb1bd75",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -528,7 +528,7 @@
       "standard_number": "IS 13592 : 2013",
       "current_hash": "bbdf2b264ec1c622776c9600d9fb23b6f59b4f2ca1ce5cae6f23dbb53cb1563e",
       "previous_hash": "bbdf2b264ec1c622776c9600d9fb23b6f59b4f2ca1ce5cae6f23dbb53cb1563e",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -538,7 +538,7 @@
       "standard_number": "IS 14885 : 2001",
       "current_hash": "41e79ed19276d62acc8f9c4b66fbe3f66b33e25545cebebdfaffc947a21a429c",
       "previous_hash": "41e79ed19276d62acc8f9c4b66fbe3f66b33e25545cebebdfaffc947a21a429c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -548,7 +548,7 @@
       "standard_number": "IS 3196 (Part 1) : 2006",
       "current_hash": "1fc6105661f935f130df75feaadac9b6e7cca57c93d3bb89abb7e6951f107366",
       "previous_hash": "1fc6105661f935f130df75feaadac9b6e7cca57c93d3bb89abb7e6951f107366",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -558,7 +558,7 @@
       "standard_number": "IS 15633 : 2005",
       "current_hash": "4df37fa2ed71817b76abc55ed97e9f7b5802e3b2f1ebcb1cbfb8ff281316c13b",
       "previous_hash": "4df37fa2ed71817b76abc55ed97e9f7b5802e3b2f1ebcb1cbfb8ff281316c13b",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -568,7 +568,7 @@
       "standard_number": "IS 15636 : 2012",
       "current_hash": "c8d7383293406be90342ee3b56c604643085555d3d4fd577228e2ddfa3a0e654",
       "previous_hash": "c8d7383293406be90342ee3b56c604643085555d3d4fd577228e2ddfa3a0e654",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -578,7 +578,7 @@
       "standard_number": "IS 10500 : 2012",
       "current_hash": "e126203571b91a0b446bed4b4382a5f7435f3919c431905174f913c0de843f43",
       "previous_hash": "e126203571b91a0b446bed4b4382a5f7435f3919c431905174f913c0de843f43",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -588,7 +588,7 @@
       "standard_number": "IS 3067 : 1988",
       "current_hash": "3d7715d692c7fb7fe9ba8b3582c0e49f70f2bd705945927f08f7318184940f62",
       "previous_hash": "3d7715d692c7fb7fe9ba8b3582c0e49f70f2bd705945927f08f7318184940f62",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -598,7 +598,7 @@
       "standard_number": "IS 101 (Part 1/Sec 1) : 1986",
       "current_hash": "0a6820342068bea1aadf47ad6832689cad5dc469707e9c1b3d1c57715e9e17ee",
       "previous_hash": "0a6820342068bea1aadf47ad6832689cad5dc469707e9c1b3d1c57715e9e17ee",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -608,7 +608,7 @@
       "standard_number": "IS 5410 : 2013",
       "current_hash": "e177d207472d675f9293d79b04d17f8104f2f6dc5693368349c253cd68209f48",
       "previous_hash": "e177d207472d675f9293d79b04d17f8104f2f6dc5693368349c253cd68209f48",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -618,7 +618,7 @@
       "standard_number": "IS 455 : 2015",
       "current_hash": "b462638e0e3a715f7819a4a7e8a10d36ff3ad5aac7f327261d62c63cf3089080",
       "previous_hash": "b462638e0e3a715f7819a4a7e8a10d36ff3ad5aac7f327261d62c63cf3089080",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -628,7 +628,7 @@
       "standard_number": "IS 383 : 2016",
       "current_hash": "fc5909f86d54dda14c9a238b4c97d801305518298a9bca6cd96e9a383d10d728",
       "previous_hash": "fc5909f86d54dda14c9a238b4c97d801305518298a9bca6cd96e9a383d10d728",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -638,7 +638,7 @@
       "standard_number": "IS 456 : 2000",
       "current_hash": "d89d2b099142fa5465490125512d4e79090164e48216c95faa1996ef1414bd0a",
       "previous_hash": "d89d2b099142fa5465490125512d4e79090164e48216c95faa1996ef1414bd0a",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -648,7 +648,7 @@
       "standard_number": "IS 800 : 2007",
       "current_hash": "9d2b207d2583d7248c6bc2ee25c2cd2bc0cbb0d08564333da19b3c948f0d57d3",
       "previous_hash": "9d2b207d2583d7248c6bc2ee25c2cd2bc0cbb0d08564333da19b3c948f0d57d3",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -658,7 +658,7 @@
       "standard_number": "IS 1077 : 1992",
       "current_hash": "6c6e4407fee2f075c8f87780a874cc58c97df77b173698305f5087204bfd2b28",
       "previous_hash": "6c6e4407fee2f075c8f87780a874cc58c97df77b173698305f5087204bfd2b28",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -668,7 +668,7 @@
       "standard_number": "IS 2185 (Part 1) : 2005",
       "current_hash": "457f4001ae2125453e4324d1cc37ca6ba3c9def7ffcfdeb5b725348ee502145d",
       "previous_hash": "457f4001ae2125453e4324d1cc37ca6ba3c9def7ffcfdeb5b725348ee502145d",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -678,7 +678,7 @@
       "standard_number": "IS 15658 : 2006",
       "current_hash": "88546e88a1c6092c1656977cf98cbad53469a619ae5f3a1e7ccc7d02b4ee0606",
       "previous_hash": "88546e88a1c6092c1656977cf98cbad53469a619ae5f3a1e7ccc7d02b4ee0606",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -688,7 +688,7 @@
       "standard_number": "IS 432 (Part 1) : 1982",
       "current_hash": "7f7ca2462d6ea9ae4f47a6550c5df0dd0e66a1e3dea4166798a193d2dfcef98a",
       "previous_hash": "7f7ca2462d6ea9ae4f47a6550c5df0dd0e66a1e3dea4166798a193d2dfcef98a",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -698,7 +698,7 @@
       "standard_number": "IS 13920 : 2016",
       "current_hash": "591636b659732064ed4f49f843c6624b759c333d7d28a91c8ce6d3af749982ad",
       "previous_hash": "591636b659732064ed4f49f843c6624b759c333d7d28a91c8ce6d3af749982ad",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -708,7 +708,7 @@
       "standard_number": "IS 1893 (Part 1) : 2016",
       "current_hash": "a59eee72f1bfa000ef252266f6de0ad0b3dc751d8ab21278cb1fc3499493ad95",
       "previous_hash": "a59eee72f1bfa000ef252266f6de0ad0b3dc751d8ab21278cb1fc3499493ad95",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -718,7 +718,7 @@
       "standard_number": "IS 14433 : 2022",
       "current_hash": "01cdc6c0bb23fb9c0ad59fbd313ea945ae57c1c9fd58dfd091ba4f75a5416c31",
       "previous_hash": "01cdc6c0bb23fb9c0ad59fbd313ea945ae57c1c9fd58dfd091ba4f75a5416c31",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -728,7 +728,7 @@
       "standard_number": "IS 11536 : 2007",
       "current_hash": "a42e34b76c03ae0d210eb002b30041ee44a3cc8d8d533d34612298864cc41830",
       "previous_hash": "a42e34b76c03ae0d210eb002b30041ee44a3cc8d8d533d34612298864cc41830",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -738,7 +738,7 @@
       "standard_number": "IS 2052 : 2009",
       "current_hash": "ffb18087074c565512e3d95a3c86988f3d0067f1cab751c054f21ddf9df19982",
       "previous_hash": "ffb18087074c565512e3d95a3c86988f3d0067f1cab751c054f21ddf9df19982",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -748,7 +748,7 @@
       "standard_number": "IS 1166 : 2022",
       "current_hash": "074ad31cd462c784cca736a837de3ca30aa18ec9643de6d98f7d7146a811a815",
       "previous_hash": "074ad31cd462c784cca736a837de3ca30aa18ec9643de6d98f7d7146a811a815",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -758,7 +758,7 @@
       "standard_number": "IS 1224 (Part 1) : 1977",
       "current_hash": "543c747ff018c6e1b9a658c6ee2b2b5bd3014edcf956b6061ddc532a3dbff39a",
       "previous_hash": "543c747ff018c6e1b9a658c6ee2b2b5bd3014edcf956b6061ddc532a3dbff39a",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -768,7 +768,7 @@
       "standard_number": "IS 4079 : 1967",
       "current_hash": "a8b941eaaebc2f454df120fc6bfa0dc10847edb7c507866d135409f26dc41ac9",
       "previous_hash": "a8b941eaaebc2f454df120fc6bfa0dc10847edb7c507866d135409f26dc41ac9",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -778,7 +778,7 @@
       "standard_number": "IS 15757 : 2007",
       "current_hash": "d6c554c3a600d8d48a272872c4e4b6a7ada022b6ab0cb979a79386a928475af4",
       "previous_hash": "d6c554c3a600d8d48a272872c4e4b6a7ada022b6ab0cb979a79386a928475af4",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -788,7 +788,7 @@
       "standard_number": "IS 544 : 2014",
       "current_hash": "01d9a9b9e15b4678c3781872e138dcd2823b742be761952e48533675d8a4e2a8",
       "previous_hash": "01d9a9b9e15b4678c3781872e138dcd2823b742be761952e48533675d8a4e2a8",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -798,7 +798,7 @@
       "standard_number": "IS 4277 : 2014",
       "current_hash": "ba6a030eac2f34e8f04c307e635a782bd0ea5f966627498c530adb861eaaec90",
       "previous_hash": "ba6a030eac2f34e8f04c307e635a782bd0ea5f966627498c530adb861eaaec90",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -808,7 +808,7 @@
       "standard_number": "IS 7224 : 2006",
       "current_hash": "6900acb93208530ea32d52009bfe9c08dba6a1048764020686f89e62da72c197",
       "previous_hash": "6900acb93208530ea32d52009bfe9c08dba6a1048764020686f89e62da72c197",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -818,7 +818,7 @@
       "standard_number": "IS 10083 : 1982",
       "current_hash": "a38be2682dbb80dc8f4fbec24ebba5328756b845d9c52fd31033b3d0cc5c179a",
       "previous_hash": "a38be2682dbb80dc8f4fbec24ebba5328756b845d9c52fd31033b3d0cc5c179a",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -828,7 +828,7 @@
       "standard_number": "IS 5949 : 1990",
       "current_hash": "422b426d414a50f6f4ccc263aee3b6581e949f4ea7895273bfee08f37620fc24",
       "previous_hash": "422b426d414a50f6f4ccc263aee3b6581e949f4ea7895273bfee08f37620fc24",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -838,7 +838,7 @@
       "standard_number": "IS 4246 : 2002",
       "current_hash": "faae87e4a8714b69544660f14b47c478c132a1c2ba0236cfaf9095d0d5af44d6",
       "previous_hash": "faae87e4a8714b69544660f14b47c478c132a1c2ba0236cfaf9095d0d5af44d6",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -848,7 +848,7 @@
       "standard_number": "IS 15683 : 2018",
       "current_hash": "fbdf8fa0042343572ac0eb595ef8c826c92ff8248e8563eeb06bd4b01088920b",
       "previous_hash": "fbdf8fa0042343572ac0eb595ef8c826c92ff8248e8563eeb06bd4b01088920b",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -858,7 +858,7 @@
       "standard_number": "IS 2878 : 2004",
       "current_hash": "dc494261a8047d5bf6dcd80ed53f3c113aba1433f3e3e5f5146268d8e0faffb3",
       "previous_hash": "dc494261a8047d5bf6dcd80ed53f3c113aba1433f3e3e5f5146268d8e0faffb3",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -868,7 +868,7 @@
       "standard_number": "IS 940 : 2003",
       "current_hash": "04da6fdb843a561124f711d1e6e41920d61c28ecb6742c5ec888b90af2be8f96",
       "previous_hash": "04da6fdb843a561124f711d1e6e41920d61c28ecb6742c5ec888b90af2be8f96",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -878,7 +878,7 @@
       "standard_number": "IS 12254 : 1993",
       "current_hash": "0e0893f2575d0d6ddf11dd944daa4041b15244c4ceec6049c9065341360f3863",
       "previous_hash": "0e0893f2575d0d6ddf11dd944daa4041b15244c4ceec6049c9065341360f3863",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -888,7 +888,7 @@
       "standard_number": "IS 13745 : 1993",
       "current_hash": "494d5f7eaefce589f11d4775ac8af2e51f95c6d046894753d5ce6cba3559e8f9",
       "previous_hash": "494d5f7eaefce589f11d4775ac8af2e51f95c6d046894753d5ce6cba3559e8f9",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -898,7 +898,7 @@
       "standard_number": "IS 14842 : 2000",
       "current_hash": "edf7e2b9242eb52b3ac55e61be57605ace1c1f6b17cd178f73008bf26568692d",
       "previous_hash": "edf7e2b9242eb52b3ac55e61be57605ace1c1f6b17cd178f73008bf26568692d",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -908,7 +908,7 @@
       "standard_number": "IS 3601 : 2006",
       "current_hash": "d76bce9708671991ca4f0eacc2940dfb41c9987b34d29948733faac699f98ec3",
       "previous_hash": "d76bce9708671991ca4f0eacc2940dfb41c9987b34d29948733faac699f98ec3",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -918,7 +918,7 @@
       "standard_number": "IS 1978 : 1982",
       "current_hash": "c0deec995fc78b4d7b4304f335cf73b990571a830441945279ecc80bf3c427ba",
       "previous_hash": "c0deec995fc78b4d7b4304f335cf73b990571a830441945279ecc80bf3c427ba",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -928,7 +928,7 @@
       "standard_number": "IS 779 : 1994",
       "current_hash": "ea71072cb11de3f42a31747ac6be67e3f4b8f1db3b9b1f7ca793cee274a391ea",
       "previous_hash": "ea71072cb11de3f42a31747ac6be67e3f4b8f1db3b9b1f7ca793cee274a391ea",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -938,7 +938,7 @@
       "standard_number": "IS 903 : 1993",
       "current_hash": "79ba01b83aea792489b1b720b59651c631dd3a018c51049fb48065c292b790c6",
       "previous_hash": "79ba01b83aea792489b1b720b59651c631dd3a018c51049fb48065c292b790c6",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -948,7 +948,7 @@
       "standard_number": "IS 513 (Part 1) : 2016",
       "current_hash": "35aa26ce9e6757accbea608942f1cb8359d96729805c9ba42b5cfd51df626c0c",
       "previous_hash": "35aa26ce9e6757accbea608942f1cb8359d96729805c9ba42b5cfd51df626c0c",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -958,7 +958,7 @@
       "standard_number": "IS 1079 : 2017",
       "current_hash": "9cd7bae8192fad5b8d1ae2b7aa54300e69a6b1e117c8a6d6736520484b6eace0",
       "previous_hash": "9cd7bae8192fad5b8d1ae2b7aa54300e69a6b1e117c8a6d6736520484b6eace0",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -968,7 +968,7 @@
       "standard_number": "IS 814 : 2004",
       "current_hash": "81fcab56f6c7d95485ee6d24a7155cbccc05b2e5f0dc8fc1352a483b96154d50",
       "previous_hash": "81fcab56f6c7d95485ee6d24a7155cbccc05b2e5f0dc8fc1352a483b96154d50",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -978,7 +978,7 @@
       "standard_number": "IS 13422 : 1992",
       "current_hash": "0791c932d759f0ad6f635bd63cda13eb93ff137ed2ddc38b6ae899008b13f8d9",
       "previous_hash": "0791c932d759f0ad6f635bd63cda13eb93ff137ed2ddc38b6ae899008b13f8d9",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -988,7 +988,7 @@
       "standard_number": "IS 9473 : 2002",
       "current_hash": "51eb690643e93aef2ea7d25f8c70d4643c1b9e8f3b20f63beb81026831dc15f0",
       "previous_hash": "51eb690643e93aef2ea7d25f8c70d4643c1b9e8f3b20f63beb81026831dc15f0",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -998,7 +998,7 @@
       "standard_number": "IS 2925 : 1984",
       "current_hash": "199349da442ec4a5dd6629a3f91bc5f0ed50750ef0e7bcce93fb81dd7435fc83",
       "previous_hash": "199349da442ec4a5dd6629a3f91bc5f0ed50750ef0e7bcce93fb81dd7435fc83",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1008,7 +1008,7 @@
       "standard_number": "IS 3521 (Part 1) : 2021",
       "current_hash": "490df1baea4730313f6da58da286fcda37ea8df18709e63fad0ea7d9c25e76b1",
       "previous_hash": "490df1baea4730313f6da58da286fcda37ea8df18709e63fad0ea7d9c25e76b1",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1018,7 +1018,7 @@
       "standard_number": "IS 6994 (Part 1) : 1973",
       "current_hash": "193d17f4f714ea33f84d9cffcf5157c3ff7db4484e27822f323cfbf799e5b3fc",
       "previous_hash": "193d17f4f714ea33f84d9cffcf5157c3ff7db4484e27822f323cfbf799e5b3fc",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1028,7 +1028,7 @@
       "standard_number": "IS 5983 : 1980",
       "current_hash": "ccd7d5da9a4ca21b5b1294d8063d7aabefec6e4eae833b6df576bd11228b3ed8",
       "previous_hash": "ccd7d5da9a4ca21b5b1294d8063d7aabefec6e4eae833b6df576bd11228b3ed8",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1038,7 +1038,7 @@
       "standard_number": "IS 16289 : 2014",
       "current_hash": "e0127f37187315080f163d5c7e5e3aa837ca38bcea16454661931b2d7291989b",
       "previous_hash": "e0127f37187315080f163d5c7e5e3aa837ca38bcea16454661931b2d7291989b",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1048,7 +1048,7 @@
       "standard_number": "IS 17423 : 2020",
       "current_hash": "2d62577428d97f00892e4f6c63cdf8020185241b8e71b510768177a8e9cc5d8e",
       "previous_hash": "2d62577428d97f00892e4f6c63cdf8020185241b8e71b510768177a8e9cc5d8e",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1058,7 +1058,7 @@
       "standard_number": "IS 13450 (Part 1) : 2018",
       "current_hash": "b2df3776a43bdb9009293c83c02c0772fde8db8b4f6ea1e6a9f73dfd354fa009",
       "previous_hash": "b2df3776a43bdb9009293c83c02c0772fde8db8b4f6ea1e6a9f73dfd354fa009",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1068,7 +1068,7 @@
       "standard_number": "IS 13450 (Part 2/Sec 24) : 2019",
       "current_hash": "feb99996e4e24c38254522644f5b7452146c2b31ec8331b9ecc32d2602d7b0b8",
       "previous_hash": "feb99996e4e24c38254522644f5b7452146c2b31ec8331b9ecc32d2602d7b0b8",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1078,7 +1078,7 @@
       "standard_number": "IS 13450 (Part 2/Sec 37) : 2018",
       "current_hash": "feac0e9d6fd80e8de3183222df5020b7ca8bc4bde2b21a21aac5479859796f25",
       "previous_hash": "feac0e9d6fd80e8de3183222df5020b7ca8bc4bde2b21a21aac5479859796f25",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1088,7 +1088,7 @@
       "standard_number": "IS 7620 (Part 1) : 1986",
       "current_hash": "89ee3f16ad1461daf1dfdd2f2dc2a83feed846f78b108403e187eec547c05b69",
       "previous_hash": "89ee3f16ad1461daf1dfdd2f2dc2a83feed846f78b108403e187eec547c05b69",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false
@@ -1098,7 +1098,7 @@
       "standard_number": "IS 8607 : 1977",
       "current_hash": "6b8b7af3f506a6f4b51af3cf125c1f36226be6da928025b54980f9b6e9f12f70",
       "previous_hash": "6b8b7af3f506a6f4b51af3cf125c1f36226be6da928025b54980f9b6e9f12f70",
-      "last_checked": "2026-09-01T10:51:08.167157+00:00",
+      "last_checked": "2026-09-03T06:05:53.505067+00:00",
       "status": "CHUNKED",
       "total_chunks": 18,
       "requires_reindex": false

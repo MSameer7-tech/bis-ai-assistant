@@ -1,0 +1,77 @@
+[
+  {
+    "domain": "HALLMARKING_STANDARD",
+    "identity": "IS-1417:2016",
+    "source": "Mock Payload"
+  },
+  {
+    "domain": "HALLMARKING_REGULATION",
+    "identity": "REG-BIS-HM-2018",
+    "source": "Mock Payload"
+  },
+  {
+    "domain": "MANDATORY_HALLMARKING_ORDER",
+    "identity": "ORDER-HM-GOLD-2020",
+    "source": "Mock Payload"
+  },
+  {
+    "domain": "HUID_CONSUMER_VERIFICATION",
+    "identity": "HUID-WORKFLOW-BISCARE",
+    "source": "Mock Payload"
+  },
+  {
+    "domain": "JEWELLER_REFINERY_REGISTRATION",
+    "identity": "HM-JEW-001",
+    "source": "Mock Registry"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-001",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-002",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-003",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-004",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-005",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-006",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-007",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-008",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-009",
+    "source": "Seed Data"
+  },
+  {
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "identity": "AHC-010",
+    "source": "Seed Data"
+  }
+]

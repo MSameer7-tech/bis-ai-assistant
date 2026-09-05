@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "build_timestamp": "2026-09-03T22:33:00Z",
+  "indexes": {
+    "standards_metadata_index": {
+      "source": "data/catalog/standards/standards_metadata.jsonl",
+      "record_count": 479,
+      "unique_internal_bis_id_count": 479,
+      "indexing_method": "deterministic_hierarchy"
+    },
+    "product_standard_index": {
+      "source": "data/catalog/compulsory_certification/product_standard_relationships.jsonl",
+      "reconciliation_source": "data/catalog/standards/standard_identity_reconciliation.jsonl",
+      "record_count": 960,
+      "indexing_method": "lexical_overlap"
+    }
+  },
+  "metrics": {
+    "unresolved_relationship_count": 898
+  }
+}

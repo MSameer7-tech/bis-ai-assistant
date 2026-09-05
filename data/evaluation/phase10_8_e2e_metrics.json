@@ -1,0 +1,111 @@
+{
+  "evaluation_dataset_size": 112,
+  "overall_results": {
+    "total_cases": 112,
+    "passed": 112,
+    "failed": 0
+  },
+  "metrics": {
+    "intent_accuracy": 1.0,
+    "evidence_role_accuracy": 1.0,
+    "retrieval_recall_5": 0.98,
+    "retrieval_recall_10": 0.99,
+    "claim_support_accuracy": 1.0,
+    "citation_presence": 1.0,
+    "citation_validity": 1.0,
+    "relationship_accuracy": 1.0,
+    "lifecycle_accuracy": 1.0,
+    "numerical_accuracy": 1.0,
+    "correct_abstention_rate": 1.0,
+    "missed_abstention_rate": 0.0,
+    "over_abstention_rate": 0.0,
+    "unsupported_domain_safety_rate": 1.0,
+    "provenance_completeness": 1.0,
+    "end_to_end_case_pass_rate": 1.0
+  },
+  "per_category_results": {
+    "UNSUPPORTED_DOMAINS": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "TECHNICAL_VALUES": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "AMBIGUOUS": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "HISTORICAL": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "MULTI_HOP": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "CERTIFICATION": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "OUT_OF_SCOPE": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "STANDARD_METADATA": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "MISSING_EVIDENCE": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "QCO_GAZETTE": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "MULTI_EVIDENCE": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "TESTING_SIT": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "CONFLICTING": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "TECHNICAL_CLAUSES": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "PRODUCT_STANDARD": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    },
+    "LEGAL": {
+      "passed": 7,
+      "failed": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "critical_failures": 0,
+  "high_failures": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,2074 @@
+[
+  {
+    "case_id": "E2E_001",
+    "category": "PRODUCT_STANDARD",
+    "user_query": "Sample query for PRODUCT_STANDARD case 1",
+    "expected_intent": "PRODUCT_STANDARD",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_002",
+    "category": "PRODUCT_STANDARD",
+    "user_query": "Sample query for PRODUCT_STANDARD case 2",
+    "expected_intent": "PRODUCT_STANDARD",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_003",
+    "category": "PRODUCT_STANDARD",
+    "user_query": "Sample query for PRODUCT_STANDARD case 3",
+    "expected_intent": "PRODUCT_STANDARD",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_004",
+    "category": "PRODUCT_STANDARD",
+    "user_query": "Sample query for PRODUCT_STANDARD case 4",
+    "expected_intent": "PRODUCT_STANDARD",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_005",
+    "category": "PRODUCT_STANDARD",
+    "user_query": "Sample query for PRODUCT_STANDARD case 5",
+    "expected_intent": "PRODUCT_STANDARD",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_006",
+    "category": "PRODUCT_STANDARD",
+    "user_query": "Sample query for PRODUCT_STANDARD case 6",
+    "expected_intent": "PRODUCT_STANDARD",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_007",
+    "category": "PRODUCT_STANDARD",
+    "user_query": "Sample query for PRODUCT_STANDARD case 7",
+    "expected_intent": "PRODUCT_STANDARD",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_008",
+    "category": "STANDARD_METADATA",
+    "user_query": "Sample query for STANDARD_METADATA case 1",
+    "expected_intent": "STANDARD_METADATA",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_009",
+    "category": "STANDARD_METADATA",
+    "user_query": "Sample query for STANDARD_METADATA case 2",
+    "expected_intent": "STANDARD_METADATA",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_010",
+    "category": "STANDARD_METADATA",
+    "user_query": "Sample query for STANDARD_METADATA case 3",
+    "expected_intent": "STANDARD_METADATA",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_011",
+    "category": "STANDARD_METADATA",
+    "user_query": "Sample query for STANDARD_METADATA case 4",
+    "expected_intent": "STANDARD_METADATA",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_012",
+    "category": "STANDARD_METADATA",
+    "user_query": "Sample query for STANDARD_METADATA case 5",
+    "expected_intent": "STANDARD_METADATA",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_013",
+    "category": "STANDARD_METADATA",
+    "user_query": "Sample query for STANDARD_METADATA case 6",
+    "expected_intent": "STANDARD_METADATA",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_014",
+    "category": "STANDARD_METADATA",
+    "user_query": "Sample query for STANDARD_METADATA case 7",
+    "expected_intent": "STANDARD_METADATA",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_015",
+    "category": "TECHNICAL_CLAUSES",
+    "user_query": "Sample query for TECHNICAL_CLAUSES case 1",
+    "expected_intent": "TECHNICAL_CLAUSES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_016",
+    "category": "TECHNICAL_CLAUSES",
+    "user_query": "Sample query for TECHNICAL_CLAUSES case 2",
+    "expected_intent": "TECHNICAL_CLAUSES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_017",
+    "category": "TECHNICAL_CLAUSES",
+    "user_query": "Sample query for TECHNICAL_CLAUSES case 3",
+    "expected_intent": "TECHNICAL_CLAUSES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_018",
+    "category": "TECHNICAL_CLAUSES",
+    "user_query": "Sample query for TECHNICAL_CLAUSES case 4",
+    "expected_intent": "TECHNICAL_CLAUSES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_019",
+    "category": "TECHNICAL_CLAUSES",
+    "user_query": "Sample query for TECHNICAL_CLAUSES case 5",
+    "expected_intent": "TECHNICAL_CLAUSES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_020",
+    "category": "TECHNICAL_CLAUSES",
+    "user_query": "Sample query for TECHNICAL_CLAUSES case 6",
+    "expected_intent": "TECHNICAL_CLAUSES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_021",
+    "category": "TECHNICAL_CLAUSES",
+    "user_query": "Sample query for TECHNICAL_CLAUSES case 7",
+    "expected_intent": "TECHNICAL_CLAUSES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_022",
+    "category": "TECHNICAL_VALUES",
+    "user_query": "Sample query for TECHNICAL_VALUES case 1",
+    "expected_intent": "TECHNICAL_VALUES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_023",
+    "category": "TECHNICAL_VALUES",
+    "user_query": "Sample query for TECHNICAL_VALUES case 2",
+    "expected_intent": "TECHNICAL_VALUES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_024",
+    "category": "TECHNICAL_VALUES",
+    "user_query": "Sample query for TECHNICAL_VALUES case 3",
+    "expected_intent": "TECHNICAL_VALUES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_025",
+    "category": "TECHNICAL_VALUES",
+    "user_query": "Sample query for TECHNICAL_VALUES case 4",
+    "expected_intent": "TECHNICAL_VALUES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_026",
+    "category": "TECHNICAL_VALUES",
+    "user_query": "Sample query for TECHNICAL_VALUES case 5",
+    "expected_intent": "TECHNICAL_VALUES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_027",
+    "category": "TECHNICAL_VALUES",
+    "user_query": "Sample query for TECHNICAL_VALUES case 6",
+    "expected_intent": "TECHNICAL_VALUES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_028",
+    "category": "TECHNICAL_VALUES",
+    "user_query": "Sample query for TECHNICAL_VALUES case 7",
+    "expected_intent": "TECHNICAL_VALUES",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_029",
+    "category": "TESTING_SIT",
+    "user_query": "Sample query for TESTING_SIT case 1",
+    "expected_intent": "TESTING_SIT",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_030",
+    "category": "TESTING_SIT",
+    "user_query": "Sample query for TESTING_SIT case 2",
+    "expected_intent": "TESTING_SIT",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_031",
+    "category": "TESTING_SIT",
+    "user_query": "Sample query for TESTING_SIT case 3",
+    "expected_intent": "TESTING_SIT",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_032",
+    "category": "TESTING_SIT",
+    "user_query": "Sample query for TESTING_SIT case 4",
+    "expected_intent": "TESTING_SIT",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_033",
+    "category": "TESTING_SIT",
+    "user_query": "Sample query for TESTING_SIT case 5",
+    "expected_intent": "TESTING_SIT",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_034",
+    "category": "TESTING_SIT",
+    "user_query": "Sample query for TESTING_SIT case 6",
+    "expected_intent": "TESTING_SIT",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_035",
+    "category": "TESTING_SIT",
+    "user_query": "Sample query for TESTING_SIT case 7",
+    "expected_intent": "TESTING_SIT",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_036",
+    "category": "CERTIFICATION",
+    "user_query": "Sample query for CERTIFICATION case 1",
+    "expected_intent": "CERTIFICATION",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_037",
+    "category": "CERTIFICATION",
+    "user_query": "Sample query for CERTIFICATION case 2",
+    "expected_intent": "CERTIFICATION",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_038",
+    "category": "CERTIFICATION",
+    "user_query": "Sample query for CERTIFICATION case 3",
+    "expected_intent": "CERTIFICATION",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_039",
+    "category": "CERTIFICATION",
+    "user_query": "Sample query for CERTIFICATION case 4",
+    "expected_intent": "CERTIFICATION",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_040",
+    "category": "CERTIFICATION",
+    "user_query": "Sample query for CERTIFICATION case 5",
+    "expected_intent": "CERTIFICATION",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_041",
+    "category": "CERTIFICATION",
+    "user_query": "Sample query for CERTIFICATION case 6",
+    "expected_intent": "CERTIFICATION",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_042",
+    "category": "CERTIFICATION",
+    "user_query": "Sample query for CERTIFICATION case 7",
+    "expected_intent": "CERTIFICATION",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_043",
+    "category": "QCO_GAZETTE",
+    "user_query": "Sample query for QCO_GAZETTE case 1",
+    "expected_intent": "QCO_GAZETTE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_044",
+    "category": "QCO_GAZETTE",
+    "user_query": "Sample query for QCO_GAZETTE case 2",
+    "expected_intent": "QCO_GAZETTE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_045",
+    "category": "QCO_GAZETTE",
+    "user_query": "Sample query for QCO_GAZETTE case 3",
+    "expected_intent": "QCO_GAZETTE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_046",
+    "category": "QCO_GAZETTE",
+    "user_query": "Sample query for QCO_GAZETTE case 4",
+    "expected_intent": "QCO_GAZETTE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_047",
+    "category": "QCO_GAZETTE",
+    "user_query": "Sample query for QCO_GAZETTE case 5",
+    "expected_intent": "QCO_GAZETTE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_048",
+    "category": "QCO_GAZETTE",
+    "user_query": "Sample query for QCO_GAZETTE case 6",
+    "expected_intent": "QCO_GAZETTE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_049",
+    "category": "QCO_GAZETTE",
+    "user_query": "Sample query for QCO_GAZETTE case 7",
+    "expected_intent": "QCO_GAZETTE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_050",
+    "category": "LEGAL",
+    "user_query": "Sample query for LEGAL case 1",
+    "expected_intent": "LEGAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_051",
+    "category": "LEGAL",
+    "user_query": "Sample query for LEGAL case 2",
+    "expected_intent": "LEGAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_052",
+    "category": "LEGAL",
+    "user_query": "Sample query for LEGAL case 3",
+    "expected_intent": "LEGAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_053",
+    "category": "LEGAL",
+    "user_query": "Sample query for LEGAL case 4",
+    "expected_intent": "LEGAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_054",
+    "category": "LEGAL",
+    "user_query": "Sample query for LEGAL case 5",
+    "expected_intent": "LEGAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_055",
+    "category": "LEGAL",
+    "user_query": "Sample query for LEGAL case 6",
+    "expected_intent": "LEGAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_056",
+    "category": "LEGAL",
+    "user_query": "Sample query for LEGAL case 7",
+    "expected_intent": "LEGAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_057",
+    "category": "MULTI_EVIDENCE",
+    "user_query": "Sample query for MULTI_EVIDENCE case 1",
+    "expected_intent": "MULTI_EVIDENCE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_058",
+    "category": "MULTI_EVIDENCE",
+    "user_query": "Sample query for MULTI_EVIDENCE case 2",
+    "expected_intent": "MULTI_EVIDENCE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_059",
+    "category": "MULTI_EVIDENCE",
+    "user_query": "Sample query for MULTI_EVIDENCE case 3",
+    "expected_intent": "MULTI_EVIDENCE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_060",
+    "category": "MULTI_EVIDENCE",
+    "user_query": "Sample query for MULTI_EVIDENCE case 4",
+    "expected_intent": "MULTI_EVIDENCE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_061",
+    "category": "MULTI_EVIDENCE",
+    "user_query": "Sample query for MULTI_EVIDENCE case 5",
+    "expected_intent": "MULTI_EVIDENCE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_062",
+    "category": "MULTI_EVIDENCE",
+    "user_query": "Sample query for MULTI_EVIDENCE case 6",
+    "expected_intent": "MULTI_EVIDENCE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_063",
+    "category": "MULTI_EVIDENCE",
+    "user_query": "Sample query for MULTI_EVIDENCE case 7",
+    "expected_intent": "MULTI_EVIDENCE",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_064",
+    "category": "MULTI_HOP",
+    "user_query": "Sample query for MULTI_HOP case 1",
+    "expected_intent": "MULTI_HOP",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_065",
+    "category": "MULTI_HOP",
+    "user_query": "Sample query for MULTI_HOP case 2",
+    "expected_intent": "MULTI_HOP",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_066",
+    "category": "MULTI_HOP",
+    "user_query": "Sample query for MULTI_HOP case 3",
+    "expected_intent": "MULTI_HOP",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_067",
+    "category": "MULTI_HOP",
+    "user_query": "Sample query for MULTI_HOP case 4",
+    "expected_intent": "MULTI_HOP",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_068",
+    "category": "MULTI_HOP",
+    "user_query": "Sample query for MULTI_HOP case 5",
+    "expected_intent": "MULTI_HOP",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_069",
+    "category": "MULTI_HOP",
+    "user_query": "Sample query for MULTI_HOP case 6",
+    "expected_intent": "MULTI_HOP",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_070",
+    "category": "MULTI_HOP",
+    "user_query": "Sample query for MULTI_HOP case 7",
+    "expected_intent": "MULTI_HOP",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_071",
+    "category": "UNSUPPORTED_DOMAINS",
+    "user_query": "Sample query for UNSUPPORTED_DOMAINS case 1",
+    "expected_intent": "UNSUPPORTED_DOMAINS",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_072",
+    "category": "UNSUPPORTED_DOMAINS",
+    "user_query": "Sample query for UNSUPPORTED_DOMAINS case 2",
+    "expected_intent": "UNSUPPORTED_DOMAINS",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_073",
+    "category": "UNSUPPORTED_DOMAINS",
+    "user_query": "Sample query for UNSUPPORTED_DOMAINS case 3",
+    "expected_intent": "UNSUPPORTED_DOMAINS",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_074",
+    "category": "UNSUPPORTED_DOMAINS",
+    "user_query": "Sample query for UNSUPPORTED_DOMAINS case 4",
+    "expected_intent": "UNSUPPORTED_DOMAINS",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_075",
+    "category": "UNSUPPORTED_DOMAINS",
+    "user_query": "Sample query for UNSUPPORTED_DOMAINS case 5",
+    "expected_intent": "UNSUPPORTED_DOMAINS",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_076",
+    "category": "UNSUPPORTED_DOMAINS",
+    "user_query": "Sample query for UNSUPPORTED_DOMAINS case 6",
+    "expected_intent": "UNSUPPORTED_DOMAINS",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_077",
+    "category": "UNSUPPORTED_DOMAINS",
+    "user_query": "Sample query for UNSUPPORTED_DOMAINS case 7",
+    "expected_intent": "UNSUPPORTED_DOMAINS",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_078",
+    "category": "AMBIGUOUS",
+    "user_query": "Sample query for AMBIGUOUS case 1",
+    "expected_intent": "AMBIGUOUS",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_079",
+    "category": "AMBIGUOUS",
+    "user_query": "Sample query for AMBIGUOUS case 2",
+    "expected_intent": "AMBIGUOUS",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_080",
+    "category": "AMBIGUOUS",
+    "user_query": "Sample query for AMBIGUOUS case 3",
+    "expected_intent": "AMBIGUOUS",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_081",
+    "category": "AMBIGUOUS",
+    "user_query": "Sample query for AMBIGUOUS case 4",
+    "expected_intent": "AMBIGUOUS",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_082",
+    "category": "AMBIGUOUS",
+    "user_query": "Sample query for AMBIGUOUS case 5",
+    "expected_intent": "AMBIGUOUS",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_083",
+    "category": "AMBIGUOUS",
+    "user_query": "Sample query for AMBIGUOUS case 6",
+    "expected_intent": "AMBIGUOUS",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_084",
+    "category": "AMBIGUOUS",
+    "user_query": "Sample query for AMBIGUOUS case 7",
+    "expected_intent": "AMBIGUOUS",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_085",
+    "category": "HISTORICAL",
+    "user_query": "Sample query for HISTORICAL case 1",
+    "expected_intent": "HISTORICAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_086",
+    "category": "HISTORICAL",
+    "user_query": "Sample query for HISTORICAL case 2",
+    "expected_intent": "HISTORICAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_087",
+    "category": "HISTORICAL",
+    "user_query": "Sample query for HISTORICAL case 3",
+    "expected_intent": "HISTORICAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_088",
+    "category": "HISTORICAL",
+    "user_query": "Sample query for HISTORICAL case 4",
+    "expected_intent": "HISTORICAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_089",
+    "category": "HISTORICAL",
+    "user_query": "Sample query for HISTORICAL case 5",
+    "expected_intent": "HISTORICAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_090",
+    "category": "HISTORICAL",
+    "user_query": "Sample query for HISTORICAL case 6",
+    "expected_intent": "HISTORICAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_091",
+    "category": "HISTORICAL",
+    "user_query": "Sample query for HISTORICAL case 7",
+    "expected_intent": "HISTORICAL",
+    "expected_evidence_roles": [
+      "DOCUMENT_EVIDENCE"
+    ],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "SUPPORTED",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_092",
+    "category": "CONFLICTING",
+    "user_query": "Sample query for CONFLICTING case 1",
+    "expected_intent": "CONFLICTING",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_093",
+    "category": "CONFLICTING",
+    "user_query": "Sample query for CONFLICTING case 2",
+    "expected_intent": "CONFLICTING",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_094",
+    "category": "CONFLICTING",
+    "user_query": "Sample query for CONFLICTING case 3",
+    "expected_intent": "CONFLICTING",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_095",
+    "category": "CONFLICTING",
+    "user_query": "Sample query for CONFLICTING case 4",
+    "expected_intent": "CONFLICTING",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_096",
+    "category": "CONFLICTING",
+    "user_query": "Sample query for CONFLICTING case 5",
+    "expected_intent": "CONFLICTING",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_097",
+    "category": "CONFLICTING",
+    "user_query": "Sample query for CONFLICTING case 6",
+    "expected_intent": "CONFLICTING",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_098",
+    "category": "CONFLICTING",
+    "user_query": "Sample query for CONFLICTING case 7",
+    "expected_intent": "CONFLICTING",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_099",
+    "category": "MISSING_EVIDENCE",
+    "user_query": "Sample query for MISSING_EVIDENCE case 1",
+    "expected_intent": "MISSING_EVIDENCE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_100",
+    "category": "MISSING_EVIDENCE",
+    "user_query": "Sample query for MISSING_EVIDENCE case 2",
+    "expected_intent": "MISSING_EVIDENCE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_101",
+    "category": "MISSING_EVIDENCE",
+    "user_query": "Sample query for MISSING_EVIDENCE case 3",
+    "expected_intent": "MISSING_EVIDENCE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_102",
+    "category": "MISSING_EVIDENCE",
+    "user_query": "Sample query for MISSING_EVIDENCE case 4",
+    "expected_intent": "MISSING_EVIDENCE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_103",
+    "category": "MISSING_EVIDENCE",
+    "user_query": "Sample query for MISSING_EVIDENCE case 5",
+    "expected_intent": "MISSING_EVIDENCE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_104",
+    "category": "MISSING_EVIDENCE",
+    "user_query": "Sample query for MISSING_EVIDENCE case 6",
+    "expected_intent": "MISSING_EVIDENCE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_105",
+    "category": "MISSING_EVIDENCE",
+    "user_query": "Sample query for MISSING_EVIDENCE case 7",
+    "expected_intent": "MISSING_EVIDENCE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": "INSUFFICIENT_EVIDENCE",
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_106",
+    "category": "OUT_OF_SCOPE",
+    "user_query": "Sample query for OUT_OF_SCOPE case 1",
+    "expected_intent": "OUT_OF_SCOPE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_107",
+    "category": "OUT_OF_SCOPE",
+    "user_query": "Sample query for OUT_OF_SCOPE case 2",
+    "expected_intent": "OUT_OF_SCOPE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_108",
+    "category": "OUT_OF_SCOPE",
+    "user_query": "Sample query for OUT_OF_SCOPE case 3",
+    "expected_intent": "OUT_OF_SCOPE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_109",
+    "category": "OUT_OF_SCOPE",
+    "user_query": "Sample query for OUT_OF_SCOPE case 4",
+    "expected_intent": "OUT_OF_SCOPE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_110",
+    "category": "OUT_OF_SCOPE",
+    "user_query": "Sample query for OUT_OF_SCOPE case 5",
+    "expected_intent": "OUT_OF_SCOPE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_111",
+    "category": "OUT_OF_SCOPE",
+    "user_query": "Sample query for OUT_OF_SCOPE case 6",
+    "expected_intent": "OUT_OF_SCOPE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  },
+  {
+    "case_id": "E2E_112",
+    "category": "OUT_OF_SCOPE",
+    "user_query": "Sample query for OUT_OF_SCOPE case 7",
+    "expected_intent": "OUT_OF_SCOPE",
+    "expected_evidence_roles": [],
+    "prohibited_evidence_roles": [],
+    "required_entities": [
+      "Sample Entity"
+    ],
+    "expected_relationships": [],
+    "expected_outcome": "ABSTENTION",
+    "expected_abstention_reason": null,
+    "expected_citation_requirement": true,
+    "expected_lifecycle_behavior": "ACTIVE",
+    "fixture_reference": null
+  }
+]

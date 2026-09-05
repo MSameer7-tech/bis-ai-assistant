@@ -1,0 +1,188 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BISDocumentProvenanceSchema",
+  "description": "Mandatory schema separating Document Identity, Source Endpoint Metadata, and Acquisition Metadata.",
+  "type": "object",
+  "required": [
+    "document",
+    "source",
+    "acquisition"
+  ],
+  "properties": {
+    "document": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "document_family_id",
+        "title",
+        "document_type",
+        "authority",
+        "status"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "description": "Deterministic canonical identity (e.g. IS-1786-2008, IS-16046-P2-2018)"
+        },
+        "document_family_id": {
+          "type": "string",
+          "description": "Base standard family ID (e.g. IS-1786, IS-16046)"
+        },
+        "title": {
+          "type": "string",
+          "description": "Formal document title"
+        },
+        "document_type": {
+          "type": "string",
+          "enum": [
+            "INDIAN_STANDARD",
+            "AMENDMENT",
+            "CORRIGENDUM",
+            "REAFFIRMATION",
+            "WITHDRAWAL_NOTICE",
+            "STANDARD_CATALOG_ENTRY",
+            "QCO_NOTIFICATION",
+            "GAZETTE_NOTIFICATION",
+            "PRODUCT_MANUAL",
+            "GROUPING_GUIDELINE",
+            "SIT_SCHEDULE",
+            "SCHEME_REGULATION",
+            "CONFORMITY_ASSESSMENT_GUIDELINE",
+            "LAB_DIRECTORY",
+            "LAB_SCOPE",
+            "LAB_RECOGNITION_ORDER",
+            "LICENCE_RECORD",
+            "CRS_REGISTRATION",
+            "HALLMARKING_ORDER",
+            "AHC_RECORD",
+            "JEWELLER_REGISTRATION",
+            "CONSUMER_GUIDE",
+            "FAQ",
+            "BIS_CARE_GUIDANCE",
+            "STATUTORY_ACT"
+          ]
+        },
+        "authority": {
+          "type": "string",
+          "description": "Issuing legal authority"
+        },
+        "authority_class": {
+          "type": "string",
+          "enum": ["PRIMARY_NORMATIVE", "OFFICIAL_OPERATIONAL", "OFFICIAL_INFORMATIVE", "STATUTORY_FRAMEWORK"]
+        },
+        "edition_year": {
+          "type": ["integer", "null"]
+        },
+        "published_date_raw": {
+          "type": ["string", "null"]
+        },
+        "published_date_normalized": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "effective_date_raw": {
+          "type": ["string", "null"]
+        },
+        "effective_date_normalized": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "revision": {
+          "type": ["string", "null"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["CURRENT", "AMENDED", "SUPERSEDED", "WITHDRAWN", "DRAFT_FOR_COMMENT"]
+        },
+        "parent_document_id": {
+          "type": ["string", "null"]
+        },
+        "supersedes": {
+          "type": ["string", "null"]
+        },
+        "superseded_by": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "source_family_id",
+        "source_name",
+        "canonical_source_url",
+        "source_ownership"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "description": "Registered source endpoint ID (e.g. SRC-001)"
+        },
+        "source_family_id": {
+          "type": "string",
+          "description": "Governing source family ID (e.g. SRCF-001)"
+        },
+        "source_name": {
+          "type": "string"
+        },
+        "canonical_source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "source_ownership": {
+          "type": "string",
+          "enum": ["BIS_PUBLISHED", "BIS_OPERATED", "STATUTORY_EXTERNAL"]
+        }
+      }
+    },
+    "acquisition": {
+      "type": "object",
+      "required": [
+        "retrieved_at",
+        "final_url",
+        "http_status",
+        "content_type",
+        "sha256",
+        "file_type",
+        "acquisition_method"
+      ],
+      "properties": {
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "final_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "http_status": {
+          "type": "integer"
+        },
+        "content_type": {
+          "type": "string"
+        },
+        "content_length_bytes": {
+          "type": "integer"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "file_type": {
+          "type": "string",
+          "enum": ["PDF", "HTML", "JSON"]
+        },
+        "acquisition_method": {
+          "type": "string"
+        },
+        "tls_verified": {
+          "type": "boolean"
+        },
+        "validation_passed": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

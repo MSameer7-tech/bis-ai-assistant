@@ -1,0 +1,19 @@
+{
+  "total_cases_evaluated": 108,
+  "passed": 108,
+  "failed": 0,
+  "critical_provider_failures": 0,
+  "critical_evidence_role_violations": 0,
+  "critical_citation_bypasses": 0,
+  "critical_hallucinations": 0,
+  "unsupported_domains_abstained": true,
+  "mock_data_excluded": true,
+  "lifecycle_safety_passed": true,
+  "numerical_verification_passed": true,
+  "multihop_relationship_safety_passed": true,
+  "provenance_checks_passed": true,
+  "incremental_rollback_passed": true,
+  "hardcoding_audit_passed": true,
+  "frozen_layer_regression_passed": true,
+  "secrets_audit_passed": true
+}

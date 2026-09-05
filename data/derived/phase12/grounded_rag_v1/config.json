@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "description": "Phase 12.C Grounded RAG Configuration",
+  "calibration_status": "BASELINE_UNCALIBRATED",
+  "confidence": {
+    "high_threshold": 0.8,
+    "medium_threshold": 0.5,
+    "notes": "Uncalibrated baseline scores. Do not interpret as probability of correctness."
+  },
+  "generation": {
+    "mode": "DETERMINISTIC_TEMPLATE",
+    "notes": "LLM text generation deferred. Strictly deterministic templates."
+  }
+}

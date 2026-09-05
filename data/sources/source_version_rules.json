@@ -1,0 +1,110 @@
+{
+  "manifest_version": "1.1",
+  "phase": "Phase 2B: Official Source Registry",
+  "project": "BIS AI Technical Assistant",
+  "description": "Rules for deterministic document identity generation, amendment attachment, supersession detection, and deduplication with structured component extraction.",
+  "document_identity_models": {
+    "standard_specification": {
+      "canonical_pattern": "IS-{standard_number}{part_suffix}-{edition_year}",
+      "structured_fields": {
+        "document_family_id": "IS-{standard_number}",
+        "standard_number": "string (e.g. '1786', '302', '16046')",
+        "part": "string or null (e.g. '1', '2', '2-1')",
+        "section": "string or null",
+        "edition_year": "integer (e.g. 2008, 2018)",
+        "reaffirmation_year": "integer or null",
+        "document_kind": "STANDARD"
+      },
+      "examples": [
+        {
+          "input": {"standard_number": "1786", "part": null, "edition_year": 2008},
+          "canonical_id": "IS-1786-2008"
+        },
+        {
+          "input": {"standard_number": "16046", "part": "2", "edition_year": 2018},
+          "canonical_id": "IS-16046-P2-2018"
+        }
+      ]
+    },
+    "standard_amendment": {
+      "canonical_pattern": "IS-{standard_number}{part_suffix}-{edition_year}-A{amendment_number}",
+      "structured_fields": {
+        "document_family_id": "IS-{standard_number}",
+        "parent_document_id": "IS-{standard_number}{part_suffix}-{edition_year}",
+        "amendment_number": "integer (e.g. 1, 2, 3)",
+        "amendment_month_year": "string or null",
+        "document_kind": "AMENDMENT"
+      },
+      "examples": [
+        {
+          "input": {"standard_number": "1786", "part": null, "edition_year": 2008, "amendment_number": 1},
+          "canonical_id": "IS-1786-2008-A1"
+        }
+      ]
+    },
+    "gazette_qco": {
+      "canonical_pattern": "QCO-{ministry_acronym}-{notification_number}-{year}",
+      "structured_fields": {
+        "ministry_acronym": "string (e.g. 'DPIIT', 'MEITY', 'MOEFCC', 'MOS')",
+        "notification_number": "string (e.g. 'SO1245E')",
+        "year": "integer (e.g. 2023)",
+        "document_kind": "QCO"
+      },
+      "examples": [
+        {
+          "input": {"ministry_acronym": "DPIIT", "notification_number": "SO1245E", "year": 2023},
+          "canonical_id": "QCO-DPIIT-SO1245E-2023"
+        }
+      ]
+    },
+    "product_manual": {
+      "canonical_pattern": "PM-IS-{standard_number}{part_suffix}-{edition_year}-{version}",
+      "structured_fields": {
+        "standard_number": "string",
+        "part": "string or null",
+        "edition_year": "integer",
+        "version": "string (e.g. 'V1')",
+        "document_kind": "PRODUCT_MANUAL"
+      },
+      "examples": [
+        {
+          "input": {"standard_number": "374", "part": null, "edition_year": 2019, "version": "V1"},
+          "canonical_id": "PM-IS-374-2019-V1"
+        }
+      ]
+    },
+    "sit_schedule": {
+      "canonical_pattern": "SIT-IS-{standard_number}{part_suffix}-{edition_year}-{revision_month_year}",
+      "structured_fields": {
+        "standard_number": "string",
+        "part": "string or null",
+        "edition_year": "integer",
+        "revision_month_year": "string (e.g. 'NOV2021')",
+        "document_kind": "SIT_SCHEDULE"
+      },
+      "examples": [
+        {
+          "input": {"standard_number": "1786", "part": null, "edition_year": 2008, "revision_month_year": "NOV2021"},
+          "canonical_id": "SIT-IS-1786-2008-NOV2021"
+        }
+      ]
+    }
+  },
+  "version_lifecycle_states": [
+    "CURRENT",
+    "AMENDED",
+    "SUPERSEDED",
+    "WITHDRAWN",
+    "DRAFT_FOR_COMMENT"
+  ],
+  "content_hash_rules": {
+    "algorithm": "SHA-256",
+    "canonical_representation": "Raw binary payload of retrieved PDF/HTML",
+    "deduplication_logic": {
+      "same_id_same_hash": "UNCHANGED_DOCUMENT",
+      "same_id_different_hash": "CONTENT_CHANGED_REQUIRES_VERSION_REVIEW",
+      "different_id_same_hash": "DUPLICATE_REPRESENTATION_ALIAS",
+      "different_id_different_hash": "DISTINCT_DOCUMENTS"
+    }
+  }
+}

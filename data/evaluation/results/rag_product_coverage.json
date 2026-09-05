@@ -1,0 +1,252 @@
+{
+  "PS-001": {
+    "id": "PS-001",
+    "name": "Electric Ceiling Fans",
+    "standard": "IS 374",
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "evidence_backed": 21,
+    "metadata_only": 0
+  },
+  "PS-002": {
+    "id": "PS-002",
+    "name": "TMT Steel Reinforcement Bars",
+    "standard": "IS 1786",
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "evidence_backed": 21,
+    "metadata_only": 0
+  },
+  "PS-003": {
+    "id": "PS-003",
+    "name": "Lithium-Ion Secondary Batteries & Cells",
+    "standard": "IS 16046 (Part 2)",
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "evidence_backed": 21,
+    "metadata_only": 0
+  },
+  "PS-004": {
+    "id": "PS-004",
+    "name": "Gold Jewellery & Gold Bullion (Hallmarking)",
+    "standard": "IS 1417",
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "evidence_backed": 21,
+    "metadata_only": 0
+  },
+  "PS-005": {
+    "id": "PS-005",
+    "name": "Silver Jewellery & Silver Bullion (Hallmarking)",
+    "standard": "IS 2112",
+    "total": 17,
+    "passed": 17,
+    "failed": 0,
+    "evidence_backed": 17,
+    "metadata_only": 0
+  },
+  "PS-006": {
+    "id": "PS-006",
+    "name": "Self-Ballasted LED Lamps",
+    "standard": "IS 16102 (Part 1)",
+    "total": 17,
+    "passed": 17,
+    "failed": 0,
+    "evidence_backed": 17,
+    "metadata_only": 0
+  },
+  "PS-007": {
+    "id": "PS-007",
+    "name": "Ordinary Portland Cement (33, 43, 53 Grades)",
+    "standard": "IS 269",
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "evidence_backed": 21,
+    "metadata_only": 0
+  },
+  "PS-008": {
+    "id": "PS-008",
+    "name": "Portland Pozzolana Cement (PPC)",
+    "standard": "IS 1489 (Part 1)",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-009": {
+    "id": "PS-009",
+    "name": "Protective Two-Wheeler Helmets",
+    "standard": "IS 4151",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-010": {
+    "id": "PS-010",
+    "name": "Domestic Gas Stoves (LPG)",
+    "standard": "IS 4246",
+    "total": 17,
+    "passed": 17,
+    "failed": 0,
+    "evidence_backed": 17,
+    "metadata_only": 0
+  },
+  "PS-011": {
+    "id": "PS-011",
+    "name": "Domestic Pressure Cookers",
+    "standard": "IS 2347",
+    "total": 17,
+    "passed": 17,
+    "failed": 0,
+    "evidence_backed": 17,
+    "metadata_only": 0
+  },
+  "PS-012": {
+    "id": "PS-012",
+    "name": "Packaged Drinking Water",
+    "standard": "IS 14543",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-013": {
+    "id": "PS-013",
+    "name": "Packaged Natural Mineral Water",
+    "standard": "IS 13428",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-014": {
+    "id": "PS-014",
+    "name": "Stationary Storage Electric Water Heaters (Geysers)",
+    "standard": "IS 2082",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-015": {
+    "id": "PS-015",
+    "name": "Laptops & Notebook Computers",
+    "standard": "IS 13252 (Part 1)",
+    "total": 17,
+    "passed": 17,
+    "failed": 0,
+    "evidence_backed": 17,
+    "metadata_only": 0
+  },
+  "PS-016": {
+    "id": "PS-016",
+    "name": "Smartphones & Mobile Phones",
+    "standard": "IS 13252 (Part 1)",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-017": {
+    "id": "PS-017",
+    "name": "Switches for Domestic and Similar Fixed Electrical Installations",
+    "standard": "IS 3854",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-018": {
+    "id": "PS-018",
+    "name": "Plugs and Socket-Outlets",
+    "standard": "IS 1293",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-019": {
+    "id": "PS-019",
+    "name": "PVC Insulated Cables for Working Voltages up to 1100 V",
+    "standard": "IS 694",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-020": {
+    "id": "PS-020",
+    "name": "Safety Footwear / Shoes",
+    "standard": "IS 15298 (Part 2)",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-021": {
+    "id": "PS-021",
+    "name": "Structural Steel (Standard Quality)",
+    "standard": "IS 2062",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-022": {
+    "id": "PS-022",
+    "name": "UPVC Pipes for Potable Water Supplies",
+    "standard": "IS 4985",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-023": {
+    "id": "PS-023",
+    "name": "Infant Milk Substitutes / Infant Formula",
+    "standard": "IS 14433",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-024": {
+    "id": "PS-024",
+    "name": "Medical Grade Examination Gloves",
+    "standard": "IS 15354 (Part 1)",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  },
+  "PS-025": {
+    "id": "PS-025",
+    "name": "Domestic Electric Irons",
+    "standard": "IS 366",
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "evidence_backed": 16,
+    "metadata_only": 0
+  }
+}

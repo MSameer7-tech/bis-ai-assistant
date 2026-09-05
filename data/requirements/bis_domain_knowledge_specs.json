@@ -1,0 +1,81 @@
+{
+  "manifest_version": "1.0",
+  "project": "BIS AI Technical Assistant",
+  "phase": "Phase 1: SIH PS Requirements & System Scope",
+  "description": "Catalog of BIS-specific domain knowledge facts that the assistant must acquire dynamically from authoritative BIS sources to satisfy PS capabilities.",
+  "classification": "DOMAIN_KNOWLEDGE",
+  "domain_elements": [
+    {
+      "element_id": "DK-SCHEME-I",
+      "concept": "Scheme-I Product Certification (ISI Mark)",
+      "statutory_basis": "BIS (Conformity Assessment) Regulations 2018, Scheme I",
+      "authoritative_source_family": "CONFORMITY_SCHEMES",
+      "applies_to": ["Domestic & foreign manufacturing units requiring factory inspection & standard mark licence (CM/L)"],
+      "satisfies_capability": "RQ-003"
+    },
+    {
+      "element_id": "DK-SCHEME-II",
+      "concept": "Scheme-II Compulsory Registration Scheme (CRS)",
+      "statutory_basis": "BIS (Conformity Assessment) Regulations 2018, Scheme II & MeitY Orders",
+      "authoritative_source_family": "CONFORMITY_SCHEMES",
+      "applies_to": ["Electronic, information technology, and photovoltaic goods requiring test report-based self-declaration (R-number)"],
+      "satisfies_capability": "RQ-003"
+    },
+    {
+      "element_id": "DK-SCHEME-IV",
+      "concept": "Scheme-IV Hallmarking of Precious Metals",
+      "statutory_basis": "Bureau of Indian Standards (Hallmarking) Regulations 2018",
+      "authoritative_source_family": "CONFORMITY_SCHEMES",
+      "applies_to": ["Gold and silver jewellery and bullion hallmarking by Assaying & Hallmarking Centres (AHC)"],
+      "satisfies_capability": "RQ-006"
+    },
+    {
+      "element_id": "DK-QCO-MANDATES",
+      "concept": "Quality Control Orders (QCO)",
+      "statutory_basis": "Section 16 of BIS Act 2016 issued by Central Ministries (DPIIT, MeitY, MoS, etc.)",
+      "authoritative_source_family": "GAZETTE_QCO",
+      "applies_to": ["Statutory orders published in The Gazette of India mandating compulsory standard mark compliance"],
+      "satisfies_capability": "RQ-003"
+    },
+    {
+      "element_id": "DK-HUID-SYSTEM",
+      "concept": "6-Digit Hallmark Unique Identification (HUID)",
+      "statutory_basis": "Hallmarking Orders issued under BIS Act 2016",
+      "authoritative_source_family": "HALLMARKING_ORDERS",
+      "applies_to": ["Laser-etched 6-digit alphanumeric unique identifier for each article of hallmarked jewellery"],
+      "satisfies_capability": "RQ-006"
+    },
+    {
+      "element_id": "DK-PRODUCT-MANUALS",
+      "concept": "BIS Product Manuals",
+      "statutory_basis": "Guidelines for Grant of Licence issued by BIS CMD",
+      "authoritative_source_family": "PRODUCT_MANUALS",
+      "applies_to": ["Specific grouping guidelines, factory testing facilities, and sample sizing for Scheme-I products"],
+      "satisfies_capability": "RQ-004"
+    },
+    {
+      "element_id": "DK-SIT-SCHEDULES",
+      "concept": "Scheme of Inspection and Testing (SIT)",
+      "statutory_basis": "Prescribed quality control schedules under Scheme-I licenses",
+      "authoritative_source_family": "SIT_SCHEDULES",
+      "applies_to": ["Mandatory routine, acceptance, and raw material testing frequencies for operative licences"],
+      "satisfies_capability": "RQ-004"
+    },
+    {
+      "element_id": "DK-LAB-RECOGNITION",
+      "concept": "BIS Laboratory Recognition Scheme (LRS)",
+      "statutory_basis": "BIS Laboratory Policy & Conformity Assessment Regulations",
+      "authoritative_source_family": "LABORATORY_REGISTERS",
+      "applies_to": ["Accredited Central, Regional, and third-party partner laboratories with verified test scopes"],
+      "satisfies_capability": "RQ-007"
+    },
+    {
+      "element_id": "DK-CONSUMER-SERVICES",
+      "concept": "BIS Care & Licence Ledgers",
+      "statutory_basis": "BIS Consumer Affairs Branch & Public Ledgers",
+      "authoritative_source_family": "CONSUMER_PORTALS",
+      "applies_to": ["Public verification of CM/L licence numbers, CRS R-numbers, HUID codes, and complaint redressal"],
+      "satisfies_capability": "RQ-005"
+    }
+  ]
+}

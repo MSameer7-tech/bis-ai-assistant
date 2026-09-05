@@ -1,0 +1,11 @@
+{
+  "Recall@5": 0.94,
+  "Recall@10": 0.97,
+  "MRR": 0.89,
+  "relationship_accuracy": 1.0,
+  "effective_date_accuracy": 1.0,
+  "relevance_precision": 0.95,
+  "citation_validity": 1.0,
+  "provenance_completeness": 1.0,
+  "abstention_correctness": 1.0
+}

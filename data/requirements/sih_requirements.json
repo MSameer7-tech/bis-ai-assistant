@@ -1,0 +1,133 @@
+{
+  "manifest_version": "1.1",
+  "project": "BIS AI Technical Assistant",
+  "phase": "Phase 1: SIH PS Requirements & System Scope",
+  "description": "Formal engineering requirements specification derived from the Smart India Hackathon (SIH) Problem Statement with explicit basis classification.",
+  "classification_schema": {
+    "PS_EXPLICIT": "Directly stated as a core capability or expectation by the SIH Problem Statement.",
+    "ENGINEERING_DERIVED": "Reasonable system architectural requirement derived to operationalize the PS.",
+    "DOMAIN_KNOWLEDGE": "BIS-specific domain knowledge the system must acquire dynamically from authorized BIS sources."
+  },
+  "requirements": [
+    {
+      "id": "RQ-001",
+      "title": "Indian Standards Question Answering",
+      "capability": "Answer Indian Standards Questions",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Provide a specialized regulatory search and reasoning capability over Indian Standards (IS specifications, amendments, test methods, dimensional/chemical parameters, and revision history).",
+      "description": "The assistant shall answer factual, technical, and regulatory questions concerning Indian Standards.",
+      "system_components": ["StandardsRegistry", "UnifiedHybridRetriever", "StandardizedCitationFormatter"],
+      "evaluation_methods": ["Direct standard QA benchmarks", "Clause locator precision tests", "Active revision verification"]
+    },
+    {
+      "id": "RQ-002",
+      "title": "Applicable Standard Recommendation",
+      "capability": "Recommend Applicable Standards",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Enable natural language product identification and disambiguation so users without technical standard knowledge can discover applicable Indian Standards from descriptive queries.",
+      "description": "The assistant shall recommend applicable Indian Standards based on user product descriptions, intended applications, manufacturing materials, and synonyms.",
+      "system_components": ["ProductResolver", "QueryUnderstandingEngine", "UnifiedHybridRetriever"],
+      "evaluation_methods": ["Natural language product queries", "Synonym and alias resolution tests", "Cross-domain disambiguation"]
+    },
+    {
+      "id": "RQ-003",
+      "title": "Certification Scheme Guidance",
+      "capability": "Guide on BIS Certification Schemes",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Model the statutory conformity assessment schemes and Quality Control Orders (QCOs) to determine applicable certification pathways and mandatory vs voluntary legal status.",
+      "description": "The assistant shall guide users regarding applicable BIS certification schemes and mandatory conformity requirements.",
+      "system_components": ["SchemeRegistry", "QCORegistry", "CertificationChainReasoner", "ProductChainPolicy"],
+      "evaluation_methods": ["Scheme classification benchmarks", "Mandatory vs voluntary pathway evaluation", "QCO gazette order verification"]
+    },
+    {
+      "id": "RQ-004",
+      "title": "Certification Process Explanation",
+      "capability": "Explain Certification Processes & Procedures",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Synthesize procedural documentation guidelines, factory audit requirements, and inspection schedules from official BIS Product Manuals and Schemes of Inspection and Testing.",
+      "description": "The assistant shall explain the procedural steps, documentation, testing frequencies, and workflows required to obtain and maintain a BIS licence or registration.",
+      "system_components": ["ProductManualRegistry", "SITRegistry", "LicenceRegistry", "CRSRegistry"],
+      "evaluation_methods": ["Procedural workflow audits", "Application documentation checklist tests", "SIT frequency audits"]
+    },
+    {
+      "id": "RQ-005",
+      "title": "Consumer Queries & Verification",
+      "capability": "Answer Consumer Verification Queries",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Provide verification lookup workflows against BIS operative licence, registration, and hallmarking registries, along with guidance on the BIS Care mobile portal and complaint redressal.",
+      "description": "The assistant shall answer consumer-related queries, including verification of standard marks, licences, registrations, hallmarks, and reporting of counterfeit goods.",
+      "system_components": ["ConsumerRegistry", "LicenceRegistry", "CRSRegistry", "HallmarkRegistry"],
+      "evaluation_methods": ["Licence and registration lookup tests", "HUID validation checks", "Consumer grievance workflow tests"]
+    },
+    {
+      "id": "RQ-006",
+      "title": "Hallmarking Guidance",
+      "capability": "Guide on Precious Metals Hallmarking",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Incorporate precious metals purity standards, 6-digit Hallmark Unique Identification (HUID) workflows, and directory routing for recognized Assaying & Hallmarking Centres (AHCs).",
+      "description": "The assistant shall guide users regarding gold and silver hallmarking processes, purity specifications, hallmark verification, and recognized assaying centers.",
+      "system_components": ["HallmarkRegistry", "CertificationChainReasoner", "RegulatorySafetyLayer"],
+      "evaluation_methods": ["Hallmarking regulation Q&A", "HUID verification tests", "AHC center routing benchmarks"]
+    },
+    {
+      "id": "RQ-007",
+      "title": "Testing Laboratories Lookup",
+      "capability": "Suggest Relevant Testing Laboratories",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Index the official directory of accredited BIS Central, Regional, and partner laboratories with their approved testing scopes to route product queries to eligible test facilities.",
+      "description": "The assistant shall suggest relevant BIS-recognized testing laboratories capable of testing products under specific Indian Standards.",
+      "system_components": ["LaboratoryRegistry", "TestRegistry", "UnifiedHybridRetriever"],
+      "evaluation_methods": ["Standard-to-lab routing tests", "Laboratory capability matrix audits"]
+    },
+    {
+      "id": "RQ-008",
+      "title": "Multilingual Interaction",
+      "capability": "Support Multilingual User Queries",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Integrate multilingual query understanding and localized explanation generation (starting with Hindi and English, architected for regional Indian languages) while preserving exact technical citations.",
+      "description": "The assistant shall support multilingual interaction to ensure accessible communication for diverse stakeholders across India.",
+      "system_components": ["MultilingualQueryLayer", "QueryUnderstandingEngine", "ProductionIntelligenceEngine"],
+      "evaluation_methods": ["Hindi benchmark evaluation", "Cross-lingual intent preservation tests"]
+    },
+    {
+      "id": "RQ-009",
+      "title": "Authorized Knowledge Sources",
+      "capability": "Ground All Responses in Authorized Sources",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Establish an authoritative corpus registry with cryptographic SHA-256 provenance tracking, rejecting unverified external data or ungrounded generative speculation.",
+      "description": "All factual and regulatory answers generated by the assistant must be derived strictly from authorized BIS knowledge sources.",
+      "system_components": ["SourceRegistry", "EvidenceRegistry", "RegulatorySafetyLayer"],
+      "evaluation_methods": ["Provenance ledger audits", "SHA-256 integrity validation", "Zero-unauthorized-source gates"]
+    },
+    {
+      "id": "RQ-010",
+      "title": "Source-Backed Responses & Citations",
+      "capability": "Provide Granular Citations & Provenance",
+      "priority": "MUST",
+      "source_basis": "PS_EXPLICIT",
+      "source_reference": "SIH 2026 Problem Statement",
+      "engineering_interpretation": "Format every answer with granular references to governing documents, standard editions, gazette orders, clause numbers, and page locators appropriate to the query type.",
+      "description": "The assistant shall provide references to relevant documents and specific clauses for all factual claims.",
+      "system_components": ["StandardizedCitationFormatter", "EvidenceRegistry", "ProductionIntelligenceEngine"],
+      "evaluation_methods": ["Clause locator precision tests", "Citation completeness audits", "Anti-metadata-only detection"]
+    }
+  ]
+}

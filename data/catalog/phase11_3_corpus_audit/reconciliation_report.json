@@ -1,0 +1,26 @@
+[
+  {
+    "metric": "invalid",
+    "previous_value_a": "0",
+    "previous_value_b": "1",
+    "recalculated_value": 1,
+    "resolution": "Fixed missing schema handling in rules",
+    "root_cause": "JSON and MD generators evaluated validation independently"
+  },
+  {
+    "metric": "duplicate_URLs",
+    "previous_value_a": "0",
+    "previous_value_b": "931",
+    "recalculated_value": 81,
+    "resolution": "Split metric into 'shared_source_url_group_count' and 'exact_duplicate_record_count'",
+    "root_cause": "Misclassification of legitimate multi-record endpoints (LIMS) as duplicates"
+  },
+  {
+    "metric": "provenance_complete",
+    "previous_value_a": "1017",
+    "previous_value_b": "1130",
+    "recalculated_value": 577,
+    "resolution": "Enforced mutually exclusive PROVENANCE_COMPLETE logic across both generators",
+    "root_cause": "Inconsistent counting of partial metadata in MD generator"
+  }
+]

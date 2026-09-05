@@ -1,0 +1,9 @@
+{
+  "run_type": "FULL",
+  "timestamp": "2026-09-04T07:24:39.228776+00:00",
+  "laboratories_discovered": 40,
+  "scope_records_extracted": 411,
+  "duplicate_rows": 82,
+  "failures": 23,
+  "testing_fees_extracted": 0
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "entity_id": "TEST-LIC-0",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-1",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-2",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-3",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-4",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-5",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-6",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-7",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-8",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-9",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-10",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-11",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-12",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-13",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-LIC-14",
+    "entity_type": "LICENCE"
+  },
+  {
+    "entity_id": "TEST-REG-0",
+    "entity_type": "REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-REG-1",
+    "entity_type": "REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-REG-2",
+    "entity_type": "REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-REG-3",
+    "entity_type": "REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-REG-4",
+    "entity_type": "REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-CRS-0",
+    "entity_type": "CRS_REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-CRS-1",
+    "entity_type": "CRS_REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-CRS-2",
+    "entity_type": "CRS_REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-CRS-3",
+    "entity_type": "CRS_REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-CRS-4",
+    "entity_type": "CRS_REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-HM-0",
+    "entity_type": "HALLMARKING_REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-HM-1",
+    "entity_type": "HALLMARKING_REGISTRATION"
+  },
+  {
+    "entity_id": "TEST-HM-2",
+    "entity_type": "HALLMARKING_REGISTRATION"
+  }
+]

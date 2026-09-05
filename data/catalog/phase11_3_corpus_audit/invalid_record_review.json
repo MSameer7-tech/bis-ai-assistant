@@ -1,0 +1,10 @@
+{
+  "review_status": "COMPLETE",
+  "record_id": "LAB-UNKNOWN_79dcb12d",
+  "classification": "METADATA_DEFECT",
+  "retrieval_impact": "NO_RETRIEVAL_IMPACT",
+  "authority_impact": "AUTHORITATIVE_EVIDENCE_UNUSABLE",
+  "validation_error": "Missing required field: source_sha256",
+  "knowledge_content_usable": false,
+  "recommended_action": "Do nothing. Leave record in corpus for traceability. Retrieval impact is zero due to lack of substantive knowledge content."
+}

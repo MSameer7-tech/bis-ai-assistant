@@ -1,0 +1,95 @@
+{
+  "integration_contracts": [
+    {
+      "dataset": "Phase 9.1 Acts/Rules/Regulations",
+      "source_family": "ACTS_RULES",
+      "authority_level": "STATUTORY",
+      "evidence_role": "STATUTORY_EVIDENCE",
+      "record_level_eligibility": {
+        "required": ["authoritative_source", "valid_identity", "valid_sha", "provenance_complete"],
+        "excluded": [
+          "CONTENT_CHANGED_REQUIRES_VERSION_REVIEW",
+          "FETCH_FAILED",
+          "ACCESS_RESTRICTED",
+          "EXTRACTION_FAILED",
+          "IDENTITY_UNRESOLVED",
+          "AMBIGUOUS"
+        ]
+      },
+      "allowed_claims": ["statutory authority", "legal scope", "powers", "obligations", "penalties", "procedural provisions"],
+      "prohibited_claims": ["unsupported legal interpretation", "inferring technical testing requirements"],
+      "relationship_types": ["Act/Rule -> regulated domain"],
+      "provenance_requirements": ["source_url", "final_url", "source_sha256", "document_identity", "version", "retrieved_at", "extraction_method", "page", "clause", "table_index", "row_index", "relationship_id"],
+      "lifecycle_rules": "Strict supersession tracking. Historical queries use historical versions. Active queries use current versions.",
+      "version_rules": "Four-way SHA state machine enforced exactly.",
+      "retrieval_routes": ["Legal applicability query -> STATUTORY_EVIDENCE"],
+      "index_target": "Chroma/BM25 for normative text where text retrieval provides value.",
+      "integration_readiness": "RECORD_LEVEL_EVALUATION",
+      "abstention_conditions": ["Exact legal applicability unclear", "Conflict state"],
+      "integration_exclusions": []
+    },
+    {
+      "dataset": "Phase 9.2 QCO/Gazette",
+      "source_family": "GAZETTE_QCO",
+      "authority_level": "REGULATORY",
+      "evidence_role": "QCO_EVIDENCE",
+      "record_level_eligibility": {
+        "required": [
+          "authoritative_qco_identity_validated",
+          "pdf_successfully_acquired",
+          "pdf_extraction_validated",
+          "referenced_standard_identity_resolved",
+          "no_conflicting_evidence",
+          "provenance_complete"
+        ],
+        "excluded": [
+          "IDENTITY_UNRESOLVED",
+          "CONFLICTING_EVIDENCE",
+          "EXTRACTION_FAILED",
+          "FETCH_FAILED",
+          "AMBIGUOUS_RELATIONSHIP"
+        ]
+      },
+      "allowed_claims": ["notification identity", "issuing authority", "referenced standards", "effective date", "mandatory requirement stated in the QCO"],
+      "prohibited_claims": ["technical testing requirements", "laboratory capability", "product applicability not explicitly established", "structured metadata masquerading as normative text"],
+      "relationship_types": ["Product -> QCO", "Standard -> QCO"],
+      "provenance_requirements": ["source_url", "final_url", "source_sha256", "document_identity", "version", "retrieved_at", "extraction_method", "page", "clause"],
+      "lifecycle_rules": "Strict effective date validation. Do not silently select one conflicting QCO.",
+      "version_rules": "Four-way SHA state machine enforced exactly.",
+      "retrieval_routes": ["Is product mandatory? -> PRODUCT_STANDARD_RELATIONSHIP -> QCO metadata/evidence", "When does QCO become effective? -> QCO_EVIDENCE"],
+      "index_target": "Structured index for relationships; Chroma/BM25 for normative text.",
+      "integration_readiness": "RECORD_LEVEL_EVALUATION",
+      "abstention_conditions": ["Unresolved standard link", "Conflicting evidence", "Ambiguity"],
+      "integration_exclusions": []
+    },
+    {
+      "dataset": "Phase 9.3 SIT/Testing",
+      "source_family": "SCHEME_OF_INSPECTION",
+      "authority_level": "TECHNICAL_REQUIREMENT",
+      "evidence_role": "SIT_EVIDENCE",
+      "record_level_eligibility": {
+        "required": [
+          "sit_identity_authoritative",
+          "standard_identity_authoritative",
+          "relationship_explicit",
+          "provenance_complete"
+        ],
+        "excluded": [
+          "IDENTITY_REVIEW_REQUIRED",
+          "AMBIGUOUS_MATCH"
+        ]
+      },
+      "allowed_claims": ["test parameter", "test method", "sampling requirement", "frequency", "acceptance criterion"],
+      "prohibited_claims": ["missing fields (do not support/invent absent data)", "structured rows masquerading as normative document proof"],
+      "relationship_types": ["Standard -> SIT"],
+      "provenance_requirements": ["source_url", "final_url", "source_sha256", "document_identity", "version", "retrieved_at", "extraction_method", "page", "table_index", "row_index"],
+      "lifecycle_rules": "Must align precisely with Indian Standard edition/year and SIT revision.",
+      "version_rules": "Four-way SHA state machine enforced exactly.",
+      "retrieval_routes": ["What tests are required? -> exact standard relationship -> SIT_EVIDENCE", "What is the sampling frequency? -> SIT_EVIDENCE only if evidence exists"],
+      "index_target": "Structured requirements where authoritative. BM25/Chroma for textual components if needed.",
+      "integration_readiness": "RECORD_LEVEL_EVALUATION",
+      "abstention_conditions": ["Unresolved identity", "Multiple SIT documents applying", "Sampling criteria absent"],
+      "integration_exclusions": ["SHA-based fallback SIT identities without authoritative resolution"]
+    }
+  ]
+}

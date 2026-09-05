@@ -1,0 +1,76 @@
+{
+  "version": "v1",
+  "description": "Phase 12.B Hybrid Retrieval Configuration",
+
+  "structured_retrieval": {
+    "enabled": true,
+    "top_k": 20,
+    "exact_match_fields": ["is_number", "lab_code", "lab_name", "entity_id", "source_record_id", "domain", "entity_type"]
+  },
+
+  "bm25_retrieval": {
+    "enabled": true,
+    "top_k": 20
+  },
+
+  "vector_retrieval": {
+    "enabled": true,
+    "top_k": 20,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "model_path": "data/models/embeddings/all-MiniLM-L6-v2",
+    "device": "cpu",
+    "normalize": true
+  },
+
+  "fusion": {
+    "method": "reciprocal_rank_fusion",
+    "rrf_k": 60,
+    "channel_weights": {
+      "structured": 1.0,
+      "bm25": 1.0,
+      "vector": 1.0
+    },
+    "rationale": "Equal weights as baseline. RRF with k=60 is a standard starting configuration. Weights to be tuned during Phase 12.D evaluation."
+  },
+
+  "exact_match_boost": {
+    "enabled": true,
+    "boost_factor": 2.0,
+    "description": "When structured or BM25 retrieval identifies an exact identifier match (IS number, lab code, document ID), the candidate receives a multiplicative boost to its fusion score so that exact authoritative matches are not buried by high-similarity semantic results."
+  },
+
+  "authority": {
+    "levels": {
+      "BIS_PUBLISHED": {"rank": 1, "weight": 1.0, "description": "Authoritative BIS normative/published source"},
+      "BIS": {"rank": 2, "weight": 0.95, "description": "Official BIS operational source"},
+      "USER_SUPPLIED": {"rank": 3, "weight": 0.8, "description": "User-supplied evidence"},
+      "UNKNOWN": {"rank": 4, "weight": 0.6, "description": "Unknown authority"}
+    },
+    "derived_penalty": 0.0,
+    "description": "Authority weights are applied as multiplicative adjustments to fusion scores. Derived objects do not outrank their authoritative sources."
+  },
+
+  "freshness": {
+    "enabled": true,
+    "default_status": "UNKNOWN",
+    "description": "Freshness signals are applied only when explicit temporal metadata exists (effective_date, validity). No dates are inferred or fabricated. UNKNOWN freshness incurs no penalty."
+  },
+
+  "inaccessible_evidence": {
+    "penalty_factor": 0.5,
+    "description": "Inaccessible sources receive a ranking penalty. They are preserved for traceability but cannot be treated as equivalent to accessible verified evidence."
+  },
+
+  "supersession": {
+    "statuses": ["CURRENT", "HISTORICAL", "SUPERSEDED", "SUPERSESSION_CANDIDATE", "UNKNOWN"],
+    "default_status": "UNKNOWN",
+    "superseded_penalty": 0.7,
+    "description": "Supersession status is derived from explicit evidence only. Records are NOT marked SUPERSEDED merely because another record is newer. UNKNOWN supersession incurs no penalty."
+  },
+
+  "final_output": {
+    "top_k": 10,
+    "deterministic_sort": ["final_score:desc", "authority_rank:asc", "retrieval_unit_id:asc"],
+    "description": "Final candidates are sorted by fusion score (descending), then authority rank (ascending = higher authority first), then retrieval_unit_id (ascending) for deterministic tie-breaking."
+  }
+}

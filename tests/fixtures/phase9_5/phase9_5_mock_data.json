@@ -1,0 +1,106 @@
+[
+  {
+    "laboratory_id": "TEST-BIS-OWNED-0",
+    "laboratory_category": "BIS_OWNED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-OWNED-1",
+    "laboratory_category": "BIS_OWNED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-OWNED-2",
+    "laboratory_category": "BIS_OWNED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-OWNED-3",
+    "laboratory_category": "BIS_OWNED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-OWNED-4",
+    "laboratory_category": "BIS_OWNED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-0",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-1",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-2",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-3",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-4",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-5",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-6",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-7",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-8",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-9",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-10",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-11",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-12",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-13",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-REC-14",
+    "laboratory_category": "BIS_RECOGNIZED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-EMP-0",
+    "laboratory_category": "BIS_EMPANNELLED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-EMP-1",
+    "laboratory_category": "BIS_EMPANNELLED"
+  },
+  {
+    "laboratory_id": "TEST-BIS-EMP-2",
+    "laboratory_category": "BIS_EMPANNELLED"
+  },
+  {
+    "laboratory_id": "TEST-NABL-0",
+    "laboratory_category": "NABL_ACCREDITED_RELEVANT"
+  },
+  {
+    "laboratory_id": "TEST-NABL-1",
+    "laboratory_category": "NABL_ACCREDITED_RELEVANT"
+  },
+  {
+    "laboratory_id": "TEST-NABL-2",
+    "laboratory_category": "NABL_ACCREDITED_RELEVANT"
+  }
+]

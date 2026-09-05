@@ -1,0 +1,25 @@
+{
+  "determinism": {
+    "identical": true
+  },
+  "entity_counts": {
+    "DOCUMENT": 910,
+    "LABORATORIES": 183,
+    "LAB_SCOPE": 44,
+    "STANDARD": 5,
+    "TESTING_FEE": 44,
+    "UNKNOWN": 1
+  },
+  "integrity": {
+    "dangling_relationships": 0,
+    "duplicate_relationship_ids": 0,
+    "unsupported_relationships": 0
+  },
+  "relationship_counts": {
+    "BELONGS_TO_LAB": 44,
+    "FEE_FOR_SCOPE": 44,
+    "HAS_FEE": 44,
+    "TESTS_STANDARD": 16
+  },
+  "status": "PASS"
+}

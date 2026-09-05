@@ -19,10 +19,10 @@
     "file_sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
     "file_size_bytes": 1240734,
     "current_version": {
-      "version_id": "DOC-001-v061",
+      "version_id": "DOC-001-v062",
       "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
       "file_size": 1240734,
-      "last_modified": "2026-09-01T10:51:07.435363+00:00",
+      "last_modified": "2026-09-02T15:51:33.436601+00:00",
       "publication_date": "2012-08-01",
       "etag": null
     },
@@ -509,6 +509,14 @@
         "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
         "file_size": 1240734,
         "detected_at": "2026-09-01T10:51:07.435363+00:00",
+        "change_type": "revision_update",
+        "version_label": "IS 16102 (Part 1) : 2012"
+      },
+      {
+        "version_id": "DOC-001-v062",
+        "sha256": "5f458e6ed584317d97e0335c829bba2827831f1595566e44231cd125dfc7c02b",
+        "file_size": 1240734,
+        "detected_at": "2026-09-02T15:51:33.436601+00:00",
         "change_type": "revision_update",
         "version_label": "IS 16102 (Part 1) : 2012"
       }

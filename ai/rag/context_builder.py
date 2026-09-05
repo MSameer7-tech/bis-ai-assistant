@@ -38,8 +38,13 @@ class ContextBuilder:
 
         for i, chunk in enumerate(chunks, 1):
             pages_str = ", ".join(str(p) for p in chunk.pages) if chunk.pages else "N/A"
-            normative_banner = ""
-            if chunk.normative_force.lower() in ["under_consideration", "provisional"]:
+            if chunk.chunk_type == "IDENTITY_EVIDENCE":
+                normative_banner = "\nSTATUS: [IDENTITY METADATA ONLY - DO NOT USE AS NORMATIVE EVIDENCE]"
+            elif chunk.chunk_type == "RELATIONSHIP_EVIDENCE":
+                normative_banner = "\nSTATUS: [CATALOGUE RELATIONSHIP ONLY - DO NOT USE AS NORMATIVE EVIDENCE]"
+            elif chunk.chunk_type == "PROCEDURAL_EVIDENCE":
+                normative_banner = "\nSTATUS: [PROCEDURAL INSTRUCTION ONLY]"
+            elif chunk.normative_force.lower() in ["under_consideration", "provisional"]:
                 normative_banner = "\n⚠️ STATUS: [PROVISIONAL / UNDER CONSIDERATION - NOT A MANDATORY REQUIREMENT]"
             elif chunk.normative_force.lower() == "mandatory":
                 normative_banner = "\nSTATUS: [MANDATORY NORMATIVE REQUIREMENT]"

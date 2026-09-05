@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "os": "Darwin",
+  "architecture": "arm64",
+  "python_version": "3.9.6",
+  "environment": "scratch/venv",
+  "pytorch_version": null,
+  "sentence_transformers_version": null,
+  "transformers_version": null,
+  "tokenizers_version": null,
+  "huggingface_hub_version": null,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2 (INTENDED)",
+  "offline_verification": "FAILED",
+  "package_installation_method": "pip install"
+}

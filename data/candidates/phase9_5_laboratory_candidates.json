@@ -1,0 +1,26 @@
+[
+  {
+    "source_url": "https://www.bis.gov.in/laboratories/",
+    "laboratory_category": "BIS_OWNED",
+    "retrieved_at": "2026-09-03T19:21:47.395727+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://lims.bis.gov.in/home/bis_labs/",
+    "laboratory_category": "BIS_RECOGNIZED",
+    "retrieved_at": "2026-09-03T19:21:51.170307+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://lims.bis.gov.in/home/labs/",
+    "laboratory_category": "BIS_RECOGNIZED",
+    "retrieved_at": "2026-09-03T19:21:52.249388+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/recognized-testing-laboratories/",
+    "laboratory_category": "BIS_RECOGNIZED",
+    "retrieved_at": "2026-09-03T19:21:53.237426+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  }
+]

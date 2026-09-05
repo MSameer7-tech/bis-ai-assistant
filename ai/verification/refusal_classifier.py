@@ -17,6 +17,7 @@ class RefusalReasonType(str, Enum):
     AMBIGUOUS_QUERY = "AMBIGUOUS_QUERY"
     UNVERIFIED_SOURCE = "UNVERIFIED_SOURCE"
     STALE_INFORMATION = "STALE_INFORMATION"
+    PROVIDER_ERROR = "PROVIDER_ERROR"
 
 
 REFUSAL_MESSAGES = {
@@ -27,7 +28,8 @@ REFUSAL_MESSAGES = {
     RefusalReasonType.UNSUPPORTED_NUMERICAL_CLAIM: "The requested technical parameter or numerical limit cannot be verified with 100% confidence against the authoritative clause evidence.",
     RefusalReasonType.AMBIGUOUS_QUERY: "The query does not specify sufficient technical context (such as product type, grade, or application) to identify the specific BIS standard.",
     RefusalReasonType.UNVERIFIED_SOURCE: "The information requested is not backed by an authoritative BIS gazette notification, scheme of testing, or sectional committee specification.",
-    RefusalReasonType.STALE_INFORMATION: "The cited historical standard has been superseded by a newer edition and the requested parameter is no longer valid."
+    RefusalReasonType.STALE_INFORMATION: "The cited historical standard has been superseded by a newer edition and the requested parameter is no longer valid.",
+    RefusalReasonType.PROVIDER_ERROR: "The answer generation service encountered a technical error. The retrieved evidence may still be valid but an answer could not be generated at this time."
 }
 
 

@@ -1,0 +1,1333 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="">
+<head id="ctl00_Head1"><link rel="icon" type="image/png" href="favicon.png" />
+   
+  <script type="text/javascript">
+      //function validateKeydown(event) {
+      //    // Define the allowed regex pattern
+      //    var regex = /^[a-zA-Z0-9\-:\.+&= (),;]+$/;
+
+      //    // Get the character from the event
+      //    var char = String.fromCharCode(event.which);
+
+      //    // Allow control keys: Backspace (8), Tab (9), Delete (46), Arrow keys (37-40), Home (36), End (35)
+      //    var controlKeys = [8, 9, 46, 37, 38, 39, 40, 36, 35];
+
+      //    // Check if the key is a control key
+      //    if (controlKeys.indexOf(event.keyCode) !== -1) {
+      //        return; // Allow control keys
+      //    }
+
+      //    // Check if the character matches the regex pattern
+      //    if (!regex.test(char)) {
+      //        // If the character does not match, prevent the default action
+      //        event.preventDefault();
+      //    }
+      //}
+
+      function validateKeydown(event) {
+          // Allow control keys
+          const controlKeys = [
+              'Backspace', 'Tab', 'Delete', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'
+          ];
+          if (controlKeys.includes(event.key)) {
+              return; // Allow control keys
+          }
+
+          // Define allowed characters
+          const regex = /^[a-zA-Z0-9\-:.\+&= (),;\/]$/;
+
+          // If the key is not a single allowed character, block it
+          if (!regex.test(event.key)) {
+              event.preventDefault();
+          }
+      }
+
+      //function handlePaste(event) {
+      //    // Define the allowed regex pattern
+      //    var regex = /[^a-zA-Z0-9\-:\.+&= (),;]/g;
+
+      //    // Get the pasted data
+      //    var pasteData = event.clipboardData.getData('text');
+
+      //    // Remove disallowed characters
+      //    var cleanedData = pasteData.replace(regex, '');
+
+      //    // Prevent the default paste behavior
+      //    event.preventDefault();
+
+      //    // Insert the cleaned data
+      //    var textBox = event.target;
+      //    var start = textBox.selectionStart;
+      //    var end = textBox.selectionEnd;
+
+      //    // Set the new value of the input
+      //    textBox.value = textBox.value.slice(0, start) + cleanedData + textBox.value.slice(end);
+
+      //    // Set the new cursor position
+      //    textBox.selectionStart = textBox.selectionEnd = start + cleanedData.length;
+      //}
+      function handlePaste(event) {
+          // Define the disallowed characters using a negated character class
+          var regex = /[^a-zA-Z0-9\-:.\+&= (),;]/g;
+
+          // Get the pasted text
+          var pasteData = event.clipboardData.getData('text');
+
+          // Remove characters that do not match the allowed set
+          var cleanedData = pasteData.replace(regex, '');
+
+          // Prevent the original paste action
+          event.preventDefault();
+
+          // Insert the cleaned data at the current cursor position
+          var textBox = event.target;
+          var start = textBox.selectionStart;
+          var end = textBox.selectionEnd;
+
+          // Set the new value
+          textBox.value = textBox.value.slice(0, start) + cleanedData + textBox.value.slice(end);
+
+          // Move the cursor to the end of the inserted text
+          textBox.selectionStart = textBox.selectionEnd = start + cleanedData.length;
+      }
+
+  </script>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            // document.getElementById("myBar").style.width = scrolled + "%";
+            var bar = document.getElementById("myBar");
+            if (!bar) return;
+
+            bar.style.width = scrolled + "%";
+        }
+
+
+
+    </script>
+    <script src="/js/sweetalert.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function Redirectotohome(ssurl, stext, stitle, sicon) {
+            swal({
+                title: stitle,
+                text: stext,
+                icon: sicon,
+                // buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        window.location.href = ssurl;
+                        //swal("Poof! Your imaginary file has been deleted!", {icon: "success",});
+                    } else {
+                        window.location.href = ssurl//'home.aspx';
+                        //swal("Your imaginary file is safe!");
+                        // window.location.href = 'login.html';
+                    }
+                });
+        }
+    </script>
+    <script type="text/javascript">
+        function JSalert() {
+            swal("Please enter the criteria for searching!", "", "info");
+            //swal("Please fill in either Standard Number or Title/Scope/Keyword.");
+        }
+    </script>
+    <script type="text/javascript">
+        function msg() {
+            swal(arguments[0], arguments[1], arguments[2]);
+            return swal;
+        }
+    </script>
+    <script type="text/javascript">
+        function YourMethodHere(source, eventArgs) {
+            //alert("sss");
+            $("#search1_btn").trigger("click");
+        }
+
+
+
+        function Employees_Populated(sender, e) {
+            var employees = sender.get_completionList().childNodes;
+            var div = "<table>";
+            div += "<tr><th>EmployeeId</th><th>FirstName</th><th>LastName</th><th>City</th><th>Country</th></tr>";
+            for (var i = 0; i < employees.length; i++) {
+
+                div += "<tr><td>" + employees[i].innerHTML.split('-')[0] + "</td><td>" + employees[i].innerHTML.split('-')[1] + "</td><td>" + employees[i].innerHTML.split('-')[2] + "</td><td>" + employees[i].innerHTML.split('-')[3] + "</td><td>" + employees[i].innerHTML.split('-')[4] + "</td></tr>";
+            }
+            div += "</table>";
+            alert(employees);
+        }
+        function GetID(source, eventArgs) {
+            var HdnKey = eventArgs.get_value();
+            var HdnKey1 = eventArgs.get_text();
+            // alert(HdnKey);
+            window.location.href = '/BIS_searchstandard.aspx?' + HdnKey; //relative to domain
+            //setTimeout(function () {
+            //    window.location.href = '/BIS_searchstandard.aspx?' + HdnKey;
+            //}, 100);
+        }
+    </script>
+    <script type ="text/javascript" >
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+    <title>
+	Bureau of Indian Standards - e-Sale Search Result
+</title><meta name="description" content="Search Result for is 10322 : part 5 : sec 6" /><meta name="keywords" content="Indian standards, download pdf, BIS, BSB EDGE, e-sale, search standards, is 10322 : part 5 : sec 6" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link href="css/dynamic.css" rel="stylesheet" type="text/css" /><link href="css/animate.css" rel="stylesheet" type="text/css" /><link href="css/colorbox.css" rel="stylesheet" type="text/css" /><link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" /><link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" /><link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="css/responsive.css" rel="stylesheet" type="text/css" /><link href="css/owl.carousel.css" rel="stylesheet" type="text/css" /><link href="css/owl.theme.css" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Prompt:400,300,200,500,600,700|Lato:400,300,700" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet" /><link href="css/dynamic.css" rel="stylesheet" type="text/css" /><link href="css/style_BIS.css" rel="stylesheet" type="text/css" />
+    
+    <script src="../js/jquery.2.1.4.min.js"></script>
+    
+    <meta name="google-site-verification" content="8CfMsJv-LATi13tsKg2LacWII3dqdO-4NEnFssa9g54" />
+    <script src="Scripts/text_clear_search.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function BindEvents() {
+
+            $(document).ready(function () {
+
+                $(".bis_faq").fancybox({
+                    type: "iframe",
+                    iframe: {
+                        css: {
+                            width: '90%',
+                            height: '90%'
+                        }
+                    }
+                });
+
+                $(".bis_credit1").fancybox({
+                    type: "iframe",
+                    iframe: {
+                        css: {
+                            width: '70%'
+                        }
+                    },
+                    afterShow: function (instance, current) {
+                        var iframe = current.$iframe;
+                        iframe.on("load", function () {
+                            try {
+                                var bodyHeight = iframe.contents().find("body").height();
+                                iframe.height(bodyHeight + 30);
+                            } catch (e) { }
+                        });
+                    }
+                });
+
+                $(".bis_credit2").fancybox({
+                    type: "iframe",
+                    iframe: {
+                        css: {
+                            width: '70%',
+                            height: '70%'
+                        }
+                    }
+                });
+
+                $(".bis_customer_feedback").fancybox({
+                    type: "iframe",
+                    iframe: {
+                        css: {
+                            width: '70%',
+                            height: '70%'
+                        }
+                    }
+                });
+
+                $(".bis_fop").fancybox({
+                    type: "iframe",
+                    iframe: {
+                        css: {
+                            width: '70%'
+                        }
+                    },
+                    afterShow: function (instance, current) {
+                        var iframe = current.$iframe;
+                        iframe.on("load", function () {
+                            try {
+                                var bodyHeight = iframe.contents().find("body").height();
+                                iframe.height(bodyHeight + 30);
+                            } catch (e) { }
+                        });
+                    }
+                });
+
+                $(".bis_sitemap").fancybox({
+                    type: "iframe",
+                    iframe: {
+                        css: {
+                            width: '50%',
+                            height: '65%'
+                        }
+                    }
+                });
+
+            });
+        }
+    </script>
+    
+    
+    <style>
+        .progress-container
+        {
+            width: 100%;
+            height: 3px;
+            background: #fff;
+        }
+        
+        .progress-bar
+        {
+            height: 3px;
+            background: #c52327;
+            width: 0%;
+        }
+        
+        .scroll_indicator
+        {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        .gap-for-scroll-indicator
+        {
+            height: 2px;
+            width: 100%;
+            background: #fff;
+            z-index: 999;
+        }
+        
+        
+        .AutoExtender
+        {
+            font-family: Verdana, Helvetica, sans-serif !important;
+            font-size: .8em !important;
+            margin: 0px !important;
+            top: 175px !important;
+            z-index: 1001 !important;
+            font-weight: normal !important;
+            border: 1px solid #CCCCCC !important;
+            line-height: 20px !important;
+            padding: 0px !important;
+            background-color: White !important;
+            list-style: none !important;
+            max-height: 440px !important;
+            overflow: auto !important;
+            overflow-x: hidden !important;
+            display: inline-block !important;
+        }
+        .AutoExtenderList
+        {
+            border: 0px solid #CCCCCC !important;
+            border-bottom: 0.1px solid #006699 !important;
+            cursor: pointer !important;
+            color: #000000 !important;
+            margin: 0px !important;
+            border-color: #CCCCCC !important;
+            list-style: none !important;
+            margin-left: 4px !important;
+            width: 100% !important;
+        }
+        .AutoExtenderList ul li
+        {
+            background-color: red !important;
+        }
+        .AutoExtenderHighlight
+        {
+            color: White !important;
+            font-size: 1.2em !important;
+            background-color: #DF0000 !important;
+            cursor: pointer !important;
+            margin: 0px !important;
+            margin-left: 3px !important;
+            width: 100% !important;
+        }
+        
+        
+        
+        .advance_btn
+        {
+            color: #fff;
+            padding: 0;
+            border-bottom: 1px solid #ddd;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        
+        
+        @media screen and (max-width: 200px)
+        {
+            .sticky_bis
+            {
+                top: 100px !important;
+            }
+        }
+        
+        @media screen and (max-width: 400px)
+        {
+            .sticky_bis
+            {
+                top: 120px !important;
+            }
+        }
+        
+        
+        @media screen and (max-width: 600px)
+        {
+            .bsb_img1
+            {
+                width: 100% !important;
+            }
+        
+            .bis_img1
+            {
+                width: 100% !important;
+                margin-bottom: 25px !important;
+                margin-top: 10px !important;
+            }
+        
+            .bis_img1 a
+            {
+                float: left !important;
+            }
+        
+            .sticky_bis
+            {
+                top: 180px !important;
+            }
+        
+        
+            .bisbsb_main
+            {
+                display: grid !important;
+            }
+        
+            .bisbsb_main_part1
+            {
+                width: 100% !important;
+                float: none;
+            }
+        
+            .bisbsb_main_part2
+            {
+                width: 100% !important;
+                float: none;
+            }
+        
+            .login-create ul
+            {
+                text-align: left !important;
+            }
+        
+            .li_1
+            {
+                width: 100% !important;
+                text-align: left !important;
+            }
+        
+            .li_3
+            {
+                width: 100% !important;
+                text-align: left !important;
+                display: grid !important;
+            }
+        
+            .txtbx_li_3
+            {
+                width: 100% !important;
+            }
+        
+        }
+        
+        @media only screen and (max-width: 768px)
+        {
+            .bsb_img1
+            {
+                width: 100% !important;
+            }
+        
+            .bis_img1
+            {
+                width: 100% !important;
+                margin-bottom: 25px !important;
+                margin-top: 10px !important;
+            }
+        
+            .bis_img1 a
+            {
+                float: left !important;
+            }
+        
+            .sticky_bis
+            {
+                top: 210px !important;
+            }
+        
+            .bisbsb_main
+            {
+                display: grid !important;
+            }
+        
+            .bisbsb_main_part1
+            {
+                width: 100% !important;
+                float: none;
+            }
+        
+            .bisbsb_main_part2
+            {
+                width: 100% !important;
+                float: none;
+            }
+        
+            .login-create ul
+            {
+                text-align: left !important;
+            }
+        
+            .li_1
+            {
+                width: 100% !important;
+                text-align: left !important;
+            }
+        
+            .li_3
+            {
+                width: 100% !important;
+                text-align: left !important;
+                display: grid !important;
+            }
+        
+            .txtbx_li_3
+            {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./BIS_SearchStandard.aspx?Standard_Number=IS+10322+%3a+Part+5+%3a+Sec+6&amp;id=54005" id="aspnetForm">
+<input type="hidden" name="_TSM_HiddenField_" id="_TSM_HiddenField_" value="2GFwlGU9ATlFIxrdsXRzcja58_1t5F8HSleaZM4ZQwk1" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="xz1uSW3X9Mvb8QYW35E80FiuIAgRKuHwmRvc70l2Cptof2VoJulkVBoHNMwELm+aMgLf2GreNwBW0Bw3b9UChpQLdEls48O1Ocw+BzoF5zuHo7pE93JpHvm3KDkL5T7m+rCF5ZqMpXo2FhzJzvstyK17c9404eILpcRPFwT8IJmsmdPy8KElt6qzCJmHZP0tPL14GgtyRNkVdH0hrUwBFna9OmYzumgzmVD1JNjC2SKz4yVZ8Xlvcx+ntA3G8nhYUDjDFXcbCys0J93rvOthZ66U+qhTC6X6OSWq0G/4g9RuamDf9EhSeihlCEMZccWGp9NbzF1wytfRj1TXVdVd2eXmaSwlhpLv6WzLuY+L1vcSPGpduGDcz5tySOhTfmdQm0+QHLppDyy9IZSjpE900ptilmBry19xYTfkU36kzSwq4k38UukTnz326vfX+jErlZMvZ43GfKmBeA1UsvYJcoz0UykyJ931LucpISiFAqD1aliT/BLUoQm8okJt9SKi+Bux2/MzSLDxNHkWur1SDZS0yaeYi5+OkKkU94K9BgRs3AK9k5M6FI7ce4PA5DsV0+SrQxmsVr1rGKA9yvLDl2mQcNSe1ZYG9rHjj2k2DxLgCd0+866/A5d3HnLQd5zasL0EiEmRkyBPlQMKOVoonQAkiO5UvGMPDkANCLW4KVjgy/+h2pApjIJvuJiG+Wn1Fx57SZqBcde9eLUvU/OdB3+DFtwsXTOqrl4aQjN5sVk2hVDsVcOY7e7eooPTT7gQaZeBNNfHNNVP8PdaGargLmw78tI4kEMvUPfeMgBopeS9JQjLU1KM4gyCXlfdt4125iml/6uPi6AWcnnwjRmUcGQLIQTsd9l9ecmlihNxfzIfM0sAbTat+H6DyxiJpupDmcD3XOQe0URCvQ35H+XfY05uRz81aZhdXbnkp+FGddwEj4/rEY4Wb5FaVT14gzQwbud2F0e+7PCuxXdPwewpm2f37ZQQr2ScZecDZc/aURYBhGqFv9xnGWRg9Oz83rvb1vleNBw8o+zTqREys/5flKj4L23e1+Vqff+jFlQ++KSmpAJ3afiwQhbj6PK+/X8KT/y0/siH/Pti4R2Goc5viHcOr2MPlDA4a7zGk4sbHj6RRxXJqBqvfzWBtaVfcgy41bOfX17hjTfiU/uwehp4TA8aDow8AgGa1AzbCDh3hF7I5c7xNMSQEbMktQ+x1g0u/3Er1Gzv13ftQcFu3Uo1GOPlYi4JUXHJb7fLPebkGavoo4sLCa7+7/xdklLrOXPDHjoSleHLdtzDKnHfJei8k3l4+S/cyhkoFUgdMTMQnevcqnhtYSEiZYD7iduCnJNLJjIh/9cdZADBgG+QrzAlAzms5rn4lZ6pN2wqZHBmVIJHg2Q4h+sRHiaPJ+5US7PRLtxaMv03EVSv9D93VfahDozNfFdZYNHu+28d4v96UQLZJj7n2fnA6WgluBH3cTPRf5w+vc9p5xTJJeV1YrjPPN38C8GPmDsqZTDlJG+d1h48lmtxJ+/RdDOD0RuRtAti2nF6laQj35di4Jz9oIteF1CRpfAbAoEkTHP3C11lUpCOk51cnJpnXi0YyrDzKIAhwHFt5VxTzT8qEkWABgDx1EMoO2V3QV/VoI8cEJaEggmoFF3mCgsXu3kfgRwPME5UoD5dTfFaxiDCXN+TVi1ocf054vFTubm4Sto1AJg4caW5qQirJ6OGsqVIAwQpwoixX6YQ/JpbPBTVRAa/rmwm/8NgOUcPch8iqGmAOMpUzTmt+3Z49Rh7qbDE1aaoP+ejZ8n8e3JP5vLLt/5HjimKNHJdd3/cynvtCWWIQe1lV+sk2pAar9R9GHOKh7Fgrf0k3QEvZYSHuE7OVRalRpsDxtbG2jCgVYPd4uprFprHqE/dZ+y1A5HJX32PgmtzKyGLHK3ULV6W+8p5E+8VnprirQQrOVMfau/jEX2ff/dbZSDpgYGBFgGTLB6zg6UOybhDBHhhis9mNRuSUuUWdjHBkKY3yGE=" />
+
+
+<script src="/ScriptResource.axd?d=oMDmnU_WAmz__4rRXT-oPZC0S9dCmTCekEhF3ZWMxS4K0z64bhbCZtqdaeHMn4MYkrDQFq53eIJ2W-KTx3UGREcLcuqCHp4SbQAMGVi_ay8Jo0lI4Z9rgHcV5DGBgvAMoMiwBw2&amp;t=51e37521" type="text/javascript"></script>
+<script src="/BIS_SearchStandard.aspx?_TSM_CombinedScripts_=True&amp;v=2GFwlGU9ATlFIxrdsXRzcja58_1t5F8HSleaZM4ZQwk1&amp;_TSM_Bundles_=&amp;cdn=False" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=CrjKodkV2ivp-s6HuzJ6L5agu4ixp0XOoIqTc6-bck1ubR-2hRH3cGvKsn3mFBQqjw3RB3O_vpH_jQ1U1M4eJolvjD_SCpbTyBG2HmDT-rQ-pVnZ4Wl0AkigSD8CKk4HR-WqkBNHc5Iwl5kSKWybfiECO0M1&amp;t=51e37521" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=8zTH-7lNGevK2f6Grdv2nAjOjLYDzZVE-D_cvrGUpDR9atj1L3vYo9-hZ1_9dUKU7ZqvLH_mE0muyIaj45c9IYRitN8mvGjB3v3qUSDfSunlwJjfJ1tv8y6Owrk2jNtT9Ab6jXk1vrA8yI8pwS0nsq6Tc5I1&amp;t=51e37521" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="69AE6FC5" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+    
+    <div class="wrapper" id="page">
+      
+        <script type="text/javascript">Sys.Application.add_load(BindEvents);</script>
+           
+
+            <div class="container header-top-cls">
+               
+                    <div class="col-md-3 col-md-offset-3 pull-rght-sec">
+                        <ul>
+                        <li><a href="../BIS_index.aspx">Home</a></li>
+                            <li><a href="../BIS_FAQ.aspx?id=sitemap"  class="bis_sitemap">Sitemap</a></li>
+                            <li><a href="../BIS_FAQ.aspx?id=feedback" class="bis_customer_feedback">Customer Feedback</a></li>
+                        </ul>
+                      </div>
+             </div> 
+                             <div class="container" style="margin-left:0; padding-top:10px !important; padding-bottom:10px !important; ">
+                       <div id="ctl00_UpdatePanel3">
+	
+                            <div class="row">
+                                
+                                <div class = "col-sm-3">
+                                 <a href="https://bis.gov.in/" target="_blank"><img src="/images/bis_home_logo.png" alt="Bureau of Indian Standardssss"/></a>
+                                 </div>
+                                  <div class = "col-sm-7">
+                                       <div class="login-create primary_login">
+                                                                            <ul>
+                                      
+                                                                           
+                                                
+                                                    <li style = "list-style: none; padding: 0 5px; color: #c52327; cursor: pointer; font-size: 17px;font-family: hind; font-weight: 600;">
+                                                        <a href="/BIS_Login" class="lgn_btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Log In</a>  
+                                                      
+                                                      
+                                                        <a href="/BIS_Register" class="reg_btn"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Register</a> 
+                                                     </li>
+                                                
+                                                
+                                          
+                                                <li style="background:transparent !important;"><a style="color:#000;" href="javascript:void(0)">
+                                                    <img src="/images/user-acc.png" alt="account" />
+                                                    My Account <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                                    <ul style="background:#48505b !important;" >
+                                                        <li>
+                                                            <a id="ctl00_lnkbtnAccount" href="javascript:__doPostBack(&#39;ctl00$lnkbtnAccount&#39;,&#39;&#39;)">Account Details</a></li>
+                                                        <li><a href="/BIS_Orders">Orders</a></li>
+                                                        <li><a id="ctl00_wishlistclick" href="javascript:__doPostBack(&#39;ctl00$wishlistclick&#39;,&#39;&#39;)">Wish List (0) </a></li>
+                                                        
+                                                        <li id="ctl00_liforget">
+                                                            <a id="ctl00_lnkbtnforgetpassword" href="javascript:__doPostBack(&#39;ctl00$lnkbtnforgetpassword&#39;,&#39;&#39;)">Forgot Password</a></li>
+                                                        
+                                                        
+                                                    </ul>
+                                                </li>
+                                                <li style ="background:transparent;background-image : url(/images/shopping-cart.png);background-position : 18px 5px ;background-repeat : no-repeat;padding: 8px 9px 8px 34px;text-transform: uppercase;"><a id="ctl00_cartclick" style="color:#000; padding: 15px 0px 0px 20px;" href="javascript:__doPostBack(&#39;ctl00$cartclick&#39;,&#39;&#39;)"><span style="padding :1px 1px 1px 10px !important;" >
+                                                    0
+                                                </span>Cart</a> </li>
+                                                <li style="display: none"><a href="/wishlist.aspx?mpgid=25&pgidtrail=34" title="Wishlist">
+                                                    <span class="wishlist">
+                                                        0
+                                                    </span><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                                     </ul> 
+                                                    </div>
+                                             
+                                                   
+                                           </div> 
+                                       
+                                  
+                                              <div class = "col-sm-2"><a href="../bis_index.aspx" style="float:right;">
+                                                 <img src="/images/bsbedge_home_Logo.png"  alt="Shop for International Standards"   title="Shop for International Standards" />
+                                            </a>
+                                        
+                                        </div> 
+                                       
+                                     </div>
+                                
+                                
+</div>  
+                                </div>
+                                <div class="container" style="margin-left:0; ">
+                                <div class = "row">
+                               <div class="search-block search_bar-explore" style = " background: #c6cbce !important;">
+                
+                <div id="ctl00_UpdatePanel2">
+	
+                        <input type="hidden" name="ctl00$HiddenID" id="ctl00_HiddenID" />
+                        <div id="ctl00_Panel1">
+		
+                            <ul>
+                               <li style = "text-align: right; width:17%; color:White;" class="li_1">
+                                    <span style = "color:#000; font-size:17px; display: block; ">Search Standard(s) on </span>  
+                                </li>   
+                                 <li text-align:left;" class="li_3">
+                                <input name="ctl00$txt_standardnumber" type="text" id="ctl00_txt_standardnumber" placeholder="Standard Number (e.g. IS 1)" class="txtbx_li_3" onkeydown="validateKeydown(event)" onpaste="handlePaste(event)" style="width:80%;" />
+                                    
+                                    
+                                    <a id="ctl00_btn_stdno" class="myLink" href="javascript:__doPostBack(&#39;ctl00$btn_stdno&#39;,&#39;&#39;)" style="background:#005ead !important;"><i class="fa fa-search"></i></a>
+                                </li>
+                               
+                            <li text-align:left;" class="li_3">
+                                <span style = "color:#000; font-size:17px; margin-left:0px !important; vertical-align: middle; margin-right: 10px; "> Or </span>
+                                 <input name="ctl00$TextBox1" type="text" id="ctl00_TextBox1" placeholder="Title" class="txtbx_li_3" onkeydown="validateKeydown(event)" onpaste="handlePaste(event)" style="width:80%;" />
+                               
+                                   
+                                 <a id="ctl00_btn" class="myLink" href="javascript:__doPostBack(&#39;ctl00$btn&#39;,&#39;&#39;)" style="background:#005ead !important;"><i class="fa fa-search"></i></a>
+                             </li>
+                                <li class="hide">
+                                   
+                                </li>
+                              
+
+                                
+                                <li class="hide">
+                                   
+                                </li>
+                                
+                                <li class="hide">
+                                    
+                                </li>
+                               
+                                <li style="background:#48505b !important;" >
+                                    <a href="#" class="toggle-link2 selected" > Advance Search</a>
+                                        <ul style="background:#48505b !important; z-index :999;"  >               
+                                        <li style="border-bottom:1px solid #48505b !important;" ><a href="/BIS_AdvanceSearch.aspx">Module</a></li>
+                                        <li style="border-bottom:1px solid #48505b !important;"><a href="/BIS_AdvanceSearch_Scope.aspx">Scope</a></li>
+                                        
+                                        <li style="border-bottom:1px solid #48505b !important;"><a href="/BIS_FreeAmendments.aspx?id=0">Free Amendments</a></li>
+                                        </ul>                                    
+                                </li>
+                            </ul>
+                        
+	</div>
+                    
+</div>
+                </div>
+                </div>
+            </div>
+                           
+                           
+      
+        
+        <div>
+                    
+    <script src="js/jquery.1.12.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ctl00_ContentPlaceHolder1_Tb1").keyup(function (e) {
+                if (e.keyCode != 8) {
+                    if ($(this).val().length == 2) {
+                        $(this).val($(this).val() + "/");
+                    } else if ($(this).val().length == 5) {
+                        $(this).val($(this).val() + "/");
+                    }
+                }
+            });
+        });
+    </script>
+
+      
+
+    <style>
+        .highlight
+        {
+            color:Yellow;
+        }
+        
+       
+    </style>
+
+
+    <style>
+        @media screen and (max-width: 600px)
+        {
+            .div-abc
+            {
+                width: 100% !important;
+                float: none;
+                height: auto !important;
+                text-align: left !important;
+                margin-bottom: 10px !important;
+                padding-top: 0px !important;
+            }
+        
+            .div-abc1
+            {
+                width: 100% !important;
+                float: none;
+                margin-bottom: 10px !important;
+            }
+        
+            .div-abc2
+            {
+                width: 100% !important;
+                float: none;
+            }
+            .div-abc3
+            {
+                width: 100% !important;
+                float: none;
+            }
+        
+            .div_abc_main
+            {
+                display: grid !important;
+            }
+        
+        
+        }
+        
+        
+        @media screen and (max-width: 768px)
+        {
+            .div-abc
+            {
+                width: 100% !important;
+                float: none;
+                height: auto !important;
+                text-align: left !important;
+                margin-bottom: 10px !important;
+                padding-top: 0px !important;
+            }
+        
+            .div-abc1
+            {
+                width: 100% !important;
+                float: none;
+                margin-bottom: 10px !important;
+            }
+        
+            .div-abc2
+            {
+                width: 100% !important;
+                float: none;
+            }
+        
+            .div-abc3
+            {
+                width: 100% !important;
+                float: none;
+            }
+        
+            .div_abc_main
+            {
+                display: grid !important;
+            }
+        
+            .index_main
+            {
+                margin-top: 195px !important;
+            }
+        
+        }
+        
+        
+        
+        
+        .div_abc_main
+        {
+            display: flex;
+        }
+        .div-abc
+        {
+            width: 10%;
+            float: left;
+            height: auto;
+            padding-top: 30px;
+        }
+        
+        .div-abc1
+        {
+            width: 55%;
+            height: auto;
+            padding-right: 20px;
+        }
+        
+        .div-abc2
+        {
+            width: 18%;
+            height: auto;
+        }
+        
+        .div-abc3
+        {
+            width: 17%;
+            float: right;
+            height: auto;
+            font-weight: bold;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+
+
+        function stickyBar() {
+
+            if ($(window).width() > 755) {
+
+                var chrome = navigator.userAgent.indexOf('Chrome') > -1;
+                var explorer = navigator.userAgent.indexOf('MSIE') > -1;
+                var firefox = navigator.userAgent.indexOf('Firefox') > -1;
+
+                if (firefox == true) {
+                    return false;
+                }
+
+                var ht = $(window).height();
+                var footerinnerht = $('.footer').height();
+
+                var fixSidebar = 100;
+                var contentHeight = $('.astm-tab').innerHeight();
+                // var contentwidth = $('.serch-listing').innerWidth();
+                var sidebarHeight = $('.serch-listing').height();
+                var sidebarBottomPos = contentHeight - sidebarHeight;
+                var trigger = $(window).scrollTop() - fixSidebar;
+                if (contentHeight > sidebarHeight) {
+
+                    if ($(window).scrollTop() >= fixSidebar) {
+
+                        $('.serch-listing').addClass('fixed');
+                        $('.serch-listing').css({ 'height': ht - 80 });
+                        // $('.serch-listing').css({ 'min-width': contentwidth });
+
+
+                    } else {
+                        $('.serch-listing').removeClass('fixed');
+                        $('.serch-listing').css({ 'height': 'auto' });
+                        // $('.serch-listing').css({ 'min-width': 'auto' });
+
+                    }
+
+                    if (trigger >= sidebarBottomPos) {
+                        $('.serch-listing').addClass('bottom');
+
+                        if (chrome == true) {
+                            $('.serch-listing').css({ 'bottom': footerinnerht + 130 });
+                        }
+                        else {
+                            $('.serch-listing').css({ 'bottom': 20 });
+                        }
+
+                    } else {
+
+                        $('.serch-listing').removeClass('bottom');
+                        //                    $('.serch-listing').css({ 'bottom': 'auto' });
+
+                    }
+
+                }
+                else {
+                    $('.serch-listing').removeClass('fixed');
+                    $('.serch-listing').removeClass('bottom');
+
+                }
+            }
+        }
+
+        $(window).scroll(stickyBar);
+
+    </script>
+    
+
+
+        <script type="text/javascript">
+            function BindEvents() {
+                $(document).ready(function () {
+
+                    $(".quickview").fancybox({
+                        'width': '90%',
+                        'height': '90%',
+                        'autoScale': true,
+                        'scrolling': true,
+                        'transitionIn': 'elastic',
+                        'transitionOut': 'elastic',
+                        'type': 'iframe'
+                    });
+
+                 
+                });
+
+            }
+    </script>
+    
+
+   
+
+    <style type="text/css">
+        .fixx
+        {
+            position: fixed !important;
+            top: 290px !important;
+        }
+        .bott
+        {
+            position: fixed !important;
+            top: 20% !important;
+        }
+        .fixed
+        {
+            backface-visibility: hidden;
+            position: fixed;
+            top: 200px;
+            width: inherit;
+            max-width: 354px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            scrollbar-base-color: #F5F5F5;
+            scrollbar-face-color: #D3D3D3;
+            scrollbar-3dlight-color: #000;
+            scrollbar-highlight-color: #000;
+            scrollbar-track-color: #F5F5F5;
+            scrollbar-arrow-color: gray;
+            scrollbar-shadow-color: inset 0 0 4px rgba(0,0,0,0.2);
+            scrollbar-dark-shadow-color: inset 0 0 4px rgba(0,0,0,.3); /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+        }
+        .fixed:hover
+        {
+            overflow-y: auto;
+        }
+        .fixed:after
+        {
+            position: fixed;
+        }
+        .bottom
+        {
+            position: absolute;
+            bottom: 20px;
+            top: auto;
+            width: inherit;
+        }
+        
+        #ptag
+        {
+            padding-bottom: 1px;
+            font-size: 16px;
+            color: #9a292a;
+            font-weight: 600;
+        }
+        
+        .mkmage-overlay
+        {
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            background-color: #363636 !important;
+            z-index: 10000;
+            top: 0;
+            left: 0;
+        }
+        
+        
+        
+        #ptag
+        {
+            padding-bottom: 1px;
+            font-size: 16px;
+            color: #9a292a;
+            font-weight: 600;
+        }
+        
+        .mkmage-overlay
+        {
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            background-color: #363636 !important;
+            z-index: 10000;
+            top: 0;
+            left: 0;
+        }
+        
+        .alternate
+        {
+            background-color: #f2f2f2;
+        }
+        
+        
+    </style>
+
+
+    
+    <div style ="margin-top:1px !important;">
+
+     
+
+<div class="index_main">
+    
+    <div class="inner-mid ">
+        <div class="container">
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$T1$antiForgeryToken" id="ctl00_ContentPlaceHolder1_T1_antiForgeryToken" />
+            <div class="astm-international-detail search-page">
+                <div class="search-panel" style="width: 5% !important;">
+                </div>
+                 
+                <div class="astm-tab" style="width: 100%;">
+                    <div class="listing">
+                        <div id="ctl00_ContentPlaceHolder1_T1_UpdatePanel1">
+	
+                                
+                                <div class="row">
+                                    <div class="col-sm-12 sdm-detail" style="width: 103%;">
+                                        <script type="text/javascript">Sys.Application.add_load(BindEvents);</script>
+                                        
+
+                                        
+                                        <div style="margin-bottom: 10px; margin-top: 10px;">
+                                            <span id="ctl00_ContentPlaceHolder1_T1_lbl_you_searched_for" style="font-size: 16px; font-weight: 300;">You Searched for - is 10322 : part 5 : sec 6</span>
+                                        </div>
+
+                                        <ul>
+                                            
+                                                    <li style="border-bottom: 1px solid gray; margin-bottom: 10px; padding: 10px 0 10px 0;">
+                                                        <div id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_Panel2">
+		
+
+                                                            <div class="div_abc_main">
+                                                                <div class="div-abc" style="text-align: center; vertical-align: middle;">
+                                                                    <span id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_Label3" class="Label3" style="padding: 5px; border: 1px solid gray; border-radius: 35px; margin-right: 20px;">1</span>
+                                                                    <a id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_link_preview" title="Standard Prerview" class="quickview" href="BIS_Preview.aspx?id=10322_5_6_2026"><img src="images/preview_extra.png" style="height:22px; width:22px;" /></a>
+                                                                      
+
+                                                                </div>
+                                                                <div class="div-abc1">
+                                                                    
+                                                                   <span id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_lblstdno_rptr" style="font-size:16px;font-weight:bold;color:#005ead;;">IS 10322 : Part 5 : Sec 6 : 2026 ( IEC 60598-2-8 : 2013)</span>
+
+                                                                    &nbsp; &nbsp;
+
+                                                                
+                                                                    
+                                                                    
+                                                                    <br />
+                                                                    <br />
+                                                                    <span style="font-size: 15px;">
+                                                                        Luminaires - Part 5 Particular Requirements - Section 6 Handlamps</span>
+                                                                    <br />
+                                                                    <br />
+                                                                    <span style="font-weight: bold;">Technical Committee : </span>
+                                                                    ETD 49
+                                                                    
+
+                                                                </div>
+                                                                <div class="div-abc2">
+                                                                    <span><b>Status : </b></span>
+                                                                    <span id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_lblstatus">Active</span>
+                                                                    <br />
+                                                                    <br />
+                                                                    
+                                                                    <div id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_pnlamds">
+			
+
+                                                                        <span style="font-weight: bold;">No. of Amendments : </span>
+                                                                        <a id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_noanmds" disabled="disabled">0</a>
+                                                                    
+		</div>
+
+
+                                                                </div>
+                                                                <div class="div-abc3">
+                                                                    
+                                                                    <div id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_divabc3">
+			
+                                                                        
+                                                                        <span>Price within India : </span>
+                                                                        <span id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_lblINRPrice"> ₹ 340.00</span>
+                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$T1$Repeater1$ctl00$hdnfldprice" id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_hdnfldprice" value="340" />
+                                                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$T1$Repeater1$ctl00$hdnfldamd" id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_hdnfldamd" value="Y" />
+                                                                        
+                                                                        <br />
+                                                                        <br />
+
+                                                                        <span>Price Outside India : </span>
+                                                                        <span id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_lblUSDPrice"> ₹ 3,400.00</span>
+
+                                                                        
+                                                                        <br />
+                                                                        <br />
+                                                                    
+		</div>
+                                                                    <div id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_pnlPricedPDF">
+			
+                                                                        <input type="image" name="ctl00$ContentPlaceHolder1$T1$Repeater1$ctl00$btn_add_cart" id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_btn_add_cart" title="Add to Cart" src="images/cart_red.png" src="" border="0" style="height: 25px; width: 25px;" />
+
+                                                                        <a id="ctl00_ContentPlaceHolder1_T1_Repeater1_ctl00_addwishlist" title="Add to Wishlist" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$T1$Repeater1$ctl00$addwishlist&#39;,&#39;&#39;)" style="margin-left: 10px;"><i class="fa fa-heart" aria-hidden="true" style="color:#c52327;"></i></a>
+
+                                                                    
+		</div>
+
+                                                                    
+
+
+
+                                                                    
+
+                                                                    
+
+                                                                    
+                                                                </div>
+                                                            </div>
+
+                                                        
+	</div>
+                                                    </li>
+
+                                                
+
+                                        </ul>
+
+
+                                        <a id="ctl00_ContentPlaceHolder1_T1_hyperlink_login_popup1" title="Login" style="visibility: hidden;" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$T1$hyperlink_login_popup1&#39;,&#39;&#39;)">Custcode</a>
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$T1$btn_refresh_wish" value="Button" id="ctl00_ContentPlaceHolder1_T1_btn_refresh_wish" style="visibility: hidden;" />
+
+
+
+                                        <div class="page-link-bottom">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            
+</div>
+
+                        <div id="ctl00_ContentPlaceHolder1_T1_UpdatePanel3">
+	
+                                <div id="ctl00_ContentPlaceHolder1_T1_Panel1">
+		
+                                    <div id="ctl00_ContentPlaceHolder1_T1_divdownloads" class="down-load">
+                                        <a id="ctl00_ContentPlaceHolder1_T1_lnkbtnDownloadPdf" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$T1$lnkbtnDownloadPdf&#39;,&#39;&#39;)"><img src="/images/pdf-icon.png" />
+                                                    Download Search Result in Pdf</a>
+                                        <a id="ctl00_ContentPlaceHolder1_T1_lnkbtnDownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$T1$lnkbtnDownload&#39;,&#39;&#39;)"><img src="/images/excel.png" />
+                                                        Download Search Result in Excel</a>
+                                    </div>
+                                
+	</div>
+                            
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+
+    function login_popup12() {
+        //            var alink = document.getElementById("ctl00_ContentPlaceHolder1_hyperlink_login_popup1");
+        var alink = document.getElementById('ctl00_ContentPlaceHolder1_T1_hyperlink_login_popup1');
+        $(alink).fancybox({
+            'width': '90%',
+            'height': '80%',
+            'autoScale': true,
+            'scrolling': true,
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
+            'type': 'iframe',
+            afterClose: function () { parent.location.reload(true); },
+            'title': '',
+            'href': 'BIS_LoginPop.aspx?id=popup'
+
+        }).trigger('click');
+    }
+
+
+</script>
+
+     </div>
+    
+
+
+
+
+            </div>
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" style="width: 100% !important;">
+                        <ul>
+                            <li><a href="https://bis.gov.in/" target="_blank">BIS Home</a> <a href="../BIS_FAQ.aspx?id=sitemap"
+                                class="bis_sitemap">Sitemap</a> <a href="../BIS_FAQ.aspx?id=feedback" class="bis_customer_feedback">
+                                    Customer Feedback</a> </li>
+                            <li><a href="../BIS_FAQ.aspx?id=faq" class="bis_faq">Frequently Asked Questions (FAQ)</a>
+                                <a href="../BIS_FAQ.aspx?id=credit1" class="bis_credit1">Guidelines for using Credit
+                                    Cards</a> <a href="../BIS_FAQ.aspx?id=credit2" class="bis_credit2">Debit/International
+                                        Credit Cards</a> </li>
+                            
+                            <li><a href="../fop_guide.pdf" target="_blank">Guidelines for Viewing Downloaded Standards.</a>
+                            </li>
+                            <li><a href="../BIS_FreeAmendments.aspx?id=0">Search For Free Amendments</a> <a href="../BIS_Withdrawn.aspx">
+                                Withdrawn/Archive Standards</a> </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="border: 0.5px solid white; height: 0.3px; margin: 10px 0 10px 0;">
+            </div>
+            <div style="padding: 10px; text-align: center; top: 50%;">
+                <span id="ctl00_Label9" style="font-size: 17px; font-weight: 300; color: White;">BSB Edge is Official Distributers of various international standards.<br /> We represent <span style='font-style:italic;'>ASME, AFNOR, API, ASNT, ASTM, BIS, ACI, BSI, CSA, DIN, HI, ISO, AWWA, IEC, IEEE, JSA, NBBI, SAE, UL, NACE, HSB, AIAG</span>.<br /> You can download international standards from our website : <span><a style='color:white;' href='https://www.bsbedge.com'>www.bsbedge.com</a></span></span>
+            </div>
+            <div>
+                <div class="social-media" style="width: 100%; text-align: center !important;">
+                    <a href="https://www.facebook.com/BSBEdgeIN/" target="_blank"><i class="fa fa-facebook">
+                    </i></a>&nbsp; <a href="https://twitter.com/BSB_Edge" target="_blank"><i class="fa fa-twitter">
+                    </i></a>&nbsp; <a href="https://www.linkedin.com/company/11129745/" target="_blank">
+                        <i class="fa fa-linkedin"></i></a>&nbsp; <a href="https://www.youtube.com/channel/UCGVSgR_peX8smvwzJZ3xMlA"
+                            target="_blank"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+            <br />
+            <div style="color: White; font-size: 13px; text-align: center; width: 100%;">
+                <p style="text-align: center !important;">
+                    ** This site best viewed in Google Chrome.</p>
+            </div>
+        </div>
+    </div>
+	<script src="../js/tether.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/easy-responsive-tabs.js"></script>
+    <script src="../js/jquery.colorbox.js"></script>
+    <script src="../js/main.js"></script>
+    <link href="../css/jquery.mobile-menu.css" rel="stylesheet" type="text/css" />
+    <link href="../css/site-icons.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery.mobile-menu.min.js" type="text/javascript"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $("#mobile-menu").mobileMenu({
+                MenuWidth: 250,
+                SlideSpeed: 250,
+                WindowsMaxWidth: 767,
+                PagePush: true,
+                FromLeft: false,
+                Overlay: true,
+                CollapseMenu: true,
+                ClassName: "mobile-menu"
+            });
+        });        
+    </script>
+    <script>
+        $(".toggle-link").click(function (event) {
+            event.preventDefault();
+            $('.slide-content-top').slideToggle('slow');
+            $(this).toggleClass("close");
+        });
+    </script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            // for (i = 0; i < tabcontent.length; i++) {
+            //     tabcontent[i].style.display = "none";
+            // }
+            if (!tabcontent || tabcontent.length === 0) return;
+
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tabClose");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            // document.getElementById(cityName).style.display = "block";
+            var el = document.getElementById(cityName);
+            if (el) {
+                el.style.display = "block";
+            }
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        // document.getElementById("defaultOpen").click();
+
+        document.getElementById("defaultOpen")?.click();
+    </script>
+	
+   
+<link rel="stylesheet" href="../css/jquery.fancybox.min.css" />
+        <script src="../js/jquery.fancybox.min.js"></script>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.AutoCompleteBehavior, {"completionListCssClass":"AutoExtender","completionListItemCssClass":"AutoExtenderList","completionSetCount":1,"delimiterCharacters":"","firstRowSelected":true,"highlightedItemCssClass":"AutoExtenderHighlight","id":"ctl00_AutoCompleteExtender1","minimumPrefixLength":1,"serviceMethod":"GetStdNo_Bis","servicePath":"popupextender.aspx","useContextKey":true}, {"itemSelected":GetID}, null, $get("ctl00_txt_standardnumber"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

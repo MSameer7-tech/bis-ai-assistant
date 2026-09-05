@@ -1,0 +1,20 @@
+[
+  {
+    "source_url": "https://www.bis.gov.in/consumer-affairs/",
+    "entity_type": "CONSUMER_SERVICE",
+    "retrieved_at": "2026-09-03T19:28:54.440557+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/bis-care-app/",
+    "entity_type": "BIS_CARE_SERVICE",
+    "retrieved_at": "2026-09-03T19:28:57.949758+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/consumer-grievance/",
+    "entity_type": "COMPLAINT_GRIEVANCE",
+    "retrieved_at": "2026-09-03T19:29:00.581995+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  }
+]

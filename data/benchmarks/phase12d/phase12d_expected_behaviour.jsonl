@@ -1,0 +1,14 @@
+{"query_id": "q_bench_000", "expected_status": "SUFFICIENT", "required_entities": ["IS 616"], "prohibited_entities": ["IS 1599", "IS 1418"]}
+{"query_id": "q_bench_001", "expected_status": "SUFFICIENT", "required_entities": ["IS 8978"], "prohibited_entities": []}
+{"query_id": "q_bench_002", "expected_status": "SUFFICIENT", "required_entities": ["IS 8978"], "prohibited_entities": []}
+{"query_id": "q_bench_003", "expected_status": "SUFFICIENT", "required_entities": ["Toys"], "prohibited_entities": []}
+{"query_id": "q_bench_004", "expected_status": "SUFFICIENT", "required_entities": [], "prohibited_entities": []}
+{"query_id": "q_bench_005", "expected_status": "SUFFICIENT", "required_entities": [], "prohibited_entities": []}
+{"query_id": "q_bench_006", "expected_status": "INSUFFICIENT", "required_entities": [], "prohibited_entities": []}
+{"query_id": "q_bench_007", "expected_status": "INSUFFICIENT", "required_entities": [], "prohibited_entities": []}
+{"query_id": "q_bench_008", "expected_status": "PARTIAL", "required_entities": ["IS 8978"], "prohibited_entities": []}
+{"query_id": "q_bench_009", "expected_status": "SUFFICIENT", "required_entities": [], "prohibited_entities": []}
+{"query_id": "q_bench_010", "expected_status": "SUFFICIENT", "required_entities": ["IS 616"], "prohibited_entities": ["IS 1599"]}
+{"query_id": "q_bench_011", "expected_status": "SUFFICIENT", "required_entities": ["IS 1418"], "prohibited_entities": ["IS 616"]}
+{"query_id": "q_bench_012", "expected_status": "SUFFICIENT", "required_entities": ["IS 8978"], "prohibited_entities": ["IS 616"]}
+{"query_id": "q_bench_013", "expected_status": "SUFFICIENT", "required_entities": ["IS 8978"], "prohibited_entities": ["Testing Fee", "LIMS"]}

@@ -1,0 +1,195 @@
+{
+  "PHASE_11_3A_STATUS": "COMPLETE",
+  "audit_run_id": "audit_202609d162023",
+  "audit_timestamp": "2026-09-04T16:20:23.521101",
+  "input_file": "data/bootstrap/bis_missing_domains_dataset_v22.jsonl",
+  "input_sha256": "68229fbe37078b6571da7a0b71747fd4b5b383f232b796c71ae6e773c0c13dbe",
+  "record_count": 1135,
+  "script_version": "1.1",
+  "valid": 1134,
+  "invalid": 1,
+  "exact_duplicate_record_count": 0,
+  "duplicate_record_id_count": 0,
+  "duplicate_source_hash_count": 0,
+  "unique_canonical_url_count": 204,
+  "shared_source_url_group_count": 81,
+  "records_in_shared_source_url_groups": 1012,
+  "provenance_complete": 577,
+  "provenance_incomplete": 558,
+  "provenance_missing": 0,
+  "source_accessible": 1131,
+  "source_inaccessible": 4,
+  "extraction_success": 1135,
+  "extraction_failure": 0,
+  "unique_inaccessible_sources": 4,
+  "records_affected_by_inaccessible_sources": 4,
+  "document_record_count": 50,
+  "unique_document_identity_count": 50,
+  "unique_document_url_count": 48,
+  "laboratory_record_count": 32,
+  "unique_laboratory_name_count": 32,
+  "unique_laboratory_code_count": 0,
+  "unique_laboratory_identity_count": 0,
+  "unique_laboratory_scope_record_count": 514,
+  "recognized_laboratories": 8,
+  "empanelled_laboratories": 6,
+  "BIS_laboratories": 0,
+  "new_applications": 0,
+  "derecognized_or_suspended_laboratories": 0,
+  "unique_normalized_is_numbers": 110,
+  "unique_raw_is_references": 112,
+  "explicit_fee_record_count": 201,
+  "fee_records_with_amount": 189,
+  "fee_records_without_amount": 12,
+  "fee_records_with_currency": 188,
+  "fee_records_with_effective_date": 188,
+  "supersession_candidates": [
+    {
+      "record_id": "HM-036",
+      "title": "AHC resource set",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "HALLMARK-SRC-005",
+      "title": "Cancelled/Expired/Suspended AHC list",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "SRC-f2306a41a46406b0",
+      "title": "A&H Centre resource catalogue",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "CON-5f3c792b-a4fe-478e-91f2-398b613a7b99",
+      "title": "Consumer Source: Circular-guidelines",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "CON-d065208c-dd85-4e46-91b9-9e15c74b8aa7",
+      "title": "Consumer Source: Public-dashboard",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-5b9b0906-a48d-443f-9dfe-99c267f9eea6",
+      "title": "FAQ/Guide: internship_guideline-for-BO-revised.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-774896a1-857b-4105-b842-ad443b6c74a9",
+      "title": "FAQ/Guide: Internship-with-BIS-Scheme-revised-final.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-6e2186c2-1d93-4c56-b18e-4bfb97680747",
+      "title": "FAQ/Guide: Hallmarking-of-gold-jewellery-and-gold-artefacts-order-2026-second-amendments-385-districts.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-edd2ebdf-18fa-4eaa-bc8c-8779f20a5bf6",
+      "title": "FAQ/Guide: Textile_01062026.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-58c1cc75-e98a-414f-be3f-78352a16fd12",
+      "title": "FAQ/Guide: Training-Strategy_14-March-2023.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-a7e88976-0d77-4614-a241-f59098ad0f05",
+      "title": "FAQ/Guide: Guidelines_AHC_30092019.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-581e443e-11c0-42c2-be05-d19fcf9e4901",
+      "title": "FAQ/Guide: Revised-Guidelines-for-JEWELLERS-Jan-24.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-ec7da689-094f-4ace-800d-1e50724b0cd0",
+      "title": "FAQ/Guide: AMENDMENT%20IV.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-f019ad89-3d77-47c9-ac15-fad5bdf4092e",
+      "title": "FAQ/Guide: Amendment-III.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-17f85b48-10a1-42f6-b7d4-f672a8933879",
+      "title": "FAQ/Guide: amendment.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-616f640f-7c13-4630-9d2c-27a7ba36df68",
+      "title": "FAQ/Guide: Revised-Guidelines-for-support-to-other-laboratories-dated-2024-12-17.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-50bc6f35-661c-4bb3-aeb3-a0d86d3c86cf",
+      "title": "FAQ/Guide: RevisedSTI_GoldCoin-bullion.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-ffcee642-0491-4d33-b53f-0e7b4f567c50",
+      "title": "FAQ/Guide: Guidelines_for_Refinery_or_Mint_08102018.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-aec70196-cd72-470e-b4df-4bcd3905aea1",
+      "title": "FAQ/Guide: Hm_Manual.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-60f61adc-13a0-4b4a-9276-518a4106f74c",
+      "title": "FAQ/Guide: GuidelinesForAHCs.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    },
+    {
+      "record_id": "FG-ba86daa4-6c93-49b3-a69e-e5c32c0571be",
+      "title": "FAQ/Guide: Guidelines-for-Jewellers.pdf",
+      "date_evidence": "SUPERSEDED keyword found",
+      "classification": "SUPERSESSION_CANDIDATE"
+    }
+  ],
+  "conflict_candidates": [],
+  "manual_review_candidates": [],
+  "critical_gaps": [],
+  "high_gaps": [],
+  "medium_gaps": [
+    "Laboratories -> IS mapping",
+    "Testing fees"
+  ],
+  "low_gaps": [
+    "Jeweller Registration",
+    "HUID details",
+    "Consumer complaints"
+  ],
+  "FINAL_RECOMMENDATION": "FREEZE_V22",
+  "question_level_coverage": {
+    "Laboratories -> IS mapping": "PARTIAL_EVIDENCE",
+    "Testing fees": "PARTIAL_EVIDENCE",
+    "Jeweller Registration": "AVAILABLE_EVIDENCE",
+    "HUID details": "AVAILABLE_EVIDENCE",
+    "Consumer complaints": "AVAILABLE_EVIDENCE"
+  }
+}

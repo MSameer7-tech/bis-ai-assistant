@@ -1,0 +1,261 @@
+[
+  {
+    "document": {
+      "document_id": "AHC-001",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.477401+00:00",
+      "sha256": "f0b5db11a52490d4b3d6e4b315814fd706f414d48c8a35239d33884a534f4b5d"
+    },
+    "extracted": {
+      "centre_identity": "AHC-001",
+      "centre_name": "Zaveri Bazaar Gold Assaying & Hallmarking Centre",
+      "location": "Mumbai, Maharashtra",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-002",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.477720+00:00",
+      "sha256": "a1cc6a8e7b6aad84567dd88761943df1587800c828a32f36891531f18a7525a9"
+    },
+    "extracted": {
+      "centre_identity": "AHC-002",
+      "centre_name": "Karol Bagh Precious Metals Hallmarking Centre",
+      "location": "New Delhi, Delhi",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-003",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.477926+00:00",
+      "sha256": "5ad99ca16420a4432f62c67f7e5ee1eaebb6d56d41f86aa10ea456e2f737e084"
+    },
+    "extracted": {
+      "centre_identity": "AHC-003",
+      "centre_name": "T. Nagar Gold Assaying & Hallmarking Facility",
+      "location": "Chennai, Tamil Nadu",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-004",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.478121+00:00",
+      "sha256": "3de5aecef568029fea22ce4298e3963b5a6a1034bb440571ac16f327ed22f62c"
+    },
+    "extracted": {
+      "centre_identity": "AHC-004",
+      "centre_name": "Bowbazar Bullion & Jewellery Assaying Centre",
+      "location": "Kolkata, West Bengal",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-005",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.478287+00:00",
+      "sha256": "4e7c46f5c7e7fc41601a089acdfa4af03907843a0f71af82ba059b1e3c83fc6b"
+    },
+    "extracted": {
+      "centre_identity": "AHC-005",
+      "centre_name": "Thrissur Gold Hub Hallmarking Centre",
+      "location": "Thrissur, Kerala",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-006",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.478845+00:00",
+      "sha256": "353ced4badbc54868cfa59699ce9aa49f45955a17b4a66892971927b52ad0508"
+    },
+    "extracted": {
+      "centre_identity": "AHC-006",
+      "centre_name": "Johari Bazaar Assaying & Hallmarking Centre",
+      "location": "Jaipur, Rajasthan",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-007",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.480072+00:00",
+      "sha256": "17dcfdeba80b82d5e970176b727263603ce2cf0fabca45753c7082b4df585ace"
+    },
+    "extracted": {
+      "centre_identity": "AHC-007",
+      "centre_name": "Pot Market Gold Assaying & Hallmarking Centre",
+      "location": "Hyderabad, Telangana",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-008",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.480281+00:00",
+      "sha256": "1c18a15f0274d07d1f9676d9c71e2d689160c976222c4bcc934ff83d97abbb72"
+    },
+    "extracted": {
+      "centre_identity": "AHC-008",
+      "centre_name": "Chickpet Gold & Bullion Hallmarking Centre",
+      "location": "Bengaluru, Karnataka",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-009",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.480478+00:00",
+      "sha256": "2e169732e3b60759788d534800bae57ff215d184a6445ce899007f41f6cf7866"
+    },
+    "extracted": {
+      "centre_identity": "AHC-009",
+      "centre_name": "Choksi Bazaar Gold Assaying Centre",
+      "location": "Surat, Gujarat",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  },
+  {
+    "document": {
+      "document_id": "AHC-010",
+      "document_type": "ASSAYING_HALLMARKING_CENTRE"
+    },
+    "acquisition": {
+      "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+      "retrieved_at": "2026-09-03T19:14:03.480661+00:00",
+      "sha256": "aec37cc8fdd66cb72c92eea71bdcc82d778fd26645a9c2a8da3d757b7d8055b7"
+    },
+    "extracted": {
+      "centre_identity": "AHC-010",
+      "centre_name": "Sarafa Bazaar Precious Assaying Centre",
+      "location": "Indore, Madhya Pradesh",
+      "status": "AHCStatus.ACTIVE",
+      "applicable_standards": [
+        "IS 1417",
+        "IS 2112",
+        "IS 1418",
+        "IS 15820"
+      ],
+      "provenance": {
+        "source_url": "https://www.manakonline.in/biscrs/ahcdetails"
+      }
+    }
+  }
+]

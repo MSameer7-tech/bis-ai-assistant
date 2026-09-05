@@ -30,6 +30,33 @@ data/chunks/*
 !data/chunks/**/.gitkeep
 !data/chunks/.gitkeep
 
+# Exclude temporary databases and obsolete vector stores
+data/vector_store/chroma/
+data/vector_store/embedding_cache.json
+data/chroma_db/
+data/indexes/
+
+# Exclude models (too large for git)
+data/models/
+
+# Exclude temporary dumps and snapshots
+data/candidates/browser_live_inventory.json
+data/browser_snapshots/
+
+# Exclude logs and telemetry
+data/acquisition/failures/
+data/acquisition/quarantine/
+data/acquisition/telemetry/
+
+# Exclude scratch, brain, and temporary scripts
+scratch/
+brain/
+test_out.txt
+test_*.sh
+test_playwright.py
+*.jsonl.tmp
+*.bak
+
 # data/metadata/ is tracked for version-controlled metadata and registries
 
 # Logs

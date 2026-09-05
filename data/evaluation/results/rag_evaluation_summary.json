@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "evaluated_at": "2026-09-02T15:49:53.780640+00:00",
+  "execution_duration_sec": 29.53,
+  "total_test_cases": 460,
+  "passed_test_cases": 460,
+  "failed_test_cases": 0,
+  "pass_rate_pct": 100.0,
+  "evidence_backed_rate_pct": 97.73,
+  "metadata_only_count": 0,
+  "wrong_product_count": 0,
+  "hallucinations_count": 0,
+  "refusals_count": 20,
+  "out_of_scope_passed": 20,
+  "product_count": 25,
+  "release_gate_verdict": "PASS"
+}

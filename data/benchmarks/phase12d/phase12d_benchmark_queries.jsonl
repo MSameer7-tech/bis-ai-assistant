@@ -1,0 +1,14 @@
+{"query_id": "q_bench_000", "query": "What is IS 616?", "category": "A_EXACT_ID"}
+{"query_id": "q_bench_001", "query": "Which laboratories explicitly have scope for IS 8978?", "category": "B_LABORATORY"}
+{"query_id": "q_bench_002", "query": "What is the testing fee for IS 8978?", "category": "C_FEE"}
+{"query_id": "q_bench_003", "query": "Is BIS certification mandatory for toys?", "category": "D_QCO"}
+{"query_id": "q_bench_004", "query": "How does BIS hallmarking work for gold jewellery?", "category": "E_HALLMARKING"}
+{"query_id": "q_bench_005", "query": "How can I file a complaint through BIS Care?", "category": "F_CONSUMER"}
+{"query_id": "q_bench_006", "query": "What is the latest revision of IS 8978?", "category": "G_HISTORICAL"}
+{"query_id": "q_bench_007", "query": "What is LAB-UNKNOWN_79dcb12d?", "category": "H_UNKNOWN"}
+{"query_id": "q_bench_008", "query": "What is the testing fee for IS 8978 and how do I file a complaint?", "category": "I_MULTI_PART"}
+{"query_id": "q_bench_009", "query": "How do I apply for BIS product certification?", "category": "J_GENERAL"}
+{"query_id": "q_bench_010", "query": "What are the requirements for Audio, Video and Similar Electronic Apparatus (IS 616)?", "category": "ADVERSARIAL"}
+{"query_id": "q_bench_011", "query": "What is IS 1418?", "category": "ADVERSARIAL"}
+{"query_id": "q_bench_012", "query": "Does IS 8978 cover Audio, Video and similar electronic apparatus?", "category": "ADVERSARIAL"}
+{"query_id": "q_bench_013", "query": "What date was IS 8978 revised?", "category": "ADVERSARIAL"}

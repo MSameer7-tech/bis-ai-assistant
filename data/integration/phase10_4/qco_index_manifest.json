@@ -1,0 +1,18 @@
+{
+  "integration_version": "1.0",
+  "corpus_fingerprint": "phase6_immutable_baseline_hash",
+  "source_records": 129,
+  "included_records": 129,
+  "excluded_records": 0,
+  "embedding_model": "text-embedding-3-small",
+  "embedding_dimension": 1536,
+  "metric": "cosine",
+  "bm25_configuration": {
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "chroma_collection": "bis_phase10_qco_v1",
+  "chunker_version": "1.0",
+  "provenance_schema_version": "1.0",
+  "creation_timestamp": "2026-09-04T05:41:56.012394"
+}

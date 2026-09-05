@@ -1,0 +1,102 @@
+[
+  {
+    "entity_id": "TEST-FAQ-0",
+    "document_type": "FAQ"
+  },
+  {
+    "entity_id": "TEST-FAQ-1",
+    "document_type": "FAQ"
+  },
+  {
+    "entity_id": "TEST-FAQ-2",
+    "document_type": "FAQ"
+  },
+  {
+    "entity_id": "TEST-FAQ-3",
+    "document_type": "FAQ"
+  },
+  {
+    "entity_id": "TEST-FAQ-4",
+    "document_type": "FAQ"
+  },
+  {
+    "entity_id": "TEST-FAQ-5",
+    "document_type": "FAQ"
+  },
+  {
+    "entity_id": "TEST-FAQ-6",
+    "document_type": "FAQ"
+  },
+  {
+    "entity_id": "TEST-GUIDE-0",
+    "document_type": "GUIDE"
+  },
+  {
+    "entity_id": "TEST-GUIDE-1",
+    "document_type": "GUIDE"
+  },
+  {
+    "entity_id": "TEST-GUIDE-2",
+    "document_type": "GUIDE"
+  },
+  {
+    "entity_id": "TEST-GUIDE-3",
+    "document_type": "GUIDE"
+  },
+  {
+    "entity_id": "TEST-GUIDE-4",
+    "document_type": "GUIDE"
+  },
+  {
+    "entity_id": "TEST-GUIDE-5",
+    "document_type": "GUIDE"
+  },
+  {
+    "entity_id": "TEST-GUIDE-6",
+    "document_type": "GUIDE"
+  },
+  {
+    "entity_id": "TEST-BOOKLET-0",
+    "document_type": "BOOKLET"
+  },
+  {
+    "entity_id": "TEST-BOOKLET-1",
+    "document_type": "BOOKLET"
+  },
+  {
+    "entity_id": "TEST-BOOKLET-2",
+    "document_type": "BOOKLET"
+  },
+  {
+    "entity_id": "TEST-BOOKLET-3",
+    "document_type": "BOOKLET"
+  },
+  {
+    "entity_id": "TEST-BOOKLET-4",
+    "document_type": "BOOKLET"
+  },
+  {
+    "entity_id": "TEST-BOOKLET-5",
+    "document_type": "BOOKLET"
+  },
+  {
+    "entity_id": "TEST-AWARE-0",
+    "document_type": "AWARENESS_PUBLICATION"
+  },
+  {
+    "entity_id": "TEST-AWARE-1",
+    "document_type": "AWARENESS_PUBLICATION"
+  },
+  {
+    "entity_id": "TEST-AWARE-2",
+    "document_type": "AWARENESS_PUBLICATION"
+  },
+  {
+    "entity_id": "TEST-AWARE-3",
+    "document_type": "AWARENESS_PUBLICATION"
+  },
+  {
+    "entity_id": "TEST-AWARE-4",
+    "document_type": "AWARENESS_PUBLICATION"
+  }
+]

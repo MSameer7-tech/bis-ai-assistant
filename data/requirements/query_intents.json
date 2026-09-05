@@ -1,0 +1,134 @@
+{
+  "manifest_version": "1.1",
+  "project": "BIS AI Technical Assistant",
+  "description": "Taxonomy of engineering query intents and query states supporting SIH Problem Statement capabilities.",
+  "domain_intents": [
+    {
+      "intent": "STANDARD_LOOKUP",
+      "description": "User queries directly for an explicit Indian Standard number or title (e.g., 'What is IS 1786?').",
+      "maps_to_requirements": ["RQ-001", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "STANDARD_RECOMMENDATION",
+      "description": "User describes a product, intended use, or raw material and requests governing BIS standards.",
+      "maps_to_requirements": ["RQ-001", "RQ-002", "RQ-009"]
+    },
+    {
+      "intent": "STANDARD_REQUIREMENTS",
+      "description": "User asks for specific physical, chemical, electrical, or safety parameter limits in a standard.",
+      "maps_to_requirements": ["RQ-001", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "RELATED_STANDARDS",
+      "description": "User inquires about complementary test method standards, raw material codes, or normative references.",
+      "maps_to_requirements": ["RQ-001", "RQ-009"]
+    },
+    {
+      "intent": "CERTIFICATION_SCHEME",
+      "description": "User inquires about the applicable conformity assessment scheme (Scheme-I, Scheme-II, Scheme-IV, etc.).",
+      "maps_to_requirements": ["RQ-003", "RQ-004", "RQ-009"]
+    },
+    {
+      "intent": "CERTIFICATION_PROCESS",
+      "description": "User asks how to obtain certification, application procedures, documentation, or factory audit steps.",
+      "maps_to_requirements": ["RQ-003", "RQ-004", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "LICENSING",
+      "description": "User queries licence grant rules, marking fees, surveillance audits, or renewal timelines.",
+      "maps_to_requirements": ["RQ-004", "RQ-005", "RQ-009"]
+    },
+    {
+      "intent": "QCO_LOOKUP",
+      "description": "User asks for the specific Quality Control Order, issuing ministry, or gazette notification.",
+      "maps_to_requirements": ["RQ-001", "RQ-003", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "MANDATORY_STATUS",
+      "description": "User asks whether certification is legally mandatory, voluntary, or under enforcement transition timeline.",
+      "maps_to_requirements": ["RQ-001", "RQ-003", "RQ-004", "RQ-009"]
+    },
+    {
+      "intent": "TESTING_REQUIREMENTS",
+      "description": "User asks about mandatory factory tests, routine tests, or type test specifications.",
+      "maps_to_requirements": ["RQ-001", "RQ-004", "RQ-007", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "TEST_METHOD",
+      "description": "User asks how a particular test is conducted, equipment used, or sample preparation.",
+      "maps_to_requirements": ["RQ-001", "RQ-007", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "TESTING_LABORATORY",
+      "description": "User requests recognized BIS, regional, or partner laboratories for product testing.",
+      "maps_to_requirements": ["RQ-007", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "HALLMARKING",
+      "description": "User asks about precious metals hallmarking, purity standards, or jeweller registration.",
+      "maps_to_requirements": ["RQ-005", "RQ-006", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "HUID",
+      "description": "User queries the 6-digit Hallmark Unique Identification system, laser marking, or verification.",
+      "maps_to_requirements": ["RQ-005", "RQ-006", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "ASSAYING",
+      "description": "User inquires about Assaying & Hallmarking Centres (AHC) recognition and sampling rules.",
+      "maps_to_requirements": ["RQ-006", "RQ-007", "RQ-009"]
+    },
+    {
+      "intent": "CONSUMER_QUERY",
+      "description": "User queries verification of ISI marks, CRS registrations, or reporting of counterfeit goods.",
+      "maps_to_requirements": ["RQ-005", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "BIS_CARE",
+      "description": "User asks how to use the BIS Care mobile app to verify licences and file consumer complaints.",
+      "maps_to_requirements": ["RQ-005", "RQ-009"]
+    },
+    {
+      "intent": "TECHNICAL_QUERY",
+      "description": "Complex engineering, dimensional, or numerical tolerance questions across Indian Standards.",
+      "maps_to_requirements": ["RQ-001", "RQ-009", "RQ-010"]
+    },
+    {
+      "intent": "GENERAL_BIS",
+      "description": "General institutional questions about BIS mandate, departments, or portals.",
+      "maps_to_requirements": ["RQ-001", "RQ-005", "RQ-009"]
+    }
+  ],
+  "query_states": [
+    {
+      "state": "STANDARD_CONVERSATION",
+      "description": "Query is well-scoped, within BIS domain, and has unambiguous intent matching normative records.",
+      "action": "RETRIEVE_AND_ANSWER"
+    },
+    {
+      "state": "AMBIGUOUS",
+      "description": "Query lacks sufficient specificity (e.g., 'What standard applies to steel/pipes?') requiring structured disambiguation.",
+      "action": "CLARIFY_OR_DISAMBIGUATE"
+    },
+    {
+      "state": "OUT_OF_SCOPE",
+      "description": "Query regarding materials, products, or topics not governed by BIS (e.g., quantum computing, aerospace alloys, general trivia).",
+      "action": "SAFE_REFUSAL"
+    },
+    {
+      "state": "INSUFFICIENT_EVIDENCE",
+      "description": "Query is within theoretical BIS scope but verified primary evidence is unavailable in the indexed registry.",
+      "action": "ABSTAIN_WITH_GUIDANCE"
+    },
+    {
+      "state": "UNSUPPORTED_REQUEST",
+      "description": "Query asks for legal advice, judicial adjudication, or proprietary confidential manufacturer telemetry.",
+      "action": "DISCLAIMER_REFUSAL"
+    },
+    {
+      "state": "MULTILINGUAL_INPUT",
+      "description": "Query is submitted in Hindi or regional Indian languages requiring cross-lingual understanding before domain retrieval.",
+      "action": "CROSS_LINGUAL_DISPATCH"
+    }
+  ]
+}

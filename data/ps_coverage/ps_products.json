@@ -1,0 +1,952 @@
+{
+  "manifest_version": "1.0",
+  "source": "Smart India Hackathon 2026 Problem Statement Manifest",
+  "generated_at": "2026-09-01T23:45:00Z",
+  "total_products": 25,
+  "products": [
+    {
+      "id": "PS-001",
+      "canonical_name": "Electric Ceiling Fans",
+      "category": "Electrical Consumer Appliances",
+      "canonical_standard": "IS 374",
+      "aliases": [
+        "ceiling fan",
+        "ceiling fans",
+        "electric ceiling fan",
+        "electric ceiling fans",
+        "BLDC ceiling fan",
+        "5-star ceiling fan",
+        "5 star ceiling fan",
+        "domestic ceiling fan",
+        "regulator fan"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "ETD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-002",
+      "canonical_name": "TMT Steel Reinforcement Bars",
+      "category": "Construction & Metallurgical Engineering",
+      "canonical_standard": "IS 1786",
+      "aliases": [
+        "tmt steel reinforcement bars",
+        "tmt reinforcement bars",
+        "tmt steel",
+        "tmt bar",
+        "tmt bars",
+        "tmt rebar",
+        "tmt rebars",
+        "reinforcement steel bars",
+        "steel reinforcement bars",
+        "reinforcement steel",
+        "fe 500",
+        "fe 500d",
+        "fe 550",
+        "fe 550d",
+        "fe 600",
+        "high strength deformed steel bars",
+        "deformed steel bars",
+        "deformed steel wire",
+        "rebar",
+        "rebars"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "MTD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-003",
+      "canonical_name": "Lithium-Ion Secondary Batteries & Cells",
+      "category": "Electronics & Information Technology",
+      "canonical_standard": "IS 16046 (Part 2)",
+      "aliases": [
+        "lithium-ion batteries",
+        "lithium ion batteries",
+        "lithium-ion battery",
+        "lithium ion battery",
+        "li-ion batteries",
+        "li-ion battery",
+        "lithium cell",
+        "lithium cells",
+        "secondary cells containing alkaline or other non-acid electrolytes",
+        "ev battery",
+        "power bank battery"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "not_applicable",
+        "sit": "not_applicable",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "LICENSING"
+      ],
+      "department": "LITD",
+      "scheme": "SCHEME-II",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-004",
+      "canonical_name": "Gold Jewellery & Gold Bullion (Hallmarking)",
+      "category": "Precious Metals & Hallmarking",
+      "canonical_standard": "IS 1417",
+      "aliases": [
+        "gold jewellery",
+        "gold jewelry",
+        "gold hallmarking",
+        "hallmark gold",
+        "22k gold",
+        "24k gold",
+        "18k gold",
+        "14k gold",
+        "916 gold",
+        "750 gold",
+        "585 gold",
+        "gold bullion",
+        "gold coin",
+        "gold bar",
+        "gold articles",
+        "huid gold"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "not_applicable",
+        "sit": "not_applicable",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "LICENSING"
+      ],
+      "department": "HMD",
+      "scheme": "SCHEME-IV",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-005",
+      "canonical_name": "Silver Jewellery & Silver Bullion (Hallmarking)",
+      "category": "Precious Metals & Hallmarking",
+      "canonical_standard": "IS 2112",
+      "aliases": [
+        "silver jewellery",
+        "silver jewelry",
+        "silver hallmarking",
+        "hallmark silver",
+        "silver bullion",
+        "925 silver",
+        "999 silver",
+        "sterling silver",
+        "silver articles",
+        "silver medallion"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "not_applicable",
+        "sit": "not_applicable",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "LICENSING"
+      ],
+      "department": "HMD",
+      "scheme": "SCHEME-IV",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-006",
+      "canonical_name": "Self-Ballasted LED Lamps",
+      "category": "Electronics & Lighting Equipment",
+      "canonical_standard": "IS 16102 (Part 1)",
+      "aliases": [
+        "self-ballasted led lamps",
+        "self ballasted led lamps",
+        "self-ballasted led lamp",
+        "self ballasted led lamp",
+        "led bulb",
+        "led bulbs",
+        "led lamps",
+        "led lamp",
+        "led lighting",
+        "led retrofit bulb"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "not_applicable",
+        "sit": "not_applicable",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "LICENSING"
+      ],
+      "department": "ETD",
+      "scheme": "SCHEME-II",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-007",
+      "canonical_name": "Ordinary Portland Cement (33, 43, 53 Grades)",
+      "category": "Civil Construction & Building Materials",
+      "canonical_standard": "IS 269",
+      "aliases": [
+        "cement",
+        "ordinary portland cement",
+        "portland cement",
+        "opc cement",
+        "opc 53",
+        "opc 43",
+        "opc 33",
+        "53 grade cement",
+        "43 grade cement",
+        "33 grade cement",
+        "construction cement"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "CED",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-008",
+      "canonical_name": "Portland Pozzolana Cement (PPC)",
+      "category": "Civil Construction & Building Materials",
+      "canonical_standard": "IS 1489 (Part 1)",
+      "aliases": [
+        "portland pozzolana cement",
+        "ppc cement",
+        "flyash cement",
+        "pozzolana cement",
+        "ppc fly ash cement"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "CED",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "PS-009",
+      "canonical_name": "Protective Two-Wheeler Helmets",
+      "category": "Automotive & Road Safety Equipment",
+      "canonical_standard": "IS 4151",
+      "aliases": [
+        "protective two-wheeler helmets",
+        "two-wheeler helmets",
+        "two wheeler helmet",
+        "motorcycle helmet",
+        "protective helmet",
+        "helmets",
+        "helmet",
+        "biker helmet",
+        "isi helmet"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "TED",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-010",
+      "canonical_name": "Domestic Gas Stoves (LPG)",
+      "category": "Mechanical & Consumer Appliances",
+      "canonical_standard": "IS 4246",
+      "aliases": [
+        "domestic gas stoves",
+        "domestic gas stove",
+        "lpg gas stove",
+        "lpg stove",
+        "gas stoves",
+        "gas stove",
+        "gas cooktop",
+        "lpg cookstove"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "MED",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-011",
+      "canonical_name": "Domestic Pressure Cookers",
+      "category": "Mechanical & Consumer Appliances",
+      "canonical_standard": "IS 2347",
+      "aliases": [
+        "domestic pressure cookers",
+        "domestic pressure cooker",
+        "pressure cookers",
+        "pressure cooker",
+        "cooker",
+        "aluminium pressure cooker",
+        "stainless steel pressure cooker"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "MED",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-012",
+      "canonical_name": "Packaged Drinking Water",
+      "category": "Food & Agricultural Products",
+      "canonical_standard": "IS 14543",
+      "aliases": [
+        "packaged drinking water",
+        "packaged water",
+        "bottled drinking water",
+        "bottled water",
+        "mineral water bottle",
+        "20 litre water jar",
+        "packaged water jar"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "FAD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-013",
+      "canonical_name": "Packaged Natural Mineral Water",
+      "category": "Food & Agricultural Products",
+      "canonical_standard": "IS 13428",
+      "aliases": [
+        "packaged natural mineral water",
+        "natural mineral water",
+        "spring mineral water",
+        "mountain spring water"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "FAD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "PS-014",
+      "canonical_name": "Stationary Storage Electric Water Heaters (Geysers)",
+      "category": "Electrical Consumer Appliances",
+      "canonical_standard": "IS 2082",
+      "aliases": [
+        "electric water heater",
+        "electric geyser",
+        "storage water heater",
+        "water geysers",
+        "geyser",
+        "geysers",
+        "domestic water heater"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "ETD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-015",
+      "canonical_name": "Laptops & Notebook Computers",
+      "category": "Electronics & Information Technology",
+      "canonical_standard": "IS 13252 (Part 1)",
+      "aliases": [
+        "laptop",
+        "laptops",
+        "notebook computer",
+        "notebook computers",
+        "tablet pc",
+        "tablet computer",
+        "it equipment laptop"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "not_applicable",
+        "sit": "not_applicable",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "LICENSING"
+      ],
+      "department": "LITD",
+      "scheme": "SCHEME-II",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-016",
+      "canonical_name": "Smartphones & Mobile Phones",
+      "category": "Electronics & Information Technology",
+      "canonical_standard": "IS 13252 (Part 1)",
+      "aliases": [
+        "smartphone",
+        "smartphones",
+        "mobile phone",
+        "mobile phones",
+        "cellular phone",
+        "handset"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "not_applicable",
+        "sit": "not_applicable",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "LICENSING"
+      ],
+      "department": "LITD",
+      "scheme": "SCHEME-II",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-017",
+      "canonical_name": "Switches for Domestic and Similar Fixed Electrical Installations",
+      "category": "Electrical Wiring Accessories",
+      "canonical_standard": "IS 3854",
+      "aliases": [
+        "electrical switch",
+        "light switch",
+        "modular switch",
+        "domestic switches",
+        "piano switch"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "ETD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-018",
+      "canonical_name": "Plugs and Socket-Outlets",
+      "category": "Electrical Wiring Accessories",
+      "canonical_standard": "IS 1293",
+      "aliases": [
+        "plug",
+        "plugs",
+        "socket",
+        "sockets",
+        "power plug",
+        "electrical socket",
+        "3-pin plug",
+        "power socket"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "ETD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-019",
+      "canonical_name": "PVC Insulated Cables for Working Voltages up to 1100 V",
+      "category": "Electrical Cables & Conductors",
+      "canonical_standard": "IS 694",
+      "aliases": [
+        "pvc cable",
+        "pvc cables",
+        "electric wire",
+        "house wire",
+        "flexible cable",
+        "building wire",
+        "copper wire"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "ETD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-020",
+      "canonical_name": "Safety Footwear / Shoes",
+      "category": "Chemical & Personal Protective Equipment",
+      "canonical_standard": "IS 15298 (Part 2)",
+      "aliases": [
+        "safety shoe",
+        "safety shoes",
+        "safety footwear",
+        "steel toe shoe",
+        "industrial safety footwear"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "CHD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-021",
+      "canonical_name": "Structural Steel (Standard Quality)",
+      "category": "Metallurgical & Civil Engineering",
+      "canonical_standard": "IS 2062",
+      "aliases": [
+        "structural steel",
+        "steel angle",
+        "steel channel",
+        "steel beam",
+        "is 2062 steel",
+        "e250 steel",
+        "e350 steel"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "MTD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-022",
+      "canonical_name": "UPVC Pipes for Potable Water Supplies",
+      "category": "Civil Construction & Plumbing",
+      "canonical_standard": "IS 4985",
+      "aliases": [
+        "upvc pipe",
+        "upvc pipes",
+        "pvc water pipe",
+        "plumbing pipe",
+        "pvc potable water pipe"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "CED",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-023",
+      "canonical_name": "Infant Milk Substitutes / Infant Formula",
+      "category": "Food & Agricultural Products",
+      "canonical_standard": "IS 14433",
+      "aliases": [
+        "infant formula",
+        "infant milk substitute",
+        "baby milk powder",
+        "infant milk",
+        "baby formula"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "FAD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-024",
+      "canonical_name": "Medical Grade Examination Gloves",
+      "category": "Medical Devices & Hospital Equipment",
+      "canonical_standard": "IS 15354 (Part 1)",
+      "aliases": [
+        "examination gloves",
+        "medical gloves",
+        "latex gloves",
+        "nitrile medical gloves",
+        "surgical gloves"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "MHD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    },
+    {
+      "id": "PS-025",
+      "canonical_name": "Domestic Electric Irons",
+      "category": "Electrical Consumer Appliances",
+      "canonical_standard": "IS 366",
+      "aliases": [
+        "electric iron",
+        "electric irons",
+        "steam iron",
+        "dry iron",
+        "clothes iron",
+        "domestic iron"
+      ],
+      "expected_sources": {
+        "standard": "required",
+        "qco": "required",
+        "scheme": "required",
+        "product_manual": "required",
+        "sit": "required",
+        "testing": "required",
+        "laboratory": "required",
+        "licence": "required"
+      },
+      "expected_intents": [
+        "STANDARD_LOOKUP",
+        "MANDATORY_STATUS",
+        "CONFORMITY_SCHEME",
+        "TESTING_REQUIREMENTS",
+        "PRODUCT_MANUAL",
+        "LICENSING"
+      ],
+      "department": "ETD",
+      "scheme": "SCHEME-I",
+      "mandatory_certification": true,
+      "priority": "HIGH"
+    }
+  ]
+}

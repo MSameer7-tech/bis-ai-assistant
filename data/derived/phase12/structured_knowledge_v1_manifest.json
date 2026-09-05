@@ -1,0 +1,28 @@
+{
+  "input_corpus": "data/bootstrap/bis_missing_domains_dataset_v22.jsonl",
+  "input_sha256": "68229fbe37078b6571da7a0b71747fd4b5b383f232b796c71ae6e773c0c13dbe",
+  "input_record_count": 1135,
+  "derived_dataset_path": "data/derived/phase12/structured_knowledge_v1.jsonl",
+  "derived_dataset_sha256": "c91c1f0a46f235ff64738c9e1ea1fecedf9078b94076779ffd1635d95b068486",
+  "stats": {
+    "input_records": 1135,
+    "derived_records": 1179,
+    "entity_counts": {
+      "DOCUMENT": 910,
+      "LABORATORIES": 180,
+      "LAB_SCOPE": 44,
+      "TESTING_FEE": 44,
+      "UNKNOWN": 1
+    },
+    "relationship_counts": {
+      "TESTS_STANDARD": 16,
+      "BELONGS_TO_LAB": 44,
+      "HAS_FEE": 44,
+      "FEE_FOR_SCOPE": 44
+    },
+    "unknown_counts": 1,
+    "inaccessible_counts": 4,
+    "extraction_failures": 0
+  },
+  "timestamp": "2026-09-04T12:00:00Z"
+}

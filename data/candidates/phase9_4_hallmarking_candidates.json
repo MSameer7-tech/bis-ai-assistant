@@ -1,0 +1,38 @@
+[
+  {
+    "source_url": "https://www.bis.gov.in/hallmarking-standards/",
+    "domain": "HALLMARKING_STANDARD",
+    "retrieved_at": "2026-09-03T19:16:30.185893+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/hallmarking-regulations/",
+    "domain": "HALLMARKING_REGULATION",
+    "retrieved_at": "2026-09-03T19:16:34.519595+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/hallmarking-orders/",
+    "domain": "MANDATORY_HALLMARKING_ORDER",
+    "retrieved_at": "2026-09-03T19:16:38.375328+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/huid/",
+    "domain": "HUID_CONSUMER_VERIFICATION",
+    "retrieved_at": "2026-09-03T19:16:42.921175+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.manakonline.in/biscrs/ahcdetails",
+    "domain": "ASSAYING_HALLMARKING_CENTRE",
+    "retrieved_at": "2026-09-03T19:16:46.211707+00:00",
+    "terminal_status": "ACCESS_RESTRICTED"
+  },
+  {
+    "source_url": "https://www.manakonline.in/biscrs/jewellerdetails",
+    "domain": "JEWELLER_REFINERY_REGISTRATION",
+    "retrieved_at": "2026-09-03T19:16:52.868697+00:00",
+    "terminal_status": "ACCESS_RESTRICTED"
+  }
+]

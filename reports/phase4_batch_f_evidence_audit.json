@@ -1,0 +1,121 @@
+{
+  "audit_timestamp": "2026-09-01T16:24:00.244252+00:00",
+  "total_evidence_records": 2094,
+  "evidentiary_strength_distribution": {
+    "EVIDENCE_VERIFIED": 1114,
+    "EVIDENCE_PARTIAL": 980
+  },
+  "total_graph_edges": 13339,
+  "edges_evidence_bound": 13339,
+  "edge_binding_rate_percent": 100.0,
+  "edge_strength_distribution": {
+    "EVIDENCE_VERIFIED": 6036,
+    "EVIDENCE_PARTIAL": 7303
+  },
+  "canonical_products_audited": 179,
+  "policy_chain_distribution": {
+    "POLICY_COMPLETE": 120,
+    "POLICY_INCOMPLETE": 37,
+    "POLICY_PARTIAL": 22
+  },
+  "critical_commodities_gate_passed": true,
+  "critical_commodities": [
+    {
+      "commodity": "Electric Ceiling Fans",
+      "standard": "IS 374",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    },
+    {
+      "commodity": "High Strength Deformed Steel Bars (TMT Rebars)",
+      "standard": "IS 1786",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    },
+    {
+      "commodity": "Ordinary Portland Cement (33/43/53 Grade)",
+      "standard": "IS 269",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    },
+    {
+      "commodity": "Packaged Drinking Water (Other than Natural Mineral Water)",
+      "standard": "IS 14543",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    },
+    {
+      "commodity": "Domestic Gas Stoves for use with Liquefied Petroleum Gases",
+      "standard": "IS 4246",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    },
+    {
+      "commodity": "Domestic Pressure Cookers",
+      "standard": "IS 2347",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    },
+    {
+      "commodity": "Protective Helmets for Two Wheeler Riders",
+      "standard": "IS 4151",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    },
+    {
+      "commodity": "Secondary Cells and Batteries containing Alkaline or other Non-Acid Electrolytes (Li-ion)",
+      "standard": "IS 16046 (Part 2)",
+      "verified_evidence": true,
+      "qco_mandated": true,
+      "product_manual": true,
+      "sit_schedule": true,
+      "prescribed_tests": true,
+      "accredited_lab": true,
+      "licensed_factory_or_crs": true,
+      "gate_verdict": "PASS"
+    }
+  ],
+  "pending_repair_items": 9
+}

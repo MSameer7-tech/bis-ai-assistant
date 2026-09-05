@@ -1,0 +1,16 @@
+{
+  "READY_FOR_FUTURE_INTEGRATION": [
+    "Phase 8.7-8.10 Indian Standards",
+    "Phase 9.1 Acts/Rules",
+    "Phase 9.2 QCO",
+    "Phase 9.3 SIT"
+  ],
+  "NO_AUTHORITATIVE_DATA": [
+    "Phase 9.4 Hallmarking",
+    "Phase 9.5 Laboratories",
+    "Phase 9.6 Licences",
+    "Phase 9.7 Consumer Care",
+    "Phase 9.8 FAQs/Guides"
+  ],
+  "OVERALL_DECISION": "MIXED_READINESS"
+}

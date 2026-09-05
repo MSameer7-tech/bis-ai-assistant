@@ -1,0 +1,25 @@
+{
+  "bm25_configuration": {
+    "algorithm": "BM25Okapi",
+    "tokenization": "whitespace+lowercase+punctuation_removal"
+  },
+  "entity_count": 1187,
+  "excluded_count": 0,
+  "input_paths": [
+    "data/bootstrap/bis_missing_domains_dataset_v22.jsonl",
+    "data/derived/phase12/structured_knowledge_v1.jsonl"
+  ],
+  "input_sha256": [
+    "68229fbe37078b6571da7a0b71747fd4b5b383f232b796c71ae6e773c0c13dbe",
+    "c91c1f0a46f235ff64738c9e1ea1fecedf9078b94076779ffd1635d95b068486"
+  ],
+  "phase": "12.A",
+  "provenance_success": 1187,
+  "retrieval_unit_count": 1187,
+  "status": "PASS",
+  "vector_configuration": {
+    "embedding_dimension": 0,
+    "model": "NONE",
+    "status": "EMBEDDING_DEPENDENCY_UNAVAILABLE"
+  }
+}

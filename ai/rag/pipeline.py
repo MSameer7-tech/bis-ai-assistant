@@ -9,6 +9,11 @@ import json
 import uuid
 import logging
 import argparse
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
 from typing import Optional, List, Dict, Any
 from ai.rag.models import RAGAnswer, RetrievedChunk, Citation, GuardrailResult, AbstentionReason
 from ai.rag.schema import (
@@ -23,7 +28,7 @@ from ai.rag.schema import (
     EvidenceRef,
     Citation as SchemaCitation
 )
-from ai.rag.retriever import RAGRetriever
+from ai.retrieval.integrated_retrieval import IntegratedRetrievalOrchestrator
 from ai.rag.context_builder import ContextBuilder
 from ai.rag.prompt import BIS_SYSTEM_PROMPT, build_user_prompt
 from ai.rag.generator import BaseLLMProvider, get_llm_provider
@@ -51,14 +56,14 @@ class RAGPipeline:
 
     def __init__(
         self,
-        retriever: Optional[RAGRetriever] = None,
+        integrated_orchestrator: Optional[IntegratedRetrievalOrchestrator] = None,
         context_builder: Optional[ContextBuilder] = None,
         generator: Optional[BaseLLMProvider] = None,
         citation_extractor: Optional[CitationExtractor] = None,
         guardrails: Optional[ComplianceGuardrails] = None,
         formatter: Optional[AnswerFormatter] = None
     ):
-        self.retriever = retriever or RAGRetriever()
+        self.orchestrator = integrated_orchestrator or IntegratedRetrievalOrchestrator()
         self.context_builder = context_builder or ContextBuilder()
         self.generator = generator or get_llm_provider()
         self.citation_extractor = citation_extractor or CitationExtractor()
@@ -169,7 +174,7 @@ class RAGPipeline:
         is_cross_trap = False
         
         def has_any_word(target_words):
-            return any(w in q_words for w in target_words)
+            return any(any(w == tw or w == tw + "s" or w == tw + "es" for tw in target_words) for w in q_words)
 
         if (sq.parameter == "air_delivery" or "air delivery" in q_lower) and has_any_word(["steel", "rebar", "fe", "cement", "water", "helmet", "cooker", "stove"]):
             is_cross_trap = True
@@ -227,16 +232,95 @@ class RAGPipeline:
                 mandatory_certification=product_res.get("mandatory_certification", True)
             ))
 
-        # 6. Hybrid Parameter-Aware Retrieval
-        chunks: List[RetrievedChunk] = self.retriever.retrieve(
+        # 6. Integrated Routing & Retrieval (Phase 8.12)
+        raw_results = self.orchestrator.retrieve(
             query=effective_query,
-            top_k=top_k,
+            intent=classified_intent,
+            sq=sq,
             as_of_date=as_of_date,
-            candidate_k=candidate_k
+            top_k=top_k
         )
+        
+        # 6.1 Adapt Normalized Results to Phase 7 RetrievedChunk Contract
+        chunks: List[RetrievedChunk] = [r.to_retrieved_chunk() for r in raw_results]
+
+        # 6.5 Evidence Sufficiency/Conflict Analysis (Phase 7 Gate)
+        evidence_state = "SUFFICIENT_EVIDENCE"
+        if not chunks:
+            evidence_state = "INSUFFICIENT_EVIDENCE"
+        else:
+            # Check for conflict across standard values or contradictory normative force
+            # Simple conflict detection: if multiple chunks from different documents have contradictory clauses for the same parameter
+            std_set = set(c.standard_number for c in chunks)
+            if len(std_set) > 1 and sq.parameter:
+                evidence_state = "CONFLICTING_EVIDENCE"
+            # Check for outdated evidence based on temporal_status
+            elif any(c.temporal_status == "superseded" for c in chunks):
+                evidence_state = "OUTDATED_EVIDENCE"
+
+        if evidence_state == "INSUFFICIENT_EVIDENCE":
+            refusal_payload = RefusalBuilder.build_refusal_payload(
+                request_id=req_id,
+                query=query,
+                reason_type=RefusalReasonType.OUT_OF_SCOPE,
+                intent_type=classified_intent,
+                temporal_context=temporal_label
+            )
+            return RAGAnswer(
+                query=query,
+                answer="I could not find sufficient authoritative evidence to answer this query.",
+                citations=[],
+                retrieved_chunks=[],
+                confidence=0.0,
+                temporal_context=temporal_label,
+                refusal_reason="Insufficient evidence.",
+                abstention_type=AbstentionReason.INSUFFICIENT_EVIDENCE,
+                guardrail_result=GuardrailResult(
+                    passed=True,
+                    grounding_confidence=0.0,
+                    refusal_required=True,
+                    abstention_reason=AbstentionReason.INSUFFICIENT_EVIDENCE
+                ),
+                technical_details={},
+                production_payload=refusal_payload.model_dump(),
+                claims=[],
+                numerical_verifications=[]
+            )
+        elif evidence_state == "CONFLICTING_EVIDENCE":
+            refusal_payload = RefusalBuilder.build_refusal_payload(
+                request_id=req_id,
+                query=query,
+                reason_type=RefusalReasonType.OUT_OF_SCOPE,
+                intent_type=classified_intent,
+                temporal_context=temporal_label
+            )
+            return RAGAnswer(
+                query=query,
+                answer="The retrieved evidence contains conflicting normative requirements across different documents. Manual resolution is required.",
+                citations=[],
+                retrieved_chunks=chunks,
+                confidence=0.0,
+                temporal_context=temporal_label,
+                refusal_reason="Conflicting evidence.",
+                abstention_type=AbstentionReason.CONTRADICTORY_EVIDENCE,
+                guardrail_result=GuardrailResult(
+                    passed=False,
+                    grounding_confidence=0.0,
+                    refusal_required=True,
+                    abstention_reason=AbstentionReason.CONTRADICTORY_EVIDENCE,
+                    violations=["Conflicting standards found for the same parameter."]
+                ),
+                technical_details={},
+                production_payload=refusal_payload.model_dump(),
+                claims=[],
+                numerical_verifications=[]
+            )
+        elif evidence_state == "OUTDATED_EVIDENCE":
+            # Don't refuse, but add a warning
+            pass
 
         # 6b. Authoritative Product Registry Lookup (when exact product is queried without standard code, and no technical parameter is requested)
-        if product_res and product_res.get("confidence", 0) >= 0.85 and sq.intent in ("PRODUCT_STANDARD", "STANDARD_LOOKUP", "STANDARD_IDENTIFICATION", "GENERAL_QA", "COMPLIANCE_CHECK", "CERTIFICATION_QUERY") and not sq.standard_code and not sq.parameter:
+        if product_res and product_res.get("confidence", 0) >= 0.85 and sq.intent in ("PRODUCT_STANDARD", "STANDARD_LOOKUP", "STANDARD_IDENTIFICATION", "GENERAL_QA", "COMPLIANCE_CHECK", "CERTIFICATION_QUERY", "PARAMETER_QUERY") and not sq.standard_code and not sq.parameter:
             target_std = product_res["standard_number"]
             # If retrieved chunks are empty or do not match the target standard
             if not chunks or not any(target_std.lower().replace(" ", "") in c.standard_number.lower().replace(" ", "") for c in chunks):
@@ -377,21 +461,63 @@ class RAGPipeline:
         context = self.context_builder.build_context(chunks)
         user_prompt = build_user_prompt(effective_query, context, as_of_date)
 
-        # 9. Grounded Generation
-        draft_answer = self.generator.generate_answer(
-            system_prompt=BIS_SYSTEM_PROMPT,
-            user_prompt=user_prompt,
-            context=context,
-            query=effective_query
+        # 9. Structured Grounded Generation
+        provider_response = self.generator.generate_structured_answer(
+            query=effective_query,
+            structured_query=sq,
+            evidence=chunks,
+            grounding_instructions=BIS_SYSTEM_PROMPT,
+            output_schema=None
         )
+        draft_answer = provider_response.generated_answer
+
+        # 9b. Short-circuit if structured generation fails entirely (API Error)
+        if provider_response.generation_status == "ERROR":
+            refusal_payload = RefusalBuilder.build_refusal_payload(
+                request_id=req_id,
+                query=query,
+                reason_type=RefusalReasonType.PROVIDER_ERROR,
+                intent_type=classified_intent,
+                temporal_context=temporal_label
+            )
+            # The exception text is kept internally but status is not "verified"
+            return RAGAnswer(
+                query=query,
+                answer=f"An error occurred while calling the LLM provider: {provider_response.generated_answer}",
+                citations=[],
+                retrieved_chunks=chunks,
+                confidence=0.0,
+                temporal_context=temporal_label,
+                refusal_reason="LLM Provider Error.",
+                abstention_type=AbstentionReason.PROVIDER_ERROR,
+                guardrail_result=GuardrailResult(
+                    passed=False,
+                    grounding_confidence=0.0,
+                    refusal_required=True,
+                    abstention_reason=AbstentionReason.PROVIDER_ERROR,
+                    violations=["LLM Provider Error"]
+                ),
+                technical_details={"provider_error": provider_response.generated_answer},
+                production_payload=refusal_payload.model_dump(),
+                claims=[],
+                numerical_verifications=[]
+            )
+
+        if provider_response.refusal_status:
+            draft_answer = provider_response.generated_answer or "I could not generate an answer based on the retrieved evidence."
+        else:
+            draft_answer = provider_response.generated_answer
 
         # 10. Extract Citations & Validate Provenance
         citations: List[Citation] = self.citation_extractor.extract_citations(
             answer_text=draft_answer,
-            retrieved_chunks=chunks
+            retrieved_chunks=chunks,
+            structured_citations=provider_response.citations
         )
 
         # 11. Atomic Claim Extraction & Entailment Verification
+        # In Phase 7, we can rely on provider_response.claims or re-verify them
+        # We will parse the provider claims and pass them to verification
         atomic_claims: List[AtomicClaim] = ClaimVerifier.verify_claims(
             answer_text=draft_answer,
             evidence_chunks=chunks

@@ -1,0 +1,137 @@
+[
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2021/08/PM-IS-4948-2nd-revision-Aug-2021.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:08.773470+00:00",
+    "sha256": "2e6f35f10a995347505f8596c24c6c07c98166560571ed3b1f3b727c5d20207f",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-2e6f35f10a99",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2019/09/Corrected-IS-3390-Product-Manual.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:09.937186+00:00",
+    "sha256": "c1b97e5064d84bcb91b4640e945c20576427623ba8e34d10a2c7b15222800435",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-c1b97e5064d8",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2023/02/Revised-PM-15103.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:11.705579+00:00",
+    "sha256": "1b60821f3682f350a0e515a1ab284eb64e8c0b13a56ec2466a634278e034527a",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-1b60821f3682",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2023/06/PM-IS-12591-final4_merged.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:12.653536+00:00",
+    "sha256": "ea3b1d874246caf1ee11c625f986d519607a7c0c24e2158a010d660855d3b728",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-ea3b1d874246",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2020/05/PM-15907-CMD2.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:14.514006+00:00",
+    "sha256": "edf1f133cbb8e72b08f6d1e0e7b6feea139c9e6205a80eda949d223d21f12f09",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-edf1f133cbb8",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2023/01/PM_IS-17442_CMD2_Final.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:18.563062+00:00",
+    "sha256": "dda724fb363b47d287847f5256779d230da07a26177e07aa1c57d1cfb30b511c",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-dda724fb363b",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2023/01/Product-Manual-IS-80601-2-58-approved.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:22.913499+00:00",
+    "sha256": "c98439ed94b8901429e10392ebd2e11c259a9919eaf45f6bb7123f3a624e46ba",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-c98439ed94b8",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2023/03/Product-Manual-IS-2785.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:26.403803+00:00",
+    "sha256": "e89146ac23785fa6310878d726ddd5f2f63215b9cff92be79e7ea724e223353f",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-e89146ac2378",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2020/09/PM-636-CMD2-v2-Sep-2020.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:27.462218+00:00",
+    "sha256": "8e727ff36923b3283c05665d8e0d93bed9a4c7cc308b47d80a19eeb328390180",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-8e727ff36923",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2025/01/PM-IS-713-Final.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:30.349464+00:00",
+    "sha256": "a3463a0dcbd7d60b3c5fcc4373644d53f0589cecaadfdf9bdc478c823104ad56",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-a3463a0dcbd7",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2025/07/PM-IS-205-_July-2025.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:32.040779+00:00",
+    "sha256": "b95696545d19a3c8f91c286343519ce1076ddcb68e236a53c8d4d2e4c2eadeb4",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-b95696545d19",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2023/11/PM-12084-CMD2.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:33.987844+00:00",
+    "sha256": "83ff4f95adfe77c525f390771dba11899ae3486c6ef66c10eceecdac6bc2c549",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-83ff4f95adfe",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2019/01/IS-13983-Product-Manual-.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:36.440315+00:00",
+    "sha256": "97e424e08afbad3ccee4d59bdb2f1423d9bfc771cff71c10a3acfacfe0b42385",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-97e424e08afb",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2020/08/PM-IS-1011.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:38.483192+00:00",
+    "sha256": "f6ac2ab137c1dc512ccb30e16d51c0ec4ce60bf2801652bcdf809ceccb9a102d",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-f6ac2ab137c1",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/wp-content/uploads/2024/04/PM_IS-16593.pdf",
+    "source_family": "SRCF-004",
+    "retrieved_at": "2026-09-03T19:07:39.702519+00:00",
+    "sha256": "9706786b0d21800bae3419f274a7b81d2ba5b06aeac9a0fc076cfc20646fdc26",
+    "terminal_status": "ACQUIRED",
+    "sit_identity": "SIT-CANDIDATE-9706786b0d21",
+    "identity_status": "IDENTITY_UNRESOLVED"
+  }
+]

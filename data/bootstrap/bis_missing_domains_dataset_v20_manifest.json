@@ -1,0 +1,15 @@
+{
+  "v19_baseline_count": 1026,
+  "v20_total_count": 1058,
+  "newly_added": 32,
+  "rejected_duplicates": 0,
+  "rejected_insufficient_authority": 0,
+  "inaccessible_sources": 8,
+  "domain_coverage": {
+    "HALLMARKING": 180,
+    "LABORATORIES": 728,
+    "LICENCES_REGISTRATIONS": 75,
+    "CONSUMER_BIS_CARE": 25,
+    "FAQ_GUIDES_BOOKLETS": 50
+  }
+}

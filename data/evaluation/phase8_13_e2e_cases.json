@@ -1,0 +1,170 @@
+[
+    {
+        "case_id": "E2E-001",
+        "category": "Product \u2192 applicable IS",
+        "query": "What is the standard for Secondary Cells and Batteries for Solar Photovoltaic Application?",
+        "expected_intent": "PRODUCT_STANDARD",
+        "expected_retrieval_source_types": ["PRODUCT_STANDARD_RELATIONSHIP"],
+        "expected_standard_numbers": ["IS 16270 : 2014"],
+        "expected_relationship_ids": ["fc9b3249925c"],
+        "normative_evidence_required": false,
+        "expected_outcome": "ANSWER",
+        "notes": "Maps product to IS 16270"
+    },
+    {
+        "case_id": "E2E-002",
+        "category": "Exact IS lookup",
+        "query": "What is IS 14286?",
+        "expected_intent": "STANDARD_LOOKUP",
+        "expected_retrieval_source_types": ["STANDARD_METADATA"],
+        "expected_standard_numbers": ["IS 14286 : 2010"],
+        "normative_evidence_required": false,
+        "expected_outcome": "ANSWER",
+        "notes": "Exact metadata lookup"
+    },
+    {
+        "case_id": "E2E-003",
+        "category": "IS + part/section/year",
+        "query": "What is IS 16046 Part 2?",
+        "expected_intent": "STANDARD_LOOKUP",
+        "expected_retrieval_source_types": ["STANDARD_METADATA"],
+        "expected_standard_numbers": ["IS 16046 : Part 2 : 2018"],
+        "normative_evidence_required": false,
+        "expected_outcome": "ANSWER",
+        "notes": "Part specified"
+    },
+    {
+        "case_id": "E2E-004",
+        "category": "Clause question tied to a specific standard",
+        "query": "What does clause 7 of IS 2082 require?",
+        "expected_intent": "CLAUSE_LOOKUP",
+        "expected_retrieval_source_types": ["DOCUMENT_EVIDENCE"],
+        "expected_standard_numbers": ["IS 2082 : 2018"],
+        "normative_evidence_required": true,
+        "expected_outcome": "ANSWER",
+        "notes": "Retrieves chunk for IS 2082 clause 7"
+    },
+    {
+        "case_id": "E2E-005",
+        "category": "Technical requirement tied to a specific standard/document",
+        "query": "What is the numerical value for dielectric strength in IS 11536?",
+        "expected_intent": "STANDARD_LOOKUP",
+        "expected_retrieval_source_types": ["DOCUMENT_EVIDENCE"],
+        "expected_standard_numbers": ["IS 11536 : 2007"],
+        "normative_evidence_required": true,
+        "expected_outcome": "ABSTAIN",
+        "allowed_refusal_reasons": ["INSUFFICIENT_EVIDENCE"],
+        "notes": "Checks specific requirement"
+    },
+    {
+        "case_id": "E2E-006",
+        "category": "Certification question",
+        "query": "Is ISI mark mandatory?",
+        "expected_intent": "CERTIFICATION_QCO",
+        "expected_retrieval_source_types": ["DOCUMENT_EVIDENCE"],
+        "normative_evidence_required": false,
+        "expected_outcome": "ABSTAIN",
+        "notes": "Will likely abstain since we don't have certification evidence loaded for this exact phrase, or it'll find something. We'll set expected outcome to ABSTAIN for now if no evidence."
+    },
+    {
+        "case_id": "E2E-007",
+        "category": "Testing requirement",
+        "query": "What are the testing requirements for IS 11536?",
+        "expected_intent": "TESTING_METHOD",
+        "expected_retrieval_source_types": ["DOCUMENT_EVIDENCE"],
+        "expected_standard_numbers": ["IS 11536 : 2007"],
+        "normative_evidence_required": true,
+        "expected_outcome": "ANSWER",
+        "notes": "Relies on the 5.2 clause we saw."
+    },
+    {
+        "case_id": "E2E-008",
+        "category": "Laboratory query",
+        "query": "Which laboratory tests IS 2082?",
+        "expected_intent": "LABORATORY_LOOKUP",
+        "expected_outcome": "NOT_APPLICABLE",
+        "notes": "No laboratory data in authoritative dataset."
+    },
+    {
+        "case_id": "E2E-009",
+        "category": "Hallmarking query",
+        "query": "What is the hallmarking standard?",
+        "expected_intent": "HALLMARKING",
+        "expected_outcome": "NOT_APPLICABLE",
+        "notes": "No hallmarking data."
+    },
+    {
+        "case_id": "E2E-010",
+        "category": "Mixed product + technical question",
+        "query": "What is the dielectric strength requirement for Processed Cereal Based Complementary Foods?",
+        "expected_intent": "TECHNICAL_VALUE",
+        "expected_retrieval_source_types": ["DOCUMENT_EVIDENCE"],
+        "normative_evidence_required": true,
+        "expected_outcome": "ANSWER",
+        "notes": "Should find IS 11536 and answer."
+    },
+    {
+        "case_id": "E2E-011",
+        "category": "Ambiguous product query",
+        "query": "What is the standard for LED Lights?",
+        "expected_intent": "PRODUCT_STANDARD",
+        "expected_retrieval_source_types": ["PRODUCT_STANDARD_RELATIONSHIP"],
+        "normative_evidence_required": false,
+        "expected_outcome": "ABSTAIN",
+        "allowed_refusal_reasons": ["AMBIGUOUS_MATCH", "INSUFFICIENT_EVIDENCE"],
+        "notes": "Ambiguous match among LED Flood Lights, LED Hand lamps, etc."
+    },
+    {
+        "case_id": "E2E-012",
+        "category": "Out-of-scope query",
+        "query": "How do I cook pasta?",
+        "expected_intent": "PRODUCT_STANDARD",
+        "expected_retrieval_source_types": [],
+        "normative_evidence_required": false,
+        "expected_outcome": "ABSTAIN",
+        "allowed_refusal_reasons": ["OUT_OF_SCOPE", "NOT_FOUND", "INSUFFICIENT_EVIDENCE"],
+        "notes": "Should refuse to answer."
+    },
+    {
+        "case_id": "E2E-013",
+        "category": "Withdrawn/superseded standard",
+        "query": "What is IS 10322 Part 5 Section 5?",
+        "expected_intent": "CLAUSE_LOOKUP",
+        "expected_retrieval_source_types": ["STANDARD_METADATA"],
+        "expected_standard_numbers": ["IS 10322 : Part 5 : Sec 5 - (Active) : 2013"],
+        "normative_evidence_required": false,
+        "expected_outcome": "ANSWER",
+        "notes": "Should answer but indicate withdrawn status."
+    },
+    {
+        "case_id": "E2E-014",
+        "category": "Conflicting evidence controlled fixture",
+        "query": "What is the operating voltage for test standard?",
+        "expected_intent": "TECHNICAL_VALUE",
+        "expected_retrieval_source_types": ["DOCUMENT_EVIDENCE"],
+        "normative_evidence_required": true,
+        "expected_outcome": "ABSTAIN",
+        "allowed_refusal_reasons": ["CONFLICTING_EVIDENCE"],
+        "notes": "To be injected in test."
+    },
+    {
+        "case_id": "E2E-015",
+        "category": "Missing evidence/nonexistent parameter",
+        "query": "What is the required tensile strength in IS 2082?",
+        "expected_intent": "TECHNICAL_VALUE",
+        "expected_retrieval_source_types": ["DOCUMENT_EVIDENCE"],
+        "expected_standard_numbers": ["IS 2082 : 2018"],
+        "normative_evidence_required": true,
+        "expected_outcome": "ABSTAIN",
+        "allowed_refusal_reasons": ["INSUFFICIENT_EVIDENCE"],
+        "notes": "Missing evidence fixture/no evidence in DB."
+    },
+    {
+        "case_id": "E2E-016",
+        "category": "Multilingual query",
+        "query": "\u092b\u094d\u0930\u093f\u091c \u0915\u0947 \u0932\u093f\u090f \u092e\u093e\u0928\u0915 \u0915\u094d\u092f\u093e \u0939\u0948?",
+        "expected_intent": "PRODUCT_STANDARD",
+        "expected_outcome": "NOT_APPLICABLE",
+        "notes": "Multilingual not natively supported by deterministic test yet."
+    }
+]

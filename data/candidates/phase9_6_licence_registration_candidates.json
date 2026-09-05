@@ -1,0 +1,27 @@
+[
+  {
+    "source_url": "https://www.manakonline.in/biscrs/licencedetails",
+    "entity_type": "LICENCE",
+    "retrieved_at": "2026-09-03T19:25:42.633191+00:00",
+    "terminal_status": "FETCH_FAILED",
+    "error": "HTTPSConnectionPool(host='www.manakonline.in', port=443): Read timed out. (read timeout=5)"
+  },
+  {
+    "source_url": "https://www.crsbis.in/BIS/",
+    "entity_type": "CRS_REGISTRATION",
+    "retrieved_at": "2026-09-03T19:25:52.709603+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  },
+  {
+    "source_url": "https://www.manakonline.in/biscrs/jewellerdetails",
+    "entity_type": "HALLMARKING_REGISTRATION",
+    "retrieved_at": "2026-09-03T19:26:01.538836+00:00",
+    "terminal_status": "ACCESS_RESTRICTED"
+  },
+  {
+    "source_url": "https://www.bis.gov.in/download-licences/",
+    "entity_type": "REGISTRATION",
+    "retrieved_at": "2026-09-03T19:26:10.275821+00:00",
+    "terminal_status": "EXTRACTION_FAILED"
+  }
+]
